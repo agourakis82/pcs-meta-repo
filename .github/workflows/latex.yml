@@ -1,0 +1,16 @@
+name: latex-build
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dante-ev/latex-action@v2
+        with:
+          root_file: |
+            papers/fractal-entropy-project/main.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
+            papers/soc_fractal_ahsd/main.tex
+          working_directory: .
+          extra_system_packages: "ghostscript"
+          compiler: latexmk
