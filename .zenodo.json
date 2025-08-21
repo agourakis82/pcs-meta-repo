@@ -1,0 +1,17 @@
+{
+  "title": "Fractal‑Entropy Project: Code and Data for Bernoulli–Fractal Social Modelling",
+  "description": "Repository housing the LaTeX sources, code, data plans and simulation scripts for two Q1/A1 articles on fractal social layers driven by entropic Bernoulli dynamics.",
+  "creators": [
+    { "name": "Agourakis, Demetrios", "orcid": "0009-0001-8671-8878" }
+  ],
+  "license": "MIT",
+  "keywords": ["fractals", "entropy", "socio‑physics", "Bernoulli dynamics", "complex networks"],
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/agourakis82/fractal-entropy-project",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "version": "0.1.1"
+}

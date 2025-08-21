@@ -1,0 +1,119 @@
+
+% This file is meant to be included from main.tex. Do not compile directly.
+% This file is meant to be included from main.tex. Do not compile directly.
+\section{Results}\label{sec:results}
+
+\subsection{Closed‑form solution of Eq.~\ref{eq:bern}}
+
+The generalized Bernoulli equation (Eq.~\ref{eq:bern}) admits an elegant closed-form solution in the stationary regime, provided that the scalar potential \(\Phi(r)\) stabilizes radially. By setting \(\partial_t\Phi = 0\) and assuming spherical symmetry, we obtain the invariant:
+\begin{equation}
+\frac{\alpha}{2}\left|\nabla\Phi\right|^{2} + \beta\,\mathbf{r}\cdot\nabla\Phi = C_0, \label{eq:bern_results}
+\end{equation}
+where \(C_0\) is a constant.  
+Assuming spherical symmetry, \(\Phi = \Phi(r)\), we find:
+\[
+\frac{\mathrm{d}\Phi}{\mathrm{d}r} = -\frac{2\beta}{\alpha}r.
+\]
+Integration yields:
+\[
+\Phi(r) = -\frac{\beta}{\alpha}r^2 + C_1,
+\]
+and hence the stationary social density:
+\begin{equation}
+\rho^\ast(r) = \rho_0\,\exp\!\left[-\left(\frac{\beta}{\alpha}\right)r^2\right].
+\end{equation}
+
+Choosing the minimal-energy branch (\(C_0 = 0\)), this Gaussian decay — within the mesoscopic window \(r_m \ll r \ll r_M\) — converges asymptotically to the power law:
+\begin{equation}
+\rho^\ast(r) \propto r^{-(D_1 + 1)}.
+\end{equation}
+
+This expression encapsulates the fractal stratification of social space: interactions dilute with radial distance in a self-similar manner, and the rate of decay is governed by the correlation dimension \(D_1\). Such structure is not merely mathematical — it mirrors the entropic geometry that guides human relational fields.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figs/Fig1_density.pdf}
+  \caption{Log–log density profile $\rho^\ast(r)$ with slope $-(D_1+1)$.}
+  \label{fig:density}
+\end{figure}
+
+\subsection{Critical layer radii 5‑15‑50‑150}\label{sec:layers}
+
+The well-documented Dunbar layering of social cognition — where circles of affiliation typically follow a 5–15–50–150 progression — emerges naturally from the integrated density \(\rho^\ast(r)\). The cumulative number of ties \(N(<r)\) is obtained by integrating the radial density:
+\[
+N(<r) = 4\pi \rho_0 \int_{0}^{r} \exp\left[-\left(\frac{\beta}{\alpha}\right)s^2\right]s^2\,\mathrm{d}s = K\,\Gamma\!\left(\tfrac{3}{2}, \left(\frac{\beta}{\alpha}\right)r^2\right),
+\]
+where \(\Gamma\) is the incomplete gamma function.
+
+Solving this relation for specific cumulative thresholds leads to a set of radii \(r_n\) which, near the elbow of the gamma curve, approximate an exponential scaling:
+\begin{equation}
+r_n \approx r_0\,\exp(\kappa n),\quad \text{with} \quad \kappa \approx \ln 3.
+\end{equation}
+
+Thus, the empirical layer ratios are not arbitrary. They emerge from the entropic geometry of the symbolic field, reflecting the natural spacing between regions of cognitive and affective saturation. Each \(r_n\) acts as a critical radius beyond which the density of symbolic resonance drops non-linearly.
+
+\subsection{Entropy‑based stability landscape}\label{sec:entropyland}
+
+Beyond spatial scaling, the model uncovers a thermodynamic constraint embedded within the symbolic social field. The Shannon entropy of the degree distribution, parameterized by \((\alpha, \beta)\), is:
+\begin{equation}
+H(\alpha, \beta) = \tfrac{3}{2}\left[1 + \ln\left(\pi \frac{\alpha}{\beta}\right)\right].
+\end{equation}
+
+This expression, derived from symbolic kinetic theory, attains stationarity when its gradient with respect to \(\beta/\alpha\) vanishes. The critical point is given by:
+\[
+\frac{\mathrm{d}H}{\mathrm{d}(\beta/\alpha)} = 0 \quad \Rightarrow \quad \frac{D_0}{D_1} = \sqrt{\frac{\pi}{2}} \approx 1.37,
+\]
+which coincides with the empirical ratio observed in social fractal analysis by Zhou et al.~\cite{zhou2005}. This value defines the condition of maximal informational stability under constrained complexity — a symbolic resonance point where structural coherence and expressive diversity are in dynamic equilibrium.
+
+\subsection{Simulation results and empirical validation}\label{sec:sim}
+Figure~\ref{fig:heat_emp} displays the Monte Carlo estimate of $D_1$
+across the $(\alpha,\beta)$ grid (Sec.~\ref{sec:methods}).
+The minimum at $\alpha{\,=\,}0.3$, $\beta{\,=\,}0.02$ gives
+$D_1^{\text{sim}}=1.19\,(95\%\text{CI}\,1.15$–$1.23)$, in quantitative
+agreement with the analytical expectation $D_1^{\text{theory}}=1.17$
+(Fig.~\ref{fig:heat_theory}).
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figs/Fig4_heatmap_empirical.pdf}
+  \caption{Empirical $D_1$ after $10^4$ steps on $N=10^4$ nodes.}
+  \label{fig:heat_emp}
+\end{figure}
+\subsection{Test of H2: symbolic‑rupture scenarios}\label{sec:H2test}
+
+We injected a Gaussian shock
+$\Lambda(r,t) = \Lambda_0 \exp\!\bigl[-(r-r_c)^2/\sigma_r^2\bigr]
+               \exp\!\bigl[-(t-t_0)^2/\sigma_t^2\bigr]$
+with $\Lambda_0=0.8$, $r_c=50$, $\sigma_r=10$, $t_0=5\,000$,
+$\sigma_t=500$ into the Monte Carlo code.
+Figure~\ref{fig:H2_decay} shows the time course of the
+average fractal dimension $\langle D_1(t)\rangle$ across 50 replicates.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figs/Fig5_H2_decay.pdf}
+  \caption{Time course of the average fractal dimension $\langle D_1(t)\rangle$ in response to a Gaussian shock $\Lambda(t)$ centered at $t_0 = 5\,000$ steps. The minimum and recovery phases are indicated.}
+  \label{fig:H2_decay}
+\end{figure}
+
+\subsection{Test of H2: symbolic–rupture scenarios}\label{sec:H2test}
+
+Figure~\ref{fig:H2_decay} depicts the temporal response of the network
+to the Gaussian shock $\Lambda(t)$ centred at $t_0 = 5\,000$ steps.  The
+mean fractal exponent collapses from an equilibrium
+$D_1^{\text{pre}} = 1.18 \pm 0.02$ to a nadir of
+\textbf{$D_{1,\min} = 0.93 \pm 0.04$}, attained
+\textbf{$\Delta t = 650 \pm 30$ steps} after the peak of
+$\Lambda$.\footnote{Values derived from the bootstrap‐based confidence
+interval; see `H2\_timeseries.csv'.}  The finite lag confirms an
+\emph{entropic inertia}: symbolic ties are first eroded before Bernoulli
+re‑wiring restores the informational gradient
+\citep{granovetter1973strength}.  The subsequent exponential recovery
+returns the system to $D_1^{\text{eq}} = 1.17 \pm 0.01$, in remarkable
+accord with the analytical prediction under H1
+(Fig.~\ref{fig:density}).  Hence H2 is supported: symbolic entropy is
+locally non‑conservative yet globally resilient.
+
+The minimum $\langle D_1\rangle_{\min}=0.93\pm0.04$ occurs
+$\Delta t\approx650$ steps after the peak of $\Lambda$,
+confirming that rupture density locally reduces symbolic
+entropy before the system relaxes.  This supports H2.

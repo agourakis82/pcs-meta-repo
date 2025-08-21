@@ -1,0 +1,15 @@
+# artefatos LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# PDFs gerados localmente
+paper_model/*.pdf
+!paper_model/figs/*.pdf   # mantemos as figuras
+.DS_Store
