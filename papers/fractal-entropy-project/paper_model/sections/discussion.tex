@@ -1,0 +1,38 @@
+\section{Discussion}\label{sec:discussion}
+
+The dual formulation—Bernoulli flow (H1) coupled to the fractal
+continuity equation (H2)—reveals a phase portrait in which social
+ruptures modulate, but seldom annihilate, a deep‑seated
+entropy‑fractal attractor.  Three insights emerge.
+
+\begin{enumerate}
+\item \textbf{Robustness of $D_1$.}  Even with a rupture amplitude
+      $\Lambda_0 = 0.8$, the network converges to
+      $D_1^{\text{eq}} \simeq 1.17$.  This echoes meta‑analyses of human
+      egonets \citep{zhou2005discrete} and resembles the
+      core–periphery pattern reported in economic graphs
+      \citep{borgatti2000models}.
+\item \textbf{Recovery time‑scale.}  The latency
+      $\Delta t \approx 6.5\%$ of the simulated horizon is comparable
+      to the damping phase observed in post‑pandemic mobility traces
+      \citep{gao2022collective}.
+\item \textbf{Rupture as an entropic sink.}  The term
+      $\Lambda \rho^\ast$ behaves as a negative source in
+      Eq.~(\ref{eq:fract_continuity}), akin to a damping term in
+      Fisher–KPP dynamics \citep{murray2002mathematical}, yet expressed
+      on a Hausdorff manifold.
+\end{enumerate}
+
+\paragraph{Limitations.}
+(i) Parameters $\alpha$ and $\beta$ were held constant; multiple shocks
+may warrant time‑dependent $\alpha(t)$, $\beta(t)$.  
+(ii) The estimator $D_q$ is sensitive to degree binning; genuine
+multiresolution methods \citep{mandelbrot1983fractal} could refine
+confidence intervals.  
+(iii) Experiments were run for $N = 10^4$; ultra‑dense regimes remain to
+be explored.
+
+\paragraph{Outlook.}
+Future work will transplant the formalism to hyperbolic spaces
+\citep{krioukov2010hyperbolic} and fuse it with empirical blockchain
+graphs, whose transactional geometry is inherently fractal.

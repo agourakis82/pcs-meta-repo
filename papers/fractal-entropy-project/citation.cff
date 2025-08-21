@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the DOI below."
+title: "Fractal‑Entropy Project"
+version: "0.1.1"
+doi: "10.5281/zenodo.xxxxxxx16266607"   
+authors:
+  - family-names: Agourakis
+    given-names: Demetrios
+    orcid: "https://orcid.org/0000-0002-1234-5678"
+license: MIT
+keywords:
+  - fractals
+  - entropy
+  - socio‑physics
+  - Bernoulli dynamics
+repository-code: "https://github.com/agourakis82/fractal-entropy-project"

@@ -1,0 +1,57 @@
+name: build-paper
+on: [push]
+
+jobs:
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install TeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-full latexmk
+      - name: Build PDF
+        run: |
+          cd paper_model
+          latexmk -pdf -silent main.tex
+      - name: Show first 120 lines of main.log on failure
+        if: failure()
+        run: |
+          if [ -f paper_model/main.log ]; then
+            echo "---- main.log (head) ----"
+            head -n 120 paper_model/main.log
+            echo "---- end main.log ------"
+          else
+            echo "main.log not found"
+          fi
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: paperI_pdf
+          path: paper_model/main.pdf
+
+  python-grid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          pip install networkx pandas numpy
+          cd code
+          python mc_sim.py --N 1000 --steps 2000 --alpha 0.3 --beta 0.02
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run demo
+        run: python code/demo_run.py
+      - name: Build analytical figures
+        run: |
+          python code/plot_figs.py

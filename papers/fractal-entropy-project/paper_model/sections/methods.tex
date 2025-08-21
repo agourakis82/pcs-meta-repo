@@ -1,0 +1,96 @@
+% === paper_model/sections/methods.tex =========================
+
+
+\section{Methods}\label{sec:methods}
+
+\subsection{Generalised Bernoulli social equation}\label{sec:bernoulli}
+We model the density of interaction ties $\rho(\mathbf{r},t)$ in an $n$‑dimensional social phase space.  
+Inspired by incompressible fluid flow, we propose the continuity‐like equation
+\begin{equation}
+\frac{\partial \rho}{\partial t} + \nabla\!\cdot\!(\rho\,\mathbf{v}) = 0 ,
+\end{equation}
+with velocity field
+\begin{equation}
+\mathbf{v} = -\alpha \nabla \Phi + \beta\,\mathbf{r},
+\end{equation}
+where $\Phi = \ln\rho$ is a potential akin to information pressure,  
+$\alpha>0$ modulates entropic attraction, and $\beta>0$ encodes centrifugal social cost.  
+Combining both gives the **generalised Bernoulli equation**
+\begin{equation}
+\frac{\partial \Phi}{\partial t} + \tfrac{\alpha}{2}\bigl|\nabla\Phi\bigr|^{2}
++ \beta\,\mathbf{r}\!\cdot\!\nabla\Phi = 0 .
+\end{equation}
+
+
+\subsection{Fractal dimension estimators}\label{sec:fractal}
+At steady state ($\partial_t\Phi=0$), the density $\rho^\ast$ admits a scaling form  
+$\rho^\ast(r) \propto r^{-(D_{1}+1)}$ for $r$ in the mesoscopic range.  
+We estimate the capacity ($D_{0}$), information ($D_{1}$) and correlation ($D_{2}$)  
+dimensions via a standard box‐counting scheme\cite{falconer2014fractal}.
+\begin{equation}
+D_{q} =
+\lim_{\epsilon\to 0}\frac{1}{q-1}
+\frac{\log\sum_{i} p_{i}^{q}}{\log \epsilon},
+\qquad (q\in\mathbb{R}).
+\end{equation}
+
+\subsection{Entropy‑based stability criterion}\label{sec:entropy}
+\begin{table}[h]
+\caption{Symbols and units used throughout the manuscript}
+\centering
+\begin{tabular}{lll}
+\hline
+Symbol & Meaning & Unit (SI)\\\hline
+$\rho(\mathbf{r},t)$ & Social tie density & ties\,m$^{-n}$\\
+$\mathbf{v}$ & Social flow velocity & m\,s$^{-1}$\\
+$\Phi$ & Informational potential $\ln\rho$ & —\\
+$\alpha$ & Entropic attraction coefficient & m$^{2}$\,s$^{-1}$\\
+$\beta$ & Radial cost coefficient & s$^{-1}$\\
+$D_{0,1,2}$ & Fractal dimensions & —\\
+$H$ & Shannon entropy & nat\\\hline
+\end{tabular}
+\subsection{Hypothesis H2 – Fractal Continuity Equation}\label{sec:H2}
+
+We posit that symbolic entropy obeys a conservation law on a
+Hausdorff‑fractal medium of variable dimension $D(r,t)$.
+The **generalised continuity equation** reads
+\begin{equation}
+\frac{\partial \rho^\ast}{\partial t}\;+\;
+\nabla\!\cdot\!\bigl(\rho^\ast \mathbf{v}\bigr)
+\;+\;\Lambda(r,t)\,\rho^\ast \;=\; 0 ,
+\label{eq:fract_continuity}
+\end{equation}
+where  
+
+* $\rho^\ast(r,t)$ – symbolic‑tie density (Sec.~\ref{sec:methods})  
+* $\mathbf{v}=\nabla\Phi$ – entropic potential velocity field  
+* $\Lambda(r,t)$ – **rupture density** (crises, shocks).  
+
+For $\Lambda\!=\!0$ Eq.~\eqref{eq:fract_continuity} reduces to the
+standard Bernoulli continuity (H1).  Non‑zero $\Lambda$ allows symbolic
+entropy to dissipate or condense, enabling the modelling of revolutions,
+pandemics, or institutional collapse.
+\label{tab:symbols}
+\end{table}
+\begin{equation}
+\frac{\partial \rho}{\partial t} + \nabla\!\cdot\!(\rho\,\mathbf{v}) = 0 ,
+\label{eq:continuity}
+\end{equation}
+
+\begin{equation}
+\mathbf{v} = -\alpha \nabla \Phi + \beta\,\mathbf{r},
+\label{eq:bern}
+\end{equation}
+Define the Shannon entropy of degree distribution $p_{k}$ as
+$H = -\sum_{k} p_{k}\log p_{k}$.
+We posit global stability when
+\begin{equation}
+\frac{\mathrm{d}H}{\mathrm{d}t}=0
+\quad\text{and}\quad
+\left.\frac{\mathrm{d}^{2}H}{\mathrm{d}t^{2}}\right|_{\mathrm{crit}}>0 .
+\end{equation}
+Substituting Eq.\,\eqref{eq:bern} yields the critical ratio
+$D_{0}/D_{1} \approx 1.37 \pm 0.05$,
+at which the social layer sizes naturally quantise to
+$5,\,15,\,50,\,150$.
+% ==============================================================

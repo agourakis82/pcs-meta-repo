@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1753411076.2618 "/Users/demetriosagourakis/Documents/Fractal Entropy Project/fractal-entropy-project/paper_model/main.tex" "main.pdf" "main" 1753411076.38463 2
+  "/Users/demetriosagourakis/Documents/Fractal Entropy Project/fractal-entropy-project/paper_model/main.tex" 1753411075.9032 4315 f218e9d09006f8d1d2aa19aebeae91ce ""
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1753099538 3345741 2efadd24ff56614e803c6ff8c0cecbe8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "main.aux" 1753411076.26138 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1753411075.9032 4315 f218e9d09006f8d1d2aa19aebeae91ce ""
+  "mdpi.cls" 0 -1 0 ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  (rewritten before read)

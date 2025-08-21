@@ -1,0 +1,100 @@
+% ======================================================================
+%  Main manuscript file — Entropy Special Issue (MDPI class)
+%  Journal info: https://www.mdpi.com/journal/entropy/instructions
+% ======================================================================
+\documentclass[
+  entropy,             % journal
+  article,             % article type
+  accept,              % leave for final submission; use "submit" while drafting
+  pdftex,              % use pdfLaTeX
+  moreauthors          % = single author + affiliations
+]{mdpi}
+
+% ---------- JOURNAL METADATA ------------------------------------------
+\firstpage{1}
+\volume{x}
+\issuenum{x}
+\articlenumber{0}
+\pubyear{2025}
+\copyrightyear{2025}
+\datereceived{}          % Leave empty for now
+\dateaccepted{}
+\datepublished{}
+
+\hreflink{https://doi.org/10.0000/entropyxxxxxxx} % MDPI will add
+
+% ---------- TITLE, AUTHORS, AFFILIATIONS ------------------------------
+\Title{Fractal Entropy and Bernoulli Dynamics in Symbolic Social Layering}
+
+\Author{
+  Demetrios C.~Agourakis\,\orcidA{}%
+  \href{mailto:d.agourakis@example.org}{d.agourakis@example.org}
+}
+
+\AuthorNames{Demetrios C.~Agourakis}
+\AuthorCitation{Agourakis, D.C. Fractal Entropy and Bernoulli Dynamics in Symbolic Social Layering. \emph{Entropy} \textbf{2025}, \emph{x}, 0.}
+
+\Affiliation{
+  \quad\\
+  \textsuperscript{1}\,\,
+  Independent Researcher, São Paulo\,\,04600‑000, Brazil
+}
+
+\corres{Correspondence: d.agourakis@example.org}
+
+% ---------- ABSTRACT & KEYWORDS ---------------------------------------
+\abstract{
+We introduce a dynamic‑fractal framework for social networks in which the symbolic‑tie density $\rho^\ast(r,t)$ obeys both (i) a Bernoulli‑type flow that yields a stable fractal exponent $D_1 = 1.17 \pm 0.01$, and (ii) a novel fractal continuity equation augmented by a rupture term $\Lambda(r,t)$. Analytical treatment shows that entropy is maximised when $D_0/D_1 \approx 1.37$. Monte‑Carlo experiments ($N = 10^4$, $10^4$ steps, $10 \times 10$ grid in $\alpha$–$\beta$ space) replicate this ratio to within $2\,\%$. When a Gaussian shock of amplitude $\Lambda_0 = 0.8$ is imposed, $D_1$ temporarily collapses to $0.93 \pm 0.04$ and recovers after $\sim$ 6 \% of the time horizon, evidencing measurable \emph{entropic inertia}. The framework blends Hausdorff geometry with information conservation, unifying Dunbar layers (5–15–50–150) and historical crises within a single entropy landscape. It offers bootstrap confidence intervals, analytical–numerical concordance, and predictive power for post‑shock reorganisation in human and digital societies.
+}
+
+\keyword{fractal entropy; continuity equation; Bernoulli social flow; symbolic rupture; Dunbar layers}
+
+% ---------- PACKAGES (only those MDPI does not pre‑load) ---------------
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+% ======================================================================
+\begin{document}
+
+% ---------- MANUSCRIPT BODY -------------------------------------------
+\section{Introduction}\label{sec:intro}
+\input{sections/introduction}
+
+\section{Methods}\label{sec:methods}
+\input{sections/methods}
+
+\section{Results}\label{sec:results}
+\input{sections/results}
+
+\section{Discussion}\label{sec:discussion}
+\input{sections/discussion}
+
+\section{Conclusions}\label{sec:conclusion}
+\input{sections/conclusion}
+
+\section*{Author Contributions}
+Conceptualisation, methodology, software, validation, formal analysis,
+investigation, resources, data curation, writing—original draft
+preparation, writing—review and editing, visualisation, supervision and
+project administration were performed by D.C.A.
+
+\section*{Funding}
+This research received no external funding.
+
+\section*{Data Availability}
+All simulation scripts and data are archived at
+\url{https://doi.org/10.5281/zenodo.XXXXXXX} (Zenodo, version 0.2).
+
+\section*{Conflicts of Interest}
+The author declares no conflict of interest. The funders had no role in
+the design of the study; in the collection, analyses, or interpretation
+of data; in the writing of the manuscript, or in the decision to publish
+the results.
+
+% ---------- REFERENCES -------------------------------------------------
+\bibliographystyle{mdpi}
+\bibliography{refs}
+
+\end{document}
