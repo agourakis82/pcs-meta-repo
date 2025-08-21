@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: If you use this project, please cite as below.
+title: Symbolic Computational Psychiatry (PCS) — Meta-Repository
+authors:
+  - family-names: Agourakis
+    given-names: Demetrios
+    orcid: https://orcid.org/0000-0002-8596-5097
+version: 0.1.0
+date-released: 2025-08-21
+license: CC-BY-4.0
+repository-code: https://github.com/agourakis82/pcs-meta-repo
+keywords: [computational psychiatry, neuroscience, biomaterials, entropy, semantic networks, SWOW]
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16533374
+    description: Module M01 — Foundational Manifesto
+  - type: doi
+    value: 10.5281/zenodo.16541976
+    description: Module M02 — Practical Applicability
+  - type: doi
+    value: 10.5281/zenodo.16550501
+    description: Module M03 — Systematic Review
+  - type: doi
+    value: 10.5281/zenodo.16605353
+    description: Module M04 — Epistemic & Diagnostic Models
+  - type: doi
+    value: 10.5281/zenodo.16890985
+    description: Extended Memory — PhD & Publication Plan (Brazil)
+  - type: doi
+    value: 10.17605/OSF.IO/2AQP7
+    description: OSF — Symbolic Manifolds and Entropic Dynamics (main wiki)

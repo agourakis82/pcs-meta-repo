@@ -1,0 +1,56 @@
+{
+  "title": "Symbolic Computational Psychiatry (PCS) \u2014 Meta-Repository",
+  "upload_type": "software",
+  "description": "<p>Umbrella repository for PCS: code, notebooks, papers, curriculum. Cross-linked to existing Zenodo DOIs and OSF.</p>",
+  "creators": [
+    {
+      "name": "Agourakis, Demetrios",
+      "affiliation": "PUC-SP; Faculdade S\u00e3o Leopoldo Mandic",
+      "orcid": "0000-0002-8596-5097"
+    }
+  ],
+  "keywords": [
+    "computational psychiatry",
+    "neuroscience",
+    "biomaterials",
+    "entropy",
+    "SWOW",
+    "semantic networks"
+  ],
+  "language": "eng",
+  "license": "cc-by-4.0",
+  "related_identifiers": [
+    {
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16533374",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16541976",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16550501",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16605353",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16890985",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "10.17605/OSF.IO/2AQP7",
+      "scheme": "doi"
+    }
+  ],
+  "version": "v0.1.0",
+  "notes": "Enable Zenodo for the GitHub repo; after release, update CITATION.cff with the minted DOI."
+}
