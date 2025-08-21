@@ -5,12 +5,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dante-ev/latex-action@v2
+      - uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            papers/fractal-entropy-project/main.tex
+            
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_2_entropy.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_coda_fractal.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_3_symbiotic_cognition.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section4.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/manifesto.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/conclusion.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/abstract.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/intermezzo1_consciousness.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/results.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section3_patterns_impossible.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/interlude2.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/Introduction.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/interlude1.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_fractal_entropia_cognicao.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/intermezzo2_impossible.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/methods.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_singularity_giftedness.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_epiphany.tex
             papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
-            papers/soc_fractal_ahsd/main.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/fractal_layers.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/symbolic_density.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/glossary.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/epilogue_equation.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/template.tex
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/journalnames.tex
+            papers/fractal-entropy-project/paper_model/sections/discussion.tex
+            papers/fractal-entropy-project/paper_model/sections/abstract.tex
+            papers/fractal-entropy-project/paper_model/sections/results.tex
+            papers/fractal-entropy-project/paper_model/sections/methods.tex
+            papers/fractal-entropy-project/paper_model/main.tex
           working_directory: .
           extra_system_packages: "ghostscript"
           compiler: latexmk
