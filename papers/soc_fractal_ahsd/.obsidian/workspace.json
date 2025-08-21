@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "311aacc0ec32f36c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ffa31a2ea219dc0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9cbc42be1631bfc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "draft_v1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "draft_v1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f15e1cf90d58e3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "42f076d52849d7dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d50051545a20f40",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "7922bfad1aec4484",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "bbce883057a7d378",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6943239433fc18a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5d8c7a265fc7d58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc3418ce2d603a66",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "draft_v1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para draft_v1"
+            }
+          },
+          {
+            "id": "70cbe4cf65b32771",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "draft_v1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para draft_v1"
+            }
+          },
+          {
+            "id": "be3c8abf79e39333",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8ee92c4596bde41a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "draft_v1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de draft_v1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "7d50051545a20f40",
+  "lastOpenFiles": [
+    "refs_fractalidade.bib",
+    "refs/zotero.bib",
+    "refs/pdfs/WCWTLNEL_Gabriel Pinheiro - 2022 - Estimação robusta de modelos cDCC em alta dimensão.pdf",
+    "refs/pdfs/2HIE3G8K_Burgess and Karpinski - 2025 - Curvilinear association of IQ with bipolar risk.pdf",
+    "refs/pdfs/LBDNWEAM_Petz - 2001 - Entropy, von Neumann and the von Neumann entropy.pdf",
+    "refs/pdfs/NJ4V5IQS_Saha et al. - 2024 - Von Neumann entropy as a predictor of polarization in social networks.pdf",
+    "refs/pdfs/XDUD8KE3_Mosing and Veenstra - 2025 - Intelligence and neuroticism in relation to depression.pdf",
+    "refs/pdfs/WLP7888V_Czerwiński et al. - 2024 - Mental health of intellectually gifted individuals Investigating the nonlinearity of the relationsh.pdf",
+    "refs/pdfs/2WLB5EKB_Rogers et al. - 2024 - Patterns of partisan toxicity and engagement.pdf",
+    "refs/pdfs/YADPUWXQ_Hubbard - 2024 - Quantum Law and Economics.pdf",
+    "refs/pdfs/Q8I9SLVM_Smith et al. - 2015 - Childhood IQ and risk of bipolar disorder in adulthood prospective birth cohort study.pdf",
+    "venv/lib/python3.13/site-packages/numpy/random/LICENSE.md",
+    "venv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.md",
+    "README.md",
+    "draft_v1.md",
+    "refs_raw.bib.md",
+    "draft_v0.2.md"
+  ]
+}
