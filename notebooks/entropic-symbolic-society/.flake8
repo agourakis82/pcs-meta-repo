@@ -1,0 +1,15 @@
+# .flake8
+[flake8]
+max-line-length = 120
+extend-ignore =
+    E501,  # comprimento de linha (vamos deixar o Black decidir)
+    W503,  # quebra de linha antes do operador (padrão do Black)
+    B950   # redundante com max-line-length
+select = C,E,F,W,B
+exclude =
+    __backup_*,
+    NHB_Symbolic_Mainfold/__backup_*,
+    .git,
+    .venv,
+    build,
+    dist

@@ -1,0 +1,16 @@
+# Neuro_Integration_RSA — README
+
+## Scope
+RSA outputs linking **semantic similarity (SWOW)** to **neural similarity** (EEG/fMRI). No raw neuro data here.
+
+## Contents (examples)
+- rsa_matrices/*.csv (semantic vs neural, per ROI/whole-brain)
+- rsa_summary_statistics.csv
+- Figures: RSA maps, ROI plots
+
+## Compliance
+No identifiable data. Only **derivatives**. Reference public datasets (OpenNeuro/ZuCo) via DOIs/IDs.
+
+## Relations
+- **References** → OpenNeuro/ZuCo datasets
+- **IsSupplementTo** → Code (Zenodo: 10.5281/zenodo.16752238)

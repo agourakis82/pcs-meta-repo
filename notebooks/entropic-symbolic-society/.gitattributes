@@ -1,0 +1,25 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.gpickle filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+* text=auto eol=lf
+
+# binários / não diffs
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.tar.gz binary
+
+# notebooks: evita diffs gigantes
+*.ipynb -diff
+
+# LaTeX artefatos não entram em conflitos
+*.aux -merge
+*.bbl -merge
+*.blg -merge
+*.fls -merge
+*.fdb_latexmk -merge
+*.out -merge
+*.toc -merge

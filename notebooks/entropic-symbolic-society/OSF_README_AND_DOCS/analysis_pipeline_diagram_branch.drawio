@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" modified="2025-08-08T12:15:00Z" agent="assistant" version="22.0.4" type="device">
+  <diagram id="symbolic-manifold-pipeline-branch" name="Pipeline (Branched)">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Linear left side -->
+        <mxCell id="n1" value="SWOW Raw Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n2" value="Symbolic Metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n3" value="Embeddings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="220" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Branches -->
+        <mxCell id="n4a" value="RSA — fMRI (Narratives)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="920" y="260" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n4b" value="EEG — N400 (Priming)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="920" y="500" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Convergence -->
+        <mxCell id="n5" value="Validation &amp; Robustness" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="380" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n6" value="Outputs (Figures, Tables, CSV)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="380" width="300" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e12" edge="1" parent="1" source="n1" target="n2" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="n2" target="n3" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Split from Embeddings to two branches -->
+        <mxCell id="e3a" edge="1" parent="1" source="n3" target="n4a" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3b" edge="1" parent="1" source="n3" target="n4b" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Merge to Validation -->
+        <mxCell id="ea5" edge="1" parent="1" source="n4a" target="n5" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="eb5" edge="1" parent="1" source="n4b" target="n5" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e56" edge="1" parent="1" source="n5" target="n6" style="endArrow=block;rounded=1;strokeColor=#888;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

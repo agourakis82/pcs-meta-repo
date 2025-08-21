@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, graphicx, hyperref}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\setlength{\parskip}{1em}
+
+\title{Supplementary Information — Symbolic Entropic Manifold Model}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{S1. Extended Mathematical Formalism}
+
+The symbolic manifold $\mathbb{S}$ evolves according to the operator:
+
+\[
+\frac{d\gamma}{dt} = \mathcal{E}(\gamma(t)) =
+\begin{pmatrix}
+    -\eta_\alpha \cdot \alpha(t) + \phi_\alpha(\kappa,E_r) \\
+    \eta_\kappa \cdot (1 - \alpha(t)) + \phi_\kappa(E_r) \\
+    \eta_r \cdot \kappa(t) + \phi_r(\alpha)
+\end{pmatrix}
+\]
+
+Each $\phi_i$ represents a nonlinear interaction function modulating interdependence. $\gamma(t)$ evolves in discrete steps with timestep $\Delta t = 1$:
+
+\[
+\gamma_{t+1} = \gamma_t + \mathcal{E}(\gamma_t)
+\]
+
+These updates simulate recursive symbolic transitions governed by entropic modulation. The $\phi$ functions in each dimension were implemented as saturating nonlinearities with logistic forms: $\phi_x = \frac{a}{1 + \exp(-b \cdot z)}$, where $z$ denotes the interacting variable.
+
+Noise terms $\xi_i$ can be added per dimension to simulate symbolic instability. Further formal expansions are available upon request.
+
+\section*{S2. Simulation Parameters}
+
+\begin{itemize}
+    \item Time steps: $T = 100$
+    \item Initial profiles:
+    \begin{itemize}
+        \item NT: $\alpha=0.9$, $\kappa=0.1$, $E_r=0.05$
+        \item Gifted: $\alpha=0.6$, $\kappa=0.75$, $E_r=0.8$
+        \item 2e: variable $\alpha(t)$, episodic $E_r$
+        \item Collapse-prone: $\alpha=0.5$, $\kappa=0.6$, $E_r=0.6$
+    \end{itemize}
+    \item Damping intervention (for symbolic recovery simulation): $\delta_\alpha = +0.3$, $\delta_E = -0.4$
+    \item Simulation environment: Python 3.11, matplotlib, numpy
+\end{itemize}
+
+\section*{S3. Supplementary Figures}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/Fig_symbolic_regime_map.pdf}
+\caption{Symbolic regime map in the $(\alpha, \kappa)$ plane.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/Fig_heatmap_empirical.pdf}
+\caption{Empirical heatmap of symbolic divergence as a function of $\alpha$ and $\kappa$.}
+\end{figure}
+
+\section*{S4. Simulation Code Snippets}
+
+The core update function is implemented in Python using modular dynamics. An excerpt is shown below:
+
+\begin{verbatim}
+def update_gamma(alpha, kappa, E_r):
+    d_alpha = -eta_alpha * alpha + phi_alpha(kappa, E_r)
+    d_kappa = eta_kappa * (1 - alpha) + phi_kappa(E_r)
+    d_E_r = eta_r * kappa + phi_r(alpha)
+    return alpha + d_alpha, kappa + d_kappa, E_r + d_E_r
+\end{verbatim}
+
+For full code, see GitHub repository: \url{https://github.com/agourakis82/entropic-symbolic-society}
+
+\section*{S5. Variable Definitions and Proxy Suggestions}
+
+\begin{itemize}
+    \item $\alpha$ (Anchoring): coherence, topic stability (proxy: semantic coherence, speech tracking)
+    \item $\kappa$ (Curvature): nonlinear semantic jumps (proxy: word association distances)
+    \item $E_r$ (Recursive entropy): symbolic unpredictability (proxy: Shannon/Markov entropy on text)
+\end{itemize}
+
+\section*{S6. Supplementary References}
+
+[1] Langdon et al. (2023) \\
+[2] Carhart-Harris et al. (2019) \\
+[3] Sizemore et al. (2019) \\
+For full list of supplementary references, see `references.bib` used in the main manuscript. \\
+
+\end{document}

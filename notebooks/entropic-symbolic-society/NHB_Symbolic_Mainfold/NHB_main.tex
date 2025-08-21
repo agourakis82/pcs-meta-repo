@@ -1,0 +1,88 @@
+% ============================================================
+%  NHB_main.tex  —  versão compatível com o template Nature/NHB
+% ============================================================
+
+\documentclass{nature}             % classe Nature
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+% Pacotes opcionais
+\usepackage{authblk}               % se desejar afiliações numeradas
+\usepackage{lineno}                % linha numerada em submissão
+% \linenumbers                     % descomente para submissão
+
+% ---------- Título, Autores, Afiliações ----------
+\title{Symbolic Manifolds and Entropic Dynamics: \\ A Cognitive Topology of Mental States}
+
+\author{Demetrios Chiuratto Agourakis$^{1,2}$}
+
+\begin{document}
+
+\maketitle
+
+\begin{affiliations}
+ \item Faculdade São Leopoldo Mandic, Campinas, SP, Brazil.
+ \item Postgraduate Programme in Biomaterials and Regenerative Medicine, Pontifícia Universidade Católica de São Paulo (PUC‑SP), Brazil.
+\end{affiliations}
+
+% ---------- Abstract (≤150 palavras) ----------
+\begin{abstract}
+We introduce a symbolic-topological framework for cognition in which mental states evolve as trajectories $\gamma(t) = (\alpha, \kappa, E_r)$ on a three-dimensional manifold. Simulations reproduce neurotypical, gifted, twice-exceptional (2e), and collapse-prone regimes, revealing bifurcations and collapse–recovery dynamics. The model unifies entropy-driven brain theories with symbolic cognition and offers testable biomarkers, laying the groundwork for a *topological symbolic psychiatry*.
+\end{abstract}
+% ---------- Seções principais ----------
+\section*{Introduction}
+\input{sections/01_intro.tex}
+
+\section*{Results}
+\subsection*{A symbolic cognitive topology}
+\input{sections/02_model_structure.tex}
+
+\subsection*{Entropic dynamics in simulated manifolds}
+\input{sections/03_simulation_results.tex}
+
+\section*{Discussion}
+\input{sections/04_discussion.tex}
+
+% ---------- Methods ----------
+\section*{Methods}
+\input{sections/05_methods.tex}
+
+% ---------- Data & Code availability ----------
+\section*{Data availability}
+All data (simulation scripts and generated output) are freely available in the public GitHub repository \url{https://github.com/agourakis82/entropic-symbolic-society} and archived under Zenodo DOI \href{https://doi.org/10.5281/zenodo.16682785}{10.5281/zenodo.16682785}.
+
+\section*{Code availability}
+Custom Python code used in the present study is provided alongside the data repository.
+
+% ---------- AI assistance ----------
+\section*{AI assistance}
+This manuscript benefitted from \textbf{OpenAI GPT‑4o / o3‑pro} assistance exclusively for
+(1) language polishing,
+(2) structural organisation of sections, and
+(3) LaTeX syntax verification.
+No content was generated without subsequent critical review and approval by the author.
+The author takes full responsibility for the integrity and accuracy of the work.
+
+% ---------- Acknowledgements ----------
+\section*{Acknowledgements}
+The author thanks the Biomaterials and Regenerative Medicine graduate community at PUC‑SP for valuable feedback, and acknowledges Overleaf Premium and Zotero Better BibTeX for infrastructure support.
+
+% ---------- Author contributions ----------
+\section*{Author contributions}
+D.C.A. conceived the study, developed the theoretical framework, performed simulations, analysed the results and wrote the manuscript.
+
+% ---------- Competing interests ----------
+\section*{Competing interests}
+The author declares no competing interests.
+
+% ---------- References ----------
+\bibliographystyle{naturemag}      % estilo Nature
+\bibliography{references}
+
+% ---------- Extended Data / Supplementary ----------
+% Use "extended data" figures/tables if NHB requests.
+% \begin{extendeddatafigure}
+% ...
+% \end{extendeddatafigure}
+
+\end{document}

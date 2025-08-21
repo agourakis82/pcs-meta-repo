@@ -1,0 +1,6 @@
+{
+  "n_clusters": 18,
+  "silhouette": 0.8287634730504838,
+  "method": "kmeans",
+  "seed": 42
+}

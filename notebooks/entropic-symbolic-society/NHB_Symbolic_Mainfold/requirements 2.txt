@@ -1,0 +1,29 @@
+# Core numerics & data
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# ML / metrics / clustering
+scikit-learn==1.5.1
+
+# Graphs
+networkx==3.3
+
+# Visualization
+matplotlib==3.9.0
+
+# Dimensionality reduction
+umap-learn==0.5.6
+pynndescent==0.5.12
+numba==0.59.1
+llvmlite==0.42.0
+
+
+# Utilities
+requests==2.32.3
+tqdm==4.66.4
+
+# Jupyter toolchain
+jupyterlab==4.2.3
+nbformat==5.10.4
+nbconvert==7.16.4

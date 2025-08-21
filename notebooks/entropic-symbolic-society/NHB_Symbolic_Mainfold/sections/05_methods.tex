@@ -1,0 +1,44 @@
+% 05_methods.tex  — methods with stability analysis & glossary added
+\section*{Methods}
+
+% Existing modelling sections here ...
+
+\subsection*{Formal Stability Analysis}
+To characterise the system's attractor structure, we derived the equilibrium points $(\alpha^{\ast},\kappa^{\ast},E_r^{\ast})$ by solving Eqs.~1–3 for $\dot{\alpha}=\dot{\kappa}=\dot{E}_r=0$.
+The Jacobian of the deterministic system evaluated at equilibrium is
+\[
+\mathbf{J}=
+\begin{pmatrix}
+-\eta_{\alpha}-K_{\kappa}\kappa^{\ast}-3\gamma_{\alpha}{\alpha^{\ast}}^{2} &
+-K_{\kappa}\alpha^{\ast} &
+\displaystyle\frac{K_E\theta_E}{(\theta_E+E_r^{\ast})^{2}}
+\\
+U &
+a-\eta_{\kappa}-3b{\kappa^{\ast}}^{2} &
+-V
+\\
+-X &
+-Y &
+-\eta_{r}
+\end{pmatrix}.
+\]
+A fixed point is locally stable when $\Re\lambda_i<0$ for all eigenvalues $\lambda_i$ of $\mathbf{J}$.
+Numerically, with default parameters (Extended Data Table 1) the neurotypical equilibria have $\lambda\approx\{-1.16\pm0.02i,-1.00\}$, confirming spiral stability, whereas collapse‑prone states possess one positive real eigenvalue ($\lambda_{1}\approx0.07$), acting as saddles.
+
+\subsection*{Bifurcation with hysteresis}
+Varying the basal entropic drive $W$ uncovers a saddle‑node bifurcation with hysteresis (Fig.~\ref{fig:bifurcation-hyst}). Increasing $W$ past $W_{\mathrm{up}}\approx1.1$ collapses $\alpha$, whereas recovery occurs only when $W$ drops below $W_{\mathrm{down}}\approx0.7$.
+
+% Glossary box
+\begin{table}[t]
+\caption{\textbf{Glossary of key terms.}}
+\label{tab:glossary}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{p{3cm}p{12cm}}
+\textbf{Symbol / term} & \textbf{Definition} \\ \hline
+$\alpha$ & Anchoring coefficient; semantic coherence of thought. \\
+$\kappa$ & Symbolic curvature; divergence of associative thought. \\
+$E_r$ & Recursive entropy; unpredictability / novelty of cognitive flow. \\
+Symbolic manifold & 3‑D state‑space $(\alpha,\kappa,E_r)$ for cognition. \\
+Topotype & Metastable attractor regime in the manifold. \\ \hline
+\end{tabular}
+\end{table}

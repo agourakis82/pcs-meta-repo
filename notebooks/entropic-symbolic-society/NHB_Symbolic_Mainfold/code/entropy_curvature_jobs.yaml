@@ -1,0 +1,8 @@
+# entropy_curvature_jobs.yaml
+# entropy_curvature_jobs.yaml
+jobs:
+  - graph: NHB_Symbolic_Mainfold/data/word_network.graphml
+    regime: integrated
+    beta: [1.0]
+    curv_undirected: false
+    out: entropy_curvature_integrated.csv

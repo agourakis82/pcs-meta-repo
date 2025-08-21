@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Symbolic Manifolds and Entropic Dynamics: A Cognitive Topology of Mental States"
+version: "v1.6"
+doi: "10.5281/zenodo.16783257"
+date-released: "2025-08-08"
+authors:
+  - family-names: "Agourakis"
+    given-names: "Demetrios"
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # (se tiver)
+repository-code: "https://github.com/agourakis82/entropic-symbolic-society"
+license: "MIT"
+keywords:
+  - Cognitive Science
+  - Neuroscience
+  - Psycholinguistics
+  - Semantic Networks
+  - RSA
+  - fMRI
+  - EEG
+  - UMAP
+  - Entropy

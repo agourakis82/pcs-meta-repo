@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, chore/*, feat/*, fix/* ]
+  pull_request:
+
+jobs:
+  lint-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pre-commit
+        run: |
+          pip install --upgrade pip
+          pip install pre-commit
+          pre-commit install
+          pre-commit run --all-files
+
+      - name: Install TeX Live (basic)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+
+      - name: Build figures (headless)
+        run: |
+          python NHB_Symbolic_Mainfold/code/plot_symbolic_regimes_map.py --outdir figs || true
+          # Adicione aqui outros scripts de figura quando quiser
+
+      - name: Sync figures to manuscript dir
+        run: |
+          mkdir -p Manuscripts/Scientific_Reports_v1.6/figures
+          rsync -av --delete figs/ Manuscripts/Scientific_Reports_v1.6/figures/ || true
+          rsync -av --delete NHB_Symbolic_Mainfold/code/figs_final/ Manuscripts/Scientific_Reports_v1.6/figures/ || true
+
+      - name: Build PDF
+        working-directory: Manuscripts/Scientific_Reports_v1.6
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -f Main_sr.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: manuscript-pdf
+          path: Manuscripts/Scientific_Reports_v1.6/Main_sr.pdf

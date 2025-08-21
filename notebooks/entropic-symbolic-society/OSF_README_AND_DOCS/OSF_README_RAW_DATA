@@ -1,0 +1,27 @@
+# Raw_Data_SWOW — README
+
+## Scope
+This component hosts **raw SWOW files** required to reproduce the symbolic manifold pipeline.
+
+## Contents (examples)
+- SWOW-EN.complete.20180827.csv
+- cueStats.SWOW-EN.R123.20180827.csv
+- responseStats.SWOW-EN.20180827.csv
+- strength.SWOW-EN.R1.20180827.csv
+
+## Provenance
+Source: Small World of Words (SWOW) project. Cite appropriately per SWOW’s license/policies.
+
+## License
+Unless otherwise noted, this component is released under **CC BY 4.0** (data/documents).
+
+## Integrity
+- CHECKSUMS.sha256 — SHA256 for all files in this component.
+- MANIFEST.csv — path,size,sha256,source,generated_by,created_at.
+
+## Relations
+- **IsPartOf** → OSF Project: Symbolic Manifolds & Entropic Dynamics (Project DOI)
+- **IsSupplementTo** → Code (Zenodo: 10.5281/zenodo.16752238)
+
+## Citation
+Agourakis D. *Symbolic Manifolds – Raw SWOW Data (OSF Component)*. OSF; 2025. DOI: <component DOI>.

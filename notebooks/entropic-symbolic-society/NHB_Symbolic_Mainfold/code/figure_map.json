@@ -1,0 +1,10 @@
+{
+  "fig4_translational": "fig4_translational",
+  "Fig_heatmap": "fig2_entropy_curvature",
+  "ext_S3_degree_distribution": "ext_S3_degree_distribution",
+  "Fig_kappa_bifurcation": "ext_S2_stability",
+  "Fig_profiles": "ext_S1_regime_profiles",
+  "Fig_trajectory_3D": "ext_S4_trajectory3D",
+  "Fig_collapse": "ext_S5_collapse",
+  "Fig_collapse_recovery": "ext_S6_collapse_recovery"
+}

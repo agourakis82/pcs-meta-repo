@@ -1,0 +1,12 @@
+# entropy_curvature_jobs_pro.yaml
+jobs:
+  - graph: NHB_Symbolic_Mainfold/data/word_network.graphml
+    regime: integrated
+    beta: [1.0]
+    # Curvatura (rápido): amostra 2000 arestas, projeção não-direcionada
+    no_curvature: false
+    curv_undirected: true
+    curv_sample: 2000
+    ricci_method: OTD   # ou 'approximate' (mais rápido), 'base'
+    seed: 42
+    out: entropy_curvature_integrated_kappa_sampled.csv
