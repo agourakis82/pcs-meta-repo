@@ -29,3 +29,6 @@ identifiers:
   - type: doi
     value: 10.17605/OSF.IO/2AQP7
     description: OSF — Symbolic Manifolds and Entropic Dynamics (main wiki)
+  - type: doi
+    value: 10.5281/zenodo.16921952
+    description: PCS Meta-Repository — release v0.2.0
