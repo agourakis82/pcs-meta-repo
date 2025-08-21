@@ -1,0 +1,96 @@
+diff --git a/template.tex b/main.tex
+similarity index 100%
+rename from template.tex
+rename to main.tex
+diff --git a/.gitignore b/.gitignore
+index e69de29..c13ef3a 100644
+--- a/.gitignore
++++ b/.gitignore
+@@
++#–– LaTeX intermediários –––––––––––––
++*.aux
++*.bbl
++*.blg
++*.fls
++*.fdb_latexmk
++*.log
++*.out
++*.toc
++*.synctex.gz
++*.xdv
++
++#–– VS Code ––––––––––––––––––––––––––
++.vscode/
++
++#–– Artefactos Overleaf –––––––––––––
++*.pdfsync
+diff --git a/.github/workflows/latex.yml b/.github/workflows/latex.yml
+new file mode 100644
+--- /dev/null
++++ b/.github/workflows/latex.yml
+@@
++name: Build & Lint LaTeX
++
++on:
++  push:
++    branches: [ mdpi-template-reset ]
++  pull_request:
++
++jobs:
++  build:
++    runs-on: ubuntu-latest
++    steps:
++      - uses: actions/checkout@v4
++      - name: Compile with XeLaTeX
++        uses: xu-cheng/latex-action@v3
++        with:
++          root_file: main.tex
++          latexmk_use_xelatex: true
++      - name: Run ChkTeX
++        run: chktex -q -l en_GB -n30 $(git ls-files '*.tex')
++
++      - name: Run Codespell
++        uses: codespell-project/actions-codespell@v2
++        with:
++          skip: "*.pdf,*.bib"
+diff --git a/main.tex b/main.tex
+index 0123456..89abcd0 100644
+--- a/main.tex
++++ b/main.tex
+@@
+-\documentclass[entropy,article,submit]{Definitions/mdpi}
++\documentclass[entropy,article,submit,moreauthors,english]{Definitions/mdpi}
++
++\usepackage[british]{babel}
++\usepackage{csquotes}
++
++\newcommand{\epigraph}[2]{\begin{flushright}\textit{#1}\\—\,#2\end{flushright}}
++
++\Title{The Fractal Nature of an Entropically‑Driven Society}
++\Author{Demetrios Agourakis $^{1}$\orcidA{}}
++\AuthorNames{Demetrios Agourakis}
++\corres{Correspondence: you@domain; Tel.: +55‑xx‑xxxx‑xxxx}
++
++\abstract{%
++\textbf{Background:} Macroscopic social phenomena—imperial cycles, market crashes and urban hierarchies—display scale‑invariant regularities. I contend that human collectives form a \emph{fractal, entropically driven system}.%
++\textbf{Methods:} A symbolic Schrödinger equation with an ideological‑inertia Hamiltonian is solved to obtain a closed‑form fractal dimension, validated via Monte‑Carlo simulations and two centuries of census data.%
++\textbf{Results:} The model yields a universal exponent \(D = 1.58 \pm 0.03\) and a bifurcation coefficient \(\mathcal{R}_{\mathrm{crit}}\!\approx\!1.7\) that anticipates eighty‑four per cent of documented reorganisations.%
++\textbf{Conclusions:} Entropic constraints alone generate emergent social order, bridging statistical physics, complexity sociology and philosophy of mind.%
++}
++
++\keyword{entropy; fractal geometry; complex systems; social physics; self‑organisation}
++
++\begin{document}
++\input{sections/introduction}
++\input{sections/methods}
++\input{sections/results}
++\input{sections/discussion}
++\input{sections/conclusions}
++
++\authorcontributions{Conceptualisation, D.A.; formal analysis, D.A.; writing—original draft, D.A.; writing—review \& editing, D.A.}
++\funding{No external funding.}
++\dataavailability{Data and code: \url{https://doi.org/10.5281/zenodo.XXXXXXX}.}
++\conflictsofinterest{The author declares no conflict of interest.}
++\acknowledgments{The author thanks ...}
++\bibliography{refs/entropy}
++\end{document}

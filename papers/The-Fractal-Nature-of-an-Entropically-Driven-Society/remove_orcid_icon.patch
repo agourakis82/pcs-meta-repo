@@ -1,0 +1,9 @@
+diff --git a/main.tex b/main.tex
+@@
+-\Author{Demetrios Agourakis $^{1}$\orcidA{}}
++\Author{Demetrios Agourakis $^{1}$\orcidA{}}
++
++%––– Fallback: if the ORCID logo file is missing during CI, disable the icon
++\IfFileExists{Definitions/logo-orcid.pdf}{}{% nothing to do if file exists
++  \renewcommand{\orcidA}{}  % suppress icon to avoid fatal error
++}
