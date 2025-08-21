@@ -1,0 +1,45 @@
+
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.xdv
+*.run.xml
+*.bcf
+
+# Build artifacts
+*.pdf
+*.dvi
+*.ps
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+
+# Overleaf metadata
+output.*
+
+# LaTeX intermediates
+*.aux *.bbl *.blg *.fls *.fdb_latexmk *.log *.out *.toc *.synctex.gz *.xdv
+# Editors
+.vscode/
+# Overleaf
+*.pdfsync
