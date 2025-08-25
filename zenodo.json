@@ -5,10 +5,12 @@
   "creators": [
     {
       "name": "Agourakis, Demetrios",
-      "orcid": "0000-0002-8596-5097"
+      "orcid": "0000-0002-8596-5097",
+      "affiliation": ""
     }
   ],
   "license": "MIT",
+  "notes": "Docs & figures: CC-BY-4.0",
   "keywords": [
     "computational-psychiatry",
     "neuroscience",
@@ -26,6 +28,26 @@
       "relation": "isIdenticalTo",
       "scheme": "doi",
       "identifier": "10.5281/zenodo.16921952"
+    },
+    {
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.16752238"
+    },
+    {
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "identifier": "10.17605/OSF.IO/2AQP7"
+    },
+    {
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.16730036"
+    },
+    {
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.16783257"
     }
   ],
   "language": "en"

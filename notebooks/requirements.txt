@@ -1,0 +1,8 @@
+jupyter
+nbconvert
+numpy
+pandas
+matplotlib
+networkx
+scipy
+scikit-learn
