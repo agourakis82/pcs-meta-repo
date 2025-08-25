@@ -1,17 +1,23 @@
 # Pull Request
 
-## Objetivo
-Descreva o que este PR faz e por quê.
+## Objective
+
+Describe what this PR does and why.
 
 ## Checklist
-- [ ] README atualizado (se aplicável)
-- [ ] CITATION.cff válido (se aplicável)
-- [ ] CHANGELOG atualizado (se aplicável)
-- [ ] Sem credenciais/segredos
-- [ ] Referencia uma issue (ex.: Closes #123)
 
-## Evidências
-Screenshots/logs/artefatos, se houver.
+- [ ] Tests added/updated
+- [ ] `pre-commit` passes
+- [ ] Docs updated (README, etc.)
+- [ ] CITATION.cff valid (if applicable)
+- [ ] CHANGELOG updated (if applicable)
+- [ ] No credentials/secrets
+- [ ] References an issue (e.g., Closes #123)
 
-## Riscos e mitigação
-Curto parágrafo sobre impactos.
+## Evidence
+
+Screenshots/logs/artefacts, if any.
+
+## Risks and mitigation
+
+Short paragraph about impacts.

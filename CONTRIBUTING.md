@@ -1,7 +1,28 @@
 # Contributing
 
+## How to propose changes
+
 1. Open an issue describing context, impact, evidence (English).
 2. Create a feature branch and reference the issue in the PR title.
-3. Ensure reproducibility (fixed seeds, env files, data paths).
-4. Update `CHANGELOG.md` and `meta/CITATION.cff` when applicable.
-5. Licenses: Text under CC BY 4.0; Code under MIT.
+
+## Dev env setup
+
+- Clone the repo and create a virtual environment.
+- `pip install -r requirements.txt`
+- `pre-commit install`
+
+## Style & Lint (pre-commit)
+
+- Run `pre-commit run --files <changed files>`
+- Run tests with `pytest` when applicable.
+
+## DCO / Signed-off-by
+
+- All commits must use `-s/--signoff` to add a `Signed-off-by` line.
+
+## PR checklist
+
+- [ ] Tests added/updated
+- [ ] `pre-commit` passes
+- [ ] Documentation updated
+- [ ] `CHANGELOG.md` updated

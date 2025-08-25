@@ -1,5 +1,14 @@
+---
 name: latex-build
-on: [push, workflow_dispatch]
+'on':
+  push:
+    paths:
+      - '**/*.tex'
+  pull_request:
+    paths:
+      - '**/*.tex'
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,7 +17,6 @@ jobs:
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            
             papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_2_entropy.tex
             papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_coda_fractal.tex
             papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_3_symbiotic_cognition.tex
