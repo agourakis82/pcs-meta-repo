@@ -25,6 +25,7 @@ repos:
         language: node
         types: [markdown]
         additional_dependencies: [markdownlint-cli2@0.11.0]
+        args: ["--config", ".markdownlint-cli2.jsonc"]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.35.1
     hooks:
