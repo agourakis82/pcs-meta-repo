@@ -1,0 +1,28 @@
+{
+  "title": "pcs-meta-repo",
+  "upload_type": "software",
+  "description": "Meta-reposit\u00f3rio do projeto Psiquiatria Computacional\u2011Simb\u00f3lica (PCS).",
+  "creators": [
+    {
+      "name": "Agourakis, Demetrios",
+      "orcid": "0000-0002-8596-5097",
+      "affiliation": "(preencher sua afilia\u00e7\u00e3o atual)"
+    }
+  ],
+  "license": "mit",
+  "version": "0.1.0",
+  "keywords": [
+    "computational-psychiatry",
+    "neuroscience",
+    "nlp",
+    "open-science",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/<owner>/<repo>",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
