@@ -1,9 +1,9 @@
-%  LaTeX support: latex@mdpi.com 
+%  LaTeX support: latex@mdpi.com
 %  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
 
 %=================================================================
 \documentclass[entropy,article,submit,moreauthors,english]{Definitions/mdpi}
-%\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+%\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 % For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
 
 % Below journals will use APA reference format:
@@ -24,7 +24,7 @@
 %---------
 % article
 %---------
-% The default type of manuscript is "article", but can be replaced by: 
+% The default type of manuscript is "article", but can be replaced by:
 % abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial,  giantsinurology, urologyaroundtheworld
 % supfile = supplementary materials
 
@@ -45,9 +45,9 @@
 
 %=================================================================
 % MDPI internal commands - do not modify
-\firstpage{1} 
-\makeatletter 
-\setcounter{page}{\@firstpage} 
+\firstpage{1}
+\makeatletter
+\setcounter{page}{\@firstpage}
 \makeatother
 \pubvolume{1}
 \issuenum{1}
@@ -55,10 +55,10 @@
 \pubyear{2025}
 \copyrightyear{2025}
 %\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
-\datereceived{ } 
+\datereceived{ }
 \daterevised{ } % Comment out if no revised date
-\dateaccepted{ } 
-\datepublished{ } 
+\dateaccepted{ }
+\datepublished{ }
 %\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
 %\dateretracted{} % For retracted papers: "Retracted: XXX" date in the original paper.
 \hreflink{https://doi.org/} % If needed use \linebreak
@@ -95,15 +95,15 @@
 \AuthorNames{Firstname Lastname, Firstname Lastname and Firstname Lastname}
 
 % MDPI internal command: Authors, for citation in the left column, only choose below one of them according to the journal style
-% If this is a Chicago style journal 
-% (arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci): 
+% If this is a Chicago style journal
+% (arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci):
 % Lastname, Firstname, Firstname Lastname, and Firstname Lastname.
 
-% If this is a APA style journal 
-% (admsci, behavsci, businesses, econometrics, economies, education, ejihpe, games, humans, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth): 
+% If this is a APA style journal
+% (admsci, behavsci, businesses, econometrics, economies, education, ejihpe, games, humans, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth):
 % Lastname, F., Lastname, F., \& Lastname, F.
 
-% If this is a ACS style journal (Except for the above Chicago and APA journals, all others are in the ACS format): 
+% If this is a ACS style journal (Except for the above Chicago and APA journals, all others are in the ACS format):
 % Lastname, F.; Lastname, F.; Lastname, F.
 \isAPAStyle{%
        \AuthorCitation{Lastname, F., Lastname, F., \& Lastname, F.}
@@ -124,7 +124,7 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 \corres{Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
 
 % Current address and/or shared authorship
-%\firstnote{Current address: Affiliation.}  
+%\firstnote{Current address: Affiliation.}
 % Current address should not be the same as any items in the Affiliation section.
 
 %\secondnote{These authors contributed equally to this work.}
@@ -134,11 +134,11 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 
 %\conference{} % An extended version of a conference paper
 
-% Abstract (Do not insert blank lines, i.e. \\) 
+% Abstract (Do not insert blank lines, i.e. \\)
 \abstract{A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: place the question addressed in a broad context and highlight the purpose of the study; (2) Methods: describe briefly the main methods or treatments applied; (3) Results: summarize the article's main findings; (4) Conclusions: indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.}
 
 % Keywords
-\keyword{keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)} 
+\keyword{keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)}
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
@@ -198,7 +198,7 @@ The template details the sections that can be used in a manuscript. Note that th
 
 \section{Introduction}
 
-The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper \citep{ref-journal}.  Now citing a book reference \citep{ref-book1,ref-book2} or other reference types \citep{ref-unpublish,ref-url}. Please use the command \citep{ref-proceeding,ref-thesis} for the following MDPI journals, which use author--date citation: Administrative Sciences, Arts, Behavioral Sciences, Businesses, Econometrics, Economies, Education Sciences, European Journal of Investigation in Health, Psychology and Education, Games, Genealogy, Histories, Humanities, Humans, IJFS, Journal of Intelligence, Journalism and Media, JRFM, Languages, Laws, Literature, Psychology International, Publications, Religions, Risks, Social Sciences, Tourism and Hospitality, Youth. 
+The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper \citep{ref-journal}.  Now citing a book reference \citep{ref-book1,ref-book2} or other reference types \citep{ref-unpublish,ref-url}. Please use the command \citep{ref-proceeding,ref-thesis} for the following MDPI journals, which use author--date citation: Administrative Sciences, Arts, Behavioral Sciences, Businesses, Econometrics, Economies, Education Sciences, European Journal of Investigation in Health, Psychology and Education, Games, Genealogy, Histories, Humanities, Humans, IJFS, Journal of Intelligence, Journalism and Media, JRFM, Languages, Laws, Literature, Psychology International, Publications, Religions, Risks, Social Sciences, Tourism and Hospitality, Youth.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
@@ -231,7 +231,7 @@ Bulleted lists look like this:
 
 Numbered lists can be added as follows:
 \begin{enumerate}
-\item	First item; 
+\item	First item;
 \item	Second item;
 \item	Third item.
 \end{enumerate}
@@ -246,10 +246,10 @@ All figures and tables should be cited in the main text as Figure~\ref{fig1}, Ta
 %\isPreprints{\centering}{} % Only used for preprints
 \includegraphics[width=4.0 cm]{Definitions/logo-mdpi}
 \caption{This is a figure. Schemes follow the same formatting.\label{fig1}}
-\end{figure}   
+\end{figure}
 \unskip
 
-\begin{table}[H] 
+\begin{table}[H]
 %\small % Change table font size
 \caption{This is a table caption. Tables should be placed in the main text near to the first time they are~cited.\label{tab1}}
 %\isPreprints{\centering}{} % Only used for preprints
@@ -283,7 +283,7 @@ The text continues here (Figure~\ref{fig2} and Table~\ref{tab2}).
 \end{adjustwidth}
 %} % If the paper is ``preprints'', please uncomment this parenthesis.
 \caption{This is a wide figure. Schemes follow the same formatting. If there are multiple panels, they should be listed as: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. (\textbf{c}) Description of what is contained in the third panel. (\textbf{d}) Description of what is contained in the fourth panel. Figures should be placed in the main text near to the first time they are cited. A caption on a single line should be centered.\label{fig2}}
-\end{figure} 
+\end{figure}
 
 \begin{table}[H]
 \caption{This is a wide table.\label{tab2}}
@@ -398,7 +398,7 @@ This section is not mandatory, but can be added to the manuscript if the discuss
 This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{6pt} 
+\vspace{6pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% optional
@@ -438,7 +438,7 @@ This section is not mandatory, but may be added if there are patents resulting f
 
 Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.}
 
-\dataavailability{We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Where no new data were created, or where data is unavailable due to privacy or ethical restrictions, a statement is still required. Suggested Data Availability Statements are available in section ``MDPI Research Data Policies'' at \url{https://www.mdpi.com/ethics}.} 
+\dataavailability{We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Where no new data were created, or where data is unavailable due to privacy or ethical restrictions, a statement is still required. Suggested Data Availability Statements are available in section ``MDPI Research Data Policies'' at \url{https://www.mdpi.com/ethics}.}
 
 % Only for journal Drones
 %\durcstatement{Current research is limited to the [please insert a specific academic field, e.g., XXX], which is beneficial [share benefits and/or primary use] and does not pose a threat to public health or national security. Authors acknowledge the dual-use potential of the research involving xxx and confirm that all necessary precautions have been taken to prevent potential misuse. As an ethical responsibility, authors strictly adhere to relevant national and international laws about DURC. Authors advocate for responsible deployment, ethical considerations, regulatory compliance, and transparent reporting to mitigate misuse risks and foster beneficial outcomes.}
@@ -454,7 +454,7 @@ Written informed consent for publication must be obtained from participating pat
 
 \acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments). Where GenAI has been used for purposes such as generating text, data, or graphics, or for study design, data collection, analysis, or interpretation of data, please add “During the preparation of this manuscript/study, the author(s) used [tool name, version information] for the purposes of [description of use]. The authors have reviewed and edited the output and take full responsibility for the content of this publication.”}
 
-\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflicts of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results''.} 
+\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflicts of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results''.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Optional
@@ -466,7 +466,7 @@ Written informed consent for publication must be obtained from participating pat
 The following abbreviations are used in this manuscript:
 \\
 
-\noindent 
+\noindent
 \begin{tabular}{@{}ll}
 MDPI & Multidisciplinary Digital Publishing Institute\\
 DOAJ & Directory of open access journals\\
@@ -484,7 +484,7 @@ LD & Linear dichroism
 \subsection[\appendixname~\thesubsection]{}
 The appendix is an optional section that can contain details and data supplemental to the main text---for example, explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown; figures of replicates for experiments of which representative data are shown in the main text can be added here if brief, or as Supplementary Data. Mathematical proofs of results not central to the paper can be added as an appendix.
 
-\begin{table}[H] 
+\begin{table}[H]
 \caption{This is a table caption.\label{tab5}}
 %\newcolumntype{C}{>{\centering\arraybackslash}X}
 \begin{tabularx}{\textwidth}{CCC}
@@ -509,7 +509,7 @@ All appendix sections must be cited in the main text. In the appendices, Figures
 \reftitle{References}
 
 % Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
-% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here.
 
 %=====================================
 % References, variant A: external bibliography
@@ -579,14 +579,14 @@ Harwood, John. 2008. Title of the cited article. Available online: URL (accessed
 \begin{thebibliography}{999}
 % Reference 1
 \bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020a}}]{ref-journal}
-Azikiwe, H., \& Bello, A. (2020a). Title of the cited article. \textit{Journal Title}, \textit{Volume}(Issue), 
+Azikiwe, H., \& Bello, A. (2020a). Title of the cited article. \textit{Journal Title}, \textit{Volume}(Issue),
 Firstpage--Lastpage/Article Number.
 % Reference 2
 \bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020b}}]{ref-book1}
 Azikiwe, H., \& Bello, A. (2020b). \textit{Book title}. Publisher Name.
 % Reference 3
 \bibitem[Davison(1623/2019)]{ref-book2}
-Davison, T. E. (2019). Title of the book chapter. In A. A. Editor (Ed.), \textit{Title of the book: Subtitle} 
+Davison, T. E. (2019). Title of the book chapter. In A. A. Editor (Ed.), \textit{Title of the book: Subtitle}
 (pp. Firstpage--Lastpage). Publisher Name. (Original work published 1623) (Optional).
 % Reference 4
 \bibitem[Fistek et al.(2017)]{ref-proceeding}

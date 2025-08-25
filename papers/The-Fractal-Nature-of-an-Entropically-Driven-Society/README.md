@@ -1,8 +1,8 @@
-# The Fractal Nature of an Entropically-Driven Society  
+# The Fractal Nature of an Entropically-Driven Society
 *A Symbolic-Structural Hypothesis of Conscious Organisation*
 ![LaTeX CI](https://github.com/agourakis82/The-Fractal-Nature-of-an-Entropically-Driven-Society/actions/workflows/latex.yml/badge.svg)
-Author: **Demetrios Chiuratto Agourakis**  
-Format: LaTeX (Overleaf + GitHub integrated)  
+Author: **Demetrios Chiuratto Agourakis**
+Format: LaTeX (Overleaf + GitHub integrated)
 Status: 🧠 In submission preparation (2025)
 
 ---
@@ -15,29 +15,29 @@ This transdisciplinary essay explores the entropic and fractal logic underlying 
 
 ## 📂 Structure
 
-- `main.tex` – master LaTeX file, includes all sections and appendices  
-- `refs.bib` – complete bibliography in BibTeX format  
-- `sections/` – modular files for each major section  
-- `appendices/` – glossary and symbolic-visual maps  
-- `figs/` – placeholder diagrams for PDF visual integration  
+- `main.tex` – master LaTeX file, includes all sections and appendices
+- `refs.bib` – complete bibliography in BibTeX format
+- `sections/` – modular files for each major section
+- `appendices/` – glossary and symbolic-visual maps
+- `figs/` – placeholder diagrams for PDF visual integration
 
 ---
 
 ## 🧪 Tools and Environment
 
-- Compiled via [Overleaf](https://www.overleaf.com/)  
-- Version-controlled via [GitHub](https://github.com/agourakis82/The-Fractal-Nature-of-an-Entropically-Driven-Society)  
-- Compatible with `pdflatex`, `xelatex` or `lualatex`  
+- Compiled via [Overleaf](https://www.overleaf.com/)
+- Version-controlled via [GitHub](https://github.com/agourakis82/The-Fractal-Nature-of-an-Entropically-Driven-Society)
+- Compatible with `pdflatex`, `xelatex` or `lualatex`
 
 ---
 
 ## 🔍 Topics and References
 
-- Fractal Geometry \cite{mandelbrot1982}  
-- Entropy and Organisation \cite{prigogine1984, england2013}  
-- Symbolic Cognition and the Noosphere \cite{teilhard1955}  
-- Giftedness as Cognitive Singularity \cite{morin2008, bateson1972}  
-- Schrödinger's Equation as Social Metaphor \cite{schrodinger1944, deacon2012}  
+- Fractal Geometry \cite{mandelbrot1982}
+- Entropy and Organisation \cite{prigogine1984, england2013}
+- Symbolic Cognition and the Noosphere \cite{teilhard1955}
+- Giftedness as Cognitive Singularity \cite{morin2008, bateson1972}
+- Schrödinger's Equation as Social Metaphor \cite{schrodinger1944, deacon2012}
 
 ---
 

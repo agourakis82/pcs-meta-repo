@@ -4,9 +4,9 @@
 %% The original source files were:
 %%
 %% apacite.dtx  (with options: `bibstyle')
-%% 
+%%
 %% This is a generated file.
-%% 
+%%
 %% Copyright (C) 1994-2013 Erik Meijer and any individual authors listed
 %% elsewhere in this file.
 
@@ -608,7 +608,7 @@ FUNCTION {output.dot.end.block}
     %
 FUNCTION {output.new.block}
 { output.end.block
-  "\newblock " write$ 
+  "\newblock " write$
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2265,7 +2265,7 @@ FUNCTION {add.name.index}
 {   %
     %
   make.index
-    { "" * write$ 
+    { "" * write$
         % Check for corporate author
       field is.bibcorporate
         { "\corporateAX{" }
@@ -2275,7 +2275,7 @@ FUNCTION {add.name.index}
       field nameptr sort.name.format  format.name$  sortify  write$ newline$
       "@"  write$
       field nameptr format.index.name
-      "}"  *   write$ 
+      "}"  *   write$
     }
     { "" * write$  }
   if$
@@ -2458,17 +2458,17 @@ FUNCTION {make.author.editor.cite.label}
             % Use title or other description as citation label.
             %
           make.title.cite.label
-          "}{"  write$ 
+          "}{"  write$
           make.title.cite.label
         }
         { cite.num.names.full   editor  make.name.cite.label
-          "}{"  write$ 
+          "}{"  write$
           cite.num.names.short  editor  make.name.cite.label
         }
       if$
     }
     { cite.num.names.full   author  make.name.cite.label
-      "}{"  write$ 
+      "}{"  write$
       cite.num.names.short  author  make.name.cite.label
     }
   if$
@@ -2483,11 +2483,11 @@ FUNCTION {make.author.cite.label}
         % Use title or other description as citation label.
         %
       make.title.cite.label
-      "}{"  write$ 
+      "}{"  write$
       make.title.cite.label
     }
     { cite.num.names.full   author  make.name.cite.label
-      "}{"  write$ 
+      "}{"  write$
       cite.num.names.short  author  make.name.cite.label
     }
   if$
@@ -2547,7 +2547,7 @@ FUNCTION {protect.year}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 FUNCTION {make.definitive.year.label} % MDPI Modified
-{ "{" 
+{ "{"
   originalyear empty$
     { protect.year }
     { originalyear "\bibnodate" =    % date of original publication unknown
@@ -2593,7 +2593,7 @@ FUNCTION {make.cite.labels}
     'skip$
   if$
     %
-  "\bibitem[\protect\citeauthoryear{" write$ 
+  "\bibitem[\protect\citeauthoryear{" write$
     %
     % When key or firstkey is available, this takes precedence.
     %
@@ -2621,7 +2621,7 @@ FUNCTION {make.cite.labels}
             % Both full and short labels are key.
             %
           key    write$
-          "}{"  write$ 
+          "}{"  write$
           key    write$
         }
         {   % No key or firstkey, so find out which field
@@ -2640,14 +2640,14 @@ FUNCTION {make.cite.labels}
       if$
     }
   if$
-  "}{"  write$ 
+  "}{"  write$
     %
     % Make year label that's used for citations
     %
   make.definitive.year.label  write$
-  "}]{"                      write$ 
+  "}]{"                      write$
   cite$                       write$
-  "} "                        write$ 
+  "} "                        write$
   % author.year.sort.label      write$ % for testing purposes
   % year.label                  write$ % for testing purposes
     %

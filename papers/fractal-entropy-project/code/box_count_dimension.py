@@ -1,10 +1,12 @@
 import numpy as np
 
+
 # ──────────────────────────────────────────────────────────────────────
 def _shannon_entropy(freq):
     """Shannon entropy for a normalized histogram (freq ≥ 0, sum = 1)."""
     p = freq[freq > 0]
     return -np.sum(p * np.log(p))
+
 
 # ──────────────────────────────────────────────────────────────────────
 def box_count_dimension(G, q: float = 1, bootstrap: int = 200):
@@ -30,7 +32,7 @@ def box_count_dimension(G, q: float = 1, bootstrap: int = 200):
             S.append(_shannon_entropy(hist))
         else:
             p = hist[hist > 0]
-            S.append(np.log(np.sum(p ** q)) / (1 - q))
+            S.append(np.log(np.sum(p**q)) / (1 - q))
 
     # regressão linear: S = –D_q · log ε   ⇒   slope = –D_q
     slope, _ = np.polyfit(np.log(eps), S, deg=1)
@@ -51,7 +53,7 @@ def box_count_dimension(G, q: float = 1, bootstrap: int = 200):
                 S_b.append(_shannon_entropy(h))
             else:
                 p = h[h > 0]
-                S_b.append(np.log(np.sum(p ** q)) / (1 - q))
+                S_b.append(np.log(np.sum(p**q)) / (1 - q))
         slope_b, _ = np.polyfit(np.log(eps), S_b, deg=1)
         boots.append(-slope_b)
 

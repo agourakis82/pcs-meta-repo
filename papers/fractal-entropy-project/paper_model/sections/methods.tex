@@ -4,7 +4,7 @@
 \section{Methods}\label{sec:methods}
 
 \subsection{Generalised Bernoulli social equation}\label{sec:bernoulli}
-We model the density of interaction ties $\rho(\mathbf{r},t)$ in an $n$‑dimensional social phase space.  
+We model the density of interaction ties $\rho(\mathbf{r},t)$ in an $n$‑dimensional social phase space.
 Inspired by incompressible fluid flow, we propose the continuity‐like equation
 \begin{equation}
 \frac{\partial \rho}{\partial t} + \nabla\!\cdot\!(\rho\,\mathbf{v}) = 0 ,
@@ -13,8 +13,8 @@ with velocity field
 \begin{equation}
 \mathbf{v} = -\alpha \nabla \Phi + \beta\,\mathbf{r},
 \end{equation}
-where $\Phi = \ln\rho$ is a potential akin to information pressure,  
-$\alpha>0$ modulates entropic attraction, and $\beta>0$ encodes centrifugal social cost.  
+where $\Phi = \ln\rho$ is a potential akin to information pressure,
+$\alpha>0$ modulates entropic attraction, and $\beta>0$ encodes centrifugal social cost.
 Combining both gives the **generalised Bernoulli equation**
 \begin{equation}
 \frac{\partial \Phi}{\partial t} + \tfrac{\alpha}{2}\bigl|\nabla\Phi\bigr|^{2}
@@ -23,9 +23,9 @@ Combining both gives the **generalised Bernoulli equation**
 
 
 \subsection{Fractal dimension estimators}\label{sec:fractal}
-At steady state ($\partial_t\Phi=0$), the density $\rho^\ast$ admits a scaling form  
-$\rho^\ast(r) \propto r^{-(D_{1}+1)}$ for $r$ in the mesoscopic range.  
-We estimate the capacity ($D_{0}$), information ($D_{1}$) and correlation ($D_{2}$)  
+At steady state ($\partial_t\Phi=0$), the density $\rho^\ast$ admits a scaling form
+$\rho^\ast(r) \propto r^{-(D_{1}+1)}$ for $r$ in the mesoscopic range.
+We estimate the capacity ($D_{0}$), information ($D_{1}$) and correlation ($D_{2}$)
 dimensions via a standard box‐counting scheme\cite{falconer2014fractal}.
 \begin{equation}
 D_{q} =
@@ -60,11 +60,11 @@ The **generalised continuity equation** reads
 \;+\;\Lambda(r,t)\,\rho^\ast \;=\; 0 ,
 \label{eq:fract_continuity}
 \end{equation}
-where  
+where
 
-* $\rho^\ast(r,t)$ – symbolic‑tie density (Sec.~\ref{sec:methods})  
-* $\mathbf{v}=\nabla\Phi$ – entropic potential velocity field  
-* $\Lambda(r,t)$ – **rupture density** (crises, shocks).  
+* $\rho^\ast(r,t)$ – symbolic‑tie density (Sec.~\ref{sec:methods})
+* $\mathbf{v}=\nabla\Phi$ – entropic potential velocity field
+* $\Lambda(r,t)$ – **rupture density** (crises, shocks).
 
 For $\Lambda\!=\!0$ Eq.~\eqref{eq:fract_continuity} reduces to the
 standard Bernoulli continuity (H1).  Non‑zero $\Lambda$ allows symbolic

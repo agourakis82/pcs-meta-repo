@@ -4,13 +4,22 @@ oa_check.py  –  consulta disponibilidade Open Access no Unpaywall
 uso:  python oa_check.py refs_raw.bib  --email you@example.com
 """
 
-import argparse, csv, time, requests, bibtexparser, pandas as pd
+import argparse
+import csv
+import time
+
+import bibtexparser
+import pandas as pd
+import requests
+
 API_BASE = "https://api.unpaywall.org/v2/"
+
 
 def load_dois(bib_path: str) -> list[str]:
     with open(bib_path, encoding="utf-8") as fh:
         bib_db = bibtexparser.load(fh)
     return [entry["doi"].lower() for entry in bib_db.entries if "doi" in entry]
+
 
 def query_unpaywall(doi: str, email: str) -> dict:
     url = f"{API_BASE}{doi}"
@@ -29,6 +38,7 @@ def query_unpaywall(doi: str, email: str) -> dict:
         "published_date": data.get("published_date"),
     }
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("bibfile", help="BibTeX file with DOI fields")
@@ -46,6 +56,7 @@ def main():
     out_csv = "oa_status.csv"
     df.to_csv(out_csv, index=False)
     print(f"✓ Resultado salvo em {out_csv}")
+
 
 if __name__ == "__main__":
     main()
