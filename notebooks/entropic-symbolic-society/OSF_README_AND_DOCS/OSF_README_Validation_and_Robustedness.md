@@ -1,6 +1,7 @@
 # Validation_and_Robustness — README
 
 ## Scope
+
 Outputs of **Notebooks 07–10**: community stability, clustering metrics (Silhouette, Calinski–Harabasz, Davies–Bouldin), perturbations, null models.
 
 ## Contents (examples)
@@ -14,6 +15,7 @@ Outputs of **Notebooks 07–10**: community stability, clustering metrics (Silho
 - Logs: seeds/params
 
 ## License
+
 CC BY 4.0.
 
 ## Relations

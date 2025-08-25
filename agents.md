@@ -4,6 +4,7 @@
 > Quando quiser ativar automações “agent”, descreva-as abaixo.
 
 ## repo-hygiene (manual)
+
 - scope: /
 - steps:
   - pre-commit run --all-files
@@ -11,6 +12,7 @@
   - yamllint -s .
 
 ## ci-latex (opt-in)
+
 - requires: papers/*/Definitions/mdpi.cls
 - steps:
   - export TEXINPUTS="papers/*/Definitions:.:$TEXINPUTS"
