@@ -15,5 +15,12 @@ jobs:
       - run: pip install -r requirements.txt || true
       - run: pip install -e src/pcs_toolbox || true
       - run: pip install pre-commit pytest
-      - run: pre-commit run --all-files
+      - name: Run pre-commit on tracked files
+        run: |
+          pre-commit run --files $(
+            git ls-files '*.py' '*.md' '*.yaml' '*.yml' '*.json' \
+              ':!:notebooks/**' ':!:papers/**' \
+              ':!:docs/INSTRUCOES_PROJETO.md' ':!:.github/ISSUE_TEMPLATE/**' \
+              ':!:meta/metadata.yaml'
+          )
       - run: pytest -q

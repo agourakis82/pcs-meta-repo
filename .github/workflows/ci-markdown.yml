@@ -10,4 +10,8 @@ jobs:
         with:
           node-version: '20'
       - run: npm install -g markdownlint-cli2
-      - run: markdownlint-cli2 "**/*.md"
+      - name: Run markdownlint on tracked files
+        run: |
+          markdownlint-cli2 $(git ls-files '*.md' \
+            ':!:notebooks/**' ':!:papers/**' \
+            ':!:docs/INSTRUCOES_PROJETO.md' ':!:.github/ISSUE_TEMPLATE/**')

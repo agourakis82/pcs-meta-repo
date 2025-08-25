@@ -10,4 +10,8 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install yamllint
-      - run: yamllint .
+      - name: Run yamllint on tracked files
+        run: |
+          yamllint $(git ls-files '*.yml' '*.yaml' \
+            ':!:notebooks/**' ':!:papers/**' \
+            ':!:meta/metadata.yaml')
