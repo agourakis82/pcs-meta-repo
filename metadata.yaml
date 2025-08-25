@@ -2,8 +2,9 @@
 title: "pcs-meta-repo"
 description: >
   Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS).
-version: "0.2.1"
+version: "v2025.08.23"
 doi: "10.5281/zenodo.16921952"
+notes: "Atualizar DOI após release"
 repository_url: "https://github.com/agourakis82/pcs-meta-repo"
 authors:
   - name: "Demetrios Agourakis"

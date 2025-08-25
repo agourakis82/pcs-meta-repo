@@ -4,15 +4,20 @@ about: Sugerir uma melhoria ou nova funcionalidade
 title: "[FEAT] "
 labels: ["enhancement"]
 assignees: []
+---
 
-Problema/objetivo
+## Problema/objetivo
+
 ...
 
-Proposta
+## Proposta
+
 ...
 
-Alternativas consideradas
+## Alternativas consideradas
+
 ...
 
-Impacto e riscos
+## Impacto e riscos
+
 ...
