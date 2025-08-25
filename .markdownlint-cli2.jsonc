@@ -1,23 +1,30 @@
 {
   "config": {
-    "MD007": {"indent": 2},
+    "default": true,
+
+    "MD007": { "indent": 2 },
     "MD010": false,
-    "MD012": {"maximum": 2},
-    "MD013": false,
-    "MD026": false,
-    "MD034": false
+    "MD012": { "maximum": 2 },
+
+    "MD013": false,   // line-length (temporariamente desativado)
+    "MD025": false,   // múltiplos H1 (longos manuscritos)
+    "MD029": false,   // prefixo de listas numeradas
+    "MD024": false,   // headings duplicados
+    "MD001": false,   // incremento de heading
+    "MD033": false,   // inline HTML
+    "MD041": false,   // primeira linha deve ser H1
+
+    "MD022": { "lines_above": 1, "lines_below": 1 },
+    "MD032": true,
+    "MD040": true     // manter exigência de linguagem em code fences (vamos auto-fixar)
   },
   "ignores": [
     "**/.git/**",
     "**/node_modules/**",
-    "__broken__/**",
     ".attic/**",
     ".safety/**",
-    "docs/**",
-    "notebooks/**",
-    "papers/**",
     "**/* 2.*",
-    "**/*.bak*",
+    "**/*.bak.*",
     "**/CHANGELOG_PATCH_*",
     "**/METADATA_ZENODO_PATCH_*",
     "**/README_PATCH*.md"

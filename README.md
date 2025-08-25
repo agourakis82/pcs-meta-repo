@@ -14,7 +14,7 @@ Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS).
 git clone https://github.com/agourakis82/pcs-meta-repo
 cd pcs-meta-repo
 pip install -r requirements.txt
-```
+```text
 
 ## Cite this work
 

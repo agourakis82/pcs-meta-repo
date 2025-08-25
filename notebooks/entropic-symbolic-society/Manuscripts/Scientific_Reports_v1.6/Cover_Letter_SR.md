@@ -1,4 +1,4 @@
-**Cover Letter – Scientific Reports**
+# Cover Letter – Scientific Reports
 
 Dear Editor,
 
