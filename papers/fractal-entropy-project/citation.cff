@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite the DOI below."
 title: "Fractal‑Entropy Project"
 version: "0.1.1"
-doi: "10.5281/zenodo.xxxxxxx16266607"   
+doi: "10.5281/zenodo.xxxxxxx16266607"
 authors:
   - family-names: Agourakis
     given-names: Demetrios

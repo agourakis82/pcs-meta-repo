@@ -4,12 +4,18 @@ oa_downloader.py  –  baixa todos os PDFs OA listados em oa_status.csv
 
 uso: python oa_downloader.py oa_status.csv --dest literature/pdf
 """
-import os, argparse, requests, pandas as pd
-from urllib.parse import urlparse
+import argparse
+import os
 from pathlib import Path
+from urllib.parse import urlparse
+
+import pandas as pd
+import requests
+
 
 def sanitize(name):
     return "".join(c for c in name if c.isalnum() or c in "._-")[:120]
+
 
 def main(csv_file, dest):
     df = pd.read_csv(csv_file)
@@ -31,7 +37,12 @@ def main(csv_file, dest):
             continue
 
         try:
-            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20, allow_redirects=True)
+            r = requests.get(
+                url,
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=20,
+                allow_redirects=True,
+            )
             ct = r.headers.get("content-type", "")
             if r.status_code == 200 and "pdf" in ct:
                 outfile.write_bytes(r.content)
@@ -45,6 +56,7 @@ def main(csv_file, dest):
             errors += 1
 
     print(f"\nResumo: baixados {ok}, pulados {skipped}, erros {errors}")
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
