@@ -1,0 +1,22 @@
+[project]
+name = "pcs_toolbox"
+version = "0.1.0"
+description = "Utility toolbox for PCS meta-repo"
+authors = [{name = "PCS Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+    "networkx==3.2.1",
+    "numpy==1.26.4",
+    "scipy==1.11.4",
+    "pandas==2.2.2",
+    "matplotlib==3.8.4",
+]
+
+[project.urls]
+Repository = "https://github.com/example/pcs-meta-repo"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
