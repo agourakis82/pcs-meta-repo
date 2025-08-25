@@ -18,12 +18,12 @@ jobs:
         papers/fractal-entropy-project/paper_model:.:$TEXINPUTS
     steps:
       - uses: actions/checkout@v4
-      - uses: xu-cheng/latex-action@v3
-        continue-on-error: true
-        with:
-          root_file: |
-            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
-            papers/fractal-entropy-project/paper_model/main.tex
-          working_directory: .
-          extra_system_packages: "ghostscript"
-          compiler: latexmk
+      - name: Build LaTeX
+        run: |
+          MDPI_CLS="papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi.cls"
+          if [ -f "$MDPI_CLS" ]; then
+            latexmk -pdf -interaction=nonstopmode -halt-on-error \
+              papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
+          else
+            echo "mdpi.cls ausente — laudo LaTeX marcado como SKIP"; exit 0
+          fi

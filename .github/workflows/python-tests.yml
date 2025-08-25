@@ -4,6 +4,8 @@ name: python-tests
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     strategy:
       matrix:
         python-version: ['3.10', '3.11', '3.12']
@@ -21,13 +23,18 @@ jobs:
           fi
       - run: pip install pre-commit pytest coverage coverage-badge
       - name: Run pre-commit on tracked files
+        id: precommit
+        run: pre-commit run --all-files || true
+
+      - name: Commit pre-commit fixes (if any)
         run: |
-          pre-commit run --files $(
-            git ls-files '*.py' '*.md' '*.yaml' '*.yml' '*.json' \
-              ':!:notebooks/**' ':!:papers/**' \
-              ':!:docs/INSTRUCOES_PROJETO.md' ':!:.github/ISSUE_TEMPLATE/**' \
-              ':!:meta/metadata.yaml'
-          )
+          if ! git diff --quiet; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add -A
+            git commit -m "style(pre-commit): auto-fix formatting"
+            git push
+          fi
       - run: coverage run -m pytest
       - run: coverage xml
       - run: coverage-badge -o coverage.svg

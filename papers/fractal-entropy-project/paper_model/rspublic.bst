@@ -44,7 +44,7 @@ STRINGS { s t }
 
 FUNCTION {output.nonnull}
 { 's :=
- output.state no.comma = 
+ output.state no.comma =
  {  " " * write$ before.all 'output.state := }
  {  output.state mid.sentence =
     { " " * write$ }
@@ -62,14 +62,14 @@ FUNCTION {output.nonnull}
   }
  if$
  mid.sentence 'output.state :=
- }  
- if$    
+ }
+ if$
   s
 }
 
 FUNCTION {bookoutput.nonnull}
 { 's :=
- output.state no.comma = 
+ output.state no.comma =
  {  " " * write$ before.all 'output.state := }
  {  output.state mid.sentence =
     { ": " * write$ }
@@ -87,8 +87,8 @@ FUNCTION {bookoutput.nonnull}
   }
  if$
  mid.sentence 'output.state :=
- }  
- if$    
+ }
+ if$
   s
 }
 
@@ -233,7 +233,7 @@ FUNCTION {format.names}
               "" *
               t "others" =
                 { " et~al." * }
-                { ", " * t * }   
+                { ", " * t * }
               if$
             }
           if$
@@ -252,7 +252,7 @@ FUNCTION {format.authors}
   if$
 }
 
-FUNCTION {format.key}           
+FUNCTION {format.key}
 { empty$
     { key field.or.null }
     { "" }
@@ -277,7 +277,7 @@ FUNCTION {format.title}
     { title
       "" swap$ * ". " *
     }
-no.comma 'output.state :=   
+no.comma 'output.state :=
   if$
 }
 
@@ -346,7 +346,7 @@ FUNCTION {format.bvolume}
 FUNCTION {format.binvolume}
 { volume empty$
     { "" }
-    { "vol." volume tie.or.space.connect  ", " * 
+    { "vol." volume tie.or.space.connect  ", " *
       series empty$
     'skip$
     { "" * series emphasize * }
@@ -361,7 +361,7 @@ FUNCTION {format.bincvolume}
     { ", " }
     {series empty$
     'skip$
-    { ", " * series * ", " * 
+    { ", " * series * ", " *
     "vol." volume tie.or.space.connect ", " * }
       if$
       "volume and number" number either.or.check
@@ -426,7 +426,7 @@ FUNCTION {multi.page.check}
 FUNCTION {format.pages}
 { pages empty$
     { "" }
-    { pages multi.page.check 
+    { pages multi.page.check
     { "pp." pages n.dashify tie.or.space.connect }
     { "p." pages tie.or.space.connect }
       if$
@@ -532,7 +532,7 @@ FUNCTION {format.tr.number}
 }
 
 FUNCTION {format.article.crossref}
-{ "In"                          
+{ "In"
   " \cite{" * crossref * "}" *
 }
 
@@ -545,11 +545,11 @@ FUNCTION {format.book.crossref}
       " of " *
     }
   if$
-  "\cite{" * crossref * "}" *               
+  "\cite{" * crossref * "}" *
 }
 
 FUNCTION {format.incoll.inproc.crossref}
-{ "In"                          
+{ "In"
   " \cite{" * crossref * "}" *
 }
 
@@ -565,11 +565,11 @@ FUNCTION {format.doi}
 FUNCTION {article}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
-  format.title "title" output.check 
+  author format.key output
+  output.year.check
+  format.title "title" output.check
   crossref missing$
-    { journal emphasize "journal" output.check 
+    { journal emphasize "journal" output.check
       format.vol.num.pages output
     }
     { format.article.crossref output.nonnull
@@ -595,7 +595,7 @@ FUNCTION {book}
       if$
     }
   if$
-  output.year.check             
+  output.year.check
   new.block
   format.btitle "title" output.check
   crossref missing$
@@ -620,8 +620,8 @@ FUNCTION {book}
 FUNCTION {booklet}
 { output.bibitem
   format.authors output
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title "title" output.check
   new.block
@@ -646,7 +646,7 @@ FUNCTION {inbook}
       if$
     }
   if$
-  output.year.check             
+  output.year.check
   new.block
   format.inchapter.pages "chapter and pages" output.check
   new.block
@@ -654,7 +654,7 @@ FUNCTION {inbook}
   crossref missing$
     { format.binvolume output
       format.number.series output
-      format.inpages output 
+      format.inpages output
       new.sentence
       address output
       publisher "publisher" bookoutput.check
@@ -674,8 +674,8 @@ FUNCTION {inbook}
 FUNCTION {incollection}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title "title" output.check
   new.block
@@ -702,8 +702,8 @@ FUNCTION {incollection}
 FUNCTION {inproceedings}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title "title" output.check
   new.block
@@ -712,10 +712,10 @@ FUNCTION {inproceedings}
       format.bvolume output
       format.number.series output
       format.pages output
-      address output                    
-      new.sentence                  
-      organization output               
-      publisher output                  
+      address output
+      new.sentence
+      organization output
+      publisher output
     }
     { format.incoll.inproc.crossref output.nonnull
       format.pages output
@@ -732,8 +732,8 @@ FUNCTION {conference} { inproceedings }
 FUNCTION {manual}
 { output.bibitem
   format.authors output
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.btitle "title" output.check
   organization address new.block.checkb
@@ -749,8 +749,8 @@ FUNCTION {manual}
 FUNCTION {mastersthesis}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title "title" output.check
   new.block
@@ -766,8 +766,8 @@ FUNCTION {mastersthesis}
 FUNCTION {misc}
 { output.bibitem
   format.authors output
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title output
   new.block
@@ -781,8 +781,8 @@ FUNCTION {misc}
 FUNCTION {phdthesis}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.btitle "title" output.check
   new.block
@@ -798,16 +798,16 @@ FUNCTION {phdthesis}
 FUNCTION {proceedings}
 { output.bibitem
   format.editors output
-  editor format.key output              
-  output.year.check                 
+  editor format.key output
+  output.year.check
   new.block
   format.btitle "title" output.check
   format.bvolume output
   format.number.series output
-  address output                
-  new.sentence                  
-  organization output               
-  publisher output              
+  address output
+  new.sentence
+  organization output
+  publisher output
   new.block
   note output
   format.doi output
@@ -817,8 +817,8 @@ FUNCTION {proceedings}
 FUNCTION {techreport}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title "title" output.check
   new.block
@@ -834,8 +834,8 @@ FUNCTION {techreport}
 FUNCTION {unpublished}
 { output.bibitem
   format.authors "author" output.check
-  author format.key output              
-  output.year.check                 
+  author format.key output
+  output.year.check
   new.block
   format.title "title" output.check
   new.block
@@ -951,7 +951,7 @@ FUNCTION {author.key.label}
 { author empty$
     { key empty$
     { cite$ #1 #3 substring$ }
-    'key                    
+    'key
       if$
     }
     { author format.lab.names }
@@ -963,7 +963,7 @@ FUNCTION {author.editor.key.label}
     { editor empty$
     { key empty$
         { cite$ #1 #3 substring$ }
-        'key                
+        'key
       if$
     }
     { editor format.lab.names }
@@ -977,7 +977,7 @@ FUNCTION {editor.key.label}
 { editor empty$
     { key empty$
     { cite$ #1 #3 substring$ }
-    'key            
+    'key
       if$
     }
     { editor format.lab.names }
@@ -990,14 +990,14 @@ FUNCTION {calc.label}
   or
     'author.editor.key.label
     { type$ "proceedings" =
-    'editor.key.label           
-    'author.key.label           
+    'editor.key.label
+    'author.key.label
       if$
     }
   if$
-  ", "                          
-  *                         
-  year field.or.null purify$ #-1 #4 substring$      
+  ", "
+  *
+  year field.or.null purify$ #-1 #4 substring$
   *
   'label :=
 }
@@ -1012,8 +1012,8 @@ FUNCTION {sort.format.names}
     { nameptr #1 >
     { "   " * }
     'skip$
-      if$                       
-      s nameptr "{vv{ } }{ll{ }}{  f{ }}{  jj{ }}" format.name$ 't := 
+      if$
+      s nameptr "{vv{ } }{ll{ }}{  f{ }}{  jj{ }}" format.name$ 't :=
       nameptr numnames = t "others" = and
     { "et al" * }
     { t sortify * }
@@ -1093,9 +1093,9 @@ FUNCTION {presort}
       if$
     }
   if$
-  #1 entry.max$ substring$  
-  'sort.label :=        
-  sort.label            
+  #1 entry.max$ substring$
+  'sort.label :=
+  sort.label
   *
   "    "
   *
@@ -1108,13 +1108,13 @@ FUNCTION {presort}
 
 ITERATE {presort}
 
-%SORT        
+%SORT
 
 STRINGS { last.label next.extra }   %
 
-INTEGERS { last.extra.num }     % 
+INTEGERS { last.extra.num }     %
 
-FUNCTION {initialize.extra.label.stuff} % 
+FUNCTION {initialize.extra.label.stuff} %
 { #0 int.to.chr$ 'last.label :=
   "" 'next.extra :=
   #0 'last.extra.num :=

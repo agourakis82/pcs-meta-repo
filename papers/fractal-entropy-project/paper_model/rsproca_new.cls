@@ -489,11 +489,11 @@
  \def\ps@plain{\vskip-3pc\let\@mkboth\@gobbletwo
          \def\@oddfoot{\noindent\raisebox{-7.5pt}{\hskip-12.8pt\includegraphics[scale=0.15]{RS_Pubs_Logo_Line_CMYK}}
          \ifopenacc
-            \hskip28.8pt\colorbox{abstractcolor}{\hbox to 75mm{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{7.5}{10}\selectfont 
+            \hskip28.8pt\colorbox{abstractcolor}{\hbox to 75mm{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{7.5}{10}\selectfont
             \vbox{\hsize75mm \textcolor{black}{$\copyright$ \@Year\ The Authors. Published by the Royal Society under the terms of the Creative Commons Attribution
             License \iflink\href{http://creativecommons.org/licenses/by/4.0/}{http://creativecommons.org/licenses/}\break \href{http://creativecommons.org/licenses/by/4.0/}{by/4.0/}\else http://creativecommons.org/licenses/\break by/4.0/\fi, which permits unrestricted use, provided the original author and source are credited.\vphantom{g}}}\par}}
          \else
-            \hskip28.8pt\colorbox{abstractcolor}{\hbox to 75mm{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{7.5}{10}\selectfont 
+            \hskip28.8pt\colorbox{abstractcolor}{\hbox to 75mm{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{7.5}{10}\selectfont
             \vbox{\hsize75mm \textcolor{black}{$\copyright$ \@Year\ The Author(s) Published by the Royal Society.
             All rights reserved.}}\par}}
 \fi
@@ -1201,7 +1201,7 @@
 \def\@corres{}
 \newcommand\corres[1]{%
      \global\@corres@providedtrue%
-     \gdef\@corres{{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{10}{14}\selectfont\raggedright 
+     \gdef\@corres{{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{10}{14}\selectfont\raggedright
      \correshead}\par #1}}%
 
 \def\@history{{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{10}{14}\selectfont\raggedright Article submitted to journal}}
@@ -1304,7 +1304,7 @@ at http://dx.doi.org/\@doi\ or via http://\@jname.royalsocietypublishing.org.\pa
 \noindent\begin{minipage}[!t]{50mm}
 \hskip-1pc
 \vbox to 242mm{{\vskip68pt\includegraphics[scale=0.58]{PROCEEDINGS_A_RGB}\vskip21pt
-{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{13.5}{15}\selectfont\raggedright 
+{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{13.5}{15}\selectfont\raggedright
 \textcolor{jobcolor}{\@jname.royalsocietypublishing.org}}\vskip10pt
 \if@citearticle@provided
         \vskip11pt
@@ -1384,7 +1384,7 @@ at http://dx.doi.org/\@doi\ or via http://\@jname.royalsocietypublishing.org.\pa
   \thispagestyle{plain}
   \vskip 14pt plus8pt minus3pt
  }
- 
+
 \renewcommand\footnoterule{}
 \renewcommand\@makefntext[1]{\fontsize{7}{10}\selectfont\noindent{\@makefnmark}#1\vskip-1pt}
 

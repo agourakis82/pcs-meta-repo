@@ -3,12 +3,23 @@
 doi_fix.py  –  Valida e corrige DOIs usando a API Crossref
 uso: python doi_fix.py refs_raw.bib
 """
-import re, json, time, requests, bibtexparser, csv, copy, sys, pathlib
+import copy
+import csv
+import json
+import pathlib
+import re
+import sys
+import time
+
+import bibtexparser
+import requests
 
 API = "https://api.crossref.org/works"
 
-def slug(s):                     # normaliza strings para comparação
-    return re.sub(r'\W+', '', s.lower())
+
+def slug(s):  # normaliza strings para comparação
+    return re.sub(r"\W+", "", s.lower())
+
 
 def guess_doi(title):
     params = {"query.title": title, "rows": 1}
@@ -16,6 +27,7 @@ def guess_doi(title):
     if r.status_code != 200 or not r.json()["message"]["items"]:
         return None
     return r.json()["message"]["items"][0]["DOI"].lower()
+
 
 def main(bibfile):
     path = pathlib.Path(bibfile)
@@ -43,7 +55,7 @@ def main(bibfile):
             updated = True
             report.append([entry["ID"], "corrigido", doi_old, doi_new])
 
-        time.sleep(0.5)          # respeita rate‑limit Crossref
+        time.sleep(0.5)  # respeita rate‑limit Crossref
 
     if updated:
         backup = path.with_suffix(".bak")
@@ -53,12 +65,12 @@ def main(bibfile):
         print(f"✓ BibTeX atualizado; backup salvo em {backup}")
 
     with open("doi_report.csv", "w", newline="", encoding="utf-8") as out:
-        csv.writer(out).writerows(
-            [["ID", "status", "doi_antigo", "doi_novo"]] + report
-        )
+        csv.writer(out).writerows([["ID", "status", "doi_antigo", "doi_novo"]] + report)
     print("✓ Relatório salvo em doi_report.csv")
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("uso: python doi_fix.py refs_raw.bib"); sys.exit(1)
+        print("uso: python doi_fix.py refs_raw.bib")
+        sys.exit(1)
     main(sys.argv[1])

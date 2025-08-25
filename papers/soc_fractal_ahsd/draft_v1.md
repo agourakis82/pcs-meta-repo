@@ -4,7 +4,7 @@ title: A Natureza Fractal de uma Sociedade Entropicamente Dirigida
 <!-- ✧✧✧  BLOCO NOVO – Início  ✧✧✧ -->
 
 # Introdução — Entre Fractais, Entropia e Superdotação
-> “O universo não é apenas mais estranho do que imaginamos.  
+> “O universo não é apenas mais estranho do que imaginamos.
 > É mais estranho do que podemos imaginar.” — J. B. S. Haldane
 
 A cada instante, bilhões de corpos se deslocam, conectam, colidem e se
@@ -27,33 +27,33 @@ entropia estimula inovação**. Assim, as pessoas superdotadas funcionam
 como **sensores e catalisadores** de reorganização social – tema
 aprofundado na seção seguinte.
 
-A natureza da sociedade não é aleatória. **Ela é fractal.**  
+A natureza da sociedade não é aleatória. **Ela é fractal.**
 E seu vetor não é o acaso: **é a entropia.**
 
 ## 1.2 Superdotação em Perspectiva Fractal‑Entrópica
 ### 1.2.1 Histórico Conceitual
-- **Galton & Terman**: raízes psicométricas (QI > 130).  
-- **Modelos Multifatoriais** (Renzulli, Gardner): talento + criatividade.  
-- **Neurodiversidade contemporânea**: 2e (dupla excepcionalidade).  
+- **Galton & Terman**: raízes psicométricas (QI > 130).
+- **Modelos Multifatoriais** (Renzulli, Gardner): talento + criatividade.
+- **Neurodiversidade contemporânea**: 2e (dupla excepcionalidade).
 <!-- TODO: inserir refs 2023‑2025 -->
 
 ### 1.2.2 Lacunas Teóricas Atuais
 - Falta de modelo dinâmico explicando *por que* altas habilidades surgem
-  em certos contextos e *como* impactam macro‑estruturas sociais.  
-- Carência de métricas sistêmicas além do QI.  
+  em certos contextos e *como* impactam macro‑estruturas sociais.
+- Carência de métricas sistêmicas além do QI.
 <!-- TODO -->
 
 ### 1.2.3 Superdotação como Singularidade Entropicamente Estimulada
 - Pressão entrópica → necessidade de dissipadores cognitivos →
-  emergência de cérebros de alta eficiência.  
+  emergência de cérebros de alta eficiência.
 
 ### 1.2.4 Disrupção e Tunelamento Simbólico
-- Superdotados = zonas de **tunelamento** através de barreiras culturais.  
+- Superdotados = zonas de **tunelamento** através de barreiras culturais.
 - Fatores que modulam “massa simbólica” \(m_s\).
 
 ### 1.2.5 Implicações para Saúde Mental
 - Variação de \(\Gamma\) com suporte social; gradiente
-  \(|\nabla V(x)|\) como risco.  
+  \(|\nabla V(x)|\) como risco.
 
 ### 1.2.6 Hipóteses Testáveis
 | H | Predição | Métrica | Ref |
@@ -61,7 +61,7 @@ E seu vetor não é o acaso: **é a entropia.**
 | H₁ | Superdotação correlaciona c/ menor \(m_s\) | CANTAB | … |
 
 ### 1.2.7 Relações Fractais Observáveis
-- Distribuição de superdotados segue lei de potência?  
+- Distribuição de superdotados segue lei de potência?
 
 ### 1.2.8 Conclusões Parciais
 *(escrever após resultados de simulação)*
@@ -580,7 +580,7 @@ Rede Watts‑Strogatz \(N=200, k=8, p=0.1\); propagador split‑operator
 | \(\int \Gamma\,dt\) | dissipação cumulativa | Carga alostática |
 
 ### 4.8 Limitações e Próximos Passos
-* Espaço simbólico low‑dimensional; ajuste futuro com embeddings grandes.  
+* Espaço simbólico low‑dimensional; ajuste futuro com embeddings grandes.
 * \(\Gamma\) isotrópico; versões dependentes de conteúdo emocional por vir.
 
 ---

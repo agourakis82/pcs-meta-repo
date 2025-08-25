@@ -34,9 +34,10 @@ def main():
     checksums_path = out_dir / "CHECKSUMS.sha256"
     manifest_path = out_dir / "MANIFEST.csv"
 
-    with checksums_path.open("w", encoding="utf-8") as chks, manifest_path.open(
-        "w", newline="", encoding="utf-8"
-    ) as mf:
+    with (
+        checksums_path.open("w", encoding="utf-8") as chks,
+        manifest_path.open("w", newline="", encoding="utf-8") as mf,
+    ):
         writer = csv.writer(mf)
         writer.writerow(
             ["path", "size", "sha256", "source", "generated_by", "created_at"]
