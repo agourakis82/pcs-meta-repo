@@ -1,2 +1,11 @@
+target-version = "py311"
 line-length = 100
-extend-select = ["E", "F", "I"]
+src = ["src"]
+
+[lint]
+select = ["E","F","I"]
+
+[lint.isort]
+known-first-party = ["pcs_toolbox"]
+combine-as-imports = true
+force-single-line = false

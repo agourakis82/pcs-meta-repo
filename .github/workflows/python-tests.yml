@@ -25,6 +25,9 @@ jobs:
       - name: Run pre-commit on tracked files
         id: precommit
         run: pre-commit run --all-files || true
+      - name: Detect branch
+        id: vars
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}" >> $GITHUB_OUTPUT
 
       - name: Commit pre-commit fixes (if any)
         run: |
@@ -33,7 +36,7 @@ jobs:
             git config user.email "github-actions@github.com"
             git add -A
             git commit -m "style(pre-commit): auto-fix formatting"
-            git push
+            git push origin HEAD:${{ steps.vars.outputs.branch }}
           fi
       - run: coverage run -m pytest
       - run: coverage xml
