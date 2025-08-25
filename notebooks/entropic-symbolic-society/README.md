@@ -49,7 +49,7 @@ If your goal is to **reproduce the NHB analyses**:
 ---
 
 ## Repository Structure (High-level)
-```
+```text
 .
 ├── README.md                 # This file (umbrella overview)
 ├── LICENSE                   # MIT for code; see licensing notes below
@@ -66,7 +66,7 @@ If your goal is to **reproduce the NHB analyses**:
     ├── NHB_main.tex          # NHB LaTeX manuscript (subproject scope)
     ├── sections/             # NHB manuscript sections (subproject scope)
     └── supplementary.tex     # NHB supplement (subproject scope)
-```
+```text
 
 ---
 
