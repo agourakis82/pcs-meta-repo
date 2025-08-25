@@ -1,8 +1,9 @@
+---
 name: Build LaTeX PDF  # substituídos espaços não‑quebráveis por espaços ASCII
 
-on:
+'on':
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:        # mantém gatilho sem filtros específicos
 
 jobs:
