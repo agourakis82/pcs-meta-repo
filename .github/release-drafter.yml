@@ -1,0 +1,21 @@
+---
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+categories:
+  - title: 'Breaking'
+    labels: ['breaking']
+  - title: 'Features'
+    labels: ['feature']
+  - title: 'Fixes'
+    labels: ['fix', 'bug']
+change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
+version-resolver:
+  major:
+    labels: ['breaking']
+  minor:
+    labels: ['feature']
+  patch:
+    labels: ['fix', 'bug']
+template: |
+  ## Changes
+  $CHANGES
