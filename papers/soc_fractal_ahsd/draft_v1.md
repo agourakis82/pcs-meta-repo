@@ -31,27 +31,37 @@ A natureza da sociedade não é aleatória. **Ela é fractal.**
 E seu vetor não é o acaso: **é a entropia.**
 
 ## 1.2 Superdotação em Perspectiva Fractal‑Entrópica
+
 ### 1.2.1 Histórico Conceitual
+
 - **Galton & Terman**: raízes psicométricas (QI > 130).
+
 - **Modelos Multifatoriais** (Renzulli, Gardner): talento + criatividade.
+
 - **Neurodiversidade contemporânea**: 2e (dupla excepcionalidade).
 <!-- TODO: inserir refs 2023‑2025 -->
 
 ### 1.2.2 Lacunas Teóricas Atuais
+
 - Falta de modelo dinâmico explicando *por que* altas habilidades surgem
   em certos contextos e *como* impactam macro‑estruturas sociais.
+
 - Carência de métricas sistêmicas além do QI.
 <!-- TODO -->
 
 ### 1.2.3 Superdotação como Singularidade Entropicamente Estimulada
+
 - Pressão entrópica → necessidade de dissipadores cognitivos →
   emergência de cérebros de alta eficiência.
 
 ### 1.2.4 Disrupção e Tunelamento Simbólico
+
 - Superdotados = zonas de **tunelamento** através de barreiras culturais.
+
 - Fatores que modulam “massa simbólica” \(m_s\).
 
 ### 1.2.5 Implicações para Saúde Mental
+
 - Variação de \(\Gamma\) com suporte social; gradiente
   \(|\nabla V(x)|\) como risco.
 
@@ -61,12 +71,14 @@ E seu vetor não é o acaso: **é a entropia.**
 | H₁ | Superdotação correlaciona c/ menor \(m_s\) | CANTAB | … |
 
 ### 1.2.7 Relações Fractais Observáveis
+
 - Distribuição de superdotados segue lei de potência?
 
 ### 1.2.8 Conclusões Parciais
 *(escrever após resultados de simulação)*
 
 <!-- ✧✧✧  BLOCO NOVO – Fim  ✧✧✧ -->
+
 # 2.1 -- O Conceito Fundamental de Fractais
 
 Fractais são estruturas que desafiam a percepção clássica de forma e
@@ -103,6 +115,7 @@ da linearidade em favor de uma lógica mais profunda: a repetição
 transformada como motor da complexidade.\
 \
 Referência:\
+
 1. Mandelbrot BB. The Fractal Geometry of Nature. New York: W. H.
 Freeman; 1982.
 
@@ -152,9 +165,12 @@ moldada pelas mesmas forças termodinâmicas que governam o cosmos. Assim,
 a entropia, em vez de ser a antítese da ordem, é seu útero invisível.\
 \
 Referências:\
+
 1. Schrödinger E. What is Life? Cambridge University Press; 1944.\
+
 2. Prigogine I, Stengers I. Order Out of Chaos: Man\'s New Dialogue with
 Nature. Bantam; 1984.\
+
 3. England JL. Statistical physics of self-replication. J Chem Phys.
 2013;139(12):121923.
 
@@ -580,7 +596,9 @@ Rede Watts‑Strogatz \(N=200, k=8, p=0.1\); propagador split‑operator
 | \(\int \Gamma\,dt\) | dissipação cumulativa | Carga alostática |
 
 ### 4.8 Limitações e Próximos Passos
+
 * Espaço simbólico low‑dimensional; ajuste futuro com embeddings grandes.
+
 * \(\Gamma\) isotrópico; versões dependentes de conteúdo emocional por vir.
 
 ---
@@ -631,11 +649,13 @@ O operador Hamiltoniano Ĥ também muda. Ele não mais governa a energia
 física, mas uma \*\*energia social simbólica\*\*, composta por dois
 termos principais:\
 \
+
 1. Um termo cinético (-ħ²/2mₛ ∇²), que representa a \*\*tendência à
 transição simbólica\*\*, a difusão de estados de crença, o quanto um
 indivíduo pode mudar de posição simbólica influenciado pela rede que o
 cerca.\
 \
+
 2. Um termo potencial V(x), que representa o \*\*campo de forças
 culturais, afetivas, econômicas ou espirituais\*\* que modela os estados
 possíveis: normas, dogmas, repressões, narrativas dominantes.\
@@ -659,8 +679,11 @@ de resistências densas.\
 Mais que uma metáfora, essa equação pode se tornar um \*\*modelo
 experimental\*\*. Com os devidos parâmetros, poderíamos simular:\
 \
+
 - a probabilidade de revoltas culturais emergirem em sistemas estáveis;\
+
 - o tempo médio de colapso de ideias frente a tensões externas;\
+
 - a densidade de adesão a uma narrativa dominante ao longo de gerações.\
 \
 E o mais fascinante: a sociedade inteira pode ser modelada como \*\*um
@@ -880,6 +903,7 @@ Row; 1959.
 7\. Morin E. Introduction à la pensée complexe. Paris: Seuil; 1990.
 
 8\. Bateson G. Mind and Nature: A Necessary Unity. New York: Dutton;
+
 1979.
 
 9\. Deleuze G. The Fold: Leibniz and the Baroque. Minneapolis:
@@ -1084,6 +1108,7 @@ automatizado, gerado por um modelo de linguagem avançado (ChatGPT-4,
 OpenAI), configurado para simular o processo de revisão por pares de
 periódicos acadêmicos. O parecer segue os padrões editoriais de análise
 crítica e avaliação interdisciplinar e foi emitido em 15 de julho de
+
 2024.
 
 # Parecer Editorial Técnico -- Revisão Científica e Filosófica
@@ -1110,19 +1135,27 @@ narrativa que transcende o formato tradicional de ensaio.\
 \
 Recomenda-se, para submissão em periódicos científicos ou
 transdisciplinares, a seguinte adequação mínima:\
+
 - Inserção de referências cruzadas no corpo do texto (ex: \"como propõe
 Prigogine \[3\]\") para facilitar leitura científica.\
+
 - Inclusão de subtítulos discretos para marcar a transição entre níveis
 epistemológicos (científico, poético, filosófico).\
+
 - (Opcional) Adição de um modelo experimental qualitativo ou simulado
 (mesmo que especulativo) para exemplificar empiricamente os
 comportamentos descritos.\
 \
 Potenciais canais de publicação incluem:\
+
 - Constructivist Foundations\
+
 - Theory, Culture & Society\
+
 - Integral Review\
+
 - Interdisciplinary Description of Complex Systems\
+
 - Aeon, Noema (versões ensaísticas)\
 \
 Veredito: Aceitação com distinção.\
