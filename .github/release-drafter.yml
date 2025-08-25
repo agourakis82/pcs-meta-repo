@@ -1,21 +1,18 @@
----
-name-template: 'v$NEXT_PATCH_VERSION'
-tag-template: 'v$NEXT_PATCH_VERSION'
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
 categories:
-  - title: 'Breaking'
-    labels: ['breaking']
-  - title: 'Features'
-    labels: ['feature']
-  - title: 'Fixes'
-    labels: ['fix', 'bug']
-change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
-version-resolver:
-  major:
-    labels: ['breaking']
-  minor:
-    labels: ['feature']
-  patch:
-    labels: ['fix', 'bug']
+
+  title: 'Features'
+  labels: ['feat','feature','enhancement']
+
+  title: 'Fixes'
+  labels: ['fix','bug']
+
+  title: 'Chore/CI/Docs'
+  labels: ['chore','ci','docs']
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 template: |
-  ## Changes
+
+  Changes
+
   $CHANGES
