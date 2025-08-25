@@ -45,7 +45,7 @@
 /papers          → NHB manuscript & assets
 /curriculum      → syllabus & teaching material
 /figures, /data  → assets (use LFS)
-```
+```text
 
 ---
 
