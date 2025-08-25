@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 Please cite using the metadata in [CITATION.cff](CITATION.cff):
 
-> Agourakis, D. *pcs-meta-repo*. <https://doi.org/10.5281/zenodo.16921952>
+> Agourakis, D. *pcs-meta-repo*. <[https://doi.org/10.5281/zenodo.16921952](https://doi.org/10.5281/zenodo.16921952)>
 
 For additional materials see the [Zenodo record](https://doi.org/10.5281/zenodo.16921952).
 

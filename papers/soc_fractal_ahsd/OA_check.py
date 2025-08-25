@@ -5,7 +5,6 @@ uso:  python oa_check.py refs_raw.bib  --email you@example.com
 """
 
 import argparse
-import csv
 import time
 
 import bibtexparser
