@@ -1,9 +1,14 @@
 target-version = "py311"
 line-length = 100
 src = ["src"]
+fix = true
+
+extend-exclude = [
+  "**/*.ipynb",
+]
 
 [lint]
-select = ["E","F","I"]
+select = ["E", "F", "I"]
 
 [lint.isort]
 known-first-party = ["pcs_toolbox"]

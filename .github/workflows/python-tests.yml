@@ -4,8 +4,6 @@ name: python-tests
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     strategy:
       matrix:
         python-version: ['3.10', '3.11', '3.12']
@@ -14,28 +12,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install -r requirements.txt || true
-      - run: |
-          if [ -f pyproject.toml ]; then
-            pip install -e .
-          else
-            echo "No pyproject.toml, skipping install"
-          fi
-      - run: pip install pre-commit pytest coverage coverage-badge
-      - name: Run pre-commit on tracked files
-        id: precommit
-        run: pre-commit run --all-files || true
-
-      - name: Commit pre-commit fixes (if any)
+      - name: Instalar deps e rodar testes
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
         run: |
-          if ! git diff --quiet; then
-            git config user.name "github-actions"
-            git config user.email "github-actions@github.com"
-            git add -A
-            git commit -m "style(pre-commit): auto-fix formatting"
-            git push
-          fi
-      - run: coverage run -m pytest
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || true
+          # opcional: python -m pip install -e .
+          pip install pre-commit pytest coverage coverage-badge
+          pre-commit run --all-files || true
+          coverage run -m pytest -q
       - run: coverage xml
       - run: coverage-badge -o coverage.svg
       - uses: actions/upload-artifact@v4
