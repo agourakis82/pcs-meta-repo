@@ -1,0 +1,19 @@
+---
+name: ci-python
+'on': [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -r requirements.txt || true
+      - run: pip install -e src/pcs_toolbox || true
+      - run: pip install pre-commit pytest
+      - run: pre-commit run --all-files
+      - run: pytest -q
