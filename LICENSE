@@ -1,16 +1,12 @@
-<<<<<<< HEAD
 # License
-=======
-<<<<<<< HEAD
-MIT License
->>>>>>> 962daaf (chore: importar estrutura inicial completa)
 
 - **Text and documents**: CC BY 4.0
 - **Code**: MIT
 
-<<<<<<< HEAD
+MIT License
+
 Copyright (c) 2025 Demetrios Agourakis
-=======
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -28,12 +24,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=======
-# License
-
-- **Text and documents**: CC BY 4.0
-- **Code**: MIT
-
-Copyright (c) 2025 Demetrios Agourakis
->>>>>>> 4933491 (chore: estrutura inicial (docs/notebooks/papers/projects/src/meta + README))
->>>>>>> 962daaf (chore: importar estrutura inicial completa)
