@@ -1,4 +1,7 @@
 ---
+exclude: |
+  ^(notebooks/|papers/|meta/metadata\.yaml|
+    docs/INSTRUCOES_PROJETO\.md|\.github/ISSUE_TEMPLATE/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0

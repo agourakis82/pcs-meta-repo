@@ -1,4 +1,7 @@
-import json, re, os, sys, pathlib
+import json
+import pathlib
+import re
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 def _exists(p): return (ROOT/p).exists()
@@ -19,8 +22,10 @@ def test_readme_sections():
     p = ROOT/'README.md'
     assert p.exists(), "README.md ausente"
     txt = p.read_text(encoding='utf-8', errors='ignore')
-    assert re.search(r'^##\s*License\b', txt, flags=re.I|re.M), "Seção 'License' ausente"
-    assert re.search(r'^##\s*Cite this work\b', txt, flags=re.I|re.M), "Seção 'Cite this work' ausente"
+    assert re.search(r'^##\s*License\b', txt, flags=re.I | re.M), "Seção 'License' ausente"
+    assert re.search(r'^##\s*Cite this work\b', txt, flags=re.I | re.M), (
+        "Seção 'Cite this work' ausente"
+    )
 
 def test_citation_cff_parsable():
     p = ROOT/'CITATION.cff'
@@ -29,7 +34,8 @@ def test_citation_cff_parsable():
         import ruamel.yaml as ry
         ry.YAML(typ='safe').load(p.read_text(encoding='utf-8'))
     except Exception as e:
-        import pytest; pytest.skip(f'YAML parser indisponível/erro: {e}')
+        import pytest
+        pytest.skip(f'YAML parser indisponível/erro: {e}')
 
 def test_metadata_yaml_parsable():
     p = ROOT/'metadata.yaml'
@@ -38,7 +44,8 @@ def test_metadata_yaml_parsable():
         import ruamel.yaml as ry
         ry.YAML(typ='safe').load(p.read_text(encoding='utf-8'))
     except Exception as e:
-        import pytest; pytest.skip(f'YAML parser indisponível/erro: {e}')
+        import pytest
+        pytest.skip(f'YAML parser indisponível/erro: {e}')
 
 def test_zenodo_json_parsable():
     p = ROOT/'zenodo.json'
