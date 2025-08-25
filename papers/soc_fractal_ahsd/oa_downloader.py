@@ -5,9 +5,7 @@ oa_downloader.py  –  baixa todos os PDFs OA listados em oa_status.csv
 uso: python oa_downloader.py oa_status.csv --dest literature/pdf
 """
 import argparse
-import os
 from pathlib import Path
-from urllib.parse import urlparse
 
 import pandas as pd
 import requests

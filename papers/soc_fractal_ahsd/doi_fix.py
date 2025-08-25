@@ -3,9 +3,7 @@
 doi_fix.py  –  Valida e corrige DOIs usando a API Crossref
 uso: python doi_fix.py refs_raw.bib
 """
-import copy
 import csv
-import json
 import pathlib
 import re
 import sys
