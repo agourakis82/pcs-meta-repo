@@ -1,0 +1,27 @@
+---
+name: release
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
+            papers/fractal-entropy-project/paper_model/main.tex
+      - name: Generate SBOM
+        run: |
+          pip install cyclonedx-bom
+          cyclonedx-bom -o sbom.xml
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            papers/**/*.pdf
+            sbom.xml

@@ -8,11 +8,25 @@ authors:
     given-names: Demetrios
     orcid: https://orcid.org/0000-0002-8596-5097
     email: demetrios@agourakis.med.br
+version: 0.2.1
+date-released: 2025-08-25
+doi: 10.5281/zenodo.16921952
 repository-code: https://github.com/agourakis82/pcs-meta-repo
 license: MIT
-version: 0.2.1
-doi: 10.5281/zenodo.16921952
 abstract: "Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS)."
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16752238
+    description: "NHB Symbolic Mainfold code"
+  - type: doi
+    value: 10.17605/OSF.IO/2AQP7
+    description: "NHB Symbolic Mainfold data"
+  - type: doi
+    value: 10.5281/zenodo.16730036
+    description: "Conceptual umbrella"
+  - type: doi
+    value: 10.5281/zenodo.16783257
+    description: "NHB version v1.6"
 preferred-citation:
   type: software
   title: "pcs-meta-repo"
