@@ -1,0 +1,13 @@
+[project]
+name = "pcs-toolbox"
+version = "0.0.1"
+description = "Utilities for PCS meta-repo CI and examples"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name="Demetrios Agourakis", email="demetrios@agourakis.med.br"}]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

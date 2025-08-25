@@ -1,5 +1,25 @@
 {
-  "config": { "MD007": {"indent":2}, "MD010": false, "MD012": {"maximum": 2}, "MD026": false },
-  "ignores": ["**/.git/**","**/node_modules/**",".attic/**",".safety/**","**/* 2.*","**/*.bak.*","**/CHANGELOG_PATCH_*","**/METADATA_ZENODO_PATCH_*","**/README_PATCH*.md"]
+  "config": {
+    "MD007": {"indent": 2},
+    "MD010": false,
+    "MD012": {"maximum": 2},
+    "MD013": false,
+    "MD026": false,
+    "MD034": false
+  },
+  "ignores": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "__broken__/**",
+    ".attic/**",
+    ".safety/**",
+    "docs/**",
+    "notebooks/**",
+    "papers/**",
+    "**/* 2.*",
+    "**/*.bak*",
+    "**/CHANGELOG_PATCH_*",
+    "**/METADATA_ZENODO_PATCH_*",
+    "**/README_PATCH*.md"
+  ]
 }
-

@@ -1,4 +1,8 @@
-import pandas as pd, matplotlib.pyplot as plt, pathlib, sys
+import pathlib
+import sys
+
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # ── localizar CSV mais recente ─────────────────────────────────────
 data_dir = pathlib.Path(__file__).resolve().parent.parent / "paper_data"
@@ -19,11 +23,21 @@ fig_dir = pathlib.Path(__file__).resolve().parent.parent / "paper_model" / "figs
 fig_dir.mkdir(parents=True, exist_ok=True)
 out = fig_dir / "Fig4_heatmap_empirical.pdf"
 
-plt.imshow(pivot, origin="lower", aspect="auto",
-           extent=[pivot.columns.min(), pivot.columns.max(),
-                   pivot.index.min(), pivot.index.max()])
-plt.xscale("log"); plt.yscale("log")
-plt.xlabel(r"$\alpha$"); plt.ylabel(r"$\beta$")
+plt.imshow(
+    pivot,
+    origin="lower",
+    aspect="auto",
+    extent=[
+        pivot.columns.min(),
+        pivot.columns.max(),
+        pivot.index.min(),
+        pivot.index.max(),
+    ],
+)
+plt.xscale("log")
+plt.yscale("log")
+plt.xlabel(r"$\alpha$")
+plt.ylabel(r"$\beta$")
 plt.colorbar(label=r"$D_1$ empirical")
 plt.title("Empirical fractal dimension $D_1$")
 plt.savefig(out, bbox_inches="tight")

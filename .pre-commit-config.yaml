@@ -1,10 +1,9 @@
 ---
-exclude: |
-  ^(notebooks/|papers/|meta/metadata\.yaml|
-    docs/INSTRUCOES_PROJETO\.md|\.github/ISSUE_TEMPLATE/)
+exclude: >
+  ^(notebooks/|papers/|meta/metadata\.yaml|docs/INSTRUCOES_PROJETO\.md|\.github/ISSUE_TEMPLATE/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -14,9 +13,17 @@ repos:
       - id: check-xml
       - id: detect-private-key
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.4
+    rev: v0.12.10
     hooks:
       - id: ruff
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/isort
+    rev: 6.0.1
+    hooks:
+      - id: isort
   - repo: local
     hooks:
       - id: markdownlint-cli2
@@ -27,6 +34,6 @@ repos:
         additional_dependencies: [markdownlint-cli2@0.11.0]
         args: ["--config", ".markdownlint-cli2.jsonc"]
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
+    rev: v1.37.1
     hooks:
       - id: yamllint

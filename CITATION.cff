@@ -1,6 +1,6 @@
 ---
 cff-version: 1.2.0
-message: "Se você usar este repositório, por favor cite conforme abaixo."
+message: "Se você usar este repositório, por favor cite conforme abaixo. Código sob MIT; textos e figuras sob CC BY 4.0."
 title: "pcs-meta-repo"
 type: software
 authors:
@@ -8,8 +8,8 @@ authors:
     given-names: Demetrios
     orcid: https://orcid.org/0000-0002-8596-5097
     email: demetrios@agourakis.med.br
-version: 0.2.1
-date-released: 2025-08-25
+version: v2025.08.23
+date-released: 2025-08-23
 doi: 10.5281/zenodo.16921952
 repository-code: https://github.com/agourakis82/pcs-meta-repo
 license: MIT

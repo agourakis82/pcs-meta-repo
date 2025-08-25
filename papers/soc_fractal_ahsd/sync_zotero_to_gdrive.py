@@ -6,10 +6,14 @@ from pathlib import Path
 ZOTERO_STORAGE = Path.home() / "Zotero" / "storage"
 
 # Caminho real fornecido por você:
-ZOTERO_BIB = Path("/Users/demetriosagourakis/Library/CloudStorage/GoogleDrive-demetrios@agourakis.med.br/Meu Drive/soc_fractal/literature/zotero/zotero.bib")
+ZOTERO_BIB = Path(
+    "/Users/demetriosagourakis/Library/CloudStorage/GoogleDrive-demetrios@agourakis.med.br/Meu Drive/soc_fractal/literature/zotero/zotero.bib"
+)
 
 # Pasta de destino (sincronizada com o Drive também)
-GOOGLE_DRIVE_TARGET = Path("/Users/demetriosagourakis/Library/CloudStorage/GoogleDrive-demetrios@agourakis.med.br/Meu Drive/soc_fractal/refs")
+GOOGLE_DRIVE_TARGET = Path(
+    "/Users/demetriosagourakis/Library/CloudStorage/GoogleDrive-demetrios@agourakis.med.br/Meu Drive/soc_fractal/refs"
+)
 
 # Criar pasta destino se não existir
 (GOOGLE_DRIVE_TARGET / "pdfs").mkdir(parents=True, exist_ok=True)
