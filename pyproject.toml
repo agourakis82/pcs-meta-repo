@@ -1,0 +1,16 @@
+[project]
+name = "pcs_toolbox"
+version = "0.2.1"
+description = "Tools for the PCS project"
+authors = [{name = "Demetrios Agourakis", email = "demetrios@agourakis.med.br"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "networkx",
+    "numpy",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

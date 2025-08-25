@@ -1,0 +1,11 @@
+name: pcs-notebooks
+dependencies:
+  - python>=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - networkx
+  - scipy
+  - scikit-learn
+  - jupyter
+  - nbconvert
