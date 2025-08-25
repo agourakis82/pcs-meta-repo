@@ -1,0 +1,9 @@
+.DS_Store
+.vscode/
+.idea/
+*.bak
+*.tmp
+*.swp
+*.zip
+__pycache__/
+*.ipynb_checkpoints/

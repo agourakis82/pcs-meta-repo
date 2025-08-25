@@ -1,12 +1,17 @@
+---
 title: "pcs-meta-repo"
-description: "Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS)."
-version: "0.1.0"
-created: "2025-08-25"
+description: >
+  Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS).
+version: "0.2.1"
+doi: "10.5281/zenodo.16921952"
 license: "MIT (code); CC-BY-4.0 (docs)"
-repository_url: "https://github.com/<owner>/<repo>"
+repository_url: "https://github.com/agourakis82/pcs-meta-repo"
 authors:
   - name: "Demetrios Agourakis"
     orcid: "0000-0002-8596-5097"
-    email: "demetrios@agourakis.med.br"
-    affiliation: "(preencher sua afiliação atual)"
-keywords: [computational-psychiatry, neuroscience, nlp, open-science, reproducibility]
+keywords:
+  - computational-psychiatry
+  - neuroscience
+  - nlp
+  - open-science
+  - reproducibility
