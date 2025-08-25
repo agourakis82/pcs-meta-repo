@@ -29,8 +29,11 @@ This package builds on the foundational fractal–entropic model (DOI: [10.5281/
 This work integrates large-scale semantic networks (SWOW) with symbolic metrics, graph theory, embeddings, and clustering to construct a dynamic and interpretable manifold of cognition. The pipeline addresses:
 
 1. Can symbolic distances in associative space model cognitive entropy?
+
 2. How do topological centrality and clustering reflect symbolic anchoring and curvature of thought?
+
 3. Is it possible to derive measurable symbolic metrics that correlate with mental states?
+
 4. Can entropic manifolds reveal hidden cognitive constraints or attractors?
 
 ---
@@ -120,6 +123,7 @@ If you use this package, please cite:
 This subproject follows the **dual licensing** defined in the root repository:
 
 - **Code** (Python, notebooks, scripts): MIT License
+
 - **Text and figures**: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 See the root `LICENSE` file for full terms.
