@@ -1,3 +1,4 @@
+---
 # entropy_curvature_jobs_pro.yaml
 jobs:
   - graph: NHB_Symbolic_Mainfold/data/word_network.graphml

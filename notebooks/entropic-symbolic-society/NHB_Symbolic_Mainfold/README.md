@@ -52,7 +52,7 @@ Outputs (CSV, NPY, PNG) are stored in `data/` and `results/` for reproducibility
 
 ## 🗂 Directory Structure
 
-```
+```text
 NHB_Symbolic_Mainfold/
 ├── data/                      # Input datasets, intermediate and final outputs
 │   └── raw/                   # Raw files from OSF (SWOW-EN, cueStats, etc.)
@@ -65,7 +65,7 @@ NHB_Symbolic_Mainfold/
 ├── supplementary.tex           # NHB supplementary material
 ├── requirements.txt            # Reproducible environment specification
 └── README.md                   # This document
-```
+```text
 
 ---
 
@@ -74,20 +74,20 @@ NHB_Symbolic_Mainfold/
 1. **Clone the repository** (or download this subfolder).
 
 2. **Download raw data** from OSF DOI [10.17605/OSF.IO/2AQP7](https://doi.org/10.17605/OSF.IO/2AQP7) and place files in:
-```
+```text
 data/raw/
-```
+```text
 
 3. **Create and activate environment:**
 ```bash
 bash scripts/reset_env.sh
 conda activate entropic-symbolic-mainfold   # or source .venv/bin/activate if using venv
-```
+```text
 
 4. **Launch JupyterLab:**
 ```bash
 jupyter lab
-```
+```text
 
 5. **Run notebooks** in numerical order (01 → 06).
 
@@ -111,7 +111,7 @@ If you use this package, please cite:
  version = {v1.5},
  url = {https://doi.org/10.5281/zenodo.16752238}
 }
-```
+```text
 
 ---
 

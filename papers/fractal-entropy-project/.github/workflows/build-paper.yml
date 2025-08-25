@@ -1,5 +1,6 @@
+---
 name: build-paper
-on: [push]
+'on': [push]
 
 jobs:
   latex:

@@ -2,7 +2,7 @@
 
 ## Reporting / Como reportar vulnerabilidades
 
-- Envie um e-mail para [demetrios@agourakis.med.br](mailto:demetrios@agourakis.med.br) com assunto: `[SECURITY] <título curto>`.
+- Envie um e-mail para [[demetrios@agourakis.med.br](mailto:demetrios@agourakis.med.br)](mailto:demetrios@agourakis.med.br) com assunto: `[SECURITY] <título curto>`.
 - Inclua passos de reprodução, impacto estimado e escopo dos arquivos afetados.
 
 ## Response window / Janela de resposta
