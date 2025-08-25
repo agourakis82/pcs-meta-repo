@@ -13,7 +13,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install -r requirements.txt || true
-      - run: pip install -e src/pcs_toolbox || true
+      - run: |
+          if [ -f pyproject.toml ]; then
+            pip install -e .
+          else
+            echo "No pyproject.toml, skipping install"
+          fi
       - run: pip install pre-commit pytest coverage coverage-badge
       - name: Run pre-commit on tracked files
         run: |

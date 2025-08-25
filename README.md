@@ -16,7 +16,7 @@ cd pcs-meta-repo
 pip install -r requirements.txt
 ```
 
-## How to cite
+## Cite this work
 
 Please cite using the metadata in [CITATION.cff](CITATION.cff):
 

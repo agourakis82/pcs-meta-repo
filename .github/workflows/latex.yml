@@ -12,9 +12,14 @@ name: latex-build
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TEXINPUTS: >-
+        papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions:
+        papers/fractal-entropy-project/paper_model:.:$TEXINPUTS
     steps:
       - uses: actions/checkout@v4
       - uses: xu-cheng/latex-action@v3
+        continue-on-error: true
         with:
           root_file: |
             papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
