@@ -8,3 +8,13 @@
 __pycache__/
 *.ipynb_checkpoints/
 .tmp.driveupload/
+*.bak.*
+.ipynb_checkpoints/
+.obsidian/
+.venv/
+venv/
+.env
+.env.*
+node_modules/
+dist/
+build/

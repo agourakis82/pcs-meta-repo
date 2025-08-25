@@ -1,13 +1,11 @@
 SPDX-License-Identifier: CC-BY-4.0
 
 Este repositório adota licenças distintas:
-- Código-fonte: MIT (veja o arquivo LICENSE na raiz).
-- Textos, documentação e figuras: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-Resumo humano: você pode compartilhar e adaptar para qualquer finalidade, inclusive comercial, DESDE QUE dê crédito apropriado.
-Código legal oficial da CC BY 4.0:
+Código-fonte: MIT (ver arquivo LICENSE na raiz).
+
+Textos, documentação e figuras: Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Legal code oficial:
 https://creativecommons.org/licenses/by/4.0/legalcode.en
 
-Observações:
-- Alguns PDFs podem incorporar material de terceiros — respeite as respectivas licenças/créditos.
-- Para citação, siga o CITATION.cff deste repositório.
