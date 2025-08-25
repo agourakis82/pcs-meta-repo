@@ -50,14 +50,14 @@
       4 patch
       4 bst
       3 svg
-```
+```text
 
 ## Duplicate files (sha256 snippet)
 
 ```text
 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b  ./.safety/20250825-152706/staged.patch
 ...
-```
+```text
 
 ## Actions
 
