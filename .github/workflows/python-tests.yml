@@ -1,5 +1,5 @@
 ---
-name: ci-python
+name: python-tests
 'on': [push, pull_request]
 jobs:
   test:
@@ -14,7 +14,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -r requirements.txt || true
       - run: pip install -e src/pcs_toolbox || true
-      - run: pip install pre-commit pytest
+      - run: pip install pre-commit pytest coverage coverage-badge
       - name: Run pre-commit on tracked files
         run: |
           pre-commit run --files $(
@@ -23,4 +23,12 @@ jobs:
               ':!:docs/INSTRUCOES_PROJETO.md' ':!:.github/ISSUE_TEMPLATE/**' \
               ':!:meta/metadata.yaml'
           )
-      - run: pytest -q
+      - run: coverage run -m pytest
+      - run: coverage xml
+      - run: coverage-badge -o coverage.svg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            coverage.xml
+            coverage.svg
