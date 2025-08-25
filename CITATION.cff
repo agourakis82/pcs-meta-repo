@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Se você usar este repositório, por favor cite conforme abaixo."
+title: "pcs-meta-repo"
+type: software
+authors:
+  - family-names: Agourakis
+    given-names: Demetrios
+    orcid: https://orcid.org/0000-0002-8596-5097
+    email: demetrios@agourakis.med.br
+repository-code: https://github.com/<owner>/<repo>
+license: MIT
+version: 0.1.0
+date-released: 2025-08-25
+abstract: "Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS)."
+
+# Quando o DOI existir (Zenodo), acrescente:
+#identifiers:
+#  - type: doi
+#    value: 10.5281/zenodo.xxxxxxx
