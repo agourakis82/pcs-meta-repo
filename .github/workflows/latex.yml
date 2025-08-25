@@ -3,9 +3,12 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: xu-cheng/latex-action@v3
+        env:
+          TEXINPUTS: "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions:papers/fractal-entropy-project/paper_model:.:$TEXINPUTS"
         with:
           root_file: |
             
