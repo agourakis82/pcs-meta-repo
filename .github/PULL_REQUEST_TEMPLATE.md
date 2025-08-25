@@ -1,25 +1,21 @@
 # Pull Request
 
-Objetivo
+## O que muda
 
-O que este PR faz e por quê.
+Descreva o objetivo do PR e o motivo das mudanças.
 
-Checklist
+## Checklist
 
- README atualizado (se aplicável)
+- [ ] README atualizado (se aplicável)
+- [ ] CITATION.cff válido (se aplicável)
+- [ ] CHANGELOG atualizado (se aplicável)
+- [ ] Sem credenciais/segredos
+- [ ] Referencia uma issue (ex.: Closes #123)
 
- CITATION.cff válido (se aplicável)
-
- CHANGELOG atualizado (se aplicável)
-
- Sem credenciais/segredos
-
- Referencia uma issue (ex.: Closes #123)
-
-Evidências
+## Evidências
 
 (prints/logs)
 
-Riscos e mitigação
+## Riscos e mitigação
 
 (breve)

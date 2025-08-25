@@ -4,18 +4,22 @@ about: Relatar um problema real no repositório
 title: "[BUG] "
 labels: ["bug"]
 assignees: []
+---
 
-Descrição do bug
+## Descreva o bug
+
 Explique o problema de forma clara.
 
-Como reproduzir
+## Passos para reproduzir
 
 ...
 
 ...
 
-Comportamento esperado
+## Comportamento esperado
+
 ...
 
-Evidências
+## Evidências
+
 ...

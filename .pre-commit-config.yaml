@@ -17,6 +17,14 @@ repos:
     rev: v0.5.4
     hooks:
       - id: ruff
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
   - repo: local
     hooks:
       - id: markdownlint-cli2
