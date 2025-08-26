@@ -24,6 +24,7 @@ repos:
     rev: 6.0.1
     hooks:
       - id: isort
+        args: ["--profile", "black"]
   - repo: local
     hooks:
       - id: markdownlint-cli2
