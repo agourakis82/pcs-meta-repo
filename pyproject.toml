@@ -14,3 +14,8 @@ dependencies = [
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"
+known_first_party = ["pcs_toolbox"]
+line_length = 88
