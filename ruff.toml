@@ -1,5 +1,5 @@
-target-version = "py311"
-line-length = 100
+line-length = 88
+target-version = "py310"
 src = ["src"]
 fix = true
 
@@ -8,9 +8,13 @@ extend-exclude = [
 ]
 
 [lint]
-select = ["E", "F", "I"]
+select = ["E", "F"]
 
 [lint.isort]
 known-first-party = ["pcs_toolbox"]
 combine-as-imports = true
 force-single-line = false
+
+[lint.per-file-ignores]
+"notebooks/**" = ["E402", "I001", "E501"]
+"papers/**" = ["E402", "I001", "E501"]

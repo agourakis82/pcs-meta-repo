@@ -1,4 +1,9 @@
+# Duplicatas/bkps comuns
+*\ 2.*
+*.bak
+*.bak.*
 .DS_Store
+
 .vscode/
 .idea/
 *.tmp
