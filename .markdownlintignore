@@ -1,9 +1,8 @@
 node_modules/**
-**/.venv/**
 **/venv/**
+**/.venv/**
 **/vendor/**
 **/third_party/**
 **/third-party/**
 **/build/**
-pcs-lm/build/**
-pcs-lm/boost-src/**
+**/__pycache__/**

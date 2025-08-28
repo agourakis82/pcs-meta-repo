@@ -4,7 +4,7 @@ rules:
   document-start:
     present: true
   truthy:
-    allowed-values: ["true", "false"]
+    allowed-values: ['true', 'false']
     check-keys: false
   brackets:
     min-spaces-inside: 0
@@ -12,12 +12,3 @@ rules:
   line-length:
     max: 120
     allow-non-breakable-words: true
-  indentation:
-    indent-sequences: consistent
-  trailing-spaces: enable
-  comments:
-    require-starting-space: true
-  hyphens:
-    max-spaces-after: 1
-  empty-lines:
-    max: 2

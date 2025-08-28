@@ -4,8 +4,6 @@
   "MD040": true,
   "MD041": false,
   "default": true,
-  "MD003": { "style": "consistent" },
-  "MD004": { "style": "consistent" },
   "MD007": { "indent": 2 },
   "MD009": { "br_spaces": 2 },
   "MD012": { "maximum": 1 }
