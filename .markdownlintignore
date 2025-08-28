@@ -1,3 +1,9 @@
-.git
-METADATA_ZENODO_PATCH_*.md
-README_PATCH_*.md
+node_modules/**
+**/.venv/**
+**/venv/**
+**/vendor/**
+**/third_party/**
+**/third-party/**
+**/build/**
+pcs-lm/build/**
+pcs-lm/boost-src/**

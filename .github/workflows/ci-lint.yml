@@ -1,0 +1,28 @@
+---
+name: Lint (Markdown & YAML)
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Node linters
+        run: |
+          npm install --global markdownlint-cli2 prettier
+      - name: Install yamllint
+        run: |
+          pipx install yamllint || pip install --user yamllint
+      - name: Markdown lint
+        run: markdownlint-cli2 "**/*.md"
+      - name: YAML lint (workflows)
+        run: yamllint .github/workflows

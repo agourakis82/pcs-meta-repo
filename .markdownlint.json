@@ -1,0 +1,12 @@
+{
+  "MD022": { "lines_above": 1, "lines_below": 1 },
+  "MD031": true,
+  "MD040": true,
+  "MD041": false,
+  "default": true,
+  "MD003": { "style": "consistent" },
+  "MD004": { "style": "consistent" },
+  "MD007": { "indent": 2 },
+  "MD009": { "br_spaces": 2 },
+  "MD012": { "maximum": 1 }
+}

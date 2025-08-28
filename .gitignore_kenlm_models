@@ -1,0 +1,8 @@
+# Ignore raw corpora and heavy artifacts
+data/
+*.arpa
+*.binary
+*.tmp
+*.log
+*.gz
+*.zip
