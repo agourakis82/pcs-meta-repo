@@ -12,21 +12,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Instalar deps e rodar testes
-        env:
-          PYTHONPATH: ${{ github.workspace }}/src
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt || true
-          # opcional: python -m pip install -e .
-          pip install pre-commit pytest coverage coverage-badge
-          pre-commit run --all-files || true
-          coverage run -m pytest -q
-      - run: coverage xml
-      - run: coverage-badge -o coverage.svg
-      - uses: actions/upload-artifact@v4
+          pip install -r requirements.txt
+          pip install -e .
+          pip install pytest coverage coverage-badge
+      - name: Run tests with coverage
+        run: |
+          coverage run -m pytest tests/ -v
+          coverage xml
+          coverage-badge -o coverage.svg
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@v4
         with:
-          name: coverage-report
+          name: coverage-report-${{ matrix.python-version }}
           path: |
+            coverage.xml
+            coverage.svg
+          retention-days: 30
             coverage.xml
             coverage.svg
