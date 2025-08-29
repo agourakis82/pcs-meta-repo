@@ -25,16 +25,15 @@ repos:
     hooks:
       - id: isort
         args: ["--profile", "black"]
-  # Temporariamente desabilitado para permitir commit das correções
-  # - repo: local
-  #   hooks:
-  #     - id: markdownlint-cli2
-  #       name: markdownlint-cli2
-  #       entry: markdownlint-cli2
-  #       language: node
-  #       types: [markdown]
-  #       additional_dependencies: [markdownlint-cli2@0.11.0]
-  #       args: ["--config", ".markdownlint-cli2.jsonc"]
+  - repo: local
+    hooks:
+      - id: markdownlint-cli2
+        name: markdownlint-cli2
+        entry: markdownlint-cli2
+        language: node
+        types: [markdown]
+        additional_dependencies: [markdownlint-cli2@0.11.0]
+        args: ["--config", ".markdownlint-cli2.jsonc"]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
