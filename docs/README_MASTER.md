@@ -10,11 +10,14 @@
 
 ## 🔹 1. GitHub Repositories (to be unified via this meta-repo)
 
-- **phd-bridge-biomaterials-neuro-symbolic** — Biomaterials ↔ Computational Neuroscience (MSc/PhD bridge)
+- **phd-bridge-biomaterials-neuro-symbolic** — Biomaterials ↔ Computational Neuroscience
+  (MSc/PhD bridge)
 
-- **fractal-entropy-project** — Modular repo (M01–M07) — philosophical, symbolic & computational foundation
+- **fractal-entropy-project** — Modular repo (M01–M07) — philosophical, symbolic
+  & computational foundation
 
-- **NHB_Symbolic_Mainfold** — Derived repo — linearised article for *Nature Human Behaviour*
+- **NHB_Symbolic_Mainfold** — Derived repo — linearised article for
+  *Nature Human Behaviour*
 
 - **symbolic-entropic-society** — Corpus/base (reviews, validated computational methods)
 

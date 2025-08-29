@@ -16,7 +16,7 @@ Script `repo_autofix.sh` executado com sucesso, resolvendo problemas de compatib
 
 ### 📈 Commits Criados
 - `chore(lint/ci)`: Configurações de lint e CI
-- `style(ci-yaml)`: Normalização de workflows GitHub Actions  
+- `style(ci-yaml)`: Normalização de workflows GitHub Actions
 - `chore(repo)`: Arquivos restantes e ferramentas
 
 ### 🛠️ Configurações Implementadas
@@ -87,7 +87,7 @@ Script `repo_autofix.sh` executado com sucesso, resolvendo problemas de compatib
 O repositório PCS-Meta-Repo está agora **totalmente preparado** para submissão a periódicos Q1, com:
 
 ✅ Sistema robusto de qualidade de código
-✅ Documentação acadêmica estruturada  
+✅ Documentação acadêmica estruturada
 ✅ Workflows de CI/CD automatizados
 ✅ Compatibilidade macOS/Linux
 ✅ Estrutura reprodutível
