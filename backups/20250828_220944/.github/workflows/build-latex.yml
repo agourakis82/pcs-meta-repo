@@ -1,0 +1,31 @@
+---
+name: build-latex
+"on":
+  push:
+    paths:
+      - "papers/**/*.tex"
+  pull_request:
+    paths:
+      - "papers/**/*.tex"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TEXINPUTS: >-
+        papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions:
+        papers/fractal-entropy-project/paper_model:.:$TEXINPUTS
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        continue-on-error: true
+        with:
+          root_file: |
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
+            papers/fractal-entropy-project/paper_model/main.tex
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: papers-pdf
+          path: papers/**/*.pdf

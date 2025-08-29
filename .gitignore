@@ -23,3 +23,16 @@ venv/
 node_modules/
 dist/
 build/
+
+# Exceções para arquivos necessários ao script repo_autofix.sh
+!.github/workflows/ci-lint.yml
+!.markdownlint.json
+!.markdownlintignore
+!.yamllint
+
+# Exceções adicionais para arquivos necessários ao script repo_autofix.sh
+!.github/workflows/pre-commit 2.yml
+!.github/workflows/ci-markdown 2.yml
+
+# Exceção para node_modules necessário ao script repo_autofix.sh
+!node_modules/**
