@@ -1,0 +1,17 @@
+---
+name: ci-yaml
+"on": [push, pull_request]
+jobs:
+  yamllint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: pip install yamllint
+      - name: Run yamllint on tracked files
+        run: |
+          yamllint $(git ls-files '*.yml' '*.yaml' \
+            ':!:notebooks/**' ':!:papers/**' \
+            ':!:meta/metadata.yaml')

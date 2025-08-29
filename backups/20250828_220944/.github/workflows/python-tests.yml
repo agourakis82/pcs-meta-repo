@@ -1,0 +1,32 @@
+---
+name: python-tests
+"on": [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Instalar deps e rodar testes
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || true
+          # opcional: python -m pip install -e .
+          pip install pre-commit pytest coverage coverage-badge
+          pre-commit run --all-files || true
+          coverage run -m pytest -q
+      - run: coverage xml
+      - run: coverage-badge -o coverage.svg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            coverage.xml
+            coverage.svg

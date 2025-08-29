@@ -1,0 +1,24 @@
+---
+name: CI Lint
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install markdownlint-cli2
+        run: npm install -g markdownlint-cli2
+      - name: Install yamllint
+        run: pip install yamllint
+      - name: Run markdownlint
+        run: markdownlint-cli2 "**/*.md"
+      - name: Run yamllint
+        run: yamllint .github/workflows
