@@ -1,0 +1,57 @@
+*** Begin Patch
+*** Delete File: ruff.toml
+*** End Patch
+*** Begin Patch
+*** Add File: ruff.toml
++exclude = [
++    ".venv",
++    ".git",
++    "__pycache__",
++    "build",
++    "dist",
++]
++
++line-ending = "lf"
++docstring-code-format = true
++docstring-code-line-length = 88
++preview = true
++
+*** End Patch
+*** Begin Patch
+*** Delete File: .markdownlint.yaml
+*** End Patch
+*** Begin Patch
+*** Add File: .markdownlint.yaml
++default: true
++MD013:
++  line_length: 1200
++  heading_line_length: 1200
++MD029: false
++MD025: false
++MD041: false
++MD047: false
++MD036: false
++MD040: false
++MD024: false
++MD058: false
++MD001: false
++MD031: false
++MD032: false
++MD004: false
++MD022: false
++MD012: false
++
+*** End Patch
+*** Begin Patch
+*** Delete File: .yamllint.yaml
+*** End Patch
+*** Begin Patch
+*** Add File: .yamllint.yaml
++extends: default
++
++rules:
++  brackets:
++    max-spaces-inside: null
++    ignore: true
++
+*** End Patch

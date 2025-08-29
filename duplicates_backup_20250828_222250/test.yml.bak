@@ -1,0 +1,10 @@
+run: True
+args: False
+run: "True"
+args: "False"
+run: true
+args: false
+run: [ True , False ]
+run: ["True", "False"]
+run: True # comentário
+run: False #comentário

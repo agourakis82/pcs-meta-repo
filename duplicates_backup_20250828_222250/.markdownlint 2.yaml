@@ -1,0 +1,14 @@
+MD013: false            # line-length (já relaxado)
+MD022: false            # blanks-around-headings
+MD032: false            # blanks-around-lists
+MD029:
+  style: ordered        # aceita 1., 2., 3. (em vez de 1/1/1)
+MD031: false            # blanks-around-fences
+MD040:
+  code_blocks: false    # não exige linguagem nos fences
+MD041: true             # manter "precisa ter um H1 no topo"
+MD001: false            # heading-increment
+MD024: false            # duplicate-heading
+MD058: false            # blanks-around-tables
+MD036: false            # no-emphasis-as-heading
+MD003: false            # heading-style (evita conflito com front-matter)
