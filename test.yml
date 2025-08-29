@@ -1,0 +1,23 @@
+---
+# Test configuration file for PCS-Meta-Repo
+# This file demonstrates proper YAML structure for CI/CD testing
+
+# Primeira seção
+first_section:
+  run: true
+  args: false
+
+# Segunda seção
+second_section:
+  run: "True"  # Use aspas para strings
+  args: "False"  # Use aspas para strings
+
+# Terceira seção
+third_section:
+  run: [true, false]  # Array simples
+  args: ["True", "False"]  # Array com strings
+
+# Quarta seção
+fourth_section:
+  run: true  # Comentário com espaço apropriado
+  args: false  # Comentário com espaço apropriado

@@ -36,3 +36,7 @@ build/
 
 # Exceção para node_modules necessário ao script repo_autofix.sh
 !node_modules/**
+
+# Git repositories (avoid nested repo issues)
+pcs-lm/src/
+pcs-meta-repo/
