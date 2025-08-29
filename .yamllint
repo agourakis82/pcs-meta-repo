@@ -12,3 +12,9 @@ rules:
   line-length:
     max: 80
     allow-non-breakable-words: true
+
+ignore: |
+  backups/
+  pcs-lm/build/
+  pcs-lm/src/
+  node_modules/

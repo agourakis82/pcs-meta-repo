@@ -6,5 +6,11 @@
   "default": true,
   "MD007": { "indent": 2 },
   "MD009": { "br_spaces": 2 },
-  "MD012": { "maximum": 1 }
+  "MD012": { "maximum": 1 },
+  "ignores": [
+    "pcs-lm/build/",
+    "pcs-lm/src/",
+    "node_modules/",
+    "backups/"
+  ]
 }
