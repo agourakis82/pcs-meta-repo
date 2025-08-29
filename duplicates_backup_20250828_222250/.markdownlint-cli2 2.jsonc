@@ -1,0 +1,5 @@
+{
+  "config": ".markdownlint.jsonc",
+  "globs": ["**/*.md"],
+  "ignores": []
+}

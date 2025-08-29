@@ -1,0 +1,13 @@
+line-length = 160
+target-version = "py310"
+exclude = ["**/*.ipynb"]
+
+[lint]
+select = ["E", "F", "I", "UP"]
+ignore = [
+  "ANN",      # sem forçar type hints em tudo agora
+  "TRY",      # mensagens longas em exceptions, ok por enquanto
+  "E402",     # imports não no topo (CLIs/blocks)
+  "UP007", "UP038", "TRY300", "TRY400", "TRY401"
+]
+fixable = ["ALL"]
