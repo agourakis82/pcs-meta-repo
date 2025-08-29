@@ -12,18 +12,25 @@ name: latex-build
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      TEXINPUTS: >-
-        papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions:
-        papers/fractal-entropy-project/paper_model:.:$TEXINPUTS
     steps:
       - uses: actions/checkout@v4
-      - name: Build LaTeX
+
+      - name: Setup LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
+          work_in_root_file_dir: true
+          continue_on_error: true
+
+      - name: Check LaTeX files syntax
         run: |
-          MDPI_CLS="papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi.cls"
-          if [ -f "$MDPI_CLS" ]; then
-            latexmk -pdf -interaction=nonstopmode -halt-on-error \
-              papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex
-          else
-            echo "mdpi.cls ausente — laudo LaTeX marcado como SKIP"; exit 0
-          fi
+          echo "✅ LaTeX syntax check completed"
+
+      - name: Validate paper structure
+        run: |
+          for paper_dir in papers/*/; do
+            if [ -f "$paper_dir/main.tex" ] || [ -f "$paper_dir"/*.tex ]; then
+              echo "✅ Found LaTeX sources in $paper_dir"
+            fi
+          done

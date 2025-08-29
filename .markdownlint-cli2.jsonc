@@ -13,7 +13,13 @@
     "**/*.bak.*",
     "**/CHANGELOG_PATCH_*",
     "**/METADATA_ZENODO_PATCH_*",
-    "**/README_PATCH*.md"
+    "**/README_PATCH*.md",
+    "pcs-lm/build/**",
+    "pcs-lm/src/**",
+    "**/.venv/**",
+    "**/venv/**",
+    "**/node_modules/**",
+    "docs/scratchpad/**"
   ],
   "config": {
     "default": true,
