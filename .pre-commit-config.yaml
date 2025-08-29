@@ -1,6 +1,6 @@
 ---
 exclude: >
-  ^(notebooks/|papers/|meta/metadata\.yaml|docs/INSTRUCOES_PROJETO\.md|\.github/ISSUE_TEMPLATE/)
+  ^(notebooks/|papers/|meta/metadata\.yaml|docs/INSTRUCOES_PROJETO\.md|\.github/ISSUE_TEMPLATE/|backups/|duplicates_backup_/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
