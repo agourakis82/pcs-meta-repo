@@ -1,0 +1,22 @@
+{
+  "upload_type": "publication",
+  "publication_type": "report",
+  "title": "Extended Memory — PhD & Publication Plan (Brazil) v4.3",
+  "creators": [{"name": "Agourakis, Demetrios", "orcid": "0000-0002-8596-5097", "affiliation": "PUC-SP"}],
+  "description": "Authoritative v4.3 snapshot unifying PhD plan, Master’s bridge, neuropsychological guidance, PCS-HELIO methods, and governance (public data only).",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "version": "v2025.08.28",
+  "prereserve_doi": false,
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.16533374", "relation": "isPartOf", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.16541976", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.16550501", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.16605353", "relation": "isSupplementTo", "scheme": "doi"}
+  ],
+  "keywords": ["computational psychiatry", "symbolic manifolds", "entropy", "EEG", "eye-tracking", "SWOW", "ZuCo", "HELIO"],
+  "communities": [
+    {"identifier": "neuroscience"},
+    {"identifier": "complex-systems"}
+  ]
+}

@@ -1,0 +1,34 @@
+---
+title: "Fractal Entropy — Extended Memory: PhD & Publication Plan (Brazil)"
+version: "v2025.08.29"
+date: "2025-08-29"
+doi: "TBD"  # to be updated after Zenodo deposition
+license: "CC-BY-4.0"
+language: "en"
+creators:
+  - name: "Demetrios Agourakis"
+    orcid: "0000-0002-8596-5097"
+    affiliation: "PUC-SP — Graduate Program in Biomaterials & Regenerative Medicine
+      (PPGBMR)"
+    email: "demetrios@agourakis.med.br"
+keywords:
+  - Computational-Symbolic Psychiatry
+  - Fractal Entropy
+  - Semantic Manifolds
+  - SWOW
+  - ZuCo
+  - AG5/KEC
+  - SEA/VAR
+  - Reproducibility
+related_identifiers:
+  - relation: "isPartOf"
+    identifier: "10.5281/zenodo.TBD_PARENT"  # parent community/project DOI, to be
+    # replaced
+  - relation: "isSupplementTo"
+    identifier: "10.17605/OSF.IO/2AQP7"  # OSF wiki main (as declared by the author
+    # earlier)
+funding: []
+provenance:
+  data_policy: "Public datasets only; no PII; license compliance"
+  quality_gates: "Q1–Q10 mandatory"
+  environment: "conda/uv lockfile; seeds pinned"

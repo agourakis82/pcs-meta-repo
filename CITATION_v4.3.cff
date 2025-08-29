@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Fractal Entropy — Extended Memory: PhD & Publication Plan (Brazil)"
+version: "v2025.08.29"
+date-released: "2025-08-29"
+authors:
+  - family-names: "Agourakis"
+    given-names: "Demetrios"
+    orcid: "https://orcid.org/0000-0002-8596-5097"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.TBD"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/agourakis82/NHB_Symbolic_Mainfold"
+preferred-citation:
+  type: report
+  authors:
+    - family-names: "Agourakis"
+      given-names: "Demetrios"
+      orcid: "https://orcid.org/0000-0002-8596-5097"
+  title: "Fractal Entropy — Extended Memory: PhD & Publication Plan (Brazil)"
+  year: 2025
+  month: 8
+  institution: "PUC-SP — PPGBMR"
