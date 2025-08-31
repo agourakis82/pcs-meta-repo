@@ -22,11 +22,9 @@ keywords:
   - Reproducibility
 related_identifiers:
   - relation: "isPartOf"
-    identifier: "10.5281/zenodo.TBD_PARENT"  # parent community/project DOI, to be
-    # replaced
+    identifier: "10.5281/zenodo.TBD_PARENT"  # parent community/project DOI, to be replaced
   - relation: "isSupplementTo"
-    identifier: "10.17605/OSF.IO/2AQP7"  # OSF wiki main (as declared by the author
-    # earlier)
+    identifier: "10.17605/OSF.IO/2AQP7"  # OSF wiki main (as declared by the author earlier)
 funding: []
 provenance:
   data_policy: "Public datasets only; no PII; license compliance"
