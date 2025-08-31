@@ -1,7 +1,9 @@
+---
 seed: 42
 context_length: 4096
 backend: cuda            # cuda | api | (cpu-kenlm é no script)
 model_format: gguf
-model_path: /mnt/c/Models/llama/llama-7b.Q4_K_M.gguf  # <-- ajuste para seu .gguf
+model_path: >-
+  /mnt/c/Models/llama/llama-7b.Q4_K_M.gguf
 metrics: [perplexity, surprisal, tokens_per_sec, wall_time, peak_mem]
 tags: ["Linha PCS-HELIO"]
