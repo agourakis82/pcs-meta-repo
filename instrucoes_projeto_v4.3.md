@@ -15,7 +15,8 @@ The **HELIO module is explicitly deferred** to a later phase (H1).
 - Safety, accuracy, traceability > convenience. No PII; public datasets only.
 - Reproducibility: fixed seeds, pinned envs,
 `provenance.yaml`, inventory & link‑check reports.
-- **Quality Gates (Q1–Q10)** enforced for every deliverable; CI checks must pass prior to release.
+- **Quality Gates (Q1–Q10)** enforced for every deliverable; CI checks must pass
+  prior to release.
 
 **Out of Scope (deferred):** HELIO, geomagnetic exposures, SEA/VAR event‑study. Keep placeholders only in roadmap.
 
@@ -37,9 +38,9 @@ notebooks reproducible; (iv) Zenodo version DOI; (v) Dissertation‑ready figure
 - **PI/Author:** Demetrios — scientific direction, writing, final approvals.
 - **Infra:** repo curation, lints, linkcheck, metadata (`CITATION.cff`,
   `zenodo.json`, `metadata.yaml`).
-- **Quality:** apply **Q1–Q10** (technical accuracy; up‑to‑date sources; terminology;
-  IMRaD; reproducibility; limitations & bias; actionables; impact/toolbox; ethics/legal;
-  alignment to the Supreme Goal).
+- **Quality:** apply **Q1–Q10** (technical accuracy; up‑to‑date sources;
+  terminology; IMRaD; reproducibility; limitations & bias; actionables;
+  impact/toolbox; ethics/legal; alignment to the Supreme Goal).
 
 **Licensing.** Text CC BY 4.0; code MIT. Include LICENSE & CITATION.
 
@@ -47,7 +48,7 @@ notebooks reproducible; (iv) Zenodo version DOI; (v) Dissertation‑ready figure
 
 ## 3) Canonical Repository Layout & Conventions
 
-```
+```text
 /docs               policies, guides, inventory, methods
 /src                library code (packaged later)
 /notebooks          reproducible (versioned) notebooks
@@ -104,13 +105,27 @@ scripts:
   - notebooks/02_zuco_loader.ipynb
   - src/zuco/convert_mat_to_tidy.py
 ```
-yaml
+
+```yaml
+dataset: zuco_v2
+source_url: https://osf.io/ (provider link)
+license: CC BY-NC-SA 4.0 (verify upstream)
+ingest_date: 2025-08-29
+raw_dir: data/raw_public/zuco/v2
+checksums:
+  - file: S01.mat
+    sha256: <hash>
+scripts:
+  - notebooks/02_zuco_loader.ipynb
+  - src/zuco/convert_mat_to_tidy.py
+```
+
+```yaml
 version_pins:
   python: "3.11"
   packages:
     numpy: "1.26.*"
     pandas: "2.2.*"
-```
 ```
 
 ---
