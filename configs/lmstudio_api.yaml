@@ -1,0 +1,7 @@
+seed: 42
+backend: api
+base_url: "http://localhost:1234/v1"   # LM Studio -> Server -> Start API Server
+model: mixtral-8x7b-instruct-q4_k_m    # rótulo do modelo carregado no LM Studio
+context_length: 4096
+metrics: [surprisal, tokens_per_sec, wall_time]
+tags: ["Linha Mestrado"]
