@@ -12,9 +12,10 @@ public data only, no broken links.
 
 This document operationalizes v4.3 for **Phase S1 — Symbolic Area First**.
 The **HELIO module is explicitly deferred** to a later phase (H1).
+
 - Safety, accuracy, traceability > convenience. No PII; public datasets only.
-- Reproducibility: fixed seeds, pinned envs,
-`provenance.yaml`, inventory & link‑check reports.
+- Reproducibility: fixed seeds, pinned envs, `provenance.yaml`, inventory &
+  link‑check reports.
 - **Quality Gates (Q1–Q10)** enforced for every deliverable; CI checks must pass
   prior to release.
 
@@ -126,13 +127,12 @@ version_pins:
   packages:
     numpy: "1.26.*"
     pandas: "2.2.*"
-```
-
----
-
-## 5) Symbolic State Metric — **KEC**
-
-**Components:** (i) transition entropy; (ii) local curvature (Ollivier‑Ricci/Forman variants); (iii) meso‑coherence.
+```yaml
+# Example KEC parameters
+kec:
+  transition_entropy: {smoothing: 0.1, window_size: 5}
+  local_curvature: {method: "ollivier_ricci", alpha: 0.5}
+  meso_coherence: {algorithm: "leiden", resolution: 1.0}
 ```
 
 ---
@@ -140,11 +140,18 @@ version_pins:
 ## 5) Symbolic State Metric — **KEC**
 
 **Inputs:** SWOW graphs; tokenized stimuli; mapping tables.
-**Components:** (i) transition entropy; (ii) local curvature (Ollivier‑Ricci/Forman variants); (iii) meso‑coherence (community‑aware).
-**Ablations:** edge shuffles; degree‑preserving randomization; vocabulary subsampling.
-**Uncertainty:** bootstrap CIs; robust SEs clustered by sentence/subject when mapped to ZuCo.
 
-**Deliverables:** metric tables under `/data/processed/kec/` + plots under `/figures/metrics/`.
+**Components:** (i) transition entropy; (ii) local curvature
+(Ollivier‑Ricci/Forman variants); (iii) meso‑coherence (community‑aware).
+
+**Ablations:** edge shuffles; degree‑preserving randomization; vocabulary
+subsampling.
+
+**Uncertainty:** bootstrap CIs; robust SEs clustered by sentence/subject when
+mapped to ZuCo.
+
+**Deliverables:** metric tables under `/data/processed/kec/` + plots under
+`/figures/metrics/`.
 
 ---
 
@@ -161,6 +168,7 @@ version_pins:
 ---
 
 ## 7) Notebooks Plan (v0.1)
+
 1. `01_swow_loader.ipynb` — ingest, graph build, sanity checks.
 2. `02_kec_metrics.ipynb` — entropy/curvature/coherence, ablations, CIs.
 3. `03_zuco_loader.ipynb` — ET/EEG features, alignment, tidy exports.
@@ -172,18 +180,25 @@ version_pins:
 ---
 
 ## 8) Manuscripts & References
-- **Primary:** Overleaf IMRaD (skeleton supplied), Vancouver style, Better BibTeX export to `manuscripts/references.bib`.
-- **Sections:** Abstract, Introduction, Methods (KEC, data, models), Results (F1–F4), Discussion, Limitations, Ethics, Data/Code availability.
+
+- **Primary:** Overleaf IMRaD (skeleton supplied), Vancouver style, Better BibTeX
+  export to `manuscripts/references.bib`.
+- **Sections:** Abstract, Introduction, Methods (KEC, data, models), Results
+  (F1–F4), Discussion, Limitations, Ethics, Data/Code availability.
 
 ---
 
 ## 9) Releases & DOIs
+
 **Concept DOI:** 10.5281/zenodo.16533374 (keep).
+
 **Version DOI procedure:**
+
 1) Create Git tag `v4.3`;
 2) Archive release → Zenodo (link GitHub);
 3) Capture badge;
 4) Update README & `CITATION.cff`.
+
 **Reports:** attach `/reports/*` and inventory hashes to the release.
 
 ---
@@ -230,6 +245,9 @@ version_pins:
 ---
 
 ## 13) Appendix — Commands & Templates
+
 - **Build figures:** run notebooks 01→05; outputs saved under `/figures/*`.
-- **Overleaf:** load `manuscripts/preprint_skeleton.tex`; ensure `references.bib` synced (Zotero).
-- **Citations:** Vancouver numeric; every non‑obvious claim must have a primary source.
+- **Overleaf:** load `manuscripts/preprint_skeleton.tex`; ensure `references.bib`
+  synced (Zotero).
+- **Citations:** Vancouver numeric; every non‑obvious claim must have a primary
+  source.
