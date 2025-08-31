@@ -1,13 +1,16 @@
-title: "Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔ Neurociência (SWOW, grafos semânticos)"
+---
+title: "Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔ Neurociência
+  (SWOW, grafos semânticos)"
 creators:
   - name: "Demetrios Agourakis"
     affiliation: "PUC-SP; Faculdade São Leopoldo Mandic"
     orcid: "0000-0002-8596-5097"
 description: >
-  Roadmap estratégico com cronograma, KPIs, e plano de publicação (Q1 + ensaísticos) para maximizar visibilidade
-  e ingresso em programas de doutorado (USP, UNICAMP, UNIFESP), integrando biomateriais e psiquiatria computacional
-  via SWOW e redes semânticas.
-keywords: ["computational psychiatry", "neuroscience", "biomaterials", "fractal", "entropy", "SWOW", "semantic networks"]
+  Roadmap estratégico com cronograma, KPIs, e plano de publicação (Q1 + ensaísticos) para
+  maximizar visibilidade e ingresso em programas de doutorado (USP, UNICAMP, UNIFESP),
+  integrando biomateriais e psiquiatria computacional via SWOW e redes semânticas.
+keywords: ["computational psychiatry", "neuroscience", "biomaterials", "fractal", "entropy",
+  "SWOW", "semantic networks"]
 language: "pt-BR"
 license: "CC-BY-4.0"
 version: "v2025.08.17"
