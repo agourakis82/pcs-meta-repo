@@ -1,30 +1,40 @@
 ---
-title: "pcs-meta-repo"
-description: >
-  Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS).
-version: "v2025.08.23"
-doi: "10.5281/zenodo.16921952"
-notes: "Atualizar DOI após release"
-repository_url: "https://github.com/agourakis82/pcs-meta-repo"
-authors:
+title: >-
+  Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔
+  Neurociência (SWOW, grafos semânticos)
+creators:
   - name: "Demetrios Agourakis"
+    affiliation: "PUC-SP; Faculdade São Leopoldo Mandic"
     orcid: "0000-0002-8596-5097"
-    email: "demetrios@agourakis.med.br"
-licenses:
-  code: "MIT"
-  docs: "CC-BY-4.0"
+description: >-
+  Roadmap estratégico com cronograma, KPIs, e plano de publicação (Q1 +
+  ensaísticos) para maximizar visibilidade e ingresso em programas de
+  doutorado (USP, UNICAMP, UNIFESP), integrando biomateriais e psiquiatria
+  computacional via SWOW e redes semânticas.
 keywords:
-  - computational-psychiatry
+  - computational psychiatry
   - neuroscience
-  - nlp
-  - open-science
-  - reproducibility
+  - biomaterials
+  - fractal
+  - entropy
+  - SWOW
+  - semantic networks
+language: "pt-BR"
+license: "CC-BY-4.0"
+version: "v2025.08.17"
+date: "2025-08-17"
 related_identifiers:
-  - relation: isSupplementTo
-    identifier: "10.5281/zenodo.16752238"
-  - relation: isSupplementTo
-    identifier: "10.17605/OSF.IO/2AQP7"
-  - relation: isSupplementTo
-    identifier: "10.5281/zenodo.16730036"
-  - relation: isSupplementTo
-    identifier: "10.5281/zenodo.16783257"
+  - type: doi
+    relation: isPartOf
+    value: "10.5281/zenodo.16533374"
+  - type: doi
+    relation: isPartOf
+    value: "10.5281/zenodo.16541976"
+  - type: doi
+    relation: isPartOf
+    value: "10.5281/zenodo.16550501"
+  - type: doi
+    relation: isPartOf
+    value: "10.5281/zenodo.16605353"
+repository: >-
+  https://github.com/agourakis82/phd-bridge-biomaterials-neuro-symbolic

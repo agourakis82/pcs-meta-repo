@@ -1,0 +1,96 @@
+% Preprint IMRaD skeleton — Symbolic Area First (v4.3)
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}\onehalfspacing
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% Bibliography (Vancouver-like numeric)
+\usepackage[backend=biber,style=vancouver,sorting=none,maxnames=6]{biblatex}
+\addbibresource{references.bib} % export from Zotero (Better BibTeX)
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\kec}{\ensuremath{\mathrm{KEC}}}
+
+\title{Symbolic Manifolds with Public Data:\\
+A Reproducible Framework for Semantic State Metrics (\kec{}) and ZuCo Validation}
+\author{Demetrios Agourakis, MD\
+\small ORCID 0000-0002-8596-5097 \quad PUC-SP (Biomaterials \& Regenerative Medicine)\\
+\small \texttt{demetrios@agourakis.med.br} }
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\textbf{Background:} We present an interpretable, reproducible pipeline to derive a symbolic state metric (\kec{}) from language association graphs and to validate its correlates in public neurophysiology.
+\textbf{Methods:} \kec{} integrates transition entropy, local curvature, and meso-scale coherence computed on SWOW graphs. Reading-cost and EEG correlates are tested on ZuCo using fixation-aligned models with lexical controls. All steps are versioned, seeded, and auditable.
+\textbf{Results:} [One-paragraph summary of core quantitative outcomes; include confidence intervals and effect sizes once available.]
+\textbf{Conclusions:} The symbolic-first pipeline yields auditability and portability across languages, opening avenues for clinically relevant, non-diagnostic tools in computational psychiatry.
+\textbf{Keywords:} computational psychiatry; semantics; entropy; curvature; EEG; eye-tracking; reproducibility.
+\end{abstract}
+
+\section{Introduction}
+% Problem framing: symbolic manifolds as a bridge between cognition and language statistics.
+% Gap: need for interpretable, public-data pipelines.
+% Contribution: symbolic state metric (\kec{}) + validation on ZuCo.
+% Objectives and hypotheses.
+
+\section{Methods}
+\subsection{Study Design and Overview}
+We pre-registered the analytical steps in the public repository (public data only). Code and notebooks are versioned; seeds fixed; provenance logged.
+
+\subsection{Datasets}
+\paragraph{SWOW.} Free-association lexicons per language; graph construction rules and filtering thresholds specified here.
+\paragraph{ZuCo 1.0/2.0.} Simultaneous eye-tracking and EEG during sentence reading; fixation-aligned windows for band-limited power features and standard reading-cost metrics (FFD, GD, TRT, GPT).
+
+\subsection{Symbolic State Metric: \kec{}}
+We compute (i) transition entropy on weighted edges; (ii) local curvature (Ollivier--Ricci/Forman variants) per token neighborhood; (iii) meso-scale coherence aligned to detected communities. The composite \kec{} is standardized; ablations include shuffled and degree-preserving null graphs. Uncertainty via bootstrap CIs.
+
+\subsection{Validation Models (ZuCo)}
+Reading-cost metrics and EEG band power are regressed on local \kec{} at fixation timestamps with lexical covariates. Models include subject and sentence effects where appropriate. We report partial effects, robust standard errors, and multiple-comparison control when applicable.
+
+\subsection{Reproducibility}
+Environment frozen (\code{environment.yml}), code in \code{/src}, notebooks in \code{/notebooks}, tables in \code{/data/processed}, and figures in \code{/figures}. All seeds fixed; \code{provenance.yaml} records inputs and hashes.
+
+\subsection{Ethics}
+Public datasets only; no PII; analyses are non-diagnostic and for research purposes.
+
+\section{Results}
+% Figure F1: KEC distributions and layout diagnostics
+% Figure F2: Reading-cost vs KEC (partial effects)
+% Figure F3: EEG band power vs KEC (per-subject panels)
+% Figure F4: Cross-lingual residuals (Procrustes/MUSE)
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.75\linewidth]{../figures/F1_kec_distributions.png}
+  \caption{Distributions of \kec{} across languages with 95\% CIs and layout diagnostics.}
+  \label{fig:F1}
+\end{figure}
+
+\section{Discussion}
+% Interpretation, mechanisms, comparators, implications.
+% Separate evidence vs plausibility vs speculation.
+
+\section{Limitations}
+SWOW/ZuCo coverage (WEIRD bias), graph sampling, and lexical confounds; mitigations via ablations, controls, and sensitivity analyses.
+
+\section{Conclusions}
+% Concise take-home message and next steps.
+
+\section*{Data and Code Availability}
+Code, notebooks, and processed outputs are available in the public repository (see README). Raw datasets are publicly hosted by their providers and are not redistributed.
+
+\section*{Acknowledgements}
+We thank Dionisio Chiuratto Agourakis for Data Science and AI support.
+\printbibliography
+
+\end{document}
