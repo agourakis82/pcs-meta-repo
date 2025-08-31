@@ -1,3 +1,4 @@
+---
 seed: 42
 backend: api
 base_url: "http://localhost:1234/v1"   # LM Studio -> Server -> Start API Server

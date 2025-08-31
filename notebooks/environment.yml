@@ -1,3 +1,4 @@
+---
 name: pcs-notebooks
 dependencies:
   - python>=3.10
