@@ -8,8 +8,9 @@ language: "en"
 creators:
   - name: "Demetrios Agourakis"
     orcid: "0000-0002-8596-5097"
-    affiliation: "PUC-SP — Graduate Program in Biomaterials & Regenerative Medicine
-      (PPGBMR)"
+    affiliation: >-
+      PUC-SP — Graduate Program in Biomaterials & Regenerative Medicine
+      (PPGBMR)
     email: "demetrios@agourakis.med.br"
 keywords:
   - Computational-Symbolic Psychiatry
