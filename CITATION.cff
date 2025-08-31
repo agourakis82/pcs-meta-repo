@@ -1,38 +1,30 @@
----
 cff-version: 1.2.0
-message: "Se você usar este repositório, por favor cite conforme abaixo. Código sob MIT; textos e figuras sob CC BY 4.0."
-title: "pcs-meta-repo"
-type: software
+message: "If you use this work, please cite it as below."
+title: "Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔ Neurociência (SWOW, grafos semânticos)"
+version: "v2025.08.17"
+date-released: "2025-08-17"
 authors:
-  - family-names: Agourakis
-    given-names: Demetrios
-    orcid: https://orcid.org/0000-0002-8596-5097
-    email: demetrios@agourakis.med.br
-version: v2025.08.23
-date-released: 2025-08-23
-doi: 10.5281/zenodo.16921952
-repository-code: https://github.com/agourakis82/pcs-meta-repo
-license: MIT
-abstract: "Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS)."
+  - name: Dionisio Chiuratto Agourakis
+    affiliation: Data Science & AI collaborator
+  - family-names: "Agourakis"
+    given-names: "Demetrios"
+    email: "demetrios@agourakis.med.br"
+    orcid: "https://orcid.org/0000-0002-8596-5097"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.16752238
-    description: "NHB Symbolic Mainfold code"
-  - type: doi
-    value: 10.17605/OSF.IO/2AQP7
-    description: "NHB Symbolic Mainfold data"
-  - type: doi
-    value: 10.5281/zenodo.16730036
-    description: "Conceptual umbrella"
-  - type: doi
-    value: 10.5281/zenodo.16783257
-    description: "NHB version v1.6"
-preferred-citation:
-  type: software
-  title: "pcs-meta-repo"
-  authors:
-    - family-names: Agourakis
-      given-names: Demetrios
-      orcid: https://orcid.org/0000-0002-8596-5097
-  repository-code: https://github.com/agourakis82/pcs-meta-repo
-  doi: 10.5281/zenodo.16921952
+    value: "10.XXXX/zenodo.XXXXXXX"
+  - type: url
+    value: "https://github.com/agourakis82/phd-bridge-biomaterials-neuro-symbolic"
+repository-code: "https://github.com/agourakis82/phd-bridge-biomaterials-neuro-symbolic"
+license: "CC-BY-4.0"
+keywords:
+  - computational psychiatry
+  - neuroscience
+  - biomaterials
+  - symbolic cognition
+  - SWOW
+  - semantic networks
+abstract: >
+  Strategic roadmap (PT) for PhD entry (USP/UNICAMP/UNIFESP) leveraging a bridge between
+  regenerative medicine & biomaterials and computational/symbolic psychiatry. Includes
+  milestones, email template to PIs, and publication plan (Q1 + essay venues).

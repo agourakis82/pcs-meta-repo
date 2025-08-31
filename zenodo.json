@@ -1,55 +1,68 @@
 {
-  "title": "pcs-meta-repo",
-  "upload_type": "software",
-  "description": "Meta-repositório do projeto Psiquiatria Computacional‑Simbólica (PCS).",
-  "version": "v2025.08.23",
+  "title": "Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔ Neurociência (SWOW, grafos semânticos)",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "description": "<p>Roadmap estratégico para ingresso em PhD (USP, UNICAMP, UNIFESP) articulando biomateriais e psiquiatria computacional via SWOW/grafos semânticos. Inclui cronograma, KPIs, e modelo de e-mail.</p>",
   "creators": [
     {
       "name": "Agourakis, Demetrios",
-      "orcid": "0000-0002-8596-5097",
-      "affiliation": ""
+      "affiliation": "PUC-SP; Faculdade São Leopoldo Mandic",
+      "orcid": "0000-0002-8596-5097"
     }
   ],
-  "license": "MIT",
-  "notes": "Docs & figures: CC-BY-4.0. Update DOI after release",
-  "keywords": [
-    "computational-psychiatry",
-    "neuroscience",
-    "nlp",
-    "open-science",
-    "reproducibility"
+  "contributors": [
+    {
+      "name": "agourakis82",
+      "type": "ProjectMember",
+      "affiliation": "GitHub"
+    },
+    {
+      "name": "Dionisio Chiuratto Agourakis",
+      "type": "Other",
+      "affiliation": "Data Science & AI collaborator"
+    }
   ],
+  "keywords": [
+    "computational psychiatry",
+    "neuroscience",
+    "biomaterials",
+    "fractal",
+    "entropy",
+    "SWOW",
+    "semantic networks"
+  ],
+  "language": "por",
   "related_identifiers": [
     {
-      "relation": "isSupplementTo",
-      "scheme": "url",
-      "identifier": "https://github.com/agourakis82/pcs-meta-repo"
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16533374",
+      "scheme": "doi"
     },
     {
-      "relation": "isIdenticalTo",
-      "scheme": "doi",
-      "identifier": "10.5281/zenodo.16921952"
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16541976",
+      "scheme": "doi"
     },
     {
-      "relation": "isSupplementTo",
-      "scheme": "doi",
-      "identifier": "10.5281/zenodo.16752238"
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16550501",
+      "scheme": "doi"
     },
     {
-      "relation": "isSupplementTo",
-      "scheme": "doi",
-      "identifier": "10.17605/OSF.IO/2AQP7"
-    },
-    {
-      "relation": "isSupplementTo",
-      "scheme": "doi",
-      "identifier": "10.5281/zenodo.16730036"
-    },
-    {
-      "relation": "isSupplementTo",
-      "scheme": "doi",
-      "identifier": "10.5281/zenodo.16783257"
+      "relation": "isPartOf",
+      "identifier": "10.5281/zenodo.16605353",
+      "scheme": "doi"
     }
   ],
-  "language": "en"
+  "communities": [
+    {
+      "identifier": "neuroscience"
+    },
+    {
+      "identifier": "complex-systems"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "v2025.08.17",
+  "notes": "Após gerar o DOI no Zenodo (via GitHub release), atualizar README e CITATION.cff."
 }
