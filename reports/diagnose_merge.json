@@ -1,0 +1,141 @@
+{
+  "files": {
+    "zuco_aligned.csv": true,
+    "metrics_en.csv": true
+  },
+  "rows_merged": 2580,
+  "reading_cols_present": [
+    "duration_ms",
+    "fixation_samples"
+  ],
+  "eeg_cols_present": [],
+  "kec_cols_present": [
+    "entropy",
+    "coherence"
+  ],
+  "kec_coverage_pct": {
+    "entropy": 0.0,
+    "coherence": 0.0
+  },
+  "example_head": {
+    "subject": [
+      "ZKW",
+      "ZKW",
+      "ZKW",
+      "ZKW",
+      "ZKW"
+    ],
+    "tsr": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "word_idx": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "word": [
+      "word_0",
+      "word_1",
+      "word_2",
+      "word_3",
+      "word_4"
+    ],
+    "start_time": [
+      2448600,
+      2461380,
+      2474112,
+      2493009,
+      2505039
+    ],
+    "end_time": [
+      2461356,
+      2474097,
+      2492991,
+      2498227,
+      2529252
+    ],
+    "duration_ms": [
+      12756,
+      12717,
+      18879,
+      5218,
+      24213
+    ],
+    "avg_gaze_x": [
+      297.24369023357895,
+      339.36268281176285,
+      341.8035381355932,
+      354.3174013031812,
+      301.9865780127199
+    ],
+    "avg_gaze_y": [
+      138.67278570308827,
+      158.73261519106777,
+      245.1045021186441,
+      78.87957071674971,
+      169.14347071941853
+    ],
+    "avg_pupil_area": [
+      1131.6911741652298,
+      986.093568171096,
+      1027.9659957627118,
+      1206.6393254120353,
+      1029.2498554555216
+    ],
+    "fixation_samples": [
+      6379,
+      6359,
+      9440,
+      2609,
+      12107
+    ],
+    "token_norm": [
+      "word0",
+      "word1",
+      "word2",
+      "word3",
+      "word4"
+    ],
+    "node": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "entropy": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "degree": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "coherence": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "avg_curvature": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ]
+  }
+}
