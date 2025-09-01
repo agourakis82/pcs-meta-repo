@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Simple repository lint checker for required files and directories."""
 import json
-import os
 from pathlib import Path
 
 REQUIRED_FILES = [
@@ -22,6 +21,7 @@ REQUIRED_DIRS = [
     "tools",
 ]
 
+
 def main():
     missing_files = [f for f in REQUIRED_FILES if not Path(f).exists()]
     missing_dirs = [d for d in REQUIRED_DIRS if not Path(d).is_dir()]
@@ -30,6 +30,7 @@ def main():
         "missing_dirs": missing_dirs,
     }
     print(json.dumps(result, indent=2))
+
 
 if __name__ == "__main__":
     main()
