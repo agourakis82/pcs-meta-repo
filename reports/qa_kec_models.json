@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2025-09-01T18:23:49.464537Z",
+  "n_rows_merged": 2292,
+  "et_cols": [
+    "duration_ms",
+    "fixation_samples",
+    "avg_gaze_x",
+    "avg_gaze_y",
+    "avg_pupil_area"
+  ],
+  "eeg_cols": [],
+  "kec_cols": [
+    "entropy",
+    "avg_curvature",
+    "coherence"
+  ],
+  "reading_coeffs_csv": "../data/processed/models_reading_coeffs.csv",
+  "boot_ffd_entropy": null,
+  "fig_F2": "../figures/metrics/F2_reading_vs_KEC.png",
+  "fig_F3": "../figures/metrics/F3_EEG_vs_KEC.png"
+}
