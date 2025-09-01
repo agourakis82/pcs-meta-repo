@@ -1,0 +1,104 @@
+{
+  "lint": {
+    "missing_files": [],
+    "missing_dirs": []
+  },
+  "linkcheck": {
+    "README.md": [
+      {
+        "url": "https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml/badge.svg",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://zenodo.org/badge/DOI/10.5281/zenodo.16921952.svg",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://img.shields.io/badge/ORCID-0000--0002--8596--5097-brightgreen.svg?logo=orcid",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://img.shields.io/badge/license-MIT-blue.svg",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16921952",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16921952",
+        "status": "unchecked"
+      }
+    ],
+    "CODE_OF_CONDUCT.md": [
+      {
+        "url": "https://www.contributor-covenant.org/version/2/1/code_of_conduct/",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://www.contributor-covenant.org/version/2/1/code_of_conduct/#enforcement",
+        "status": "unchecked"
+      }
+    ],
+    "docs/README_MASTER.md": [
+      {
+        "url": "https://github.com/agourakis82",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://zenodo.org/badge/DOI/10.5281/zenodo.16921952.svg",
+        "status": "unchecked"
+      }
+    ],
+    "notebooks/entropic-symbolic-society/README.md": [
+      {
+        "url": "https://zenodo.org/badge/DOI/10.5281/zenodo.16783257.svg",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16730036",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16730036",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://orcid.org/0000-0002-8596-5097",
+        "status": "unchecked"
+      }
+    ],
+    "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md": [
+      {
+        "url": "https://zenodo.org/badge/DOI/10.5281/zenodo.16783257.svg",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16730036",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16533374",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.16752238",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.17605/OSF.IO/2AQP7",
+        "status": "unchecked"
+      },
+      {
+        "url": "https://doi.org/10.17605/OSF.IO/2AQP7",
+        "status": "unchecked"
+      }
+    ]
+  },
+  "notebooks": {
+    "01_swow_loader.ipynb": "not-run",
+    "02_zuco_loader.ipynb": "not-run",
+    "03_ag5_metrics.ipynb": "not-run"
+  },
+  "generated_at": "2025-09-01T22:10:52Z"
+}
