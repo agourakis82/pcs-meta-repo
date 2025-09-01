@@ -47,3 +47,1498 @@ ragpp/index/
 # Git repositories (avoid nested repo issues)
 pcs-lm/src/
 pcs-meta-repo/
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_NR_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZAB_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZAB_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZDM_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZDM_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZDN_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZDN_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZGW_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZGW_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZJM_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZJM_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZJN_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZJN_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZJS_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZJS_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZKB_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZKB_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZKH_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZKH_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZKW_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZKW_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZMG_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZMG_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZPH_T1.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_SR_ZPH_T2.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/answers/Fullresults_TSR_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/calcNewBoundsFunc.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/firstLevel_NR.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/firstLevel_SR.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/firstLevel_TSR.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/prepareETData.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/getElectrodePairs.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/RestingAlphaPeak.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/SyncET2EEG.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/wordbounds_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/wordbounds_SNR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/wordbounds_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/_changelog_v081.txt
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/addevents.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/applytochannels.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/binsacc.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/checksync.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/cleantriggers.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/detecteyemovements.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_applytochannels.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_calcvisangle.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_checksync.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_eyetrackerica.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_loadeyetracker.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_parser.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_ploteventrate.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_ploteyemovements.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_rej_eyecontin.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_rej_eyeepochs.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/dlg_syncsettings.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/eegplugin_eye_eeg.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/eyetrackerica.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/findmatchingevents.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/findsequence2.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/geticvariance.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/hist2d.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/mergesacc.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/microsacc_plugin.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/parseeyelink.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/parseq.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/parsesmi.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/parsetobii.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/ploteventrate.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/ploteyemovements.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_applytochannels.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_checksync.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_detecteyemovements.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_eyetrackerica.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_importeyetracker.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_parseeyelink.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_parsesmi.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_parsetobii.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_ploteventrate.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_ploteyemovements.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_rej_eyecontin.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/pop_rej_eyeepochs.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/rej_eyecontin.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/saccpar.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/searchclosest.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/synchronize.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/vecvel.m
+scripts/data/raw_public/zuco/v1/osfstorage/scripts/Matlab_scripts/lib/eye-eeg-master/velthresh.m
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZAB_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZDM_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZDN_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZGW_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZJM_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZJN_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZJS_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZKB_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZKH_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZKW_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZMG_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Matlab files/resultsZPH_SR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/sentencesSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/sentiment_normal_reading.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/gip_ZAB_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/oip_ZAB_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/wordbounds_SNR1_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/wordbounds_SNR2_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZAB/ZAB_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/gip_ZDM_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/oip_ZDM_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/wordbounds_SNR1_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/wordbounds_SNR2_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDM/ZDM_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/gip_ZDN_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/oip_ZDN_SNR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/wordbounds_SNR1_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/wordbounds_SNR2_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/ZDN_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/ZDN_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/ZDN_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/ZDN_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/ZDN_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZDN/ZDN_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/gip_ZGW_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/gip_ZGW_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/gip_ZGW_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/gip_ZGW_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/gip_ZGW_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/oip_ZGW_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/oip_ZGW_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/oip_ZGW_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/wordbounds_SNR1_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/wordbounds_SNR2_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZGW/ZGW_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/gip_ZJM_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/wordbounds_SNR1_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/wordbounds_SNR2_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJM/ZJM_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/gip_ZJN_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/oip_ZJN_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/wordbounds_SNR1_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/wordbounds_SNR2_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJN/ZJN_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/gip_ZJS_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/gip_ZJS_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/oip_ZJS_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/oip_ZJS_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/oip_ZJS_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/oip_ZJS_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/oip_ZJS_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/oip_ZJS_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/wordbounds_SNR1_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/wordbounds_SNR2_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZJS/ZJS_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/gip_ZKB_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/wordbounds_SNR1_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/wordbounds_SNR2_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKB/ZKB_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/oip_ZKH_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/wordbounds_SNR1_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/wordbounds_SNR2_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKH/ZKH_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/gip_ZKW_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/wordbounds_SNR1_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/wordbounds_SNR2_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZKW/ZKW_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/gip_ZMG_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/gip_ZMG_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/gip_ZMG_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/oip_ZMG_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/oip_ZMG_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/oip_ZMG_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/oip_ZMG_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/oip_ZMG_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/wordbounds_SNR1_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/wordbounds_SNR2_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZMG/ZMG_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/gip_ZPH_SNR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/gip_ZPH_SNR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/oip_ZPH_SNR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/oip_ZPH_SNR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/oip_ZPH_SNR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/oip_ZPH_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/oip_ZPH_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/oip_ZPH_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/wordbounds_SNR1_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/wordbounds_SNR2_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Preprocessed/ZPH/ZPH_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/sentiment_normal_reading.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/wordbounds_SNR1_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/wordbounds_SNR2_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZAB/ZAB_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/wordbounds_SNR1_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/wordbounds_SNR2_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDM/ZDM_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/wordbounds_SNR1_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/wordbounds_SNR2_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SNR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SNR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SNR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZDN/ZDN_SR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/wordbounds_SNR1_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/wordbounds_SNR2_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZGW/ZGW_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/wordbounds_SNR1_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/wordbounds_SNR2_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJM/ZJM_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/wordbounds_SNR1_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/wordbounds_SNR2_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJN/ZJN_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/wordbounds_SNR1_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/wordbounds_SNR2_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZJS/ZJS_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/wordbounds_SNR1_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/wordbounds_SNR2_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKB/ZKB_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/wordbounds_SNR1_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/wordbounds_SNR2_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKH/ZKH_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/wordbounds_SNR1_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/wordbounds_SNR2_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZKW/ZKW_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/wordbounds_SNR1_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/wordbounds_SNR2_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZMG/ZMG_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/wordbounds_SNR1_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/wordbounds_SNR2_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SNR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task1- SR/Raw data/ZPH/ZPH_SR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZAB_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZDM_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZDN_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZGW_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZJM_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZJN_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZJS_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZKB_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZKH_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZKW_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZMG_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Matlab files/resultsZPH_NR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/relations_normal_reading_control_questions.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/relations_normal_reading.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/sentencesNR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/gip_ZAB_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/gip_ZAB_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/gip_ZAB_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/gip_ZAB_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/oip_ZAB_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/oip_ZAB_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/wordbounds_NR_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/ZAB_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/ZAB_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/ZAB_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/ZAB_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/ZAB_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZAB/ZAB_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/gip_ZDM_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/gip_ZDM_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/oip_ZDM_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/oip_ZDM_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/oip_ZDM_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/oip_ZDM_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/relations_task_specific.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/wordbounds_NR_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/ZDM_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/ZDM_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/ZDM_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/ZDM_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/ZDM_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDM/ZDM_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/gip_ZDN_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/gip_ZDN_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/gip_ZDN_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/gip_ZDN_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/gip_ZDN_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/gip_ZDN_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/wordbounds_NR_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/ZDN_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/ZDN_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/ZDN_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/ZDN_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/ZDN_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZDN/ZDN_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/gip_ZGW_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/gip_ZGW_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/gip_ZGW_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/gip_ZGW_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/gip_ZGW_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/oip_ZGW_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/wordbounds_NR_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/ZGW_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/ZGW_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/ZGW_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/ZGW_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/ZGW_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZGW/ZGW_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/gip_ZJM_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/gip_ZJM_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/gip_ZJM_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/gip_ZJM_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/gip_ZJM_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/gip_ZJM_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/wordbounds_NR_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/ZJM_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/ZJM_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/ZJM_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/ZJM_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/ZJM_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJM/ZJM_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/gip_ZJN_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/gip_ZJN_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/gip_ZJN_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/gip_ZJN_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/gip_ZJN_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/gip_ZJN_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/wordbounds_NR_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/ZJN_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/ZJN_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/ZJN_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/ZJN_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/ZJN_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJN/ZJN_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/gip_ZJS_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/gip_ZJS_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/oip_ZJS_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/oip_ZJS_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/oip_ZJS_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/oip_ZJS_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/wordbounds_NR_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/ZJS_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/ZJS_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/ZJS_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/ZJS_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/ZJS_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZJS/ZJS_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/gip_ZKB_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/gip_ZKB_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/gip_ZKB_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/gip_ZKB_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/gip_ZKB_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/gip_ZKB_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/wordbounds_NR_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/ZKB_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/ZKB_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/ZKB_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/ZKB_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/ZKB_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKB/ZKB_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/oip_ZKH_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/oip_ZKH_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/oip_ZKH_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/oip_ZKH_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/oip_ZKH_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/oip_ZKH_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/wordbounds_NR_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/ZKH_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/ZKH_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/ZKH_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/ZKH_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/ZKH_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKH/ZKH_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/gip_ZKW_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/gip_ZKW_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/gip_ZKW_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/gip_ZKW_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/gip_ZKW_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/gip_ZKW_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/wordbounds_NR_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/ZKW_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/ZKW_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/ZKW_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/ZKW_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/ZKW_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZKW/ZKW_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/gip_ZMG_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/gip_ZMG_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/gip_ZMG_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/oip_ZMG_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/oip_ZMG_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/oip_ZMG_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/wordbounds_NR_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/ZMG_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/ZMG_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/ZMG_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/ZMG_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/ZMG_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZMG/ZMG_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/gip_ZPH_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/gip_ZPH_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/gip_ZPH_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/gip_ZPH_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/oip_ZPH_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/wordbounds_NR_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/ZPH_NR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/ZPH_NR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/ZPH_NR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/ZPH_NR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/ZPH_NR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Preprocessed/ZPH/ZPH_NR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/relations_normal_reading_control_questions.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/relations_normal_reading.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/wordbounds_NR_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZAB/ZAB_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/wordbounds_NR_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDM/ZDM_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/wordbounds_NR_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZDN/ZDN_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/wordbounds_NR_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZGW/ZGW_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/wordbounds_NR_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJM/ZJM_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/wordbounds_NR_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJN/ZJN_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/wordbounds_NR_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZJS/ZJS_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/wordbounds_NR_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKB/ZKB_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/wordbounds_NR_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKH/ZKH_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/wordbounds_NR_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZKW/ZKW_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/wordbounds_NR_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZMG/ZMG_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/wordbounds_NR_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task2 - NR/Raw data/ZPH/ZPH_NR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZAB_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZDM_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZDN_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZGW_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZJM_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZJN_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZJS_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZKB_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZKH_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZKW_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZMG_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Matlab files/resultsZPH_TSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/relations_task_specific.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/sentencesTSR.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/gip_ZAB_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/gip_ZAB_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/gip_ZAB_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/gip_ZAB_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/gip_ZAB_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/gip_ZAB_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/oip_ZAB_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/oip_ZAB_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/oip_ZAB_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/wordbounds_TSR_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZAB/ZAB_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/gip_ZDM_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/gip_ZDM_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/gip_ZDM_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/gip_ZDM_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/oip_ZDM_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/oip_ZDM_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/oip_ZDM_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/oip_ZDM_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/oip_ZDM_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/wordbounds_TSR_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDM/ZDM_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/gip_ZDN_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/wordbounds_TSR_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZDN/ZDN_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/bip_ZGW_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/gip_ZGW_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/gip_ZGW_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/gip_ZGW_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/gip_ZGW_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/gip_ZGW_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/gip_ZGW_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/oip_ZGW_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/oip_ZGW_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/wordbounds_TSR_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZGW/ZGW_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/gip_ZJM_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/wordbounds_TSR_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJM/ZJM_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/gip_ZJN_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/oip_ZJN_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/wordbounds_TSR_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJN/ZJN_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/gip_ZJS_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/gip_ZJS_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/gip_ZJS_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/gip_ZJS_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/gip_ZJS_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/gip_ZJS_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/oip_ZJS_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/oip_ZJS_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/oip_ZJS_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/wordbounds_TSR_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZJS/ZJS_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR8.EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/gip_ZKB_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/wordbounds_TSR_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKB/ZKB_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/oip_ZKH_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/wordbounds_TSR_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKH/ZKH_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/gip_ZKW_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/wordbounds_TSR_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZKW/ZKW_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/gip_ZMG_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/gip_ZMG_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/gip_ZMG_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/gip_ZMG_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/gip_ZMG_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/gip_ZMG_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/oip_ZMG_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/oip_ZMG_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/oip_ZMG_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/wordbounds_TSR_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZMG/ZMG_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/gip_ZPH_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/gip_ZPH_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/gip_ZPH_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/gip_ZPH_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/gip_ZPH_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/gip_ZPH_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/oip_ZPH_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/wordbounds_TSR_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR8_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Preprocessed/ZPH/ZPH_TSR9_corrected_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/relations_task_specific.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/wordbounds_TSR_ZAB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZAB/ZAB_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/wordbounds_TSR_ZDM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDM/ZDM_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/wordbounds_TSR_ZDN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZDN/ZDN_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/wordbounds_TSR_ZGW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZGW/ZGW_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/wordbounds_TSR_ZJM.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJM/ZJM_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/wordbounds_TSR_ZJN.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJN/ZJN_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/wordbounds_TSR_ZJS.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZJS/ZJS_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/wordbounds_TSR_ZKB.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKB/ZKB_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/wordbounds_TSR_ZKH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKH/ZKH_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/wordbounds_TSR_ZKW.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZKW/ZKW_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/wordbounds_TSR_ZMG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZMG/ZMG_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/wordbounds_TSR_ZPH.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR1_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR2_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR3_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR4_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR5_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR6_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR7_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR8_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR8_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR9_EEG.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task3 - TSR/Raw data/ZPH/ZPH_TSR9_ET.mat
+scripts/data/raw_public/zuco/v1/osfstorage/task_materials/duplicate_sentences.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task_materials/relations_labels_task2.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task_materials/relations_labels_task3.csv
+scripts/data/raw_public/zuco/v1/osfstorage/task_materials/sentiment_labels_task1.csv
+scripts/data/raw_public/zuco/v2/osfstorage/scripts/python_reader/data_loading_helpers.py
+scripts/data/raw_public/zuco/v2/osfstorage/scripts/python_reader/read_matlab_files.py
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/wordbounds_TSR3.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/wordbounds_TSR4.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/wordbounds_TSR6.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/gip_YAK_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/gip_YAK_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/gip_YAK_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/gip_YAK_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/gip_YAK_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/gip_YAK_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/oip_YAK_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YAK/YAK_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/gip_YFR_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/gip_YFR_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/oip_YFR_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/oip_YFR_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/YFR_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/YFR_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/YFR_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFR/YFR_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/gip_YFS_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YFS/YFS_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/gip_YHS_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YHS_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YHS/YIS_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/gip_YMD_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/gip_YMD_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/oip_YMD_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/oip_YMD_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/oip_YMD_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/oip_YMD_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/oip_YMD_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMD/YMD_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/gip_YMS_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YMS/YMS_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/bip_YRH_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/gip_YRH_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/gip_YRH_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/gip_YRH_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/gip_YRH_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/gip_YRH_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/gip_YRH_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRH/YRH_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/gip_YRK_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YRK/YRK_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/gip_YSL_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/gip_YSL_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/oip_YSL_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/oip_YSL_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/oip_YSL_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/oip_YSL_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/oip_YSL_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YSL/YSL_TSR7_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/gip_YTL_TSR4_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/gip_YTL_TSR6_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/oip_YTL_TSR1_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/oip_YTL_TSR2_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/oip_YTL_TSR3_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/oip_YTL_TSR5_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/oip_YTL_TSR7_EEG.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR1_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR2_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR3_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR4_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR5_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR6_corrected_ET.mat
+scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR7_corrected_ET.mat

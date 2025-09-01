@@ -78,5 +78,5 @@ def test_governance_files():
 
 
 def test_reports_exist():
-    assert _exists("reports/audit.json")
-    assert _exists("reports/duplicates_groups.csv")
+    assert _exists("ragpp/reports/audit.json")
+    assert _exists("ragpp/reports/duplicates_groups.csv")
