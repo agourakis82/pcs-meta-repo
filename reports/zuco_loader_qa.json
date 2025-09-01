@@ -4,17 +4,17 @@
     "zuco_v2_aligned.csv": false,
     "zuco_aligned.csv": true
   },
-  "rows_total": 2014,
-  "subjects": 0,
+  "rows_total": 37358,
+  "subjects": 1,
   "by_dataset": {
-    "v1": 2014
+    "v1": 37358
   },
   "by_task": {
-    "NR": 2014
+    "NR": 37358
   },
   "kec_coverage_pct": {
-    "entropy": 100.0,
-    "avg_curvature": 100.0,
-    "coherence": 100.0
+    "entropy": 96.18501433736442,
+    "avg_curvature": 96.18501433736442,
+    "coherence": 96.18501433736442
   }
 }
