@@ -11,8 +11,8 @@ MAX_LINKS = 20
 def main():
     results = {}
     count = 0
-    for md_path in Path('.').rglob('*.md'):
-        text = md_path.read_text(encoding='utf-8', errors='ignore')
+    for md_path in Path(".").rglob("*.md"):
+        text = md_path.read_text(encoding="utf-8", errors="ignore")
         links = MD_LINK_RE.findall(text)
         link_status = []
         for _, url in links:
@@ -26,5 +26,6 @@ def main():
             break
     print(json.dumps(results, indent=2))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
