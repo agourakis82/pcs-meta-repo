@@ -1,12 +1,30 @@
 {
   "timestamp_utc": "2025-09-01T19:48:51.873406Z",
-  "merged_rows": 0,
-  "et_cols": [],
-  "kec_cols": [],
-  "cat_covs": [],
-  "reading_coeffs_csv": null,
-  "reading_coeffs_fdr_csv": null,
+  "merged_rows": 64168,
+  "et_cols": [
+    "FFD",
+    "GD",
+    "log_TRT",
+    "log_GPT"
+  ],
+  "kec_cols": [
+    "entropy",
+    "curvature",
+    "coherence"
+  ],
+  "cat_covs": [
+    "Dataset",
+    "Task"
+  ],
+  "reading_coeffs_csv": "../data/processed/models_reading_coeffs.csv",
+  "reading_coeffs_fdr_csv": "../data/processed/models_reading_coeffs_fdr.csv",
   "mixedlm_summary": null,
-  "fig_f2": [],
-  "fig_f3": []
+  "fig_f2": [
+    "figures/metrics/F2_reading_vs_KEC_v1.png",
+    "figures/metrics/F2_reading_vs_KEC.png",
+    "figures/metrics/F2_reading_vs_KEC_task_NR.png"
+  ],
+  "fig_f3": [
+    "figures/metrics/F3_EEG_vs_KEC_Dataset_v1.png"
+  ]
 }
