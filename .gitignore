@@ -26,6 +26,11 @@ build/
 *.egg-info/
 src/*.egg-info/
 
+# Large data files
+data/raw_public/
+data/processed/
+ragpp/index/
+
 # Exceções para arquivos necessários ao script repo_autofix.sh
 !.github/workflows/ci-lint.yml
 !.markdownlint.json

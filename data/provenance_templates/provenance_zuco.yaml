@@ -1,0 +1,13 @@
+dataset: zuco
+sources:
+  - osf: q3zws   # ZuCo 1.0
+  - osf: 2urht   # ZuCo 2.0
+ingest_date: 2025-08-31
+raw_dirs:
+  - data/raw_public/zuco/v1
+  - data/raw_public/zuco/v2
+hashes: []
+version_pins:
+  python: "3.11"
+  packages:
+    osfclient: ">=0.0"
