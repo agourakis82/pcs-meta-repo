@@ -1,0 +1,20 @@
+{
+  "files": {
+    "zuco_v1_aligned.csv": true,
+    "zuco_v2_aligned.csv": false,
+    "zuco_aligned.csv": true
+  },
+  "rows_total": 2014,
+  "subjects": 0,
+  "by_dataset": {
+    "v1": 2014
+  },
+  "by_task": {
+    "NR": 2014
+  },
+  "kec_coverage_pct": {
+    "entropy": 100.0,
+    "avg_curvature": 100.0,
+    "coherence": 100.0
+  }
+}
