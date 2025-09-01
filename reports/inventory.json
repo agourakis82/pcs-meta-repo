@@ -1,0 +1,2747 @@
+[
+  {
+    "path": "SECURITY.md",
+    "size": 657,
+    "sha256": "6e97e0ed191748cbf95f3d5693bd2e76cb389ec75386a9967b4e5e7fd49b6036"
+  },
+  {
+    "path": "preprint_skeleton.tex",
+    "size": 4957,
+    "sha256": "e5b834679ed38cce05682c8546fa0517a864f781322dbf803443740640005489"
+  },
+  {
+    "path": "CURADORIA_ACADEMICA_REPORT.md",
+    "size": 3824,
+    "sha256": "88dac6a8207f0de7f1ed6e2413ee42f89db08853a967c8624f67aa5e3c184518"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "size": 682,
+    "sha256": "4ee2d02766e8d63e66549475095d72be9ef9b827fec5dad12c6ef00b4a0d17bb"
+  },
+  {
+    "path": "REPO_AUDIT_REPORT.md",
+    "size": 1524,
+    "sha256": "32a8566048508099c6434366ca993c80b54421aa448adcfdc44fae6f72ed4356"
+  },
+  {
+    "path": "CITATION.cff",
+    "size": 1169,
+    "sha256": "1b0ebbfebdc5ece7f9d97edbd36d8b2e7db93812c2e893dc04f308ebc9efe230"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "size": 654,
+    "sha256": "63a761b948d30a4650a94f9a3be7ca10bf6d4223f9c8aac88d23017796b276ad"
+  },
+  {
+    "path": "data_fetch_pack_v1.zip:Zone.Identifier",
+    "size": 25,
+    "sha256": "b952d24cf701bc4e7a7d21e1ae85c611824e80579a89836c0cb49b193446ccfe"
+  },
+  {
+    "path": "PULL_REQUEST_TEMPLATE.md",
+    "size": 674,
+    "sha256": "60b3cf76acbd08a95ebd3362eb700edfa30f5d0661fb8752ebda849787c81d2d"
+  },
+  {
+    "path": "symbolic_first_pack_20250831_2205.zip",
+    "size": 13503,
+    "sha256": "4b317378771ac9eac2265e9db93e8e7bd80c473d96fe71dfb675f211fc45e08d"
+  },
+  {
+    "path": "zenodo_v4.3.json",
+    "size": 1140,
+    "sha256": "bef04870c986bb1ca01d5e5ff358ce3fbd2333f4c7f959f325c54cb9d4ce381a"
+  },
+  {
+    "path": "metadata_v4.3.yaml",
+    "size": 1034,
+    "sha256": "e35a67f9d4171d2424cfc3315207a39c2725d847b90057074deeec2b90496324"
+  },
+  {
+    "path": "instrucoes_projeto_v4.3.md",
+    "size": 8169,
+    "sha256": "b2601c47393d8d211a7334427de118a9c247d09d1d0b86bade641b5d2d9940cc"
+  },
+  {
+    "path": "CHANGELOG_v4.3.md",
+    "size": 761,
+    "sha256": "30ded27f98d181b1d0ee6d4702ac835c0ebfc08f02aee863208d4f8b8ee996d3"
+  },
+  {
+    "path": "cleanup_repo.sh",
+    "size": 5052,
+    "sha256": "677fc093ca50dffee94d113caa88e7e64f875a442d5e254af7365c1b87175b0e"
+  },
+  {
+    "path": ".markdownlint.json.disabled",
+    "size": 309,
+    "sha256": "abbf9dc9b67a43d6228b7f834808c9f3d7d17913c7c7a141d24109703c5ea285"
+  },
+  {
+    "path": "coverage.svg",
+    "size": 904,
+    "sha256": "e90f122e23ef08f5b7ab438f30589c9721873be966cfd478bf0103309a08a4d9"
+  },
+  {
+    "path": ".mdlrc",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "agents.md",
+    "size": 6835,
+    "sha256": "9d42584b68c0f9cd8a157d24b65d0418be53e078e761ecf8cc7238d1aa3da6e4"
+  },
+  {
+    "path": "zenodo.json",
+    "size": 1789,
+    "sha256": "391def8e77f601aac4c47d58491758ece1aee194e44f04b9678207e069d46768"
+  },
+  {
+    "path": ".gitignore",
+    "size": 797,
+    "sha256": "68dd5b6484cfc7b8b0d35309a941b051c62c0002e110f1932b934c9e48e300e2"
+  },
+  {
+    "path": "README.md",
+    "size": 1181,
+    "sha256": "349d0e557f937e7c29783025e4525886db957f9c347ab918453750be78742720"
+  },
+  {
+    "path": "PM43_DeepResearch_5pro_USER.md",
+    "size": 1168,
+    "sha256": "de09a81e0f37fc627fc63d0675e099e10cffca7f78fff6ed712b02209918fdf6"
+  },
+  {
+    "path": ".pre-commit-config.yaml",
+    "size": 1113,
+    "sha256": "ccef70030fd31c83b5b5458ce4ea57d1a38935f073559bd2a083fcba630fca72"
+  },
+  {
+    "path": "requirements.txt",
+    "size": 76,
+    "sha256": "84091f76e5244a0f5f103935682b0621a568293c16f031e85574fcb9206b2cfb"
+  },
+  {
+    "path": "ruff.toml",
+    "size": 341,
+    "sha256": "0878e5e67c3cdc4fa52d9cdfb8ca160dee6a8f2c82bea98db205e4ef2dae7248"
+  },
+  {
+    "path": "Memoria_Estendida_PHD_Brasil_2025-08-29.md",
+    "size": 10975,
+    "sha256": "b4e41822f2462e3dab4f538fffd62092c30457ef5604647bcda358078a87bdd9"
+  },
+  {
+    "path": ".yamllint",
+    "size": 327,
+    "sha256": "1d56b2ec7c40cd2aa528e36d37c73982dabc03e8b792a2d929b67a1bcd11161d"
+  },
+  {
+    "path": ".markdownlint-cli2.jsonc",
+    "size": 1119,
+    "sha256": "0a803b2604b4b00f18c1141e01b82840ca83e45ab67a83809e4819764d09cd31"
+  },
+  {
+    "path": ".gitattributes",
+    "size": 315,
+    "sha256": "13ec512a4016711bc5d591a8555d3499c3b6d96fe00202948f3d04e100f4f35b"
+  },
+  {
+    "path": "test_long_line.md",
+    "size": 170,
+    "sha256": "3fc41ddc2a841939baa78eaa31171d9f20fbe4bbf3a080e5e87d7c991d9f2602"
+  },
+  {
+    "path": "test.yml",
+    "size": 547,
+    "sha256": "a68197d9923aa71f6ad2b51d31473c0fc02b07c3b59fc964eaf5d86f14a67d2f"
+  },
+  {
+    "path": "LICENSE",
+    "size": 1076,
+    "sha256": "8cb652e005e2e049c7f022939f64aa296297de7ac479c26951d0f04760576cd2"
+  },
+  {
+    "path": "pcs-meta-repo.code-workspace",
+    "size": 44,
+    "sha256": "81c03c509d24cd1cdd707736f6898ebced638835963683069f3c17c3ff125cb7"
+  },
+  {
+    "path": "README_v4.3.md",
+    "size": 2050,
+    "sha256": "86f61644bd4ed6febce11e7d3979ccadf24711b95e45a1149ff7022e13b7eec2"
+  },
+  {
+    "path": "pyproject.toml",
+    "size": 628,
+    "sha256": "5e12f6f9f8599340364dced05689469ad3c7e9254b7255a3897eb1db8cf7689a"
+  },
+  {
+    "path": "CITATION_v4.3.cff",
+    "size": 778,
+    "sha256": "0e27be5fc392e52b21031f3907f1ee2abdd5fc377afe207cd9dd00a99e0ffbb5"
+  },
+  {
+    "path": ".markdownlintignore",
+    "size": 99,
+    "sha256": "3fcd088fc1c142e33237dd92499a9bfab0348515f8c7e13fed93b152177faa67"
+  },
+  {
+    "path": "README_RAGPP.md",
+    "size": 1362,
+    "sha256": "57835f69cbea847d601a28328eef7bca51e880c2f6c098c1d24f1589a87e767b"
+  },
+  {
+    "path": ".editorconfig",
+    "size": 188,
+    "sha256": "0b8996e5c880df6ca785d975b10d56b07b652fbd59e79360958c6db4b21cd803"
+  },
+  {
+    "path": "PM43_DeepResearch_5pro_SYSTEM.md",
+    "size": 2768,
+    "sha256": "00fd55efe8142431bc63e2567326849b7bfdb4eff01b4fd566f6c9774b6eebd1"
+  },
+  {
+    "path": "CHANGELOG_v4.3_addendum.md",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "CODE_OF_CONDUCT.md",
+    "size": 878,
+    "sha256": "984d11a5f1065554ee89eea02e3fcd0305e4bf2d28fdeddc53255b62d9a1430c"
+  },
+  {
+    "path": "CONTRIBUTORS.md",
+    "size": 534,
+    "sha256": "671ce44f8ce0f46c406526925c77b4b82f9b16408f7e27f4966e2a3d4a7d7c1c"
+  },
+  {
+    "path": "metadata.yaml",
+    "size": 1169,
+    "sha256": "0760d189da4a9d7487ae1ed64d30bc6dc8471d0c7c7bf4c2a414cdf10375ce5d"
+  },
+  {
+    "path": ".attic/github-agent-starter-pack.zip",
+    "size": 129,
+    "sha256": "c9023b002ff806079e2fb9740b1449d90661d8b491567576781858b88c57d252"
+  },
+  {
+    "path": ".attic/pcs_prompt_mother_bundle.zip",
+    "size": 129,
+    "sha256": "e3e6d59b027ee119447df2b39c32b01b947cbdc3c13d3b010ce1adf90ac7b8e0"
+  },
+  {
+    "path": ".attic/20250825-152706/meta/metadata.yaml.conflict-20250825-152706",
+    "size": 1443,
+    "sha256": "a98d261fb6dee9f85e4baf17a458d6b7a0b61857344c5205096220b71bcbc5e4"
+  },
+  {
+    "path": ".attic/20250825-152706/meta/CITATION.cff.conflict-20250825-152706",
+    "size": 1256,
+    "sha256": "ae3d084b78d0736a5bfd5dcbaa2c35816663bc57a25aaa49e774cfb7f074d95a"
+  },
+  {
+    "path": "src/runners/kenlm_score.py",
+    "size": 1163,
+    "sha256": "cd99a12f9f33cdf201f2274b96a467f72bacf9822c0122492d9134cd9568e2f1"
+  },
+  {
+    "path": "src/runners/score_text.py",
+    "size": 1807,
+    "sha256": "e93b08e020c497461a6b9d90ec349255b199d381b11c4c003647408d480d90a4"
+  },
+  {
+    "path": "src/pcs_toolbox/__init__.py",
+    "size": 541,
+    "sha256": "92deb446d76d67d6cc0267bae3a61169f61fe931750ab0ea0e99c52a61592664"
+  },
+  {
+    "path": "src/pcs_toolbox/pyproject.toml",
+    "size": 449,
+    "sha256": "ab412da1ac5c60f30f427db2e67c27864bba8e661da1efd322341f4573fa724b"
+  },
+  {
+    "path": "figures/metrics/F2_reading_vs_KEC.png",
+    "size": 89877,
+    "sha256": "cac48d86e01b7c2ee1d265525cd413d015f0c46ac2abff12d2e3d64454fca31c"
+  },
+  {
+    "path": "figures/metrics/F3_EEG_vs_KEC.png",
+    "size": 311894,
+    "sha256": "556c8064ea75e4e817536348c4f55e7dcf6b89e6ce524d49da761f8866b89164"
+  },
+  {
+    "path": "backups/20250828_220944/.github/release-drafter.yml",
+    "size": 387,
+    "sha256": "471423657fc61dc6fec0e39e2c18d093ca44604d8133cc8d0233c832d3f5f73a"
+  },
+  {
+    "path": "backups/20250828_220944/.github/PULL_REQUEST_TEMPLATE.md",
+    "size": 370,
+    "sha256": "dccc9d094b2a2ce1a0bc9863a810c51808ddc6d5dd2df2c1a654bbec45bbfcbf"
+  },
+  {
+    "path": "backups/20250828_220944/.github/CODEOWNERS",
+    "size": 15,
+    "sha256": "af98b380222caaa32aec0ab281eaa718b6547b0d7a6b2356698d1137126e43c9"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/release-drafter.yml",
+    "size": 441,
+    "sha256": "558a6ac51b813e39db2af5de4b5cd3a702a78202547abf9d484b319d63a1544d"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/ci-autofix.yml",
+    "size": 3574,
+    "sha256": "71f3de922ddd2d62890a88ebaae586d9d4226e7824992a950296ef41d9c9e928"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/ci-links.yml",
+    "size": 469,
+    "sha256": "ccdea3e9d9bb0149d80e276ad064da25d99b62ae7843856dafe219c8452b26c3"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/ci-lint.yml",
+    "size": 589,
+    "sha256": "0ed51c039a6ac087f3677ec8b02bd18c8b4fde7804abf880d22663ec07b90e38"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/ci-yaml.yml",
+    "size": 449,
+    "sha256": "a48c90fc0a2dd581f7e2ac856ea3f30dc51ea11c6c04cd2716fffd589db6df19"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/ci-markdown.yml",
+    "size": 506,
+    "sha256": "ee08c5317b990088c4e6afa49f2d228b4ab46e55c23a4fe0a311778aa7bd5e1f"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/python-tests.yml",
+    "size": 956,
+    "sha256": "707440cd4aad2d0fa86e6ea360444779d1ebedf2c8c67469382f707eb60f83f8"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/build-latex.yml",
+    "size": 802,
+    "sha256": "d8dbcb1a0ee3bd52a995ed3d8c964f0f86b2a11f68a12adb32831089bd713c5c"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/ci-latex.yml",
+    "size": 340,
+    "sha256": "ac298501bf56f176d8e061700cc2fe46ae9e21589640bfd1da1e8398b3273789"
+  },
+  {
+    "path": "backups/20250828_220944/.github/workflows/pre-commit.yml",
+    "size": 421,
+    "sha256": "ecf172769ba31297113dec03ee4d3d25e175bc806253fd9f6c6c18af14f90c46"
+  },
+  {
+    "path": "backups/20250828_220944/.github/ISSUE_TEMPLATE/feature_request.md",
+    "size": 242,
+    "sha256": "f0aa2a5b867911fc9dc1b0d232850410ff83b95de318c7ff947da51bc03cbfdd"
+  },
+  {
+    "path": "backups/20250828_220944/.github/ISSUE_TEMPLATE/bug_report.md",
+    "size": 265,
+    "sha256": "e7b056cf56ea22b2ce50c9c7d5f908aabbdb8520f2157ee68fd6c01e140e4d4d"
+  },
+  {
+    "path": "data/processed/models_reading_coeffs.csv",
+    "size": 2120,
+    "sha256": "489373308a6afb7a2fa9676452b39f42bf43831869d633cf25435c4288a0a7bc"
+  },
+  {
+    "path": "data/provenance_templates/provenance_zuco.yaml",
+    "size": 246,
+    "sha256": "418ad096839f0b7f1cd6e1e16fa8195833f1d2572f69b2aef21b74d72abeb4fb"
+  },
+  {
+    "path": "data/provenance_templates/provenance_swow.yaml",
+    "size": 234,
+    "sha256": "6305689ae5e6a21e63eff7e9f09795a7e2fa20e0cefe36bb74a055201dedfc03"
+  },
+  {
+    "path": "tools/repo_autofix.sh",
+    "size": 20332,
+    "sha256": "49a1a9877e7ec5d322371438f19c2f35959f8b35517ab3a88cd39b3bd82b65c8"
+  },
+  {
+    "path": "tests/test_pcs_toolbox.py",
+    "size": 141,
+    "sha256": "7574bd04b3b8da8e7ea4722b12b9158bd5a09acb431ffb1c51dc90dbaf881440"
+  },
+  {
+    "path": "tests/conftest.py",
+    "size": 166,
+    "sha256": "77206f07fbe5e975f5bdaef612e3e2ccaba9ff1aa691e7e4a05040eb3746d211"
+  },
+  {
+    "path": "tests/test_repo_hygiene.py",
+    "size": 2281,
+    "sha256": "56e50a27c4c8d51e59598fa0c142dba5a422924cfcdae414b9a444062ecd5b8e"
+  },
+  {
+    "path": ".safety/status-md-pass-1756159783.txt",
+    "size": 49,
+    "sha256": "04fb18344c5e19e6ec409ec473d9696c9c7992e314bd78a89f4cfe2c6bffec6c"
+  },
+  {
+    "path": ".safety/status-20250825-144406.txt",
+    "size": 18,
+    "sha256": "4400d1bc0411b46fb2791b389ae658bf005101457c719f9af931ecd5d5426b2b"
+  },
+  {
+    "path": ".safety/status-agents-1756160726.txt",
+    "size": 48,
+    "sha256": "8619079d4a23014eb57b4d981b59a531da75a61ae71423cdf81ab2a8f8ff30be"
+  },
+  {
+    "path": ".safety/status-md-1756156363.txt",
+    "size": 44,
+    "sha256": "638d75a4e5e69a6b757b670de2c2134f0beee94b045baf14816d8429df03bdd4"
+  },
+  {
+    "path": ".safety/status-yaml-1756159093.txt",
+    "size": 46,
+    "sha256": "43ee0b1a5a0ce1960484d36d318514eb2c5f21186d3873104892cd40acf6b7a2"
+  },
+  {
+    "path": ".safety/20250825-152706/status-pre.txt",
+    "size": 8,
+    "sha256": "7f4e4f7028a66d2c3650e21879867a401173583b76519550f1f1df69c4855bf7"
+  },
+  {
+    "path": ".safety/20250825-152706/unstaged.patch",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": ".safety/20250825-152706/staged.patch",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": ".git/config",
+    "size": 92,
+    "sha256": "cfe7ba1238c9a78be7535d7c63bcaf5a4d5011d46b07c9b45d3bbf7d6c312dfe"
+  },
+  {
+    "path": ".git/HEAD",
+    "size": 21,
+    "sha256": "b20849f2b0dd22bf5e88c7faebcf4ae9c5273276f91e58fa9213421581cd8482"
+  },
+  {
+    "path": ".git/index",
+    "size": 69437,
+    "sha256": "fbb9bd6ab2a9313c340dca1676c8c75cabaeb5e9bbbb46125aa71a381342a4f3"
+  },
+  {
+    "path": ".git/description",
+    "size": 73,
+    "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+  },
+  {
+    "path": ".git/packed-refs",
+    "size": 104,
+    "sha256": "ff0a671a186852e7c809bba21bf088710cea804b855b800e19d2e7de0031fc50"
+  },
+  {
+    "path": ".git/FETCH_HEAD",
+    "size": 104,
+    "sha256": "93cb6b4ed6138a3cab5463912341e0a729ea60d4be13bb1296c39dfd96bb6028"
+  },
+  {
+    "path": ".git/hooks/commit-msg.sample",
+    "size": 896,
+    "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+  },
+  {
+    "path": ".git/hooks/push-to-checkout.sample",
+    "size": 2783,
+    "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+  },
+  {
+    "path": ".git/hooks/fsmonitor-watchman.sample",
+    "size": 4726,
+    "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+  },
+  {
+    "path": ".git/hooks/pre-merge-commit.sample",
+    "size": 416,
+    "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+  },
+  {
+    "path": ".git/hooks/sendemail-validate.sample",
+    "size": 2308,
+    "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+  },
+  {
+    "path": ".git/hooks/applypatch-msg.sample",
+    "size": 478,
+    "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+  },
+  {
+    "path": ".git/hooks/prepare-commit-msg.sample",
+    "size": 1492,
+    "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+  },
+  {
+    "path": ".git/hooks/pre-commit.sample",
+    "size": 1643,
+    "sha256": "f9af7d95eb1231ecf2eba9770fedfa8d4797a12b02d7240e98d568201251244a"
+  },
+  {
+    "path": ".git/hooks/pre-receive.sample",
+    "size": 544,
+    "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+  },
+  {
+    "path": ".git/hooks/update.sample",
+    "size": 3650,
+    "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+  },
+  {
+    "path": ".git/hooks/pre-rebase.sample",
+    "size": 4898,
+    "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+  },
+  {
+    "path": ".git/hooks/pre-push.sample",
+    "size": 1374,
+    "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+  },
+  {
+    "path": ".git/hooks/post-update.sample",
+    "size": 189,
+    "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+  },
+  {
+    "path": ".git/hooks/pre-applypatch.sample",
+    "size": 424,
+    "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+  },
+  {
+    "path": ".git/refs/heads/work",
+    "size": 41,
+    "sha256": "93e28a6de9eb4093a51531badbf02f0a019a616b780c1e14f3a51a12a371a8e5"
+  },
+  {
+    "path": ".git/refs/heads/main",
+    "size": 41,
+    "sha256": "93e28a6de9eb4093a51531badbf02f0a019a616b780c1e14f3a51a12a371a8e5"
+  },
+  {
+    "path": ".git/info/exclude",
+    "size": 240,
+    "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+  },
+  {
+    "path": ".git/logs/HEAD",
+    "size": 344,
+    "sha256": "a90404047ed920b557131d62a38441c58a83b0ab9b8d8364fb05fbb9d5c6c09e"
+  },
+  {
+    "path": ".git/logs/refs/heads/work",
+    "size": 156,
+    "sha256": "7beb641c502116ee0521f0cda31ff4fd9656c603899cf37b4a9dec4a9e07e61c"
+  },
+  {
+    "path": ".git/logs/refs/heads/main",
+    "size": 185,
+    "sha256": "546513f5a921fb8cf11cb609c19ac3c1da246cc1714582c93a535ad7fa688e2e"
+  },
+  {
+    "path": ".git/objects/pack/pack-e6a380eb9256d10503f7dc03f49fbc8aa6e331da.rev",
+    "size": 5948,
+    "sha256": "b35466841a643d3d3768e56d8ff7a1f19beec91dc11c54c969d0d01336b4da92"
+  },
+  {
+    "path": ".git/objects/pack/pack-e6a380eb9256d10503f7dc03f49fbc8aa6e331da.idx",
+    "size": 42344,
+    "sha256": "de9f3e50aa10d608c4ea6b982df4ea3ed763a9226f56eeba43904bdfb96982e1"
+  },
+  {
+    "path": ".git/objects/pack/pack-e6a380eb9256d10503f7dc03f49fbc8aa6e331da.pack",
+    "size": 40547973,
+    "sha256": "e186ae434dcb5d46e4919f7772f94ea81a23eb5a9c60616d3c5c6b948516938a"
+  },
+  {
+    "path": "ragpp/requirements.txt",
+    "size": 55,
+    "sha256": "4968c47043b28908740fbc46e14f34dc20b52247894de708f4f33ec9c1b9b176"
+  },
+  {
+    "path": "ragpp/data/processed/2025_sweep/YEAR-2025_chunks.jsonl",
+    "size": 213,
+    "sha256": "e0e7e82a5749fede7c071e0e163a3abc5c92d7c3104e88a2f3eb1ade2583675f"
+  },
+  {
+    "path": "ragpp/data/processed/2025_sweep/YEAR-2025_quality_audit.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ragpp/data/processed/2025_sweep/YEAR-2025_psy-neuro_records.csv",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ragpp/data/processed/2025_sweep/YEAR-2025_psy-neuro_records.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ragpp/data/processed/2025_sweep/YEAR-2025_active_reading_notes.jsonl",
+    "size": 398,
+    "sha256": "7ddf5290b17eca857b2d0f119d47ff50f19f352b51bec1d99f907bf860021922"
+  },
+  {
+    "path": "ragpp/tools/bootstrap_demo_records.py",
+    "size": 1289,
+    "sha256": "0ae0fd556f8fbb1d849d404547f9c929a62c45b5724b4d28bbc2de8ab2f0c45b"
+  },
+  {
+    "path": "ragpp/tools/build_index.py",
+    "size": 3247,
+    "sha256": "e718b5183be9485746662abbd20f8c4d1cedb2edbf9ca60845518face79f4ef4"
+  },
+  {
+    "path": "ragpp/tools/inspect_index.py",
+    "size": 1530,
+    "sha256": "834a8b0cd0ca1e235eb6eaa0d856d5b0bf0b16565e752fe58ca955014bd403d2"
+  },
+  {
+    "path": "ragpp/tools/router.py",
+    "size": 362,
+    "sha256": "b8fc80254e4e262da8c675a919ee3e2258ef8a817debe84dfd768326096d9903"
+  },
+  {
+    "path": "ragpp/notebooks/01_query_demo.py",
+    "size": 635,
+    "sha256": "29783ba4f066954a7300196963f4e4e6628d75cd6bfdf5b3763617af47a5851e"
+  },
+  {
+    "path": "ragpp/reports/checksums.json",
+    "size": 1184,
+    "sha256": "4373e985c390f6e53f81444ee93d2b50273a9f645d4601bf44f45d1a73e58995"
+  },
+  {
+    "path": "ragpp/reports/manifest.json",
+    "size": 698,
+    "sha256": "3ec80a66f64193a894fd5f058dec6f5c663dd8f277cfb28499574cd934b7d6f5"
+  },
+  {
+    "path": "ragpp/reports/duplicates_groups.csv",
+    "size": 13395,
+    "sha256": "4231bf7f743b74eda9a47915781a135c4bd3dfafb7a9a5719990b9e30a7c7d92"
+  },
+  {
+    "path": "ragpp/reports/audit.json",
+    "size": 687,
+    "sha256": "4ba840c72797c23756e15573717c6d26957ab83e2c870de026aab6f66d1bb040"
+  },
+  {
+    "path": "ragpp/reports/YEAR-2025_top_venues.csv",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ragpp/reports/README_YEAR-2025.md",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/Notebook_01_Data_Preprocessing_and_Network_Construction.html",
+    "size": 292945,
+    "sha256": "5e868b2376cc97a5c0e6acc44fa530fd17be51602994cf1db63797aac22a349e"
+  },
+  {
+    "path": "docs/README_MASTER.md",
+    "size": 2184,
+    "sha256": "53078c602969b4a9cc6592e01e97d93728f016b7fdc8a02c03dda51909b2b51a"
+  },
+  {
+    "path": "docs/fig_plan.md",
+    "size": 2637,
+    "sha256": "450bafa512305ec5e2e4246464f98c7e0aa11189d4954cb6df60826d3b709c24"
+  },
+  {
+    "path": "docs/INSTRUCOES_PROJETO.md",
+    "size": 5483,
+    "sha256": "220f5e826bd90b3b6efc7e9492e8c8dbeddcab68d9c0800fbad152a8e736afed"
+  },
+  {
+    "path": "docs/README_DATA.md",
+    "size": 1399,
+    "sha256": "f8154c7b0518a533a340fb3a5f2181598c3d4e931f72fc91f7d3164955eea07b"
+  },
+  {
+    "path": "docs/socio-schrodinger-framework/README.md",
+    "size": 30,
+    "sha256": "9f21863b5e2819eed84717daa86047570812a459b5f189e0657601e85719f8da"
+  },
+  {
+    "path": "docs/socio-schrodinger-framework/LICENSE",
+    "size": 1086,
+    "sha256": "c6ea268467f22fb897232493ef5cc36a243094ba1c8d9cf2adae4210a2d19d3a"
+  },
+  {
+    "path": "docs/scratchpad/LOG-2025-08-28.md",
+    "size": 4054,
+    "sha256": "84d461ac824d07a2e8e155c616718331299fee0b3795a63335a38f74a0dd0fd3"
+  },
+  {
+    "path": "docs/fractal-entropy-society/LICENSE",
+    "size": 1068,
+    "sha256": "0063659da0bd58d98efd1b82e9fb4b1ac485352015bff9968a9ad14137614afb"
+  },
+  {
+    "path": ".ruff_cache/.gitignore",
+    "size": 35,
+    "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316"
+  },
+  {
+    "path": ".ruff_cache/CACHEDIR.TAG",
+    "size": 43,
+    "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/17722455488316565760",
+    "size": 115,
+    "sha256": "79cf2b9dafc19c4d21a4927c35f2eb9ca2b284be8505250a8b68ddceb0aab519"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/15063774688402499743",
+    "size": 165,
+    "sha256": "6e9bf69e7bf57826548194052193c89eef4f96871504996b93704c47134b656b"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/5362638926487680396",
+    "size": 148,
+    "sha256": "ba102d08607b71b8bd9e3a1daae797a22a7e4e8d79184995dad98b13f5fdaf6d"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/7661501291443061172",
+    "size": 526,
+    "sha256": "2d42b5394e3fc1a2e5a3e741cdcf4b4b623f6c3261345a1bf75be546ce959792"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/1369313205988859815",
+    "size": 273,
+    "sha256": "187a2a8cbf84baa54a2a58c70554c7fb49d2de7ca6a7e7cc6df44599ff4ec9aa"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/14867593031795852639",
+    "size": 225,
+    "sha256": "e1af19b820ce209bdf550dd0ba306d95ba32b72efc5e708b05870e7c7a1e79a8"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/1919754673402696908",
+    "size": 297,
+    "sha256": "20830b9123ace4bf1714ee700e0592d349e1757b8981f96e7eb537e7f59df69a"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/12581256306967268593",
+    "size": 157,
+    "sha256": "e609ba4a6057895efd9635e6b260671993339b67c88dc4ed4869b18b7abd0a1f"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/1979914680577332714",
+    "size": 110,
+    "sha256": "5b8365629672af53d9896ff67b653256ef77702e0f196dfafad5ae0e9fbd2539"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/8711518717738456267",
+    "size": 288,
+    "sha256": "d9e2f73075611b28f89ab109897524e0b239562ee0a480d88a63a266ca191364"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/18226447827594346830",
+    "size": 1181,
+    "sha256": "fcc17bd9cfe47bd6f876a9474384509d02ecab5e55da2f7fc75f7dbedda7f721"
+  },
+  {
+    "path": ".ruff_cache/0.7.1/1992476956201649088",
+    "size": 147,
+    "sha256": "0ae0b47073fb9420d113ebc4b6e1e814af77fec8d5bcf27a705de5c2e120dfda"
+  },
+  {
+    "path": "LICENSES/CC-BY-4.0.txt",
+    "size": 305,
+    "sha256": "801181bb594aaf547984a825d7ff74bd2612368bba99fdcab1c94c779658d878"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/.markdownlint 2.jsonc",
+    "size": 286,
+    "sha256": "0278bc22e756b5f3a33cd64c970cb71fc10b553116325e928765981cc896fa51"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/Guia_Prompt-Mae_PCS_v3.7 2.pdf",
+    "size": 12488,
+    "sha256": "7951589d29d81d918f1545e298f5b255734325ff9066ce6556deca077e514629"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/cleanup_repo 2.sh",
+    "size": 5052,
+    "sha256": "677fc093ca50dffee94d113caa88e7e64f875a442d5e254af7365c1b87175b0e"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/test.yml.bak",
+    "size": 163,
+    "sha256": "fe77a7106f8f9a3c40ccbb24d86f9ab1e0fc24fb7c3da7340de8c526bc0b326a"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/README_AGENT 2.md",
+    "size": 778,
+    "sha256": "023f3a9ba604eab88d39a01a4418d548bb98e61e73c9e00ae806ff4acfb6f22c"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/fit_ppg_v1.0_2025-08-23 2.md",
+    "size": 1027,
+    "sha256": "e19ba17e8d7c456403a87419d1380c667da8aa8d8d765753491a235d75a55c82"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/PCS_Cultural_Lens_Pilot 2.md",
+    "size": 2789,
+    "sha256": "76e1231064d52502f7b639210e8658bc20d93da07858136db27409cba2da6198"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/.pre-commit-config 2.yaml",
+    "size": 841,
+    "sha256": "d26e0a88a2b0affb8f0b3fb278861b6e16a8f388b0790bd2bc7b8e1e25139d5e"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/METADATA_ZENODO_PATCH_2025-08-23 2.md",
+    "size": 430,
+    "sha256": "63e262f64a778501e2fdb23cb3779e023d3a3a5a745fcf05115c607cd10b0375"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/CHANGELOG_PATCH_2025-08-23 2.md",
+    "size": 572,
+    "sha256": "6a1e5d5dcc61765f239e998a2b8a85c8827daf7b7b366ae47a33fff92c6372b4"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/apply_agent_pack 2.sh",
+    "size": 1573,
+    "sha256": "affa792329b44e459083ee13db51149ac548d18c78b8dc13fcb0598efc28a7ff"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/.pre-commit-config.yaml 2.bak",
+    "size": 1176,
+    "sha256": "62d87393cbe89b61b12369e709933f869161597ea0ee69446737ef52395e9fd6"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/spec_PCS-HELIO_v1.1_2025-08-23 2.md",
+    "size": 1610,
+    "sha256": "8fd1ab1e6bafe9a8cac6dddebb35699731a1b2f1eba758cd9b478045dbd62947"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/.yamllint 2.yaml",
+    "size": 252,
+    "sha256": "627983041bf3fdc3dc9236364c850d375c0b07cafeea8416faf809e05f3d0239"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/.markdownlint-cli2 2.jsonc",
+    "size": 79,
+    "sha256": "271597127f61c65acfa54433774e78ecec183e7e8276569c200f98cb279232e9"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/.markdownlint 2.yaml",
+    "size": 652,
+    "sha256": "be112a2e62b2874b1f016351671dc856c8bf436c797549af7e59dd1e69b20a26"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/CURADORIA_ACADEMICA_REPORT 2.md",
+    "size": 3810,
+    "sha256": "891dbe042a9d010acf5b00384aecdddbedfbba3108c3f28bcb1d9a223033ba87"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/Ponte_Epistemologica-Epidemiologica_PCS-HELIO_v1.0_2025-08-23 2.md",
+    "size": 6993,
+    "sha256": "ddeb86cc146b94991003b23dec49c888f04a6e1aa81651b4cd570fe6bb9c4bf6"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/ruff 2.toml",
+    "size": 355,
+    "sha256": "05c123dd1026b7ff5e878cf984e57bf4144d31e24e3a861d16bc54d3f5e8c3b2"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/ruff.toml 2.bak",
+    "size": 784,
+    "sha256": "bd67e4c7200a91d5f79bef5cf12903d01d3a95727b1e3f5835e785e3dae695ef"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/pcs_meta_repo_fixes_patch 2.diff",
+    "size": 915,
+    "sha256": "1abb604ac241bdfd4445a2ed094eea422f744e81a484f86baaf126911428aa89"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/01_swow_multilingual_pilot 2.py",
+    "size": 5043,
+    "sha256": "0104716f66a080994de6332938fffb4730a02021fe2cce046e83064f9771b890"
+  },
+  {
+    "path": "duplicates_backup_20250828_222250/PM_PCS-HELIO_v4.1_compacto_snippet_2025-08-23 2.txt",
+    "size": 341,
+    "sha256": "21afae674fd085bf8042dccf7c6e81ffc5b7be30fa6ee202448bb6084e8eab1e"
+  },
+  {
+    "path": "manuscripts/intro_methods.tex",
+    "size": 14088,
+    "sha256": "3fbc5d43e2261976e2048e69c42ac6e935df55097a7ba48ce01c63ce5795625d"
+  },
+  {
+    "path": "manuscripts/references.bib",
+    "size": 3586,
+    "sha256": "b8d731be8cb214b8972a926f26b566e2d4b0f68617a69b44ebc90467fd4a8005"
+  },
+  {
+    "path": "notebooks/04_zuco_models.ipynb",
+    "size": 15046,
+    "sha256": "34b3b672732a1886f49a665a15ec340655fb5919b43bb493b6c6203b71af18f6"
+  },
+  {
+    "path": "notebooks/zuco_models.ipynb",
+    "size": 3032,
+    "sha256": "0ec01f83bffec67ca9e9cc8e14f10e7aad1baf7658531a87d1ba1e2695708c56"
+  },
+  {
+    "path": "notebooks/environment.yml",
+    "size": 157,
+    "sha256": "ec2418ac1368a83513981356dd3797116b3db5d4c7a9746d5fa07bae3dfa6844"
+  },
+  {
+    "path": "notebooks/02_kec_metrics.ipynb",
+    "size": 5182,
+    "sha256": "b397dd059f9f505ce3a5d7d8379b7924d6d9cb6f8ca57a4085a4c1d53e92af7c"
+  },
+  {
+    "path": "notebooks/03_zuco_loader.ipynb",
+    "size": 2077,
+    "sha256": "2c4e9c80b4ab99b30e704e7a05aa497a488e7fbaabf6bd1a2eca0869f18c39ab"
+  },
+  {
+    "path": "notebooks/requirements.txt",
+    "size": 70,
+    "sha256": "24f3f47fa752e5fed2df47bee85da771fcff1673b4678ec6e722847b3e3748e5"
+  },
+  {
+    "path": "notebooks/01_SWOW_loader.ipynb",
+    "size": 4883,
+    "sha256": "eae0c936da73b20714144fe9a12ebfced200ceaab3f8fc154f0c64bbcb8fb93c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/setup.cfg",
+    "size": 159,
+    "sha256": "6570dae074a0790139d3d868eada4cf92793fa7990080b5ed05eeab313ff0933"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.flake8",
+    "size": 356,
+    "sha256": "64ae8258727d23933e5f101cb3030f3495b18a7696c0fb36d075101541b64651"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/CITATION.cff",
+    "size": 547,
+    "sha256": "f0cdb669fae4a5996f97302dc887e2fd50aa15e986042b504b3fbadb5e563f64"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.envrc",
+    "size": 27,
+    "sha256": "2b044ce8cc770ad4716bcf9184bfde5bed4e2eef1e0b008862f6f04e342d517f"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/ROADMAP.md",
+    "size": 3188,
+    "sha256": "3ceb8b2fba9902b8a9092a5af2f9a8e81820d129ad7641772282be0517e472d0"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.gitignore",
+    "size": 316,
+    "sha256": "cb63cd402b43245682298ba59c5d91144e31e41a757b828153c3e5c97196538b"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/README.md",
+    "size": 5763,
+    "sha256": "eb5eb42adda9c2f7825d049abfac0f5386c765a5a1e8a31233708471afd80a51"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/entropic_symbolic_society.pdf",
+    "size": 131,
+    "sha256": "84d608f4987bd743d62296aea38bc25782e1941c8c360f7611f4013018242a0b"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.pre-commit-config.yaml",
+    "size": 1411,
+    "sha256": "c27339d1a8962160d8dd0061ff8c21f333f70e1dea86f68a00d9a0ae6bfba302"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/osf_upload_all.sh",
+    "size": 7934,
+    "sha256": "3ee06981d9f55c103c9dc7aec7405ec8116c05076f5162e619d9cf691db3128c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.gitattributes",
+    "size": 519,
+    "sha256": "60dee048965665fbf27ff5b8e8b56fd2c92b0a64bc5ffe069d76b4ec370c2b4f"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/LICENSE",
+    "size": 2925,
+    "sha256": "9f2d15d842d87d8191c14e4db05d0be2c526e69c1edfd3d3e5ead2ec3dbdbe45"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.editorconfig",
+    "size": 244,
+    "sha256": "ae1aabc1325970d9baa72a802f6400aacb3292885b64e1bacae29e474f10b61a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+    "size": 5220,
+    "sha256": "b7b2757f66c006190893605ea795df8607a125606cdac7adb40c5fb8483ff9a7"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/entropic_symbolic_society.pdf",
+    "size": 131,
+    "sha256": "9553d4cd7c640bcd020a1188235cdaa8511fe926c24dc9e46df16e344395fe2e"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/NHB_main.tex",
+    "size": 3839,
+    "sha256": "485f03d42467de3d3369e2e57166a970ec8faeb43643987bd4d2470dc8c9b483"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/requirements.txt",
+    "size": 388,
+    "sha256": "ed2ac29505aa6d813c5374c7fefe9e418b18e1ea374e165f87cf69b711785362"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/NHB_main.pdf",
+    "size": 233069,
+    "sha256": "3992a67ee4574bb2868dc386c7a178a1801ce3985c1ffd2c7e827f1a9c03ba96"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/references.bib",
+    "size": 49062,
+    "sha256": "71d2f6ad4375b19e4792e2d9fbbd1b5b4ccaac345467f58fb5ecce5cd20ce047"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/.gitattributes",
+    "size": 88,
+    "sha256": "98a2eefc828f02b577ed9832342e174d5bf87108757ac7aed8f5e752c89a4261"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/VALIDATION_PLAN.md",
+    "size": 2078,
+    "sha256": "687af0a3c9e406724dde98bc6d7162c51e5e78e8fe93e51ca29adc9cf249a621"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/supplementary.tex",
+    "size": 3420,
+    "sha256": "401d5c02b3fa2219189516df697e9852aeb2e0a246606fc34cda5dafa103f0dd"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/ext_S3_degree_distribution.png",
+    "size": 250313,
+    "sha256": "a8b76256d3b435bca908e3abf9d0075f6bad5ecf9486f99f66c0844be7b0a111"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S6_collapse_recovery.pdf",
+    "size": 130,
+    "sha256": "508a3b455cee12ea75a6fcb1c447b4ee33acd6f504a1af2d191a707ac8d6d81a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig4_symbolic_regimes_map.pdf",
+    "size": 130,
+    "sha256": "5ec0e9f916e825346dc2112ad20729d7ec003af4e5257d9caf9492b5db2bd9e9"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_symbolic_regimes_map.pdf",
+    "size": 130,
+    "sha256": "5ec0e9f916e825346dc2112ad20729d7ec003af4e5257d9caf9492b5db2bd9e9"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S5_bifurcation.png",
+    "size": 75452,
+    "sha256": "a02b8e2e0b91d2c89be7356480571cd11b5544b2d16a6a50910031a3e4682180"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_trajectory_3D.png",
+    "size": 236590,
+    "sha256": "9f74a7da6e9391ee3e7f0944d399e211af32e46033905816ceac011850d3ee58"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S2_kappa_bifurcation.pdf",
+    "size": 130,
+    "sha256": "6ed388efe6294c1cb7fe9a975a1ec6fc754ffb4f7880a8821910f17bec74aa11"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S5_collapse.png",
+    "size": 74497,
+    "sha256": "1d03c5b195bb937d1d2582ed720bd2874ca4d1449f2d8f4f39f8b583a1df1dc5"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_trajectory_3D.pdf",
+    "size": 130,
+    "sha256": "d0057dcc7d5c7b6380bbc97257f6661777cc995ca68a1d74f2958a327005878c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/ext_S3_degree_distribution.pdf",
+    "size": 130,
+    "sha256": "c20deea4f0554dbe6ec094b725eeecac877882703bff076951ec2e7fd15b07e5"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S4_trajectory_3D.pdf",
+    "size": 130,
+    "sha256": "d0057dcc7d5c7b6380bbc97257f6661777cc995ca68a1d74f2958a327005878c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig2_bifurcation.png",
+    "size": 75452,
+    "sha256": "a02b8e2e0b91d2c89be7356480571cd11b5544b2d16a6a50910031a3e4682180"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig1_collapse.png",
+    "size": 74497,
+    "sha256": "1d03c5b195bb937d1d2582ed720bd2874ca4d1449f2d8f4f39f8b583a1df1dc5"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/entropy_kappa_map.pdf",
+    "size": 130,
+    "sha256": "9bc017f2cf8504fed797463d7b5dcf7b8e7a43750cdb652aeb4c85fc8314d177"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_collapse_recovery.png",
+    "size": 118190,
+    "sha256": "0da4b9c9b7fcec88babdd7da0d98545bac6adb232625f69b8ca096bba4e0c17c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_gamma_profiles.png",
+    "size": 136980,
+    "sha256": "eb4362eec1ba84336f5e65a70b5277ae6edaa90f429a5bda26b52b5e46dda14c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig2_entropy_curvature_heatmap.pdf",
+    "size": 130,
+    "sha256": "800058390077783248fa31b38025ebaa8306b78a0c1d63e002396a6dce45edc7"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_kappa_bifurcation.pdf",
+    "size": 130,
+    "sha256": "6ed388efe6294c1cb7fe9a975a1ec6fc754ffb4f7880a8821910f17bec74aa11"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/gamma_profiles_comparison.pdf",
+    "size": 130,
+    "sha256": "6850a1bb8e762b76c2f3cbc8a5523ec553fd67dc16ea226814fba7ff81dea08a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/simulated_gamma_trajectories.pdf",
+    "size": 130,
+    "sha256": "5426e6a80132a2ef651c12c6b3a48ce9eddd1c709a9437a88e9aad5f10a539fd"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S3_degree_distribution.pdf",
+    "size": 130,
+    "sha256": "c20deea4f0554dbe6ec094b725eeecac877882703bff076951ec2e7fd15b07e5"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_symbolic_heatmap.pdf",
+    "size": 130,
+    "sha256": "800058390077783248fa31b38025ebaa8306b78a0c1d63e002396a6dce45edc7"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/gamma_2e_curve.pdf",
+    "size": 130,
+    "sha256": "1c0d965cb01884162fcb76095b0925478ff22b9879f06366027d8c46f1a736ff"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_collapse_recovery.pdf",
+    "size": 130,
+    "sha256": "508a3b455cee12ea75a6fcb1c447b4ee33acd6f504a1af2d191a707ac8d6d81a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Ext_S1_regime_profiles.pdf",
+    "size": 130,
+    "sha256": "b719f5387026b5b1f12c6a0a5a70a927044c36a310bafd930a0a8c0a12b7c15a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_symbolic_regimes_map.png",
+    "size": 56291,
+    "sha256": "baf7c0bcf9386862ecff5cda1ae4e1ffc0432a39361f62985893c9b5ee1e1fd2"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/vector_field_symbolic_entropy.pdf",
+    "size": 130,
+    "sha256": "3024fda0fef2656396a43742315c7b2b898076d5d020bb38e15816b3ddf0bb27"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_kappa_bifurcation.png",
+    "size": 82867,
+    "sha256": "d463663b4042fdc370b33ddc8475f31ea6ca41795a9f94bde1640c2d01e3462b"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_gamma_profiles.pdf",
+    "size": 130,
+    "sha256": "b719f5387026b5b1f12c6a0a5a70a927044c36a310bafd930a0a8c0a12b7c15a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/ext_S3_degree_distribution.svg",
+    "size": 195993,
+    "sha256": "ee919e9bdfaeb6e2b5c77f9d325361ae5c30434aceb8e46a417f0de7ef9c735f"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/Fig_symbolic_heatmap.png",
+    "size": 115535,
+    "sha256": "8c1dfadb355dd909bb79317094a46f8474d59e5564d1b82130d2bb0554be5864"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/results/CHECKSUMS.sha256",
+    "size": 356,
+    "sha256": "5dd3dc02dc42aff168e9ac4547b334ab1fa95acb6b5729128cf7fa80b3e7d5c8"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/results/umap_projection.png",
+    "size": 465718,
+    "sha256": "2b3d0bd4d2496ffb65af980048ffc68f88defc255273b6c1f5b73c1dce18e6ce"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/results/swow_degree_distribution.png",
+    "size": 108755,
+    "sha256": "39465646457e8aaabccbd6c769f4b973f2c4d2188996a56f8c617c58bc5f2356"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/results/silhouette_scores.png",
+    "size": 96639,
+    "sha256": "112903b74e6ec14fa0179e28275418aa63d7fd1d2d4da2b088935c1af251c7be"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/data/CHECKSUMS.sha256",
+    "size": 2595,
+    "sha256": "3cf5c695d7fd0c2b877f42f3e0a65601bce85bec0583c116f2826fcb0166abfb"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/data/embedding_columns.txt",
+    "size": 914,
+    "sha256": "b06c3c65827848cc69207bba72a50ed93e6c91ef7e356ea146c381a3b78506c5"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/data/word_network.graphml",
+    "size": 133,
+    "sha256": "eff30135c0095a6c5e73ee95e61c71133b7bbb6c02b3b16ae2c27c119e873651"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/data/optimal_clusters.json",
+    "size": 95,
+    "sha256": "f5113a95d4f830d2ccca4dbecd21ea161a34b8b51e4754b9409220eaaecc4471"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/data/.gitattributes",
+    "size": 88,
+    "sha256": "98a2eefc828f02b577ed9832342e174d5bf87108757ac7aed8f5e752c89a4261"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/02_model_structure.tex",
+    "size": 5232,
+    "sha256": "7192dcd0cded3b4e5a9fd0cd9fdf5f604c41af8b20623dcf3c584f8fcfcf9d4c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/05_methods.tex",
+    "size": 2026,
+    "sha256": "a6cfa9bd75eeeeddd5ceec34723b29f196dcde989e74e263ecfdb90204f68e9a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/06_empirical_mapping.tex",
+    "size": 8123,
+    "sha256": "c7f95f38782607ef268b1cc10026cd67f214feb3bd6c194d5014db59ea2fe284"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/03_simulation_results.tex",
+    "size": 18214,
+    "sha256": "a404c1efb7ec47e851f820cef69d3d7dca86680715ff52fb52375e0cb33ac8ef"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/01_intro.tex",
+    "size": 878,
+    "sha256": "18ddc8ef8e61d52dc659132bef05c1fe86f029a278de67ee338a8bd4cdeea93e"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/references.bib",
+    "size": 9026,
+    "sha256": "d48918729632f54dad347d7e79502352bc0b03ba3987b52971e1962398e661a8"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/04_discussion.tex",
+    "size": 5155,
+    "sha256": "ec2df112fbdd15a9d78d2801b3961ac5e4da87bd987716ccf95790d42c264197"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/sections/08_conclusion.tex",
+    "size": 1504,
+    "sha256": "b6c1a7cd52f871476c5b8b286efd592e4ce88d4c1f234ad4a0b00cbfbd805626"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/integrate_entropy_curvature.py",
+    "size": 2060,
+    "sha256": "be421fd4a11dd73989b7ffceebb15251405003cde9e6491ee8a711f4b33db05f"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/analyze_swow.py",
+    "size": 5695,
+    "sha256": "f487d920fd8778616c3b3e6f2a9391b88196af6f072e6055ad5909298ab08fb8"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/integrate_entropy_curvature_pro.py",
+    "size": 1344,
+    "sha256": "cbe7b782a13206f56df5999c55fcadb15546a43cb6845eba0e3d992aa21bfd32"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/run_simulations.py",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/plot_symbolic_regimes_map.py",
+    "size": 1138,
+    "sha256": "6dc731144fca78bbcc3c795f4cab2636af22d184f90cc0a8e85368a3ba45ce32"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/simulate_kappa_bifurcation.py",
+    "size": 730,
+    "sha256": "0f81902b7d0b8a120ad06796675610a0b7c7e3e956d20637b0b81c5284568392"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/entropy_curvature_jobs_pro.yaml",
+    "size": 426,
+    "sha256": "e6c805c23cc6c4326bf1526c4f2443ef4b7ca2c72595fe6b7c67bb024ff7a327"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/simulate_trajectory_3D.py",
+    "size": 911,
+    "sha256": "a73c45087092fe6f1da54349164d6c50b6a58c612e4963ff6fdaf4afaa1832be"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/FIGURES_README.txt",
+    "size": 1148,
+    "sha256": "9a5afdbff9a8ee12ad60dc2d5d36fe88a72de90e23aab771994bd375c6802f78"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/figure_map.json",
+    "size": 383,
+    "sha256": "17d622f239ea099ca7d2c8a4befe03c3d88b7a573185ec00d605df415b400e86"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/entropy_curvature_jobs.yaml",
+    "size": 237,
+    "sha256": "17c280863aba6c06d340847b041e61103d5070febdcfbb732255c6824fe3fd66"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/osf_checksums_manifest.py",
+    "size": 1826,
+    "sha256": "891b889e73361bd8ac8cc390811c88a3cca693438228741a359777b246b1f17e"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/latex_includes.tex",
+    "size": 1381,
+    "sha256": "aa75569c5024b1a2a9ccac75186219e2d7f39258ce3eea13ea20423774e686ea"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/simulate_collapse.py",
+    "size": 1223,
+    "sha256": "2893fe21ce8d5336a0a319f4a775fc11e65fc235ed708635c0ec2407473939c3"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/editorial_preamble.py",
+    "size": 8491,
+    "sha256": "455001e42c2fc3fb1923f0e1c03d13438c41cdfc0e1cecf55ade86b30ebdeeed"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/simulate_heatmap.py",
+    "size": 954,
+    "sha256": "31a8f877b3935f7a67d20065a33a8b12fdc6812beb0dfcdae089dd09e077ad17"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/simulate_profiles.py",
+    "size": 915,
+    "sha256": "31ff803481fe611d9b55492dfdb51e028cd0a437b0cc44c545745099985fcb27"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/make_figures.py",
+    "size": 2716,
+    "sha256": "3d570c8686155aeb8ecb7c9459720b5e4b6803e7e1068b5c7fa0fa10eccc2bd1"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/simulate_collapse_recovery.py",
+    "size": 1032,
+    "sha256": "db4272c6222fc40df2bb20d21f55a4a78f1332263445260acc03b9f714efbb72"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/batch_entropy_curvature_pro.py",
+    "size": 2288,
+    "sha256": "5d1a7d8e29a971f63a7a05412d7e4edc618c82bd367bd7174d0c622ca9a19b28"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/code/compute_entropy_curvature_pro.py",
+    "size": 8188,
+    "sha256": "ae78076bb6e18121962d13d918857260b549ee719e5cda49b34a09538ce1eeca"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/appendices/README.txt",
+    "size": 63,
+    "sha256": "e20359b896708ab9ba9c655346902b328e543fb8d1353f6975c356cf5fc28701"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/appendices/fractal_layers.tex",
+    "size": 465,
+    "sha256": "0f48d87559b8c384e3358108f32a6b57ec7f9c784f4f4f9d3143db4a6feb2f1e"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/appendices/glossary.tex",
+    "size": 2072,
+    "sha256": "b7a5c21cfe95aeb059962f09e7458524df14157e3b24870516765ed983307555"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/appendices/symbolic_density.tex",
+    "size": 432,
+    "sha256": "6e962cec2ff6c018bc8845de62939dc0e4bf283b21d3b5e1a5ee72295ad9cce1"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/10_Robustness_and_Nulls.ipynb",
+    "size": 502,
+    "sha256": "f2dacf39c476cd3e7f4dde590f6ad579196c9432a3ecaadd36c2363ff1f77430"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Symbolic_Manifold_SelfContained_v1.ipynb",
+    "size": 19439,
+    "sha256": "1ff5bd5dc548f06b13a8dd748bcb9ad9fce489484551522067b4e7c6c0b0be6c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/08_RSA_fMRI_Narratives.ipynb",
+    "size": 489,
+    "sha256": "8248ee7147ee59e3c7429af1271e69adf02fee261b5b590c8c395b147296c75b"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Notebook_04_Merge_Metrics_and_Embeddings.ipynb",
+    "size": 14997,
+    "sha256": "00703936dc672ded669540102eb4b263e8f87fb597ac6642594fd7d78f9989c0"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Notebook_05_Clustering_Analysis.ipynb",
+    "size": 49947,
+    "sha256": "48eca200d16590e3f98b5919efbd0e5cde7178cf7f85f9704f6ab9336fe06f60"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/09_EEG_Priming_N400.ipynb",
+    "size": 476,
+    "sha256": "90769ddfc0f768331a53a1e2933c045a6ac617f0d1d21e3d8454cc6acdfd3437"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Symbolic_Entropy_Curvature_Colab.ipynb",
+    "size": 13696,
+    "sha256": "e4856f4b4da28168224361ba6eef7ead62966d54e255ca798c6758d592946261"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Symbolic_Manifold_Colab_GitHub_v3.ipynb",
+    "size": 119,
+    "sha256": "9309e50d839e2ef0462015687d5d4b549e0d574d60fc36b5f7df1d7ebdaf36c1"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Notebook_03_Generate_Embeddings.ipynb",
+    "size": 8528,
+    "sha256": "37ec8184d7d09386c4f23db78beadad4a68fb16cd64f5905ef95d1963279f032"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Notebook_01_Data_Preprocessing_and_Network_Construction.ipynb",
+    "size": 13742,
+    "sha256": "30acfd1a0fb3d1dd778495af10e14cda416eb872257c448b81b478b03af4fde2"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Notebook_06_UMAP_Visualization.ipynb",
+    "size": 125774,
+    "sha256": "842613ceb1164b06c925e3009d1e73e8cd5d96db4eba4104069f92e2586933ce"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/.gitattributes",
+    "size": 88,
+    "sha256": "98a2eefc828f02b577ed9832342e174d5bf87108757ac7aed8f5e752c89a4261"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/Notebook_02_Network_Metrics.ipynb",
+    "size": 10079,
+    "sha256": "3e49f3b35bb692f9519c864136f9b7618ce4b405e68d95e36f62aa45e1902a4b"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/notebooks/07_Validation_Semantic_Communities.ipynb",
+    "size": 503,
+    "sha256": "90b64a886121508945e95fabd2bc3104a7ef45c32330da80474643188b20e964"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/scripts/reset_env.sh",
+    "size": 2706,
+    "sha256": "704532ea2567f0e7796c0d5732788af26f67cc4c1be175118295907c41b2c099"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/scripts/regenerate_all.sh",
+    "size": 949,
+    "sha256": "bc4be0c987c2e054d7864b82f6279bf54ee4fca7d09e3e8ea8d2304418f1d777"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/scripts/utils.py",
+    "size": 6338,
+    "sha256": "e2886417236361442f79d17cd1d6c7250f4a5be7a5d3fed079c391689c2af5ac"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/scripts/make_entropy_curvature.sh",
+    "size": 2392,
+    "sha256": "02c7fca289c9705152e20aeaff7ca34ba45164822447386f203e9960bbed0ba9"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/scripts/clean_and_commit.sh",
+    "size": 1961,
+    "sha256": "42c33a151a12be38593295ad38c3268be972765e7e0a9bbdd9a8614168b537ae"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/scripts/make_source_data.sh",
+    "size": 728,
+    "sha256": "0fe47e4e3b3404013b120b68b1d35eccdd54da1d7886214d4e2a1b477c4eb68f"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/Fig_symbolic_regimes_map.pdf",
+    "size": 130,
+    "sha256": "b1bc4ccdce747d2589f143610685c7325f3d924865395f4f4586f46b513d4502"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/entropy_kappa_map.pdf",
+    "size": 130,
+    "sha256": "9bc017f2cf8504fed797463d7b5dcf7b8e7a43750cdb652aeb4c85fc8314d177"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/gamma_profiles_comparison.pdf",
+    "size": 130,
+    "sha256": "6850a1bb8e762b76c2f3cbc8a5523ec553fd67dc16ea226814fba7ff81dea08a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/simulated_gamma_trajectories.pdf",
+    "size": 130,
+    "sha256": "5426e6a80132a2ef651c12c6b3a48ce9eddd1c709a9437a88e9aad5f10a539fd"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/Fig_symbolic_heatmap.pdf",
+    "size": 130,
+    "sha256": "c6b0f665c52b6b81c100ea706d2f8d0e7ab89c516c51d0452edfcc2ab42182de"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/gamma_2e_curve.pdf",
+    "size": 130,
+    "sha256": "1c0d965cb01884162fcb76095b0925478ff22b9879f06366027d8c46f1a736ff"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/Fig_collapse_recovery.pdf",
+    "size": 130,
+    "sha256": "db2d36854b22ba453c687f9312f6cfab899fa56688d651feb6915e698fda3ec6"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/vector_field_symbolic_entropy.pdf",
+    "size": 130,
+    "sha256": "3024fda0fef2656396a43742315c7b2b898076d5d020bb38e15816b3ddf0bb27"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/figs/Fig_gamma_profiles.pdf",
+    "size": 130,
+    "sha256": "a86057e7a0ab5e777a8b06726e6f6590cfbcfd145404e1ff96ec0646402f481a"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/data/README.txt",
+    "size": 57,
+    "sha256": "bee3d5657234b55a5a42effcc17c5ac6731ca87ff47f53a7a3716ae348f1b0a9"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/tools/check_makefile_tabs.py",
+    "size": 1347,
+    "sha256": "ad982a11cec21c202e622f41d39660dc10ff683224491f9068632684161638b4"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Response_to_Reviewers_SR_v1.md",
+    "size": 723,
+    "sha256": "47175e87420113088e24d1d05aec0e228c0b7e0f9d98f1ca3e514de370fb99af"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Main_sr_rev1.tex",
+    "size": 2349,
+    "sha256": "1c3ed880c220f1fd58c4f38964058bfdac899879fd08984cd333593702388338"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Supplementary_Information.tex",
+    "size": 5259,
+    "sha256": "2c8b6cd11b7121a711317874d2fc0aa41c1a0708764a38c25f57b0b379bdfaaa"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/fig4_translational.png",
+    "size": 94725,
+    "sha256": "668cc0313379438f945beb462c5d5e893a91cd42d79bff9661c5aff45f9062cd"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Main_sr.pdf",
+    "size": 1167291,
+    "sha256": "cf820021a2c62b93dc9bb56f577eb6083fb2bd7a7b848b01767003c2b80e3ef6"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Cover_Letter_SR.md",
+    "size": 615,
+    "sha256": "ec6a462a8ce4568198fa80b51978f3292fd5ac4ff3c06bb34a4a9f62b7e6dd65"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Main_sr.fls",
+    "size": 28546,
+    "sha256": "5c77b678203810f3108a3410d0548cf06a9e25863030040673e3f4fedb4a4b1b"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/fig1_pipeline.png",
+    "size": 78550,
+    "sha256": "0e73196a3767579f17b55a7a303e1fba39cb4a6fdff0d10c6cea2f46115009cc"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Submission_README.txt",
+    "size": 1580,
+    "sha256": "94c6897e1cb3546710af4975d6c8403439062d7fe33830db005c8e8cc8d8c651"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/refs.bib",
+    "size": 6163,
+    "sha256": "d686d63fcaae896e368e125b645428b5be3a943d624d16019d33695c21a5d05c"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Main_sr.fdb_latexmk",
+    "size": 22587,
+    "sha256": "2972b9ac19c0f6c47716b981b620f3eab073df347bc5514abb65560468b37b44"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/Manuscripts/Scientific_Reports_v1.6/Main_sr.tex",
+    "size": 15443,
+    "sha256": "975fed30e427750aba6111b53111542a56d7af78f32de08185ce42265cc26bd0"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/Introduction.tex",
+    "size": 4417,
+    "sha256": "0b75cd57c74b4bf75b8ab25f84dae12788fb2a4d95d9f033e92c1dd62e56d6b2"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section2_fractal_entropia_cognicao.tex",
+    "size": 1863,
+    "sha256": "6186f7cd86a1ed5ca2ba2511197872926791ae701123881c4ede6a86db1762a8"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/M02_entropy_fractal_vector.tex",
+    "size": 11195,
+    "sha256": "d87b84a096c228b80419984a295b1573c21e302914f060d36a2528ef94a21686"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/interlude1.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/M01_context_manifesto.tex",
+    "size": 4701,
+    "sha256": "58844ee7a3f6670fc8b4ec2ed42af22601bd5f09b5dd5f3b1ce8dac53940acfe"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/M03_symbolic_modeling.tex",
+    "size": 9600,
+    "sha256": "a998a811cdbb786d6dc3edd2ac704af6d67a912336e4b040ba8858420ae81fa1"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section_epiphany.tex",
+    "size": 1842,
+    "sha256": "4328d257638e7669bf5f2ddb6050f0cd9824afe47f253a3bc4966d80677f43d9"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/manifesto.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/conclusion.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/README.txt",
+    "size": 61,
+    "sha256": "2631a9abed4faf8962871f3e1c2ca2b313536195a2ded2ef59becd0595aadeef"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/intermezzo2_impossible.tex",
+    "size": 2147,
+    "sha256": "2941a98fbe0592d185924de6b72ecfa94bdf06ee187c9902490d194911c1f023"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/M06_Symbolic_Profiles_of_Cognitive_Singularity.tex",
+    "size": 15475,
+    "sha256": "f5cb5908f41987ff5907845e38c0afa2e13f9cfb34a1df57887f2e40a0957b83"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section3_patterns_impossible.tex",
+    "size": 2324,
+    "sha256": "fe0b4f45b07b3ff6fb7b914fc0bd84ba7d822589b4351b12374affb0baa08973"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section_coda_fractal.tex",
+    "size": 2539,
+    "sha256": "b201b1617bdb619789087e59e9e484854ad3b8d4a7a586890c894c731bb318ea"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/abstract.tex",
+    "size": 1633,
+    "sha256": "af99daf7120019becb4b0ec0b720df1bdc818e55ebe53a18a04bb71a9f669924"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section4.tex",
+    "size": 85,
+    "sha256": "9e21cddd195ce5425aaf6cab0ca561c9f35e9b4cc03f638d61ad68518b0ae249"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section_singularity_giftedness.tex",
+    "size": 2055,
+    "sha256": "bba1182d95b00ae441ac12a977dd41a2e691e83ddeb8fe091f8d2f6a3c459078"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/intermezzo1_consciousness.tex",
+    "size": 1691,
+    "sha256": "37b7d5166caf2e64a7d99529fc96cc1e8934d1cc43521dff892a450a2c22bf99"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section2_2_entropy.tex",
+    "size": 2307,
+    "sha256": "8703ed295627c4c28582a4e9dee169cff7a8f8dbadff4c6017dcf7fc15d34e54"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/interlude2.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/methods.tex",
+    "size": 3296,
+    "sha256": "813c6e4efdda766b006547cb0cbac90afe22d07bfe4e99206b473e4e12587cc0"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/M04_symbolic_epistemology.tex",
+    "size": 39634,
+    "sha256": "34080e7cfa970916ff15440112dc70594b0985968962ffece80e7cc43dc8e6ce"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/results.tex",
+    "size": 1981,
+    "sha256": "b08ad5a5c1357bc9c3a3868cffe0a395a502ce9055712fd0661bc80156bc1527"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/section2_3_symbiotic_cognition.tex",
+    "size": 2673,
+    "sha256": "ce3d4b0afe17109d30ef718b7e4943c8674f78308971a0c1da951f2e050fc337"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/sections/M05_symbolic_clinical_translation.tex",
+    "size": 19246,
+    "sha256": "21cf13be102da3a78365c1cc1fe5d0dbba96b7314b61997cf7527886fe2ae715"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/code/vector_field_entropy.py",
+    "size": 736,
+    "sha256": "fb45bd26c0f7db3e9ef64d0b51630be982cb63f941faf1f78f1ebc0fa76fa397"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/code/README.txt",
+    "size": 57,
+    "sha256": "2e7aca4df0ddeeacaf0db1894129cca64a087368d321e5e678e9885fbdf45f04"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/code/load_swow.py",
+    "size": 1067,
+    "sha256": "dc5547b9c43833ee479ca01227bb87efd7c64b00c45abb09f9b88f6bdb41ee4e"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/code/gamma_profiles_simulation.py",
+    "size": 975,
+    "sha256": "233a7a9663bebacae9b447a63a5e91a7b581329806d11c183eeae5dfd18f9a68"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/papers/PORTFOLIO.md",
+    "size": 2266,
+    "sha256": "bc8e0d8311dc3858017e95263780c929d28469d71c90c9e1fdbd44f8fdf35de6"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/OSF_README_AND_DOCS/OSF_README_Validation_and_Robustedness.md",
+    "size": 553,
+    "sha256": "48c26937c49cd4b13d6b8fec6f9958b0fe38d17ff36005480da3f5ae1c8ac8f5"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/OSF_README_AND_DOCS/OSF_README_Derived_Data_and_Results.md",
+    "size": 724,
+    "sha256": "6d09e15934608551a101cdf7dcdc2f46971a4aeca65badf70541a7b2f20a6069"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/OSF_README_AND_DOCS/analysis_pipeline_diagram_branch.drawio",
+    "size": 3918,
+    "sha256": "7f353d4cf67f7bcf030c168035f3e777a5d2ea783ae104a6dac61d2b4100ed90"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/OSF_README_AND_DOCS/OSF_README_Neuro_Integration_RSA",
+    "size": 543,
+    "sha256": "671c2a8b672b8854f5c77ba5dd7d5842d0e84ef55d5c936f37c1e4ac5934f6d6"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/OSF_README_AND_DOCS/OSF_README_RAW_DATA",
+    "size": 930,
+    "sha256": "cd05eb30b9d4bbb05c442073a114f8f8b583380f7dfc665bf230c90c116eb90d"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.vscode/settings.json",
+    "size": 35,
+    "sha256": "3cc493130965e49a5a2b6a09ae12d3061f678339e70b775ea7ebe346aaf3df8d"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.github/workflows/latex.yml",
+    "size": 1161,
+    "sha256": "2883d2ed7edecb4a98e3b577abc0059feed929027292139e762b8b896a71c564"
+  },
+  {
+    "path": "notebooks/entropic-symbolic-society/.github/workflows/ci.yml",
+    "size": 1650,
+    "sha256": "a7bc2325c6dd3717ba1d60f1a7dad224b99736cf9a9f2daa3603c76d730a2bd7"
+  },
+  {
+    "path": "reports/report.md",
+    "size": 18906,
+    "sha256": "6601bdd3df88f7ef1d994fec00e2d7c8c41b8c4f8c09381954f5e565821d8c10"
+  },
+  {
+    "path": "reports/qa_kec_models.json",
+    "size": 496,
+    "sha256": "1e2524a420a428850d18eec7e30f6d3025be41b74001e29e6338c967883a2822"
+  },
+  {
+    "path": "scripts/compute_checksums.sh",
+    "size": 2412,
+    "sha256": "5815bc107025ff8b0cce6844a35284aeb1e97973c6f2f770494509fb353ad229"
+  },
+  {
+    "path": "scripts/fetch_data.sh",
+    "size": 1916,
+    "sha256": "392c4649c23f0e001198023168b06b863d156aecd6f2f6212e642bc049a9e94c"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/A_Natureza_Fractal_de_uma_Sociedade_Entropicamente_Dirigida.docx",
+    "size": 861636,
+    "sha256": "cebea60280f443d207c76667463d0368570672c665931867d717975e10fdd545"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/OA_check.py",
+    "size": 1807,
+    "sha256": "b90afc1b4166ae271b694c7f3923a4c10ade54961685c57bfc62c83b5fe85452"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs_fractalidade.bib",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/README.md",
+    "size": 14,
+    "sha256": "6683ba72d1ba4d4285c73eb947f8226326d2f68cef962e2ad6438a9eb003bd0e"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/draft_v1.md",
+    "size": 52228,
+    "sha256": "72bcc950cbeddae67466b3f7a6faaf30256a792c45e741d14bf8f972d821badd"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/~$Natureza_Fractal_de_uma_Sociedade_Entropicamente_Dirigida.docx",
+    "size": 162,
+    "sha256": "6b44a14759930331bf6bfdccee5106577b85b9dd3b5c362b3a1aa17623741e0f"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/oa_downloader.py",
+    "size": 1852,
+    "sha256": "da7218f1119751f351e29b784da1a9de5b34d2255b753a353c29dae9ef2796e0"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/doi_fix.py",
+    "size": 2026,
+    "sha256": "47534e6275e7681de9adc317c68bd8e54fd51486b1a4348c078c4807af3b2ebe"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/.gitattributes",
+    "size": 66,
+    "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs_raw.bib",
+    "size": 11039,
+    "sha256": "22f44fb910bf3467290f7fa0047bf8fdb79a1a23c1594b24fd05405cd9394f42"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/oa_status.csv",
+    "size": 6509,
+    "sha256": "44d39b8f98975665d961c3397e04e9a883068046aa4a3254b077b380ca3dff84"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/doi_report.csv",
+    "size": 2854,
+    "sha256": "acddf8e1a11207fbefb52fa8f96d5b4834a7c17bc7325412aeb3c51d1decb71c"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/sync_zotero_to_gdrive.py",
+    "size": 1328,
+    "sha256": "3f0474db13447c952a130aa983892f2d9e7abc3e9f0cdae66c1195ac8f58a36a"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/zotero.bib",
+    "size": 25074,
+    "sha256": "f63bf3ff61ac85219be7dc686df8281e0bddf8904c75236d686eabc9f5d540ab"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/4W2KRYAL_Falkenberg et al. - 2024 - Patterns of partisan toxicity and engagement reveal the common structure of online political communi.pdf",
+    "size": 1646005,
+    "sha256": "bdf5d344d41bbb93ffe2dd58f9c2270558cf0cdb6f32ffd36fc140f6f0f49756"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/IXJ35K73_Nguyen et al. - 2024 - Criticality and fractal organization of online protest networks.pdf",
+    "size": 4650937,
+    "sha256": "0790dd9aa0fb3897048247b1d61d723228f2449286844dbf5c3b75c3d317e678"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/XDUD8KE3_Mosing and Veenstra - 2025 - Intelligence and neuroticism in relation to depression.pdf",
+    "size": 697503,
+    "sha256": "370f5265c91b3c397be35445cd3a869c54209bce83d1817ece595f4c94954011"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/E2R3PEQA_Ahmed and Henriques - 2024 - Heart rate variability as predictor of stress in gifted students.pdf",
+    "size": 10398005,
+    "sha256": "a3b39d106560c9254ae414749f6b636248e7dc907e2c416c126d30069039b7b7"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/YR93QKRV_Fries et al. - 2025 - Multilevel multiverse meta-analysis indicates lower IQ as a risk factor for physical and mental illn.pdf",
+    "size": 1273121,
+    "sha256": "83e18d8196e6374a48297d1d712023f52d253974ce6e47d6b32a20cef97a4fe4"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/WLP7888V_Czerwi\u0144ski et al. - 2024 - Mental health of intellectually gifted individuals Investigating the nonlinearity of the relationsh.pdf",
+    "size": 132,
+    "sha256": "b5b3b9d4e5233cb7036cf9bbe104800c271a21cd9759297a4cf9885df12283eb"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/G689QWH4_Hsu et al. - 2025 - Fractal signatures in collective attention bursts on social media.pdf",
+    "size": 1003551,
+    "sha256": "937df1b0c6aec9f25666a71aeec5bd76f72918b264c00ec38e9c9c403e5848a0"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/RC2YQ5S7_lieberman-aiden.2009.pdf",
+    "size": 815481,
+    "sha256": "5fd25c83783a2e78386145a804214583752a70734ccef247b7293976a314a1c8"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/SAVW7UZ4_Zhou and Dunbar - 2023 - Fractal structure of human and primate social networks optimizes information flow.pdf",
+    "size": 1098496,
+    "sha256": "c98520e112be6b57850399bf335125824346397bc9617bea777cb8fbc8211ab8"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/5BVZ497A_Garc\u00eda-Garc\u00eda and Ruiz-Caballero - 2025 - Giftedness and suicidal ideation a nationwide register study.pdf",
+    "size": 131,
+    "sha256": "328d48cb1e4dc1a1494d3ba34edc5c680041394d69125b2544b34f7561466a3f"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/33HW2VTF_Khrennikov - 2023 - Quantum formalism for the dynamics of cognitive psychology.pdf",
+    "size": 2242703,
+    "sha256": "fe5838d00561c0eab933c4c0437df03b4c658660bc0926ddae56b1c6b7947d10"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/NJ4V5IQS_Saha et al. - 2024 - Von Neumann entropy as a predictor of polarization in social networks.pdf",
+    "size": 183254,
+    "sha256": "b72cb5cc533c3b469ba3600b7b91c75f96a5bd7c3b31f24dab975b01c65ca11d"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/2WLB5EKB_Rogers et al. - 2024 - Patterns of partisan toxicity and engagement.pdf",
+    "size": 1646005,
+    "sha256": "bdf5d344d41bbb93ffe2dd58f9c2270558cf0cdb6f32ffd36fc140f6f0f49756"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/KVV4K3KB_Veenstra and Persson - 2025 - Multiverse meta-analysis of IQ and illness risk.pdf",
+    "size": 1273121,
+    "sha256": "83e18d8196e6374a48297d1d712023f52d253974ce6e47d6b32a20cef97a4fe4"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/9JVANY34_Morales et al. - 2024 - Multidimensional political polarization in online social networks.pdf",
+    "size": 2084096,
+    "sha256": "5a7eb4bd3f7b49d912d8a2b698ff7e88d0a3f4dc3424ed8274c6ff51e143e401"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/LBDNWEAM_Petz - 2001 - Entropy, von Neumann and the von Neumann entropy.pdf",
+    "size": 147578,
+    "sha256": "7a1f29c863fda245c094217397ed1169ae10971b7fd9d54d3c6e53009e9f5c1a"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/FCVXQBVG_Diaz-Prince and Henriques - 2023 - Burnout acad\u00eamico e entropia vocacional.pdf",
+    "size": 131,
+    "sha256": "4054dd541d1679f59f14f1ab1c52fa18f54a03d071dc1382dc27a0384e8f9078"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/SLA83LBV_Saha and Acharya - 2025 - Hilbert-space modelling of cultural memes.pdf",
+    "size": 367468,
+    "sha256": "a911853b42f647a48bb0d921a352687338194b9276eafbfb5f56783bd89992a0"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/5UJ493FF_Peterson and Jamison - 2025 - Perfectionism, school burnout and engagement in gifted students.pdf",
+    "size": 532395,
+    "sha256": "0e066a9dc328fff07f78bf05854ba5ebb8e59e02c6507d0364c89359be6c889e"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/2HIE3G8K_Burgess and Karpinski - 2025 - Curvilinear association of IQ with bipolar risk.pdf",
+    "size": 239606,
+    "sha256": "2770fe9720dbb5fd50fa1d38c7983036781c01e002f6342635bb777c0d8e5d1d"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/ZH33GPKM_10.29003_m964.sudak.ns2020-16_113.pdf",
+    "size": 10398005,
+    "sha256": "a3b39d106560c9254ae414749f6b636248e7dc907e2c416c126d30069039b7b7"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/4JU379QH_Almeida et al. - 2024 - Dimens\u00e3o fractal do sulco cortical em indiv\u00edduos de alta intelig\u00eancia.pdf",
+    "size": 132,
+    "sha256": "288ae5b9b1ff450f335531139a3ed84259ed4e3ef0d5a4b772b1057dcc842a68"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/WCWTLNEL_Gabriel Pinheiro - 2022 - Estima\u00e7\u00e3o robusta de modelos cDCC em alta dimens\u00e3o.pdf",
+    "size": 132,
+    "sha256": "288ae5b9b1ff450f335531139a3ed84259ed4e3ef0d5a4b772b1057dcc842a68"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/LPMTPLHT_Martin et al. - 2024 - Anxiety and depression in gifted individuals a meta-analysis.pdf",
+    "size": 1960429,
+    "sha256": "949339e58d609bacca52570f3e97a4f8257b6f196d40049f82a536f0f631e978"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/YADPUWXQ_Hubbard - 2024 - Quantum Law and Economics.pdf",
+    "size": 642271,
+    "sha256": "771de27618ba3a605fe056286cf7bad33460942c7252e9940aea75be744be4dd"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/A8AM487I_Brody - 2023 - Quantum formalism for the dynamics of cognitive psychology.pdf",
+    "size": 2242703,
+    "sha256": "fe5838d00561c0eab933c4c0437df03b4c658660bc0926ddae56b1c6b7947d10"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/Q8I9SLVM_Smith et al. - 2015 - Childhood IQ and risk of bipolar disorder in adulthood prospective birth cohort study.pdf",
+    "size": 239606,
+    "sha256": "2770fe9720dbb5fd50fa1d38c7983036781c01e002f6342635bb777c0d8e5d1d"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/2AMBJKRV_2024 - Quantum Social Science Bootcamp IV Proceedings.pdf",
+    "size": 1090999,
+    "sha256": "1dce57b0f12194e7c8b2151e39ad9a590f65f76486aafbc06989629ac89c3d2e"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/refs/pdfs/U2U962I3_Vieira - 2025 - A revista Entropia e seus desafios no campo acad\u00eamico.pdf",
+    "size": 131,
+    "sha256": "4054dd541d1679f59f14f1ab1c52fa18f54a03d071dc1382dc27a0384e8f9078"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/zotero/zotero.bib",
+    "size": 25074,
+    "sha256": "f63bf3ff61ac85219be7dc686df8281e0bddf8904c75236d686eabc9f5d540ab"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.1038_s41467-024-53868-0.pdf",
+    "size": 1646005,
+    "sha256": "bdf5d344d41bbb93ffe2dd58f9c2270558cf0cdb6f32ffd36fc140f6f0f49756"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.58976_peletron.v2n2.entropia.pdf",
+    "size": 415978,
+    "sha256": "936e373e963b313d703b9e02ea201d5b8df882aacf0ec0752168c8f574658de9"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.1192_bjpo.bp.115.000455.pdf",
+    "size": 239606,
+    "sha256": "2770fe9720dbb5fd50fa1d38c7983036781c01e002f6342635bb777c0d8e5d1d"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.1038_s41598-023-43403-4.pdf",
+    "size": 2242703,
+    "sha256": "fe5838d00561c0eab933c4c0437df03b4c658660bc0926ddae56b1c6b7947d10"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.47749_t_unicamp.2022.1245646.pdf",
+    "size": 4335297,
+    "sha256": "5052cee99771cd4ba1f0e7002126a15507b8c1477349294db35d67a941fe6943"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.1007_978-94-017-2012-0_7.pdf",
+    "size": 147578,
+    "sha256": "7a1f29c863fda245c094217397ed1169ae10971b7fd9d54d3c6e53009e9f5c1a"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.29003_m964.sudak.ns2020-16_113.pdf",
+    "size": 10398005,
+    "sha256": "a3b39d106560c9254ae414749f6b636248e7dc907e2c416c126d30069039b7b7"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/refs_raw.bib",
+    "size": 11423,
+    "sha256": "7fa2f0bf45090ab22d86ba163650b020fead03b0be5847a464fece9dbdbef753"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/literature/pdf/10.1038_s44271-025-00245-2.pdf",
+    "size": 1273121,
+    "sha256": "83e18d8196e6374a48297d1d712023f52d253974ce6e47d6b32a20cef97a4fe4"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/.obsidian/app.json",
+    "size": 3,
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/.obsidian/appearance.json",
+    "size": 3,
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/.obsidian/workspace.json",
+    "size": 5857,
+    "sha256": "0f8e2b0088af17a66526580a9649035578be813379f06dc92a9a1985169cab4f"
+  },
+  {
+    "path": "papers/soc_fractal_ahsd/.obsidian/core-plugins.json",
+    "size": 659,
+    "sha256": "4196ad3fb6eb75a707d20706d3a91ddd3f6846076ef2ce4ff8d7df901b20d763"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/remove_orcid_icon.patch",
+    "size": 363,
+    "sha256": "110d80fe6c345a6be1c21f8968d05387d2ffbaffc4b1ebcdc35e2de84c567694"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/main.tex",
+    "size": 44785,
+    "sha256": "3ef30929aa030e1da98a0fabf816b4426eb4b77ccc6a8cee1514973a41648fdf"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/.gitignore",
+    "size": 465,
+    "sha256": "a1afe336140762af54a9337239676161ba9b562f6463f4a6ce0cd479eda18dae"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/README.md",
+    "size": 1850,
+    "sha256": "1a95155fbe16f0392c4f4c1e1d4d3b9ae1814aba73a46b5913ef225eab871d63"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/apply_mdpi.patch",
+    "size": 3411,
+    "sha256": "ede23c07c2b2ee5af26a3c36ffff74308483f4309540565fd6e671537aded73d"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/references.bib",
+    "size": 2182,
+    "sha256": "cd93fc9fd67d30bddaa3a863682a7bb40a6c4f541efc3147a90e066986f7e98a"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/refs.bib",
+    "size": 2572,
+    "sha256": "66cc5bbc8f7380e39805787c6321c0d4d877de8cb3794bd9f1990e01ac547075"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image3.png",
+    "size": 47001,
+    "sha256": "65fb6af774beda6c71077dd043e63e3b18a9339633f4c1960990032d521a2d0e"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image7.png",
+    "size": 91349,
+    "sha256": "ecff113af67d9fc1f363bb075ae1417c47b5e31be695ba5dea90852306547943"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image8.png",
+    "size": 79229,
+    "sha256": "53e385fc85c29d1918b57160d45e0801f743d2eb1d162129f83377955ef01690"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image2.png",
+    "size": 48642,
+    "sha256": "caf93db6e6fa6c60bbe4956c5f07fae31de1b1d7eb30c79aa2f7347399ad7748"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image11.png",
+    "size": 66529,
+    "sha256": "f7fdc675ebc4fdfd795259299015bc2fbc0ad379ab105872c9cdd7dfa192665d"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image5.png",
+    "size": 41747,
+    "sha256": "7e6ed51bfe612184b6e2929be93e3e3aec971dd88b1e5725f336637bfb656e58"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/fig_symbolic_density.png",
+    "size": 203094,
+    "sha256": "8233bf746a1cbfbc824208b9c12cb5f7c450414a5993c6b6d36f034b853ce45a"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image4.png",
+    "size": 44721,
+    "sha256": "f6de0654fd23fc346513595be7481e6c9698e28285e86589ed2b13ae33416810"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image9.png",
+    "size": 231237,
+    "sha256": "74af83be7aaec67a0a49f85b9ea12449d6b50cf38a0240789836ceb855e1396a"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image10.png",
+    "size": 109968,
+    "sha256": "441d97c929b9543b48905b0717e445041be51c1062d793a97806c70db9fa3e0a"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image6.png",
+    "size": 41198,
+    "sha256": "a423429e8f7750fa50fcc4158ca21c2acfb9853caf7dfe9b7f5b62b48e01e010"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/image1.png",
+    "size": 53197,
+    "sha256": "aea52d0e56e84aa12e972c0d2eaa6b472d9a8f26aa55ee26a566fed0f791f15e"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/figs/fig_fractal_layers.png",
+    "size": 133977,
+    "sha256": "1d9f33a1ce0c73fd6f1a558f5fb3b126eb77dae326e2a8cb636c024724074f8b"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/Introduction.tex",
+    "size": 4417,
+    "sha256": "0b75cd57c74b4bf75b8ab25f84dae12788fb2a4d95d9f033e92c1dd62e56d6b2"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_fractal_entropia_cognicao.tex",
+    "size": 1863,
+    "sha256": "6186f7cd86a1ed5ca2ba2511197872926791ae701123881c4ede6a86db1762a8"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/interlude1.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_epiphany.tex",
+    "size": 1842,
+    "sha256": "4328d257638e7669bf5f2ddb6050f0cd9824afe47f253a3bc4966d80677f43d9"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/manifesto.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/conclusion.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/intermezzo2_impossible.tex",
+    "size": 2147,
+    "sha256": "2941a98fbe0592d185924de6b72ecfa94bdf06ee187c9902490d194911c1f023"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section3_patterns_impossible.tex",
+    "size": 2324,
+    "sha256": "fe0b4f45b07b3ff6fb7b914fc0bd84ba7d822589b4351b12374affb0baa08973"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_coda_fractal.tex",
+    "size": 2539,
+    "sha256": "b201b1617bdb619789087e59e9e484854ad3b8d4a7a586890c894c731bb318ea"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/abstract.tex",
+    "size": 1633,
+    "sha256": "af99daf7120019becb4b0ec0b720df1bdc818e55ebe53a18a04bb71a9f669924"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section4.tex",
+    "size": 85,
+    "sha256": "9e21cddd195ce5425aaf6cab0ca561c9f35e9b4cc03f638d61ad68518b0ae249"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section_singularity_giftedness.tex",
+    "size": 2055,
+    "sha256": "bba1182d95b00ae441ac12a977dd41a2e691e83ddeb8fe091f8d2f6a3c459078"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/intermezzo1_consciousness.tex",
+    "size": 1691,
+    "sha256": "37b7d5166caf2e64a7d99529fc96cc1e8934d1cc43521dff892a450a2c22bf99"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_2_entropy.tex",
+    "size": 2307,
+    "sha256": "8703ed295627c4c28582a4e9dee169cff7a8f8dbadff4c6017dcf7fc15d34e54"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/interlude2.tex",
+    "size": 28,
+    "sha256": "95a21d4254efdde4ff0692622245b5c696435f38581dbbbd4be3f4dffd5a1a46"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/methods.tex",
+    "size": 3296,
+    "sha256": "813c6e4efdda766b006547cb0cbac90afe22d07bfe4e99206b473e4e12587cc0"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/results.tex",
+    "size": 1981,
+    "sha256": "b08ad5a5c1357bc9c3a3868cffe0a395a502ce9055712fd0661bc80156bc1527"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/section2_3_symbiotic_cognition.tex",
+    "size": 2673,
+    "sha256": "ce3d4b0afe17109d30ef718b7e4943c8674f78308971a0c1da951f2e050fc337"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/epilogue_equation.tex",
+    "size": 3343,
+    "sha256": "50e174ef6e1fd50344a7f5ec8948d03dc17331e32864c3329ee5cba4ff23f2f7"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/fractal_layers.tex",
+    "size": 465,
+    "sha256": "0f48d87559b8c384e3358108f32a6b57ec7f9c784f4f4f9d3143db4a6feb2f1e"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/glossary.tex",
+    "size": 2072,
+    "sha256": "b7a5c21cfe95aeb059962f09e7458524df14157e3b24870516765ed983307555"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/appendices/symbolic_density.tex",
+    "size": 432,
+    "sha256": "6e962cec2ff6c018bc8845de62939dc0e4bf283b21d3b5e1a5ee72295ad9cce1"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/logo-mdpi.eps",
+    "size": 563678,
+    "sha256": "f02d31469c6b2666c9de2da8d8731773bce3751d2fa99a27ff4bcf61a106cdcf"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi_chicago.bst",
+    "size": 37919,
+    "sha256": "c7ad9fbfd55cf3cc83b276ec736ceba1c32205bbcc633f74969ded088f6ecfd5"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi.cls",
+    "size": 63307,
+    "sha256": "62979fe0fe0f72a57adc1ad683add9b0138f1dae635d1da4ae48a4d811159e40"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi_apacite.sty",
+    "size": 71310,
+    "sha256": "62edfc68a9b7d202376dfb3005c25694b850b5b86b0cfcb0087b408396259c5d"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/logo-updates.eps",
+    "size": 851415,
+    "sha256": "b84b986524ff2e47afb07ecd5ef6d33cd85bc4b88d2053fdfb3e83210d695831"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/journalnames.tex",
+    "size": 108083,
+    "sha256": "460abe554c4d38d67c9f7f5096e9357184229f8dff5a3e4670d90acb26571182"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi.bst",
+    "size": 23671,
+    "sha256": "0e7cabbae26236bb158d2cfd97d9ffc2d19a216f37aa9270cb654fbf594773f3"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/template.tex",
+    "size": 44849,
+    "sha256": "17851a51c77096a932b498a1a602692767ea3aeafcba1ef169fa22cf667e07f9"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/Definitions/mdpi_apacite.bst",
+    "size": 138410,
+    "sha256": "5cbd8c8fc1d901b4aecf4d88e964b9eb2b78c4ca85bbf132bab6d794dd8dfd23"
+  },
+  {
+    "path": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/.github/workflows/latex.yml",
+    "size": 837,
+    "sha256": "b0818df251fd4be8bb77180682a78e1e36f4fec1ce70164ef109425a999926e7"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.gitignore",
+    "size": 190,
+    "sha256": "65d91dfc7cd41c291ac6c28cca829223bb8064d40ad59bfdc733eabae044f531"
+  },
+  {
+    "path": "papers/fractal-entropy-project/README.md",
+    "size": 26,
+    "sha256": "163a6cb7ba9de8dbe14ff8c0a9bfe12fcb161df6278b4ed7f2b0b3c36d6f5385"
+  },
+  {
+    "path": "papers/fractal-entropy-project/citation.cff",
+    "size": 455,
+    "sha256": "fe4754484de92ef1bf31c6e7b37e5af52000574295b3f7c316af7dd9bc0b2c7f"
+  },
+  {
+    "path": "papers/fractal-entropy-project/requirements.txt",
+    "size": 245,
+    "sha256": "f581723fcfe05238fd628e2ad3ee97f04211005ca54a0123adc657f77f6b60e4"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.zenodo.json",
+    "size": 698,
+    "sha256": "07b86a6d51913152063ae893179a6c019fcd6d96a0399682d63d9c4253ce86e4"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.gitattributes",
+    "size": 66,
+    "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+  },
+  {
+    "path": "papers/fractal-entropy-project/LICENSE",
+    "size": 1076,
+    "sha256": "8cb652e005e2e049c7f022939f64aa296297de7ac479c26951d0f04760576cd2"
+  },
+  {
+    "path": "papers/fractal-entropy-project/figs/README",
+    "size": 30,
+    "sha256": "1652fd5298ab5145ce00b9d71579014f9a052bc13de1f91c1258a603d46b8605"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_data/README",
+    "size": 34,
+    "sha256": "6574c0424efa976f3b5355841ca3872e0094f86a60613328f81acd6e23b7beb8"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_data/dataset_plan.md",
+    "size": 481,
+    "sha256": "39141bccafac86bb3eb2842160d5a6b179cf2df7c817d6c2855eebdb929e9f7e"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_data/demo_metrics.csv",
+    "size": 24,
+    "sha256": "d69e4b96227037ddc6e004dd4e619e5a5ff2afb9ec29528644cd4b5921362f02"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_data/run_20250723.csv",
+    "size": 4815,
+    "sha256": "2d9e82ea919cb06609774c000d4b7973eaa23fe29169dc74b7a55bafa18e1c9b"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_data/H2_timeseries.csv",
+    "size": 1006,
+    "sha256": "744e3c05c8a586a360278823ceddb986625ba2c0c4ef151880fe6d94c0a1d012"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/run_grid.py",
+    "size": 1118,
+    "sha256": "e41d818d8738b68e4a6fc7864cb7b7832681801b04134a59dd980f5bc22c9b2a"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/run_rupture.py",
+    "size": 1657,
+    "sha256": "4903f43a5031fe431dfcd7fd775008de19df5b046be53d01826f18d8f511f355"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/plot_H2.py",
+    "size": 785,
+    "sha256": "f6a3adc53bd6acdf23292193f6e558bffd7682c11d369a9670227aa5cab91ab9"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/demo_run.py",
+    "size": 713,
+    "sha256": "049478678519e673f86eea6101b5b057de91fdbe2d0fe38ba09c6e9466096924"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/box_count_dimension.py",
+    "size": 2599,
+    "sha256": "34ae57ab5c37d4be0bd36bec1b79fd000af012ef98d511afd8a3fb5fb94c8870"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/plot_figs.py",
+    "size": 1418,
+    "sha256": "417b3799115748cf924ded78f9a56d84c4c50e689350aa339fac2ca8ae4f7378"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/README",
+    "size": 19,
+    "sha256": "30b4f37c00ecc02ece0c2bf1edaf6dcd32dbe0e5828d5718b38a4e81bcb3cd20"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/plot_empirical.py",
+    "size": 1684,
+    "sha256": "86d4a8ec36787679f255f126b17a5dfda27a1371390c816c7f3eb63e4c6e514e"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/mc_sim.py",
+    "size": 3413,
+    "sha256": "7aeb258ce6899270eb1da9972d98ae6eb1d46c7308ed67d90c0cee540f8a274c"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/__pycache__/mc_sim.cpython-313.pyc",
+    "size": 4994,
+    "sha256": "5ab0ef794498165e36b4dbc095dbe054716edfccf4f5275c5c62ed482b195c63"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/__pycache__/box_count_dimension.cpython-313.pyc",
+    "size": 3769,
+    "sha256": "9d4e9023d083872c2ab8447e0041bdde7a54e12645c49d601487b87f680dc96a"
+  },
+  {
+    "path": "papers/fractal-entropy-project/code/__pycache__/box_dimension.cpython-313.pyc",
+    "size": 1483,
+    "sha256": "832c3c306f0a2ed807545c720c1f2a2416a1513e2824cf9bf82e0cd4b4538b84"
+  },
+  {
+    "path": "papers/fractal-entropy-project/docs/README",
+    "size": 26,
+    "sha256": "b23214e4470326d775398638078a61c8a74953228be4e1b94b9552416456db49"
+  },
+  {
+    "path": "papers/fractal-entropy-project/docs/kanban_soc_fractal.md",
+    "size": 954,
+    "sha256": "74b5feaa03634e874f2ca1f48ac56a807434cf22d7515333b97d8502558afcea"
+  },
+  {
+    "path": "papers/fractal-entropy-project/docs/compliance/report#27596937.pdf",
+    "size": 48041,
+    "sha256": "2e5a7db2691f1517905ed24fad24f142c2efab675fc2f0d58362c804d8002806"
+  },
+  {
+    "path": "papers/fractal-entropy-project/docs/compliance/report#27623655.pdf",
+    "size": 65760,
+    "sha256": "03ac6c424f318d715344e55d9383116c78c64a97c59e5b60d13345c692888590"
+  },
+  {
+    "path": "papers/fractal-entropy-project/transcripts/README",
+    "size": 34,
+    "sha256": "61676a1c591fb6c729d35aa1e59fbefd7e5e63a48d2d43840e496dd8df6524e6"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/main.pdf",
+    "size": 131,
+    "sha256": "7af226920e1d209e8882006352c2adc49f6ffba7977405d472e01d6d0e251529"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/rsproca_new.cls",
+    "size": 50380,
+    "sha256": "c66d2ea36248ac64bc0601d2a5c9fccccc83e0ac0525afee6f33f70f99d55139"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/main.tex",
+    "size": 4316,
+    "sha256": "5179379939f87d87f914daba31d37c9ff33cbebf98acd4c9b95f9e95eaf96693"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/main.log",
+    "size": 1421,
+    "sha256": "8006ef1422ed2ed483f5bd93d750bb1ac5da9a1397dfa42b93645a2320b2c0bc"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/main.fls",
+    "size": 390,
+    "sha256": "8db1540c63455e17ae9c75686b5a48685130402eb08429911361161e3029574c"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/main.aux",
+    "size": 31,
+    "sha256": "4977470b4e43199fcaf76b54a93b7d55430bd6c5ebe3c356761d87f94d0fecf3"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/README.md",
+    "size": 20,
+    "sha256": "d964de8525153113f389fc1a1ff959c62a348467389f696540a05c739c2ba8fa"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/rspublic.bst",
+    "size": 20297,
+    "sha256": "d624b531bda3cb8db3abb4b99b07b2a7f3fa92a17127615010170d28c77c9ddd"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/main.fdb_latexmk",
+    "size": 920,
+    "sha256": "f7cf606591c5a6c2e0bbed9f0d0a8282a9178d490521af1fded16e32a6dd8ef9"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/outline.md",
+    "size": 699,
+    "sha256": "3c4635121b12d2118c4e83a4ebc16c1a98e57317278f180cd7f82ddf2bd10e7d"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/figs/Fig4_heatmap_empirical.pdf",
+    "size": 18204,
+    "sha256": "afbda5e3a6b93457805275d2ca177603cfb27599d893420aa732326b87cf9277"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/figs/Fig3_heatmap.pdf",
+    "size": 26255,
+    "sha256": "cf486fac9f78631442059467b153b3064e23118ea27ee92ef83002d86f637dc6"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/figs/Fig5_H2_decay.pdf",
+    "size": 14671,
+    "sha256": "f81426bd895e1462c122a9bb34612a75f97023b1707e4a8aa70745625993b605"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/figs/Fig2_entropy.pdf",
+    "size": 13905,
+    "sha256": "ebbcc56fb6c438eb29c80574661a5d158c802ff5cd874e93598f543e06b4525e"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/figs/Fig1_density.pdf",
+    "size": 13873,
+    "sha256": "d12bb654472e10fc7779c912ac6232e34c3179435003f950807efb3e39afbe0b"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/sections/discussion.tex",
+    "size": 1784,
+    "sha256": "41a139224c76fec78d783edf393ac808fbd7b5ed31e066407b9ad26d5b41dbea"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/sections/highlights.md",
+    "size": 426,
+    "sha256": "82a0f8c922d80a1ae5c88a01adb9e202baf8c3033581fc91eaaa5628f0095d10"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/sections/abstract.tex",
+    "size": 1221,
+    "sha256": "446db4375a37156c9ba664fdc48f9e70146f996f91f967fcfa1bfd6abc67068e"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/sections/methods.tex",
+    "size": 3731,
+    "sha256": "5831ee5f7897386085b6747ee7893acc1f5e56af23005d03ab38357e3ab69206"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/sections/refs.bib",
+    "size": 2112,
+    "sha256": "bfe8d678658f26dd3ce966ffb896240ea5c789b81be00ea27ab9908c5b43d3ba"
+  },
+  {
+    "path": "papers/fractal-entropy-project/paper_model/sections/results.tex",
+    "size": 6688,
+    "sha256": "022154b103628f61a2ce35e42eb6cda0c26f1c8ae2f20bb8897d58312bd003fb"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.obsidian/app.json",
+    "size": 3,
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.obsidian/appearance.json",
+    "size": 3,
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.obsidian/workspace.json",
+    "size": 4368,
+    "sha256": "1558a42363aeb5f1d0246cf196ee031ef2f76bddc7a59fc511b1401da282db30"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.obsidian/core-plugins.json",
+    "size": 659,
+    "sha256": "4196ad3fb6eb75a707d20706d3a91ddd3f6846076ef2ce4ff8d7df901b20d763"
+  },
+  {
+    "path": "papers/fractal-entropy-project/.github/workflows/build-paper.yml",
+    "size": 1600,
+    "sha256": "a1deb82a94c886be0b2fadeb66c222c52e6a90d2c4bb7a809b0c242beedcfab6"
+  },
+  {
+    "path": "configs/lmstudio_api.yaml",
+    "size": 283,
+    "sha256": "8abd2a6a285dc0e871558a684b11209546b175e756db63b6f22c15dc513bb162"
+  },
+  {
+    "path": "configs/cuda_llama7b_q4.yaml",
+    "size": 272,
+    "sha256": "968f2c1669fa2b476e53c9500b65ce42d979e5996a678280f16fd0db0b9477e7"
+  },
+  {
+    "path": ".github/release-drafter.yml",
+    "size": 387,
+    "sha256": "0c5fdc8440767f2335313da65705b6bb77a520f9e9dbc7e01c9286895209c939"
+  },
+  {
+    "path": ".github/PULL_REQUEST_TEMPLATE.md",
+    "size": 370,
+    "sha256": "dccc9d094b2a2ce1a0bc9863a810c51808ddc6d5dd2df2c1a654bbec45bbfcbf"
+  },
+  {
+    "path": ".github/CODEOWNERS",
+    "size": 15,
+    "sha256": "af98b380222caaa32aec0ab281eaa718b6547b0d7a6b2356698d1137126e43c9"
+  },
+  {
+    "path": ".github/workflows/release-drafter.yml",
+    "size": 441,
+    "sha256": "ea5b9650e76e02280daee0c90baa692b1be499078650b6610cdd15e7608832d5"
+  },
+  {
+    "path": ".github/workflows/ci-autofix.yml",
+    "size": 1302,
+    "sha256": "2a2c7e6e249a6b87d1b4321ba9dbc6f4ae250254b00c5573c130749d29bfbd88"
+  },
+  {
+    "path": ".github/workflows/release.yml",
+    "size": 637,
+    "sha256": "021e704c2290932849a3b1a3c9b46235ba767fe7d2298ff6944e34ce052e4ba2"
+  },
+  {
+    "path": ".github/workflows/ci-validate.yml",
+    "size": 1488,
+    "sha256": "f83951672eb352149703c5f78350ca33535fd3ba3a1a5f4fd8ec74563d85c9cb"
+  },
+  {
+    "path": ".github/workflows/ci-yaml.yml",
+    "size": 449,
+    "sha256": "8657209d111afc7572d4416ffb0f20ac53ee97343e5c8cd3d291b70eb2666742"
+  },
+  {
+    "path": ".github/workflows/python.yml",
+    "size": 592,
+    "sha256": "785364859d4e7b12da0d3f575b6ed461007f8612b2ebb5f82ecf378231262ee9"
+  },
+  {
+    "path": ".github/workflows/ci-markdown.yml",
+    "size": 595,
+    "sha256": "3ea3eb8dc7f996b7cddb9ad6594ae6c766400cf395d714b36c816fed027ec576"
+  },
+  {
+    "path": ".github/workflows/python-tests.yml",
+    "size": 999,
+    "sha256": "1b0be8b9d916a782e68428c7f737f9ac27887ae345d8eda82dd9830daf5b5d83"
+  },
+  {
+    "path": ".github/workflows/build-latex.yml",
+    "size": 802,
+    "sha256": "d4b963a30dcb947a01e82861900181fd49a2d0c9a6f05306c07bbdc367879bab"
+  },
+  {
+    "path": ".github/workflows/latex.yml",
+    "size": 846,
+    "sha256": "f9a558649c323367bac42b33a9bc9e296e5ea7905bcbf86f6c4cb138f281d6e0"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+    "size": 242,
+    "sha256": "f0aa2a5b867911fc9dc1b0d232850410ff83b95de318c7ff947da51bc03cbfdd"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+    "size": 265,
+    "sha256": "e7b056cf56ea22b2ce50c9c7d5f908aabbdb8520f2157ee68fd6c01e140e4d4d"
+  }
+]
