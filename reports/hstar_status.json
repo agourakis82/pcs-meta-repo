@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    "models_reading_coeffs.csv": true,
+    "models_reading_coeffs_fdr.csv": true,
+    "mixedlm_ffd_summary.txt": false,
+    "boot_ols_ffd_entropy.csv": false,
+    "F2_reading_vs_KEC.png": true,
+    "F3_EEG_vs_KEC.png": true
+  },
+  "use_fdr_in_reading": true,
+  "reading_summary": [],
+  "pos_sig_entropy_count": 0,
+  "eeg_support": {
+    "available": false,
+    "subjects_total": 0,
+    "subjects_sig_pos": 0,
+    "fdr_applied": false
+  },
+  "status": "NOT_SUPPORTED",
+  "reasons": []
+}
