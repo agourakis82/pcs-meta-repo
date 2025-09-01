@@ -1,0 +1,9 @@
+dataset: swow
+languages: [en, es]
+ingest_date: 2025-08-31
+raw_dirs:
+  - data/raw_public/swow/en
+  - data/raw_public/swow/es
+source_url: https://smallworldofwords.org/en/project/research
+license_upstream: "see SWOW website"
+hashes: []

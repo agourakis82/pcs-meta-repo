@@ -1,0 +1,18 @@
+{
+  "created_utc": "2025-08-30T13:09:41.598720Z",
+  "year": 2025,
+  "files": {
+    "records_jsonl": "data/processed/2025_sweep/YEAR-2025_psy-neuro_records.jsonl",
+    "records_csv": "data/processed/2025_sweep/YEAR-2025_psy-neuro_records.csv",
+    "active_notes": "data/processed/2025_sweep/YEAR-2025_active_reading_notes.jsonl",
+    "chunks": "data/processed/2025_sweep/YEAR-2025_chunks.jsonl",
+    "quality_audit": "data/processed/2025_sweep/YEAR-2025_quality_audit.jsonl",
+    "top_venues": "reports/YEAR-2025_top_venues.csv",
+    "readme": "reports/README_YEAR-2025.md"
+  },
+  "license": {
+    "text/notes": "CC BY 4.0",
+    "code": "MIT",
+    "third_party_metadata": "original providers"
+  }
+}

@@ -1,0 +1,4 @@
+chromadb==0.5.*
+pandas>=2.2
+numpy>=1.26
+rapidfuzz>=3.0
