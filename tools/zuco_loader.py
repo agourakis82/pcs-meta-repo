@@ -175,7 +175,16 @@ def _process_session_from_mat_path(version_root: Path, et_path: Path) -> Optiona
         if sent_idx >= len(tb_data) or n_words <= 0:
             continue
         sent_start, sent_end = tb_data[sent_idx][0], tb_data[sent_idx][1]
-        duration = (sent_end - sent_start) / n_words if n_words > 0 else 0
+        # Safe duration computation
+        try:
+            ds = float(sent_end) - float(sent_start)
+            if not np.isfinite(ds) or ds <= 0:
+                duration = 0.0
+            else:
+                # guard against unrealistic magnitudes
+                duration = float(ds) / max(1, int(n_words))
+        except Exception:
+            duration = 0.0
         for w_pos in range(n_words):
             start_t = sent_start + (w_pos * duration) + min_latency
             end_t = start_t + duration
@@ -205,10 +214,10 @@ def _process_session_from_mat_path(version_root: Path, et_path: Path) -> Optiona
 # ----------------------- EEG from tabular -----------------------
 
 _EEG_NAME_MAP = {
-    'theta': 'theta1', 'theta1': 'theta1', 'theta_power': 'theta1',
-    'alpha': 'alpha1', 'alpha1': 'alpha1', 'alpha_power': 'alpha1',
-    'beta': 'beta1', 'beta1': 'beta1', 'beta_power': 'beta1',
-    'gamma': 'gamma1', 'gamma1': 'gamma1', 'gamma_power': 'gamma1',
+    'theta': 'theta1', 'theta1': 'theta1', 'theta_power': 'theta1', 'thetapower': 'theta1',
+    'alpha': 'alpha1', 'alpha1': 'alpha1', 'alpha_power': 'alpha1', 'alphapower': 'alpha1',
+    'beta': 'beta1', 'beta1': 'beta1', 'beta_power': 'beta1', 'betapower': 'beta1',
+    'gamma': 'gamma1', 'gamma1': 'gamma1', 'gamma_power': 'gamma1', 'gammapower': 'gamma1',
 }
 
 _KEY_CANDIDATES = [
@@ -218,17 +227,38 @@ _KEY_CANDIDATES = [
 def _read_table_auto(path: Path) -> Optional[pd.DataFrame]:
     try:
         if path.suffix.lower() == '.csv':
-            return pd.read_csv(path)
+            try:
+                return pd.read_csv(path)
+            except Exception:
+                # Try common encodings, ignore errors
+                for enc in ('utf-8', 'latin-1', 'iso-8859-1'):
+                    try:
+                        return pd.read_csv(path, encoding=enc, engine='python')
+                    except Exception:
+                        continue
+                return None
         if path.suffix.lower() == '.tsv':
-            return pd.read_csv(path, sep='\t')
+            try:
+                return pd.read_csv(path, sep='\t')
+            except Exception:
+                for enc in ('utf-8', 'latin-1', 'iso-8859-1'):
+                    try:
+                        return pd.read_csv(path, sep='\t', encoding=enc, engine='python')
+                    except Exception:
+                        continue
+                return None
         if path.suffix.lower() == '.txt':
             # try comma then tab
             try:
                 return pd.read_csv(path)
             except Exception:
-                return pd.read_csv(path, sep='\t')
+                try:
+                    return pd.read_csv(path, sep='\t')
+                except Exception:
+                    return None
     except Exception as e:
-        heartbeat(f"WARN: failed reading {path.name}: {e}")
+        # Silently skip non-EEG/non-tabular files
+        # heartbeat(f"INFO: skipped {path.name}: {e}")
         return None
     return None
 
@@ -285,14 +315,35 @@ def load_eeg(base_dir: Path) -> pd.DataFrame:
                 task = detect_task_from_path(path) or np.nan
                 mapped['Task'] = task
             frames.append(mapped)
+    # Fallback: if no raw EEG tabular files were found, try processed EEG bands file
+    if not frames:
+        proc = base_dir.parent.parent / 'processed'
+        fallback = proc / 'zuco_word_level_all_subjects.csv'
+        if fallback.exists():
+            try:
+                df = pd.read_csv(fallback, low_memory=False)
+                mapped = _map_eeg_columns(df)
+                if mapped is not None:
+                    # Ensure Dataset/Task present
+                    if 'Dataset' not in mapped.columns:
+                        mapped['Dataset'] = df.get('Dataset', np.nan)
+                    if 'Task' not in mapped.columns:
+                        mapped['Task'] = df.get('Task', np.nan)
+                    frames.append(mapped)
+                    heartbeat(f"INFO: EEG bands loaded from processed fallback {fallback.name}")
+            except Exception as e:
+                heartbeat(f"WARN: failed reading fallback EEG {fallback.name}: {e}")
     if not frames:
         heartbeat("INFO: No EEG tabular files mapped; EEG table will be empty.")
         return pd.DataFrame(columns=['Dataset','Task','Subject','SentenceID','w_pos','token','token_norm','theta1','alpha1','beta1','gamma1'])
     out = pd.concat(frames, ignore_index=True)
-    # aggregate per canonical keys
-    keys = ['Dataset','Task','Subject','SentenceID','w_pos','token_norm']
+    # aggregate per canonical keys; drop keys that are entirely NaN to avoid empty groupby
+    cand_keys = ['Dataset','Task','Subject','SentenceID','w_pos','token_norm']
+    keys = [k for k in cand_keys if k in out.columns and (k == 'Subject' or out[k].notna().any())]
     val_cols = [c for c in ['theta1','alpha1','beta1','gamma1'] if c in out.columns]
-    agg = out.groupby([k for k in keys if k in out.columns])[val_cols].mean().reset_index()
+    if not val_cols:
+        return pd.DataFrame(columns=['Dataset','Task','Subject','SentenceID','w_pos','token','token_norm','theta1','alpha1','beta1','gamma1'])
+    agg = out.groupby(keys)[val_cols].mean().reset_index() if keys else out[val_cols].mean().to_frame().T
     return agg
 
 # ----------------------- ET orchestrator -----------------------
@@ -327,31 +378,54 @@ def load_et(base_dir: Path, n_jobs: int = -1) -> pd.DataFrame:
 # ----------------------- merge -----------------------
 
 def merge_et_eeg(et: pd.DataFrame, eeg: pd.DataFrame) -> pd.DataFrame:
-    keys = ['Dataset','Task','Subject','SentenceID','w_pos','token_norm']
-    # Left join ET with EEG
-    merged = et.merge(eeg, on=[k for k in keys if k in et.columns and k in eeg.columns], how='left')
-    # Append EEG-only rows
-    if not eeg.empty:
-        # Build anti-join keys present in EEG but not in ET
-        have_all_keys_in_eeg = all(k in eeg.columns for k in keys)
-        if have_all_keys_in_eeg:
-            et_keys = et[keys].drop_duplicates() if not et.empty else pd.DataFrame(columns=keys)
-            eeg_keys = eeg[keys].drop_duplicates()
-            # anti-join: EEG keys not present in ET keys
-            anti = eeg_keys.merge(et_keys, on=keys, how='left', indicator=True)
-            eeg_only = anti.loc[anti['_merge'] == 'left_only', keys]
-            if not eeg_only.empty:
-                add = eeg_only.merge(eeg, on=keys, how='left')
-                # ensure presence of columns expected downstream
-                if 'token' not in add.columns:
-                    add['token'] = np.nan
-                for c in ['FFD','GD','TRT','GPT']:
-                    if c not in add.columns:
-                        add[c] = np.nan
-                # align columns to merged
-                add = add.reindex(columns=merged.columns, fill_value=np.nan)
-                merged = pd.concat([merged, add], ignore_index=True)
-    # order columns
+    def do_merge(keys: List[str]) -> pd.DataFrame:
+        on = [k for k in keys if k in et.columns and k in eeg.columns]
+        if not on:
+            return et.copy()
+        return et.merge(eeg, on=on, how='left')
+
+    # Try progressively relaxed key sets
+    key_sets = [
+        ['Dataset','Task','Subject','SentenceID','w_pos','token_norm'],
+        ['Dataset','Task','Subject','SentenceID','token_norm'],
+        ['Dataset','Task','Subject','token_norm'],
+        ['Dataset','Subject','token_norm'],
+        ['Subject','token_norm'],
+    ]
+    merged = do_merge(key_sets[0])
+    eeg_cols = [c for c in ['theta1','alpha1','beta1','gamma1'] if c in eeg.columns]
+    def eeg_coverage(df: pd.DataFrame) -> float:
+        if not eeg_cols or df.empty:
+            return 0.0
+        return float(np.nanmean([df[c].notna().mean() for c in eeg_cols]))
+
+    cov = eeg_coverage(merged)
+    if cov == 0.0 and not eeg.empty:
+        for keys in key_sets[1:]:
+            cand = do_merge(keys)
+            if eeg_coverage(cand) > cov:
+                merged, cov = cand, eeg_coverage(cand)
+                if cov > 0:
+                    break
+
+    # Append EEG-only rows where we have full keys available
+    keys_full = ['Dataset','Task','Subject','SentenceID','w_pos','token_norm']
+    if not eeg.empty and all(k in eeg.columns for k in keys_full) and all(k in merged.columns for k in keys_full):
+        et_keys = merged[keys_full].drop_duplicates() if not merged.empty else pd.DataFrame(columns=keys_full)
+        eeg_keys = eeg[keys_full].drop_duplicates()
+        anti = eeg_keys.merge(et_keys, on=keys_full, how='left', indicator=True)
+        eeg_only = anti.loc[anti['_merge'] == 'left_only', keys_full]
+        if not eeg_only.empty:
+            add = eeg_only.merge(eeg, on=keys_full, how='left')
+            if 'token' not in add.columns:
+                add['token'] = np.nan
+            for c in ['FFD','GD','TRT','GPT']:
+                if c not in add.columns:
+                    add[c] = np.nan
+            add = add.reindex(columns=merged.columns, fill_value=np.nan)
+            merged = pd.concat([merged, add], ignore_index=True)
+
+    # Ensure column order
     col_order = ['Dataset','Task','Subject','SentenceID','w_pos','token','token_norm','FFD','GD','TRT','GPT','theta1','alpha1','beta1','gamma1']
     for c in col_order:
         if c not in merged.columns:

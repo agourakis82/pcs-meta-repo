@@ -1,4 +1,4 @@
-sha256,size,paths
+group_id,file1,file2sha256,size,paths
 0ad94442a822d76e1cadb68d509aa5f70a0282f627f266cf0845917a539d9241,27,papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/interlude1.tex;papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/interlude2.tex;papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/conclusion.tex;papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/sections/manifesto.tex
 1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b,66,papers/fractal-entropy-project/.gitattributes;papers/soc_fractal_ahsd/.gitattributes
 fa01ffebed2b842d6f9fcdf817d476114379043050dbd7ca9ccae68d14cb970a,658,papers/fractal-entropy-project/.obsidian/core-plugins.json;papers/soc_fractal_ahsd/.obsidian/core-plugins.json
