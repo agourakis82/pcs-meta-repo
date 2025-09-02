@@ -1,0 +1,34 @@
+{
+  "rows": 1129826,
+  "subjects": 30,
+  "by_dataset": {
+    "v1": 971936,
+    "v2": 157890
+  },
+  "by_task": {
+    "": 85548,
+    "TSR": 1044278
+  },
+  "et_coverage_pct": {
+    "FFD": "85.8%",
+    "GD": "85.8%",
+    "TRT": "85.8%",
+    "GPT": "0.0%"
+  },
+  "eeg_coverage_pct": {
+    "theta1": "0.0%",
+    "alpha1": "0.0%",
+    "beta1": "0.0%",
+    "gamma1": "0.0%"
+  },
+  "files": {
+    "v1_et_mat": 202,
+    "v2_et_mat": 133,
+    "v1_eeg_tabular": 0,
+    "v2_eeg_tabular": 0
+  },
+  "errors": {
+    "v1": [],
+    "v2": []
+  }
+}

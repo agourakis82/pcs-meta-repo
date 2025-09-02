@@ -1,20 +1,22 @@
 {
   "files": {
     "zuco_v1_aligned.csv": true,
-    "zuco_v2_aligned.csv": false,
+    "zuco_v2_aligned.csv": true,
     "zuco_aligned.csv": true
   },
-  "rows_total": 37358,
-  "subjects": 1,
+  "rows_total": 12446,
+  "subjects": 3,
   "by_dataset": {
-    "v1": 37358
+    "v1": 12445,
+    "v2": 1
   },
   "by_task": {
-    "NR": 37358
+    "NR": 12445,
+    "TSR": 1
   },
   "kec_coverage_pct": {
-    "entropy": 96.18501433736442,
-    "avg_curvature": 96.18501433736442,
-    "coherence": 96.18501433736442
+    "entropy": 95.00693481276005,
+    "curvature": 95.00693481276005,
+    "coherence": 95.00693481276005
   }
 }

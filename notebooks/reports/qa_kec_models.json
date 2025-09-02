@@ -1,11 +1,9 @@
 {
   "timestamp_utc": "2025-09-01T19:48:51.873406Z",
-  "merged_rows": 64168,
+  "merged_rows": 53688,
   "et_cols": [
     "FFD",
-    "GD",
-    "log_TRT",
-    "log_GPT"
+    "GD"
   ],
   "kec_cols": [
     "entropy",

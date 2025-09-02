@@ -1,12 +1,12 @@
 ---
 name: latex-build
-'on':
+on:
   push:
     paths:
-      - '**/*.tex'
+      - 'papers/**/*.tex'
   pull_request:
     paths:
-      - '**/*.tex'
+      - 'papers/**/*.tex'
   workflow_dispatch:
 
 jobs:
