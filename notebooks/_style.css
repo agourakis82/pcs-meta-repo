@@ -1,0 +1,8 @@
+/* PCS-HELIO v4.3 minimal notebook style */
+div.text_cell_render h1 { font-size: 190%; font-weight: 700; margin-top: 0.4em; }
+div.text_cell_render h2 { font-size: 160%; font-weight: 650; margin-top: 0.6em; }
+div.text_cell_render h3 { font-size: 130%; font-weight: 600; margin-top: 0.6em; }
+div.output_area { border-left: 3px solid #ddd; padding-left: 10px; margin-left: 2px; }
+table.dataframe { font-size: 92%; }
+.rendered_html p { line-height: 1.35; }
+

@@ -1,15 +1,21 @@
 {
-  "rows":0,
-  "et_coverage_pct":{
-    "FFD":"nan%",
-    "GD":"nan%",
-    "TRT":"nan%",
-    "GPT":"nan%"
-  },
-  "eeg_coverage_pct":{
-    "theta1":"nan%",
-    "alpha1":"nan%",
-    "beta1":"nan%",
-    "gamma1":"nan%"
-  }
+  "source": "auto_discover",
+  "rows": 12446,
+  "cols": [
+    "Subject",
+    "Dataset",
+    "Task",
+    "SentenceID",
+    "Word",
+    "FFD",
+    "GD",
+    "TRT",
+    "ThetaPower",
+    "AlphaPower",
+    "BetaPower",
+    "GammaPower",
+    "token_norm",
+    "duration_ms",
+    "fixation_samples"
+  ]
 }
