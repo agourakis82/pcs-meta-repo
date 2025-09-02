@@ -10,10 +10,14 @@ from joblib import Parallel, delayed
 
 def fit_ols_clustered(df: pd.DataFrame, formula: str, cluster: Optional[str] = None):
     if cluster and cluster in df.columns:
-        model = smf.ols(formula, data=df).fit(cov_type="cluster", cov_kwds={"groups": df[cluster]})
-    else:
-        model = smf.ols(formula, data=df).fit()
-    return model
+        try:
+            n_groups = int(pd.Series(df[cluster]).nunique())
+        except Exception:
+            n_groups = 0
+        if n_groups >= 2:
+            return smf.ols(formula, data=df).fit(cov_type="cluster", cov_kwds={"groups": df[cluster]})
+    # Fallback to classical OLS when no/insufficient clusters
+    return smf.ols(formula, data=df).fit()
 
 
 def fit_mixedlm(df: pd.DataFrame, response: str, fixed: List[str], group: str = "Subject", vc: Optional[Dict[str, str]] = None):
