@@ -41,13 +41,8 @@ def load_et(base: Path) -> pd.DataFrame:
     Here we route to that module to keep a single source of truth.
     """
     import importlib.util, sys
-    # Find repo root by looking for README.md or pyproject.toml
-    repo_root = None
-    for p in [base, *base.parents]:
-        if (p / 'README.md').exists() or (p / 'pyproject.toml').exists():
-            repo_root = p
-            break
-    repo_root = repo_root or base.parents[2]
+    # Resolve repo root from this module location, robust to CWD
+    repo_root = Path(__file__).resolve().parents[2]
     loader_path = (repo_root / 'tools' / 'zuco_loader.py').resolve()
     spec = importlib.util.spec_from_file_location('zuco_loader', loader_path)
     assert spec is not None and spec.loader is not None
@@ -59,12 +54,7 @@ def load_et(base: Path) -> pd.DataFrame:
 
 def load_eeg(base: Path) -> pd.DataFrame:
     import importlib.util, sys
-    repo_root = None
-    for p in [base, *base.parents]:
-        if (p / 'README.md').exists() or (p / 'pyproject.toml').exists():
-            repo_root = p
-            break
-    repo_root = repo_root or base.parents[2]
+    repo_root = Path(__file__).resolve().parents[2]
     loader_path = (repo_root / 'tools' / 'zuco_loader.py').resolve()
     spec = importlib.util.spec_from_file_location('zuco_loader', loader_path)
     assert spec is not None and spec.loader is not None
@@ -76,15 +66,8 @@ def load_eeg(base: Path) -> pd.DataFrame:
 
 def merge_et_eeg(et: pd.DataFrame, eeg: pd.DataFrame) -> pd.DataFrame:
     import importlib.util, sys
-    # Delegate to tools.merge to reuse hardened logic
-    # Resolve repo root from CWD
-    cwd = Path.cwd()
-    repo_root = None
-    for p in [cwd, *cwd.parents]:
-        if (p / 'README.md').exists() or (p / 'pyproject.toml').exists():
-            repo_root = p
-            break
-    repo_root = repo_root or cwd
+    # Delegate to tools.merge to reuse hardened logic; resolve from module path
+    repo_root = Path(__file__).resolve().parents[2]
     loader_path = (repo_root / 'tools' / 'zuco_loader.py').resolve()
     spec = importlib.util.spec_from_file_location('zuco_loader', loader_path)
     assert spec is not None and spec.loader is not None
@@ -99,7 +82,8 @@ def load_all(raw_base: Path, write_outputs: bool = True) -> pd.DataFrame:
     eeg = load_eeg(raw_base)
     merged = merge_et_eeg(et, eeg)
     if write_outputs:
-        proc = raw_base.parents[1] / 'processed'
+        repo_root = Path(__file__).resolve().parents[2]
+        proc = repo_root / 'data' / 'processed'
         proc.mkdir(parents=True, exist_ok=True)
         out_csv = proc / 'zuco_aligned.csv'
         merged.to_csv(out_csv, index=False)
@@ -110,11 +94,6 @@ def load_all(raw_base: Path, write_outputs: bool = True) -> pd.DataFrame:
             'eeg_coverage_pct': {c: f"{merged[c].notna().mean()*100:.1f}%" for c in EEG_COLS if c in merged.columns},
         }
         # reports at repo root
-        repo_root = raw_base
-        for p in [raw_base, *raw_base.parents]:
-            if (p / 'README.md').exists() or (p / 'pyproject.toml').exists():
-                repo_root = p
-                break
         rpt = repo_root / 'reports'
         rpt.mkdir(parents=True, exist_ok=True)
         (rpt / 'zuco_loader_qa.json').write_text(pd.Series(qa).to_json(indent=2))
