@@ -34,6 +34,11 @@ jobs:
         run: |
           pytest -q
 
+      - name: Normalize notebooks (IDs)
+        run: |
+          python -m pip install --upgrade nbformat
+          python tools/normalize_notebooks.py
+
       - name: Execute notebooks (full)
         run: |
           python -m pip install --upgrade ipykernel nbconvert jupyterlab_pygments
