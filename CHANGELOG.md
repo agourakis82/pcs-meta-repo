@@ -1,5 +1,13 @@
 # Changelog
 
+## v2025.09.02 — Zenodo release (DOI: 10.5281/zenodo.17039429)
+
+- Notebooks 01–06 hardened (RUN_MODE sample/full, robust imports/paths)
+- KEC/ZuCo pipelines stabilized; H* validator integrated
+- CI: normalize notebook IDs and nbconvert with full→sample fallback (PRs = sample)
+- Metadata aligned for Zenodo/CITATION (DOI badge + links)
+- Repo cleanup: removed duplicate notebook-generated artifacts under `notebooks/`
+
 ## v0.1.0 — 2025-08-21
 
 - Definitive starter pack for PCS meta-repository.
