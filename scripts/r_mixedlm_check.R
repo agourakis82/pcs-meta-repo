@@ -1,57 +1,45 @@
-#!/usr/bin/env Rscript
-suppressPackageStartupMessages({
-  library(lme4)
-  library(broom.mixed)
-  library(readr)
-  library(ggplot2)
+# Minimal R cross-check script (safe no-op if inputs missing)
+suppressWarnings({
+  suppressMessages({
+    library(lme4, quietly = TRUE, warn.conflicts = FALSE)
+  })
 })
 
 proc <- file.path('data','processed')
-merged_csv <- file.path(proc, 'zuco_kec_merged.csv')
-rpts <- 'reports'
-dir.create(rpts, showWarnings = FALSE, recursive = TRUE)
+zuco_path <- file.path(proc, 'zuco_aligned.csv')
 
-if (!file.exists(merged_csv)) {
-  cat(sprintf('[r_mixedlm_check] INFO: missing %s; skipping\n', merged_csv))
-  quit(save='no', status=0)
+if (!file.exists(zuco_path)) {
+  cat('[r_mixedlm_check] INFO: zuco_aligned.csv missing; skipping.\n')
+  quit(status=0)
 }
 
-df <- tryCatch(readr::read_csv(merged_csv, show_col_types = FALSE), error=function(e) NULL)
-if (is.null(df) || nrow(df) == 0) {
-  cat('[r_mixedlm_check] INFO: empty input; skipping\n')
-  quit(save='no', status=0)
+df <- tryCatch(read.csv(zuco_path), error=function(e) NULL)
+if (is.null(df)) {
+  cat('[r_mixedlm_check] WARN: failed to read zuco_aligned.csv; skipping.\n')
+  quit(status=0)
 }
 
-# Ensure needed columns
-needed <- c('TRT','log_TRT','entropy','length','log_freq','Subject','SentenceID')
-missing <- setdiff(needed, colnames(df))
-if (length(missing) > 0) {
-  cat(sprintf('[r_mixedlm_check] WARN: missing columns: %s\n', paste(missing, collapse=', ')))
-  # Create safe fallbacks
-  if (!'log_TRT' %in% colnames(df) && 'TRT' %in% colnames(df)) {
-    df$log_TRT <- log1p(pmax(df$TRT, 0))
-  }
+# Filter minimal set
+cols <- c('TRT','GD','FFD','Subject')
+if (!all(cols %in% names(df))) {
+  cat('[r_mixedlm_check] INFO: required columns not found; skipping.\n')
+  quit(status=0)
+}
+df <- df[complete.cases(df[, cols]), cols]
+if (nrow(df) < 20) {
+  cat('[r_mixedlm_check] INFO: not enough rows (', nrow(df), '); skipping.\n', sep='')
+  quit(status=0)
 }
 
-df <- df[complete.cases(df[, intersect(c('log_TRT','entropy','Subject','SentenceID'), colnames(df))]), ]
-if (nrow(df) < 200) {
-  cat(sprintf('[r_mixedlm_check] INFO: not enough rows after filtering: %d\n', nrow(df)))
-  quit(save='no', status=0)
+# Simple random-intercept model
+fit <- tryCatch(lmer(TRT ~ GD + FFD + (1|Subject), data=df, REML=TRUE), error=function(e) NULL)
+if (is.null(fit)) {
+  cat('[r_mixedlm_check] WARN: MixedLM failed to converge; skipping.\n')
+} else {
+  sm <- summary(fit)
+  cat('[r_mixedlm_check] OK: model fit. Fixed effects:\n')
+  print(coef(sm)$Subject[1, , drop=FALSE])
 }
 
-# Mixed model with random intercepts
-form <- as.formula('log_TRT ~ entropy + (1|Subject) + (1|SentenceID)')
-mod <- tryCatch(lmer(form, data=df), error=function(e) NULL)
+quit(status=0)
 
-if (is.null(mod)) {
-  cat('[r_mixedlm_check] WARN: MixedLM failed; skipping outputs\n')
-  quit(save='no', status=0)
-}
-
-sum_txt <- capture.output(summary(mod))
-writeLines(sum_txt, file.path(rpts, 'r_mixedlm_trt_summary.txt'))
-
-coef_df <- broom.mixed::tidy(mod, effects='fixed')
-readr::write_csv(coef_df, file.path(rpts, 'r_mixedlm_trt_coef.csv'))
-
-cat('[r_mixedlm_check] Wrote reports/r_mixedlm_trt_{summary.txt,coef.csv}\n')

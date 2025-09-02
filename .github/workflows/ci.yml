@@ -32,6 +32,15 @@ jobs:
         run: |
           pytest -q
 
+      - name: Execute notebooks (smoke)
+        run: |
+          python -m pip install --upgrade ipykernel nbconvert jupyterlab_pygments
+          mkdir -p reports/notebooks
+          jupyter nbconvert --to notebook --execute notebooks/03_process_zuco.ipynb --ExecutePreprocessor.timeout=600 --output 03_process_zuco.ipynb --output-dir reports/notebooks || true
+          jupyter nbconvert --to notebook --execute notebooks/04_merge_data.ipynb --ExecutePreprocessor.timeout=600 --output 04_merge_data.ipynb --output-dir reports/notebooks || true
+          jupyter nbconvert --to notebook --execute notebooks/05_analysis_reading.ipynb --ExecutePreprocessor.timeout=600 --output 05_analysis_reading.ipynb --output-dir reports/notebooks || true
+          jupyter nbconvert --to notebook --execute notebooks/06_analysis_eeg.ipynb --ExecutePreprocessor.timeout=600 --output 06_analysis_eeg.ipynb --output-dir reports/notebooks || true
+
       - name: Build ZuCo processed data (safe)
         run: |
           python tools/zuco_loader.py || true
@@ -54,7 +63,7 @@ jobs:
           name: pipeline-artifacts
           path: |
             reports/**
-            figures/metrics/**
+            figures/**
             data/processed/**
 
   r-crosscheck:
