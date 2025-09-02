@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml/badge.svg)](https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml)
 [![Coverage](coverage.svg)](coverage.svg)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16921952.svg)](https://doi.org/10.5281/zenodo.16921952)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17039429.svg)](https://doi.org/10.5281/zenodo.17039429)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8596--5097-brightgreen.svg?logo=orcid)](https://orcid.org/0000-0002-8596-5097)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -20,9 +20,9 @@ pip install -r requirements.txt
 
 Please cite using the metadata in [CITATION.cff](CITATION.cff):
 
-> Agourakis, D. *pcs-meta-repo*. <[https://doi.org/10.5281/zenodo.16921952](https://doi.org/10.5281/zenodo.16921952)>
+> Agourakis, D. *pcs-meta-repo*. <[https://doi.org/10.5281/zenodo.17039429](https://doi.org/10.5281/zenodo.17039429)>
 
-For additional materials see the [Zenodo record](https://doi.org/10.5281/zenodo.16921952).
+For additional materials see the [Zenodo record](https://doi.org/10.5281/zenodo.17039429).
 
 ## License
 

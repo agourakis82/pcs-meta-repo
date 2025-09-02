@@ -4,7 +4,7 @@
 **ORCID:** 0000-0002-8596-5097
 **E-mail:** Contact: [demetrios@agourakis.med.br](mailto:demetrios@agourakis.med.br)
 **GitHub:** [agourakis82](https://github.com/agourakis82)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16921952.svg)](https://doi.org/10.5281/zenodo.16921952)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17039429.svg)](https://doi.org/10.5281/zenodo.17039429)
 
 ---
 
