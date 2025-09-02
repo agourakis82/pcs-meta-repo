@@ -1,0 +1,14 @@
+{
+  "title": "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)",
+  "upload_type": "software",
+  "description": "Unified notebooks and tooling for ZuCo ET/EEG processing, SWOW graph + KEC metrics, reproducible analyses, QA, and H* validation.",
+  "creators": [
+    { "name": "Agourakis, Demetrios", "affiliation": "PUC-SP; Faculdade São Leopoldo Mandic", "orcid": "0000-0002-8596-5097" }
+  ],
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "version": "v2025.09.02",
+  "related_identifiers": [
+    { "relation": "isSupplementTo", "identifier": "https://github.com/agourakis82/pcs-meta-repo", "scheme": "url" }
+  ]
+}
