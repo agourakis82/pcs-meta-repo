@@ -1,0 +1,9 @@
+{
+  "rows": 0,
+  "eeg_cols": [
+    "theta1",
+    "alpha1",
+    "beta1",
+    "gamma1"
+  ]
+}
