@@ -1,29 +1,32 @@
+#!/usr/bin/env python3
+# MIT License
+"""Compute BH-FDR q-values for models_reading_coeffs.csv if missing."""
 import pandas as pd
 from pathlib import Path
-from statsmodels.stats.multitest import multipletests
 
-proc = Path("data/processed")
-inp  = proc / "models_reading_coeffs.csv"
-out  = proc / "models_reading_coeffs_fdr.csv"
+PROC = Path("data/processed")
+inp = PROC/"models_reading_coeffs.csv"
+out = PROC/"models_reading_coeffs_fdr.csv"
 
-if not inp.exists():
-    print(f"[skip] {inp} not found. Run the modeling step to produce it.")
-    raise SystemExit(0)
+def bh_fdr(p):
+    import numpy as np
+    p = pd.to_numeric(p, errors="coerce").values
+    m = p.size
+    o = p.argsort()
+    ranks = (1+np.arange(m))
+    q = (p[o] * m / ranks).cummin()[::-1][::-1]
+    z = p.copy()
+    z[o] = q
+    return z
 
-df = pd.read_csv(inp)
-if df.empty:
-    print(f"[skip] {inp} is empty.")
-    raise SystemExit(0)
-if not {'response','p'}.issubset(df.columns):
-    raise SystemExit(f"Required cols not found in {inp}: got {df.columns}")
-outs=[]
-for resp, grp in df.groupby('response'):
-    pvals = grp['p'].values
-    rej, q, _, _ = multipletests(pvals, alpha=0.05, method="fdr_bh")
-    g = grp.copy()
-    g['p_fdr_bh'] = q
-    g['rej_fdr_bh_0.05'] = rej
-    outs.append(g)
-fdr = pd.concat(outs, ignore_index=True)
-fdr.to_csv(out, index=False)
-print(f"[OK] Saved {out}")
+if inp.exists():
+    df = pd.read_csv(inp)
+    # best-effort normalize
+    cols = {c:c.lower() for c in df.columns}
+    df = df.rename(columns=cols)
+    if "qval" not in df.columns and "pval" in df.columns:
+        df["qval"] = bh_fdr(df["pval"])  # family-wise over entire table; adjust in analysis if families differ
+    df.to_csv(out, index=False)
+    print(f"[FDR] Wrote {out}")
+else:
+    print("[FDR] Input not found:", inp)
