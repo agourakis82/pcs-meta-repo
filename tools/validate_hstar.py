@@ -47,7 +47,8 @@ def bh_fdr(p: pd.Series) -> pd.Series:
     m = p.shape[0]
     order = p.values.argsort()
     ranks = pd.Series(range(1, m+1), index=p.index[order])
-    q = (p.values[order] * m / ranks.values).cummin()[::-1][::-1]
+    adj = pd.Series(p.values[order] * m / ranks.values)
+    q = adj.cummin()[::-1][::-1].clip(upper=1.0).values
     out = pd.Series(1.0, index=p.index)
     out.iloc[order] = q
     return out.clip(upper=1.0)
@@ -61,10 +62,16 @@ def load_coeffs() -> pd.DataFrame:
     cols = {c:c.lower() for c in df.columns}
     df = df.rename(columns=cols)
     # normalize expected names
-    if "beta" not in df.columns and "coef" in df.columns:
-        df = df.rename(columns={"coef":"beta"})
-    if "pval" not in df.columns and "p_value" in df.columns:
-        df = df.rename(columns={"p_value":"pval"})
+    if "beta" not in df.columns:
+        if "coef" in df.columns:
+            df = df.rename(columns={"coef":"beta"})
+        elif "estimate" in df.columns:
+            df = df.rename(columns={"estimate":"beta"})
+    if "pval" not in df.columns:
+        if "p_value" in df.columns:
+            df = df.rename(columns={"p_value":"pval"})
+        elif "p" in df.columns:
+            df = df.rename(columns={"p":"pval"})
     # ensure required
     req = {"outcome","term","beta","pval"}
     if not req.issubset(df.columns):
@@ -219,4 +226,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -26,6 +26,14 @@ build/
 *.egg-info/
 src/*.egg-info/
 
+# Notebook-generated artifacts (keep repo lean)
+notebooks/*.nbconvert*.ipynb
+notebooks/data/
+notebooks/figures/
+notebooks/reports/
+# Avoid accumulating multiple executed copies in CI/local runs
+reports/notebooks/*run*.ipynb
+
 # Large data files
 data/raw_public/
 data/processed/

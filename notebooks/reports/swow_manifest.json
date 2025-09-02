@@ -1,6 +1,0 @@
-{
-  "rows": 5,
-  "unique_nodes": 7,
-  "edge_csv": "data/processed/swow/swow_tidy.csv",
-  "graph_pkl": "data/processed/swow_graph_en.pkl"
-}
