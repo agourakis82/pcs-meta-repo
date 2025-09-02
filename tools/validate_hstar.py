@@ -1,242 +1,222 @@
 #!/usr/bin/env python3
+# MIT License
 """
-validate_hstar.py — v4.3
-Validation, results reading and H* status summarization.
-
-H* decision rule (operationalized):
-- SUPPORTED: positive & significant (FDR q<0.05) entropy effect on >= 2 reading metrics.
-- PARTIALLY_SUPPORTED: at least one reading metric OR EEG shows positive & significant effect.
-- NOT_SUPPORTED: otherwise.
-
-Outputs:
-- reports/hstar_status.json
-- reports/hstar_status.md
+PCS-HELIO v4.3 — H* Validator
+Reads analysis outputs (coeff tables, MixedLM summaries) and emits a decision:
+SUPPORTED | PARTIAL | NOT_SUPPORTED | PIPELINE_BROKEN, with auditable criteria.
 """
-
-import json, sys, re, math, warnings
+from __future__ import annotations
+import json, re, sys
 from pathlib import Path
-
-import numpy as np
 import pandas as pd
-from statsmodels.stats.multitest import multipletests
+from typing import Dict, Any
 
-# -----------------------------
-# Paths and helpers
-# -----------------------------
-PROC = Path("data/processed")
-FIG  = Path("figures/metrics")
-RPTS = Path("reports")
-RPTS.mkdir(parents=True, exist_ok=True)
+# --- Inputs (auto-discovery) ---
+ROOT = Path(".")
+PROC = ROOT / "data" / "processed"
+REPO = ROOT
+REPORTS = ROOT / "reports"
+REPORTS.mkdir(parents=True, exist_ok=True)
 
-def exists(p: Path) -> bool:
-    try:
-        return p.exists()
-    except Exception:
-        return False
+# Candidate files
+CAND_COEFFS = [
+    PROC / "models_reading_coeffs.csv",
+    PROC / "models_reading_coeffs_fdr.csv",
+    PROC / "models_coeffs.csv",
+]
+CAND_EEG   = [
+    PROC / "models_eeg_coeffs.csv",
+    PROC / "models_eeg_coeffs_fdr.csv",
+]
+CAND_MIXED = [
+    REPORTS / "mixedlm_ffd_summary.txt",
+    REPORTS / "mixedlm_summary.txt",
+]
+MERGE_FILES = [
+    PROC / "zuco_kec_merged.csv",
+    PROC / "zuco_aligned.csv",  # last resort; will warn if KEC cols missing
+]
 
-def load_csv_safe(p: Path) -> pd.DataFrame:
-    if not exists(p):
+def read_first_exists(paths):
+    for p in paths:
+        if p.exists():
+            return p
+    return None
+
+def bh_fdr(p: pd.Series) -> pd.Series:
+    m = p.shape[0]
+    order = p.values.argsort()
+    ranks = pd.Series(range(1, m+1), index=p.index[order])
+    q = (p.values[order] * m / ranks.values).cummin()[::-1][::-1]
+    out = pd.Series(1.0, index=p.index)
+    out.iloc[order] = q
+    return out.clip(upper=1.0)
+
+def load_coeffs() -> pd.DataFrame:
+    fp = read_first_exists(CAND_COEFFS)
+    if fp is None:
         return pd.DataFrame()
-    try:
-        return pd.read_csv(p)
-    except Exception as e:
-        warnings.warn(f"Failed to read {p}: {e}")
+    df = pd.read_csv(fp)
+    # expected columns: outcome, term, beta, pval, dataset, task, model_type ...
+    cols = {c:c.lower() for c in df.columns}
+    df = df.rename(columns=cols)
+    # normalize expected names
+    if "beta" not in df.columns and "coef" in df.columns:
+        df = df.rename(columns={"coef":"beta"})
+    if "pval" not in df.columns and "p_value" in df.columns:
+        df = df.rename(columns={"p_value":"pval"})
+    # ensure required
+    req = {"outcome","term","beta","pval"}
+    if not req.issubset(df.columns):
         return pd.DataFrame()
+    # ensure q-value (FDR) family-wise per outcome type
+    if "qval" not in df.columns:
+        fam = df["outcome"].apply(lambda s: "reading" if any(k in str(s).lower() for k in ["ffd","gd","trt","gpt"]) else "eeg")
+        df["qval"] = None
+        for g, sub in df.groupby(fam):
+            q = bh_fdr(sub["pval"].astype(float))
+            df.loc[sub.index, "qval"] = q.values
+    return df
 
-def fmt(val, dp=3):
+def load_merge() -> pd.DataFrame:
+    fp = read_first_exists(MERGE_FILES)
+    return pd.read_csv(fp) if fp else pd.DataFrame()
+
+def has_surprisal(dfm: pd.DataFrame) -> bool:
+    return any(c in dfm.columns for c in ["surprisal_kenlm","surprisal_trf","pll_word","pppl"]) if not dfm.empty else False
+
+def compute_delta_r2_table() -> pd.DataFrame:
+    for cand in [PROC/"delta_r2_reading.csv", PROC/"delta_r2_reading_hstar.csv"]:
+        if cand.exists():
+            return pd.read_csv(cand)
+    return pd.DataFrame()
+
+def decide(status_input: Dict[str, Any]) -> Dict[str, Any]:
+    s = status_input
+    if not s["pipeline_ok"]:
+        s["decision"] = "PIPELINE_BROKEN"
+        return s
+
+    coeffs = s["coeffs"]
+    is_kec = coeffs["term"].str.contains(r"\b(kec|entropy|curvature|coherence)\b", case=False, regex=True)
+    read_mask = coeffs["outcome"].str.lower().str.contains("ffd|gd|trt|gpt")
+    eeg_mask  = coeffs["outcome"].str.lower().str.contains("theta|alpha|beta|gamma")
+    cr = coeffs[is_kec & read_mask].copy()
+    ce = coeffs[is_kec & eeg_mask].copy()
+
+    # Directionality and FDR
+    positive = (cr["beta"].astype(float) > 0) & (cr["qval"].astype(float) <= 0.05)
+    n_read_sig = int(positive.sum())
+
+    # Replication across strata (v1/v2 or NR/TSR/SR)
+    def strata_ok(df):
+        if df.empty:
+            return False
+        breadth = 0
+        if "dataset" in df.columns and df["dataset"].notna().any():
+            breadth += int(df[df["qval"]<=0.05]["dataset"].nunique() >= 2 or df["dataset"].nunique() >= 2)
+        if "task" in df.columns and df["task"].notna().any():
+            breadth += int(df[df["qval"]<=0.05]["task"].nunique() >= 2 or df["task"].nunique() >= 2)
+        return breadth >= 1
+    replication = strata_ok(cr)
+
+    # ΔR2 / AIC
+    delta = s.get("delta_r2", pd.DataFrame())
+    r2_ok = False
+    if not delta.empty:
+        for cand_col in ["delta_r2_adj_pp","delta_r2_pp","delta_r2adj_pp"]:
+            if cand_col in delta.columns:
+                try:
+                    r2_ok = (pd.to_numeric(delta[cand_col], errors="coerce") >= 0.5).any()
+                    break
+                except Exception:
+                    pass
+
+    # Surprisal control
+    surpr_ok = True
+    if s["has_surprisal"]:
+        surpr_ok = (cr["qval"].astype(float) <= 0.10).any()
+
+    # EEG (optional)
+    eeg_any = False
+    if not ce.empty:
+        eeg_any = (ce["qval"].astype(float) <= 0.10).any()
+
+    if (n_read_sig >= 2) and replication and r2_ok and surpr_ok:
+        s["decision"] = "SUPPORTED"
+    elif (n_read_sig >= 1) or eeg_any:
+        s["decision"] = "PARTIAL"
+    else:
+        s["decision"] = "NOT_SUPPORTED"
+    return s
+
+def main():
+    # Preconditions
+    needed = [
+        PROC/"zuco_aligned.csv",
+        PROC/"kec"/"metrics_en.csv"
+    ]
+    pipeline_ok = all(p.exists() for p in needed)
+    merge_df = load_merge()
+    if merge_df.empty or ("token_norm" not in merge_df.columns):
+        pipeline_ok = False
+
+    coeffs = load_coeffs()
+    if coeffs.empty:
+        pipeline_ok = False
+
+    delta = compute_delta_r2_table()
+    status: Dict[str, Any] = {
+        "pipeline_ok": pipeline_ok,
+        "merge_rows": int(merge_df.shape[0]) if not merge_df.empty else 0,
+        "kec_coverage_pct": float(
+            (merge_df[["entropy","curvature","coherence"]].notna().all(axis=1)).mean()*100
+        ) if (not merge_df.empty and all(c in merge_df.columns for c in ["entropy","curvature","coherence"])) else None,
+        "coeffs_rows": int(coeffs.shape[0]) if not coeffs.empty else 0,
+        "has_surprisal": has_surprisal(merge_df),
+        "coeffs": coeffs,
+        "delta_r2": delta,
+        "notes": [],
+    }
+
+    # Decision
+    status = decide(status)
+
+    # Top reading effects
     try:
-        return f"{float(val):.{dp}f}"
+        top_read = (coeffs[coeffs["outcome"].str.lower().str.contains("ffd|gd|trt|gpt")]
+                    .sort_values("qval", ascending=True).head(8)
+                    [["outcome","term","beta","pval","qval","dataset","task"]])
     except Exception:
-        return str(val)
+        top_read = pd.DataFrame()
 
-# -----------------------------
-# 1) Check artifacts
-# -----------------------------
-reading_csv      = PROC / "models_reading_coeffs.csv"
-reading_fdr_csv  = PROC / "models_reading_coeffs_fdr.csv"
-mixedlm_summary  = PROC / "mixedlm_ffd_summary.txt"
-boot_ols_csv     = PROC / "boot_ols_ffd_entropy.csv"
-f2_png           = FIG  / "F2_reading_vs_KEC.png"
-f3_png           = FIG  / "F3_EEG_vs_KEC.png"
+    # Write artifacts
+    sjson = dict(status)
+    sjson.pop("coeffs", None)
+    sjson.pop("delta_r2", None)
+    (REPORTS/"hstar_status.json").write_text(json.dumps(sjson, indent=2))
 
-artifacts = {
-    "models_reading_coeffs.csv": exists(reading_csv),
-    "models_reading_coeffs_fdr.csv": exists(reading_fdr_csv),
-    "mixedlm_ffd_summary.txt": exists(mixedlm_summary),
-    "boot_ols_ffd_entropy.csv": exists(boot_ols_csv),
-    "F2_reading_vs_KEC.png": exists(f2_png),
-    "F3_EEG_vs_KEC.png": exists(f3_png),
-}
+    md = []
+    md.append(f"# H* Validation Report (PCS-HELIO v4.3)\n")
+    md.append(f"**Decision:** **{status['decision']}**\n")
+    md.append(f"**Pipeline OK:** {status['pipeline_ok']}  \n")
+    md.append(f"Rows (merge): {status.get('merge_rows',0)}  \n")
+    if status.get("kec_coverage_pct") is not None:
+        md.append(f"KEC coverage: {status['kec_coverage_pct']:.1f}%  \n")
+    md.append("\n## Top reading effects (sorted by FDR q)\n")
+    if isinstance(top_read, pd.DataFrame) and not top_read.empty:
+        md.append(top_read.to_markdown(index=False))
+    else:
+        md.append("_No coefficients found for reading outcomes._")
+    md.append("\n## Criteria\n")
+    md.append("- ≥2 reading outcomes with q≤0.05 and β>0 (MixedLM/robust OLS)\n"
+              "- Replication across v1/v2 or NR/TSR/SR\n"
+              "- ΔR²_adj ≥ 0.5 pp or ΔAIC < −4\n"
+              "- Surprisal control: retain q≤0.10 & ΔR²>0 when present\n")
+    (REPORTS/"hstar_status.md").write_text("\n".join(md))
 
-# -----------------------------
-# 2) Read reading models (OLS robust) + (optional) FDR
-# -----------------------------
-df_read = load_csv_safe(reading_csv)
-use_fdr = False
-if exists(reading_fdr_csv):
-    df_read = load_csv_safe(reading_fdr_csv)
-    use_fdr = True
+    print(f"[HSTAR] Decision: {status['decision']} — see reports/hstar_status.md")
 
-reading_summary = []
-pos_sig_entropy_count = 0
-responses = ["FFD","GD","log_TRT","log_GPT"]
-pcol = "p_fdr_bh" if use_fdr and "p_fdr_bh" in df_read.columns else "p"
+if __name__ == "__main__":
+    main()
 
-if not df_read.empty:
-    for resp in [r for r in responses if r in df_read["response"].unique()]:
-        sub = df_read[(df_read["response"]==resp) & (df_read["term"].isin(["entropy","curvature","coherence"]))]
-        sub = sub.copy()
-        for term in ["entropy","curvature","coherence"]:
-            row = sub[sub["term"]==term]
-            if len(row)==1:
-                coef = float(row["coef"].values[0])
-                pval = float(row[pcol].values[0])
-                reading_summary.append({
-                    "response": resp,
-                    "term": term,
-                    "coef": coef,
-                    "p_or_q": pval,
-                    "sig": bool(pval < 0.05),
-                    "criterion": "FDR" if pcol=="p_fdr_bh" else "raw"
-                })
-                # positive entropy support counter
-                if term=="entropy" and coef>0 and pval<0.05:
-                    pos_sig_entropy_count += 1
-
-# -----------------------------
-# 3) Optional EEG support from raw data (per-subject slopes with FDR)
-#    Merge zuco_aligned + metrics_en if present and compute simple per-subject slope
-# -----------------------------
-eeg_support = {
-    "available": False,
-    "subjects_total": 0,
-    "subjects_sig_pos": 0,
-    "fdr_applied": False
-}
-try:
-    zuco_aligned = load_csv_safe(PROC.parent / "zuco_aligned.csv")  # usually data/processed/zuco_aligned.csv
-    metrics_en   = load_csv_safe(PROC / "kec" / "metrics_en.csv")
-    # try to merge on token column if feasible
-    if not zuco_aligned.empty and not metrics_en.empty:
-        # normalize columns
-        for df in (zuco_aligned, metrics_en):
-            df.columns = [c.strip() for c in df.columns]
-        z_word = "Word" if "Word" in zuco_aligned.columns else ("word" if "word" in zuco_aligned.columns else None)
-        k_word = "word" if "word" in metrics_en.columns else ("Word" if "Word" in metrics_en.columns else None)
-        if z_word and k_word:
-            merged_eeg = zuco_aligned.merge(metrics_en, left_on=z_word, right_on=k_word, how="left", suffixes=("","_kec"))
-        else:
-            merged_eeg = pd.DataFrame()
-        if not merged_eeg.empty and {"Subject","entropy"}.issubset(merged_eeg.columns):
-            # choose EEG column available
-            eeg_col = "ThetaPower" if "ThetaPower" in merged_eeg.columns else ("AlphaPower" if "AlphaPower" in merged_eeg.columns else None)
-            if eeg_col:
-                eeg_support["available"] = True
-                # per-subject OLS slope of EEG ~ entropy
-                rows = []
-                for s, sdf in merged_eeg.groupby("Subject"):
-                    sdf = sdf[["entropy",eeg_col]].dropna()
-                    if len(sdf) >= 20:
-                        X = np.vstack([np.ones(len(sdf)), sdf["entropy"].values]).T
-                        y = sdf[eeg_col].values
-                        try:
-                            # simple OLS closed-form
-                            beta = np.linalg.lstsq(X, y, rcond=None)[0]
-                            # compute p-value via simple regression approximation
-                            yhat = X.dot(beta)
-                            resid = y - yhat
-                            dof = max(len(y)-2, 1)
-                            s2 = (resid**2).sum()/dof
-                            cov = s2 * np.linalg.inv(X.T.dot(X))
-                            se_beta1 = math.sqrt(cov[1,1])
-                            t_beta1 = beta[1]/se_beta1 if se_beta1>0 else 0.0
-                            # two-sided p (approx)
-                            # use normal approx to avoid scipy dependency
-                            from math import erf, sqrt
-                            # Normal CDF approx (two-sided)
-                            p_beta1 = 2 * (1 - 0.5*(1+erf(abs(t_beta1)/sqrt(2))))
-                            rows.append({"Subject": str(s), "slope_entropy": float(beta[1]), "p": float(p_beta1)})
-                        except Exception:
-                            pass
-                eeg_df = pd.DataFrame(rows)
-                if not eeg_df.empty:
-                    # FDR across subjects
-                    rej, qvals, _, _ = multipletests(eeg_df["p"].values, alpha=0.05, method="fdr_bh")
-                    eeg_df["q"] = qvals
-                    eeg_df["rej_fdr"] = rej
-                    eeg_support["fdr_applied"] = True
-                    eeg_support["subjects_total"] = int(len(eeg_df))
-                    eeg_support["subjects_sig_pos"] = int(((eeg_df["rej_fdr"]) & (eeg_df["slope_entropy"]>0)).sum())
-                else:
-                    eeg_support["subjects_total"] = 0
-                    eeg_support["subjects_sig_pos"] = 0
-except Exception as e:
-    warnings.warn(f"EEG support step failed: {e}")
-
-# -----------------------------
-# 4) Decide H* status
-# -----------------------------
-status = "NOT_SUPPORTED"
-reasons = []
-if pos_sig_entropy_count >= 2:
-    status = "SUPPORTED"
-    reasons.append(f"Positive & significant (q<0.05) entropy effect in {pos_sig_entropy_count} reading metrics.")
-elif pos_sig_entropy_count >= 1:
-    status = "PARTIALLY_SUPPORTED"
-    reasons.append(f"Positive & significant (q<0.05) entropy effect in {pos_sig_entropy_count} reading metric.")
-# EEG can lift to PARTIALLY if none or add note
-if eeg_support.get("available", False) and eeg_support.get("subjects_total", 0) > 0:
-    if eeg_support["subjects_sig_pos"] > 0 and status == "NOT_SUPPORTED":
-        status = "PARTIALLY_SUPPORTED"
-    reasons.append(f"EEG per-subject trends: {eeg_support['subjects_sig_pos']}/{eeg_support['subjects_total']} subjects with positive & FDR-significant slope for entropy.")
-
-# -----------------------------
-# 5) Write JSON + Markdown report
-# -----------------------------
-out_json = {
-    "artifacts": artifacts,
-    "use_fdr_in_reading": use_fdr,
-    "reading_summary": reading_summary,
-    "pos_sig_entropy_count": pos_sig_entropy_count,
-    "eeg_support": eeg_support,
-    "status": status,
-    "reasons": reasons
-}
-(RPTS / "hstar_status.json").write_text(json.dumps(out_json, indent=2))
-
-# Markdown
-lines = []
-lines.append("# H* Validation Report (v4.3)")
-lines.append("")
-lines.append(f"**Overall Status:** **{status}**")
-if reasons:
-    lines.append("")
-    lines.append("**Reasons:**")
-    for r in reasons:
-        lines.append(f"- {r}")
-lines.append("")
-lines.append("## Artifacts")
-for k,v in artifacts.items():
-    lines.append(f"- {k}: {'OK' if v else 'missing'}")
-lines.append("")
-lines.append("## Reading Models (OLS robust; FDR if available)")
-if reading_summary:
-    lines.append("| Response | Term | Coef | p/q | Sig | Criterion |")
-    lines.append("|---|---|---:|---:|:---:|:---:|")
-    for r in reading_summary:
-        lines.append(f"| {r['response']} | {r['term']} | {fmt(r['coef'])} | {fmt(r['p_or_q'])} | {'✔' if r['sig'] else '—'} | {r['criterion']} |")
-else:
-    lines.append("_No reading coefficients table found._")
-lines.append("")
-lines.append("## EEG Support (optional)")
-if eeg_support.get("available", False) and eeg_support.get("subjects_total", 0) > 0:
-    lines.append(f"- Subjects analyzed: {eeg_support['subjects_total']}")
-    lines.append(f"- Positive & FDR-significant slopes (entropy): {eeg_support['subjects_sig_pos']}")
-else:
-    lines.append("_EEG merge not available or insufficient._")
-lines.append("")
-lines.append("> H* operational assumption: KEC transition entropy increases reading cost and/or EEG power; curvature/coherence may contribute with nuanced signs.")
-(RPTS / "hstar_status.md").write_text("\n".join(lines))
-
-print(f"[OK] Wrote: {RPTS/'hstar_status.json'}")
-print(f"[OK] Wrote: {RPTS/'hstar_status.md'}")

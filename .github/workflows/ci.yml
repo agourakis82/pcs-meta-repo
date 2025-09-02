@@ -53,6 +53,10 @@ jobs:
         run: |
           python tools/fdr_reading.py || true
 
+      - name: Compute ΔR² for H* (safe)
+        run: |
+          python tools/delta_r2_reading_hstar.py || true
+
       - name: Validate h* status (safe)
         run: |
           python tools/validate_hstar.py || true
