@@ -1,35 +1,19 @@
 {
-  "rows": 1142272,
-  "subjects": 30,
-  "by_dataset": {
-    "v1": 984381,
-    "v2": 157891
+  "files": [],
+  "errors": [],
+  "counts": {
+    "et_rows": 0,
+    "eeg_rows": 0
   },
-  "by_task": {
-    "": 85548,
-    "NR": 12445,
-    "TSR": 1044279
-  },
-  "et_coverage_pct": {
-    "FFD": "84.9%",
-    "GD": "84.9%",
-    "TRT": "84.9%",
-    "GPT": "0.0%"
-  },
-  "eeg_coverage_pct": {
-    "theta1": "1.1%",
-    "alpha1": "1.1%",
-    "beta1": "0.0%",
-    "gamma1": "0.0%"
-  },
-  "files": {
-    "v1_et_mat": 202,
-    "v2_et_mat": 133,
-    "v1_eeg_tabular": 4,
-    "v2_eeg_tabular": 0
-  },
-  "errors": {
-    "v1": [],
-    "v2": []
+  "summary": {
+    "rows_et": 0,
+    "rows_eeg": 0,
+    "rows_merged": 0,
+    "n_subjects": 0,
+    "n_sentences": 0,
+    "n_tokens": 0,
+    "datasets": {},
+    "tasks": {},
+    "n_anomalies": 0
   }
 }

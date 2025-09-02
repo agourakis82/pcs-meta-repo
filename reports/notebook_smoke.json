@@ -1,0 +1,37 @@
+{
+  "01_build_swow_graph": {
+    "tidy_exists": true,
+    "graph_exists": true,
+    "tidy_rows": 10
+  },
+  "02_kec_metrics": {
+    "kec_dir_exists": true,
+    "metrics_exists": true,
+    "metrics_rows": 166540,
+    "parquets_present": [
+      "coherence.parquet",
+      "metrics_en.parquet",
+      "coherence_null.parquet",
+      "curvature.parquet",
+      "communities_leiden.parquet",
+      "entropy.parquet"
+    ]
+  },
+  "03_process_zuco": {
+    "aligned_exists": true,
+    "aligned_rows": 12446
+  },
+  "04_merge_data": {
+    "merged_exists": true,
+    "merged_rows": 20188
+  },
+  "05_analysis_reading": {
+    "coeffs_exists": true,
+    "coeffs_rows": 6,
+    "coeffs_fdr_exists": true
+  },
+  "06_analysis_eeg": {
+    "f3_exists": true,
+    "f3_size": 19259
+  }
+}
