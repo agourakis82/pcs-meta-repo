@@ -1,0 +1,45 @@
+name: PCS-HELIO v4.3 Pipeline
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'notebooks/**'
+      - 'tools/pipeline_v43.py'
+      - 'data/processed/**'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # minimal deps used by pipeline script
+          pip install pandas numpy statsmodels
+
+      - name: Run v4.3 pipeline
+        run: |
+          python tools/pipeline_v43.py
+
+      - name: Upload processed artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-data
+          path: |
+            data/processed/models_reading_coeffs.csv
+            data/processed/models_reading_coeffs_fdr.csv
+            notebooks/reports/qa_kec_models_ci.json
+          if-no-files-found: warn

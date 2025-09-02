@@ -1,0 +1,26 @@
+{
+  "files": {
+    "zuco_v1_real_et_eeg.csv": true,
+    "zuco_v2_real_et_eeg.csv": false,
+    "zuco_aligned_real_et_eeg.csv": true
+  },
+  "rows_total": 53052,
+  "subjects": 12,
+  "by_dataset": {
+    "v1": 53052
+  },
+  "by_task": {
+    "SR": 53052
+  },
+  "et_coverage_pct": {
+    "FFD": "100.0%",
+    "GD": "100.0%",
+    "TRT": "100.0%"
+  },
+  "eeg_coverage_pct": {},
+  "kec_coverage_pct": {
+    "entropy": "0.0%",
+    "curvature": "0.0%",
+    "coherence": "0.0%"
+  }
+}

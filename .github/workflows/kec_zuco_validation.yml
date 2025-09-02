@@ -1,0 +1,51 @@
+name: KEC↔ZuCo Validation (v4.3)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'tools/**'
+      - 'notebooks/**'
+      - 'data/processed/**'
+      - '.github/workflows/kec_zuco_validation.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'tools/**'
+      - 'notebooks/**'
+      - 'data/processed/**'
+      - '.github/workflows/kec_zuco_validation.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install -U pip
+          pip install -r requirements.txt
+
+      - name: Run v4.3 headless pipeline
+        run: |
+          python tools/pipeline_v43.py || true
+
+      - name: Validate H*
+        run: |
+          python tools/validate_hstar.py || true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pcs-helio-v4.3-artifacts
+          path: |
+            reports/**
+            data/processed/models_reading_coeffs*.csv
+            figures/metrics/**

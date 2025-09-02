@@ -1,6 +1,6 @@
 ---
 name: build-latex
-'on':
+on:
   push:
     paths:
       - 'papers/**/*.tex'

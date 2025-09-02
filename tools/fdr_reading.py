@@ -6,7 +6,14 @@ proc = Path("data/processed")
 inp  = proc / "models_reading_coeffs.csv"
 out  = proc / "models_reading_coeffs_fdr.csv"
 
+if not inp.exists():
+    print(f"[skip] {inp} not found. Run the modeling step to produce it.")
+    raise SystemExit(0)
+
 df = pd.read_csv(inp)
+if df.empty:
+    print(f"[skip] {inp} is empty.")
+    raise SystemExit(0)
 if not {'response','p'}.issubset(df.columns):
     raise SystemExit(f"Required cols not found in {inp}: got {df.columns}")
 outs=[]
