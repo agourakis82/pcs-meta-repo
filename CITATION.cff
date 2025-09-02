@@ -1,21 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔ Neurociência (SWOW, grafos semânticos)"
-version: "v2025.08.17"
-date-released: "2025-08-17"
+title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
+version: "v2025.09.02"
+date-released: "2025-09-02"
 authors:
-  - name: Dionisio Chiuratto Agourakis
-    affiliation: Data Science & AI collaborator
   - family-names: "Agourakis"
     given-names: "Demetrios"
     email: "demetrios@agourakis.med.br"
     orcid: "https://orcid.org/0000-0002-8596-5097"
+  - name: Dionisio Chiuratto Agourakis
+    affiliation: Data Science & AI collaborator
 identifiers:
   - type: doi
-    value: "10.XXXX/zenodo.XXXXXXX"
+    value: "10.5281/zenodo.16921952"
   - type: url
-    value: "https://github.com/agourakis82/phd-bridge-biomaterials-neuro-symbolic"
-repository-code: "https://github.com/agourakis82/phd-bridge-biomaterials-neuro-symbolic"
+    value: "https://github.com/agourakis82/pcs-meta-repo"
+repository-code: "https://github.com/agourakis82/pcs-meta-repo"
 license: "CC-BY-4.0"
 keywords:
   - computational psychiatry
@@ -25,6 +25,5 @@ keywords:
   - SWOW
   - semantic networks
 abstract: >
-  Strategic roadmap (PT) for PhD entry (USP/UNICAMP/UNIFESP) leveraging a bridge between
-  regenerative medicine & biomaterials and computational/symbolic psychiatry. Includes
-  milestones, email template to PIs, and publication plan (Q1 + essay venues).
+  PCS Meta-Repo with unified notebooks, loaders and analysis for ZuCo (ET/EEG)
+  and SWOW/KEC metrics. Includes CI-executable pipelines, QA reports and H* validator.
