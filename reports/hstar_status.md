@@ -1,19 +1,21 @@
-# H* Validation Report (v4.3)
+# H* Validation Report (PCS-HELIO v4.3)
 
-**Overall Status:** **NOT_SUPPORTED**
+**Decision:** **NOT_SUPPORTED**
 
-## Artifacts
-- models_reading_coeffs.csv: OK
-- models_reading_coeffs_fdr.csv: OK
-- mixedlm_ffd_summary.txt: missing
-- boot_ols_ffd_entropy.csv: missing
-- F2_reading_vs_KEC.png: OK
-- F3_EEG_vs_KEC.png: OK
+**Pipeline OK:** True  
 
-## Reading Models (OLS robust; FDR if available)
-_No reading coefficients table found._
+Rows (merge): 20188  
 
-## EEG Support (optional)
-_EEG merge not available or insufficient._
+KEC coverage: 95.0%  
 
-> H* operational assumption: KEC transition entropy increases reading cost and/or EEG power; curvature/coherence may contribute with nuanced signs.
+
+## Top reading effects (sorted by FDR q)
+
+_No coefficients found for reading outcomes._
+
+## Criteria
+
+- ≥2 reading outcomes with q≤0.05 and β>0 (MixedLM/robust OLS)
+- Replication across v1/v2 or NR/TSR/SR
+- ΔR²_adj ≥ 0.5 pp or ΔAIC < −4
+- Surprisal control: retain q≤0.10 & ΔR²>0 when present
