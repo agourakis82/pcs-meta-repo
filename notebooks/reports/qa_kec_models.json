@@ -1,9 +1,10 @@
 {
-  "timestamp_utc": "2025-09-01T19:48:51.873406Z",
-  "merged_rows": 53688,
+  "timestamp_utc": "2025-09-02T09:34:28.693569Z",
+  "merged_rows": 17523,
   "et_cols": [
     "FFD",
-    "GD"
+    "GD",
+    "log_TRT"
   ],
   "kec_cols": [
     "entropy",
@@ -20,9 +21,12 @@
   "fig_f2": [
     "figures/metrics/F2_reading_vs_KEC_v1.png",
     "figures/metrics/F2_reading_vs_KEC.png",
-    "figures/metrics/F2_reading_vs_KEC_task_NR.png"
+    "figures/metrics/F2_reading_vs_KEC_v2.png",
+    "figures/metrics/F2_reading_vs_KEC_task_NR.png",
+    "figures/metrics/F2_reading_vs_KEC_task_TSR.png"
   ],
   "fig_f3": [
-    "figures/metrics/F3_EEG_vs_KEC_Dataset_v1.png"
+    "figures/metrics/F3_EEG_vs_KEC_Dataset_v1.png",
+    "figures/metrics/F3_EEG_vs_KEC_Dataset_v2.png"
   ]
 }
