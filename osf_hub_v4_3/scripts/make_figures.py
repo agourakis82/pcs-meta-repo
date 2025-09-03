@@ -46,13 +46,22 @@ def main():
         zuco = pd.read_csv(zuco_csv)
         kec = pd.read_csv(kec_csv)
         kec["token_norm"] = kec["name"].astype(str).map(token_norm)
-        kec["z_kec"] = (kec["kec"] - kec["kec"].mean()) / (kec["kec"].std() if kec["kec"].std() > 0 else 1.0)
-        merged_tok = pd.merge(zuco, kec[["token_norm", "z_kec"]], on="token_norm", how="left")
+        std = kec["kec"].std()
+        den = std if (std is not None and std > 0) else 1.0
+        kec["z_kec"] = (kec["kec"] - kec["kec"].mean()) / den
+        merge_cols = ["token_norm", "z_kec"]
+        merged_tok = pd.merge(
+            zuco, kec[merge_cols], on="token_norm", how="left"
+        )
+        grp = merged_tok.groupby(["Subject", "SentenceID"], dropna=False)
+        agg = grp.agg(
+            TRT=("TRT", "mean"),
+            theta1=("theta1", "mean"),
+            alpha1=("alpha1", "mean"),
+            z_kec=("z_kec", "mean"),
+        )
         merged_sent = (
-            merged_tok.groupby(["Subject", "SentenceID"], dropna=False)
-            .agg(TRT=("TRT", "mean"), theta1=("theta1", "mean"), alpha1=("alpha1", "mean"), z_kec=("z_kec", "mean"))
-            .dropna(subset=["TRT", "z_kec"])
-            .reset_index()
+            agg.dropna(subset=["TRT", "z_kec"]).reset_index()
         )
         # F2: Reading vs KEC
         plt.figure(figsize=(5, 4))
@@ -84,7 +93,13 @@ def main():
                     plt.plot(xx, yy, color="red", linewidth=1)
                 plt.ylabel(f"Sentence-level {title}")
             else:
-                plt.text(0.5, 0.5, f"No {title} data", ha="center", va="center")
+                plt.text(
+                    0.5,
+                    0.5,
+                    f"No {title} data",
+                    ha="center",
+                    va="center",
+                )
             plt.xlabel("z(KEC)")
             plt.title(f"{title} vs KEC")
         plt.tight_layout()
@@ -95,7 +110,13 @@ def main():
         # Fallback: minimal empty figures to satisfy gates
         for p in [f2_path, f3_path]:
             plt.figure(figsize=(5, 4))
-            plt.text(0.5, 0.5, f"Placeholder figure ({p.name})", ha="center", va="center")
+            plt.text(
+                0.5,
+                0.5,
+                f"Placeholder figure ({p.name})",
+                ha="center",
+                va="center",
+            )
             plt.axis("off")
             plt.tight_layout()
             plt.savefig(p, dpi=120)

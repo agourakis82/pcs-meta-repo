@@ -47,7 +47,11 @@ def build_kec_from_swow_csv(csv_path: Path, out_csv: Path):
     sd = float(np.std(e)) if e else 1.0
     z = {n: ((ent[n] - mu) / sd if sd > 0 else 0.0) for n in names}
 
-    out = pd.DataFrame({"name": names, "entropy": [ent[n] for n in names], "kec": [z[n] for n in names]})
+    out = pd.DataFrame({
+        "name": names,
+        "entropy": [ent[n] for n in names],
+        "kec": [z[n] for n in names],
+    })
     out.to_csv(out_csv, index=False)
 
 
@@ -71,7 +75,11 @@ def main():
         "method": "KEC proxy (entropy z-score)",
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
-    (results_dir / "kec_build.log").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+    log_text = json.dumps(meta, indent=2)
+    (results_dir / "kec_build.log").write_text(
+        log_text,
+        encoding="utf-8",
+    )
     print(f"[OK] build_kec.py: wrote {out_csv}")
 
 
