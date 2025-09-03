@@ -87,7 +87,9 @@ def main():
     proc_coeffs = repo_root / "data/processed/models_reading_coeffs.csv"
     proc_fdr    = repo_root / "data/processed/models_reading_coeffs_fdr.csv"
     proc_mixed  = repo_root / "reports/mixedlm_ffd_summary.txt"
-    if proc_coeffs.exists() and proc_fdr.exists():
+    import os
+    prefer_processed = os.getenv("PREFER_PROCESSED", "1") != "0"
+    if prefer_processed and proc_coeffs.exists() and proc_fdr.exists():
         import shutil
         shutil.copy2(proc_coeffs, results_dir / "models_reading_coeffs.csv")
         shutil.copy2(proc_fdr, results_dir / "models_reading_coeffs_fdr.csv")
@@ -149,15 +151,64 @@ def main():
             zk = merged_tok.groupby(keys, dropna=False)["z_kec"].mean().reset_index()
             merged_sent = pd.merge(counts, zk, on=keys, how="inner").dropna(subset=["TRT", "z_kec"]).reset_index(drop=True)
     if merged_sent.empty:
-        raise SystemExit("Merged sentence-level dataset is empty after aggregation.")
-
-    coeffs, fdr, mixed_summ = fit_models(merged_sent)
-
-    coeffs.to_csv(results_dir / "models_reading_coeffs.csv", index=False)
-    fdr.to_csv(results_dir / "models_reading_coeffs_fdr.csv", index=False)
-    (results_dir / "mixedlm_ffd_summary.txt").write_text(mixed_summ, encoding="utf-8")
-
-    print("[OK] run_models.py: model outputs written to results/.")
+        # Fallback: try processed merged with KEC components
+        proc_merged = repo_root / "data/processed/zuco_kec_merged.csv"
+        if not proc_merged.exists():
+            raise SystemExit("Merged sentence-level dataset is empty after aggregation and no processed merge available.")
+        df = pd.read_csv(proc_merged)
+        # Build sentence-level aggregation
+        keys = [c for c in ["Subject", "SentenceID"] if c in df.columns]
+        out_candidates = [c for c in ["FFD", "GD", "TRT", "GPT"] if c in df.columns]
+        kec_terms = [c for c in ["entropy", "curvature", "coherence"] if c in df.columns]
+        if not keys or not out_candidates or not kec_terms:
+            raise SystemExit("Processed merged file missing required columns.")
+        agg = (
+            df.groupby(keys, dropna=False)
+            .agg({**{o: "mean" for o in out_candidates}, **{k: "mean" for k in kec_terms}})
+            .reset_index()
+        )
+        import statsmodels.formula.api as smf
+        rows = []
+        for outcome in out_candidates:
+            # Dropna rows for this outcome
+            sub = agg[[outcome, *kec_terms, *keys]].dropna(subset=[outcome])
+            if sub.empty:
+                continue
+            # OLS with HC3 robust SEs; use only available KEC terms
+            rhs = " + ".join(kec_terms)
+            mod = smf.ols(f"{outcome} ~ {rhs}", data=sub).fit(cov_type="HC3")
+            for t in kec_terms:
+                rows.append({
+                    "outcome": outcome,
+                    "term": t,
+                    "estimate": float(mod.params.get(t, float("nan"))),
+                    "p": float(mod.pvalues.get(t, float("nan"))),
+                })
+        coeffs = pd.DataFrame(rows)
+        # BH-FDR within each outcome family
+        def fdr_bh(pvals: pd.Series) -> pd.Series:
+            p = pvals.fillna(1.0).values
+            m = len(p)
+            order = np.argsort(p)
+            q = np.empty(m)
+            prev = 1.0
+            for i, idx in enumerate(order[::-1], start=1):
+                rank = m - i + 1
+                q[idx] = min(prev, p[idx] * m / rank)
+                prev = q[idx]
+            return pd.Series(q, index=pvals.index)
+        coeffs["p_fdr_bh"] = coeffs.groupby("outcome", group_keys=False)["p"].apply(fdr_bh)
+        coeffs["rej_fdr_bh_0.05"] = coeffs["p_fdr_bh"] <= 0.05
+        coeffs.to_csv(results_dir / "models_reading_coeffs.csv", index=False)
+        coeffs.to_csv(results_dir / "models_reading_coeffs_fdr.csv", index=False)
+        (results_dir / "mixedlm_ffd_summary.txt").write_text("N/A (OLS-only fallback)", encoding="utf-8")
+        print("[OK] run_models.py: computed OLS coefficients from processed merge.")
+    else:
+        coeffs, fdr, mixed_summ = fit_models(merged_sent)
+        coeffs.to_csv(results_dir / "models_reading_coeffs.csv", index=False)
+        fdr.to_csv(results_dir / "models_reading_coeffs_fdr.csv", index=False)
+        (results_dir / "mixedlm_ffd_summary.txt").write_text(mixed_summ, encoding="utf-8")
+        print("[OK] run_models.py: model outputs written to results/.")
 
 
 if __name__ == "__main__":
