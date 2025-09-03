@@ -33,4 +33,21 @@ osf "${USER_OPT[@]}" -p "$NODE" upload -f osf_hub_v4_3/CITATION.cff /CITATION.cf
 touch osf_hub_v4_3/results/.gitkeep osf_hub_v4_3/results/figures/metrics/.gitkeep
 osf "${USER_OPT[@]}" -p "$NODE" upload -f osf_hub_v4_3/results/.gitkeep /results/.gitkeep
 osf "${USER_OPT[@]}" -p "$NODE" upload -f osf_hub_v4_3/results/figures/metrics/.gitkeep /results/figures/metrics/.gitkeep
+
+# Upload minimal results bundle if present
+upload_if_exists(){
+  local SRC="$1"; local DST="$2"
+  if [[ -f "$SRC" ]]; then
+    osf "${USER_OPT[@]}" -p "$NODE" upload -f "$SRC" "$DST"
+  else
+    echo "[skip] $SRC (missing)"
+  fi
+}
+
+upload_if_exists osf_hub_v4_3/results/models_reading_coeffs.csv        /results/models_reading_coeffs.csv
+upload_if_exists osf_hub_v4_3/results/models_reading_coeffs_fdr.csv    /results/models_reading_coeffs_fdr.csv
+upload_if_exists osf_hub_v4_3/results/mixedlm_ffd_summary.txt          /results/mixedlm_ffd_summary.txt
+upload_if_exists osf_hub_v4_3/results/figures/metrics/F2_.png          /results/figures/metrics/F2_.png
+upload_if_exists osf_hub_v4_3/results/figures/metrics/F3_.png          /results/figures/metrics/F3_.png
+
 echo "[OK] Uploaded OSF hub files to node $NODE."
