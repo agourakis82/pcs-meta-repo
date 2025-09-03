@@ -1,0 +1,18 @@
+---
+name: pcs-zuco
+channels: [conda-forge, defaults]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - statsmodels
+  - scikit-learn
+  - matplotlib
+  - networkx
+  - jupyterlab
+  - r-base
+  - pip
+  - pip:
+      - rpy2
+  - pingouin

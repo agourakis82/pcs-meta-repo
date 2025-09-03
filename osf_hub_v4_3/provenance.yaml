@@ -1,0 +1,44 @@
+---
+project: PCS_Symbolic_First
+version: v4.3
+licenses:
+  text: CC-BY-4.0
+  code: MIT
+datasets:
+  swow:
+    source: public
+    language: EN
+    version: "1.0"
+  zuco:
+    source: public
+    release: "1.0 / 2.0"
+    alignment: fixation_locked_theta_alpha_and_sentence_level_reading_cost
+randomness:
+  global_seed: 424242
+  bootstrap:
+    n: 2000
+    seed: 1337
+  null_graphs:
+    n: 1000
+    seed: 271828
+models:
+  ols:
+    robust_se: HC3
+  mixedlm:
+    random_intercepts: [sentence, subject]
+multiple_testing:
+  method: BH
+reporting:
+  min_bundle:
+    - results/models_reading_coeffs.csv
+    - results/models_reading_coeffs_fdr.csv
+    - results/mixedlm_ffd_summary.txt
+    - results/figures/metrics/F2_.png
+    - results/figures/metrics/F3_.png
+quality_gates:
+  - lint_markdown
+  - lint_yaml
+  - lint_python
+  - link_check
+  - figures_exist
+  - tables_exist

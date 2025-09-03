@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Symbolic Manifolds & Entropic Dynamics — v4.3 (SWOW→KEC→ZuCo validation pack)"
+message: "If you use this work, please cite it as below."
+type: generic
+version: "v4.3"
+doi: 10.5281/zenodo.17039429
+date-released: 2025-09-03
+license: CC-BY-4.0
+authors:
+  - family-names: Agourakis
+    given-names: Demetrios C.
+    orcid: "https://orcid.org/0000-0002-8596-5097"
+  - family-names: Agourakis
+    given-names: Dionisio Chiuratto
+preferred-citation:
+  type: generic
+  title: "Symbolic Manifolds & Entropic Dynamics — v4.3 (SWOW→KEC→ZuCo validation pack)"
+  authors:
+    - family-names: Agourakis
+      given-names: Demetrios C.
+    - family-names: Agourakis
+      given-names: Dionisio Chiuratto
+  year: 2025
+  doi: 10.5281/zenodo.17039429
+  url: "https://doi.org/10.5281/zenodo.17039429"
+roles:
+  - Demetrios C. Agourakis: [Conceptualization, Methodology, Software, Writing-Original-Draft]
+  - Dionisio Chiuratto Agourakis: [Data-Curation, Software]
+
