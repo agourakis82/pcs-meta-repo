@@ -1,0 +1,4 @@
+MixedLM Summary (stub)
+=======================
+Random intercepts: sentence, subject
+Generated: 2025-09-03 14:17:20 UTC
