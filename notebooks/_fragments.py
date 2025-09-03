@@ -37,9 +37,9 @@ def qa_assertions(df: pd.DataFrame, rules: dict):
         assert len(df) >= rules["min_rows"], f"Too few rows (<{rules['min_rows']})."
     print("[QA] Basic checks passed.")
 
-def save_manifest(path: str, payload: dict):
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w") as f:
+def save_manifest(path: str | Path, payload: dict):
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with open(p, "w") as f:
         json.dump(payload, f, indent=2)
-    print(f"[MANIFEST] Wrote {path}")
-
+    print(f"[MANIFEST] Wrote {p}")
