@@ -22,6 +22,9 @@ def fit_models(merged_sent: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, s
 
     # OLS with HC3 robust SEs
     ols = smf.ols("TRT ~ z_kec", data=merged_sent).fit(cov_type="HC3")
+    ci = ols.conf_int() if "z_kec" in ols.params else None
+    ci_low = float(ci.loc["z_kec", 0]) if ci is not None else np.nan
+    ci_high = float(ci.loc["z_kec", 1]) if ci is not None else np.nan
     ols_row = {
         "model": "ols",
         "term": "z_kec",
@@ -29,14 +32,20 @@ def fit_models(merged_sent: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, s
         "se": float(ols.bse.get("z_kec", np.nan)),
         "t": float(ols.tvalues.get("z_kec", np.nan)),
         "p": float(ols.pvalues.get("z_kec", np.nan)),
-        "ci_low": float(ols.conf_int().loc["z_kec", 0]) if "z_kec" in ols.params else np.nan,
-        "ci_high": float(ols.conf_int().loc["z_kec", 1]) if "z_kec" in ols.params else np.nan,
+        "ci_low": ci_low,
+        "ci_high": ci_high,
     }
 
     # MixedLM with random intercepts for Subject and SentenceID (variance components)
     # Group on Subject, treat SentenceID as variance component
     try:
-        md = smf.mixedlm("TRT ~ z_kec", merged_sent, groups=merged_sent["Subject"], vc_formula={"SentenceID": "0 + C(SentenceID)"})
+        vc_form = {"SentenceID": "0 + C(SentenceID)"}
+        md = smf.mixedlm(
+            "TRT ~ z_kec",
+            merged_sent,
+            groups=merged_sent["Subject"],
+            vc_formula=vc_form,
+        )
         mdf = md.fit(method="lbfgs", reml=True, disp=False)
         p_kec = float(mdf.pvalues.get("z_kec", np.nan))
         mixed_row = {
@@ -96,7 +105,10 @@ def main():
         if proc_mixed.exists():
             shutil.copy2(proc_mixed, results_dir / "mixedlm_ffd_summary.txt")
         else:
-            (results_dir / "mixedlm_ffd_summary.txt").write_text("N/A", encoding="utf-8")
+            (results_dir / "mixedlm_ffd_summary.txt").write_text(
+                "N/A",
+                encoding="utf-8",
+            )
         print("[OK] run_models.py: copied processed model outputs into results/.")
         return
 
@@ -104,9 +116,11 @@ def main():
     kec_csv = results_dir / "kec_metrics.csv"
     zuco_csv = results_dir / "zuco_aligned.csv"
     if not kec_csv.exists():
-        raise SystemExit(f"KEC metrics not found at {kec_csv}; run build_kec.py first.")
+        msg = f"KEC metrics not found at {kec_csv}; run build_kec.py first."
+        raise SystemExit(msg)
     if not zuco_csv.exists():
-        raise SystemExit(f"ZuCo aligned not found at {zuco_csv}; run align_zuco.py first.")
+        msg = f"ZuCo aligned not found at {zuco_csv}; run align_zuco.py first."
+        raise SystemExit(msg)
 
     kec = pd.read_csv(kec_csv)
     zuco = pd.read_csv(zuco_csv)
@@ -116,7 +130,9 @@ def main():
     from pcs_toolbox.common import token_norm  # type: ignore
     kec["token_norm"] = kec["name"].astype(str).map(token_norm)
     # Standardize KEC score
-    kec["z_kec"] = (kec["kec"] - kec["kec"].mean()) / (kec["kec"].std() if kec["kec"].std() > 0 else 1.0)
+    std = kec["kec"].std()
+    den = std if (std is not None and std > 0) else 1.0
+    kec["z_kec"] = (kec["kec"] - kec["kec"].mean()) / den
 
     # Merge token-level then aggregate to sentence-level (Subject x SentenceID)
     keys = ["Subject", "SentenceID"]
@@ -124,7 +140,7 @@ def main():
         zuco, kec[["token_norm", "z_kec"]], on="token_norm", how="left"
     )
     merged_tok["z_kec"] = merged_tok["z_kec"].fillna(0.0)
-    # Choose outcome: prefer TRT, else GD, FFD, GPT; if none present, proxy by token count
+    # Prefer TRT; else GD/FFD/GPT; else proxy
     outcome_cols = [c for c in ["TRT", "GD", "FFD", "GPT"] if c in merged_tok.columns]
     if outcome_cols:
         ycol = outcome_cols[0]
@@ -147,26 +163,42 @@ def main():
                 .reset_index()
             )
         else:
-            counts = merged_tok.groupby(keys, dropna=False).size().reset_index(name="TRT")
-            zk = merged_tok.groupby(keys, dropna=False)["z_kec"].mean().reset_index()
-            merged_sent = pd.merge(counts, zk, on=keys, how="inner").dropna(subset=["TRT", "z_kec"]).reset_index(drop=True)
+            counts = (
+                merged_tok.groupby(keys, dropna=False)
+                .size()
+                .reset_index(name="TRT")
+            )
+            zk = (
+                merged_tok.groupby(keys, dropna=False)["z_kec"]
+                .mean()
+                .reset_index()
+            )
+            merged_sent = (
+                pd.merge(counts, zk, on=keys, how="inner")
+                .dropna(subset=["TRT", "z_kec"])
+                .reset_index(drop=True)
+            )
     if merged_sent.empty:
         # Fallback: try processed merged with KEC components
         proc_merged = repo_root / "data/processed/zuco_kec_merged.csv"
         if not proc_merged.exists():
-            raise SystemExit("Merged sentence-level dataset is empty after aggregation and no processed merge available.")
+            err = (
+                "Merged sentence-level dataset is empty after aggregation "
+                "and no processed merge available."
+            )
+            raise SystemExit(err)
         df = pd.read_csv(proc_merged)
         # Build sentence-level aggregation
         keys = [c for c in ["Subject", "SentenceID"] if c in df.columns]
         out_candidates = [c for c in ["FFD", "GD", "TRT", "GPT"] if c in df.columns]
-        kec_terms = [c for c in ["entropy", "curvature", "coherence"] if c in df.columns]
+        k_cols = ["entropy", "curvature", "coherence"]
+        kec_terms = [c for c in k_cols if c in df.columns]
         if not keys or not out_candidates or not kec_terms:
             raise SystemExit("Processed merged file missing required columns.")
-        agg = (
-            df.groupby(keys, dropna=False)
-            .agg({**{o: "mean" for o in out_candidates}, **{k: "mean" for k in kec_terms}})
-            .reset_index()
-        )
+        gobj = df.groupby(keys, dropna=False)
+        agg_dict = {o: "mean" for o in out_candidates}
+        agg_dict.update({k: "mean" for k in kec_terms})
+        agg = gobj.agg(agg_dict).reset_index()
         import statsmodels.formula.api as smf
         rows = []
         for outcome in out_candidates:
@@ -197,17 +229,20 @@ def main():
                 q[idx] = min(prev, p[idx] * m / rank)
                 prev = q[idx]
             return pd.Series(q, index=pvals.index)
-        coeffs["p_fdr_bh"] = coeffs.groupby("outcome", group_keys=False)["p"].apply(fdr_bh)
+        grp = coeffs.groupby("outcome", group_keys=False)["p"]
+        coeffs["p_fdr_bh"] = grp.apply(fdr_bh)
         coeffs["rej_fdr_bh_0.05"] = coeffs["p_fdr_bh"] <= 0.05
         coeffs.to_csv(results_dir / "models_reading_coeffs.csv", index=False)
         coeffs.to_csv(results_dir / "models_reading_coeffs_fdr.csv", index=False)
-        (results_dir / "mixedlm_ffd_summary.txt").write_text("N/A (OLS-only fallback)", encoding="utf-8")
+        pth = results_dir / "mixedlm_ffd_summary.txt"
+        pth.write_text("N/A (OLS-only fallback)", encoding="utf-8")
         print("[OK] run_models.py: computed OLS coefficients from processed merge.")
     else:
         coeffs, fdr, mixed_summ = fit_models(merged_sent)
         coeffs.to_csv(results_dir / "models_reading_coeffs.csv", index=False)
         fdr.to_csv(results_dir / "models_reading_coeffs_fdr.csv", index=False)
-        (results_dir / "mixedlm_ffd_summary.txt").write_text(mixed_summ, encoding="utf-8")
+        out_path = results_dir / "mixedlm_ffd_summary.txt"
+        out_path.write_text(mixed_summ, encoding="utf-8")
         print("[OK] run_models.py: model outputs written to results/.")
 
 

@@ -22,8 +22,16 @@ def main():
     merged.to_csv(out_csv, index=False)
 
     ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
-    msg = f"Alignment completed at {ts}. Rows={merged.shape[0]} Subjects={merged['Subject'].nunique(dropna=True) if 'Subject' in merged else 0}.\n"
-    (results_dir / "align_zuco.log").write_text(msg, encoding="utf-8")
+    n_rows = merged.shape[0]
+    n_subj = merged['Subject'].nunique(dropna=True) if 'Subject' in merged else 0
+    msg = (
+        f"Alignment completed at {ts}.\n"
+        f"Rows={n_rows} Subjects={n_subj}\n"
+    )
+    (results_dir / "align_zuco.log").write_text(
+        msg,
+        encoding="utf-8",
+    )
 
     print(f"[OK] align_zuco.py: wrote {out_csv}")
 
