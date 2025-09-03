@@ -1,1 +1,6 @@
-Built KEC (stub) from SWOW.
+{
+  "version": "v4.3",
+  "source": "/home/agourakis82/workspace/pcs-meta-repo/data/processed/swow/swow_tidy.csv",
+  "method": "KEC (entropy+curvature+coherence)",
+  "generated_at": "2025-09-03T16:50:27Z"
+}

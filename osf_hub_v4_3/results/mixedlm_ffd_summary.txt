@@ -1,4 +1,16 @@
-MixedLM Summary (stub)
-=======================
-Random intercepts: sentence, subject
-Generated: 2025-09-03 14:17:20 UTC
+        Mixed Linear Model Regression Results
+=====================================================
+Model:            MixedLM Dependent Variable: log_TRT
+No. Observations: 1       Method:             REML   
+No. Groups:       1       Scale:              -0.0000
+Min. group size:  1       Log-Likelihood:     nan    
+Max. group size:  1       Converged:          No     
+Mean group size:  1.0                                
+------------------------------------------------------
+            Coef.   Std.Err.  z  P>|z|  [0.025  0.975]
+------------------------------------------------------
+entropy      0.669                                    
+curvature    0.004                                    
+coherence   -0.891                                    
+Group Var   -0.000                                    
+=====================================================
