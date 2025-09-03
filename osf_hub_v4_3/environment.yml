@@ -10,9 +10,13 @@ dependencies:
   - scikit-learn
   - matplotlib
   - networkx
+  - python-igraph
+  - leidenalg
+  - pyyaml
   - jupyterlab
   - r-base
   - pip
   - pip:
       - rpy2
-  - pingouin
+      - pingouin
+      - GraphRicciCurvature

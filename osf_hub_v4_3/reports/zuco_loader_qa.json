@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "errors": [],
+  "counts": {
+    "et_rows": 0,
+    "eeg_rows": 0
+  },
+  "summary": {
+    "rows_et": 0,
+    "rows_eeg": 0,
+    "rows_merged": 0,
+    "n_subjects": 0,
+    "n_sentences": 0,
+    "n_tokens": 0,
+    "datasets": {},
+    "tasks": {},
+    "n_anomalies": 0
+  }
+}

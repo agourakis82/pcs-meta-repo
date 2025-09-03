@@ -9,6 +9,13 @@ reproduce(){
   info "Step 2/4: Align ZuCo";                 python scripts/align_zuco.py
   info "Step 3/4: Run models";                 python scripts/run_models.py
   info "Step 4/4: Make figures (F2/F3)";       python scripts/make_figures.py
+  # Optional heavy steps (nulls/bootstrap). Set FAST=1 to skip.
+  if [[ "${FAST:-0}" != "1" ]]; then
+    info "Step 5/6: Null graphs (degree-preserving)";  python scripts/generate_nulls.py || echo "[warn] nulls failed"
+    info "Step 6/6: Bootstrap CIs (2000 reps)";        python scripts/bootstrap_ci.py  || echo "[warn] bootstrap failed"
+  else
+    info "FAST=1: Skipping nulls/bootstrap"
+  fi
   info "Done. Outputs in results/"
 }
 
@@ -26,4 +33,3 @@ case "$CMD" in
   check)     check ;;
   *) echo "Usage: $0 [reproduce|check]" ; exit 1 ;;
 esac
-

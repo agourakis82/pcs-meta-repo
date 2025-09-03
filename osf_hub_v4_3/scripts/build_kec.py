@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import time
+import sys
 import math
 from collections import defaultdict
 
@@ -66,20 +67,30 @@ def main():
     if not swow_csv.exists():
         raise SystemExit(f"SWOW tidy CSV not found at {swow_csv}.")
 
-    out_csv = results_dir / "kec_metrics.csv"
-    build_kec_from_swow_csv(swow_csv, out_csv)
+    # Try full KEC via pcs_toolbox (entropy+curvature+coherence)
+    sys.path.insert(0, str(repo_root / "src"))
+    try:
+        from pcs_toolbox.swow import load_swow_graph  # type: ignore
+        from pcs_toolbox.kec import compute_kec_metrics  # type: ignore
+        g = load_swow_graph(swow_csv)
+        df = compute_kec_metrics(g)
+        out_csv = results_dir / "kec_metrics.csv"
+        df.to_csv(out_csv, index=False)
+        method = "KEC (entropy+curvature+coherence)"
+    except Exception as e:
+        # Fallback to entropy-only proxy
+        out_csv = results_dir / "kec_metrics.csv"
+        build_kec_from_swow_csv(swow_csv, out_csv)
+        method = f"KEC proxy (entropy z-score) — fallback: {e}"
 
     meta = {
         "version": "v4.3",
         "source": str(swow_csv),
-        "method": "KEC proxy (entropy z-score)",
+        "method": method,
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
     log_text = json.dumps(meta, indent=2)
-    (results_dir / "kec_build.log").write_text(
-        log_text,
-        encoding="utf-8",
-    )
+    (results_dir / "kec_build.log").write_text(log_text, encoding="utf-8")
     print(f"[OK] build_kec.py: wrote {out_csv}")
 
 

@@ -51,5 +51,9 @@ upload_if_exists osf_hub_v4_3/results/figures/metrics/F2_.png          /results/
 upload_if_exists osf_hub_v4_3/results/figures/metrics/F3_.png          /results/figures/metrics/F3_.png
 upload_if_exists osf_hub_v4_3/results/kec_metrics.csv                  /results/kec_metrics.csv
 upload_if_exists osf_hub_v4_3/results/zuco_aligned.csv                 /results/zuco_aligned.csv
+upload_if_exists osf_hub_v4_3/results/nulls_reading_coeffs.csv         /results/nulls_reading_coeffs.csv
+upload_if_exists osf_hub_v4_3/results/nulls_meta.json                  /results/nulls_meta.json
+upload_if_exists osf_hub_v4_3/results/boot_ols_reading_ci.csv          /results/boot_ols_reading_ci.csv
+upload_if_exists osf_hub_v4_3/results/bootstrap_meta.json              /results/bootstrap_meta.json
 
 echo "[OK] Uploaded OSF hub files to node $NODE."
