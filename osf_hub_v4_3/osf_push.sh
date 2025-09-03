@@ -12,9 +12,9 @@ if [[ -n "${OSF_USERNAME:-}" ]]; then
   USER_OPT=(-u "$OSF_USERNAME")
 fi
 
-# Ensure credentials are available (config or env)
-if [[ ! -f "$HOME/.osfcli.config" && -z "${OSF_PASSWORD:-}" && -z "${OSF_USERNAME:-}" ]]; then
-  echo "[ERROR] osfclient not configured. Run 'osf init' (interactive) or export OSF_USERNAME and OSF_PASSWORD, then retry." >&2
+# Ensure credentials are available (config or env: OSF_TOKEN or USER/PASSWORD)
+if [[ ! -f "$HOME/.osfcli.config" && -z "${OSF_PASSWORD:-}" && -z "${OSF_USERNAME:-}" && -z "${OSF_TOKEN:-}" ]]; then
+  echo "[ERROR] osfclient not configured. Run 'osf init' (interactive) or export OSF_TOKEN (or OSF_USERNAME/OSF_PASSWORD), then retry." >&2
   exit 2
 fi
 
