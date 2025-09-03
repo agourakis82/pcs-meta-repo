@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import time
+import sys
 
 
 def main():
     base_dir = Path(__file__).resolve().parents[1]
+    repo_root = Path(__file__).resolve().parents[2]
     results_dir = base_dir / "results"
     results_dir.mkdir(parents=True, exist_ok=True)
 
-    # Create a stub alignment output
-    alignment_text = (
-        "Aligned ZuCo (stub): fixation-locked theta/alpha and "
-        "sentence-level reading cost.\n"
-    )
-    (results_dir / "zuco_alignment_stub.txt").write_text(
-        alignment_text,
-        encoding="utf-8",
-    )
+    # Allow importing toolbox from src/
+    sys.path.insert(0, str(repo_root / "src"))
+    from pcs_toolbox import zuco  # type: ignore
+
+    # Run loader and write processed outputs under data/processed + reports
+    merged, qa = zuco.load_all(write_outputs=True)
+
+    # Write a light alignment artifact for the hub
+    out_csv = results_dir / "zuco_aligned.csv"
+    merged.to_csv(out_csv, index=False)
 
     ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
-    msg = f"Alignment (stub) completed at {ts}.\n"
-    (results_dir / "align_zuco.log").write_text(
-        msg,
-        encoding="utf-8",
-    )
+    msg = f"Alignment completed at {ts}. Rows={merged.shape[0]} Subjects={merged['Subject'].nunique(dropna=True) if 'Subject' in merged else 0}.\n"
+    (results_dir / "align_zuco.log").write_text(msg, encoding="utf-8")
 
-    print("[OK] align_zuco.py: stub alignment outputs written to results/.")
+    print(f"[OK] align_zuco.py: wrote {out_csv}")
 
 
 if __name__ == "__main__":
