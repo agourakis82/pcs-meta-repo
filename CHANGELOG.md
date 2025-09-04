@@ -5,7 +5,7 @@
 ### Changed
 
 * Synced README badges to Concept DOI 10.5281/zenodo.16921951 and Version DOI 10.5281/zenodo.17053446.
-* Updated CITATION.cff to v4.3.2 with release date and version DOI.
+* Updated CITATION.cff to v4.3.2 with release date and version DOI; set type=software, license=MIT, and added preferred-citation block.
 * Aligned metadata.yaml and .zenodo.json to v4.3.2 and correct concept DOI.
 
 ### Added
