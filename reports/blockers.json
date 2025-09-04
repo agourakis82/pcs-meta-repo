@@ -1,0 +1,4 @@
+{
+  "blocker": "Zenodo version v4.3.2 not found under concept DOI 10.5281/zenodo.16533374",
+  "remediation": "Publish v4.3.2 on Zenodo (using the concept DOI) or provide the exact version DOI; then rerun."
+}

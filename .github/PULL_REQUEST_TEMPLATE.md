@@ -1,35 +1,24 @@
 ## Summary
 
-- What does this PR change?
-- Link to related issues.
+Short description of the change.
+
+## Motivation / Context
+
+Why is this change needed?
+
+## Linked Issues
+
+Closes #<id>
 
 ## Checklist
 
-- [ ] Tests added/updated
-- [ ] Docs updated
-- [ ] CI passing
-# Pull Request
+- [ ] Updated `CHANGELOG.md`
+- [ ] Ran `python tools/repo_lint.py` (no errors)
+- [ ] Ran markdown linkcheck (0 broken) — `python tools/linkcheck_md.py`
+- [ ] Updated citations/DOI if needed
+- [ ] No PII introduced; licenses respected
+- [ ] Notebooks run locally (if applicable)
 
-## O que muda
+## Evidence / Artifacts
 
-Descreva o objetivo do PR e o motivo das mudanças.
-
-## Checklist
-
-- [ ] README atualizado (se aplicável)
-
-- [ ] CITATION.cff válido (se aplicável)
-
-- [ ] CHANGELOG atualizado (se aplicável)
-
-- [ ] Sem credenciais/segredos
-
-- [ ] Referencia uma issue (ex.: Closes #123)
-
-## Evidências
-
-(prints/logs)
-
-## Riscos e mitigação
-
-(breve)
+- Attach logs, figures, or paths to outputs

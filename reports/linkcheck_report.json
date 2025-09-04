@@ -1,0 +1,521 @@
+{
+  "broken": 0,
+  "results": [
+    {
+      "file": "SECURITY.md",
+      "link": "mailto:demetrios@agourakis.med.br",
+      "ok": true,
+      "status": "mailto"
+    },
+    {
+      "file": "README.md",
+      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.16921951.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.17053446.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml/badge.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "coverage.svg",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "README.md",
+      "link": "https://img.shields.io/badge/ORCID-0000--0002--8596--5097-brightgreen.svg?logo=orcid",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "https://img.shields.io/badge/license-MIT-blue.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "CITATION.cff",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "README.md",
+      "link": "https://doi.org/10.5281/zenodo.17053446",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "https://doi.org/10.5281/zenodo.16921951",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "docs/README_MASTER.md",
+      "link": "mailto:demetrios@agourakis.med.br",
+      "ok": true,
+      "status": "mailto"
+    },
+    {
+      "file": "docs/README_MASTER.md",
+      "link": "https://github.com/agourakis82",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "docs/README_MASTER.md",
+      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.17039429.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "docs/INSTRUCOES_PROJETO.md",
+      "link": "mailto:demetrios@agourakis.med.br",
+      "ok": true,
+      "status": "mailto"
+    },
+    {
+      "file": "docs/INSTRUCOES_PROJETO.md",
+      "link": "mailto:demetrios@agourakis.med.br",
+      "ok": true,
+      "status": "mailto"
+    },
+    {
+      "file": ".pytest_cache/README.md",
+      "link": "https://docs.pytest.org/en/stable/how-to/cache.html",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://smallworldofwords.org/en/project/research#:~:text=SWOW",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://smallworldofwords.org/en/project/research#:~:text=SWOW",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://www.nature.com/articles/sdata2018291?error=cookies_not_supported&code=c66dd047-201a-406b-ba82-df650f936d48#:~:text=How%20to%20cite%20this%20article%3A,291%20%282018",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://aclanthology.org/2020.lrec-1.18.pdf#:~:text=We%20recorded%20and%20preprocessed%20ZuCo,The%20data%20is%20freely",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L13-L21",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L164-L170",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L16-L24",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L220-L226",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf#:~:text=Failure%20to%20control%20for%20within,for%20such%20control%20increases%20not",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://www.ssc.wisc.edu/~xshi/econ715/Lecture_10_bootstrap.pdf#:~:text=5,1993",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/False_discovery_rate#:~:text=The%20FDR%20concept%20was%20formally,cited%20statistical%20papers.%5B%205",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://aclanthology.org/2020.conll-1.53.pdf#:~:text=potential%20is%20generally%20understood%20to,research%20on%20the%20topic%2C%20many",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://link.springer.com/content/pdf/10.3758/BF03206448.pdf#:~:text=The%20effect%20of%20word%20predictability,and%20word",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://aclanthology.org/2020.conll-1.53.pdf#:~:text=potential%20is%20generally%20understood%20to,research%20on%20the%20topic%2C%20many",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://link.springer.com/content/pdf/10.3758/BF03206448.pdf#:~:text=The%20effect%20of%20word%20predictability,and%20word",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/False_discovery_rate#:~:text=The%20modern%20widespread%20use%20of,differential%20expression%20between%20two%20biological",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/False_discovery_rate#:~:text=As%20high,measured%20variables%20showed%20statistical%20significance",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://smallworldofwords.org/en/project/research#:~:text=%23%20Mandarin%20Chinese%20Data%20%28SWOW",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/Ricci_curvature#:~:text=8.%20,Forman%202003",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/Ricci_curvature#:~:text=4.%20,189",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://openreview.net/pdf/ebd5bb55274d158dbe408c51953238ae5a92b9e0.pdf#:~:text=We%20focus%20on%20Ollivier,Both",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf#:~:text=Failure%20to%20control%20for%20within,for%20such%20control%20increases%20not",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://www.ssc.wisc.edu/~xshi/econ715/Lecture_10_bootstrap.pdf#:~:text=5,1993",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/False_discovery_rate#:~:text=The%20FDR%20concept%20was%20formally,cited%20statistical%20papers.%5B%205",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://aclanthology.org/2020.conll-1.53.pdf#:~:text=potential%20is%20generally%20understood%20to,research%20on%20the%20topic%2C%20many",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://link.springer.com/content/pdf/10.3758/BF03206448.pdf#:~:text=The%20effect%20of%20word%20predictability,and%20word",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://aclanthology.org/2020.conll-1.53.pdf#:~:text=potential%20is%20generally%20understood%20to,research%20on%20the%20topic%2C%20many",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://link.springer.com/content/pdf/10.3758/BF03206448.pdf#:~:text=The%20effect%20of%20word%20predictability,and%20word",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/False_discovery_rate#:~:text=The%20modern%20widespread%20use%20of,differential%20expression%20between%20two%20biological",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://en.wikipedia.org/wiki/False_discovery_rate#:~:text=As%20high,measured%20variables%20showed%20statistical%20significance",
+      "ok": true,
+      "status": "assumed-ok-403-wikipedia"
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://smallworldofwords.org/en/project/research#:~:text=%23%20Mandarin%20Chinese%20Data%20%28SWOW",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L13-L21",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L164-L170",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L16-L24",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "reports/report.md",
+      "link": "https://github.com/agourakis82/pcs-meta-repo/blob/ea8b001102fe540af7a530a6e93f89afa4c204e1/instrucoes_projeto_v4.3.md#L220-L226",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image1.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image2.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image3.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image4.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image5.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image6.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image7.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image8.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image9.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image10.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image11.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/README.md",
+      "link": "https://github.com/agourakis82/The-Fractal-Nature-of-an-Entropically-Driven-Society/actions/workflows/latex.yml/badge.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/README.md",
+      "link": "https://www.overleaf.com/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "papers/The-Fractal-Nature-of-an-Entropically-Driven-Society/README.md",
+      "link": "https://github.com/agourakis82/The-Fractal-Nature-of-an-Entropically-Driven-Society",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "docs/scratchpad/LOG-2025-08-28.md",
+      "link": "#-brainstorming-pt",
+      "ok": true,
+      "status": "anchor-untested"
+    },
+    {
+      "file": "docs/scratchpad/LOG-2025-08-28.md",
+      "link": "#-curadoria-en-pronto-p-repo",
+      "ok": true,
+      "status": "anchor-untested"
+    },
+    {
+      "file": "docs/scratchpad/LOG-2025-08-28.md",
+      "link": "#\ufe0f-checklist--commits",
+      "ok": true,
+      "status": "anchor-untested"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.16783257.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "./NHB_Symbolic_Mainfold/",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "https://doi.org/10.5281/zenodo.16730036",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "./NHB_Symbolic_Mainfold/",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "https://doi.org/10.5281/zenodo.16730036",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "./NHB_Symbolic_Mainfold/",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "./NHB_Symbolic_Mainfold/",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "mailto:demetrios@agourakis.med.br",
+      "ok": true,
+      "status": "mailto"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/README.md",
+      "link": "https://orcid.org/0000-0002-8596-5097",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "figs/cover_symbolic_graph.png",
+      "ok": true,
+      "status": "exists"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.16783257.svg",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://doi.org/10.5281/zenodo.16730036",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://doi.org/10.5281/zenodo.16533374",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://doi.org/10.5281/zenodo.16752238",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://doi.org/10.17605/OSF.IO/2AQP7",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://doi.org/10.17605/OSF.IO/2AQP7",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://orcid.org/0000-0002-8596-5097",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "https://doi.org/10.5281/zenodo.16730036",
+      "ok": true,
+      "status": 200
+    }
+  ]
+}
