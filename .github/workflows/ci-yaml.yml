@@ -1,6 +1,9 @@
 ---
 name: ci-yaml
-'on': [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 jobs:
   yamllint:
     runs-on: ubuntu-latest

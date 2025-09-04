@@ -15,6 +15,7 @@ on:
       - 'notebooks/**'
       - 'data/processed/**'
       - '.github/workflows/kec_zuco_validation.yml'
+  workflow_dispatch:
 
 jobs:
   validate:

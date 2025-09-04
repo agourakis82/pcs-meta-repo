@@ -15,6 +15,7 @@ on:
       - 'pyproject.toml'
       - 'requirements.txt'
       - '.github/workflows/python.yml'
+  workflow_dispatch:
 jobs:
   test:
     concurrency:
