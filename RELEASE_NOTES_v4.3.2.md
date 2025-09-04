@@ -25,3 +25,7 @@ Next Steps
 - Upload package to Zenodo, mint Version DOI, and update CFF/metadata.
 - Expand contracts (typing, enums), add automated schema tests in CI.
 - Add data loaders and seeds where applicable.
+
+DOI
+- Version DOI: 10.5281/zenodo.17053446
+- Concept DOI: 10.5281/zenodo.16533374
