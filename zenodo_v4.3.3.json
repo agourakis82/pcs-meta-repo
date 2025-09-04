@@ -1,0 +1,16 @@
+{
+  "upload_type": "software",
+  "title": "Symbolic Manifolds v4.3.3 — integration patch",
+  "description": "Patch release to validate GitHub↔Zenodo integration and metadata (creators, resource type, related identifiers).",
+  "creators": [
+    {"name": "Agourakis, Demetrios C.", "orcid": "0000-0002-8596-5097"},
+    {"name": "Agourakis, Dionisio Chiuratto"}
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.16533374",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+title: "Symbolic Manifolds — v4.3.3 integration patch"
+version: 4.3.3
+doi: ""
+authors:
+  - family-names: Agourakis
+    given-names: Demetrios C.
+    orcid: https://orcid.org/0000-0002-8596-5097
+  - family-names: Agourakis
+    given-names: Dionisio Chiuratto
