@@ -17,6 +17,10 @@
 
 * Replaced outdated DOI links; ensured no broken links in README.
 
+### Documentation
+
+* Added DOI consolidation note for “Extended Memory — PhD & Publication Plan (Brazil)”: v4.3 (10.5281/zenodo.16921952) supersedes v4.2 (10.5281/zenodo.16682784); both linked under concept DOI 10.5281/zenodo.16533374.
+
 ## v2025.09.02 — Zenodo release (DOI: 10.5281/zenodo.17039429)
 
 - Notebooks 01–06 hardened (RUN_MODE sample/full, robust imports/paths)

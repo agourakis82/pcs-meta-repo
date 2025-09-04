@@ -3,18 +3,8 @@
   "upload_type": "software",
   "description": "Unified notebooks and tooling for ZuCo ET/EEG processing, SWOW graph + KEC metrics, reproducible analyses, QA, and H* validation.",
   "creators": [
-    {
-      "name": "Agourakis, Demetrios",
-      "affiliation": "PUC-SP; Faculdade São Leopoldo Mandic",
-      "orcid": "0000-0002-8596-5097"
-    }
-  ],
-  "contributors": [
-    {
-      "name": "Dionisio Chiuratto Agourakis",
-      "type": "Other",
-      "affiliation": "Data Science & AI collaborator"
-    }
+    { "name": "Agourakis, Demetrios", "affiliation": "PUC-SP; Faculdade São Leopoldo Mandic", "orcid": "0000-0002-8596-5097" },
+    { "name": "Agourakis, Dionisio", "affiliation": "Independent Researcher (to be confirmed)", "orcid": "0009-0000-4863-9143" }
   ],
   "keywords": [
     "computational psychiatry",
@@ -32,13 +22,12 @@
     { "identifier": "complex-systems" }
   ],
   "license": "cc-by-4.0",
-  "version": "v2025.09.02",
+  "version": "v4.3.2",
   "related_identifiers": [
-    {
-      "relation": "isSupplementTo",
-      "identifier": "https://github.com/agourakis82/pcs-meta-repo",
-      "scheme": "url"
-    }
+    { "identifier": "10.5281/zenodo.16921951", "relation": "isVersionOf", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.16533373", "relation": "isPartOf", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.16682784", "relation": "isSupplementTo", "scheme": "doi" },
+    { "relation": "isSupplementTo", "identifier": "https://github.com/agourakis82/pcs-meta-repo", "scheme": "url" }
   ],
   "notes": "After creating a GitHub Release (which triggers Zenodo), update README/CITATION.cff if the DOI changes."
 }

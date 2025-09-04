@@ -1,0 +1,23 @@
+{
+  "records": {
+    "new": {
+      "doi": "10.5281/zenodo.16921952",
+      "record_id": 16921952,
+      "found": true
+    },
+    "old": {
+      "doi": "10.5281/zenodo.16682784",
+      "record_id": 16682784,
+      "found": true
+    },
+    "concept": {
+      "doi": "10.5281/zenodo.16533374"
+    }
+  },
+  "actions": [],
+  "error": "Could not find depositions for one or both records in your account",
+  "depositions_found": {
+    "new": false,
+    "old": false
+  }
+}

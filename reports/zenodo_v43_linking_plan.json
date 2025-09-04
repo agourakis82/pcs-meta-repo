@@ -1,0 +1,51 @@
+{
+  "records": {
+    "new": {
+      "doi": "10.5281/zenodo.16921952",
+      "record_id": 16921952,
+      "found": true
+    },
+    "old": {
+      "doi": "10.5281/zenodo.16682784",
+      "record_id": 16682784,
+      "found": true
+    },
+    "concept": {
+      "doi": "10.5281/zenodo.16533374"
+    }
+  },
+  "actions": [
+    {
+      "target": "new",
+      "record_id": 16921952,
+      "additions": [
+        {
+          "identifier": "10.5281/zenodo.16682784",
+          "relation": "isNewVersionOf",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.5281/zenodo.16533374",
+          "relation": "isPartOf",
+          "scheme": "doi"
+        }
+      ]
+    },
+    {
+      "target": "old",
+      "record_id": 16682784,
+      "additions": [
+        {
+          "identifier": "10.5281/zenodo.16921952",
+          "relation": "isPreviousVersionOf",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.5281/zenodo.16533374",
+          "relation": "isPartOf",
+          "scheme": "doi"
+        }
+      ]
+    }
+  ]
+}
