@@ -3,6 +3,7 @@ name: QA
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   qa:
