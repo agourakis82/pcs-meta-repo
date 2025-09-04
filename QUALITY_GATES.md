@@ -48,6 +48,10 @@
 - Q10 Alignment: supports the project’s primary objective via crystallization.
 
 ## Release 4.3.2 — Gate Evidence
+ 
+## Novo Gate Auxiliar
+
+11) **Agentic Design aplicado** — cada entrega deve explicitar Planner → Router → Tool-Use → Self-Reflection → Evaluator, com logs e metadados (versão, DOI, seeds/env). Referência: [`docs/agentic_design_patterns.md`].
 - Q1 Technical accuracy: see `data/CHECKS/validation_report.json` and contracts under `data/CONTRACTS/`.
 - Q2 Sources & DOI concept: `metadata_v4.3.2.yaml` (concept_doi set).
 - Q3 Terminology consistency: AG5/KEC, L0/L1/L2 reflected in DATA_DICTIONARY.md and contracts.

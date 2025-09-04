@@ -9,6 +9,10 @@
 
 Meta-repository for the Computational‑Symbolic Psychiatry (PCS) project.
 
+## v4.3 Highlights
+
+- **Agentic Design Patterns** integrados como **Quality Gate Q11** (docs/agentic_design_patterns.md).
+
 ## Install & use
 
 ```bash
@@ -16,6 +20,10 @@ git clone https://github.com/agourakis82/pcs-meta-repo
 cd pcs-meta-repo
 pip install -r requirements.txt
 ```
+
+## Quick Start
+
+5. Follow **Agentic Design Patterns** (docs/agentic_design_patterns.md) to structure prompts, notebooks and scripts.
 
 ## How to cite
 
