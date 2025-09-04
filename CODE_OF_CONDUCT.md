@@ -1,17 +1,11 @@
-# Código de Conduta / Code of Conduct
+# Code of Conduct (Contributor Covenant v2.1)
 
-Este projeto adota o [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
+Effective date: 2025-09-04
 
-Para reportar comportamento inaceitável, contate
-[demetrios@agourakis.med.br](mailto:demetrios@agourakis.med.br). A equipe de
-manutenção se compromete a resposta inicial em até 14 dias e fará cumprir este
-código conforme processo resumido
-[aqui](https://www.contributor-covenant.org/version/2/1/code_of_conduct/#enforcement).
+This project adheres to the Contributor Covenant v2.1.
+See the official text: https://www.contributor-covenant.org/version/2/1/code_of_conduct/
 
-This project follows the Contributor Covenant v2.1. To report unacceptable
-behavior, contact [demetrios@agourakis.med.br](mailto:demetrios@agourakis.med.br).
-Maintainers will reply within 14 days and apply the enforcement process
-summarized above.
+Enforcement contact: demetrios@agourakis.med.br
 
-> Nota: este arquivo referencia o texto oficial do Covenant (em inglês) para
-> manter a conformidade de licença e evitar divergências.
+Maintainers commit to an initial response within 14 days and will follow the
+enforcement guidelines in the official covenant.
