@@ -1,40 +1,24 @@
 ---
-title: >-
-  Memória Estendida — Plano PhD & Publicação (Brasil): ponte Biomateriais ↔
-  Neurociência (SWOW, grafos semânticos)
-creators:
+title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
+authors:
   - name: "Demetrios Agourakis"
-    affiliation: "PUC-SP; Faculdade São Leopoldo Mandic"
+    affiliation: "PCS Project"
+    email: "demetrios@agourakis.med.br"
     orcid: "0000-0002-8596-5097"
 description: >-
-  Roadmap estratégico com cronograma, KPIs, e plano de publicação (Q1 +
-  ensaísticos) para maximizar visibilidade e ingresso em programas de
-  doutorado (USP, UNICAMP, UNIFESP), integrando biomateriais e psiquiatria
-  computacional via SWOW e redes semânticas.
+  Meta-repository consolidating loaders, notebooks, and analysis for ZuCo (ET/EEG)
+  and SWOW/KEC metrics, with QA automation and reproducibility scaffolding.
 keywords:
   - computational psychiatry
   - neuroscience
-  - biomaterials
-  - fractal
-  - entropy
+  - symbolic cognition
   - SWOW
   - semantic networks
-language: "pt-BR"
+language: "en"
 license: "CC-BY-4.0"
-version: "v2025.08.17"
-date: "2025-08-17"
-related_identifiers:
-  - type: doi
-    relation: isPartOf
-    value: "10.5281/zenodo.16533374"
-  - type: doi
-    relation: isPartOf
-    value: "10.5281/zenodo.16541976"
-  - type: doi
-    relation: isPartOf
-    value: "10.5281/zenodo.16550501"
-  - type: doi
-    relation: isPartOf
-    value: "10.5281/zenodo.16605353"
-repository: >-
-  https://github.com/agourakis82/phd-bridge-biomaterials-neuro-symbolic
+version: "v4.3.2"
+date: "2025-09-04"
+identifiers:
+  concept_doi: "10.5281/zenodo.16921951"
+  version_doi: "10.5281/zenodo.17053446"
+repository: "https://github.com/agourakis82/pcs-meta-repo"

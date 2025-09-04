@@ -1,18 +1,19 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
-version: "v2025.09.02"
-date-released: "2025-09-02"
+version: "v4.3.2"
+date-released: "2025-09-04"
+doi: "10.5281/zenodo.17053446"
 authors:
   - family-names: "Agourakis"
     given-names: "Demetrios"
     email: "demetrios@agourakis.med.br"
     orcid: "https://orcid.org/0000-0002-8596-5097"
-  - name: Dionisio Chiuratto Agourakis
-    affiliation: Data Science & AI collaborator
+  - name: "Dionisio Chiuratto Agourakis"
+    affiliation: "Data Science & AI collaborator"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.17039429"
+    value: "10.5281/zenodo.17053446"
   - type: url
     value: "https://github.com/agourakis82/pcs-meta-repo"
 repository-code: "https://github.com/agourakis82/pcs-meta-repo"

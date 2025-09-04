@@ -1,5 +1,22 @@
 # Changelog
 
+## [v4.3.2] — 2025-09-04
+
+### Changed
+
+* Synced README badges to Concept DOI 10.5281/zenodo.16921951 and Version DOI 10.5281/zenodo.17053446.
+* Updated CITATION.cff to v4.3.2 with release date and version DOI.
+* Aligned metadata.yaml and .zenodo.json to v4.3.2 and correct concept DOI.
+
+### Added
+
+* QA scripts: repo_lint, markdown linkcheck, and repo inventory (reports under `reports/`).
+* Provenance stub at `data/provenance.yaml`.
+
+### Fixed
+
+* Replaced outdated DOI links; ensured no broken links in README.
+
 ## v2025.09.02 — Zenodo release (DOI: 10.5281/zenodo.17039429)
 
 - Notebooks 01–06 hardened (RUN_MODE sample/full, robust imports/paths)
