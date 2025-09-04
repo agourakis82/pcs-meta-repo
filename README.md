@@ -1,3 +1,5 @@
+[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16533374.svg)](https://doi.org/10.5281/zenodo.16533374) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17053446.svg)](https://doi.org/10.5281/zenodo.17053446)
+
 # PCS Meta-Repo
 
 [![CI](https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml/badge.svg)](https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml)
