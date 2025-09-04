@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "total": 3,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 3,
+    "error": 0
+  },
+  "results": [
+    {
+      "dataset": "ag5_kec_metrics",
+      "contract": "data/CONTRACTS/ag5_kec.yml",
+      "status": "SKIPPED",
+      "issues": [
+        "expected_file not found: data/L2_derived/ag5_kec_metrics.csv"
+      ],
+      "stats": {}
+    },
+    {
+      "dataset": "swow_en_v1_tidy",
+      "contract": "data/CONTRACTS/swow_en.yml",
+      "status": "SKIPPED",
+      "issues": [
+        "expected_file not found: data/L1_tidy/swow_en_v1_tidy.csv"
+      ],
+      "stats": {}
+    },
+    {
+      "dataset": "zuco_v2_tidy",
+      "contract": "data/CONTRACTS/zuco.yml",
+      "status": "SKIPPED",
+      "issues": [
+        "expected_file not found: data/L1_tidy/zuco_v2_tidy.csv"
+      ],
+      "stats": {}
+    }
+  ]
+}

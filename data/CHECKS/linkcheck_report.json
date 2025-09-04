@@ -1,0 +1,78 @@
+{
+  "missing_count": 12,
+  "status": "ISSUES",
+  "details": [
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image1.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image1.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image2.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image2.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image3.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image3.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image4.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image4.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image5.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image5.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image6.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image6.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image7.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image7.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image8.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image8.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image9.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image9.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image10.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image10.png",
+      "status": "missing"
+    },
+    {
+      "file": "papers/soc_fractal_ahsd/draft_v1.md",
+      "link": "media/image11.png",
+      "resolved": "papers/soc_fractal_ahsd/media/image11.png",
+      "status": "missing"
+    },
+    {
+      "file": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/README.md",
+      "link": "figs/cover_symbolic_graph.png",
+      "resolved": "notebooks/entropic-symbolic-society/NHB_Symbolic_Mainfold/figs/cover_symbolic_graph.png",
+      "status": "missing"
+    }
+  ]
+}

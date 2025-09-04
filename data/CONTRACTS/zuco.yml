@@ -1,0 +1,16 @@
+dataset: zuco_v2_tidy
+level: L1
+expected_file: data/L1_tidy/zuco_v2_tidy.csv
+format: csv
+pk: [subject, sentence_id, token_id]
+columns:
+  - {name: subject, type: string, required: true}
+  - {name: sentence_id, type: int, required: true}
+  - {name: token_id, type: int, required: true}
+  - {name: gaze_duration_ms, type: float, required: false}
+  - {name: total_reading_time_ms, type: float, required: false}
+rules:
+  ranges:
+    gaze_duration_ms: [0.0, inf]
+    total_reading_time_ms: [0.0, inf]
+notes: "Durations must be non-negative (ms)."

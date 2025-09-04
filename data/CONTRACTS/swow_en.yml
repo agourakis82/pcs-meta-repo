@@ -1,0 +1,15 @@
+dataset: swow_en_v1_tidy
+level: L1
+expected_file: data/L1_tidy/swow_en_v1_tidy.csv
+format: csv
+pk: [cue, response]
+columns:
+  - {name: cue, type: string, required: true}
+  - {name: response, type: string, required: true}
+  - {name: strength, type: float, required: true}
+rules:
+  unique:
+    - [cue, response]
+  ranges:
+    strength: [0.0, 1.0]
+notes: "Strength normalized in [0,1]."

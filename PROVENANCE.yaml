@@ -1,0 +1,33 @@
+datasets:
+  - id: swow_en_v1
+    level: L0_raw
+    path: data/L0_raw/swow_en_v1.csv
+    sha256: ""
+    source: "Small World of Words (English) v1"
+    license: "CC BY 4.0"
+    reference: "https://smallworldofwords.org/"
+  - id: zuco_v2
+    level: L0_raw
+    path: data/L0_raw/zuco_v2.csv
+    sha256: ""
+    source: "Zurich Cognitive Language Processing Corpus (ZuCo) v2"
+    license: "CC BY 4.0"
+    reference: "https://osf.io/q3zws/"
+  - id: swow_en_v1_tidy
+    level: L1_tidy
+    path: data/L1_tidy/swow_en_v1_tidy.csv
+    sha256: ""
+    transform_scripts:
+      - scripts/tidy_swow_en.py
+  - id: zuco_v2_tidy
+    level: L1_tidy
+    path: data/L1_tidy/zuco_v2_tidy.csv
+    sha256: ""
+    transform_scripts:
+      - scripts/tidy_zuco.py
+  - id: ag5_kec_metrics
+    level: L2_derived
+    path: data/L2_derived/ag5_kec_metrics.csv
+    sha256: ""
+    transform_scripts:
+      - scripts/compute_ag5_kec.py

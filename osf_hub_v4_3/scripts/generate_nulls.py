@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 from pathlib import Path
-import os, sys, time, json, math
-import numpy as np
+import os
+import sys
+import time
+import json
 import pandas as pd
 import yaml
 
@@ -44,26 +46,31 @@ def main():
     # Prepare reading/EEG processed merge (official)
     proc_merged = repo_root / "data/processed/zuco_kec_merged.csv"
     if not proc_merged.exists():
-        raise SystemExit("Processed merged dataset not found: data/processed/zuco_kec_merged.csv")
+        msg = (
+            "Processed merged dataset not found: "
+            "data/processed/zuco_kec_merged.csv"
+        )
+        raise SystemExit(msg)
     merged_df = pd.read_csv(proc_merged)
 
     # Aggregate to sentence level for outcomes and KEC terms
     keys = [c for c in ["Subject", "SentenceID"] if c in merged_df.columns]
     out_candidates = [c for c in ["FFD", "GD", "TRT", "GPT"] if c in merged_df.columns]
-    k_cols = [c for c in ["entropy", "curvature", "coherence"] if c in merged_df.columns]
+    k_cols = [
+        c for c in ["entropy", "curvature", "coherence"] if c in merged_df.columns
+    ]
     if not keys or not out_candidates or not k_cols:
-        raise SystemExit("Processed merge missing required columns (Subject/SentenceID/outcomes/kec terms)")
-    agg = (
-        merged_df.groupby(keys, dropna=False)
-        .agg({**{o: "mean" for o in out_candidates}, **{k: "mean" for k in k_cols}})
-        .reset_index()
-    )
+        err = (
+            "Processed merge missing required columns "
+            "(Subject/SentenceID/outcomes/kec terms)"
+        )
+        raise SystemExit(err)
+    # Aggregate (computed on the fly per null instead)
 
     # Null settings
     N, seed = read_provenance_counts(base_dir)
-    rng = np.random.default_rng(seed)
 
-    # Iterate nulls: rewire directed graph with degree-preserving swaps, compute metrics, OLS per outcome
+    # Iterate nulls: rewire graph (degree-preserving), compute metrics, OLS per outcome
     import statsmodels.formula.api as smf
     rows = []
     m = g0.ecount()
@@ -77,11 +84,21 @@ def main():
             pass
         dfk = compute_kec_metrics(gi)
         dfk["token_norm"] = dfk["name"].astype(str).map(token_norm)
-        # Merge node-level KEC with token-level processed merge, then aggregate to sentence-level
-        tok = merged_df.merge(dfk[["token_norm", *k_cols]], on="token_norm", how="left")
-        gsent = tok.groupby(keys, dropna=False).agg({**{o: "mean" for o in out_candidates}, **{k: "mean" for k in k_cols}}).reset_index()
+        # Replace original KEC terms with null KEC by dropping them before merge
+        left = merged_df.drop(columns=k_cols, errors="ignore")
+        tok = left.merge(dfk[["token_norm", *k_cols]], on="token_norm", how="left")
+        agg_dict = {
+            **{o: "mean" for o in out_candidates},
+            **{k: "mean" for k in k_cols},
+        }
+        gsent = (
+            tok.groupby(keys, dropna=False)
+            .agg(agg_dict)
+            .reset_index()
+        )
         for outcome in out_candidates:
-            sub = gsent[[outcome, *k_cols]].dropna(subset=[outcome])
+            sub = gsent[[outcome, *k_cols]].copy()
+            sub = sub.dropna(subset=[outcome, *k_cols])
             if sub.empty:
                 continue
             rhs = " + ".join(k_cols)
@@ -103,10 +120,12 @@ def main():
         "seed": seed,
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
-    (results_dir / "nulls_meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+    (results_dir / "nulls_meta.json").write_text(
+        json.dumps(meta, indent=2),
+        encoding="utf-8",
+    )
     print(f"[OK] generate_nulls.py: wrote {out_csv}")
 
 
 if __name__ == "__main__":
     main()
-

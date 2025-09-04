@@ -1,0 +1,12 @@
+{
+  "upload_type": "software",
+  "title": "Symbolic Manifolds v4.3.2 — data crystallization patch",
+  "description": "Patch release focusing on data crystallization (L0→L1→L2), provenance, and reproducibility.",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.16533374",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    }
+  ]
+}
