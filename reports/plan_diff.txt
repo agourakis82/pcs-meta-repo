@@ -1,0 +1,198 @@
+--- a/CITATION.cff
++++ b/CITATION.cff
+@@ -1,6 +1,6 @@
+ cff-version: 1.2.0
+ message: "If you use this work, please cite it as below."
+-title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
++title: "Symbolic Manifolds v4.3.2 — data crystallization patch"
+ version: "v4.3.2"
+ date-released: "2025-09-04"
+ doi: "10.5281/zenodo.17053446"
+@@ -8,11 +8,12 @@
+ license: MIT
+ authors:
+   - family-names: "Agourakis"
+-    given-names: "Demetrios"
++    given-names: "Demetrios Chiuratto"
+     email: "demetrios@agourakis.med.br"
+     orcid: "https://orcid.org/0000-0002-8596-5097"
+-  - name: "Dionisio Chiuratto Agourakis"
+-    affiliation: "Data Science & AI collaborator"
++  - family-names: "Agourakis"
++    given-names: "Dionisio Chiuratto"
++    orcid: "https://orcid.org/0009-0000-4863-9143"
+ identifiers:
+   - type: doi
+     value: "10.5281/zenodo.17053446"
+@@ -26,17 +27,21 @@
+   - symbolic cognition
+   - SWOW
+   - semantic networks
++  - fractal
++  - entropy
+ abstract: >
+   PCS Meta-Repo with unified notebooks, loaders and analysis for ZuCo (ET/EEG)
+   and SWOW/KEC metrics. Includes CI-executable pipelines, QA reports and H* validator.
+ preferred-citation:
+   type: software
+-  title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
++  title: "Symbolic Manifolds v4.3.2 — data crystallization patch"
+   authors:
+     - family-names: "Agourakis"
+-      given-names: "Demetrios"
++      given-names: "Demetrios Chiuratto"
+       orcid: "https://orcid.org/0000-0002-8596-5097"
+-    - name: "Dionisio Chiuratto Agourakis"
++    - family-names: "Agourakis"
++      given-names: "Dionisio Chiuratto"
++      orcid: "https://orcid.org/0009-0000-4863-9143"
+   version: "v4.3.2"
+   doi: "10.5281/zenodo.17053446"
+   date-released: "2025-09-04"
+
+--- a/metadata.yaml
++++ b/metadata.yaml
+@@ -1,10 +1,13 @@
+ ---
+-title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
++title: "Symbolic Manifolds v4.3.2 — data crystallization patch"
+ authors:
+-  - name: "Demetrios Agourakis"
++  - name: "Demetrios Chiuratto Agourakis"
+     affiliation: "PCS Project"
+     email: "demetrios@agourakis.med.br"
+     orcid: "0000-0002-8596-5097"
++  - name: "Dionisio Chiuratto Agourakis"
++    affiliation: "Independent Researcher (to be confirmed)"
++    orcid: "0009-0000-4863-9143"
+ description: >-
+   Meta-repository consolidating loaders, notebooks, and analysis for ZuCo (ET/EEG)
+   and SWOW/KEC metrics, with QA automation and reproducibility scaffolding.
+@@ -14,6 +17,8 @@
+   - symbolic cognition
+   - SWOW
+   - semantic networks
++  - fractal
++  - entropy
+ language: "en"
+ license: "CC-BY-4.0"
+ version: "v4.3.2"
+
+--- a/.zenodo.json
++++ b/.zenodo.json
+@@ -4,10 +4,30 @@
+   "description": "Patch release focusing on data crystallization (L0→L1→L2), provenance, and reproducibility.",
+   "version": "v4.3.2",
+   "creators": [
+-    {"name": "Chiuratto Agourakis, Demetrios", "orcid": "0000-0002-8596-5097"},
+-    {"name": "Chiuratto Agourakis, Dionisio"}
++    {
++      "name": "Chiuratto Agourakis, Demetrios",
++      "orcid": "0000-0002-8596-5097"
++    },
++    {
++      "name": "Chiuratto Agourakis, Dionisio",
++      "orcid": "0009-0000-4863-9143"
++    }
++  ],
++  "license": "cc-by-4.0",
++  "language": "eng",
++  "communities": [
++    {
++      "identifier": "scpsy"
++    },
++    {
++      "identifier": "fractal-science-intelligence"
++    }
+   ],
+   "related_identifiers": [
+-    {"identifier": "10.5281/zenodo.16921951", "relation": "isVersionOf", "scheme": "doi"}
++    {
++      "identifier": "10.5281/zenodo.16921951",
++      "relation": "isVersionOf",
++      "scheme": "doi"
++    }
+   ]
+ }
+
+--- a/zenodo.json
++++ b/zenodo.json
+@@ -7,13 +7,11 @@
+       "name": "Agourakis, Demetrios",
+       "affiliation": "PUC-SP; Faculdade São Leopoldo Mandic",
+       "orcid": "0000-0002-8596-5097"
+-    }
+-  ],
+-  "contributors": [
++    },
+     {
+-      "name": "Dionisio Chiuratto Agourakis",
+-      "type": "Other",
+-      "affiliation": "Data Science & AI collaborator"
++      "name": "Agourakis, Dionisio",
++      "affiliation": "Independent Researcher (to be confirmed)",
++      "orcid": "0009-0000-4863-9143"
+     }
+   ],
+   "keywords": [
+@@ -24,15 +22,21 @@
+     "EEG",
+     "eye-tracking",
+     "SWOW",
+-    "KEC"
++    "KEC",
++    "fractal",
++    "entropy"
+   ],
+   "language": "eng",
+   "communities": [
+-    { "identifier": "neuroscience" },
+-    { "identifier": "complex-systems" }
++    {
++      "identifier": "scpsy"
++    },
++    {
++      "identifier": "fractal-science-intelligence"
++    }
+   ],
+   "license": "cc-by-4.0",
+-  "version": "v2025.09.02",
++  "version": "v4.3.2",
+   "related_identifiers": [
+     {
+       "relation": "isSupplementTo",
+
+--- a/README.md
++++ b/README.md
+@@ -29,7 +29,7 @@
+ 
+ Please cite using the metadata in [CITATION.cff](CITATION.cff):
+ 
+-> Agourakis, D. PCS Meta-Repo — v4.3.2. DOI: [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446)
++> Agourakis, Demetrios Chiuratto; Agourakis, Dionisio Chiuratto. PCS Meta-Repo — v4.3.2. DOI: [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446)
+ 
+ For additional materials see the Zenodo concept record [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951).
+ 
+
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,6 +1,19 @@
+ # Changelog
+ 
+ ## [v4.3.2] — 2025-09-04
++### Changed
++
++* Synced metadata (CITATION.cff, metadata.yaml, zenodo.json, README badges) to v4.3.2 + version DOI.
++* Normalized authorship (added coauthor Dionisio C. Agourakis; ORCID/affiliation verified).
++
++### Added
++
++* `/reports/` QA artifacts (zenodo verification, authors crosswalk, web evidence, linkcheck, inventory).
++
++### Fixed
++
++* Broken/placeholder links; terminology/keywords alignment across files.
++
+ 
+ ### Changed
+ 

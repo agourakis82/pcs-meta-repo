@@ -1,0 +1,105 @@
+{
+  "mode": "dry-run",
+  "timestamp": "2025-09-04T22:25:17.753928Z",
+  "apply_branch": "chore/v4.3.2-authorship-sync",
+  "discovery": {
+    "files": {
+      "README.md": true,
+      "CITATION.cff": true,
+      "metadata.yaml": true,
+      "zenodo.json": true,
+      ".zenodo.json": true,
+      "CHANGELOG.md": true,
+      "LICENSE": true,
+      "CONTRIBUTING.md": true,
+      "CODE_OF_CONDUCT.md": true,
+      "QUALITY_GATES.md": true,
+      ".github/PULL_REQUEST_TEMPLATE.md": true
+    },
+    "dirs": {
+      "docs": true,
+      "src": true,
+      "notebooks": true,
+      "data/raw_public": true,
+      "data/processed": true,
+      "figures": true,
+      "manuscripts": true,
+      "reports": true,
+      "tools": true
+    }
+  },
+  "zenodo_verification": {
+    "found": true,
+    "concept_doi_expected": "10.5281/zenodo.16533374",
+    "concept_doi_actual": "10.5281/zenodo.16921951",
+    "version": "v4.3.2",
+    "publication_date": "2025-09-04",
+    "version_doi": "10.5281/zenodo.17053446",
+    "title": "Symbolic Manifolds v4.3.2 — data crystallization patch",
+    "creators": [
+      {
+        "name": "Chiuratto Agourakis, Demetrios",
+        "affiliation": "Faculdade São Leopoldo Mandic",
+        "orcid": "0009-0001-8671-8878"
+      },
+      {
+        "name": "Chiuratto Agourakis, Dionisio",
+        "affiliation": null
+      }
+    ],
+    "communities": [
+      {
+        "id": "scpsy"
+      },
+      {
+        "id": "fractal-science-intelligence"
+      }
+    ]
+  },
+  "coauthor_discovery": {
+    "name_full": "Dionisio Chiuratto Agourakis",
+    "orcid": "0009-0000-4863-9143",
+    "affiliation": "Independent Researcher (to be confirmed)",
+    "evidence": [
+      {
+        "title": "ORCID Record",
+        "url": "https://orcid.org/0009-0000-4863-9143"
+      },
+      {
+        "title": "Zenodo creators (v4.3.2)",
+        "url": "https://doi.org/10.5281/zenodo.17053446"
+      }
+    ]
+  },
+  "authors_crosswalk_summary": {
+    "CITATION.cff_authors": "2 (Demetrios; Dionisio [no ORCID])",
+    "metadata.yaml_authors": "1 (Demetrios only)",
+    ".zenodo.json_creators": "2 (Demetrios+Dionisio)",
+    "zenodo.json_creators": "1 creator (Demetrios) + 1 contributor (Dionisio)",
+    "zenodo_api_creators": "2 (Demetrios ORCID=0009-0001-8671-8878; Dionisio none)"
+  },
+  "proposed_changes": [
+    "CITATION.cff",
+    "metadata.yaml",
+    ".zenodo.json",
+    "zenodo.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "notes": [
+    "Titles aligned to Zenodo v4.3.2 record",
+    "Add Dionisio as coauthor with ORCID (if confirmed)",
+    "Keep concept DOI as currently set due to mismatch with provided authoritative DOI"
+  ],
+  "blockers": [
+    {
+      "id": "concept-doi-mismatch",
+      "severity": "hard",
+      "expected_concept_doi": "10.5281/zenodo.16533374",
+      "actual_concept_doi_candidates": [
+        "10.5281/zenodo.16921951"
+      ],
+      "message": "Zenodo query for concept DOI 10.5281/zenodo.16533374 returned 0 hits; v4.3.2 found under concept 10.5281/zenodo.16921951."
+    }
+  ]
+}

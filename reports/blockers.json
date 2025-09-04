@@ -1,4 +1,18 @@
 {
-  "blocker": "Zenodo version v4.3.2 not found under concept DOI 10.5281/zenodo.16533374",
-  "remediation": "Publish v4.3.2 on Zenodo (using the concept DOI) or provide the exact version DOI; then rerun."
+  "blockers": [
+    {
+      "id": "concept-doi-mismatch",
+      "severity": "hard",
+      "expected_concept_doi": "10.5281/zenodo.16533374",
+      "actual_concept_doi_candidates": [
+        "10.5281/zenodo.16921951"
+      ],
+      "message": "Zenodo query for concept DOI 10.5281/zenodo.16533374 returned 0 hits; v4.3.2 found under concept 10.5281/zenodo.16921951."
+    }
+  ],
+  "remediation": [
+    "Confirm the correct Concept DOI in Zenodo (is 10.5281/zenodo.16921951 canonical?).",
+    "If 10.5281/zenodo.16533374 is intended, ensure the v4.3.2 deposit is under that concept; otherwise update authoritative context to 10.5281/zenodo.16921951.",
+    "Once resolved, re-run Apply to write metadata and reports."
+  ]
 }

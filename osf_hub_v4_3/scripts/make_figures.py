@@ -36,6 +36,19 @@ def main():
         print("[OK] make_figures.py: copied processed F2_/F3_ figures.")
         return
 
+    # Helper: consistent scatter styling and multi-format save
+    def save_multi(figpath_png: Path, fig):
+        figpath_png.parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(figpath_png, dpi=180, bbox_inches="tight")
+        fig.savefig(figpath_png.with_suffix(".pdf"), bbox_inches="tight")
+        fig.savefig(figpath_png.with_suffix(".svg"), bbox_inches="tight")
+
+    def style_axes(ax, title: str, xlabel: str, ylabel: str):
+        ax.grid(True, axis="both", linestyle="--", alpha=0.35, zorder=0)
+        ax.set_title(title)
+        ax.set_xlabel(xlabel)
+        ax.set_ylabel(ylabel)
+
     # Load modeled sentence-level data if available; otherwise, draw simple placeholders
     zuco_csv = base_dir / "results" / "zuco_aligned.csv"
     kec_csv = base_dir / "results" / "kec_metrics.csv"
@@ -63,48 +76,67 @@ def main():
         merged_sent = (
             agg.dropna(subset=["TRT", "z_kec"]).reset_index()
         )
-        # F2: Reading vs KEC
-        plt.figure(figsize=(5, 4))
-        x, y = merged_sent["z_kec"], merged_sent["TRT"]
-        plt.scatter(x, y, s=8, alpha=0.5)
+        # F2: Reading vs KEC (styled)
+        fig, ax = plt.subplots(figsize=(6, 4))
+        x, y = merged_sent["z_kec"].astype(float), merged_sent["TRT"].astype(float)
+        ax.scatter(x, y, s=10, alpha=0.55, color="#1f77b4", edgecolor="none", zorder=2)
+        r2_txt = ""
         if len(x) > 1:
-            coef = np.polyfit(x.fillna(0), y.fillna(0), 1)
-            xx = np.linspace(x.min(), x.max(), 50)
+            xm, ym = np.nanmean(x), np.nanmean(y)
+            # simple least squares fit and R^2
+            coef = np.polyfit(x.fillna(xm), y.fillna(ym), 1)
+            xx = np.linspace(np.nanmin(x), np.nanmax(x), 100)
             yy = coef[0] * xx + coef[1]
-            plt.plot(xx, yy, color="red", linewidth=1)
-        plt.xlabel("z(KEC)")
-        plt.ylabel("Sentence-level TRT (mean)")
-        plt.tight_layout()
-        plt.savefig(f2_path, dpi=150)
-        plt.close()
+            ax.plot(xx, yy, color="#ff7f0e", linewidth=1.5, zorder=3)
+            # R^2
+            yhat = coef[0]*x + coef[1]
+            ss_res = np.nansum((y - yhat)**2)
+            ss_tot = np.nansum((y - np.nanmean(y))**2)
+            r2 = 1 - ss_res/ss_tot if ss_tot != 0 else 0.0
+            r2_txt = f"  (R²={r2:.2f})"
+        style_axes(ax, f"Reading vs KEC{r2_txt}", "z(KEC)", "Sentence-level TRT (mean)")
+        fig.tight_layout()
+        save_multi(f2_path, fig)
+        # Also save in repo root for convenience
+        root_fig_dir = repo_root / "figures/metrics"
+        root_fig_dir.mkdir(parents=True, exist_ok=True)
+        save_multi(root_fig_dir / "F2_reading_vs_KEC.png", fig)
+        plt.close(fig)
 
-        # F3: EEG theta/alpha vs KEC (two subplots if available)
-        plt.figure(figsize=(8, 4))
+        # F3: EEG theta/alpha vs KEC (two subplots, styled)
+        fig = plt.figure(figsize=(8, 4))
         bands = [("theta1", "Theta"), ("alpha1", "Alpha")]
         for i, (col, title) in enumerate(bands, start=1):
-            plt.subplot(1, 2, i)
+            ax = plt.subplot(1, 2, i)
             if col in merged_sent.columns and merged_sent[col].notna().any():
-                x, y = merged_sent["z_kec"], merged_sent[col]
-                plt.scatter(x, y, s=8, alpha=0.5)
+                x, y = merged_sent["z_kec"].astype(float), merged_sent[col].astype(float)
+                ax.scatter(x, y, s=10, alpha=0.55, color="#1f77b4", edgecolor="none", zorder=2)
+                r2_txt = ""
                 if len(x) > 1:
-                    coef = np.polyfit(x.fillna(0), y.fillna(0), 1)
-                    xx = np.linspace(x.min(), x.max(), 50)
-                    yy = coef[0] * xx + coef[1]
-                    plt.plot(xx, yy, color="red", linewidth=1)
-                plt.ylabel(f"Sentence-level {title}")
+                    xm, ym = np.nanmean(x), np.nanmean(y)
+                    coef = np.polyfit(x.fillna(xm), y.fillna(ym), 1)
+                    xx = np.linspace(np.nanmin(x), np.nanmax(x), 100)
+                    yy = coef[0]*xx + coef[1]
+                    ax.plot(xx, yy, color="#ff7f0e", linewidth=1.5, zorder=3)
+                    yhat = coef[0]*x + coef[1]
+                    ss_res = np.nansum((y - yhat)**2)
+                    ss_tot = np.nansum((y - np.nanmean(y))**2)
+                    r2 = 1 - ss_res/ss_tot if ss_tot != 0 else 0.0
+                    r2_txt = f"  (R²={r2:.2f})"
+                style_axes(ax, f"{title} vs KEC{r2_txt}", "z(KEC)", f"Sentence-level {title}")
             else:
-                plt.text(
+                ax.text(
                     0.5,
                     0.5,
                     f"No {title} data",
                     ha="center",
                     va="center",
                 )
-            plt.xlabel("z(KEC)")
-            plt.title(f"{title} vs KEC")
-        plt.tight_layout()
-        plt.savefig(f3_path, dpi=150)
-        plt.close()
+            ax.set_xlabel("z(KEC)")
+        fig.tight_layout()
+        save_multi(f3_path, fig)
+        save_multi((repo_root/"figures/metrics"/"F3_EEG_vs_KEC.png"), fig)
+        plt.close(fig)
         print("[OK] make_figures.py: generated F2_/F3_ from aligned data.")
     except Exception as e:
         # Fallback: minimal empty figures to satisfy gates

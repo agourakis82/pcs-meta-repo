@@ -31,8 +31,8 @@
   },
   {
     "relative_path": ".gitattributes",
-    "size_bytes": 315,
-    "sha256": "13ec512a4016711bc5d591a8555d3499c3b6d96fe00202948f3d04e100f4f35b"
+    "size_bytes": 360,
+    "sha256": "d32ee3e532e68aafebb71999e1808bb94f09952b008477a2173303aed32e2905"
   },
   {
     "relative_path": ".github/CODEOWNERS",
@@ -76,8 +76,8 @@
   },
   {
     "relative_path": ".github/workflows/ci-validate.yml",
-    "size_bytes": 1714,
-    "sha256": "be0ff8b8692ab4b8baf46c68693e60f88d7531c107a5eb042b39ac3c655dbf06"
+    "size_bytes": 2558,
+    "sha256": "9dc07a0a84e093f2b91d8897300e6517da70f9bacd9bed58222e437bf57193ec"
   },
   {
     "relative_path": ".github/workflows/ci-yaml.yml",
@@ -86,13 +86,13 @@
   },
   {
     "relative_path": ".github/workflows/ci.yml",
-    "size_bytes": 4317,
-    "sha256": "086e56c08df8f2be8d4139fbe54a34b11f0d17e9f6cd0d5944992b7bc8c8bfab"
+    "size_bytes": 4734,
+    "sha256": "c1870703f43139e2a796e3c69196848365f43eaa837b77a2df27b5b8070bbe8b"
   },
   {
     "relative_path": ".github/workflows/kec_zuco_validation.yml",
-    "size_bytes": 1182,
-    "sha256": "f9faa80ba767c333a0344e9faf17ff676b1fa71a441593c05204fcab25a0f4d3"
+    "size_bytes": 1378,
+    "sha256": "70427db32be8c8bf481100f155680129d1c8d10c8be83e76445f792d19ddacdf"
   },
   {
     "relative_path": ".github/workflows/latex.yml",
@@ -101,23 +101,23 @@
   },
   {
     "relative_path": ".github/workflows/pipeline_v43.yml",
-    "size_bytes": 1165,
-    "sha256": "3f1bc0eb6852e1c64f42a5efca510e2c68cb13912e6f8dabd4dbe6eb2c21e2b4"
+    "size_bytes": 1173,
+    "sha256": "7f5923fbd3363d3993321240f2bd4c406f9ab05df94be3318e9dca4053c80c8f"
   },
   {
     "relative_path": ".github/workflows/python-tests.yml",
-    "size_bytes": 1294,
-    "sha256": "13dfa499cc9ccac1512ecdff895b55b5277a4da42a7b4ff1cf08d81424770efe"
+    "size_bytes": 1189,
+    "sha256": "286c7acd878ea48b624c8333348416af4f7bc87ee12496cb7aa741bde2575231"
   },
   {
     "relative_path": ".github/workflows/python.yml",
-    "size_bytes": 935,
-    "sha256": "24eee15e99acf6aa6e2032aa5c5359650488a12ad0165e1080aa7ee329fcdccf"
+    "size_bytes": 1174,
+    "sha256": "808bc01fb9d874675cc04114904f38ebc5620e80cbd38b0d1703752d8a361c31"
   },
   {
     "relative_path": ".github/workflows/qa.yml",
-    "size_bytes": 873,
-    "sha256": "e4263908cc83b57dc0cf078f85e26f79efc32b62e5326e30ab23f7912f89cddc"
+    "size_bytes": 1050,
+    "sha256": "00eeeb8cae91fcf139bb3bbbd360f0a697eae7c615a88d3764c29a33cba60ef8"
   },
   {
     "relative_path": ".github/workflows/release-drafter.yml",
@@ -276,8 +276,8 @@
   },
   {
     "relative_path": "CHANGELOG.md",
-    "size_bytes": 1623,
-    "sha256": "e240112e53da72b071ba88618e5b9625d6c11f342e5ed2c98d12f04c209e4dbd"
+    "size_bytes": 1691,
+    "sha256": "5dd7d918d830fe4cc7daa21e119c0651a42ee1b129c0c9a57ae98d332064c254"
   },
   {
     "relative_path": "CHANGELOG_v4.3.2.md",
@@ -301,8 +301,8 @@
   },
   {
     "relative_path": "CITATION.cff",
-    "size_bytes": 1019,
-    "sha256": "13b63c6dfc77a9ad8b5993eccf9067631bbd4d234abc9abd8946907a72315489"
+    "size_bytes": 1461,
+    "sha256": "a9854bf93776d496c94042e1a78b4c16429727b1c9fbf7d69e324cdbd36c0933"
   },
   {
     "relative_path": "CITATION_v4.3.2.cff",
@@ -386,13 +386,13 @@
   },
   {
     "relative_path": "QUALITY_GATES.md",
-    "size_bytes": 4219,
-    "sha256": "3264616fb68cb8058dd91de8e50e56891123550f711115e0c3287515826502e2"
+    "size_bytes": 3632,
+    "sha256": "243cc41e9f00548bb27f9f70c742d56a53ecaefa9ee2d94a4c45c25a43b44383"
   },
   {
     "relative_path": "README.md",
-    "size_bytes": 1738,
-    "sha256": "12cb59f3adf33cbca43ebdc16c5f2b9c7ddf24541bc09268479cb77008bcf474"
+    "size_bytes": 1995,
+    "sha256": "d2282bef749b176b597961fefecf1df7719458d6968050ab52821bdb9b6bfe21"
   },
   {
     "relative_path": "README_RAGPP.md",
@@ -7685,11 +7685,6 @@
     "sha256": "b952d24cf701bc4e7a7d21e1ae85c611824e80579a89836c0cb49b193446ccfe"
   },
   {
-    "relative_path": "data_release.tar.gz",
-    "size_bytes": 83030,
-    "sha256": "a50cdbd0a3dfd61e51804f7e87b0c014e2cf48e204f607c8dadf59ea3754c53a"
-  },
-  {
     "relative_path": "docs/INSTRUCOES_PROJETO.md",
     "size_bytes": 5483,
     "sha256": "220f5e826bd90b3b6efc7e9492e8c8dbeddcab68d9c0800fbad152a8e736afed"
@@ -7718,6 +7713,11 @@
     "relative_path": "docs/README_MASTER.md",
     "size_bytes": 2184,
     "sha256": "9a0b4f86cf85be1676c93658bef6f111f69268aa103186c5a720e1249344f8eb"
+  },
+  {
+    "relative_path": "docs/agentic_design_patterns.md",
+    "size_bytes": 1603,
+    "sha256": "c1a8f36ff1935c7112d5539ee05c987c99bfdba3eb97656081dd7c990fe1475e"
   },
   {
     "relative_path": "docs/fig_plan.md",
@@ -7926,13 +7926,13 @@
   },
   {
     "relative_path": "notebooks/01_swow_loader.ipynb",
-    "size_bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "size_bytes": 1342,
+    "sha256": "2530bee000c6630d23d0cd5953ecd382ddfb28294795f2beb8f667663a0c5eca"
   },
   {
     "relative_path": "notebooks/02_compute_kec_metrics.ipynb",
-    "size_bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "size_bytes": 1373,
+    "sha256": "ff068705328fa54e0a6d6eb27078ca7e36736a2ce39a997c25aef79e267f655b"
   },
   {
     "relative_path": "notebooks/02_kec_metrics.ipynb",
@@ -7946,8 +7946,8 @@
   },
   {
     "relative_path": "notebooks/03_zuco_loader.ipynb",
-    "size_bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "size_bytes": 1367,
+    "sha256": "14647eeee6b13b1622e4d820ecdba293b64bad964fbe7815b1780f1891ba3cc3"
   },
   {
     "relative_path": "notebooks/03_zuco_loader_v1v2.ipynb",
@@ -10415,6 +10415,11 @@
     "sha256": "c6bc88883d375ff560a08bb873d9eed24084c28fd1db387cbde4bc81d58c514a"
   },
   {
+    "relative_path": "reports/pcs_meta_repo_v4.3.2_audit.bundle",
+    "size_bytes": 94195552,
+    "sha256": "c661f500b86d5a7cf578f9670dc62922dc96ae1990f4d0956c5c23db11e94ea0"
+  },
+  {
     "relative_path": "reports/qa.json",
     "size_bytes": 2831,
     "sha256": "8edfdea43c4ece4d025bdb64258f125ceb67f13a456f915a1c55a79a02196e57"
@@ -10431,13 +10436,13 @@
   },
   {
     "relative_path": "reports/repo_inventory_v4.3.2.csv",
-    "size_bytes": 537920,
-    "sha256": "6421daef564c524fd99ba60b304eded69f8dac9662280aea5b9e759994fd7c88"
+    "size_bytes": 535836,
+    "sha256": "7ac07deae1977cd9d9a69dba83906d6951bf5d0131038cfe1f76794dc6439b79"
   },
   {
     "relative_path": "reports/repo_inventory_v4.3.2.json",
-    "size_bytes": 781876,
-    "sha256": "099296d8648b29d784263e3d32d0e0bb03bcef4a687e6e53dfacd72a6a7e1ff3"
+    "size_bytes": 784386,
+    "sha256": "447c5bd4bcf8a0d98060d3366e5b5b603d1e1415e7921460e6110ac235cf62c4"
   },
   {
     "relative_path": "reports/report.md",
@@ -10458,6 +10463,11 @@
     "relative_path": "reports/zenodo_query_raw_v4.3.2.json",
     "size_bytes": 456,
     "sha256": "ce1dae36b7fc1bcd17ebc8896d0526f5683a92d545b4e50dac74677e44ad8667"
+  },
+  {
+    "relative_path": "reports/zenodo_v4.3.2.json",
+    "size_bytes": 229,
+    "sha256": "8bf096db41b65dd58e30ee57df95c483d0fc9e23d33f328143430f3de2fa249a"
   },
   {
     "relative_path": "reports/zuco_loader_qa.json",
@@ -18221,8 +18231,8 @@
   },
   {
     "relative_path": "tools/stepC_inject_doi.sh",
-    "size_bytes": 1908,
-    "sha256": "e238a671c6004b224f73fe95f35687fff3e1a3b622a103a778bcf43515dbe830"
+    "size_bytes": 964,
+    "sha256": "daff1463c289c8c5deae0b62781d4a6b2a5b59ca1d311db631d713fb5d4a1e66"
   },
   {
     "relative_path": "tools/stepD_watch_doi.sh",

@@ -33,6 +33,16 @@ Please cite using the metadata in [CITATION.cff](CITATION.cff):
 
 For additional materials see the Zenodo concept record [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951).
 
+### DOI (Extended Memory consolidation)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16533374.svg)](https://doi.org/10.5281/zenodo.16533374)
+
+Nota: a versão v4.3 unifica e substitui a v4.2 do artefato “Extended Memory — PhD & Publication Plan (Brazil)”.
+
+- Cite v4.3: [10.5281/zenodo.16921952](https://doi.org/10.5281/zenodo.16921952)
+- Versão anterior (arquivada) v4.2: [10.5281/zenodo.16682784](https://doi.org/10.5281/zenodo.16682784)
+
+
 ## Repository structure
 
 - docs: documentation and specs

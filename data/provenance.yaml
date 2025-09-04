@@ -1,0 +1,25 @@
+datasets:
+- name: swow
+  source_url: "<to-be-added>"
+  license: "<to-be-verified>"
+  ingest_date: "2025-09-04"
+  raw_dir: "data/raw_public/swow/<lang>/"
+  checksum_method: "sha256"
+  files: []
+  etl_scripts:
+    - notebooks/01_swow_loader.ipynb
+- name: zuco
+  source_url: "<to-be-added>"
+  license: "CC BY-NC-SA 4.0"
+  ingest_date: "2025-09-04"
+  raw_dir: "data/raw_public/zuco/v{1,2}/"
+  checksum_method: "sha256"
+  files: []
+  etl_scripts:
+    - notebooks/03_zuco_loader.ipynb
+env_pins:
+  python: "3.11"
+packages:
+  numpy: "1.26.*"
+  pandas: "2.2.*"
+
