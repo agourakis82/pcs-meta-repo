@@ -244,7 +244,10 @@ EOF
     cat > scripts/compute_checksums.py <<'EOF'
 #!/usr/bin/env python3
 import os, sys, hashlib, csv, time
-import yaml
+try:
+    import yaml  # optional
+except Exception:
+    yaml = None
 
 ROOT = os.path.abspath(os.getcwd())
 CHECKS_DIR = os.path.join(ROOT, 'data', 'CHECKS')
@@ -281,6 +284,9 @@ def collect_files():
 def update_provenance(checksums):
     prov_path = os.path.join(ROOT, 'PROVENANCE.yaml')
     if not os.path.isfile(prov_path):
+        return
+    if yaml is None:
+        print("[checksum] INFO: PyYAML not available; skipping provenance update")
         return
     try:
         with open(prov_path, 'r', encoding='utf-8') as f:
@@ -332,8 +338,20 @@ EOF
     cat > scripts/validate_contracts.py <<'EOF'
 #!/usr/bin/env python3
 import os, sys, json, math
-import pandas as pd
 import yaml
+
+_PD = None
+
+def _get_pd():
+    global _PD
+    if _PD is not None:
+        return _PD
+    try:
+        import pandas as pd  # noqa: F401
+        _PD = pd
+        return _PD
+    except Exception:
+        return None
 
 ROOT = os.path.abspath(os.getcwd())
 CONTRACTS_DIR = os.path.join(ROOT, 'data', 'CONTRACTS')
@@ -341,6 +359,9 @@ CHECKS_DIR = os.path.join(ROOT, 'data', 'CHECKS')
 os.makedirs(CHECKS_DIR, exist_ok=True)
 
 def read_df(path, fmt=None):
+    pd = _get_pd()
+    if pd is None:
+        raise RuntimeError('pandas not available')
     ext = (fmt or os.path.splitext(path)[1].lstrip('.')).lower()
     if ext in ('csv', ''):
         return pd.read_csv(path)
@@ -368,7 +389,8 @@ def check_ranges(series, lo, hi):
     return issues
 
 def coerce_float(series):
-    return pd.to_numeric(series, errors='coerce')
+    pd = _get_pd()
+    return pd.to_numeric(series, errors='coerce') if pd is not None else series
 
 def validate_contract(contract_path):
     with open(contract_path, 'r', encoding='utf-8') as f:
@@ -388,6 +410,11 @@ def validate_contract(contract_path):
         return result
 
     try:
+        pd = _get_pd()
+        if pd is None:
+            result['issues'].append('pandas not available; skipping detailed validation')
+            result['status'] = 'SKIPPED'
+            return result
         df = read_df(path, fmt)
         result['stats'] = {'rows': int(df.shape[0]), 'cols': int(df.shape[1])}
         # required columns
@@ -737,7 +764,7 @@ git_and_tag() {
       CHANGELOG_v4.3.2.md RELEASE_NOTES_v4.3.2.md CITATION_v4.3.2.cff \
       metadata_v4.3.2.yaml zenodo_v4.3.2.json PROVENANCE.yaml DATA_DICTIONARY.md \
       QUALITY_GATES.md Makefile .gitattributes \
-      data/CONTRACTS/*.yml scripts/*.py data/CHECKS/* || true
+      data/CONTRACTS/*.yml scripts/*.py data/CHECKS/* tools/release_4.3.2_fast.sh || true
     git commit -m "chore(release): v4.3.2 — data crystallization (L0→L1→L2) + provenance, contracts, validations" || echo "[release] WARN: git commit failed or nothing to commit"
     git tag -a v4.3.2 -m "v4.3.2" || echo "[release] WARN: git tag might already exist"
 

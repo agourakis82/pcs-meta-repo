@@ -1,5 +1,5 @@
 SHELL := bash
-.PHONY: init checksum validate package freeze
+.PHONY: init checksum validate linkcheck package freeze
 
 init:
 	@mkdir -p data/L0_raw data/L1_tidy data/L2_derived data/LICENSES data/CONTRACTS data/CHECKS scripts
@@ -10,6 +10,9 @@ checksum:
 
 validate:
 	@if [ -f scripts/validate_contracts.py ]; then python3 scripts/validate_contracts.py; else echo "[make] INFO: scripts/validate_contracts.py not found; skipping"; fi
+
+linkcheck:
+	@if [ -f scripts/linkcheck_local.py ]; then python3 scripts/linkcheck_local.py; else echo "[make] INFO: scripts/linkcheck_local.py not found; skipping"; fi
 
 package:
 	@echo "[make] packaging data_release.tar.gz (excluding data/L0_raw)"
@@ -22,4 +25,4 @@ package:
 		scripts/*.py 2>/dev/null || echo "[make] WARN: some files missing; packaged what was available"
 	@echo "[make] packaged data_release.tar.gz"
 
-freeze: checksum validate package
+freeze: checksum validate linkcheck package
