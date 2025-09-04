@@ -70,16 +70,16 @@ def main():
             {
                 'person_or_org': {
                     'type': 'personal',
-                    'given_name': 'Demetrios C.',
-                    'family_name': 'Agourakis',
+                    'given_name': 'Demetrios',
+                    'family_name': 'Chiuratto Agourakis',
                     'identifiers': [{'scheme': 'orcid', 'identifier': '0000-0002-8596-5097'}]
                 }
             },
             {
                 'person_or_org': {
                     'type': 'personal',
-                    'given_name': 'Dionisio Chiuratto',
-                    'family_name': 'Agourakis'
+                    'given_name': 'Dionisio',
+                    'family_name': 'Chiuratto Agourakis'
                 }
             }
         ],
@@ -131,4 +131,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

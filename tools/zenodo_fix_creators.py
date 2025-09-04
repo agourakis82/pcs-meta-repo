@@ -95,8 +95,8 @@ def main():
         {
             'person_or_org': {
                 'type': 'personal',
-                'given_name': 'Demetrios C.',
-                'family_name': 'Agourakis',
+                'given_name': 'Demetrios',
+                'family_name': 'Chiuratto Agourakis',
                 'identifiers': [
                     {'scheme': 'orcid', 'identifier': '0000-0002-8596-5097'}
                 ]
@@ -105,8 +105,8 @@ def main():
         {
             'person_or_org': {
                 'type': 'personal',
-                'given_name': 'Dionisio Chiuratto',
-                'family_name': 'Agourakis'
+                'given_name': 'Dionisio',
+                'family_name': 'Chiuratto Agourakis'
             }
         }
     ]
@@ -143,22 +143,22 @@ def main():
                             {
                                 'person_or_org': {
                                     'type': 'personal',
-                                    'given_name': 'Demetrios C.',
-                                    'family_name': 'Agourakis',
+                                    'given_name': 'Demetrios',
+                                    'family_name': 'Chiuratto Agourakis',
                                     'identifiers': [ {'scheme': 'orcid', 'identifier': '0000-0002-8596-5097'} ],
                                 }
                             },
                             {
                                 'person_or_org': {
                                     'type': 'personal',
-                                    'given_name': 'Dionisio Chiuratto',
-                                    'family_name': 'Agourakis'
+                                    'given_name': 'Dionisio',
+                                    'family_name': 'Chiuratto Agourakis'
                                 }
                             }
                         ]
                         creators_deposit = [
-                            { 'name': 'Agourakis, Demetrios C.', 'orcid': '0000-0002-8596-5097' },
-                            { 'name': 'Agourakis, Dionisio Chiuratto' }
+                            { 'name': 'Chiuratto Agourakis, Demetrios', 'orcid': '0000-0002-8596-5097' },
+                            { 'name': 'Chiuratto Agourakis, Dionisio' }
                         ]
                         # Decide on schema: prefer RDM
                         if use_rdm:
