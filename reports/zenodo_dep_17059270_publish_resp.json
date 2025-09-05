@@ -1,0 +1,12 @@
+{
+  "status": 400,
+  "message": "A validation error occurred.",
+  "errors": [
+    {
+      "field": "metadata.creators.0.person_or_org.identifiers.0.identifier",
+      "messages": [
+        "Invalid ORCID identifier."
+      ]
+    }
+  ]
+}

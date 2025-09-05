@@ -15,7 +15,7 @@ authors:
     orcid: "https://orcid.org/0009-0000-4863-9143"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.16533373"
+    value: "10.5281/zenodo.17059270"
   - type: url
     value: "https://github.com/agourakis82/pcs-meta-repo"
 repository-code: "https://github.com/agourakis82/pcs-meta-repo"
@@ -40,6 +40,6 @@ preferred-citation:
       given-names: "Dionisio Chiuratto"
       orcid: "https://orcid.org/0009-0000-4863-9143"
   version: "v4.3.2.2"
-  doi: "10.5281/zenodo.16533373"
-  date-released: "2025-09-05"
+  doi: "10.5281/zenodo.17059270"
+  date-released: "2025-09-04"
   url: "https://github.com/agourakis82/pcs-meta-repo"

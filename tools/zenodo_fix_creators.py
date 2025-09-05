@@ -136,41 +136,16 @@ def main():
                             print(f"[zenodo-fix] ERROR fetching new draft: {code3} {newdetail}")
                             sys.exit(4)
                         new_md = newdetail.get('metadata') or {}
-                        # Heuristic: use RDM-style creators if keys present, else deposit style
-                        use_rdm = True
-                        # Prepare both creator formats
-                        creators_rdm = [
-                            {
-                                'person_or_org': {
-                                    'type': 'personal',
-                                    'given_name': 'Demetrios',
-                                    'family_name': 'Chiuratto Agourakis',
-                                    'identifiers': [ {'scheme': 'orcid', 'identifier': '0000-0002-8596-5097'} ],
-                                }
-                            },
-                            {
-                                'person_or_org': {
-                                    'type': 'personal',
-                                    'given_name': 'Dionisio',
-                                    'family_name': 'Chiuratto Agourakis'
-                                }
-                            }
-                        ]
+                        # Prepare deposit creator format
                         creators_deposit = [
                             { 'name': 'Chiuratto Agourakis, Demetrios', 'orcid': '0000-0002-8596-5097' },
                             { 'name': 'Chiuratto Agourakis, Dionisio' }
                         ]
-                        # Decide on schema: prefer RDM
-                        if use_rdm:
-                            new_md['creators'] = creators_rdm
-                            # Ensure RDM resource_type
-                            if not isinstance(new_md.get('resource_type'), dict):
-                                new_md['resource_type'] = {'type': 'software'}
-                        else:
-                            new_md['creators'] = creators_deposit
-                            new_md['upload_type'] = 'software'
-                            if 'resource_type' in new_md:
-                                new_md.pop('resource_type', None)
+                        # Use deposit-style creators for new drafts to avoid validation issues
+                        new_md['creators'] = creators_deposit
+                        new_md['upload_type'] = 'software'
+                        if 'resource_type' in new_md:
+                            new_md.pop('resource_type', None)
                         ensure_related_identifiers(new_md)
                         # Remove dates if present and potentially invalid
                         if 'dates' in new_md:

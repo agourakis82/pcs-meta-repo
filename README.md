@@ -1,4 +1,4 @@
-[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16533373.svg)](https://doi.org/10.5281/zenodo.16533373)
+[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16533373.svg)](https://doi.org/10.5281/zenodo.16533373) [![Version DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17059270.svg)](https://doi.org/10.5281/zenodo.17059270)
 
 # PCS Meta-Repo
 
