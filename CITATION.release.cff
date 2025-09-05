@@ -15,17 +15,25 @@ orcid: "0000-0002-8596-5097"
 
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.16533373"
+    value: "10.5281/zenodo.17059270"
   - type: url
     value: "https://github.com/agourakis82/pcs-meta-repo"
 repository-code: "https://github.com/agourakis82/pcs-meta-repo"
 keywords:
   - computational psychiatry
   - neuroscience
-  - biomaterials
-  - symbolic cognition
+  - neuroinformatics
+  - EEG
+  - eye-tracking
+  - ZuCo
   - SWOW
   - semantic networks
+  - symbolic cognition
+  - KEC
+  - fractal
+  - entropy
+  - network science
+  - reproducibility
 abstract: >
   PCS Meta-Repo with unified notebooks, loaders and analysis for ZuCo (ET/EEG)
   and SWOW/KEC metrics. Includes CI-executable pipelines, QA reports and H* validator.
@@ -40,6 +48,6 @@ orcid: "0000-0002-8596-5097"
       given-names: "Dionisio Chiuratto"
 
   version: "v4.3.2.2"
-  doi: "10.5281/zenodo.16533373"
-  date-released: "2025-09-05"
+  doi: "10.5281/zenodo.17059270"
+  date-released: "2025-09-04"
   url: "https://github.com/agourakis82/pcs-meta-repo"

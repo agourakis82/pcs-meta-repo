@@ -12,6 +12,34 @@
       "name": "Chiuratto Agourakis, Dionisio"
     }
   ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "computational psychiatry",
+    "neuroscience",
+    "neuroinformatics",
+    "EEG",
+    "eye-tracking",
+    "ZuCo",
+    "SWOW",
+    "semantic networks",
+    "symbolic cognition",
+    "KEC",
+    "fractal",
+    "entropy",
+    "network science",
+    "reproducibility"
+  ],
+  "communities": [
+    {
+      "identifier": "neuroscience"
+    },
+    {
+      "identifier": "neuroinformatics"
+    },
+    {
+      "identifier": "eeg"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.5281/zenodo.17059024",

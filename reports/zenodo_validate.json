@@ -1,7 +1,5 @@
 {
   "valid": true,
   "errors": [],
-  "warnings": [
-    "license not set; prefer 'cc-by-4.0'"
-  ]
+  "warnings": []
 }

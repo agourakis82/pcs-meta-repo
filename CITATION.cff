@@ -22,10 +22,18 @@ repository-code: "https://github.com/agourakis82/pcs-meta-repo"
 keywords:
   - computational psychiatry
   - neuroscience
-  - biomaterials
-  - symbolic cognition
+  - neuroinformatics
+  - EEG
+  - eye-tracking
+  - ZuCo
   - SWOW
   - semantic networks
+  - symbolic cognition
+  - KEC
+  - fractal
+  - entropy
+  - network science
+  - reproducibility
 abstract: >
   PCS Meta-Repo with unified notebooks, loaders and analysis for ZuCo (ET/EEG)
   and SWOW/KEC metrics. Includes CI-executable pipelines, QA reports and H* validator.
