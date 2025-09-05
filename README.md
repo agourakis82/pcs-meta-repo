@@ -1,4 +1,4 @@
-[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16921951.svg)](https://doi.org/10.5281/zenodo.16921951) [![Version DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17053446.svg)](https://doi.org/10.5281/zenodo.17053446)
+[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16533373.svg)](https://doi.org/10.5281/zenodo.16533373)
 
 # PCS Meta-Repo
 
@@ -27,11 +27,11 @@ pip install -r requirements.txt
 
 ## How to cite
 
-Please cite using the metadata in [CITATION.cff](CITATION.cff):
+Please cite using the metadata in [CITATION.cff](CITATION.cff). Until the v4.3.2.1 DOI is minted, use the concept/aggregator DOI:
 
-> Agourakis, D. PCS Meta-Repo — v4.3.2. DOI: [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446)
+> Agourakis, Demetrios Chiuratto; Agourakis, Dionisio Chiuratto. PCS Meta-Repo — v4.3.2.1. Concept DOI: [10.5281/zenodo.16533373](https://doi.org/10.5281/zenodo.16533373)
 
-For additional materials see the Zenodo concept record [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951).
+Previous version (superseded): [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446). Origin record: [10.5281/zenodo.16682784](https://doi.org/10.5281/zenodo.16682784).
 
 ### DOI (Extended Memory consolidation)
 

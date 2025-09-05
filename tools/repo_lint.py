@@ -16,8 +16,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = REPO_ROOT / "reports"
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
-TARGET_VERSION = "v4.3.2"
-VERSION_DOI = "10.5281/zenodo.17053446"
+# Target version for current release cycle
+TARGET_VERSION = "v4.3.2.1"
+# VERSION_DOI is optional for meta re-issues before DOI is minted
+VERSION_DOI = ""
 CONCEPT_DOI = "10.5281/zenodo.16921951"
 
 REQUIRED_FILES = [
@@ -86,10 +88,11 @@ def main() -> int:
             errors.append(f"Version {TARGET_VERSION} not found in {rel}")
 
     # DOI checks
-    if VERSION_DOI not in read_text(REPO_ROOT / "README.md"):
-        errors.append("Version DOI not present in README.md")
-    if VERSION_DOI not in read_text(REPO_ROOT / "CITATION.cff"):
-        errors.append("Version DOI not present in CITATION.cff")
+    if VERSION_DOI:
+        if VERSION_DOI not in read_text(REPO_ROOT / "README.md"):
+            errors.append("Version DOI not present in README.md")
+        if VERSION_DOI not in read_text(REPO_ROOT / "CITATION.cff"):
+            errors.append("Version DOI not present in CITATION.cff")
 
     # License statements in README
     readme = read_text(REPO_ROOT / "README.md")
@@ -129,4 +132,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

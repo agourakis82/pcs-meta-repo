@@ -1,5 +1,21 @@
 # Changelog
 
+## [v4.3.2.1] — 2025-09-05
+
+### Changed
+
+* Reissued metadata as v4.3.2.1 under maintainer control; aligned `.zenodo.json`/`zenodo.json` with related identifiers.
+* Authors normalized (Demetrios C. Agourakis; Dionisio C. Agourakis with ORCID) in CITATION/metadata.
+
+### Added
+
+* Related identifiers for crosswalk: `isNewVersionOf` → 10.5281/zenodo.17053446; `isPartOf` → 10.5281/zenodo.16533373; `isSupplementTo` → 10.5281/zenodo.16682784.
+* README citation note pointing to concept/aggregator until DOI v4.3.2.1 is minted.
+
+### Fixed
+
+* Removed direct dependency on 17053446 permissions by preparing a clean release path.
+
 ## [v4.3.2] — 2025-09-04
 
 ### Changed

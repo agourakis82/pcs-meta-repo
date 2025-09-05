@@ -22,8 +22,9 @@
     { "identifier": "complex-systems" }
   ],
   "license": "cc-by-4.0",
-  "version": "v4.3.2",
+  "version": "v4.3.2.1",
   "related_identifiers": [
+    { "identifier": "10.5281/zenodo.17053446", "relation": "isNewVersionOf", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.16921951", "relation": "isVersionOf", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.16533373", "relation": "isPartOf", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.16682784", "relation": "isSupplementTo", "scheme": "doi" },

@@ -1,10 +1,13 @@
 ---
 title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
 authors:
-  - name: "Demetrios Agourakis"
+  - name: "Demetrios Chiuratto Agourakis"
     affiliation: "PCS Project"
     email: "demetrios@agourakis.med.br"
     orcid: "0000-0002-8596-5097"
+  - name: "Dionisio Chiuratto Agourakis"
+    affiliation: "Independent Researcher (to be confirmed)"
+    orcid: "0009-0000-4863-9143"
 description: >-
   Meta-repository consolidating loaders, notebooks, and analysis for ZuCo (ET/EEG)
   and SWOW/KEC metrics, with QA automation and reproducibility scaffolding.
@@ -16,9 +19,14 @@ keywords:
   - semantic networks
 language: "en"
 license: "CC-BY-4.0"
-version: "v4.3.2"
-date: "2025-09-04"
+version: "v4.3.2.1"
+date: "2025-09-05"
 identifiers:
-  concept_doi: "10.5281/zenodo.16921951"
-  version_doi: "10.5281/zenodo.17053446"
+  concept_doi: "10.5281/zenodo.16533373"
+  previous_version_doi: "10.5281/zenodo.17053446"
+  origin_doi: "10.5281/zenodo.16682784"
+related:
+  is_part_of: "10.5281/zenodo.16533373"
+  is_new_version_of: "10.5281/zenodo.17053446"
+  is_supplement_to: "10.5281/zenodo.16682784"
 repository: "https://github.com/agourakis82/pcs-meta-repo"

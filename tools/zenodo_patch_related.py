@@ -91,19 +91,28 @@ def ensure_draft(dep: dict, token: str) -> Tuple[str, dict, bool]:
     state = dep.get("state")
     if state != "done":
         return dep_id, dep, False
-    # create new version draft
+    # Prefer EDIT (unlock same record/version), then fallback to NEW VERSION
+    url_edit = f"{BASE}/deposit/depositions/{dep_id}/actions/edit"
+    code, res = http_json("POST", url_edit, token=token)
+    if code in (200, 201):
+        # After edit, the same deposition id is unlocked; refetch
+        code2, dep2 = http_json("GET", f"{BASE}/deposit/depositions/{dep_id}", token=token)
+        if code2 != 200:
+            raise RuntimeError(f"fetch edited draft {dep_id} failed: {code2} {dep2}")
+        return dep_id, dep2, True
+    # Fallback: create a new version draft (rarely needed for related_id changes)
     url_newv = f"{BASE}/deposit/depositions/{dep_id}/actions/newversion"
-    code, res = http_json("POST", url_newv, token=token)
-    if code not in (201, 202):
-        raise RuntimeError(f"newversion failed for {dep_id}: {code} {res}")
-    latest_draft = (res.get("links", {}) or {}).get("latest_draft")
+    code3, res3 = http_json("POST", url_newv, token=token)
+    if code3 not in (201, 202):
+        raise RuntimeError(f"newversion failed for {dep_id}: {code3} {res3}")
+    latest_draft = (res3.get("links", {}) or {}).get("latest_draft")
     if not latest_draft:
         raise RuntimeError("latest_draft link missing after newversion")
     new_id = latest_draft.rstrip("/").split("/")[-1]
-    code2, dep2 = http_json("GET", f"{BASE}/deposit/depositions/{new_id}", token=token)
-    if code2 != 200:
-        raise RuntimeError(f"fetch new draft {new_id} failed: {code2} {dep2}")
-    return new_id, dep2, True
+    code4, dep4 = http_json("GET", f"{BASE}/deposit/depositions/{new_id}", token=token)
+    if code4 != 200:
+        raise RuntimeError(f"fetch new draft {new_id} failed: {code4} {dep4}")
+    return new_id, dep4, True
 
 
 def parse_add(s: str) -> dict:
@@ -191,4 +200,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
