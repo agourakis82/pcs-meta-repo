@@ -27,6 +27,9 @@ jobs:
       - name: Markdown linkcheck
         run: |
           python tools/linkcheck_md.py
+      - name: Validate Zenodo metadata
+        run: |
+          python tools/validate_zenodo_metadata.py
       - name: Notebook smoke (best-effort)
         run: |
           pip install jupyter nbconvert

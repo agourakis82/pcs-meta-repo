@@ -33,6 +33,20 @@ if [ ! -f "$NOTES_FILE" ]; then
   exit 1
 fi
 
+# --- Sanitize and validate Zenodo metadata ---
+echo "[stepA] Sanitizando metadados Zenodo..."
+python3 tools/sanitize_zenodo_metadata.py
+if [ $? -ne 0 ]; then
+  echo "[stepA] ERRO: Falha na sanitização." >&2
+  exit 1
+fi
+echo "[stepA] Validando metadados Zenodo..."
+python3 tools/validate_zenodo_metadata.py
+if [ $? -ne 0 ]; then
+  echo "[stepA] ERRO: Validação falhou." >&2
+  exit 1
+fi
+
 # --- Descobrir repositório (owner/repo) ---
 REMOTE_URL="$(git remote get-url origin 2>/dev/null || echo "")"
 if [[ "$REMOTE_URL" =~ github.com[:/]+([^/]+)/([^/.]+) ]]; then
@@ -54,9 +68,19 @@ fi
 if gh release view "$TAG" >/dev/null 2>&1; then
   echo "[stepA] Release $TAG já existe — atualizando asset"
   gh release upload "$TAG" "$ASSET" --clobber
+  # Upload sanitized files
+  [ -f ".zenodo.release.json" ] && gh release upload "$TAG" ".zenodo.release.json" --clobber
+  [ -f "CITATION.release.cff" ] && gh release upload "$TAG" "CITATION.release.cff" --clobber
+  [ -f "reports/zenodo_sanitize_log.json" ] && gh release upload "$TAG" "reports/zenodo_sanitize_log.json" --clobber
+  [ -f "reports/zenodo_validate.json" ] && gh release upload "$TAG" "reports/zenodo_validate.json" --clobber
 else
   echo "[stepA] Criando Release $TAG"
   gh release create "$TAG" "$ASSET" --title "$TITLE" --notes-file "$NOTES_FILE"
+  # Upload sanitized files
+  [ -f ".zenodo.release.json" ] && gh release upload "$TAG" ".zenodo.release.json"
+  [ -f "CITATION.release.cff" ] && gh release upload "$TAG" "CITATION.release.cff"
+  [ -f "reports/zenodo_sanitize_log.json" ] && gh release upload "$TAG" "reports/zenodo_sanitize_log.json"
+  [ -f "reports/zenodo_validate.json" ] && gh release upload "$TAG" "reports/zenodo_validate.json"
 fi
 
 REL_URL="$(gh release view "$TAG" --json url -q .url || echo "")"

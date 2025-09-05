@@ -55,6 +55,18 @@ Nota: a versão v4.3 unifica e substitui a v4.2 do artefato “Extended Memory �
 - reports: QA artifacts (lint, linkcheck, inventory)
 - tools: maintenance and QA scripts
 
+## Releases → Sanitização/Validação de ORCID para Zenodo
+
+Para garantir compatibilidade com Zenodo RDM, os metadados são automaticamente sanitizados no momento do release:
+
+- **Sanitização**: Converte ORCID de URL para formato numérico; remove ORCID inválidos (ex.: começando com "0009-").
+- **Validação**: Verifica conformidade (ORCID válido, upload_type=software, etc.).
+- **Arquivos gerados**: `.zenodo.release.json`, `CITATION.release.cff`, `reports/zenodo_sanitize_log.json`, `reports/zenodo_validate.json`.
+
+Scripts: `tools/sanitize_zenodo_metadata.py`, `tools/validate_zenodo_metadata.py`.
+
+Para release manual: execute `python tools/sanitize_zenodo_metadata.py && python tools/validate_zenodo_metadata.py`.
+
 ## License
 
 - Code: MIT — see `LICENSE`.
