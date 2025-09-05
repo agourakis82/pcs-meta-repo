@@ -1,122 +1,106 @@
 #!/usr/bin/env python3
-"""
-Valida metadados Zenodo para conformidade com Zenodo RDM.
-Verifica ORCID, upload_type, creators, etc.
-"""
+from __future__ import annotations
+
 import json
-import os
 import re
 import sys
 from pathlib import Path
+from typing import Any, Dict, List
 
-ORCID_PATTERN = re.compile(r'^(\d{4}-\d{4}-\d{4}-\d{3}[\dX])$')
+ROOT = Path(__file__).resolve().parents[1]
+REPORTS = ROOT / "reports"
+REPORTS.mkdir(parents=True, exist_ok=True)
 
-def validate_orcid(orcid):
-    """Valida ORCID: deve ser numérico, não começar com 0009-, não ser URL."""
-    if not orcid:
-        return True  # OK se ausente
-    if isinstance(orcid, str):
-        if orcid.startswith('https://'):
-            return False  # Deve ser numérico
-        if orcid.startswith('0009-'):
-            return False
-        return bool(ORCID_PATTERN.match(orcid))
-    return False
+ORCID_NUM_RE = re.compile(r"^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$")
+ALLOWED_LICENSES = {"cc-by-4.0", "CC-BY-4.0", "CC BY 4.0"}
+ALLOWED_REL = {
+    "isNewVersionOf",
+    "isPreviousVersionOf",
+    "isVersionOf",
+    "isPartOf",
+    "isSupplementTo",
+    "isReferencedBy",
+    "isSupplementedBy",
+}
 
-def validate_zenodo_json(file_path):
-    """Valida .zenodo.json."""
-    errors = []
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
 
-        if data.get('upload_type') != 'software':
-            errors.append("upload_type deve ser 'software'")
+def load_json(path: Path) -> Dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))
 
-        creators = data.get('creators', [])
-        if not creators:
-            errors.append("creators não pode estar vazio")
-        for i, creator in enumerate(creators):
-            name = creator.get('name')
-            if not name:
-                errors.append(f"creator[{i}]: name ausente")
-            orcid = creator.get('orcid')
-            if orcid and not validate_orcid(orcid):
-                errors.append(f"creator[{i}]: ORCID inválido '{orcid}'")
 
-        license_ = data.get('license')
-        if license_ and license_ not in ['MIT', 'cc-by-4.0', 'other-open']:  # Exemplo
-            errors.append(f"license '{license_}' pode ser inválido")
+def main() -> int:
+    input_path = ROOT / ".zenodo.release.json"
+    errors: List[str] = []
+    warnings: List[str] = []
+    if not input_path.exists():
+        errors.append(f"Missing {input_path}")
+        result = {"valid": False, "errors": errors, "warnings": warnings}
+        (REPORTS / "zenodo_validate.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+        print("validate: errors — see reports/zenodo_validate.json", file=sys.stderr)
+        return 1
 
-        related = data.get('related_identifiers', [])
-        for rel in related:
-            if rel.get('scheme') != 'doi':
-                continue
-            doi = rel.get('identifier')
-            if doi and not doi.startswith('10.5281/zenodo.'):
-                errors.append(f"related_identifier DOI '{doi}' não é Zenodo")
+    data = load_json(input_path)
 
-    except Exception as e:
-        errors.append(f"Erro ao ler/parsing {file_path}: {e}")
+    # upload_type
+    ut = data.get("upload_type")
+    if ut != "software":
+        errors.append("upload_type must be 'software'")
 
-    return errors
-
-def validate_citation_cff(file_path):
-    """Valida CITATION.cff."""
-    errors = []
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-
-        lines = content.split('\n')
-        for line_no, line in enumerate(lines, 1):
-            if line.strip().startswith('orcid:'):
-                orcid_value = line.split(':', 1)[1].strip().strip('"')
-                if orcid_value and not validate_orcid(orcid_value):
-                    errors.append(f"Linha {line_no}: ORCID inválido '{orcid_value}'")
-
-    except Exception as e:
-        errors.append(f"Erro ao ler {file_path}: {e}")
-
-    return errors
-
-def main():
-    root_dir = Path(__file__).parent.parent
-    zenodo_file = root_dir / '.zenodo.json'
-    citation_file = root_dir / 'CITATION.cff'
-    zenodo_release = root_dir / '.zenodo.release.json'
-    citation_release = root_dir / 'CITATION.release.cff'
-
-    all_errors = []
-
-    # Validar arquivos release se existirem, senão os fonte
-    if zenodo_release.exists():
-        all_errors.extend(validate_zenodo_json(zenodo_release))
-    elif zenodo_file.exists():
-        all_errors.extend(validate_zenodo_json(zenodo_file))
-
-    if citation_release.exists():
-        all_errors.extend(validate_citation_cff(citation_release))
-    elif citation_file.exists():
-        all_errors.extend(validate_citation_cff(citation_file))
-
-    # Log
-    log = {
-        'valid': len(all_errors) == 0,
-        'errors': all_errors
-    }
-    reports_dir = root_dir / 'reports'
-    reports_dir.mkdir(exist_ok=True)
-    with open(reports_dir / 'zenodo_validate.json', 'w', encoding='utf-8') as f:
-        json.dump(log, f, indent=2)
-
-    if all_errors:
-        print("Erros de validação:")
-        for err in all_errors:
-            print(f" - {err}")
-        sys.exit(1)
+    # creators
+    creators = data.get("creators") or []
+    if not isinstance(creators, list) or not creators:
+        errors.append("creators must be a non-empty list")
     else:
-        print("Validação OK.")
+        for i, c in enumerate(creators):
+            name = c.get("name")
+            if not name:
+                errors.append(f"creators[{i}].name is required")
+            orcid = c.get("orcid")
+            if orcid:
+                if orcid.startswith("0009-"):
+                    errors.append(f"creators[{i}].orcid starts with 0009- (not accepted by Zenodo)")
+                if not ORCID_NUM_RE.match(orcid):
+                    errors.append(f"creators[{i}].orcid not valid numeric ORCID: {orcid}")
 
-if __name__ == '__main__':
-    main()
+    # license
+    lic = data.get("license")
+    if lic and lic not in ALLOWED_LICENSES:
+        warnings.append(f"license '{lic}' not in canonical spellings; prefer 'cc-by-4.0'")
+    elif not lic:
+        warnings.append("license not set; prefer 'cc-by-4.0'")
+
+    # version
+    if not data.get("version"):
+        errors.append("version is required")
+
+    # related_identifiers
+    rels = data.get("related_identifiers") or []
+    if rels and isinstance(rels, list):
+        for j, r in enumerate(rels):
+            rid = r.get("identifier")
+            rel = r.get("relation")
+            scheme = r.get("scheme")
+            if not rid or not rel:
+                errors.append(f"related_identifiers[{j}] missing identifier/relation")
+            else:
+                if rel not in ALLOWED_REL:
+                    warnings.append(f"related_identifiers[{j}].relation '{rel}' is uncommon")
+            if scheme and scheme not in ("doi", "url"):
+                warnings.append(f"related_identifiers[{j}].scheme '{scheme}' not expected")
+
+    result = {
+        "valid": not errors,
+        "errors": errors,
+        "warnings": warnings,
+    }
+    (REPORTS / "zenodo_validate.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+    if errors:
+        print("validate: errors — see reports/zenodo_validate.json", file=sys.stderr)
+        return 1
+    print("validate: OK — reports/zenodo_validate.json")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+

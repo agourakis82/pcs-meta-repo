@@ -1,0 +1,32 @@
+{
+  "actions": [],
+  "zenodo": {
+    "input": "/home/agourakis82/workspace/pcs-meta-repo/.zenodo.json",
+    "output": "/home/agourakis82/workspace/pcs-meta-repo/.zenodo.release.json",
+    "creators_changes": []
+  },
+  "citation": {
+    "input": "/home/agourakis82/workspace/pcs-meta-repo/CITATION.cff",
+    "output": "/home/agourakis82/workspace/pcs-meta-repo/CITATION.release.cff",
+    "orcid_actions": [
+      {
+        "from": "https://orcid.org/0000-0002-8596-5097",
+        "to": "0000-0002-8596-5097"
+      },
+      {
+        "from": "https://orcid.org/0009-0000-4863-9143",
+        "removed": true,
+        "reason": "unsupported_orcid_prefix_0009"
+      },
+      {
+        "from": "https://orcid.org/0000-0002-8596-5097",
+        "to": "0000-0002-8596-5097"
+      },
+      {
+        "from": "https://orcid.org/0009-0000-4863-9143",
+        "removed": true,
+        "reason": "unsupported_orcid_prefix_0009"
+      }
+    ]
+  }
+}

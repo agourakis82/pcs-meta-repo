@@ -9,13 +9,7 @@
     },
     {
       "file": "README.md",
-      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.16921951.svg",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "file": "README.md",
-      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.17053446.svg",
+      "link": "https://zenodo.org/badge/DOI/10.5281/zenodo.16533373.svg",
       "ok": true,
       "status": 200
     },
@@ -51,13 +45,25 @@
     },
     {
       "file": "README.md",
+      "link": "https://doi.org/10.5281/zenodo.16533373",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
+      "link": "https://doi.org/10.5281/zenodo.17059024",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "file": "README.md",
       "link": "https://doi.org/10.5281/zenodo.17053446",
       "ok": true,
       "status": 200
     },
     {
       "file": "README.md",
-      "link": "https://doi.org/10.5281/zenodo.16921951",
+      "link": "https://doi.org/10.5281/zenodo.16682784",
       "ok": true,
       "status": 200
     },
