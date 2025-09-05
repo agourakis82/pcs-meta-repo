@@ -1,0 +1,132 @@
+{
+  "created": "2025-09-04T23:47:16.553501+00:00",
+  "modified": "2025-09-05T00:30:53.919735+00:00",
+  "id": 17059024,
+  "conceptrecid": "16921951",
+  "conceptdoi": "10.5281/zenodo.16921951",
+  "metadata": {
+    "publication_date": "2025-09-05",
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "PUC-SP; Faculdade S\u00e3o Leopoldo Mandic"
+      },
+      {
+        "affiliation": "Independent Researcher (to be confirmed)"
+      }
+    ],
+    "license": "cc-by-4.0",
+    "imprint_publisher": "Zenodo",
+    "communities": [
+      {
+        "identifier": "fractal-science-intelligence"
+      },
+      {
+        "identifier": "scpsy"
+      }
+    ],
+    "prereserve_doi": {
+      "doi": "10.5281/zenodo.17059024",
+      "recid": 17059024
+    }
+  },
+  "title": "",
+  "links": {
+    "self": "https://zenodo.org/api/deposit/depositions/17059024",
+    "html": "https://zenodo.org/deposit/17059024",
+    "badge": "https://zenodo.org/badge/doi/.svg",
+    "files": "https://zenodo.org/api/deposit/depositions/17059024/files",
+    "bucket": "https://zenodo.org/api/files/01760716-fe3f-4416-8460-bd6c3bc8989e",
+    "thumb250": "https://zenodo.org/record/17059024/thumb250",
+    "thumbs": {
+      "10": "https://zenodo.org/record/17059024/thumb10",
+      "50": "https://zenodo.org/record/17059024/thumb50",
+      "100": "https://zenodo.org/record/17059024/thumb100",
+      "250": "https://zenodo.org/record/17059024/thumb250",
+      "750": "https://zenodo.org/record/17059024/thumb750",
+      "1200": "https://zenodo.org/record/17059024/thumb1200"
+    },
+    "latest_draft": "https://zenodo.org/api/deposit/depositions/17059024",
+    "latest_draft_html": "https://zenodo.org/deposit/17059024",
+    "publish": "https://zenodo.org/api/deposit/depositions/17059024/actions/publish",
+    "edit": "https://zenodo.org/api/deposit/depositions/17059024/actions/edit",
+    "discard": "https://zenodo.org/api/deposit/depositions/17059024/actions/discard",
+    "newversion": "https://zenodo.org/api/deposit/depositions/17059024/actions/newversion"
+  },
+  "record_id": 17059024,
+  "owner": 1369081,
+  "files": [
+    {
+      "id": "36c45ec2-ebc2-40b5-979f-7281d7bf0401",
+      "filename": "data_release.tar.gz",
+      "filesize": 82925,
+      "checksum": "0662a7ca3309e459e8c7e934faa929cd",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/36c45ec2-ebc2-40b5-979f-7281d7bf0401",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/data_release.tar.gz/content"
+      }
+    },
+    {
+      "id": "51e510fd-81cd-4056-8de8-22bc84f2c7d6",
+      "filename": "README_v4.3.md",
+      "filesize": 2050,
+      "checksum": "690e835d7447ff5ce2d9f6f110f7713c",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/51e510fd-81cd-4056-8de8-22bc84f2c7d6",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/README_v4.3.md/content"
+      }
+    },
+    {
+      "id": "ef9215fe-d4b4-465c-9512-ef2b01dfcb3a",
+      "filename": "Memoria_Estendida_PHD_Brasil_2025-08-29.md",
+      "filesize": 10975,
+      "checksum": "b406a08a0d011c7b9826bd11439414aa",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/ef9215fe-d4b4-465c-9512-ef2b01dfcb3a",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/Memoria_Estendida_PHD_Brasil_2025-08-29.md/content"
+      }
+    },
+    {
+      "id": "3ada84fe-a8ef-44dc-b535-ce3392afa92e",
+      "filename": "F2_reading_coeffs.png",
+      "filesize": 21346,
+      "checksum": "6a06eea9fe0f619a80e3f65c8e197496",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/3ada84fe-a8ef-44dc-b535-ce3392afa92e",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/F2_reading_coeffs.png/content"
+      }
+    },
+    {
+      "id": "810fad96-3b1e-417e-a86d-413570ebe992",
+      "filename": "F2_reading_vs_KEC.png",
+      "filesize": 89877,
+      "checksum": "0e35228b4a2828152ad13a48399b251b",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/810fad96-3b1e-417e-a86d-413570ebe992",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/F2_reading_vs_KEC.png/content"
+      }
+    },
+    {
+      "id": "90891e9b-cbde-4558-bf10-4f8ee82bce6f",
+      "filename": "mixedlm_ffd_summary.txt",
+      "filesize": 863,
+      "checksum": "2370e13822215723e69ed6af48ec73c7",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/90891e9b-cbde-4558-bf10-4f8ee82bce6f",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/mixedlm_ffd_summary.txt/content"
+      }
+    },
+    {
+      "id": "bf3afc0f-6772-4c0a-97cf-7bb385085e9d",
+      "filename": "F3_EEG_vs_KEC.png",
+      "filesize": 311894,
+      "checksum": "2e7e499019ef4ecf4fba886996f7de63",
+      "links": {
+        "self": "https://zenodo.org/api/deposit/depositions/17059024/files/bf3afc0f-6772-4c0a-97cf-7bb385085e9d",
+        "download": "https://zenodo.org/api/records/17059024/draft/files/F3_EEG_vs_KEC.png/content"
+      }
+    }
+  ],
+  "state": "unsubmitted",
+  "submitted": false
+}

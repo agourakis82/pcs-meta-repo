@@ -72,3 +72,16 @@
 - Toolbox empacotada com pyproject e testes unitários.
 
 - Badge de cobertura e ORCID no README.
+## [v4.3.2.2] — 2025-09-05
+
+### Changed
+
+* Prepare next patch release v4.3.2.2: bumped versions across metadata, added related identifiers (`isNewVersionOf` → 10.5281/zenodo.17059024).
+
+### Added
+
+* README citation note reflecting v4.3.2.2 and linking prior versions (v4.3.2.1, v4.3.2) and origin.
+
+### Fixed
+
+* Ensured linter rules are compatible with pre-mint DOIs for meta reissues.

@@ -1,14 +1,14 @@
 {
-  "title": "Symbolic Manifolds v4.3.2.1 — data crystallization patch",
+  "title": "Symbolic Manifolds v4.3.2.2 — data crystallization patch",
   "upload_type": "software",
   "description": "Patch release focusing on data crystallization (L0→L1→L2), provenance, and reproducibility.",
-  "version": "v4.3.2.1",
+  "version": "v4.3.2.2",
   "creators": [
     {"name": "Chiuratto Agourakis, Demetrios", "orcid": "0000-0002-8596-5097"},
     {"name": "Chiuratto Agourakis, Dionisio"}
   ],
   "related_identifiers": [
-    {"identifier": "10.5281/zenodo.17053446", "relation": "isNewVersionOf", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.17059024", "relation": "isNewVersionOf", "scheme": "doi"},
     {"identifier": "10.5281/zenodo.16921951", "relation": "isVersionOf", "scheme": "doi"},
     {"identifier": "10.5281/zenodo.16533373", "relation": "isPartOf", "scheme": "doi"},
     {"identifier": "10.5281/zenodo.16682784", "relation": "isSupplementTo", "scheme": "doi"}

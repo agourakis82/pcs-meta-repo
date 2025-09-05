@@ -17,7 +17,7 @@ REPORTS_DIR = REPO_ROOT / "reports"
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Target version for current release cycle
-TARGET_VERSION = "v4.3.2.1"
+TARGET_VERSION = "v4.3.2.2"
 # VERSION_DOI is optional for meta re-issues before DOI is minted
 VERSION_DOI = ""
 CONCEPT_DOI = "10.5281/zenodo.16921951"

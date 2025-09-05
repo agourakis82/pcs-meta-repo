@@ -1,0 +1,30 @@
+{
+  "status": 400,
+  "message": "A validation error occurred.",
+  "errors": [
+    {
+      "field": "metadata.resource_type",
+      "messages": [
+        "Missing data for required field."
+      ]
+    },
+    {
+      "field": "metadata.creators.0.person_or_org.family_name",
+      "messages": [
+        "Family name cannot be blank."
+      ]
+    },
+    {
+      "field": "metadata.creators.1.person_or_org.family_name",
+      "messages": [
+        "Family name cannot be blank."
+      ]
+    },
+    {
+      "field": "metadata.title",
+      "messages": [
+        "Missing data for required field."
+      ]
+    }
+  ]
+}

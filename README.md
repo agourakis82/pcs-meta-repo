@@ -27,11 +27,11 @@ pip install -r requirements.txt
 
 ## How to cite
 
-Please cite using the metadata in [CITATION.cff](CITATION.cff). Until the v4.3.2.1 DOI is minted, use the concept/aggregator DOI:
+Please cite using the metadata in [CITATION.cff](CITATION.cff). Until the v4.3.2.2 DOI is minted, use the concept/aggregator DOI:
 
-> Agourakis, Demetrios Chiuratto; Agourakis, Dionisio Chiuratto. PCS Meta-Repo — v4.3.2.1. Concept DOI: [10.5281/zenodo.16533373](https://doi.org/10.5281/zenodo.16533373)
+> Agourakis, Demetrios Chiuratto; Agourakis, Dionisio Chiuratto. PCS Meta-Repo — v4.3.2.2. Concept DOI: [10.5281/zenodo.16533373](https://doi.org/10.5281/zenodo.16533373)
 
-Previous version (superseded): [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446). Origin record: [10.5281/zenodo.16682784](https://doi.org/10.5281/zenodo.16682784).
+Previous versions: v4.3.2.1 [10.5281/zenodo.17059024](https://doi.org/10.5281/zenodo.17059024); v4.3.2 [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446). Origin: [10.5281/zenodo.16682784](https://doi.org/10.5281/zenodo.16682784).
 
 ### DOI (Extended Memory consolidation)
 
