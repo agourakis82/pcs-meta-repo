@@ -1,0 +1,127 @@
+geco_et:
+  raw_dir: "@data_root.raw_external/geco"
+  processed_dir: "@data_root.processed/geco_et"
+  license: "public; see GECO site"
+  doi_or_osf: "https://expsy.ugent.be/downloads/geco/"
+  modality: "eye-tracking"
+  language: [ "en", "nl" ]
+  unit: "word"
+  expected_files: [ "**/*.txt", "**/*.csv", "**/*.tsv", "**/*.zip" ]
+  redistribution: "no-redistribution; cite source"
+  processing_status: "not_started"
+  priority: "medium"
+
+derco_eeg:
+  raw_dir: "@data_root.raw_external/derco"
+  processed_dir: "@data_root.processed/derco_eeg"
+  license: "CC BY 4.0 (OSF)"
+  doi_or_osf: "https://www.nature.com/articles/s41597-024-03915-8"
+  modality: "EEG (+ behavioural cloze)"
+  language: [ "en" ]
+  unit: "word"
+  expected_files: [ "EEG_data/**", "EEG-based Reading Experiment/**", "Behavioural Word-Prediction Experiment/**", "**/*.fif", "**/*.csv", "**/*.tsv" ]
+  redistribution: "no-redistribution; cite source"
+  processing_status: "not_started"
+  priority: "high"
+
+onestop_et:
+  raw_dir: "@data_root.raw_external/onestop"
+  processed_dir: "@data_root.processed/onestop_et"
+  license: "CC BY 4.0 / project site"
+  doi_or_osf: "https://lacclab.github.io/OneStop-Eye-Movements/"
+  modality: "eye-tracking"
+  language: [ "en" ]
+  unit: "word"
+  expected_files: [ "**/*.csv", "**/*.tsv", "**/*.parquet", "**/*.zip" ]
+  redistribution: "no-redistribution; cite source"
+  processing_status: "not_started"
+  priority: "medium"
+
+lpp_eeg:
+  raw_dir: "@data_root.raw_external/lpp"
+  processed_dir: "@data_root.processed/lpp_eeg"
+  license: "OpenNeuro; see dataset terms"
+  doi_or_osf: "https://openneuro.org/datasets/ds005345"
+  modality: "EEG (listening)"
+  language: [ "fr", "zh", "en" ]
+  unit: "word"
+  expected_files:
+  - "sub-*/eeg/*"
+  - "**/events.tsv"
+  - "**/*.edf"
+  - "**/*.vhdr"
+  - "**/*.set"
+  redistribution: "no-redistribution; cite source"
+  processing_status: "not_started"
+  priority: "high"
+
+zuco_v1:
+  raw_dir: "@data_root.raw_zuco_v1"
+  processed_dir: "@data_root.processed/zuco_v1"
+  license: "research-only; OSF/ZuCo terms"
+  doi_or_osf: "https://osf.io/q3zws/"
+  modality: "EEG+ET+text"
+  language: [ "en" ]
+  unit: "word"
+  expected_files:
+  - "**/*.mat"
+  - "**/*.csv"
+  # Status atual: ✅ PROCESSADO E AJUSTADO (10K linhas, 12 sujeitos, eye-tracking completo)
+  processing_status: "completed"
+  subjects_count: 12
+  total_rows: 10000
+  metrics_available: [ "FFD", "GD", "TRT", "EEG_bands" ]
+  last_adjustment: "2025-09-08 - Column standardization (ffd_ms->FFD, etc.)"
+
+zuco_v2:
+  raw_dir: "@data_root.raw_zuco_v2"
+  processed_dir: "@data_root.processed/zuco_v2"
+  license: "research-only; OSF/ZuCo terms"
+  doi_or_osf: "https://osf.io/2urht/"
+  modality: "EEG+ET+text"
+  language: [ "en" ]
+  unit: "word"
+  expected_files:
+  - "**/*.mat"
+  - "**/*.csv"
+  # Status atual: ✅ PROCESSADO E AJUSTADO (2K linhas, dados ET+EEG funcionais)
+  processing_status: "completed"
+  subjects_count: 1
+  total_rows: 2000
+  metrics_available: [ "FFD", "GD", "TRT", "EEG_bands", "theta_power", "alpha_power", "beta_power", "gamma_power" ]
+  notes: "Eye-tracking and EEG data fully functional after standardization"
+  last_adjustment: "2025-09-08 - Column standardization and data validation"
+
+# Global Processing Configuration
+processing_config:
+  # Performance settings
+  performance:
+    max_workers: 4
+    chunk_size: 1000
+    memory_limit_gb: 24
+    gpu_acceleration: true
+
+  # Data quality settings
+  quality:
+    validate_nulls: true
+    check_duplicates: true
+    require_metrics: [ "FFD", "GD", "TRT" ]
+
+  # Output settings
+  output:
+    compression: "snappy"
+    format: "parquet"
+    save_intermediates: false
+
+  # Monitoring settings
+  monitoring:
+    enable_logging: true
+    log_level: "INFO"
+    progress_interval: 100
+    memory_tracking: true
+
+  # Error handling
+  error_handling:
+    max_retries: 3
+    continue_on_error: true
+    retry_delay_seconds: 5

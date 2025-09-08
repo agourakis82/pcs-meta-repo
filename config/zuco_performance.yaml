@@ -1,0 +1,45 @@
+# ZuCo Processing Performance Configuration
+# Optimized settings for neurophysiological data processing
+
+zuco_processing:
+  # Memory optimization settings
+  memory:
+    chunk_size: 1000 # Process data in chunks to manage memory
+    max_workers: 4 # Parallel processing workers
+    batch_size: 500 # Batch size for data loading
+
+  # GPU acceleration settings (if available)
+  gpu:
+    enabled: true
+    device: "cuda:0"
+    memory_limit: 0.8 # Use 80% of GPU memory
+
+  # Data validation settings
+  validation:
+    check_nulls: true
+    validate_metrics: true
+    expected_columns: [ "FFD", "GD", "TRT", "subject_id", "sentence_id" ]
+
+  # Processing pipeline settings
+  pipeline:
+    skip_existing: true # Skip already processed files
+    save_intermediates: false # Don't save intermediate files
+    compression: "snappy" # Parquet compression
+
+  # Logging and monitoring
+  logging:
+    level: "INFO"
+    log_file: "logs/zuco_processing.log"
+    progress_interval: 100 # Log progress every 100 files
+
+  # Error handling
+  error_handling:
+    max_retries: 3
+    retry_delay: 5 # seconds
+    continue_on_error: true
+
+  # Performance monitoring
+  monitoring:
+    enable_profiling: false
+    profile_output: "reports/zuco_profile.prof"
+    memory_tracking: true
