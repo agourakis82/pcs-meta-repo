@@ -26,3 +26,16 @@ build-backend = "setuptools.build_meta"
 profile = "black"
 known_first_party = ["pcs_toolbox"]
 line_length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore::DeprecationWarning",
+]
+addopts = "-q"
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_ignores = true
+ignore_missing_imports = true
+strict_optional = false
