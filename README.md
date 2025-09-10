@@ -13,33 +13,11 @@ Meta-repository for the Computational‑Symbolic Psychiatry (PCS) project.
 
 - **Agentic Design Patterns** integrados como **Quality Gate Q11** (docs/agentic_design_patterns.md).
 
-## Numerical Core v4.3
+## Architecture
 
-This release adds a stable and reproducible numerical core with:
+High-level architecture and data/compute flows. Regenerate with `make fig-architecture` (requires Graphviz).
 
-- Householder QR (`src/pcs_math/qr_householder.py`) and SVD solvers (`src/pcs_math/svd_solve.py`)
-- Preconditioned Conjugate Gradient (`src/pcs_math/cg_precond.py`) and preconditioners (`src/pcs_math/preconditioners.py`)
-- Kahan compensated summation (`src/pcs_math/kahan.py`)
-- NNLS via KKT (`src/pcs_opt/nnls_kkt.py`)
-- Spectral embedding and Fiedler vector (`src/pcs_graph/spectral_embedding.py`)
-- Quality gates and unified wrapper (`src/pcs_qc/quality_gate_linear.py`, `src/pcs_wrappers/least_squares.py`)
-
-Quick start (synthetic data):
-
-```python
-import numpy as np
-from src.pcs_wrappers.least_squares import solve_least_squares
-
-np.random.seed(0)
-A = np.random.randn(50, 10)
-x_true = np.random.randn(10)
-b = A @ x_true
-
-x, diag = solve_least_squares(A, b)
-print(diag)
-```
-
-See `docs/NUMERICS_GUIDE.md` for stability rationale and APIs, and the demonstration notebooks under `notebooks/`.
+![PCS Architecture](figures/architecture.png)
 
 ## EEG/RT Datasets Pipeline
 
