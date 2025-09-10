@@ -21,12 +21,16 @@ jobs:
       - name: Install minimal deps
         run: |
           python -m pip install --upgrade pip
+          pip install ruff || true
       - name: Repo lint
         run: |
           python tools/repo_lint.py
       - name: Markdown linkcheck
         run: |
           python tools/linkcheck_md.py
+      - name: Verify v4.4 structure (non-blocking)
+        run: |
+          bash tools/verify_v4.4_structure.sh || true
       - name: Notebook smoke (best-effort)
         run: |
           pip install jupyter nbconvert
