@@ -1,5 +1,20 @@
 # Changelog
 
+## [v4.3.x] — 2025-09-10
+
+### Added
+
+- Numerical core: Householder QR, SVD with truncation, preconditioned CG, Kahan summation, NNLS via KKT, spectral embedding (Fiedler).
+- Quality gates (condition number + solver routing) and unified least-squares wrapper.
+- Tests for all numerics modules and spectral embedding.
+- Documentation: `docs/NUMERICS_GUIDE.md` and README section "Numerical Core v4.3".
+- Two demo notebooks under `notebooks/` (synthetic data).
+
+### Notes
+
+- All implementations default to float64, with deterministic behavior where applicable.
+- SciPy is optional for sparse paths and NNLS comparison; fallbacks provided.
+
 ## [v4.3.2] — 2025-09-04
 
 ### Changed

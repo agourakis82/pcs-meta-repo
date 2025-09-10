@@ -13,17 +13,107 @@ Meta-repository for the Computational‑Symbolic Psychiatry (PCS) project.
 
 - **Agentic Design Patterns** integrados como **Quality Gate Q11** (docs/agentic_design_patterns.md).
 
-## Install & use
+## Numerical Core v4.3
 
-```bash
-git clone https://github.com/agourakis82/pcs-meta-repo
-cd pcs-meta-repo
-pip install -r requirements.txt
+This release adds a stable and reproducible numerical core with:
+
+- Householder QR (`src/pcs_math/qr_householder.py`) and SVD solvers (`src/pcs_math/svd_solve.py`)
+- Preconditioned Conjugate Gradient (`src/pcs_math/cg_precond.py`) and preconditioners (`src/pcs_math/preconditioners.py`)
+- Kahan compensated summation (`src/pcs_math/kahan.py`)
+- NNLS via KKT (`src/pcs_opt/nnls_kkt.py`)
+- Spectral embedding and Fiedler vector (`src/pcs_graph/spectral_embedding.py`)
+- Quality gates and unified wrapper (`src/pcs_qc/quality_gate_linear.py`, `src/pcs_wrappers/least_squares.py`)
+
+Quick start (synthetic data):
+
+```python
+import numpy as np
+from src.pcs_wrappers.least_squares import solve_least_squares
+
+np.random.seed(0)
+A = np.random.randn(50, 10)
+x_true = np.random.randn(10)
+b = A @ x_true
+
+x, diag = solve_least_squares(A, b)
+print(diag)
 ```
 
-## Quick Start
+See `docs/NUMERICS_GUIDE.md` for stability rationale and APIs, and the demonstration notebooks under `notebooks/`.
 
-5. Follow **Agentic Design Patterns** (docs/agentic_design_patterns.md) to structure prompts, notebooks and scripts.
+## EEG/RT Datasets Pipeline
+
+This repository includes a comprehensive pipeline for processing and analyzing EEG/RT (Eye-tracking/Electroencephalography Reading Time) datasets. The pipeline implements four main steps with full quality gates and reproducibility.
+
+### Pipeline Steps
+
+1. **Dataset Identification**: Automatically discovers and catalogs all EEG/RT datasets
+2. **Data Extraction & Preprocessing**: Extracts and preprocesses datasets for analysis
+3. **Cross-validation & Quality Assessment**: Performs quality checks and validation
+4. **Comparative Analysis & Reporting**: Generates comparative analysis and final reports
+
+### Quick Pipeline Execution
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the complete pipeline
+jupyter notebook notebooks/eeg_rt_pipeline_complete.ipynb
+
+# Or run individual steps programmatically
+python -c "
+from notebooks.eeg_rt_pipeline_complete import *
+# Execute steps 1-4 sequentially
+"
+```
+
+### Pipeline Features
+
+- ✅ **Fully Reproducible**: Random seeds, version control, and environment specifications
+- ✅ **Quality Gates**: Automated validation at each step with comprehensive logging
+- ✅ **Multi-language Support**: English documentation with support for multilingual datasets
+- ✅ **Comprehensive Documentation**: Every step includes detailed comments and explanations
+- ✅ **Audit Trail**: Complete logging of all operations with timestamps and checksums
+
+### Supported Datasets
+
+- **DERCo**: Dutch Reading Corpus (EEG + Eye-tracking)
+- **GECO**: Ghent Eye-tracking Corpus (Eye-tracking)
+- **OneStop**: English Reading Corpus (Eye-tracking)
+- **ZuCo**: EEG during reading (EEG + Eye-tracking)
+- **LPP**: Le Petit Prince (EEG + fMRI)
+
+### Output Structure
+
+```bash
+outputs/
+├── dataset_identification.json      # Step 1 results
+├── processed/                       # Step 2 results
+│   ├── preprocessing_report.json
+│   └── [dataset]_info.json
+├── validation/                      # Step 3 results
+│   ├── quality_assessment_report.json
+│   └── quality_assessment_plot.png
+├── analysis/                        # Step 4 results
+│   ├── dataset_comparison.csv
+│   ├── comparative_analysis.png
+│   ├── interactive_comparison.html
+│   ├── final_report.json
+│   └── pipeline_summary.md
+└── quality_gates/                   # Quality gates results
+    └── quality_gates_report.json
+```
+
+### Quality Assurance
+
+The pipeline implements comprehensive quality gates:
+
+- **Environment Consistency**: Python version, package versions, directory structure
+- **Data Integrity**: File existence, content validation, size checks
+- **Reproducibility**: Random seeds, execution logging, timestamp tracking
+- **Documentation**: Complete inline documentation, README files, requirements
+- **Code Quality**: Error handling, logging, docstrings, best practices
 
 ## How to cite
 
