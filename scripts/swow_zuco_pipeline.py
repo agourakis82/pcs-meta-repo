@@ -330,15 +330,34 @@ def run_step(step: str, datasets: str | None = None):
             Path(f'data/L1_tidy/{ds}/word_events_eeg.parquet').touch()
         print('[pipeline] tidy_eeg prepared (placeholders)')
     elif step == 'integrate':
-        for out in ['zuco_kec_rt.parquet','zuco_kec_eeg.parquet','zuco_kec_merged.parquet']:
+        # Create integration artifacts for all supported datasets (placeholders)
+        rt_files = [
+            'zuco_kec_rt.parquet',
+            'geco_kec_rt.parquet',
+            'onestop_kec_rt.parquet',
+        ]
+        eeg_files = [
+            'zuco_kec_eeg.parquet',
+            'derco_kec_eeg.parquet',
+            'lpp_kec_eeg.parquet',
+        ]
+        compat = ['zuco_kec_merged.parquet']
+        for out in rt_files + eeg_files + compat:
             Path(f'data/processed/v4.4/integration/{out}').touch()
-        print('[pipeline] integrate prepared (placeholders)')
+        print('[pipeline] integrate prepared (placeholders: RT+EEG for ZuCo/GECO/OneStop/DERCo/LPP)')
     elif step == 'models_rt':
+        # Per-dataset RT model coefficients + consolidated file
+        Path('data/processed/v4.4/models/models_rt_coeffs_zuco.csv').touch()
+        Path('data/processed/v4.4/models/models_rt_coeffs_geco.csv').touch()
+        Path('data/processed/v4.4/models/models_rt_coeffs_onestop.csv').touch()
         Path('data/processed/v4.4/models/models_reading_coeffs.csv').touch()
-        print('[pipeline] models_rt prepared (placeholders)')
+        print('[pipeline] models_rt prepared (placeholders per dataset + consolidated)')
     elif step == 'models_eeg':
+        Path('data/processed/v4.4/models/models_eeg_coeffs_zuco.csv').touch()
+        Path('data/processed/v4.4/models/models_eeg_coeffs_derco.csv').touch()
+        Path('data/processed/v4.4/models/models_eeg_coeffs_lpp.csv').touch()
         Path('data/processed/v4.4/models/models_eeg_coeffs.csv').touch()
-        print('[pipeline] models_eeg prepared (placeholders)')
+        print('[pipeline] models_eeg prepared (placeholders per dataset + consolidated)')
     elif step == 'models':
         run_step('models_rt')
         run_step('models_eeg')

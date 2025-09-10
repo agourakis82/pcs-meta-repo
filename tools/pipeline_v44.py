@@ -82,9 +82,19 @@ def list_created() -> Dict[str, list]:
             "entropy.parquet","curvature.parquet","coherence.parquet","components.parquet","edges.parquet","kec_nodes.parquet"
         )],
         "data/processed/v4.4/integration/zuco_kec_rt.parquet",
+        "data/processed/v4.4/integration/geco_kec_rt.parquet",
+        "data/processed/v4.4/integration/onestop_kec_rt.parquet",
         "data/processed/v4.4/integration/zuco_kec_eeg.parquet",
+        "data/processed/v4.4/integration/derco_kec_eeg.parquet",
+        "data/processed/v4.4/integration/lpp_kec_eeg.parquet",
         "data/processed/v4.4/integration/zuco_kec_merged.parquet",
         "data/processed/v4.4/models/models_reading_coeffs.csv",
+        "data/processed/v4.4/models/models_rt_coeffs_zuco.csv",
+        "data/processed/v4.4/models/models_rt_coeffs_geco.csv",
+        "data/processed/v4.4/models/models_rt_coeffs_onestop.csv",
+        "data/processed/v4.4/models/models_eeg_coeffs_zuco.csv",
+        "data/processed/v4.4/models/models_eeg_coeffs_derco.csv",
+        "data/processed/v4.4/models/models_eeg_coeffs_lpp.csv",
         "figures/v4.4/F1_mean_spike_delta_kec_en.png",
         "figures/v4.4/F2_reading_vs_KEC.png",
         "figures/v4.4/F3_EEG_vs_KEC.png",
@@ -122,4 +132,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

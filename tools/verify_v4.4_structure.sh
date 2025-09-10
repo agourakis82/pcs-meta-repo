@@ -17,10 +17,18 @@ for lang in en es nl zh; do
 done
 
 # Integration + models
-[[ -f "data/processed/v4.4/integration/zuco_kec_rt.parquet"  ]] || echo "WARN: missing zuco_kec_rt"
-[[ -f "data/processed/v4.4/integration/zuco_kec_eeg.parquet" ]] || echo "WARN: missing zuco_kec_eeg"
-[[ -f "data/processed/v4.4/integration/zuco_kec_merged.parquet" ]] || echo "WARN: missing merged (compat)"
-[[ -f "data/processed/v4.4/models/models_reading_coeffs.csv" ]] || echo "WARN: missing model coefficients"
+for f in \
+  data/processed/v4.4/integration/zuco_kec_rt.parquet \
+  data/processed/v4.4/integration/geco_kec_rt.parquet \
+  data/processed/v4.4/integration/onestop_kec_rt.parquet \
+  data/processed/v4.4/integration/zuco_kec_eeg.parquet \
+  data/processed/v4.4/integration/derco_kec_eeg.parquet \
+  data/processed/v4.4/integration/lpp_kec_eeg.parquet \
+  data/processed/v4.4/integration/zuco_kec_merged.parquet; do
+  [[ -f "$f" ]] || echo "WARN: missing $f"
+done
+
+[[ -f "data/processed/v4.4/models/models_reading_coeffs.csv" ]] || echo "WARN: missing models_reading_coeffs.csv"
 
 # Figures
 for fig in F1_mean_spike_delta_kec_en.png F2_reading_vs_KEC.png F3_EEG_vs_KEC.png; do
@@ -31,4 +39,3 @@ done
 [[ -f "reports/inventory.json"  ]] || echo "WARN: missing reports/inventory.json"
 [[ -f "reports/linkcheck.json"  ]] || echo "WARN: missing reports/linkcheck.json"
 echo "[verify] done"
-
