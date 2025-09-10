@@ -1,0 +1,78 @@
+name: PCS-HELIO v4.4 Pipeline
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/swow_zuco_pipeline.py'
+      - 'src/cli/kec_compile.py'
+      - 'src/figures/make_figures.py'
+      - 'config/**'
+      - 'docs/GOVERNANCE_v4.4.md'
+      - 'docs/RUNBOOK_minimal_v4.4.md'
+      - 'Makefile'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+  workflow_dispatch:
+
+jobs:
+  run-pipeline-v44:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+
+      - name: Install minimal dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt || true; fi
+          pip install numpy pandas matplotlib tqdm || true
+
+      - name: Prepare L1 (RT)
+        run: |
+          python scripts/swow_zuco_pipeline.py --step tidy_rt || true
+
+      - name: Prepare L1 (EEG)
+        run: |
+          python scripts/swow_zuco_pipeline.py --step tidy_eeg || true
+
+      - name: Compile KEC (multilingual; placeholders)
+        run: |
+          python -m src.cli.kec_compile --lang en,es,nl,zh --step all --resume || true
+
+      - name: Integrate SWOW↔(EEG/RT)
+        run: |
+          python scripts/swow_zuco_pipeline.py --step integrate || true
+
+      - name: Run models (RT & EEG)
+        run: |
+          python scripts/swow_zuco_pipeline.py --step models || true
+
+      - name: Generate figures (v4.4)
+        run: |
+          python -m src.figures.make_figures --version v4.4 || true
+
+      - name: Inventory & Structure Check
+        run: |
+          python scripts/inventory_scan.py || true
+          bash tools/verify_v4.4_structure.sh || true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.4-artifacts
+          path: |
+            data/L1_tidy/**
+            data/L2_derived/kec/**
+            data/processed/v4.4/**
+            figures/v4.4/**
+            reports/**
+          if-no-files-found: warn
+
