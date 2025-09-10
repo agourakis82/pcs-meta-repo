@@ -59,6 +59,10 @@ jobs:
         run: |
           python -m src.figures.make_figures --version v4.4 || true
 
+      - name: Run unified v4.4 orchestrator
+        run: |
+          python tools/pipeline_v44.py || true
+
       - name: Inventory & Structure Check
         run: |
           python scripts/inventory_scan.py || true
@@ -75,4 +79,3 @@ jobs:
             figures/v4.4/**
             reports/**
           if-no-files-found: warn
-
