@@ -1,0 +1,15 @@
+data_root: /home/agourakis82/FASTDATA
+layout:
+  raw_zuco_v1: '{data_root}/raw_external/zuco/v1/osfstorage'
+  raw_zuco_v2: '{data_root}/raw_external/zuco/v2/osfstorage'
+  raw_external: '{data_root}/raw_external'
+  raw_public: '{data_root}/raw_public'
+  L0_raw: '{data_root}/L0_raw'
+  L1_tidy: '{data_root}/L1_tidy'
+  L2_derived: '{data_root}/L2_derived'
+  processed: '{data_root}/processed'
+  derived: '{data_root}/derived'
+  reports: reports
+notes: 'Raw data stays outside the repo. The repo reads these paths; only processed/derived tables and reports are stored/tracked.
+
+  '
