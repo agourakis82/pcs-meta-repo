@@ -1,0 +1,29 @@
+flowchart LR
+  A[SWOW raw] --> B[swow/clean_* + io + graph]
+  C[ZuCo raw (EEG/ET)] --> D[datasets/zuco_* + pipeline/zuco_*]
+  B --> E[KEC metrics]
+  D --> F[EEG/ET features]
+  E --> G{Integração}
+  F --> G
+  subgraph Núcleo Numérico v4.3
+    QC[Quality Gates]
+    W[Wrapper LSQ]
+    QR[QR Householder]
+    SVD[SVD truncada]
+    NNLS[NNLS KKT]
+    CG[CG + pré-cond.]
+    KH[Kahan sum]
+    SPEC[Spectral Embedding]
+    QC --> W
+    W --> QR
+    W --> SVD
+    W --> NNLS
+    W --> CG
+    KH --> W
+    SPEC
+  end
+  G --> SPEC
+  G --> H[Reports/Notebooks]
+  E --> H
+  F --> H
+

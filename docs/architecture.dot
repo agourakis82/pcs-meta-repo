@@ -1,0 +1,56 @@
+digraph PCS {
+  rankdir=LR; splines=true; nodesep=0.5; ranksep=0.6;
+  node [shape=box, style=rounded, fontsize=10];
+
+  subgraph cluster_data {
+    label="Dados"; color=gray70;
+    swow [label="SWOW raw"];
+    zuco [label="ZuCo raw (EEG/ET)"];
+  }
+
+  subgraph cluster_loaders {
+    label="Loaders/Pré-proc"; color=gray70;
+    swow_load [label="swow/clean_*, io, graph"];
+    zuco_load [label="datasets/zuco_*, pipeline/zuco_*"];
+  }
+
+  subgraph cluster_core {
+    label="Núcleo Numérico v4.3"; color=gray70;
+    qr [label="QR Householder"];
+    svd [label="SVD (truncada)"];
+    nnls [label="NNLS (KKT)"];
+    cg [label="CG + Pré-cond."];
+    kahan [label="Kahan sum/dot"];
+    qc [label="Quality Gates (cond, router)"];
+    wrap [label="Wrapper LSQ (solver+diag)"];
+    spec [label="Spectral Embedding (Fiedler)"];
+  }
+
+  subgraph cluster_pipes {
+    label="Pipelines/Análises"; color=gray70;
+    swow_kec [label="KEC metrics"];
+    zuco_feats [label="EEG/ET features"];
+    integr [label="Integração KEC↔EEG (spec embed)"];
+    reports [label="Reports/Notebooks"];
+  }
+
+  swow -> swow_load -> swow_kec;
+  zuco -> zuco_load -> zuco_feats;
+
+  swow_kec -> integr;
+  zuco_feats -> integr;
+
+  // Núcleo numérico ligações
+  wrap -> qr; wrap -> svd; wrap -> nnls; wrap -> cg; qc -> wrap; kahan -> wrap;
+  spec;
+
+  // Uso do núcleo pelos pipelines
+  swow_kec -> wrap [style=dashed];
+  zuco_feats -> wrap [style=dashed];
+  integr -> spec [style=dashed];
+
+  integr -> reports;
+  swow_kec -> reports;
+  zuco_feats -> reports;
+}
+
