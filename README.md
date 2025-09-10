@@ -119,7 +119,7 @@ The pipeline implements comprehensive quality gates:
 
 Please cite using the metadata in [CITATION.cff](CITATION.cff):
 
-> Agourakis, D. PCS Meta-Repo — v4.3.2. DOI: [10.5281/zenodo.17053446](https://doi.org/10.5281/zenodo.17053446)
+> Agourakis, D. PCS Meta-Repo — v4.3.3. DOI: [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951)
 
 For additional materials see the Zenodo concept record [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951).
 
