@@ -1,8 +1,8 @@
 {
-  "title": "Symbolic Manifolds v4.3.2 — data crystallization patch",
+  "title": "Symbolic Manifolds v4.3.3 — numerical core & integration",
   "upload_type": "software",
   "description": "Patch release focusing on data crystallization (L0→L1→L2), provenance, and reproducibility.",
-  "version": "v4.3.2",
+  "version": "v4.3.3",
   "creators": [
     {"name": "Chiuratto Agourakis, Demetrios", "orcid": "0000-0002-8596-5097"},
     {"name": "Chiuratto Agourakis, Dionisio"}

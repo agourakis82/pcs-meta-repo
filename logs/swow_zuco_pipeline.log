@@ -1,0 +1,41 @@
+2025-09-08 20:34:15,475 - __main__ - INFO - Starting Neuro-SWOW Integration Pipeline
+2025-09-08 20:34:15,475 - __main__ - INFO - Pipeline version: 2.0
+2025-09-08 20:34:15,475 - __main__ - INFO - Validating input files...
+2025-09-08 20:34:15,476 - __main__ - INFO - All input files validated successfully
+2025-09-08 20:34:15,476 - __main__ - INFO - Preparing neurophysiological data...
+2025-09-08 20:34:15,476 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/derco_eeg/word_events.parquet
+2025-09-08 20:34:15,550 - __main__ - INFO - Processed 9571 rows from derco_eeg
+2025-09-08 20:34:15,550 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/geco_et/word_events.parquet
+2025-09-08 20:34:17,475 - __main__ - INFO - Processed 827966 rows from geco_et
+2025-09-08 20:34:17,475 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/onestop_et/word_events.parquet
+2025-09-08 20:34:20,701 - __main__ - INFO - Processed 62675 rows from onestop_et
+2025-09-08 20:34:20,702 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/lpp_eeg/word_events.parquet
+2025-09-08 20:34:20,714 - __main__ - INFO - Processed 2600 rows from lpp_eeg
+2025-09-08 20:34:20,939 - __main__ - INFO - Combined neuro data: 902812 rows from 4 datasets
+2025-09-08 20:34:20,958 - __main__ - INFO - Loading SWOW data...
+2025-09-08 20:34:21,457 - __main__ - INFO - Loaded SWOW data: 152386 nodes with 3 metrics
+2025-09-08 20:34:21,466 - __main__ - INFO - Integrating datasets...
+2025-09-08 20:34:22,220 - __main__ - ERROR - Pipeline failed: module 'pandas' has no attribute 'np'
+2025-09-08 20:34:44,467 - __main__ - INFO - Starting Neuro-SWOW Integration Pipeline
+2025-09-08 20:34:44,467 - __main__ - INFO - Pipeline version: 2.0
+2025-09-08 20:34:44,467 - __main__ - INFO - Validating input files...
+2025-09-08 20:34:44,467 - __main__ - INFO - All input files validated successfully
+2025-09-08 20:34:44,467 - __main__ - INFO - Preparing neurophysiological data...
+2025-09-08 20:34:44,467 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/derco_eeg/word_events.parquet
+2025-09-08 20:34:44,545 - __main__ - INFO - Processed 9571 rows from derco_eeg
+2025-09-08 20:34:44,546 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/geco_et/word_events.parquet
+2025-09-08 20:34:45,972 - __main__ - INFO - Processed 827966 rows from geco_et
+2025-09-08 20:34:45,973 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/onestop_et/word_events.parquet
+2025-09-08 20:34:49,854 - __main__ - INFO - Processed 62675 rows from onestop_et
+2025-09-08 20:34:49,855 - __main__ - INFO - Loading /home/agourakis82/FASTDATA/processed/lpp_eeg/word_events.parquet
+2025-09-08 20:34:49,866 - __main__ - INFO - Processed 2600 rows from lpp_eeg
+2025-09-08 20:34:56,089 - __main__ - INFO - Combined neuro data: 902812 rows from 4 datasets
+2025-09-08 20:34:56,108 - __main__ - INFO - Loading SWOW data...
+2025-09-08 20:34:50,067 - __main__ - INFO - Loaded SWOW data: 152386 nodes with 3 metrics
+2025-09-08 20:34:50,076 - __main__ - INFO - Integrating datasets...
+2025-09-08 20:34:52,266 - __main__ - INFO - Integration complete: 902812 rows
+2025-09-08 20:34:52,267 - __main__ - INFO - Validating integration...
+2025-09-08 20:34:52,401 - __main__ - INFO - Saving results...
+2025-09-08 20:35:06,154 - __main__ - INFO - Saved integrated data: data/processed/integrated_neuro_swow.csv
+2025-09-08 20:35:06,156 - __main__ - INFO - Saved validation report: data/processed/integration_validation.yaml
+2025-09-08 20:35:06,156 - __main__ - INFO - Pipeline completed successfully!

@@ -1,0 +1,980 @@
+{
+  "v1": {
+    "task3_TSR/Raw_data": {
+      "total_files": 1,
+      "file_types": {
+        ".csv": 1
+      },
+      "sample_files": [
+        "relations_task_specific.csv"
+      ]
+    },
+    "task3_TSR/Raw_data/ZKW": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZKW_TSR1_ET.mat",
+        "ZKW_TSR3_ET.mat",
+        "ZKW_TSR7_EEG.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZPH": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZPH_TSR1_EEG.mat",
+        "ZPH_TSR8_ET.mat",
+        "ZPH_TSR5_ET.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZAB": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZAB_TSR7_EEG.mat",
+        "ZAB_TSR3_ET.mat",
+        "ZAB_TSR6_ET.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZJM": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZJM_TSR6_ET.mat",
+        "ZJM_TSR9_EEG.mat",
+        "ZJM_TSR1_EEG.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZDM": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZDM_TSR7_EEG.mat",
+        "ZDM_TSR3_EEG.mat",
+        "ZDM_TSR8_EEG.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZDN": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZDN_TSR1_EEG.mat",
+        "ZDN_TSR9_ET.mat",
+        "ZDN_TSR5_EEG.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZJS": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZJS_TSR8_EEG.mat",
+        "ZJS_TSR3_ET.mat",
+        "ZJS_TSR6_ET.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZKB": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZKB_TSR2_ET.mat",
+        "ZKB_TSR4_EEG.mat",
+        "ZKB_TSR2_EEG.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZKH": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZKH_TSR9_ET.mat",
+        "ZKH_TSR2_EEG.mat",
+        "ZKH_TSR7_ET.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZGW": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZGW_TSR5_ET.mat",
+        "ZGW_TSR8_ET.mat",
+        "ZGW_TSR6_ET.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZMG": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZMG_TSR2_EEG.mat",
+        "ZMG_TSR8_EEG.mat",
+        "ZMG_TSR4_ET.mat"
+      ]
+    },
+    "task3_TSR/Raw_data/ZJN": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZJN_TSR7_ET.mat",
+        "ZJN_TSR3_EEG.mat",
+        "ZJN_TSR8_EEG.mat"
+      ]
+    },
+    "matlab_files": {
+      "total_files": 12,
+      "file_types": {
+        ".mat": 12
+      },
+      "sample_files": [
+        "resultsZJM_TSR.mat",
+        "resultsZDM_TSR.mat",
+        "resultsZPH_TSR.mat"
+      ]
+    },
+    "task1_SR/Matlab_files": {
+      "total_files": 12,
+      "file_types": {
+        ".mat": 12
+      },
+      "sample_files": [
+        "resultsZJM_SR.mat",
+        "resultsZJN_SR.mat",
+        "resultsZMG_SR.mat"
+      ]
+    },
+    "task1_SR/Raw_data": {
+      "total_files": 1,
+      "file_types": {
+        ".csv": 1
+      },
+      "sample_files": [
+        "sentiment_normal_reading.csv"
+      ]
+    },
+    "task1_SR/Raw_data/ZPH": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZPH_SNR3_EEG.mat",
+        "ZPH_SNR1_EEG.mat",
+        "ZPH_SR5_ET.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZAB": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZAB_SR2_ET.mat",
+        "ZAB_SNR7_EEG.mat",
+        "wordbounds_SNR1_ZAB.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZJM": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZJM_SR2_ET.mat",
+        "ZJM_SR3_ET.mat",
+        "ZJM_SNR7_EEG.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZJS": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZJS_SR4_EEG.mat",
+        "ZJS_SR7_ET.mat",
+        "wordbounds_SNR1_ZJS.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZKB": {
+      "total_files": 3,
+      "file_types": {
+        ".mat": 3
+      },
+      "sample_files": [
+        "ZKB_SNR7_EEG.mat",
+        "ZKB_SR3_ET.mat",
+        "ZKB_SR5_ET.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZKH": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZKH_SR8_ET.mat",
+        "ZKH_SR1_ET.mat",
+        "ZKH_SR2_ET.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZGW": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZGW_SNR8_EEG.mat",
+        "ZGW_SR7_ET.mat",
+        "ZGW_SR3_ET.mat"
+      ]
+    },
+    "task1_SR/Raw_data/ZMG": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZMG_SR8_ET.mat",
+        "ZMG_SR4_EEG.mat",
+        "wordbounds_SNR2_ZMG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed": {
+      "total_files": 2,
+      "file_types": {
+        ".mat": 1,
+        ".csv": 1
+      },
+      "sample_files": [
+        "sentencesSR.mat",
+        "sentiment_normal_reading.csv"
+      ]
+    },
+    "task1_SR/Preprocessed/ZKW": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "gip_ZKW_SNR7_EEG.mat",
+        "gip_ZKW_SNR2_EEG.mat",
+        "ZKW_SR2_corrected_ET.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZPH": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "oip_ZPH_SNR3_EEG.mat",
+        "ZPH_SR4_corrected_ET.mat",
+        "ZPH_SR7_corrected_ET.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZAB": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "gip_ZAB_SR3_EEG.mat",
+        "wordbounds_SNR1_ZAB.mat",
+        "ZAB_SR6_corrected_ET.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZJM": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "gip_ZJM_SNR7_EEG.mat",
+        "gip_ZJM_SR4_EEG.mat",
+        "gip_ZJM_SR2_EEG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZDM": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "wordbounds_SNR2_ZDM.mat",
+        "ZDM_SR8_corrected_ET.mat",
+        "oip_ZDM_SR1_EEG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZDN": {
+      "total_files": 16,
+      "file_types": {
+        ".mat": 16
+      },
+      "sample_files": [
+        "gip_ZDN_SNR3_EEG.mat",
+        "ZDN_SR1_corrected_ET.mat",
+        "gip_ZDN_SNR6_EEG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZJS": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZJS_SR3_corrected_ET.mat",
+        "ZJS_SR1_corrected_ET.mat",
+        "gip_ZJS_SNR7_EEG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZKB": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "gip_ZKB_SR4_EEG.mat",
+        "ZKB_SR2_corrected_ET.mat",
+        "gip_ZKB_SNR6_EEG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZKH": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "oip_ZKH_SNR6_EEG.mat",
+        "oip_ZKH_SR2_EEG.mat",
+        "ZKH_SR4_corrected_ET.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZGW": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "ZGW_SR1_corrected_ET.mat",
+        "ZGW_SR4_corrected_ET.mat",
+        "ZGW_SR3_corrected_ET.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZMG": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "wordbounds_SNR2_ZMG.mat",
+        "oip_ZMG_SR4_EEG.mat",
+        "oip_ZMG_SNR7_EEG.mat"
+      ]
+    },
+    "task1_SR/Preprocessed/ZJN": {
+      "total_files": 18,
+      "file_types": {
+        ".mat": 18
+      },
+      "sample_files": [
+        "gip_ZJN_SR1_EEG.mat",
+        "ZJN_SR7_corrected_ET.mat",
+        "gip_ZJN_SNR7_EEG.mat"
+      ]
+    },
+    "preprocessed": {
+      "total_files": 2,
+      "file_types": {
+        ".csv": 1,
+        ".mat": 1
+      },
+      "sample_files": [
+        "relations_task_specific.csv",
+        "sentencesTSR.mat"
+      ]
+    },
+    "preprocessed/ZKW": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "gip_ZKW_TSR9_EEG.mat",
+        "gip_ZKW_TSR1_EEG.mat",
+        "gip_ZKW_TSR3_EEG.mat"
+      ]
+    },
+    "preprocessed/ZPH": {
+      "total_files": 17,
+      "file_types": {
+        ".mat": 17
+      },
+      "sample_files": [
+        "ZPH_TSR5_corrected_ET.mat",
+        "ZPH_TSR7_corrected_ET.mat",
+        "gip_ZPH_TSR5_EEG.mat"
+      ]
+    },
+    "preprocessed/ZAB": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "oip_ZAB_TSR2_EEG.mat",
+        "ZAB_TSR9_corrected_ET.mat",
+        "gip_ZAB_TSR4_EEG.mat"
+      ]
+    },
+    "preprocessed/ZJM": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZJM_TSR4_corrected_ET.mat",
+        "gip_ZJM_TSR7_EEG.mat",
+        "gip_ZJM_TSR9_EEG.mat"
+      ]
+    },
+    "preprocessed/ZDM": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZDM_TSR7_corrected_ET.mat",
+        "ZDM_TSR5_corrected_ET.mat",
+        "gip_ZDM_TSR3_EEG.mat"
+      ]
+    },
+    "preprocessed/ZDN": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZDN_TSR2_corrected_ET.mat",
+        "gip_ZDN_TSR6_EEG.mat",
+        "ZDN_TSR8_corrected_ET.mat"
+      ]
+    },
+    "preprocessed/ZJS": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZJS_TSR8_corrected_ET.mat",
+        "oip_ZJS_TSR7_EEG.mat",
+        "gip_ZJS_TSR1_EEG.mat"
+      ]
+    },
+    "preprocessed/ZKB": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "gip_ZKB_TSR5_EEG.mat",
+        "gip_ZKB_TSR9_EEG.mat",
+        "ZKB_TSR6_corrected_ET.mat"
+      ]
+    },
+    "preprocessed/ZKH": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "oip_ZKH_TSR4_EEG.mat",
+        "oip_ZKH_TSR2_EEG.mat",
+        "oip_ZKH_TSR9_EEG.mat"
+      ]
+    },
+    "preprocessed/ZGW": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZGW_TSR3_corrected_ET.mat",
+        "oip_ZGW_TSR3_EEG.mat",
+        "ZGW_TSR1_corrected_ET.mat"
+      ]
+    },
+    "preprocessed/ZMG": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZMG_TSR6_corrected_ET.mat",
+        "ZMG_TSR3_corrected_ET.mat",
+        "oip_ZMG_TSR5_EEG.mat"
+      ]
+    },
+    "preprocessed/ZJN": {
+      "total_files": 19,
+      "file_types": {
+        ".mat": 19
+      },
+      "sample_files": [
+        "ZJN_TSR5_corrected_ET.mat",
+        "gip_ZJN_TSR4_EEG.mat",
+        "ZJN_TSR7_corrected_ET.mat"
+      ]
+    }
+  },
+  "v2": {
+    "task2__TSR/Raw data/YFR": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YFR_TSR7_ET.mat",
+        "YFR_TSR3_EEG.mat",
+        "YFR_TSR1_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YSL": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YSL_TSR2_ET.mat",
+        "YSL_TSR1_ET.mat",
+        "YSL_TSR7_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YRK": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YRK_TSR1_ET.mat",
+        "YRK_TSR3_ET.mat",
+        "YRK_TSR3_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YIS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YIS_TSR1_EEG.mat",
+        "YIS_TSR2_EEG.mat",
+        "YIS_TSR1_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YSD": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YSD_TSR2_ET.mat",
+        "YSD_TSR4_ET.mat",
+        "YSD_TSR3_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YAG": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YAG_TSR1_EEG.mat",
+        "YAG_TSR7_ET.mat",
+        "YAG_TSR4_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YMD": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YMD_TSR7_ET.mat",
+        "YMD_TSR2_ET.mat",
+        "YMD_TSR6_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YMS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YMS_TSR5_EEG.mat",
+        "YMS_TSR2_EEG.mat",
+        "YMS_TSR7_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YHS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YHS_TSR7_ET.mat",
+        "YHS_TSR7_EEG.mat",
+        "YHS_TSR1_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YRP": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YRP_TSR4_ET.mat",
+        "YRP_TSR1_EEG.mat",
+        "YRP_TSR3_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YTL": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YTL_TSR3_ET.mat",
+        "YTL_TSR4_EEG.mat",
+        "YTL_TSR5_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YDG": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YDG_TSR3_EEG.mat",
+        "YDG_TSR5_ET.mat",
+        "YDG_TSR1_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YAK": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YAK_TSR2_EEG.mat",
+        "YAK_TSR3_EEG.mat",
+        "YAK_TSR7_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YLS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YLS_TSR3_EEG.mat",
+        "YLS_TSR5_ET.mat",
+        "YLS_TSR1_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YFS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YFS_TSR2_EEG.mat",
+        "YFS_TSR7_ET.mat",
+        "YFS_TSR4_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YRH": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YRH_TSR6_ET.mat",
+        "YRH_TSR3_EEG.mat",
+        "YRH_TSR5_ET.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YDR": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YDR_TSR7_ET.mat",
+        "YDR_TSR6_ET.mat",
+        "YDR_TSR2_EEG.mat"
+      ]
+    },
+    "task2__TSR/Raw data/YAC": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YAC_TSR3_ET.mat",
+        "YAC_TSR4_EEG.mat",
+        "YAC_TSR6_ET.mat"
+      ]
+    },
+    "task2__TSR/Matlab files": {
+      "total_files": 16,
+      "file_types": {
+        ".mat": 16
+      },
+      "sample_files": [
+        "resultsYRH_TSR.mat",
+        "resultsYRK_TSR.mat",
+        "resultsYFS_TSR.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed": {
+      "total_files": 7,
+      "file_types": {
+        ".mat": 7
+      },
+      "sample_files": [
+        "wordbounds_TSR3.mat",
+        "wordbounds_TSR1.mat",
+        "wordbounds_TSR5.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YFR": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "oip_YFR_TSR7_EEG.mat",
+        "oip_YFR_TSR3_EEG.mat",
+        "gip_YFR_TSR5_EEG.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YSL": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "gip_YSL_TSR4_EEG.mat",
+        "YSL_TSR6_corrected_ET.mat",
+        "YSL_TSR1_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YRK": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "gip_YRK_TSR3_EEG.mat",
+        "YRK_TSR7_corrected_ET.mat",
+        "gip_YRK_TSR1_EEG.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YIS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "oip_YIS_TSR5_EEG.mat",
+        "gip_YIS_TSR6_EEG.mat",
+        "gip_YIS_TSR1_EEG.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YSD": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YSD_TSR7_corrected_ET.mat",
+        "gip_YSD_TSR5_EEG.mat",
+        "YSD_TSR2_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YAG": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YAG_TSR7_corrected_ET.mat",
+        "oip_YAG_TSR2_EEG.mat",
+        "YAG_TSR5_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YMD": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YMD_TSR3_corrected_ET.mat",
+        "YMD_TSR7_corrected_ET.mat",
+        "gip_YMD_TSR4_EEG.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YMS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YMS_TSR7_corrected_ET.mat",
+        "YMS_TSR3_corrected_ET.mat",
+        "YMS_TSR2_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YHS": {
+      "total_files": 21,
+      "file_types": {
+        ".mat": 21
+      },
+      "sample_files": [
+        "YIS_TSR1_corrected_ET.mat",
+        "YHS_TSR5_corrected_ET.mat",
+        "YHS_TSR1_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YRP": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "gip_YRP_TSR3_EEG.mat",
+        "YRP_TSR4_corrected_ET.mat",
+        "YRP_TSR2_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YTL": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YTL_TSR5_corrected_ET.mat",
+        "oip_YTL_TSR3_EEG.mat",
+        "gip_YTL_TSR6_EEG.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YDG": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "gip_YDG_TSR5_EEG.mat",
+        "gip_YDG_TSR2_EEG.mat",
+        "YDG_TSR5_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YAK": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YAK_TSR6_corrected_ET.mat",
+        "gip_YAK_TSR5_EEG.mat",
+        "gip_YAK_TSR4_EEG.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YLS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "gip_YLS_TSR2_EEG.mat",
+        "YLS_TSR5_corrected_ET.mat",
+        "YLS_TSR6_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YFS": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YFS_TSR7_corrected_ET.mat",
+        "gip_YFS_TSR6_EEG.mat",
+        "YFS_TSR1_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YRH": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YRH_TSR5_corrected_ET.mat",
+        "gip_YRH_TSR6_EEG.mat",
+        "YRH_TSR3_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YDR": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "gip_YDR_TSR1_EEG.mat",
+        "gip_YDR_TSR7_EEG.mat",
+        "YDR_TSR2_corrected_ET.mat"
+      ]
+    },
+    "task2__TSR/Preprocessed/YAC": {
+      "total_files": 14,
+      "file_types": {
+        ".mat": 14
+      },
+      "sample_files": [
+        "YAC_TSR5_corrected_ET.mat",
+        "gip_YAC_TSR7_EEG.mat",
+        "gip_YAC_TSR2_EEG.mat"
+      ]
+    },
+    "scripts/python_reader": {
+      "total_files": 2,
+      "file_types": {
+        ".py": 2
+      },
+      "sample_files": [
+        "read_matlab_files.py",
+        "data_loading_helpers.py"
+      ]
+    }
+  }
+}

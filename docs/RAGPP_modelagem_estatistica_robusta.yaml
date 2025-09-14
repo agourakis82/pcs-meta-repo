@@ -1,0 +1,52 @@
+version: v1
+scope:
+  domain: ET_EEG_multilingual
+  datasets:
+  - geco_et
+  - onestop_et
+  - zuco_rt
+  - zuco_eeg
+  - excel_custom_rt
+methods:
+  mixed_models:
+    description: >-
+      Linear Mixed Models/GLMM com interceptos aleatórios por sujeito e componente por item quando viável; controles length, posição, frequência, surprisal.
+    references:
+    - Barr2013
+    - Bates2015
+    controls:
+    - length
+    - position
+    - frequency
+    - surprisal
+    fallbacks:
+    - meta_subjects_random_effects_DL
+  meta_analysis:
+    description: >-
+      Meta-análise DerSimonian–Laird de coeficientes por sujeito (efeitos aleatórios).
+    references: [ DerSimonian1986 ]
+  eeg_cluster_permutation:
+    description: >-
+      Testes de permutação baseados em cluster para correções múltiplas em EEG/MEG.
+    references: [ Maris2007 ]
+  multiple_comparisons:
+    fdr: [ BH1995, BY2001 ]
+    bonferroni_holm: true
+  correlation:
+    spearman_exact: true
+    kendall_tau_b: true
+  surprisal:
+    kenlm_sentence_conditioned: true
+    transformer_optional: true
+    units: bits
+  data_quality:
+    consistency_checks: true
+    missing_handling: [ hierarchical_models, multiple_imputation ]
+    outlier_influence: cooks_distance
+references:
+  Barr2013: Barr, D. J., Levy, R., Scheepers, C., & Tily, H. J. (2013). JML.
+  Bates2015: Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). JSS.
+  DerSimonian1986: DerSimonian, R., & Laird, N. (1986). Controlled Clinical Trials.
+  Maris2007: Maris, E., & Oostenveld, R. (2007). J Neurosci Methods.
+  BH1995: Benjamini, Y., & Hochberg, Y. (1995). JRSS-B.
+  BY2001: Benjamini, Y., & Yekutieli, D. (2001). Annals of Statistics.

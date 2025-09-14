@@ -1,0 +1,16 @@
+file,metric,non_null,total,pct
+zuco_kec_rt.parquet,entropy,545,800,68.125
+zuco_kec_rt.parquet,curvature,545,800,68.125
+zuco_kec_rt.parquet,coherence,675,800,84.375
+excel_custom_kec_rt.parquet,entropy,797051,1083443,73.5664912690377
+excel_custom_kec_rt.parquet,curvature,797051,1083443,73.5664912690377
+excel_custom_kec_rt.parquet,coherence,947804,1083443,87.48074425696599
+geco_et_kec_rt.parquet,entropy,144062,827966,17.39950674303051
+geco_et_kec_rt.parquet,curvature,144062,827966,17.39950674303051
+geco_et_kec_rt.parquet,coherence,348333,827966,42.07093044883485
+onestop_et_kec_rt.parquet,entropy,56246,62675,89.74232149980055
+onestop_et_kec_rt.parquet,curvature,56246,62675,89.74232149980055
+onestop_et_kec_rt.parquet,coherence,56246,62675,89.74232149980055
+zuco_kec_eeg.parquet,entropy,490,800,61.25000000000001
+zuco_kec_eeg.parquet,curvature,490,800,61.25000000000001
+zuco_kec_eeg.parquet,coherence,550,800,68.75

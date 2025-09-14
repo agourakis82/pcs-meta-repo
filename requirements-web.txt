@@ -1,0 +1,28 @@
+# Web Server and MCP Dependencies
+# For RAG++ Web Server with MCP integration
+
+# Core MCP packages
+mcp>=1.0.0
+
+# Web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# AI and ML dependencies
+sentence-transformers>=2.2.0
+openai>=1.0.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Utilities
+requests>=2.31.0
+pydantic>=2.0.0
+python-multipart>=0.0.6
+loguru>=0.7.0
+
+# Optional: Additional AI providers
+anthropic>=0.7.0

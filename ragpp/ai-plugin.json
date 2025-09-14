@@ -1,0 +1,22 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "RAG++ Research Assistant",
+  "name_for_model": "ragpp_research",
+  "description_for_human": "Advanced research assistant with access to 168+ indexed scientific papers in computational psychiatry, digital phenotyping, and machine learning in healthcare. Provides hybrid search across literature and enables knowledge synthesis.",
+  "description_for_model": "RAG++ Research Assistant provides access to a curated database of scientific literature in computational psychiatry and related fields. Use this tool to search for research papers, find recent findings, and synthesize knowledge across multiple sources. The system includes 168+ indexed papers from 2020-2025 covering digital phenotyping, machine learning in healthcare, neuroimaging, and psychiatric biomarkers.",
+  "auth": {
+    "type": "service_http",
+    "authorization_type": "bearer",
+    "verification_tokens": {
+      "openai": "ragpp_verification_token_2025"
+    }
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://179.125.169.148:8000/.well-known/ai-plugin.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://179.125.169.148:8000/static/logo.png",
+  "contact_email": "support@ragpp.research",
+  "legal_info_url": "http://179.125.169.148:8000/legal"
+}

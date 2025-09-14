@@ -1,0 +1,324 @@
+#!/usr/bin/env bash
+# PCS Academic Research Automation Suite
+# Master script to orchestrate all MCP-academic integrations.
+
+set -e
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+# Base directory
+BASE_DIR="/home/agourakis82/workspace/pcs-meta-repo"
+SCRIPTS_DIR="$BASE_DIR/scripts"
+
+# Logo
+print_logo() {
+    echo -e "${BLUE}"
+    echo "╔═══════════════════════════════════════════════════════════╗"
+    echo "║                🧠 PCS RESEARCH SUITE 🧠                  ║"
+    echo "║           Computational-Symbolic Psychiatry              ║"
+    echo "║              Academic Research Automation                ║"
+    echo "║                      Version 4.3                        ║"
+    echo "╚═══════════════════════════════════════════════════════════╝"
+    echo -e "${NC}"
+}
+
+# Status indicator
+status() {
+    echo -e "${GREEN}[✓]${NC} $1"
+}
+
+error() {
+    echo -e "${RED}[✗]${NC} $1"
+}
+
+warning() {
+    echo -e "${YELLOW}[!]${NC} $1"
+}
+
+info() {
+    echo -e "${CYAN}[i]${NC} $1"
+}
+
+section() {
+    echo -e "\n${PURPLE}━━━ $1 ━━━${NC}"
+}
+
+# Check dependencies
+check_dependencies() {
+    section "Checking Dependencies"
+    
+    # Python packages
+    python -c "import requests, matplotlib, pandas, numpy" 2>/dev/null && \
+        status "Python packages available" || \
+        error "Missing Python packages (requests, matplotlib, pandas, numpy)"
+    
+    # Scripts
+    [ -f "$SCRIPTS_DIR/memory_manager.py" ] && status "Memory manager ready" || error "Memory manager missing"
+    [ -f "$SCRIPTS_DIR/academic_search_mcp.py" ] && status "Academic search ready" || error "Academic search missing"
+    [ -f "$SCRIPTS_DIR/advanced_academic_hub.py" ] && status "Advanced hub ready" || error "Advanced hub missing"
+    [ -f "$SCRIPTS_DIR/research_dashboard.py" ] && status "Dashboard ready" || error "Dashboard missing"
+    
+    # Directories
+    mkdir -p "$BASE_DIR/data" "$BASE_DIR/reports/research_dashboard"
+    status "Directories initialized"
+}
+
+# MCP Status
+check_mcp_status() {
+    section "MCP System Status"
+    
+    # Check MCP server
+    if pgrep -f "pcs-memory-server" > /dev/null; then
+        status "MCP server running"
+    else
+        warning "MCP server not running"
+        info "You can start it with: cd ~/.blackbox/MCP/pcs-memory-server && npm start"
+    fi
+    
+    # Check memory file
+    if [ -f ~/.pcs-memory.json ]; then
+        MEMORY_COUNT=$(python -c "import json; data=json.load(open('$HOME/.pcs-memory.json')); print(len(data.get('memories', [])))" 2>/dev/null || echo "0")
+        status "Memory database: $MEMORY_COUNT memories"
+    else
+        warning "Memory database not found"
+    fi
+}
+
+# Quick research pipeline
+run_quick_research() {
+    section "Quick Research Pipeline"
+    
+    QUERY="${1:-computational psychiatry semantic networks}"
+    info "Running research pipeline for: $QUERY"
+    
+    # Step 1: Academic search
+    echo -e "\n${CYAN}Step 1: Academic Search${NC}"
+    python "$SCRIPTS_DIR/academic_search_mcp.py" search --query "$QUERY" --engines pubmed scholar
+    
+    # Step 2: Store in MCP
+    echo -e "\n${CYAN}Step 2: MCP Integration${NC}"
+    python "$SCRIPTS_DIR/memory_manager.py" add "Quick research session: $QUERY" \
+        --category research_progress \
+        --tags research quick_search academic \
+        --importance 3
+    
+    status "Quick research pipeline complete"
+}
+
+# Comprehensive research suite
+run_comprehensive_research() {
+    section "Comprehensive PCS Research Suite"
+    
+    echo -e "\n${CYAN}Phase 1: Literature Collection${NC}"
+    python "$SCRIPTS_DIR/advanced_academic_hub.py" pipeline
+    
+    echo -e "\n${CYAN}Phase 2: Dashboard Generation${NC}"
+    python "$SCRIPTS_DIR/research_dashboard.py" generate
+    
+    echo -e "\n${CYAN}Phase 3: Analysis & Insights${NC}"
+    python "$SCRIPTS_DIR/research_dashboard.py" gaps
+    
+    status "Comprehensive research suite complete"
+}
+
+# Generate research report
+generate_report() {
+    section "Generating Research Report"
+    
+    REPORT_FILE="$BASE_DIR/reports/pcs_research_summary_$(date +%Y%m%d).md"
+    
+    cat > "$REPORT_FILE" << EOF
+# PCS Research Summary Report
+**Generated:** $(date '+%Y-%m-%d %H:%M:%S')
+
+## 📊 Research Metrics
+EOF
+    
+    # Add metrics from dashboard
+    python "$SCRIPTS_DIR/research_dashboard.py" metrics >> "$REPORT_FILE"
+    
+    cat >> "$REPORT_FILE" << EOF
+
+## 🔍 Recent Research Activity
+EOF
+    
+    # Add recent MCP entries
+    python "$SCRIPTS_DIR/memory_manager.py" search --query "research" | head -20 >> "$REPORT_FILE"
+    
+    cat >> "$REPORT_FILE" << EOF
+
+## 🎯 Next Steps
+1. Review literature gaps identified in dashboard
+2. Plan collaboration outreach
+3. Schedule weekly research reviews
+4. Update citation database
+
+---
+*Report generated by PCS Research Suite v4.3*
+EOF
+    
+    status "Research report saved: $REPORT_FILE"
+}
+
+# Interactive menu
+show_menu() {
+    echo -e "\n${YELLOW}Select an option:${NC}"
+    echo "1) 🔍 Quick Research (single query)"
+    echo "2) 🧠 Comprehensive PCS Research Suite"
+    echo "3) 📊 Generate Research Dashboard"
+    echo "4) 📝 Generate Research Report"
+    echo "5) 🔧 Check System Status"
+    echo "6) 📚 View Research Metrics"
+    echo "7) 🌐 Open Web Search Session"
+    echo "8) 🎯 Literature Gap Analysis"
+    echo "9) ❓ Help & Documentation"
+    echo "0) 🚪 Exit"
+    echo
+}
+
+# Web search session
+run_web_search() {
+    section "Web Search Session"
+    
+    info "Opening web search for PCS topics..."
+    python "$SCRIPTS_DIR/mcp_web_search.py" pcs-session
+    
+    status "Web search session complete"
+}
+
+# Literature gap analysis
+run_gap_analysis() {
+    section "Literature Gap Analysis"
+    
+    python "$SCRIPTS_DIR/research_dashboard.py" gaps
+    
+    # Store analysis in MCP
+    python "$SCRIPTS_DIR/memory_manager.py" add "Literature gap analysis performed on $(date)" \
+        --category research_progress \
+        --tags gap_analysis literature research_planning \
+        --importance 4
+    
+    status "Gap analysis complete"
+}
+
+# Help documentation
+show_help() {
+    section "PCS Research Suite Documentation"
+    
+    echo -e "${CYAN}Available Scripts:${NC}"
+    echo "• memory_manager.py - MCP memory management"
+    echo "• academic_search_mcp.py - Multi-engine academic search"
+    echo "• advanced_academic_hub.py - Comprehensive research pipeline"
+    echo "• research_dashboard.py - Analytics and visualization"
+    echo "• mcp_web_search.py - Web search integration"
+    echo "• zotero_mcp_integration.py - Citation management"
+    
+    echo -e "\n${CYAN}Quick Commands:${NC}"
+    echo "• ./pcs_research_suite.sh quick \"your query\" - Quick research"
+    echo "• ./pcs_research_suite.sh comprehensive - Full pipeline"
+    echo "• ./pcs_research_suite.sh dashboard - Generate dashboard"
+    echo "• ./pcs_research_suite.sh report - Create report"
+    
+    echo -e "\n${CYAN}Configuration:${NC}"
+    echo "• MCP Server: ~/.blackbox/MCP/pcs-memory-server/"
+    echo "• Memory Database: ~/.pcs-memory.json"
+    echo "• Reports: $BASE_DIR/reports/"
+    echo "• Dashboard: $BASE_DIR/reports/research_dashboard/"
+}
+
+# Main execution
+main() {
+    print_logo
+    check_dependencies
+    check_mcp_status
+    
+    case "${1:-interactive}" in
+        "quick")
+            run_quick_research "$2"
+            ;;
+        "comprehensive")
+            run_comprehensive_research
+            ;;
+        "dashboard")
+            python "$SCRIPTS_DIR/research_dashboard.py" generate
+            ;;
+        "report")
+            generate_report
+            ;;
+        "status")
+            info "System status check complete"
+            ;;
+        "metrics")
+            python "$SCRIPTS_DIR/research_dashboard.py" metrics
+            ;;
+        "web")
+            run_web_search
+            ;;
+        "gaps")
+            run_gap_analysis
+            ;;
+        "help")
+            show_help
+            ;;
+        "interactive")
+            while true; do
+                show_menu
+                read -p "Enter your choice [0-9]: " choice
+                case $choice in
+                    1)
+                        read -p "Enter research query: " query
+                        run_quick_research "$query"
+                        ;;
+                    2)
+                        run_comprehensive_research
+                        ;;
+                    3)
+                        python "$SCRIPTS_DIR/research_dashboard.py" generate
+                        ;;
+                    4)
+                        generate_report
+                        ;;
+                    5)
+                        check_mcp_status
+                        ;;
+                    6)
+                        python "$SCRIPTS_DIR/research_dashboard.py" metrics
+                        ;;
+                    7)
+                        run_web_search
+                        ;;
+                    8)
+                        run_gap_analysis
+                        ;;
+                    9)
+                        show_help
+                        ;;
+                    0)
+                        echo -e "${GREEN}Goodbye! Happy researching! 🧠${NC}"
+                        exit 0
+                        ;;
+                    *)
+                        error "Invalid option. Please try again."
+                        ;;
+                esac
+                echo -e "\n${YELLOW}Press Enter to continue...${NC}"
+                read
+            done
+            ;;
+        *)
+            error "Unknown command: $1"
+            show_help
+            exit 1
+            ;;
+    esac
+}
+
+# Run main function
+main "$@"

@@ -1,0 +1,78 @@
+# Cloudflare Tunnel Configuration
+# Production-ready config for agourakis.med.br infrastructure
+# Internal HTTP routing to nginx vhosts
+
+# === CONFIGURATION VARIABLES ===
+# ORG_DOMAIN="agourakis.med.br"
+# WWW_HOST="www.agourakis.med.br"  
+# MCP_HOST="mcp.agourakis.med.br"
+# WWW_PORT=8440
+# MCP_PORT=8480
+# CLOUDFLARED_TUNNEL_NAME="agourakis"
+
+# Tunnel identification
+tunnel: REPLACE_WITH_REAL_UUID
+credentials-file: /etc/cloudflared/REPLACE_WITH_REAL_UUID.json
+
+# Ingress rules (order matters - most specific first)
+ingress:
+# Website principal (www subdomain)
+# Serves static site, SPA, marketing pages
+- hostname: www.agourakis.med.br
+  service: http://127.0.0.1:8440
+  originRequest:
+    httpHostHeader: www.agourakis.med.br
+    connectTimeout: 10s
+    tlsTimeout: 10s
+    tcpKeepAlive: 30s
+    keepAliveConnections: 100
+    keepAliveTimeout: 90s
+
+# API and SSE endpoints (mcp subdomain)  
+# FastAPI backend with SSE support
+- hostname: mcp.agourakis.med.br
+  service: http://127.0.0.1:8480
+  originRequest:
+    httpHostHeader: mcp.agourakis.med.br
+    connectTimeout: 10s
+    tlsTimeout: 10s
+    tcpKeepAlive: 30s
+    keepAliveConnections: 100
+    keepAliveTimeout: 90s
+    # SSE-specific settings
+    noHappyEyeballs: false
+    h2mux: false
+    http2Origin: false
+    disableChunkedEncoding: true
+
+# Apex domain redirect (handled by www nginx vhost)
+# This catches agourakis.med.br and redirects to www
+- hostname: agourakis.med.br
+  service: http://127.0.0.1:8440
+  originRequest:
+    httpHostHeader: agourakis.med.br
+
+# Catch-all for unmatched hostnames
+- service: http_status:404
+
+# Global tunnel settings
+tunnel-timeout: 300s
+connection-timeout: 30s
+retries: 3
+grace-period: 30s
+
+# Logging configuration
+logfile: /var/log/cloudflared.log
+loglevel: info
+
+# Performance optimizations
+no-autoupdate: true
+metrics: 127.0.0.1:60123
+no-chunked-encoding: false
+
+# Protocol settings optimized for SSE
+protocol: auto
+
+# Edge connectivity
+edge-ip-version: auto
+region: auto

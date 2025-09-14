@@ -51,13 +51,13 @@ sudo chown -R www-data:www-data "$WEBROOT"
 NGINX_SNIPPET="/etc/nginx/snippets/letsencrypt_webroot.conf"
 if [[ ! -f "$NGINX_SNIPPET" ]]; then
   echo "Criando snippet Nginx: $NGINX_SNIPPET"
-  sudo bash -c "cat > '$NGINX_SNIPPET' <<'SNIP'
+  sudo tee "$NGINX_SNIPPET" >/dev/null <<'SNIP'
 location ^~ /.well-known/acme-challenge/ {
     alias WEBROOT_PLACEHOLDER/.well-known/acme-challenge/;
     try_files $uri =404;
     default_type text/plain;
 }
-SNIP"
+SNIP
   sudo sed -i "s|WEBROOT_PLACEHOLDER|$WEBROOT|g" "$NGINX_SNIPPET"
 fi
 

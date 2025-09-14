@@ -1,0 +1,89 @@
+#!/bin/bash
+# PCS AI Research Suite - Quick Launcher
+# Launcher rápido e direto para a interface gráfica
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+show_menu() {
+    echo -e "${BLUE}PCS AI Research Suite v4.3${NC}"
+    echo "=================================="
+    echo ""
+    echo "Escolha uma versão:"
+    echo "  1) Clean   - Sem emojis (recomendado)"
+    echo "  2) Demo    - Versão leve"
+    echo "  3) Full    - Versão completa"
+    echo "  4) Sair"
+    echo ""
+    read -p "Opção [1-4]: " choice
+    
+    case $choice in
+        1)
+            echo -e "${GREEN}Iniciando versão Clean...${NC}"
+            cd "$SCRIPT_DIR"
+            python3 scripts/pcs_clean_gui.py
+            ;;
+        2)
+            echo -e "${GREEN}Iniciando versão Demo...${NC}"
+            cd "$SCRIPT_DIR"
+            python3 scripts/pcs_demo_gui.py
+            ;;
+        3)
+            echo -e "${GREEN}Iniciando versão Full...${NC}"
+            cd "$SCRIPT_DIR"
+            python3 scripts/pcs_gui.py
+            ;;
+        4)
+            echo "Saindo..."
+            exit 0
+            ;;
+        *)
+            echo -e "${RED}Opção inválida!${NC}"
+            show_menu
+            ;;
+    esac
+}
+
+# Se não há argumentos, mostra menu
+if [[ $# -eq 0 ]]; then
+    show_menu
+else
+    # Argumentos diretos
+    case "$1" in
+        clean|--clean|-c)
+            cd "$SCRIPT_DIR"
+            python3 scripts/pcs_clean_gui.py
+            ;;
+        demo|--demo|-d)
+            cd "$SCRIPT_DIR"
+            python3 scripts/pcs_demo_gui.py
+            ;;
+        full|--full|-f)
+            cd "$SCRIPT_DIR"
+            python3 scripts/pcs_gui.py
+            ;;
+        --help|-h)
+            echo "PCS AI Research Suite Launcher"
+            echo ""
+            echo "Usage: $0 [VERSION]"
+            echo ""
+            echo "Versions:"
+            echo "  clean, -c    Clean version (no emojis)"
+            echo "  demo, -d     Demo version (lightweight)"
+            echo "  full, -f     Full version (complete)"
+            echo "  --help, -h   Show this help"
+            echo ""
+            echo "Without arguments: Interactive menu"
+            ;;
+        *)
+            echo -e "${RED}Versão desconhecida: $1${NC}"
+            echo "Use --help para ver opções"
+            ;;
+    esac
+fi

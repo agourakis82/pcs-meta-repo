@@ -1,0 +1,30 @@
+tunnel: pcs-tunnel
+credentials-file: /etc/cloudflared/147fc4b5-1631-4196-ba8e-967b92178761.json
+
+ingress:
+# Site principal WWW (porta 8080 - nginx website)
+- hostname: www.agourakis.med.br
+  service: http://127.0.0.1:8080
+
+# Apex domain redirect para WWW
+- hostname: agourakis.med.br
+  service: http://127.0.0.1:8080
+
+# MCP API/SSE (porta 8081 - nginx proxy para uvicorn)
+- hostname: mcp.agourakis.med.br
+  service: http://127.0.0.1:8081
+
+# Catch-all 404
+- service: http_status:404
+
+# Configurações otimizadas para produção
+tunnel-timeout: 300s
+connection-timeout: 10s
+no-chunked-encoding: true
+http2-origin: true
+logfile: /var/log/cloudflared.log
+loglevel: info
+
+# Performance e reliability
+retries: 3
+grace-period: 30s

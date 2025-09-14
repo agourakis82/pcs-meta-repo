@@ -1,0 +1,30 @@
+{
+  "version": "4.4",
+  "description": "RAG++ Configuration for PCS Project",
+  "rag_database": {
+    "path": "ragpp/index/lit2025",
+    "collection": "lit2025",
+    "embedding_model": "default"
+  },
+  "mcp_integration": {
+    "memory_manager": "scripts/memory_manager.py",
+    "categories": [
+      "research_findings",
+      "methodology",
+      "literature_review",
+      "project_progress",
+      "computational_results",
+      "theoretical_insights"
+    ]
+  },
+  "search_defaults": {
+    "max_rag_results": 5,
+    "max_mcp_results": 3,
+    "confidence_threshold": 0.3
+  },
+  "data_sources": {
+    "chunks": "ragpp/data/processed/2025_sweep/YEAR-2025_chunks.jsonl",
+    "notes": "ragpp/data/processed/2025_sweep/YEAR-2025_active_reading_notes.jsonl",
+    "records": "ragpp/data/processed/2025_sweep/YEAR-2025_psy-neuro_records.jsonl"
+  }
+}

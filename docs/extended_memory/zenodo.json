@@ -1,0 +1,16 @@
+{
+  "title": "Extended Memory — PhD & Publication Plan (Brazil) v4.3",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "version": "v2025.08.28",
+  "creators": [
+    {"name": "Agourakis, Demetrios", "orcid": "0000-0002-8596-5097", "affiliation": "PUC-SP"}
+  ],
+  "license": "CC-BY-4.0",
+  "language": "eng",
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.16682784", "relation": "isNewVersionOf", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.16533374", "relation": "isPartOf", "scheme": "doi"}
+  ]
+}
+

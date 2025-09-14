@@ -1,0 +1,18 @@
+input_files:
+  processed_datasets:
+  - /home/agourakis82/FASTDATA/processed/derco_eeg/word_events.parquet
+  - /home/agourakis82/FASTDATA/processed/geco_et/word_events.parquet
+  - /home/agourakis82/FASTDATA/processed/onestop_et/word_events.parquet
+  - /home/agourakis82/FASTDATA/processed/lpp_eeg/word_events.parquet
+  swow_base_path: data/L2_derived/kec/en
+output_files:
+  integrated: data/processed/integrated_neuro_swow.csv
+  validation_report: reports/integration_validation.yaml
+pipeline:
+  description: Integrates SWOW network metrics with ZuCo EEG+RT data
+  name: SWOW-ZuCo Integration Pipeline
+  version: '2.0'
+processing:
+  chunk_size: 1000
+  generate_reports: true
+  validate_integrity: true

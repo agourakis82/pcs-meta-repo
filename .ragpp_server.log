@@ -1,0 +1,42 @@
+/home/agourakis82/workspace/pcs-meta-repo/ragpp/ragpp_web_server.py:159: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:__main__:✅ MCP HTTP endpoint mounted at /mcp (auth=on, hosts=mcp.agourakis.med.br,localhost,127.0.0.1)
+INFO:     Will watch for changes in these directories: ['/home/agourakis82/workspace/pcs-meta-repo/ragpp']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [331755] using WatchFiles
+🚀 Starting RAG++ Web Server on 127.0.0.1:8000
+📖 API Documentation: http://127.0.0.1:8000/docs
+🔗 Plugin Manifest: http://127.0.0.1:8000/.well-known/ai-plugin.json
+🧠 Extended Memory API: http://127.0.0.1:8000/memory/
+INFO:__mp_main__:✅ MCP HTTP endpoint mounted at /mcp (auth=on, hosts=mcp.agourakis.med.br,localhost,127.0.0.1)
+INFO:ragpp_web_server:✅ MCP HTTP endpoint mounted at /mcp (auth=on, hosts=mcp.agourakis.med.br,localhost,127.0.0.1)
+INFO:     Started server process [331841]
+INFO:     Waiting for application startup.
+INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51822 - "GET /health HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:38812 - "HEAD /health HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:38820 - "GET /health HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:48050 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:watchfiles.main:5 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'ragpp_web_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [331841]
+INFO:watchfiles.main:2 changes detected
+INFO:__mp_main__:✅ MCP HTTP endpoint mounted at /mcp (auth=on, hosts=mcp.agourakis.med.br,localhost,127.0.0.1)
+INFO:ragpp_web_server:✅ MCP HTTP endpoint mounted at /mcp (auth=on, hosts=mcp.agourakis.med.br,localhost,127.0.0.1)
+INFO:     Started server process [342843]
+INFO:     Waiting for application startup.
+INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:watchfiles.main:2 changes detected

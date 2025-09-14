@@ -1,0 +1,163 @@
+nohup: ignoring input
+INFO:__main__:✅ MCP HTTP endpoint mounted at /mcp (auth=off, hosts=*)
+INFO:ragpp_web_server:✅ MCP HTTP endpoint mounted at /mcp (auth=off, hosts=*)
+INFO:     Started server process [1535886]
+INFO:     Waiting for application startup.
+INFO:ragpp_web_server:🔧 Initializing RAG++ system...
+INFO:ragpp_web_server:✅ RAG++ system initialized successfully
+INFO:ragpp_web_server:🗄️ Initializing cache system...
+INFO:ragpp.cache_manager:🗄️ Cache inicializado: max_size=1000, ttl=3600s
+INFO:ragpp_web_server:✅ Cache system initialized successfully
+INFO:ragpp_web_server:🌳 Initializing tree search system...
+INFO:ragpp.tree_search_optimized:Added node df83a9d4-e138-4ccc-b454-0cbd750a1c13 (root)
+INFO:ragpp.tree_search_optimized:Added node c123720a-85a7-4891-aba6-ad3f04ea910c (category)
+INFO:ragpp.tree_search_optimized:Added node 4743d104-75ed-4ab8-a627-1121aaa1c7e8 (category)
+INFO:ragpp.tree_search_optimized:Added node 3446a6b6-f803-4a6f-a646-55297497f8b8 (category)
+INFO:ragpp.tree_search_optimized:Added node 8f3a2716-ceb8-47d4-8307-9c72ab51f603 (category)
+INFO:ragpp_web_server:✅ Tree search system initialized successfully
+INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda:0
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:ragpp.extended_memory_service:✅ Sentence transformer loaded
+INFO:ragpp.extended_memory_service:🔄 Auto-backup service started
+🚀 Starting RAG++ Web Server on 0.0.0.0:8003
+📖 API Documentation: http://0.0.0.0:8003/docs
+🔗 Plugin Manifest: http://0.0.0.0:8003/.well-known/ai-plugin.json
+🧠 Extended Memory API: http://0.0.0.0:8003/memory/
+⚡ Workers: 1 (otimizado para 12 cores)
+✅ Live literature collector (PubMed) initialized.
+❌ Failed to connect to RAG database: Collection lit2025 does not exist.
+INFO:     127.0.0.1:40958 - "POST /admin/feed-literature HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:38518 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55850 - "POST /admin/feed-literature HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:46456 - "POST /admin/feed-literature HTTP/1.1" 422 Unprocessable Entity
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.90it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.90it/s]
+INFO:ragpp.extended_memory_service:✅ Memory stored: literature_summary_20250914_071052_af29a0e8d43136ab
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 38.23it/s]
+INFO:ragpp.extended_memory_service:✅ Memory stored: literature_summary_20250914_071052_861eaea88a990e6b
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 53.62it/s]
+INFO:ragpp.extended_memory_service:✅ Memory stored: literature_summary_20250914_071052_39d279b762599da0
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 54.93it/s]
+INFO:ragpp.extended_memory_service:✅ Memory stored: literature_summary_20250914_071052_11889750873186e4
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 43.33it/s]
+INFO:ragpp.extended_memory_service:✅ Memory stored: literature_collection_20250914_071052_9d854ed1c35b530f
+INFO:     127.0.0.1:52322 - "POST /admin/feed-literature HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45492 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37276 - "POST /literature/search HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37278 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49780 - "GET / HTTP/1.1" 200 OK
+INFO:ragpp_web_server:💾 Cached result for query: machine learning crop classification...
+🧠 Found 2 memory results
+INFO:     127.0.0.1:49790 - "POST /search HTTP/1.1" 200 OK
+INFO:ragpp_web_server:💾 Cached result for query: Classifying Crop Leaf Diseases...
+🧠 Found 2 memory results
+INFO:     127.0.0.1:36328 - "POST /search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60746 - "GET /memory/list?limit=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53164 - "GET /tree/structure HTTP/1.1" 200 OK
+ERROR:ragpp_web_server:Populate tree error: 'ExtendedMemoryService' object has no attribute 'search_memories'
+INFO:     127.0.0.1:40652 - "POST /tree/populate_from_memories HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:41428 - "GET /tree/structure HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 99e99f74-2711-4cf5-bafc-58ef64a6172d (document)
+INFO:     127.0.0.1:41444 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node ddfb50cb-b445-4733-801b-0e8bc15c3f5f (document)
+INFO:     127.0.0.1:41456 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 1ceb694d-bb0c-4983-95d3-d6b2e5ffd876 (document)
+INFO:     127.0.0.1:41458 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node e6566786-fe8b-4750-a7d3-e4b19ccfbc07 (document)
+INFO:     127.0.0.1:41470 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node f77a287a-d684-43ee-ab79-e5f9ecf41b2b (document)
+INFO:     127.0.0.1:41472 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node b78b6da9-7e86-47d8-b0af-24ca97ea3aa8 (document)
+INFO:     127.0.0.1:41480 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 9c958844-1bd8-4dee-bab5-472b62e3ce7f (document)
+INFO:     127.0.0.1:41492 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node d91d1c18-c9c0-4219-8788-29773778311f (document)
+INFO:     127.0.0.1:41504 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 741e3fd5-5315-47eb-a671-040c8d9728bf (document)
+INFO:     127.0.0.1:41512 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 3c09d5a5-61c2-4a8c-bbe8-2c1e826671fe (document)
+INFO:     127.0.0.1:41514 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node ac5894e0-1cc0-46f1-9443-507a62ed4916 (document)
+INFO:     127.0.0.1:41516 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node c3e32f19-049b-4174-8fce-054727497557 (document)
+INFO:     127.0.0.1:41522 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node b58bd2b4-f4cb-46ad-a19c-5a2e793eedc6 (document)
+INFO:     127.0.0.1:41536 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 52b19a15-ee32-464b-90f2-95ded0beccc9 (document)
+INFO:     127.0.0.1:41552 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 3a829d87-58e0-4082-acfb-85ee83f06b38 (document)
+INFO:     127.0.0.1:41560 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node f02f7f5b-030c-4d2d-aecb-a2d12d86f36c (document)
+INFO:     127.0.0.1:41564 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 7bd23575-8cc4-4549-b505-851f0cc42d2d (document)
+INFO:     127.0.0.1:41572 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node dc58f05b-4820-4dfb-b2d5-e58fe1cbe67e (document)
+INFO:     127.0.0.1:41588 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 1adc3ab6-bd24-4d07-905a-913befadc1ca (document)
+INFO:     127.0.0.1:41598 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 9ed0d516-ab04-4953-902b-d7aea00cae11 (document)
+INFO:     127.0.0.1:41610 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 4744e7aa-b1dc-4fdf-9b71-8f335c6d6fff (document)
+INFO:     127.0.0.1:41618 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 835578c2-b00e-4228-bfa9-87d25c6f0805 (document)
+INFO:     127.0.0.1:41632 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 8524669e-b20e-45dd-b3b5-ccfb2bbe4aac (document)
+INFO:     127.0.0.1:41634 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node ca99927b-62e4-45d4-8888-0307991a7030 (document)
+INFO:     127.0.0.1:41638 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 1f7831f4-06f7-47dd-94ad-7841917b1aa7 (document)
+INFO:     127.0.0.1:41652 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 22ccc3d6-131c-4b62-ab2c-6d920d342fec (document)
+INFO:     127.0.0.1:41658 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 394d38ec-c821-49ec-b9d6-4b7e841a7830 (document)
+INFO:     127.0.0.1:41666 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node a9a3f1c2-feb4-4926-9fe8-c634e2b4f5db (document)
+INFO:     127.0.0.1:41674 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 72366c8f-f7d4-449d-b630-df21fefe0b6d (document)
+INFO:     127.0.0.1:41676 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node 22063bf7-1ab4-4e0e-8b03-29f86985e884 (document)
+INFO:     127.0.0.1:41692 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node ff282b91-0eb9-48c7-b20e-1f2f597d0289 (document)
+INFO:     127.0.0.1:41702 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Added node bc2f18ca-3ad1-4776-aefe-f6794d043e0a (document)
+INFO:     127.0.0.1:41714 - "POST /tree/add_node HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41728 - "GET /tree/structure HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'machine learning crop classification' using best_first
+INFO:ragpp.tree_search_optimized:Found 3 results
+INFO:     127.0.0.1:43256 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'visualization statistical data' using best_first
+INFO:ragpp.tree_search_optimized:Found 3 results
+INFO:     127.0.0.1:53530 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'mathematical statistics regression' using dfs
+INFO:ragpp.tree_search_optimized:Found 2 results
+INFO:     127.0.0.1:36910 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32796 - "GET /tree/structure?include_details=true HTTP/1.1" 200 OK
+INFO:ragpp_web_server:💾 Cached result for query: deep learning transfer learning crop disease class...
+🧠 Found 2 memory results
+INFO:     127.0.0.1:42224 - "POST /search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44524 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44540 - "GET /tree/structure HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'machine learning crop disease classification' using best_first
+INFO:ragpp.tree_search_optimized:Found 2 results
+INFO:     127.0.0.1:44554 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'statistical analysis regression modeling' using best_first
+INFO:ragpp.tree_search_optimized:Found 2 results
+INFO:     127.0.0.1:44566 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'data visualization interactive charts' using best_first
+INFO:ragpp.tree_search_optimized:Found 2 results
+INFO:     127.0.0.1:44572 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:ragpp.tree_search_optimized:Searching: 'mathematical optimization algorithms' using best_first
+INFO:ragpp.tree_search_optimized:Found 2 results
+INFO:     127.0.0.1:44582 - "POST /tree/search HTTP/1.1" 200 OK
+INFO:ragpp.extended_memory_service:✅ Backup created: ragpp/data/memory/backups/memory_backup_20250914_080302.db
+INFO:ragpp.extended_memory_service:✅ Backup created: ragpp/data/memory/backups/memory_backup_20250914_085827.db
+INFO:ragpp.extended_memory_service:✅ Backup created: ragpp/data/memory/backups/memory_backup_20250914_095350.db
+INFO:ragpp.extended_memory_service:✅ Backup created: ragpp/data/memory/backups/memory_backup_20250914_104906.db
+INFO:ragpp.extended_memory_service:✅ Backup created: ragpp/data/memory/backups/memory_backup_20250914_114419.db
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1535886]

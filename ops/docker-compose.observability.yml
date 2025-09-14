@@ -1,0 +1,298 @@
+# Production Observability Stack
+# Prometheus + Grafana + Exporters for PCS Meta Repo infrastructure
+# Usage: docker-compose -f docker-compose.observability.yml up -d
+
+version: "3.8"
+
+services:
+  # Prometheus - Metrics collection and storage
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9090:9090"
+    volumes:
+      - prometheus-data:/prometheus
+      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./observability/rules:/etc/prometheus/rules:ro
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/etc/prometheus/console_libraries"
+      - "--web.console.templates=/etc/prometheus/consoles"
+      - "--storage.tsdb.retention.time=30d"
+      - "--web.enable-lifecycle"
+      - "--web.enable-admin-api"
+    networks:
+      - monitoring
+
+  # Grafana - Visualization and dashboards
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=changeme123
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-piechart-panel,grafana-worldmap-panel
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./observability/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./observability/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    networks:
+      - monitoring
+    depends_on:
+      - prometheus
+
+  # Node Exporter - System metrics
+  node_exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9100:9100"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.rootfs=/rootfs"
+      - "--path.sysfs=/host/sys"
+      - "--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)"
+    networks:
+      - monitoring
+
+  # Nginx Exporter - Nginx metrics
+  nginx_exporter:
+    image: nginx/nginx-prometheus-exporter:latest
+    container_name: nginx-exporter-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9113:9113"
+    command:
+      - "-nginx.scrape-uri=http://host.docker.internal:8080/nginx_status"
+    networks:
+      - monitoring
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # Cloudflared Exporter (custom, optional)
+  cloudflared_exporter:
+    image: alpine:latest
+    container_name: cloudflared-exporter-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9101:9101"
+    volumes:
+      - ./observability/cloudflared-exporter.sh:/app/exporter.sh:ro
+    command: sh /app/exporter.sh
+    networks:
+      - monitoring
+
+  # AlertManager - Alert handling
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: alertmanager-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9093:9093"
+    volumes:
+      - alertmanager-data:/alertmanager
+      - ./observability/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+    command:
+      - "--config.file=/etc/alertmanager/alertmanager.yml"
+      - "--storage.path=/alertmanager"
+      - "--web.external-url=http://localhost:9093"
+    networks:
+      - monitoring
+
+  # Redis Exporter (if using Redis for caching)
+  redis_exporter:
+    image: oliver006/redis_exporter:latest
+    container_name: redis-exporter-pcs
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9121:9121"
+    environment:
+      - REDIS_ADDR=redis://host.docker.internal:6379
+    networks:
+      - monitoring
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+  alertmanager-data:
+    driver: local
+
+networks:
+  monitoring:
+    driver: bridge
+    name: pcs-monitoring
+
+---
+# Additional configuration files needed:
+
+# ./observability/prometheus.yml
+# global:
+#   scrape_interval: 15s
+#   evaluation_interval: 15s
+#
+# rule_files:
+#   - "rules/*.yml"
+#
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets:
+#           - alertmanager:9093
+#
+# scrape_configs:
+#   - job_name: 'prometheus'
+#     static_configs:
+#       - targets: ['localhost:9090']
+#
+#   - job_name: 'node-exporter'
+#     static_configs:
+#       - targets: ['node_exporter:9100']
+#
+#   - job_name: 'nginx-exporter'
+#     static_configs:
+#       - targets: ['nginx_exporter:9113']
+#
+#   - job_name: 'cloudflared-metrics'
+#     static_configs:
+#       - targets: ['host.docker.internal:60123']
+#     metrics_path: '/metrics'
+#
+#   - job_name: 'fastapi-app'
+#     static_configs:
+#       - targets: ['host.docker.internal:8000']
+#     metrics_path: '/metrics'
+
+# ./observability/alertmanager.yml
+# global:
+#   smtp_smarthost: 'localhost:587'
+#   smtp_from: 'alerts@agourakis.med.br'
+#
+# route:
+#   group_by: ['alertname']
+#   group_wait: 10s
+#   group_interval: 10s
+#   repeat_interval: 1h
+#   receiver: 'web.hook'
+#
+# receivers:
+# - name: 'web.hook'
+#   webhook_configs:
+#   - url: 'http://127.0.0.1:5001/'
+
+# ./observability/rules/alerts.yml
+# groups:
+# - name: infrastructure
+#   rules:
+#   - alert: InstanceDown
+#     expr: up == 0
+#     for: 1m
+#     labels:
+#       severity: critical
+#     annotations:
+#       summary: "Instance {{ $labels.instance }} down"
+#       description: "{{ $labels.instance }} has been down for more than 1 minute."
+#
+#   - alert: HighCPUUsage
+#     expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+#     for: 5m
+#     labels:
+#       severity: warning
+#     annotations:
+#       summary: "High CPU usage on {{ $labels.instance }}"
+#
+#   - alert: HighMemoryUsage
+#     expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+#     for: 5m
+#     labels:
+#       severity: warning
+#     annotations:
+#       summary: "High memory usage on {{ $labels.instance }}"
+#
+#   - alert: NginxDown
+#     expr: nginx_up == 0
+#     for: 1m
+#     labels:
+#       severity: critical
+#     annotations:
+#       summary: "Nginx is down"
+#
+#   - alert: CloudflaredDown
+#     expr: up{job="cloudflared-metrics"} == 0
+#     for: 2m
+#     labels:
+#       severity: critical
+#     annotations:
+#       summary: "Cloudflared tunnel is down"
+#
+#   - alert: HighResponseTime
+#     expr: nginx_http_request_duration_seconds{quantile="0.95"} > 2
+#     for: 5m
+#     labels:
+#       severity: warning
+#     annotations:
+#       summary: "High response time detected"
+
+# ./observability/cloudflared-exporter.sh
+# #!/bin/sh
+# # Simple cloudflared metrics exporter
+#
+# while true; do
+#   echo "# HELP cloudflared_tunnel_status Cloudflared tunnel status"
+#   echo "# TYPE cloudflared_tunnel_status gauge"
+#
+#   if systemctl is-active --quiet cloudflared; then
+#     echo "cloudflared_tunnel_status 1"
+#   else
+#     echo "cloudflared_tunnel_status 0"
+#   fi
+#
+#   echo "# HELP cloudflared_config_reload_time Last config reload timestamp"
+#   echo "# TYPE cloudflared_config_reload_time gauge"
+#   echo "cloudflared_config_reload_time $(date +%s)"
+#
+#   sleep 15
+# done | nc -l -p 9101
+
+# Setup Instructions:
+# 1. Create observability directory structure:
+#    mkdir -p ops/observability/{grafana/{provisioning,dashboards},rules}
+#
+# 2. Copy configuration files to observability/ directory
+#
+# 3. Enable nginx status endpoint:
+#    Add to nginx config: location /nginx_status { stub_status; allow 127.0.0.1; deny all; }
+#
+# 4. Start the stack:
+#    docker-compose -f docker-compose.observability.yml up -d
+#
+# 5. Access dashboards:
+#    - Grafana: http://localhost:3000 (admin/changeme123)
+#    - Prometheus: http://localhost:9090
+#    - AlertManager: http://localhost:9093
+#
+# 6. Import Grafana dashboards:
+#    - Node Exporter Full: ID 1860
+#    - Nginx: ID 12900
+#    - Custom PCS dashboard (create based on metrics)
+
+# SLO Definitions:
+# - Website Response Time: p95 < 500ms
+# - API Response Time: p95 < 1000ms
+# - SSE Connection Success Rate: > 99.5%
+# - System Uptime: > 99.9%
+# - Tunnel Connectivity: > 99.8%

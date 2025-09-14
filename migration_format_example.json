@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "source": "chatgpt_web",
+  "target": "mcp_server",
+  "export_timestamp": "2025-09-14T12:00:00Z",
+  "conversations": [
+    {
+      "id": "conv_001",
+      "title": "Análise de Dados EEG",
+      "created_at": "2025-09-14T10:30:00Z",
+      "updated_at": "2025-09-14T11:45:00Z",
+      "model": "gpt-4",
+      "messages": [
+        {
+          "id": "msg_001",
+          "role": "user",
+          "content": "Como posso analisar dados de EEG usando Python?",
+          "timestamp": "2025-09-14T10:30:00Z"
+        },
+        {
+          "id": "msg_002",
+          "role": "assistant",
+          "content": "Para análise de EEG em Python, recomendo o MNE-Python...",
+          "timestamp": "2025-09-14T10:30:15Z"
+        }
+      ],
+      "metadata": {
+        "total_messages": 2,
+        "conversation_length": "15 minutos",
+        "topics": [
+          "EEG",
+          "Python",
+          "análise de dados"
+        ],
+        "quality_score": 0.9
+      }
+    }
+  ],
+  "summary": {
+    "total_conversations": 1,
+    "total_messages": 2,
+    "date_range": {
+      "start": "2025-09-14T10:30:00Z",
+      "end": "2025-09-14T11:45:00Z"
+    }
+  }
+}

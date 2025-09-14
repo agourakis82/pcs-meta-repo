@@ -1,0 +1,31 @@
+# SWOW Paths Configuration
+# This file defines paths, release dates, and sources for SWOW datasets per language.
+# All data must be downloaded manually from the official SWOW site.
+# License: SWOW data is CC BY-NC-ND 3.0 - Code only, no data redistribution.
+
+en:
+  raw_dir: "data/raw_public/swow/en"
+  release_date: "2018-10-18"
+  balanced_hint: "100 participants per cue"
+  sources: [ "strength.SWOW-EN.R123.20180827.csv", "SWOW-EN.complete.20180827.csv" ]
+
+es:
+  raw_dir: "data/raw_public/swow/es"
+  release_date: "2022-09-17"
+  balanced_hint: "70 participants per cue"
+  sources: [ "raw_responses.csv", "cue_stats.csv", "balanced_responses.csv" ]
+
+nl:
+  raw_dir: "data/raw_public/swow/nl"
+  release_date: "2013-xx-xx"
+  sources: [ "associative_strength.csv", "swow_nl.mat" ]
+
+zh:
+  raw_dir: "data/raw_public/swow/zh"
+  release_date: "2024-11-04"
+  balanced_hint: "55 participants per cue"
+  sources: [ "raw_trials.csv", "balanced_55_per_cue.csv", "zh_network.mat (optional)" ]
+
+licenses:
+  swow: "CC BY-NC-ND 3.0"
+  note: "Code only, no data redistribution. Users must download SWOW data manually from the official site."

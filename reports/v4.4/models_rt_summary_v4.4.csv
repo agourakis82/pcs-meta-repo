@@ -1,0 +1,10 @@
+file,dataset,dv,metric,n,r_spearman,p,method,q_fdr,q_fdr_by_dv
+zuco_kec_rt.parquet,zuco,trt_ms,entropy,415,0.023291056002805968,0.6361361704888533,spearman,1.0,0.9542042557332799
+zuco_kec_rt.parquet,zuco,trt_ms,curvature,415,-0.02086984058961043,0.6716279530766704,spearman,1.0,0.6716279530766704
+zuco_kec_rt.parquet,zuco,trt_ms,coherence,509,-0.028175061984568733,0.5259362949120399,spearman,1.0,1.0
+zuco_kec_rt.parquet,zuco,nfix,entropy,415,0.030948902672925445,0.5295284259184319,spearman,1.0,1.0
+zuco_kec_rt.parquet,zuco,nfix,curvature,415,-0.010385979369367295,0.8329294044886365,spearman,0.8329294044886365,0.8329294044886365
+zuco_kec_rt.parquet,zuco,nfix,coherence,509,-0.011717423280883644,0.7919985879334113,spearman,0.9503983055200935,1.0
+geco_et_kec_rt.parquet,geco_et,timestamp,entropy,144062,-0.05794656942158578,2.1997434341757544e-107,spearman,3e-300,3e-300
+geco_et_kec_rt.parquet,geco_et,timestamp,curvature,144062,-0.08178561033098405,2.906185081015226e-212,spearman,3e-300,3e-300
+geco_et_kec_rt.parquet,geco_et,timestamp,coherence,348333,-0.269932129203402,0.0,spearman,3e-300,3e-300

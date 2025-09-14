@@ -1,0 +1,31 @@
+# cloudflared/config.yml — template de túnel para produção
+#
+# INSTRUÇÕES:
+# 1. Copie este arquivo para /etc/cloudflared/config.yml
+# 2. Substitua <UUID> pelo UUID real do túnel obtido via 'cloudflared tunnel create pcs-tunnel'
+# 3. Ajuste as portas de loopback conforme sua configuração Nginx
+#
+# Documentação: docs/infra_cloudflare_tunnel.md
+
+tunnel: pcs-tunnel
+credentials-file: /etc/cloudflared/<UUID>.json
+
+ingress:
+# Website principal (Nginx loopback)
+- hostname: agourakis.med.br
+  service: http://127.0.0.1:8080 # Nginx website (loopback)
+
+# MCP API e SSE (Nginx proxy para Uvicorn)
+- hostname: mcp.agourakis.med.br
+  service: http://127.0.0.1:8081 # Nginx proxy MCP (loopback). Ver nginx/sites-available/mcp.conf
+
+# Catch-all para outros subdomínios/requests
+- service: http_status:404
+
+# Configurações opcionais de performance
+tunnel-timeout: 300s
+connection-timeout: 10s
+
+# Logs (opcional - descomente se necessário debug)
+# loglevel: debug
+# logfile: /var/log/cloudflared.log

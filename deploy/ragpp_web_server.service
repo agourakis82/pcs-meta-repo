@@ -1,0 +1,22 @@
+[Unit]
+Description=RAG++ Web Server (FastAPI + MCP)
+After=network.target
+
+[Service]
+Type=simple
+# Adjust to your repo path
+WorkingDirectory=/home/agourakis82/workspace/pcs-meta-repo
+# Environment file with secrets/config
+EnvironmentFile=/etc/default/ragpp_web_server
+# Prefer env PYTHON_BIN, fallback to /usr/bin/python3
+ExecStart=/bin/sh -c "${PYTHON_BIN:-/usr/bin/python3} ragpp/ragpp_web_server.py"
+Restart=on-failure
+RestartSec=5s
+User=agourakis82
+Group=agourakis82
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

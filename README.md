@@ -19,6 +19,27 @@ High-level architecture and data/compute flows. Regenerate with `make fig-archit
 
 ![PCS Architecture](figures/architecture.png)
 
+## Public Access & Infrastructure
+
+The PCS Meta-Repo provides public HTTPS access to research APIs and interactive interfaces via **Cloudflare Tunnel**.
+
+### Live Services
+
+- **Website**: <https://agourakis.med.br> — Project overview and documentation
+- **MCP API**: <https://mcp.agourakis.med.br> — Model Context Protocol for research integration
+- **SSE Stream**: <https://mcp.agourakis.med.br/sse/> — Real-time research data streams
+
+### Infrastructure Setup
+
+For complete infrastructure setup instructions, see: [docs/infra_cloudflare_tunnel.md](docs/infra_cloudflare_tunnel.md)
+
+**Key Features:**
+
+- ✅ TLS termination via Cloudflare (automatic certificate renewal)
+- ✅ DDoS protection and CDN optimization
+- ✅ Global edge network for optimal latency
+- ✅ Nginx reverse proxy for local services
+
 ## EEG/RT Datasets Pipeline
 
 This repository includes a comprehensive pipeline for processing and analyzing EEG/RT (Eye-tracking/Electroencephalography Reading Time) datasets. The pipeline implements four main steps with full quality gates and reproducibility.

@@ -1,0 +1,14 @@
+{
+  "name": "RAG++ Research Assistant",
+  "description": "Search and analyze scientific literature in computational psychiatry and digital health",
+  "authentication": {
+    "type": "API Key",
+    "api_key": {
+      "header_name": "Authorization",
+      "header_value": "Bearer wlaKVi5Qf4RooUprwQqtWrAS_Laecy98-oUzs7AAn7Qo"
+    }
+  },
+  "privacy_policy_url": "http://179.125.169.148:8000/privacy",
+  "schema_url": "http://179.125.169.148:8000/actions/schema",
+  "instructions": "This action provides access to a specialized research database with 168+ scientific papers in computational psychiatry, digital phenotyping, and machine learning in healthcare.\n\nUse this action when users:\n- Ask about scientific literature or research\n- Want to find specific studies or papers\n- Need evidence-based information\n- Request recent developments in psychiatric research\n- Ask about machine learning applications in healthcare\n\nThe system provides hybrid search across multiple sources and can synthesize findings from multiple papers."
+}

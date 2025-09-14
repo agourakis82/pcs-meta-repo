@@ -1,0 +1,13 @@
+version: '3'
+tasks:
+  models: { cmds: ["make models-all"], silent: true }
+  kenlm:  { cmds: ["make kenlm"],       silent: true }
+  swow:   { cmds: ["make swow-help", "make swow-verify"], silent: true }
+  prov:   { cmds: ["make provenance"],  silent: true }
+  smoke:  { cmds: ["make verify-downloads"], silent: true }
+  download-all:
+    desc: Orchestrate Phase I (models, KenLM, SWOW guide/verify, provenance)
+    cmds:
+      - bash scripts/orchestrate_phase1.sh
+    silent: true
+

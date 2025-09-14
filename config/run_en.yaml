@@ -1,0 +1,13 @@
+seed: 42
+n_jobs: auto
+n_boot: 1000        # use 200 for smoke tests if needed later
+datasets:
+  include: ["zuco_v1","zuco_v2","derco_eeg","geco_et","onestop_et"]  # only those present will be used
+paths:
+  kec_en: "data/L2_derived/kec/en/kec_nodes.parquet"
+  compiled_dir: "data/L2_derived/compiled"
+  models_dir: "reports/models"
+  figs_dir: "figures/v4.3_s1"
+logging:
+  file: "reports/compile_en.log"
+

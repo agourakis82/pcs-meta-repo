@@ -1,0 +1,344 @@
+- kind: L1_tidy
+  dataset: zuco_rt
+  rel_path: data/L1_tidy/zuco_rt/word_events_rt.parquet
+  exists: true
+  size_bytes: 15237
+  rows: 800
+  modified: '2025-09-11 15:15:25'
+  note: ''
+- kind: L1_tidy
+  dataset: geco_et
+  rel_path: data/L1_tidy/geco_et/word_events_rt.parquet
+  exists: true
+  size_bytes: 5858
+  rows: 0
+  modified: '2025-09-11 12:44:37'
+  note: ''
+- kind: L1_tidy
+  dataset: onestop_et
+  rel_path: data/L1_tidy/onestop_et/word_events_rt.parquet
+  exists: true
+  size_bytes: 6650405
+  rows: 1172718
+  modified: '2025-09-11 16:08:12'
+  note: ''
+- kind: L1_tidy
+  dataset: zuco_eeg
+  rel_path: data/L1_tidy/zuco_eeg/word_events_eeg.parquet
+  exists: true
+  size_bytes: 7156
+  rows: 1
+  modified: '2025-09-11 15:02:43'
+  note: ''
+- kind: L1_tidy
+  dataset: derco_eeg
+  rel_path: data/L1_tidy/derco_eeg/word_events_eeg.parquet
+  exists: true
+  size_bytes: 5022
+  rows: 0
+  modified: '2025-09-11 12:44:55'
+  note: ''
+- kind: L1_tidy
+  dataset: lpp_eeg
+  rel_path: data/L1_tidy/lpp_eeg/word_events_eeg.parquet
+  exists: true
+  size_bytes: 5022
+  rows: 0
+  modified: '2025-09-11 12:44:55'
+  note: ''
+- kind: SWOW_L1
+  dataset: swow_en
+  rel_path: data/L1_tidy/swow/swow_en.csv
+  exists: true
+  size_bytes: 32379351
+  rows: 1536383
+  modified: '2025-09-11 14:05:52'
+  note: ''
+- kind: SWOW_L1
+  dataset: swow_es
+  rel_path: data/L1_tidy/swow/swow_es.csv
+  exists: true
+  size_bytes: 34055428
+  rows: 1489950
+  modified: '2025-09-11 14:06:17'
+  note: ''
+- kind: SWOW_L1
+  dataset: swow_nl
+  rel_path: data/L1_tidy/swow/swow_nl.csv
+  exists: true
+  size_bytes: 33201198
+  rows: 1497283
+  modified: '2025-09-11 14:06:24'
+  note: ''
+- kind: SWOW_L1
+  dataset: swow_zh
+  rel_path: data/L1_tidy/swow/swow_zh.csv
+  exists: true
+  size_bytes: 20378839
+  rows: 1014896
+  modified: '2025-09-11 14:06:36'
+  note: ''
+- kind: L2_kec
+  dataset: kec_en
+  rel_path: data/L2_derived/kec/en/edges.parquet
+  exists: true
+  size_bytes: 8849235
+  rows: 1535106
+  modified: '2025-09-11 14:08:27'
+  note: ''
+- kind: L2_kec
+  dataset: kec_en
+  rel_path: data/L2_derived/kec/en/entropy.parquet
+  exists: true
+  size_bytes: 244676
+  rows: 12290
+  modified: '2025-09-11 14:08:28'
+  note: ''
+- kind: L2_kec
+  dataset: kec_en
+  rel_path: data/L2_derived/kec/en/curvature.parquet
+  exists: true
+  size_bytes: 233418
+  rows: 12290
+  modified: '2025-09-11 14:09:21'
+  note: ''
+- kind: L2_kec
+  dataset: kec_en
+  rel_path: data/L2_derived/kec/en/coherence.parquet
+  exists: true
+  size_bytes: 389612
+  rows: 23778
+  modified: '2025-09-11 14:28:50'
+  note: ''
+- kind: L2_kec
+  dataset: kec_en
+  rel_path: data/L2_derived/kec/en/components.parquet
+  exists: true
+  size_bytes: 3474187
+  rows: 162438
+  modified: '2025-09-11 14:09:22'
+  note: ''
+- kind: L2_kec
+  dataset: kec_en
+  rel_path: data/L2_derived/kec/en/kec_nodes.parquet
+  exists: true
+  size_bytes: 3599985
+  rows: 162438
+  modified: '2025-09-11 14:09:22'
+  note: ''
+- kind: L2_kec
+  dataset: kec_es
+  rel_path: data/L2_derived/kec/es/edges.parquet
+  exists: true
+  size_bytes: 8514662
+  rows: 1488605
+  modified: '2025-09-11 14:09:24'
+  note: ''
+- kind: L2_kec
+  dataset: kec_es
+  rel_path: data/L2_derived/kec/es/entropy.parquet
+  exists: true
+  size_bytes: 276155
+  rows: 13543
+  modified: '2025-09-11 14:09:26'
+  note: ''
+- kind: L2_kec
+  dataset: kec_es
+  rel_path: data/L2_derived/kec/es/curvature.parquet
+  exists: true
+  size_bytes: 255967
+  rows: 13543
+  modified: '2025-09-11 14:10:13'
+  note: ''
+- kind: L2_kec
+  dataset: kec_es
+  rel_path: data/L2_derived/kec/es/coherence.parquet
+  exists: true
+  size_bytes: 444555
+  rows: 27592
+  modified: '2025-09-11 14:28:54'
+  note: ''
+- kind: L2_kec
+  dataset: kec_es
+  rel_path: data/L2_derived/kec/es/components.parquet
+  exists: true
+  size_bytes: 3481696
+  rows: 169380
+  modified: '2025-09-11 14:10:15'
+  note: ''
+- kind: L2_kec
+  dataset: kec_es
+  rel_path: data/L2_derived/kec/es/kec_nodes.parquet
+  exists: true
+  size_bytes: 3638323
+  rows: 169380
+  modified: '2025-09-11 14:10:15'
+  note: ''
+- kind: L2_kec
+  dataset: kec_nl
+  rel_path: data/L2_derived/kec/nl/edges.parquet
+  exists: true
+  size_bytes: 9667343
+  rows: 1496863
+  modified: '2025-09-11 14:10:17'
+  note: ''
+- kind: L2_kec
+  dataset: kec_nl
+  rel_path: data/L2_derived/kec/nl/entropy.parquet
+  exists: true
+  size_bytes: 242323
+  rows: 12571
+  modified: '2025-09-11 14:10:18'
+  note: ''
+- kind: L2_kec
+  dataset: kec_nl
+  rel_path: data/L2_derived/kec/nl/curvature.parquet
+  exists: true
+  size_bytes: 240495
+  rows: 12571
+  modified: '2025-09-11 14:11:07'
+  note: ''
+- kind: L2_kec
+  dataset: kec_nl
+  rel_path: data/L2_derived/kec/nl/coherence.parquet
+  exists: true
+  size_bytes: 445033
+  rows: 27449
+  modified: '2025-09-11 14:28:57'
+  note: ''
+- kind: L2_kec
+  dataset: kec_nl
+  rel_path: data/L2_derived/kec/nl/components.parquet
+  exists: true
+  size_bytes: 3997559
+  rows: 201476
+  modified: '2025-09-11 14:11:09'
+  note: ''
+- kind: L2_kec
+  dataset: kec_nl
+  rel_path: data/L2_derived/kec/nl/kec_nodes.parquet
+  exists: true
+  size_bytes: 4116501
+  rows: 201476
+  modified: '2025-09-11 14:11:08'
+  note: ''
+- kind: L2_kec
+  dataset: kec_zh
+  rel_path: data/L2_derived/kec/zh/edges.parquet
+  exists: true
+  size_bytes: 6859854
+  rows: 1012950
+  modified: '2025-09-11 14:11:10'
+  note: ''
+- kind: L2_kec
+  dataset: kec_zh
+  rel_path: data/L2_derived/kec/zh/entropy.parquet
+  exists: true
+  size_bytes: 208243
+  rows: 10192
+  modified: '2025-09-11 14:11:11'
+  note: ''
+- kind: L2_kec
+  dataset: kec_zh
+  rel_path: data/L2_derived/kec/zh/curvature.parquet
+  exists: true
+  size_bytes: 195003
+  rows: 10192
+  modified: '2025-09-11 14:11:42'
+  note: ''
+- kind: L2_kec
+  dataset: kec_zh
+  rel_path: data/L2_derived/kec/zh/coherence.parquet
+  exists: true
+  size_bytes: 493616
+  rows: 33419
+  modified: '2025-09-11 14:29:00'
+  note: ''
+- kind: L2_kec
+  dataset: kec_zh
+  rel_path: data/L2_derived/kec/zh/components.parquet
+  exists: true
+  size_bytes: 3422850
+  rows: 166502
+  modified: '2025-09-11 14:11:43'
+  note: ''
+- kind: L2_kec
+  dataset: kec_zh
+  rel_path: data/L2_derived/kec/zh/kec_nodes.parquet
+  exists: true
+  size_bytes: 3542957
+  rows: 166502
+  modified: '2025-09-11 14:11:43'
+  note: ''
+- kind: integration
+  dataset: derco_kec_eeg
+  rel_path: data/processed/v4.4/integration/derco_kec_eeg.parquet
+  exists: true
+  size_bytes: 5022
+  rows: 0
+  modified: '2025-09-11 19:22:11'
+  note: ''
+- kind: integration
+  dataset: excel_custom_kec_rt
+  rel_path: data/processed/v4.4/integration/excel_custom_kec_rt.parquet
+  exists: true
+  size_bytes: 12568365
+  rows: 1083443
+  modified: '2025-09-11 19:22:11'
+  note: ''
+- kind: integration
+  dataset: excel_custom_kec_rt_clean
+  rel_path: data/processed/v4.4/integration/excel_custom_kec_rt_clean.parquet
+  exists: true
+  size_bytes: 6642755
+  rows: 1083443
+  modified: '2025-09-11 19:25:05'
+  note: ''
+- kind: integration
+  dataset: geco_et
+  rel_path: data/processed/v4.4/integration/geco_et.parquet
+  exists: true
+  size_bytes: 5858
+  rows: 0
+  modified: '2025-09-11 19:22:07'
+  note: ''
+- kind: integration
+  dataset: lpp_kec_eeg
+  rel_path: data/processed/v4.4/integration/lpp_kec_eeg.parquet
+  exists: true
+  size_bytes: 5022
+  rows: 0
+  modified: '2025-09-11 19:22:11'
+  note: ''
+- kind: integration
+  dataset: onestop_et
+  rel_path: data/processed/v4.4/integration/onestop_et.parquet
+  exists: true
+  size_bytes: 18038092
+  rows: 1172718
+  modified: '2025-09-11 19:22:09'
+  note: ''
+- kind: integration
+  dataset: zuco_kec_eeg
+  rel_path: data/processed/v4.4/integration/zuco_kec_eeg.parquet
+  exists: true
+  size_bytes: 13704
+  rows: 1
+  modified: '2025-09-11 19:22:11'
+  note: ''
+- kind: integration
+  dataset: zuco_kec_merged
+  rel_path: data/processed/v4.4/integration/zuco_kec_merged.parquet
+  exists: true
+  size_bytes: 20534
+  rows: 0
+  modified: '2025-09-11 19:22:11'
+  note: ''
+- kind: integration
+  dataset: zuco_kec_rt
+  rel_path: data/processed/v4.4/integration/zuco_kec_rt.parquet
+  exists: true
+  size_bytes: 30529
+  rows: 800
+  modified: '2025-09-11 19:22:07'
+  note: ''

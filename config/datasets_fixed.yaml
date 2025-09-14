@@ -1,0 +1,54 @@
+# SWOW Dataset Configuration  
+swow:
+  languages: [ "en", "es", "nl", "zh" ]
+  raw_dir: "@data_root.raw_public/swow"
+  tidy_dir: "@data_root.L1_tidy/swow"
+  derived_dir: "@data_root.L2_derived/kec"
+  expected_files: [ "**/*.csv", "**/*.tsv" ]
+  redistribution: "no-redistribution; cite source"
+
+# RT/ET Datasets (Reading Times & Eye-Tracking)
+datasets_rt:
+  zuco_rt:
+    raw_dir: "@data_root.raw_public/zuco"
+    processed_dir: "@data_root.L1_tidy/zuco_rt"
+    modality: "eye-tracking"
+    language: [ "en" ]
+    expected_files: [ "**/*.mat", "**/*.csv", "**/*.tsv" ]
+
+  geco_et:
+    raw_dir: "@data_root.raw_public/geco"
+    processed_dir: "@data_root.L1_tidy/geco_et"
+    modality: "eye-tracking"
+    language: [ "en", "nl" ]
+    expected_files: [ "**/*.txt", "**/*.csv", "**/*.tsv", "**/*.zip" ]
+
+  onestop_et:
+    raw_dir: "@data_root.raw_public/onestop"
+    processed_dir: "@data_root.L1_tidy/onestop_et"
+    modality: "eye-tracking"
+    language: [ "en" ]
+    expected_files: [ "**/*.csv", "**/*.tsv", "**/*.parquet", "**/*.zip" ]
+
+# EEG Datasets
+datasets_eeg:
+  zuco_eeg:
+    raw_dir: "@data_root.raw_public/zuco"
+    processed_dir: "@data_root.L1_tidy/zuco_eeg"
+    modality: "EEG"
+    language: [ "en" ]
+    expected_files: [ "**/*.mat", "**/*.csv", "**/*.tsv" ]
+
+  derco_eeg:
+    raw_dir: "@data_root.raw_public/derco"
+    processed_dir: "@data_root.L1_tidy/derco_eeg"
+    modality: "EEG"
+    language: [ "en" ]
+    expected_files: [ "**/*.fif", "**/*.csv", "**/*.tsv" ]
+
+  lpp_eeg:
+    raw_dir: "@data_root.raw_public/lpp"
+    processed_dir: "@data_root.L1_tidy/lpp_eeg"
+    modality: "EEG"
+    language: [ "en" ]
+    expected_files: [ "**/*.fif", "**/*.csv", "**/*.tsv" ]

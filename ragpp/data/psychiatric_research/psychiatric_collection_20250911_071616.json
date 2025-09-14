@@ -1,0 +1,3344 @@
+{
+  "collection_metadata": {
+    "start_time": "2025-09-11T07:13:50.361039",
+    "search_terms_used": 24,
+    "articles_collected": 439,
+    "unique_journals": [
+      "Family process",
+      "American journal of human genetics",
+      "Cambridge quarterly of healthcare ethics : CQ : the international journal of healthcare ethics committees",
+      "Clinical pharmacology and therapeutics",
+      "Wiadomosci lekarskie (Warsaw, Poland : 1960)",
+      "Journal of medical toxicology : official journal of the American College of Medical Toxicology",
+      "Nature human behaviour",
+      "Current opinion in anaesthesiology",
+      "JMIR mental health",
+      "Nature reviews. Neurology",
+      "Trends in molecular medicine",
+      "Lancet (London, England)",
+      "NeuroImage",
+      "Annual review of clinical psychology",
+      "Current pain and headache reports",
+      "Medicine",
+      "Signal transduction and targeted therapy",
+      "Journal of neurochemistry",
+      "Current opinion in psychiatry",
+      "Trends in neurosciences",
+      "Child psychiatry and human development",
+      "Evidence-based mental health",
+      "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "Nature communications",
+      "Military Medical Research",
+      "Revista brasileira de psiquiatria (Sao Paulo, Brazil : 1999)",
+      "Paediatric anaesthesia",
+      "Journal of Alzheimer's disease : JAD",
+      "Journal of autism and developmental disorders",
+      "European journal of anaesthesiology",
+      "Journal of neuroengineering and rehabilitation",
+      "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+      "IEEE journal of biomedical and health informatics",
+      "Journal of psychiatric practice",
+      "Psychopharmacology",
+      "Neuro-oncology",
+      "Journal of integrative neuroscience",
+      "Journal of sleep research",
+      "Human brain mapping",
+      "Journal of the American Academy of Child and Adolescent Psychiatry",
+      "Journal of behavior therapy and experimental psychiatry",
+      "Molecular neurodegeneration",
+      "The journal of prevention of Alzheimer's disease",
+      "Physics in medicine and biology",
+      "Brain connectivity",
+      "BMJ open",
+      "Genome medicine",
+      "Journal of neural transmission (Vienna, Austria : 1996)",
+      "JAMA psychiatry",
+      "Journal of the neurological sciences",
+      "Expert review of pharmacoeconomics & outcomes research",
+      "European archives of psychiatry and clinical neuroscience",
+      "Neuroscience and biobehavioral reviews",
+      "BMC complementary medicine and therapies",
+      "Journal of diabetes science and technology",
+      "Augmentative and alternative communication (Baltimore, Md. : 1985)",
+      "JMIR formative research",
+      "Pharmacological reports : PR",
+      "Asian journal of psychiatry",
+      "Neurosurgery",
+      "Translational neurodegeneration",
+      "BMC psychiatry",
+      "Seminars in arthritis and rheumatism",
+      "Psychiatrike = Psychiatriki",
+      "JAMA oncology",
+      "Revue medicale suisse",
+      "General hospital psychiatry",
+      "International journal of molecular sciences",
+      "Seminars in pediatric neurology",
+      "BMC geriatrics",
+      "IEEE/ACM transactions on computational biology and bioinformatics",
+      "Acta neuropathologica",
+      "Perspectives on psychological science : a journal of the Association for Psychological Science",
+      "International journal of environmental research and public health",
+      "Lab on a chip",
+      "Progress in neuro-psychopharmacology & biological psychiatry",
+      "The British journal of psychiatry : the journal of mental science",
+      "Epilepsy & behavior : E&B",
+      "Annals of the New York Academy of Sciences",
+      "Journal of neurosurgical anesthesiology",
+      "Brain, behavior, and immunity",
+      "Current opinion in psychology",
+      "Psychiatry research",
+      "Depression and anxiety",
+      "Physiological measurement",
+      "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "Nature reviews. Neuroscience",
+      "Pharmacopsychiatry",
+      "Pharmacological research",
+      "NeuroImage. Clinical",
+      "Journal of clinical nursing",
+      "The Canadian journal of neurological sciences. Le journal canadien des sciences neurologiques",
+      "Epilepsia",
+      "Molecular psychiatry",
+      "Current neuropharmacology",
+      "Communications biology",
+      "Annual review of medicine",
+      "Current opinion in pharmacology",
+      "Biochemical pharmacology",
+      "International journal of nursing studies",
+      "Journal of medical systems",
+      "JMIR human factors",
+      "Trends in pharmacological sciences",
+      "JAMA",
+      "The lancet. Psychiatry",
+      "Journal of the American Medical Informatics Association : JAMIA",
+      "Biosensors",
+      "Journal of psychopharmacology (Oxford, England)",
+      "Genes",
+      "Schizophrenia bulletin",
+      "Alzheimer's research & therapy",
+      "Progress in retinal and eye research",
+      "Journal of neurology",
+      "Journal of neurotrauma",
+      "Scientific reports",
+      "The international journal of neuropsychopharmacology",
+      "Ageing research reviews",
+      "PloS one",
+      "Neuropsychopharmacology reports",
+      "Nature neuroscience",
+      "Nature medicine",
+      "Biological psychiatry",
+      "Annals of clinical and translational neurology",
+      "Schizophrenia research",
+      "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
+      "Dialogues in clinical neuroscience",
+      "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "British journal of pharmacology",
+      "Human reproduction update",
+      "Progress in cardiovascular diseases",
+      "Cerebellum (London, England)",
+      "Pharmacology & therapeutics",
+      "Journal of biomedical informatics",
+      "Computers in biology and medicine",
+      "The journal of pain",
+      "Cell reports. Medicine",
+      "L'Encephale",
+      "Progress in brain research",
+      "Culture, medicine and psychiatry",
+      "Molecules (Basel, Switzerland)",
+      "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "Cold Spring Harbor perspectives in medicine",
+      "Journal of advanced research",
+      "Child abuse & neglect",
+      "Indian journal of pediatrics",
+      "Brain : a journal of neurology",
+      "Advances in neurobiology",
+      "International journal of surgery (London, England)",
+      "Journal of affective disorders",
+      "American journal of speech-language pathology",
+      "Science (New York, N.Y.)",
+      "Cells",
+      "Nature reviews. Genetics",
+      "Cell stem cell",
+      "Current topics in behavioral neurosciences",
+      "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "Developmental science",
+      "Journal of psychiatric research",
+      "CNS & neurological disorders drug targets",
+      "Neurorehabilitation and neural repair",
+      "International review of psychiatry (Abingdon, England)",
+      "Neurotherapeutics : the journal of the American Society for Experimental NeuroTherapeutics",
+      "Current neurology and neuroscience reports",
+      "JMIR mHealth and uHealth",
+      "Psychiatry research. Neuroimaging",
+      "Cyberpsychology, behavior and social networking",
+      "Early intervention in psychiatry",
+      "Nature genetics",
+      "Harvard review of psychiatry",
+      "GeroScience",
+      "Clinical psychology review",
+      "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "JMIR research protocols",
+      "Current problems in pediatric and adolescent health care",
+      "Translational psychiatry",
+      "Psychological medicine",
+      "The world journal of biological psychiatry : the official journal of the World Federation of Societies of Biological Psychiatry",
+      "The Psychiatric clinics of North America",
+      "Current biology : CB",
+      "Science advances",
+      "Molecular genetics and metabolism",
+      "Trends in cognitive sciences",
+      "Canadian journal of psychiatry. Revue canadienne de psychiatrie",
+      "Psychopharmacology bulletin",
+      "Neuron",
+      "Biostatistics (Oxford, England)",
+      "British journal of sports medicine",
+      "Progress in neurobiology",
+      "Cell reports",
+      "Pain medicine (Malden, Mass.)",
+      "Nucleic acids research",
+      "The Psychiatric quarterly",
+      "Biochemistry",
+      "Nutrients",
+      "Annals of neurology",
+      "Brain research bulletin",
+      "Journal of studies on alcohol and drugs",
+      "JAMA network open",
+      "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
+      "Neurology",
+      "Sensors (Basel, Switzerland)",
+      "European child & adolescent psychiatry",
+      "Immunity",
+      "The journal of headache and pain",
+      "Neurogastroenterology and motility",
+      "Clinical linguistics & phonetics",
+      "Artificial intelligence in medicine",
+      "JAMA neurology",
+      "Nature",
+      "Journal of neuroscience research",
+      "Cell",
+      "Journal of alternative and complementary medicine (New York, N.Y.)",
+      "The Cochrane database of systematic reviews",
+      "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+      "eLife",
+      "Journal of medical Internet research",
+      "EBioMedicine",
+      "Journal of neural engineering",
+      "Advances in experimental medicine and biology",
+      "The American journal of psychiatry",
+      "Current psychiatry reports",
+      "The Journal of clinical endocrinology and metabolism",
+      "Physiological reviews",
+      "IEEE reviews in biomedical engineering"
+    ],
+    "year_distribution": {
+      "2022": 95,
+      "2024": 114,
+      "2023": 112,
+      "2025": 44,
+      "2021": 78,
+      "2020": 13,
+      "unknown": 1
+    },
+    "search_term_results": {
+      "computational psychiatry machine learning": 20,
+      "digital biomarkers psychiatric disorders": 20,
+      "AI mental health diagnosis prediction": 20,
+      "network neuroscience psychiatric conditions": 20,
+      "neuroimaging biomarkers depression anxiety": 20,
+      "EEG psychiatric disorders classification": 20,
+      "fMRI connectivity psychiatric networks": 20,
+      "DTI white matter psychiatric conditions": 20,
+      "speech analysis psychiatric diagnosis": 20,
+      "natural language processing mental health": 20,
+      "semantic coherence psychotic disorders": 14,
+      "linguistic markers depression anxiety": 8,
+      "smartphone digital phenotyping psychiatry": 20,
+      "wearable sensors mental health monitoring": 20,
+      "virtual reality psychiatric treatment": 20,
+      "chatbots therapy mental health apps": 15,
+      "neuroplasticity psychiatric intervention": 20,
+      "transcranial stimulation depression treatment": 20,
+      "ketamine depression neuroplasticity mechanisms": 20,
+      "psychedelic therapy psychiatric disorders": 20,
+      "genomics psychiatric disorders GWAS": 20,
+      "epigenetic mechanisms mental illness": 20,
+      "polygenic risk scores psychiatry": 20,
+      "gene expression psychiatric conditions": 20
+    },
+    "end_time": "2025-09-11T07:15:34.322911"
+  },
+  "articles_summary": [
+    {
+      "pmid": "34967848",
+      "title": "Cancer Incidence, Mortality, Years of Life Lost, Years Lived With Disability, and Disability-Adjusted Life Years for 29 Cancer Groups From 2010 to 2019: A Systematic Analysis for the Global Burden of Disease Study 2019.",
+      "journal": "JAMA oncology",
+      "year": "2022",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "38843834",
+      "title": "Discovery of antimicrobial peptides in the global microbiome with machine learning.",
+      "journal": "Cell",
+      "year": "2024",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "35917817",
+      "title": "A cross-disorder dosage sensitivity map of the human genome.",
+      "journal": "Cell",
+      "year": "2022",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "37953324",
+      "title": "The Human Phenotype Ontology in 2024: phenotypes around the world.",
+      "journal": "Nucleic acids research",
+      "year": "2024",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "37563912",
+      "title": "Artificial intelligence for diagnostic and prognostic neuroimaging in dementia: A systematic review.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2023",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "39088151",
+      "title": "From Data to Decisions: Leveraging Artificial Intelligence and Machine Learning in Combating Antimicrobial Resistance - a Comprehensive Review.",
+      "journal": "Journal of medical systems",
+      "year": "2024",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "39977580",
+      "title": "Harnessing omics data for drug discovery and development in ovarian aging.",
+      "journal": "Human reproduction update",
+      "year": "2025",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "40691194",
+      "title": "Machine learning in Alzheimer's disease genetics.",
+      "journal": "Nature communications",
+      "year": "2025",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "38652661",
+      "title": "Systematic characterization of multi-omics landscape between gut microbial metabolites and GPCRome in Alzheimer's disease.",
+      "journal": "Cell reports",
+      "year": "2024",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "36399579",
+      "title": "Unified epigenomic, transcriptomic, proteomic, and metabolomic taxonomy of Alzheimer's disease progression and heterogeneity.",
+      "journal": "Science advances",
+      "year": "2022",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "39426956",
+      "title": "Novel therapeutic targets for major depressive disorder related to oxidative stress identified by integrative multi-omics and multi-trait study.",
+      "journal": "Translational psychiatry",
+      "year": "2024",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "36912775",
+      "title": "Evidence for embracing normative modeling.",
+      "journal": "eLife",
+      "year": "2023",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "39308441",
+      "title": "Artificial intelligence and psychedelic medicine.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2024",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "31134293",
+      "title": "Computational approaches and machine learning for individual-level treatment predictions.",
+      "journal": "Psychopharmacology",
+      "year": "2021",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "34961469",
+      "title": "Speech as a Biomarker for Depression.",
+      "journal": "CNS & neurological disorders drug targets",
+      "year": "2023",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "34371078",
+      "title": "Replay in minds and machines.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2021",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "36535376",
+      "title": "The computational psychiatry of antisocial behaviour and psychopathy.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2023",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "37269009",
+      "title": "Prediction of treatment response to antipsychotic drugs for precision medicine approach to schizophrenia: randomized trials and multiomics analysis.",
+      "journal": "Military Medical Research",
+      "year": "2023",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "37940590",
+      "title": "Listening to the Data: Computational Approaches to Addiction and Learning.",
+      "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "year": "2023",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "35233789",
+      "title": "Disruptive innovation in psychiatry.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2022",
+      "search_term": "computational psychiatry machine learning"
+    },
+    {
+      "pmid": "35414041",
+      "title": "Consensus Paper: Ataxic Gait.",
+      "journal": "Cerebellum (London, England)",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "37857775",
+      "title": "Non-invasive temporal interference electrical stimulation of the human hippocampus.",
+      "journal": "Nature neuroscience",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "38710950",
+      "title": "APOE4 homozygozity represents a distinct genetic form of Alzheimer's disease.",
+      "journal": "Nature medicine",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "38861215",
+      "title": "Huntington's Disease: Latest Frontiers in Therapeutics.",
+      "journal": "Current neurology and neuroscience reports",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "40449388",
+      "title": "Understanding autism: Causes, diagnosis, and advancing therapies.",
+      "journal": "Brain research bulletin",
+      "year": "2025",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "40049544",
+      "title": "Oculomics: Current concepts and evidence.",
+      "journal": "Progress in retinal and eye research",
+      "year": "2025",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "38683185",
+      "title": "Postoperative Delirium and the Older Adult: Untangling the Confusion.",
+      "journal": "Journal of neurosurgical anesthesiology",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "33860614",
+      "title": "Measures of resting state EEG rhythms for clinical trials in Alzheimer's disease: Recommendations of an expert panel.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2021",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "37316206",
+      "title": "Child SCOAT6.",
+      "journal": "British journal of sports medicine",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "37316186",
+      "title": "What tests and measures accurately diagnose persisting post-concussive symptoms in children, adolescents and adults following sport-related concussion? A systematic review.",
+      "journal": "British journal of sports medicine",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "38170541",
+      "title": "Home-Use Transcranial Direct Current Stimulation for the Treatment of a Major Depressive Episode: A Randomized Clinical Trial.",
+      "journal": "JAMA psychiatry",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "36625134",
+      "title": "Digital detection of proteins.",
+      "journal": "Lab on a chip",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "36881989",
+      "title": "Progression of clinical markers in prodromal Parkinson's disease and dementia with Lewy bodies: a multicentre study.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "38536917",
+      "title": "Sensitive detection of multiple blood biomarkers via immunomagnetic exosomal PCR for the diagnosis of Alzheimer's disease.",
+      "journal": "Science advances",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "39311530",
+      "title": "REAL AD-Validation of a realistic screening approach for early Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "37610741",
+      "title": "Addressing Global Environmental Challenges to Mental Health Using Population Neuroscience: A Review.",
+      "journal": "JAMA psychiatry",
+      "year": "2023",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "39096164",
+      "title": "Development of thresholds and a visualization tool for use of a blood test in routine clinical dementia practice.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "40459787",
+      "title": "Immunohistochemical evaluation of a trial of gantenerumab or solanezumab in dominantly inherited Alzheimer disease.",
+      "journal": "Acta neuropathologica",
+      "year": "2025",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "39210402",
+      "title": "Different associations between body mass index and Alzheimer's markers depending on metabolic health.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "39455807",
+      "title": "The Digitized Memory Clinic.",
+      "journal": "Nature reviews. Neurology",
+      "year": "2024",
+      "search_term": "digital biomarkers psychiatric disorders"
+    },
+    {
+      "pmid": "35212940",
+      "title": "Artificial Intelligence and Chatbots in Psychiatry.",
+      "journal": "The Psychiatric quarterly",
+      "year": "2022",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "32604065",
+      "title": "AI in mental health.",
+      "journal": "Current opinion in psychology",
+      "year": "2020",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "33571718",
+      "title": "Artificial Intelligence for Mental Health Care: Clinical Applications, Barriers, Facilitators, and Artificial Wisdom.",
+      "journal": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "year": "2021",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "35379992",
+      "title": "New insights into the genetic etiology of Alzheimer's disease and related dementias.",
+      "journal": "Nature genetics",
+      "year": "2022",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "36228007",
+      "title": "Social connectedness as a determinant of mental health: A scoping review.",
+      "journal": "PloS one",
+      "year": "2022",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "39911020",
+      "title": "Artificial intelligence in mental health care: a systematic review of diagnosis, monitoring, and intervention applications.",
+      "journal": "Psychological medicine",
+      "year": "2025",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "38356056",
+      "title": "Epilepsy and epileptiform activity in late-onset Alzheimer disease: clinical and pathophysiological advances, gaps and conundrums.",
+      "journal": "Nature reviews. Neurology",
+      "year": "2024",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "39232159",
+      "title": "Frontostriatal salience network expansion in individuals in depression.",
+      "journal": "Nature",
+      "year": "2024",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "39147830",
+      "title": "Brain aging patterns in a large and diverse cohort of 49,482 individuals.",
+      "journal": "Nature medicine",
+      "year": "2024",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "39953464",
+      "title": "The application of artificial intelligence in the field of mental health: a systematic review.",
+      "journal": "BMC psychiatry",
+      "year": "2025",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "35856435",
+      "title": "Use of Continuous Glucose Monitors by People Without Diabetes: An Idea Whose Time Has Come?",
+      "journal": "Journal of diabetes science and technology",
+      "year": "2023",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "33157009",
+      "title": "NCKAP1 Disruptive Variants Lead to a Neurodevelopmental Disorder with Core Features of Autism.",
+      "journal": "American journal of human genetics",
+      "year": "2020",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "39068669",
+      "title": "Plasma Phosphorylated Tau 217 and Aβ42/40 to Predict Early Brain Aβ Accumulation in People Without Cognitive Impairment.",
+      "journal": "JAMA neurology",
+      "year": "2024",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "35679107",
+      "title": "Emerging Artificial Intelligence-Empowered mHealth: Scoping Review.",
+      "journal": "JMIR mHealth and uHealth",
+      "year": "2022",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "40481455",
+      "title": "AI for mental health: clinician expectations and priorities in computational psychiatry.",
+      "journal": "BMC psychiatry",
+      "year": "2025",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "40044931",
+      "title": "Prediction of mental health risk in adolescents.",
+      "journal": "Nature medicine",
+      "year": "2025",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "37417779",
+      "title": "Mendelian randomization study of diabetes and dementia in the Million Veteran Program.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2023",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "36996601",
+      "title": "Detecting individuals with severe mental illness using artificial intelligence applied to magnetic resonance imaging.",
+      "journal": "EBioMedicine",
+      "year": "2023",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "38460897",
+      "title": "Artificial intelligence in preventive cardiology.",
+      "journal": "Progress in cardiovascular diseases",
+      "year": "2024",
+      "search_term": "AI mental health diagnosis prediction"
+    },
+    {
+      "pmid": "36803602",
+      "title": "Hallmarks of neurodegenerative diseases.",
+      "journal": "Cell",
+      "year": "2023",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "33549739",
+      "title": "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2021",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "35311615",
+      "title": "Clinician guidelines for the treatment of psychiatric disorders with nutraceuticals and phytoceuticals: The World Federation of Societies of Biological Psychiatry (WFSBP) and Canadian Network for Mood and Anxiety Treatments (CANMAT) Taskforce.",
+      "journal": "The world journal of biological psychiatry : the official journal of the World Federation of Societies of Biological Psychiatry",
+      "year": "2022",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "35396580",
+      "title": "Mapping genomic loci implicates genes and synaptic biology in schizophrenia.",
+      "journal": "Nature",
+      "year": "2022",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "36702997",
+      "title": "Genome-wide analyses of ADHD identify 27 risk loci, refine the genetic architecture and implicate several cognitive domains.",
+      "journal": "Nature genetics",
+      "year": "2023",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "39483064",
+      "title": "Alzheimer Disease as a Clinical-Biological Construct-An International Working Group Recommendation.",
+      "journal": "JAMA neurology",
+      "year": "2024",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "34002096",
+      "title": "Genome-wide association study of more than 40,000 bipolar disorder cases provides new insights into the underlying biology.",
+      "journal": "Nature genetics",
+      "year": "2021",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "37450573",
+      "title": "Neurophysiological mechanisms of deep brain stimulation across spatiotemporal resolutions.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2023",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "37451654",
+      "title": "Genetic architecture of ADHD and overlap with other psychiatric disorders and cognition-related phenotypes.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2023",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "37149075",
+      "title": "Anxiety, mood, and substance use disorders in adult men and women with and without attention-deficit/hyperactivity disorder: A substantive and methodological overview.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2023",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "37160117",
+      "title": "Interleukin-3 coordinates glial-peripheral immune crosstalk to incite multiple sclerosis.",
+      "journal": "Immunity",
+      "year": "2023",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "38991538",
+      "title": "De novo variants in the RNU4-2 snRNA cause a frequent neurodevelopmental syndrome.",
+      "journal": "Nature",
+      "year": "2024",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "34493870",
+      "title": "A genome-wide association study with 1,126,563 individuals identifies new risk loci for Alzheimer's disease.",
+      "journal": "Nature genetics",
+      "year": "2021",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "35503716",
+      "title": "ILAE definition of the Idiopathic Generalized Epilepsy Syndromes: Position statement by the ILAE Task Force on Nosology and Definitions.",
+      "journal": "Epilepsia",
+      "year": "2022",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "34890601",
+      "title": "The neurobiology of treatment-resistant depression: A systematic review of neuroimaging studies.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2022",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "33211157",
+      "title": "Transcranial alternating current stimulation (tACS): from basic mechanisms towards first applications in psychiatry.",
+      "journal": "European archives of psychiatry and clinical neuroscience",
+      "year": "2021",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "35522196",
+      "title": "Blue-Light Therapy for Seasonal and Non-Seasonal Depression: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+      "journal": "Canadian journal of psychiatry. Revue canadienne de psychiatrie",
+      "year": "2022",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "33249177",
+      "title": "Combined physical and cognitive training for older adults with and without cognitive impairment: A systematic review and network meta-analysis of randomized controlled trials.",
+      "journal": "Ageing research reviews",
+      "year": "2021",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "39549715",
+      "title": "Passive anti-amyloid β immunotherapy in Alzheimer's disease-opportunities and challenges.",
+      "journal": "Lancet (London, England)",
+      "year": "2024",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "38781393",
+      "title": "Systems biology dissection of PTSD and MDD across brain regions, cell types, and blood.",
+      "journal": "Science (New York, N.Y.)",
+      "year": "2024",
+      "search_term": "network neuroscience psychiatric conditions"
+    },
+    {
+      "pmid": "32791521",
+      "title": "Functional cognitive disorder: dementia's blind spot.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2020",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "36475375",
+      "title": "In Search of Biomarkers to Guide Interventions in Autism Spectrum Disorder: A Systematic Review.",
+      "journal": "The American journal of psychiatry",
+      "year": "2023",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "36725140",
+      "title": "Inflammation-Related Functional and Structural Dysconnectivity as a Pathway to Psychopathology.",
+      "journal": "Biological psychiatry",
+      "year": "2023",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "37099313",
+      "title": "Evaluation of Brain-Body Health in Individuals With Common Neuropsychiatric Disorders.",
+      "journal": "JAMA psychiatry",
+      "year": "2023",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "40042840",
+      "title": "Accelerated Theta-Burst Stimulation for Treatment-Resistant Depression: A Randomized Clinical Trial.",
+      "journal": "JAMA psychiatry",
+      "year": "2025",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "40158695",
+      "title": "Difficult-to-Treat Anxiety: A Neurocomputational Framework.",
+      "journal": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "year": "2025",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "39201521",
+      "title": "Bridging Neurobiological Insights and Clinical Biomarkers in Postpartum Depression: A Narrative Review.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "39632897",
+      "title": "Edge-centric connectome-genetic markers of bridging factor to comorbidity between depression and anxiety.",
+      "journal": "Nature communications",
+      "year": "2024",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "37574600",
+      "title": "Predicting outcome with Intranasal Esketamine treatment: A machine-learning, three-month study in Treatment-Resistant Depression (ESK-LEARNING).",
+      "journal": "Psychiatry research",
+      "year": "2023",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "40538358",
+      "title": "Biomarkers of reproductive psychiatric disorders.",
+      "journal": "The British journal of psychiatry : the journal of mental science",
+      "year": "2025",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "37625426",
+      "title": "Brain-based correlates of antidepressant response to ketamine: a comprehensive systematic review of neuroimaging studies.",
+      "journal": "The lancet. Psychiatry",
+      "year": "2023",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "38839833",
+      "title": "Cognitive profile, neuroimaging and fluid biomarkers in post-acute COVID-19 syndrome.",
+      "journal": "Scientific reports",
+      "year": "2024",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "39000570",
+      "title": "The Pathobiology of Behavioral Changes in Multiple System Atrophy: An Update.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "34637806",
+      "title": "Sex-specificities in anxiety and depressive symptoms across the lifespan and their links with multimodal neuroimaging.",
+      "journal": "Journal of affective disorders",
+      "year": "2022",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "38522814",
+      "title": "The neurophysiological consequences of racism-related stressors in Black Americans.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2024",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "34516701",
+      "title": "Effect sizes of associations between neuroimaging measures and affective symptoms: A meta-analysis.",
+      "journal": "Depression and anxiety",
+      "year": "2022",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "36973688",
+      "title": "Electroacupuncture for the management of symptom clusters in cancer patients and survivors (EAST).",
+      "journal": "BMC complementary medicine and therapies",
+      "year": "2023",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "40111362",
+      "title": "Generalizability of Treatment Outcome Prediction Across Antidepressant Treatment Trials in Depression.",
+      "journal": "JAMA network open",
+      "year": "2025",
+      "search_term": "neuroimaging biomarkers depression anxiety"
+    },
+    {
+      "pmid": "39166947",
+      "title": "Brain-computer interfaces: the innovative key to unlocking neurological conditions.",
+      "journal": "International journal of surgery (London, England)",
+      "year": "2024",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "35760387",
+      "title": "Can electroencephalography (EEG) identify ADHD subtypes? A systematic review.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2022",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "38065633",
+      "title": "Sleep and Epilepsy.",
+      "journal": "Seminars in pediatric neurology",
+      "year": "2023",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "36765411",
+      "title": "Neural biomarker diagnosis and prediction to mild cognitive impairment and Alzheimer's disease using EEG technology.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2023",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "34998239",
+      "title": "Physiologically informed neuromodulation.",
+      "journal": "Journal of the neurological sciences",
+      "year": "2022",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "38476094",
+      "title": "Functional support vector machine.",
+      "journal": "Biostatistics (Oxford, England)",
+      "year": "2024",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "39636636",
+      "title": "Predictors of Death or Severe Impairment in Neonates With Hypoxic-Ischemic Encephalopathy.",
+      "journal": "JAMA network open",
+      "year": "2024",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "34031196",
+      "title": "Psychiatric Disorders in Children and Adolescents With Psychogenic Nonepileptic Seizures.",
+      "journal": "Neurology",
+      "year": "2021",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "34843062",
+      "title": "Epilepsy and EEG Abnormalities in Children with Autism Spectrum Disorders.",
+      "journal": "Indian journal of pediatrics",
+      "year": "2022",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "33139210",
+      "title": "Nocturnal events in children: When and how to evaluate.",
+      "journal": "Current problems in pediatric and adolescent health care",
+      "year": "2020",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "33989352",
+      "title": "EEG microstate features for schizophrenia classification.",
+      "journal": "PloS one",
+      "year": "2021",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "38727873",
+      "title": "Abnormal EEG microstates in Alzheimer's disease: predictors of β-amyloid deposition degree and disease classification.",
+      "journal": "GeroScience",
+      "year": "2024",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "36882660",
+      "title": "Left- vs right-sided migraine: a scoping review.",
+      "journal": "Journal of neurology",
+      "year": "2023",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "39265862",
+      "title": "Common and differential EEG microstate of major depressive disorder patients with and without response to rTMS treatment.",
+      "journal": "Journal of affective disorders",
+      "year": "2024",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "37683665",
+      "title": "Classification of attention deficit/hyperactivity disorder based on EEG signals using a EEG-Transformer model",
+      "journal": "Journal of neural engineering",
+      "year": "2023",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "36566627",
+      "title": "Classification of mild cognitive impairment based on handwriting dynamics and qEEG.",
+      "journal": "Computers in biology and medicine",
+      "year": "2023",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "33652375",
+      "title": "Multimodal FDG-PET and EEG assessment improves diagnosis and prognostication of disorders of consciousness.",
+      "journal": "NeuroImage. Clinical",
+      "year": "2021",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "32915309",
+      "title": "Managing disorders of consciousness: the role of electroencephalography.",
+      "journal": "Journal of neurology",
+      "year": "2021",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "40011069",
+      "title": "Proposal for a Novel Classification of Patients With Enlarged Ventricles and Cognitive Impairment Based on Data-Driven Analysis of Neuroimaging Results in Patients With Psychiatric Disorders.",
+      "journal": "Neuropsychopharmacology reports",
+      "year": "2025",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "37172612",
+      "title": "State-of-the-art mental tasks classification based on electroencephalograms: a review.",
+      "journal": "Physiological measurement",
+      "year": "2023",
+      "search_term": "EEG psychiatric disorders classification"
+    },
+    {
+      "pmid": "37286432",
+      "title": "Functional connectomics in depression: insights into therapies.",
+      "journal": "Trends in cognitive sciences",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "38724650",
+      "title": "Mendelian randomization analyses reveal causal relationships between brain functional networks and risk of psychiatric disorders.",
+      "journal": "Nature human behaviour",
+      "year": "2024",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "36378968",
+      "title": "The emergent properties of the connected brain.",
+      "journal": "Science (New York, N.Y.)",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "35537216",
+      "title": "Modulation of dorsolateral prefrontal cortex functional connectivity after intermittent theta-burst stimulation in depression: Combining findings from fNIRS and fMRI.",
+      "journal": "NeuroImage. Clinical",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "35670369",
+      "title": "Cognitive enhancement: Effects of methylphenidate, modafinil, and caffeine on latent memory and resting state functional connectivity in healthy adults.",
+      "journal": "Human brain mapping",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "36279868",
+      "title": "Recent advances in psychoradiology.",
+      "journal": "Physics in medicine and biology",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "32512115",
+      "title": "Layer-dependent functional connectivity methods.",
+      "journal": "Progress in neurobiology",
+      "year": "2021",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "36517282",
+      "title": "Modeling Brain Dysconnectivity in Rodents.",
+      "journal": "Biological psychiatry",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "37296147",
+      "title": "Intracranial electrophysiological and structural basis of BOLD functional connectivity in human brain white matter.",
+      "journal": "Nature communications",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "36567226",
+      "title": "Mapping Cytoarchitectonics and Receptor Architectonics to Understand Brain Function and Connectivity.",
+      "journal": "Biological psychiatry",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "35311664",
+      "title": "Network analysis of neuroimaging in mice.",
+      "journal": "NeuroImage",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "32698105",
+      "title": "Resting-state functional MRI of the default mode network in epilepsy.",
+      "journal": "Epilepsy & behavior : E&B",
+      "year": "2020",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "33674899",
+      "title": "Post-traumatic Headache and Mild Traumatic Brain Injury: Brain Networks and Connectivity.",
+      "journal": "Current pain and headache reports",
+      "year": "2021",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "37797435",
+      "title": "fMRI connectivity as a biomarker of antipsychotic treatment response: A systematic review.",
+      "journal": "NeuroImage. Clinical",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "37166374",
+      "title": "Threshold Selection for Brain Connectomes.",
+      "journal": "Brain connectivity",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "37289520",
+      "title": "Network Localization of Awareness in Visual and Motor Anosognosia.",
+      "journal": "Annals of neurology",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "37296121",
+      "title": "Brain connectivity in major depressive disorder: a precision component of treatment modalities?",
+      "journal": "Translational psychiatry",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "37301936",
+      "title": "Critical scaling of whole-brain resting-state dynamics.",
+      "journal": "Communications biology",
+      "year": "2023",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "34182786",
+      "title": "Connectivity Patterns in the Core Resting-State Networks and Their Influence on Cognition.",
+      "journal": "Brain connectivity",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "35378340",
+      "title": "Precuneus connectivity and symptom severity in chronic depression",
+      "journal": "Psychiatry research. Neuroimaging",
+      "year": "2022",
+      "search_term": "fMRI connectivity psychiatric networks"
+    },
+    {
+      "pmid": "38626373",
+      "title": "Perivascular Spaces, Diffusivity Along Perivascular Spaces, and Free Water in Cerebral Small Vessel Disease.",
+      "journal": "Neurology",
+      "year": "2024",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "40098158",
+      "title": "Perivascular space and white matter hyperintensities in Alzheimer's disease: associations with disease progression and cognitive function.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2025",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "38757392",
+      "title": "Alzheimer's Disease and Small Vessel Disease Differentially Affect White Matter Microstructure.",
+      "journal": "Annals of clinical and translational neurology",
+      "year": "2024",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "36971714",
+      "title": "Chronic Cocaine Use and White Matter Coherence: A Diffusion Tensor Imaging Study.",
+      "journal": "Journal of studies on alcohol and drugs",
+      "year": "2023",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "40461958",
+      "title": "Impaired glymphatic function contributes to high-frequency attacks in patients with episodic migraine.",
+      "journal": "The journal of headache and pain",
+      "year": "2025",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "35137566",
+      "title": "White matter microstructures in Parkinson's disease with and without impulse control behaviors.",
+      "journal": "Annals of clinical and translational neurology",
+      "year": "2022",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "32301246",
+      "title": "ENIGMA-DTI: Translating reproducible white matter deficits into personalized vulnerability metrics in cross-diagnostic psychiatric research.",
+      "journal": "Human brain mapping",
+      "year": "2022",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "34230607",
+      "title": "Neurobiology of loneliness: a systematic review.",
+      "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "year": "2021",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "33935073",
+      "title": "Structural Gray and White Matter Correlates of Awareness in Alzheimer's Disease.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "year": "2021",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "40410167",
+      "title": "White matter microstructure alterations in early psychosis and schizophrenia.",
+      "journal": "Translational psychiatry",
+      "year": "2025",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "33662707",
+      "title": "Cerebral white matter connectivity, cognition, and age-related macular degeneration.",
+      "journal": "NeuroImage. Clinical",
+      "year": "2021",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "38899634",
+      "title": "Premenopausal bilateral oophorectomy and brain white matter brain integrity in later-life.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "38481124",
+      "title": "Widespread White Matter Abnormalities in Concussed Athletes Detected by 7T Diffusion Magnetic Resonance Imaging.",
+      "journal": "Journal of neurotrauma",
+      "year": "2024",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "39003953",
+      "title": "Brain white matter microstructural alterations in Behcet's syndrome correlate with cognitive impairment and disease severity: A diffusion tensor imaging study.",
+      "journal": "Seminars in arthritis and rheumatism",
+      "year": "2024",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "39283065",
+      "title": "Glymphatic System Impairment in the Advanced Stage of Moyamoya Disease.",
+      "journal": "Journal of neuroscience research",
+      "year": "2024",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "40645956",
+      "title": "Association of choroid plexus volume with white matter microstructure, glymphatic function, and peripheral systemic inflammation in Alzheimer's disease.",
+      "journal": "Translational psychiatry",
+      "year": "2025",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "37149991",
+      "title": "Neuroimaging in early-treated phenylketonuria patients and clinical outcome: A systematic review.",
+      "journal": "Molecular genetics and metabolism",
+      "year": "2023",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "35964183",
+      "title": "DTI Connectometry Analysis Reveals White Matter Changes in Cognitively Impaired World Trade Center Responders at Midlife.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "year": "2022",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "34872927",
+      "title": "Language Recovery after Brain Injury: A Structural Network Control Theory Study.",
+      "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "year": "2022",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "33317422",
+      "title": "White Matter Integrity Predicts Electrical Stimulation (tDCS) and Language Therapy Effects in Primary Progressive Aphasia.",
+      "journal": "Neurorehabilitation and neural repair",
+      "year": "2021",
+      "search_term": "DTI white matter psychiatric conditions"
+    },
+    {
+      "pmid": "36767996",
+      "title": "Effects of Equine-Assisted Activities and Therapies for Individuals with Autism Spectrum Disorder: Systematic Review and Meta-Analysis.",
+      "journal": "International journal of environmental research and public health",
+      "year": "2023",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "35866377",
+      "title": "Cognitive behavioural therapy (group) for schizophrenia.",
+      "journal": "The Cochrane database of systematic reviews",
+      "year": "2022",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "33511525",
+      "title": "Augmentative and Alternative Communication and Speech Production for Individuals with ASD: A Systematic Review.",
+      "journal": "Journal of autism and developmental disorders",
+      "year": "2021",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "37531702",
+      "title": "Developing a machine learning model for detecting depression, anxiety, and apathy in older adults with mild cognitive impairment using speech and facial expressions: A cross-sectional observational study.",
+      "journal": "International journal of nursing studies",
+      "year": "2023",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "34241539",
+      "title": "What Happened to Mirror Neurons?",
+      "journal": "Perspectives on psychological science : a journal of the Association for Psychological Science",
+      "year": "2022",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "36267016",
+      "title": "The effect of responsiveness to speech-generating device input on spoken language in children with autism spectrum disorder who are minimally verbal",
+      "journal": "Augmentative and alternative communication (Baltimore, Md. : 1985)",
+      "year": "2023",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "36608078",
+      "title": "Applications of Speech Analysis in Psychiatry.",
+      "journal": "Harvard review of psychiatry",
+      "year": "unknown",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "40047830",
+      "title": "[PANSS six-factor model].",
+      "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
+      "year": "2025",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "36137962",
+      "title": "Cross-Modal Somatosensory Repetition Priming and Speech Processing.",
+      "journal": "Journal of integrative neuroscience",
+      "year": "2022",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "34279164",
+      "title": "Speech production and speech perception in children with speech sound disorder.",
+      "journal": "Clinical linguistics & phonetics",
+      "year": "2022",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "36517837",
+      "title": "Deep learning-based speech analysis for Alzheimer's disease detection: a literature review.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2022",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "36580542",
+      "title": "Speech Error Variability and Phonological Awareness in Preschoolers.",
+      "journal": "American journal of speech-language pathology",
+      "year": "2023",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "36394129",
+      "title": "Increasing audiovisual speech integration in autism through enhanced attention to mouth.",
+      "journal": "Developmental science",
+      "year": "2023",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "39559890",
+      "title": "Acoustic Speech Analysis in Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
+      "journal": "The journal of prevention of Alzheimer's disease",
+      "year": "2024",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "33902305",
+      "title": "Pyroluria: Fact or Fiction?",
+      "journal": "Journal of alternative and complementary medicine (New York, N.Y.)",
+      "year": "2021",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "34219738",
+      "title": "Digital Speech Analysis in Progressive Supranuclear Palsy and Corticobasal Syndromes.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "year": "2021",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "37028339",
+      "title": "High-Density Electroencephalography and Speech Signal Based Deep Framework for Clinical Depression Diagnosis.",
+      "journal": "IEEE/ACM transactions on computational biology and bioinformatics",
+      "year": "2023",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "39106814",
+      "title": "Speech and language patterns in autism: Towards natural language processing as a research and clinical tool.",
+      "journal": "Psychiatry research",
+      "year": "2024",
+      "search_term": "speech analysis psychiatric diagnosis"
+    },
+    {
+      "pmid": "35908207",
+      "title": "Artificial intelligence in nursing and midwifery: A systematic review.",
+      "journal": "Journal of clinical nursing",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36805219",
+      "title": "Natural Language Processing in Electronic Health Records in relation to healthcare decision-making: A systematic review.",
+      "journal": "Computers in biology and medicine",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "33944788",
+      "title": "Machine Learning and Natural Language Processing in Mental Health: Systematic Review.",
+      "journal": "Journal of medical Internet research",
+      "year": "2021",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "39423368",
+      "title": "Large Language Models for Mental Health Applications: Systematic Review.",
+      "journal": "JMIR mental health",
+      "year": "2024",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "39021219",
+      "title": "Parsing Platforms: Natural Language Processing and Public Mental Health.",
+      "journal": "Cyberpsychology, behavior and social networking",
+      "year": "2024",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "37874661",
+      "title": "Natural language processing - relevance to patient outcomes and real-world evidence.",
+      "journal": "Expert review of pharmacoeconomics & outcomes research",
+      "year": "2024",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "37220197",
+      "title": "Understanding Mobile Health and Youth Mental Health: Scoping Review.",
+      "journal": "JMIR mHealth and uHealth",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "37798296",
+      "title": "Natural language processing for mental health interventions: a systematic review and research framework.",
+      "journal": "Translational psychiatry",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36170385",
+      "title": "Natural Language Processing for Smart Healthcare.",
+      "journal": "IEEE reviews in biomedical engineering",
+      "year": "2024",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "33332380",
+      "title": "Artificial Intelligence in mental health and the biases of language based models.",
+      "journal": "PloS one",
+      "year": "2020",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36758373",
+      "title": "Using natural language processing to identify child maltreatment in health systems.",
+      "journal": "Child abuse & neglect",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36946533",
+      "title": "Language Analytics for Assessment of Mental Health Status and Functional Competency.",
+      "journal": "Schizophrenia bulletin",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36674270",
+      "title": "Application of Natural Language Processing (NLP) in Detecting and Preventing Suicide Ideation: A Systematic Review.",
+      "journal": "International journal of environmental research and public health",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36669231",
+      "title": "LSD and language: Decreased structural connectivity, increased semantic similarity, changed vocabulary in healthy individuals.",
+      "journal": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "36528329",
+      "title": "Textual emotion detection in health: Advances and applications.",
+      "journal": "Journal of biomedical informatics",
+      "year": "2023",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "39986200",
+      "title": "Utilizing natural language processing for precision prevention of mental health disorders among youth: A systematic review.",
+      "journal": "Computers in biology and medicine",
+      "year": "2025",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "34662350",
+      "title": "Natural language processing for cognitive therapy: Extracting schemas from thought records.",
+      "journal": "PloS one",
+      "year": "2021",
+      "search_term": "natural language processing mental health"
+    },
+    {
+      "pmid": "32499162",
+      "title": "Language as a biomarker for psychosis: A natural language processing approach.",
+      "journal": "Schizophrenia research",
+      "year": "2020",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "36462890",
+      "title": "Semantic coherence markers: The contribution of perplexity metrics.",
+      "journal": "Artificial intelligence in medicine",
+      "year": "2022",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "37243985",
+      "title": "Differences in syntactic and semantic analysis based on machine learning algorithms in prodromal psychosis and normal adolescents.",
+      "journal": "Asian journal of psychiatry",
+      "year": "2023",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "35066310",
+      "title": "Semantic and phonetic similarity of verbal fluency responses in early-stage psychosis.",
+      "journal": "Psychiatry research",
+      "year": "2022",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "35094918",
+      "title": "Construct validity for computational linguistic metrics in individuals at clinical risk for psychosis: Associations with clinical ratings.",
+      "journal": "Schizophrenia research",
+      "year": "2022",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "36732110",
+      "title": "The SPEAK study rationale and design: A linguistic corpus-based approach to understanding thought disorder.",
+      "journal": "Schizophrenia research",
+      "year": "2023",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "36184074",
+      "title": "Emergence of Language Related to Self-experience and Agency in Autobiographical Narratives of Individuals With Schizophrenia.",
+      "journal": "Schizophrenia bulletin",
+      "year": "2023",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "37816626",
+      "title": "Self-concept and Narrative Identity in Youth at Clinical High Risk for Psychosis.",
+      "journal": "Schizophrenia bulletin",
+      "year": "2024",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "34298424",
+      "title": "Computational linguistic analysis applied to a semantic fluency task: A replication among first-episode psychosis patients with and without derailment and tangentiality.",
+      "journal": "Psychiatry research",
+      "year": "2021",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "39074334",
+      "title": "Natural language processing in at-risk mental states: enhancing the assessment of thought disorders and psychotic traits with semantic dynamics and graph theory.",
+      "journal": "Revista brasileira de psiquiatria (Sao Paulo, Brazil : 1999)",
+      "year": "2024",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "35951619",
+      "title": "Language production impairments in patients with a first episode of psychosis.",
+      "journal": "PloS one",
+      "year": "2022",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "32052573",
+      "title": "Higher order language impairments can predict the transition of ultrahigh risk state to psychosis-An empirical study.",
+      "journal": "Early intervention in psychiatry",
+      "year": "2021",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "34903724",
+      "title": "Natural Language Processing markers in first episode psychosis and people at clinical high-risk.",
+      "journal": "Translational psychiatry",
+      "year": "2021",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "33189349",
+      "title": "[Linguistic markers in improving the predictive model of the transition to schizophrenia].",
+      "journal": "L'Encephale",
+      "year": "2021",
+      "search_term": "semantic coherence psychotic disorders"
+    },
+    {
+      "pmid": "38336165",
+      "title": "Linguistic markers of anxiety and depression in Somatic Symptom and Related Disorders: Observational study of a digital intervention.",
+      "journal": "Journal of affective disorders",
+      "year": "2024",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "39542195",
+      "title": "Metaphorical markers of pain catastrophizing, depression, anxiety, and pain interference in people with chronic pain.",
+      "journal": "The journal of pain",
+      "year": "2025",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "33218667",
+      "title": "Post-concussion syndrome: Still forgotten? From the disappearance of the DSM-5 to a multidisciplinary consultation.",
+      "journal": "L'Encephale",
+      "year": "2021",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "33729513",
+      "title": "The Language of Pain: Is There a Relationship Between Metaphor Use and Adjustment to Chronic Pain?",
+      "journal": "Pain medicine (Malden, Mass.)",
+      "year": "2022",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "38865621",
+      "title": "Studying of psycholinguistic features of doctors' professional communication under war conditions.",
+      "journal": "Wiadomosci lekarskie (Warsaw, Poland : 1960)",
+      "year": "2024",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "35173219",
+      "title": "Using absolutist word frequency from online searches to measure population mental health dynamics.",
+      "journal": "Scientific reports",
+      "year": "2022",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "36257851",
+      "title": "[Study of agency in the discourse of women suffering from post-traumatic stress disorder in the aftermath of domestic violence].",
+      "journal": "L'Encephale",
+      "year": "2023",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "40421470",
+      "title": "From the ",
+      "journal": "Depression and anxiety",
+      "year": "2025",
+      "search_term": "linguistic markers depression anxiety"
+    },
+    {
+      "pmid": "39655966",
+      "title": "Digital Psychiatry: Opportunities, Challenges, and Future Directions.",
+      "journal": "Journal of psychiatric practice",
+      "year": "2024",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "37861979",
+      "title": "Digital Phenotyping in Adults with Schizophrenia: A Narrative Review.",
+      "journal": "Current psychiatry reports",
+      "year": "2023",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "33964681",
+      "title": "Digital phenotyping adherence, feasibility, and tolerability in outpatients with schizophrenia.",
+      "journal": "Journal of psychiatric research",
+      "year": "2021",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "39441952",
+      "title": "Digital Phenotyping of Mental and Physical Conditions: Remote Monitoring of Patients Through RADAR-Base Platform.",
+      "journal": "JMIR mental health",
+      "year": "2024",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "37185583",
+      "title": "Rapid opioid overdose response system technologies.",
+      "journal": "Current opinion in psychiatry",
+      "year": "2023",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "32998937",
+      "title": "Digital phenotyping for mental health of college students: a clinical review.",
+      "journal": "Evidence-based mental health",
+      "year": "2020",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "40408762",
+      "title": "Using Digital Phenotyping to Discriminate Unipolar Depression and Bipolar Disorder: Systematic Review.",
+      "journal": "Journal of medical Internet research",
+      "year": "2025",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "38436819",
+      "title": "Smartphone and Wearable Device-Based Digital Phenotyping to Understand Substance use and its Syndemics.",
+      "journal": "Journal of medical toxicology : official journal of the American College of Medical Toxicology",
+      "year": "2024",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "33653612",
+      "title": "The crossroads of digital phenotyping.",
+      "journal": "General hospital psychiatry",
+      "year": "2022",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "38401488",
+      "title": "MoodSensing: A smartphone app for digital phenotyping and assessment of bipolar disorder.",
+      "journal": "Psychiatry research",
+      "year": "2024",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "36398513",
+      "title": "Incidental Findings from Deep Phenotyping Research in Psychiatry: Legal and Ethical Considerations.",
+      "journal": "Cambridge quarterly of healthcare ethics : CQ : the international journal of healthcare ethics committees",
+      "year": "2022",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "39560976",
+      "title": "Assessing Digital Phenotyping for App Recommendations and Sustained Engagement: Cohort Study.",
+      "journal": "JMIR formative research",
+      "year": "2024",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "35044580",
+      "title": "Piloting Smartphone Digital Phenotyping to Understand Problematic Internet Use in an Adolescent and Young Adult Sample.",
+      "journal": "Child psychiatry and human development",
+      "year": "2023",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "40413837",
+      "title": "Smartphone monitoring and digital phenotyping apps for schizophrenia: A review of the academic literature.",
+      "journal": "Schizophrenia research",
+      "year": "2025",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "38157233",
+      "title": "Digital Phenotyping for Mood Disorders: Methodology-Oriented Pilot Feasibility Study.",
+      "journal": "Journal of medical Internet research",
+      "year": "2023",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "33298386",
+      "title": "Digital phenotyping and the COVID-19 pandemic: Capturing behavioral change in patients with psychiatric disorders.",
+      "journal": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+      "year": "2021",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "35860175",
+      "title": "Improving clinical decision-making in psychiatry: implementation of digital phenotyping could mitigate the influence of patient's and practitioner's individual cognitive biases.",
+      "journal": "Dialogues in clinical neuroscience",
+      "year": "2021",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "33043370",
+      "title": "Determining sample size and length of follow-up for smartphone-based digital phenotyping studies.",
+      "journal": "Journal of the American Medical Informatics Association : JAMIA",
+      "year": "2020",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "33825695",
+      "title": "Requirements and Operational Guidelines for Secure and Sustainable Digital Phenotyping: Design and Development Study.",
+      "journal": "Journal of medical Internet research",
+      "year": "2021",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "36564239",
+      "title": "Linguistic and non-linguistic markers of disorganization in psychotic illness.",
+      "journal": "Schizophrenia research",
+      "year": "2023",
+      "search_term": "smartphone digital phenotyping psychiatry"
+    },
+    {
+      "pmid": "37983384",
+      "title": "Wearable Devices: Implications for Precision Medicine and the Future of Health Care.",
+      "journal": "Annual review of medicine",
+      "year": "2024",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "36551064",
+      "title": "Emerging Wearable Biosensor Technologies for Stress Monitoring and Their Real-World Applications.",
+      "journal": "Biosensors",
+      "year": "2022",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "33784625",
+      "title": "A Wearable Tele-Health System towards Monitoring COVID-19 and Chronic Diseases.",
+      "journal": "IEEE reviews in biomedical engineering",
+      "year": "2022",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "37430719",
+      "title": "Electrocardiogram Monitoring Wearable Devices and Artificial-Intelligence-Enabled Diagnostic Capabilities: A Review.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2023",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "38131779",
+      "title": "Advancements in Wearable EEG Technology for Improved Home-Based Sleep Monitoring and Assessment: A Review.",
+      "journal": "Biosensors",
+      "year": "2023",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "37447668",
+      "title": "Signal Quality Analysis of Single-Arm Electrocardiography.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2023",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "37687834",
+      "title": "The Use of Wearable Technology in Providing Assistive Solutions for Mental Well-Being.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2023",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "40006377",
+      "title": "Smart Textile Technology for the Monitoring of Mental Health.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2025",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "36502267",
+      "title": "Investigating Cardiorespiratory Interaction Using Ballistocardiography and Seismocardiography-A Narrative Review.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2022",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "39118212",
+      "title": "Autonomic assessment at the intersection of psychosocial and gastrointestinal health.",
+      "journal": "Neurogastroenterology and motility",
+      "year": "2024",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "35841260",
+      "title": "Wearable OPM-MEG: A changing landscape for epilepsy.",
+      "journal": "Epilepsia",
+      "year": "2022",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "34892791",
+      "title": "Personalized Stress Monitoring using Wearable Sensors in Everyday Settings.",
+      "journal": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+      "year": "2021",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "37022004",
+      "title": "Stress Detection Through Wrist-Based Electrodermal Activity Monitoring and Machine Learning.",
+      "journal": "IEEE journal of biomedical and health informatics",
+      "year": "2023",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "36365968",
+      "title": "Indicators and Instruments to Assess Components of Disability in Community-Dwelling Older Adults: A Systematic Review.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2022",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "38916063",
+      "title": "Enhancing Aviation Safety through AI-Driven Mental Health Management for Pilots and Air Traffic Controllers.",
+      "journal": "Cyberpsychology, behavior and social networking",
+      "year": "2024",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "36461733",
+      "title": "MicroSweat: A Wearable Microfluidic Patch for Noninvasive and Reliable Sweat Collection Enables Human Stress Monitoring.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "year": "2023",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "40096328",
+      "title": "Transdisciplinary Innovations in Athlete Health: 3D-Printable Wearable Sensors for Health Monitoring and Sports Psychology.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2025",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "36560088",
+      "title": "Development of an Intelligent System for the Monitoring and Diagnosis of the Well-Being.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "year": "2022",
+      "search_term": "wearable sensors mental health monitoring"
+    },
+    {
+      "pmid": "36356351",
+      "title": "Virtual reality in the diagnostic and therapy for mental disorders: A systematic review.",
+      "journal": "Clinical psychology review",
+      "year": "2022",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "34563120",
+      "title": "Effect of virtual reality exercises on balance and fall in elderly people with fall risk: a randomized controlled trial.",
+      "journal": "BMC geriatrics",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "35993398",
+      "title": "Virtual reality in pediatrics, effects on pain and anxiety: A systematic review and meta-analysis update.",
+      "journal": "Paediatric anaesthesia",
+      "year": "2022",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "37865845",
+      "title": "New trends in personalized treatment of depression.",
+      "journal": "Current opinion in psychiatry",
+      "year": "2024",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "33606946",
+      "title": "Virtual Reality Therapy in Mental Health.",
+      "journal": "Annual review of clinical psychology",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "35792965",
+      "title": "Technological Addictions.",
+      "journal": "Current psychiatry reports",
+      "year": "2022",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "35142632",
+      "title": "The Effectiveness of Virtual Reality Exposure-Based Cognitive Behavioral Therapy for Severe Anxiety Disorders, Obsessive-Compulsive Disorder, and Posttraumatic Stress Disorder: Meta-analysis.",
+      "journal": "Journal of medical Internet research",
+      "year": "2022",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "34783683",
+      "title": "Virtual reality and hypnosis for anxiety and pain management in intensive care units: A prospective randomised trial among cardiac surgery patients.",
+      "journal": "European journal of anaesthesiology",
+      "year": "2022",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "38879276",
+      "title": "Psychological and psychosocial interventions for treatment-resistant schizophrenia: a systematic review and network meta-analysis.",
+      "journal": "The lancet. Psychiatry",
+      "year": "2024",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "38503683",
+      "title": "Established and emerging treatments for eating disorders.",
+      "journal": "Trends in molecular medicine",
+      "year": "2024",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "34948817",
+      "title": "The Simulation Game-Virtual Reality Therapy for the Treatment of Social Anxiety Disorder: A Systematic Review.",
+      "journal": "International journal of environmental research and public health",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "37453405",
+      "title": "Impact of virtual reality applications in the treatment of anxiety disorders: A systematic review and meta-analysis of randomized-controlled trials.",
+      "journal": "Journal of behavior therapy and experimental psychiatry",
+      "year": "2023",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "33448933",
+      "title": "Virtual Reality Relaxation for Patients With a Psychiatric Disorder: Crossover Randomized Controlled Trial.",
+      "journal": "Journal of medical Internet research",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "38446471",
+      "title": "Virtual Reality and Transcranial Direct Current Stimulation for Posttraumatic Stress Disorder: A Randomized Clinical Trial.",
+      "journal": "JAMA psychiatry",
+      "year": "2024",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "39412783",
+      "title": "Antipsychotic Drugs and Cognitive Function: A Systematic Review and Network Meta-Analysis.",
+      "journal": "JAMA psychiatry",
+      "year": "2025",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "34432011",
+      "title": "Effect of an Immersive Virtual Reality Intervention on Pain and Anxiety Associated With Peripheral Intravenous Catheter Placement in the Pediatric Setting: A Randomized Clinical Trial.",
+      "journal": "JAMA network open",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "33955835",
+      "title": "Effect of Cognitive Training in Fully Immersive Virtual Reality on Visuospatial Function and Frontal-Occipital Functional Connectivity in Predementia: Randomized Controlled Trial.",
+      "journal": "Journal of medical Internet research",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "33442915",
+      "title": "A novel fully immersive virtual reality environment for upper extremity rehabilitation in patients with stroke.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "39428602",
+      "title": "Ketamine and Esketamine in Clinical Trials: FDA-Approved and Emerging Indications, Trial Trends With Putative Mechanistic Explanations.",
+      "journal": "Clinical pharmacology and therapeutics",
+      "year": "2025",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "33443837",
+      "title": "[Psychiatry].",
+      "journal": "Revue medicale suisse",
+      "year": "2021",
+      "search_term": "virtual reality psychiatric treatment"
+    },
+    {
+      "pmid": "37410537",
+      "title": "A Multilingual Digital Mental Health and Well-Being Chatbot (ChatPal): Pre-Post Multicenter Intervention Study.",
+      "journal": "Journal of medical Internet research",
+      "year": "2023",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "39423009",
+      "title": "Exploring the Role of Mobile Apps for Insomnia in Depression: Systematic Review.",
+      "journal": "Journal of medical Internet research",
+      "year": "2024",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "37213181",
+      "title": "An Overview of Chatbot-Based Mobile Mental Health Apps: Insights From App Description and User Reviews.",
+      "journal": "JMIR mHealth and uHealth",
+      "year": "2023",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "36150405",
+      "title": "Evaluation of chatbot-delivered interventions for self-management of depression: Content analysis.",
+      "journal": "Journal of affective disorders",
+      "year": "2022",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "38713909",
+      "title": "Effectiveness of an Artificial Intelligence-Assisted App for Improving Eating Behaviors: Mixed Methods Evaluation.",
+      "journal": "Journal of medical Internet research",
+      "year": "2024",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "40866537",
+      "title": "Performance of mental health chatbot agents in detecting and managing suicidal ideation.",
+      "journal": "Scientific reports",
+      "year": "2025",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "39153178",
+      "title": "Entanglements of Technologies, Agency and Selfhood: Exploring the Complexity in Attitudes Toward Mental Health Chatbots.",
+      "journal": "Culture, medicine and psychiatry",
+      "year": "2024",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "39983102",
+      "title": "Exploring the Ethical Challenges of Conversational AI in Mental Health Care: Scoping Review.",
+      "journal": "JMIR mental health",
+      "year": "2025",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "39613448",
+      "title": "Using Artificial Intelligence-informed Experience-Based Co-Design (AI-EBCD) to create a virtual reality-based mindfulness application to reduce diabetes distress: protocol for a mixed-methods feasibility study.",
+      "journal": "BMJ open",
+      "year": "2024",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "34904235",
+      "title": "Mobile application for couple relationships: Results of a pilot effectiveness study.",
+      "journal": "Family process",
+      "year": "2022",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "40512570",
+      "title": "Chatbot-Based Version of a World Health Organization-Validated Intervention for Stress Management in Patients With Breast Cancer (Self-Help Plus): Protocol for a Pilot Feasibility Study.",
+      "journal": "JMIR research protocols",
+      "year": "2025",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "40208664",
+      "title": "Development of a Mobile Intervention for Procrastination Augmented With a Semigenerative Chatbot for University Students: Pilot Randomized Controlled Trial.",
+      "journal": "JMIR mHealth and uHealth",
+      "year": "2025",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "40663792",
+      "title": "Evaluating the Usability of an HIV Prevention Artificial Intelligence Chatbot in Malaysia: National Observational Study.",
+      "journal": "JMIR human factors",
+      "year": "2025",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "40590604",
+      "title": "A Chatbot-Based Version of a World Health Organization-Validated Intervention (Self-Help Plus) for Stress Management in Pregnant Women: Protocol for a Usability Study.",
+      "journal": "JMIR research protocols",
+      "year": "2025",
+      "search_term": "chatbots therapy mental health apps"
+    },
+    {
+      "pmid": "35506356",
+      "title": "Sleep, insomnia and mental health.",
+      "journal": "Journal of sleep research",
+      "year": "2022",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "36198876",
+      "title": "Assessing the mechanisms of brain plasticity by transcranial magnetic stimulation.",
+      "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "year": "2023",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "33256493",
+      "title": "The Role of Exercise in Management of Mental Health Disorders: An Integrative Review.",
+      "journal": "Annual review of medicine",
+      "year": "2021",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "39102007",
+      "title": "Neuroplasticity in Parkinson's disease.",
+      "journal": "Journal of neural transmission (Vienna, Austria : 1996)",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "38483288",
+      "title": "Neurobiology and systems biology of stress resilience.",
+      "journal": "Physiological reviews",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "35033772",
+      "title": "Non-invasive transcranial ultrasound stimulation for neuromodulation.",
+      "journal": "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
+      "year": "2022",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "35090576",
+      "title": "Brain-derived neurotrophic factor in Alzheimer's disease and its pharmaceutical potential.",
+      "journal": "Translational neurodegeneration",
+      "year": "2022",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "34238393",
+      "title": "An Overview of Noninvasive Brain Stimulation: Basic Principles and Clinical Applications.",
+      "journal": "The Canadian journal of neurological sciences. Le journal canadien des sciences neurologiques",
+      "year": "2022",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "33957937",
+      "title": "Evidence of neuroplasticity with robotic hand exoskeleton for post-stroke rehabilitation: a randomized controlled trial.",
+      "journal": "Journal of neuroengineering and rehabilitation",
+      "year": "2021",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "34270921",
+      "title": "Neurodevelopment of the association cortices: Patterns, mechanisms, and implications for psychopathology.",
+      "journal": "Neuron",
+      "year": "2021",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "38844713",
+      "title": "Mechanisms of Action of TMS in the Treatment of Depression.",
+      "journal": "Current topics in behavioral neurosciences",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "39207693",
+      "title": "Synapse Regulation.",
+      "journal": "Advances in neurobiology",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "39380375",
+      "title": "The Neurocircuitry of Substance Use Disorder, Treatment, and Change: A Resource for Clinical Psychiatrists.",
+      "journal": "The American journal of psychiatry",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "37743002",
+      "title": "Closed-Loop Brain Stimulation.",
+      "journal": "Biological psychiatry",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "35821512",
+      "title": "Hyperbaric oxygen therapy improves neurocognitive functions and symptoms of post-COVID condition: randomized controlled trial.",
+      "journal": "Scientific reports",
+      "year": "2022",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "38816586",
+      "title": "Beyond the serotonin deficit hypothesis: communicating a neuroplasticity framework of major depressive disorder.",
+      "journal": "Molecular psychiatry",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "38788892",
+      "title": "The relationship between BDNF and physical activity on depression.",
+      "journal": "Progress in neuro-psychopharmacology & biological psychiatry",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "38377638",
+      "title": "The evolution of neuromodulation for chronic stroke: From neuroplasticity mechanisms to brain-computer interfaces.",
+      "journal": "Neurotherapeutics : the journal of the American Society for Experimental NeuroTherapeutics",
+      "year": "2024",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "33174492",
+      "title": "Pivotal mental states.",
+      "journal": "Journal of psychopharmacology (Oxford, England)",
+      "year": "2021",
+      "search_term": "neuroplasticity psychiatric intervention"
+    },
+    {
+      "pmid": "34711062",
+      "title": "Stanford Neuromodulation Therapy (SNT): A Double-Blind Randomized Controlled Trial.",
+      "journal": "The American journal of psychiatry",
+      "year": "2022",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37806717",
+      "title": "Electroconvulsive therapy for treatment-resistant depression.",
+      "journal": "Progress in brain research",
+      "year": "2023",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "34990384",
+      "title": "Advances in transcranial magnetic stimulation (TMS) and its applications in resistant depression.",
+      "journal": "Psychiatrike = Psychiatriki",
+      "year": "2021",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37263267",
+      "title": "Orbitofrontal cortex-hippocampus potentiation mediates relief for depression: A randomized double-blind trial and TMS-EEG study.",
+      "journal": "Cell reports. Medicine",
+      "year": "2023",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37149350",
+      "title": "Special Populations: Treatment-Resistant Depression in Children and Adolescents.",
+      "journal": "The Psychiatric clinics of North America",
+      "year": "2023",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "33237320",
+      "title": "Functional Magnetic Resonance Imaging-Guided Personalization of Transcranial Magnetic Stimulation Treatment for Depression.",
+      "journal": "JAMA psychiatry",
+      "year": "2021",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37979642",
+      "title": "Targeting Symptom-Specific Networks With Transcranial Magnetic Stimulation.",
+      "journal": "Biological psychiatry",
+      "year": "2024",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37149351",
+      "title": "Treatment-Resistant Late-Life Depression: A Review of Clinical Features, Neuropsychology, Neurobiology, and Treatment.",
+      "journal": "The Psychiatric clinics of North America",
+      "year": "2023",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "33834408",
+      "title": "Current Updates on Newer Forms of Transcranial Magnetic Stimulation in Major Depression.",
+      "journal": "Advances in experimental medicine and biology",
+      "year": "2021",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "40302403",
+      "title": "Treating Depression With Repetitive Transcranial Magnetic Stimulation: A Clinician's Guide.",
+      "journal": "The American journal of psychiatry",
+      "year": "2025",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37625365",
+      "title": "Accelerated intermittent theta burst stimulation in major depressive disorder: A systematic review.",
+      "journal": "Psychiatry research",
+      "year": "2023",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "35353887",
+      "title": "Transcranial alternating current stimulation for treating depression: a randomized controlled trial.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2022",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "33173042",
+      "title": "Recovering from depression with repetitive transcranial magnetic stimulation (rTMS): a systematic review and meta-analysis of preclinical studies.",
+      "journal": "Translational psychiatry",
+      "year": "2020",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "32800379",
+      "title": "Using Brain Imaging to Improve Spatial Targeting of Transcranial Magnetic Stimulation for Depression.",
+      "journal": "Biological psychiatry",
+      "year": "2021",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "35751003",
+      "title": "Transcranial magnetic stimulation in the treatment of adolescent depression: a systematic review and meta-analysis of aggregated and individual-patient data from uncontrolled studies.",
+      "journal": "European child & adolescent psychiatry",
+      "year": "2022",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "39535797",
+      "title": "Transcranial Direct Current Stimulation Combined With Repetitive Transcranial Magnetic Stimulation for Depression: A Randomized Clinical Trial.",
+      "journal": "JAMA network open",
+      "year": "2024",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "32919400",
+      "title": "Left prefrontal transcranial magnetic stimulation for treatment-resistant depression in adolescents: a double-blind, randomized, sham-controlled trial.",
+      "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "year": "2021",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "38844532",
+      "title": "Theta burst stimulation for depression: a systematic review and network and pairwise meta-analysis.",
+      "journal": "Molecular psychiatry",
+      "year": "2024",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "33780827",
+      "title": "Comparative efficacy and acceptability of neuromodulation procedures in the treatment of treatment-resistant depression: a network meta-analysis of randomized controlled trials.",
+      "journal": "Journal of affective disorders",
+      "year": "2021",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "38386251",
+      "title": "Recent Advances in the Treatment of Treatment-Resistant Depression: A Narrative Review of Literature Published from 2018 to 2023.",
+      "journal": "Current psychiatry reports",
+      "year": "2024",
+      "search_term": "transcranial stimulation depression treatment"
+    },
+    {
+      "pmid": "37955823",
+      "title": "Mechanisms of SSRI Therapy and Discontinuation.",
+      "journal": "Current topics in behavioral neurosciences",
+      "year": "2024",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34822719",
+      "title": "Novel drug developmental strategies for treatment-resistant depression.",
+      "journal": "British journal of pharmacology",
+      "year": "2022",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34565579",
+      "title": "Neuroplasticity as a convergent mechanism of ketamine and classical psychedelics.",
+      "journal": "Trends in pharmacological sciences",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34053675",
+      "title": "Brain-Derived Neurotrophic Factor Signaling in Depression and Antidepressant Action.",
+      "journal": "Biological psychiatry",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "38177353",
+      "title": "Targeting metaplasticity mechanisms to promote sustained antidepressant actions.",
+      "journal": "Molecular psychiatry",
+      "year": "2024",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "38583670",
+      "title": "Psilocybin for dementia prevention? The potential role of psilocybin to alter mechanisms associated with major depression and neurodegenerative diseases.",
+      "journal": "Pharmacology & therapeutics",
+      "year": "2024",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "39558048",
+      "title": "Structural neural plasticity evoked by rapid-acting antidepressant interventions.",
+      "journal": "Nature reviews. Neuroscience",
+      "year": "2025",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34435599",
+      "title": "Ketamine in depression and electroconvulsive therapy.",
+      "journal": "Current opinion in anaesthesiology",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "33252694",
+      "title": "Ketamine and Serotonergic Psychedelics: Common Mechanisms Underlying the Effects of Rapid-Acting Antidepressants.",
+      "journal": "The international journal of neuropsychopharmacology",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "35680556",
+      "title": "Translational control by ketamine and its implications for comorbid cognitive deficits in depressive disorders.",
+      "journal": "Journal of neurochemistry",
+      "year": "2023",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "39304417",
+      "title": "Rethinking the role of TRKB in the action of antidepressants and psychedelics.",
+      "journal": "Trends in neurosciences",
+      "year": "2024",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34634603",
+      "title": "New trends in pharmacological control of neuropsychiatric symptoms of dementia.",
+      "journal": "Current opinion in pharmacology",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "37945694",
+      "title": "Synergistic psychedelic - NMDAR modulator treatment for neuropsychiatric disorders.",
+      "journal": "Molecular psychiatry",
+      "year": "2024",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "36512813",
+      "title": "Psychedelic-Assisted Therapy and Psychedelic Science: A Review and Perspective on Opportunities in Neurosurgery and Neuro-Oncology.",
+      "journal": "Neurosurgery",
+      "year": "2023",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34836413",
+      "title": "Ketamine as a Treatment for Anorexia Nervosa: A Narrative Review.",
+      "journal": "Nutrients",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "35905796",
+      "title": "Active mechanisms of ketamine-assisted psychotherapy: A systematic review.",
+      "journal": "Journal of affective disorders",
+      "year": "2022",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "37952898",
+      "title": "Antidepressant mechanisms of ketamine's action: NF-κB in the spotlight.",
+      "journal": "Biochemical pharmacology",
+      "year": "2023",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "33609274",
+      "title": "Ketamine-50 years in use: from anesthesia to rapid antidepressant effects and neurobiological mechanisms.",
+      "journal": "Pharmacological reports : PR",
+      "year": "2021",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "39769420",
+      "title": "Beyond NMDA Receptors: A Narrative Review of Ketamine's Rapid and Multifaceted Mechanisms in Depression Treatment.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "search_term": "ketamine depression neuroplasticity mechanisms"
+    },
+    {
+      "pmid": "34063505",
+      "title": "The Therapeutic Potential of Psilocybin.",
+      "journal": "Molecules (Basel, Switzerland)",
+      "year": "2021",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "37844352",
+      "title": "Psilocybin-assisted therapy for depression: A systematic review and meta-analysis.",
+      "journal": "Psychiatry research",
+      "year": "2023",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "38284341",
+      "title": "The Psychedelic Future of Post-Traumatic Stress Disorder Treatment.",
+      "journal": "Current neuropharmacology",
+      "year": "2024",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "33146667",
+      "title": "Effects of Psilocybin-Assisted Therapy on Major Depressive Disorder: A Randomized Clinical Trial.",
+      "journal": "JAMA psychiatry",
+      "year": "2021",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "36123427",
+      "title": "Towards an understanding of psychedelic-induced neuroplasticity.",
+      "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "year": "2023",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "37651119",
+      "title": "Single-Dose Psilocybin Treatment for Major Depressive Disorder: A Randomized Clinical Trial.",
+      "journal": "JAMA",
+      "year": "2023",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "32929261",
+      "title": "Psychedelic drugs: neurobiology and potential for treatment of psychiatric disorders.",
+      "journal": "Nature reviews. Neuroscience",
+      "year": "2020",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "35458717",
+      "title": "Psychedelics: Alternative and Potential Therapeutic Options for Treating Mood and Anxiety Disorders.",
+      "journal": "Molecules (Basel, Switzerland)",
+      "year": "2022",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "38574699",
+      "title": "Efficacy and safety of psychedelics for the treatment of mental disorders: A systematic review and meta-analysis.",
+      "journal": "Psychiatry research",
+      "year": "2024",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "35711024",
+      "title": "Psilocybin for Trauma-Related Disorders.",
+      "journal": "Current topics in behavioral neurosciences",
+      "year": "2022",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "35077687",
+      "title": "Psychedelics.",
+      "journal": "Current biology : CB",
+      "year": "2022",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "33257322",
+      "title": "Hallucinogens in Mental Health: Preclinical and Clinical Studies on LSD, Psilocybin, MDMA, and Ketamine.",
+      "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "year": "2021",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "34421149",
+      "title": "MDMA to Treat PTSD in Adults.",
+      "journal": "Psychopharmacology bulletin",
+      "year": "2021",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "35166158",
+      "title": "Efficacy and safety of psilocybin-assisted treatment for major depressive disorder: Prospective 12-month follow-up.",
+      "journal": "Journal of psychopharmacology (Oxford, England)",
+      "year": "2022",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "37149346",
+      "title": "Role of Psychedelics in Treatment-Resistant Depression.",
+      "journal": "The Psychiatric clinics of North America",
+      "year": "2023",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "34251464",
+      "title": "Serotonin toxicity of serotonergic psychedelics.",
+      "journal": "Psychopharmacology",
+      "year": "2022",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "37352816",
+      "title": "Psychedelics in the treatment of eating disorders: Rationale and potential mechanisms.",
+      "journal": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+      "year": "2023",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "35060714",
+      "title": "Biochemical Mechanisms Underlying Psychedelic-Induced Neuroplasticity.",
+      "journal": "Biochemistry",
+      "year": "2022",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "39741438",
+      "title": "MDMA and MDMA-Assisted Therapy.",
+      "journal": "The American journal of psychiatry",
+      "year": "2025",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "33285579",
+      "title": "The History of Psychedelics in Psychiatry.",
+      "journal": "Pharmacopsychiatry",
+      "year": "2021",
+      "search_term": "psychedelic therapy psychiatric disorders"
+    },
+    {
+      "pmid": "37853064",
+      "title": "Genomic findings in schizophrenia and their implications.",
+      "journal": "Molecular psychiatry",
+      "year": "2023",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "33682643",
+      "title": "The genetic basis of major depression.",
+      "journal": "Psychological medicine",
+      "year": "2021",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "39167384",
+      "title": "Inflammatory Biomarkers and Risk of Psychiatric Disorders.",
+      "journal": "JAMA psychiatry",
+      "year": "2024",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "36753304",
+      "title": "Role of the Gut-Brain Axis in the Shared Genetic Etiology Between Gastrointestinal Tract Diseases and Psychiatric Disorders: A Genome-Wide Pleiotropic Analysis.",
+      "journal": "JAMA psychiatry",
+      "year": "2023",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "39848247",
+      "title": "Massively parallel reporter assay investigates shared genetic variants of eight psychiatric disorders.",
+      "journal": "Cell",
+      "year": "2025",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "38888899",
+      "title": "Major Psychiatric Disorders, Substance Use Behaviors, and Longevity.",
+      "journal": "JAMA psychiatry",
+      "year": "2024",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "39030273",
+      "title": "Schizophrenia genomics: genetic complexity and functional insights.",
+      "journal": "Nature reviews. Neuroscience",
+      "year": "2024",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "39843750",
+      "title": "Genomics yields biological and phenotypic insights into bipolar disorder.",
+      "journal": "Nature",
+      "year": "2025",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "39191171",
+      "title": "A comprehensive assessment of the association between common drugs and psychiatric disorders using Mendelian randomization and real-world pharmacovigilance database.",
+      "journal": "EBioMedicine",
+      "year": "2024",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "35513722",
+      "title": "Genetic architecture of 11 major psychiatric disorders at biobehavioral, functional genomic and molecular genetic levels of analysis.",
+      "journal": "Nature genetics",
+      "year": "2022",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "34861974",
+      "title": "Dissecting the Shared Genetic Architecture of Suicide Attempt, Psychiatric Disorders, and Known Risk Factors.",
+      "journal": "Biological psychiatry",
+      "year": "2022",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "37849304",
+      "title": "Meta-Analyses of Genome-Wide Association Studies for Postpartum Depression.",
+      "journal": "The American journal of psychiatry",
+      "year": "2023",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "33879273",
+      "title": "Genetic contributions to bipolar disorder: current status and future directions.",
+      "journal": "Psychological medicine",
+      "year": "2021",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "38735387",
+      "title": "Association of intestinal anti-inflammatory drug target genes with psychiatric Disorders: A Mendelian randomization study.",
+      "journal": "Journal of advanced research",
+      "year": "2025",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "37528461",
+      "title": "Shared genetic architecture between irritable bowel syndrome and psychiatric disorders reveals molecular pathways of the gut-brain axis.",
+      "journal": "Genome medicine",
+      "year": "2023",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "36216997",
+      "title": "Mendelian randomization analyses support causal relationships between brain imaging-derived phenotypes and risk of psychiatric disorders.",
+      "journal": "Nature neuroscience",
+      "year": "2022",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "37557965",
+      "title": "The interactions between host genome and gut microbiome increase the risk of psychiatric disorders: Mendelian randomization and biological annotation.",
+      "journal": "Brain, behavior, and immunity",
+      "year": "2023",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "37945807",
+      "title": "Genome-wide meta-analysis, functional genomics and integrative analyses implicate new risk genes and therapeutic targets for anxiety disorders.",
+      "journal": "Nature human behaviour",
+      "year": "2024",
+      "search_term": "genomics psychiatric disorders GWAS"
+    },
+    {
+      "pmid": "34702580",
+      "title": "Alcohol and the brain: from genes to circuits.",
+      "journal": "Trends in neurosciences",
+      "year": "2021",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "38397100",
+      "title": "Autism Spectrum Disorder: Brain Areas Involved, Neurobiological Mechanisms, Diagnoses and Therapies.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "34445070",
+      "title": "New Avenues for the Treatment of Huntington's Disease.",
+      "journal": "International journal of molecular sciences",
+      "year": "2021",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "35817793",
+      "title": "Signalling pathways in autism spectrum disorder: mechanisms and therapeutic implications.",
+      "journal": "Signal transduction and targeted therapy",
+      "year": "2022",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "38612845",
+      "title": "Epigenetics, Nutrition, and the Brain: Improving Mental Health through Diet.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "37644009",
+      "title": "Epigenetic regulation in major depression and other stress-related disorders: molecular mechanisms, clinical relevance and therapeutic potential.",
+      "journal": "Signal transduction and targeted therapy",
+      "year": "2023",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "33634770",
+      "title": "Genetic contributions to autism spectrum disorder.",
+      "journal": "Psychological medicine",
+      "year": "2021",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "36517640",
+      "title": "Dissecting early life stress-induced adolescent depression through epigenomic approach.",
+      "journal": "Molecular psychiatry",
+      "year": "2023",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "38879263",
+      "title": "Persistent physical symptoms: definition, genesis, and management.",
+      "journal": "Lancet (London, England)",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "34830163",
+      "title": "Epigenetic Mechanisms in Memory and Cognitive Decline Associated with Aging and Alzheimer's Disease.",
+      "journal": "International journal of molecular sciences",
+      "year": "2021",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "38043446",
+      "title": "Drug addiction and treatment: An epigenetic perspective.",
+      "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "34030745",
+      "title": "Genetics of obsessive-compulsive disorder.",
+      "journal": "Psychological medicine",
+      "year": "2021",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "37774680",
+      "title": "Epigenomic dissection of Alzheimer's disease pinpoints causal variants and reveals epigenome erosion.",
+      "journal": "Cell",
+      "year": "2023",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "36868366",
+      "title": "Nicotine on the developing brain.",
+      "journal": "Pharmacological research",
+      "year": "2023",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "38513772",
+      "title": "Vascular dementia: From pathobiology to emerging perspectives.",
+      "journal": "Ageing research reviews",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "36230916",
+      "title": "Epigenetic Mechanisms of Postoperative Cognitive Impairment Induced by Anesthesia and Neuroinflammation.",
+      "journal": "Cells",
+      "year": "2022",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "35642952",
+      "title": "Physical Exercise Prevented Stress-Induced Anxiety via Improving Brain RNA Methylation.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "year": "2022",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "37450557",
+      "title": "Epigenetic Causes of Overgrowth Syndromes.",
+      "journal": "The Journal of clinical endocrinology and metabolism",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "38667333",
+      "title": "Epigenetic Changes in Alzheimer's Disease: DNA Methylation and Histone Modification.",
+      "journal": "Cells",
+      "year": "2024",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "36827061",
+      "title": "Postoperative delirium, neuroinflammation, and influencing factors of postoperative delirium: A review.",
+      "journal": "Medicine",
+      "year": "2023",
+      "search_term": "epigenetic mechanisms mental illness"
+    },
+    {
+      "pmid": "36181926",
+      "title": "Schizophrenia: The new etiological synthesis.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "38689001",
+      "title": "Genome-wide analysis in over 1 million individuals of European ancestry yields improved polygenic risk scores for blood pressure traits.",
+      "journal": "Nature genetics",
+      "year": "2024",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "35737388",
+      "title": "Associations Between Handgrip Strength and Dementia Risk, Cognition, and Neuroimaging Outcomes in the UK Biobank Cohort Study.",
+      "journal": "JAMA network open",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "39294497",
+      "title": "Gene discovery and biological insights into anxiety disorders from a large-scale multi-ancestry genome-wide association study.",
+      "journal": "Nature genetics",
+      "year": "2024",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "36317330",
+      "title": "Polygenic Risk Scores and Genetics in Psychiatry.",
+      "journal": "The American journal of psychiatry",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "33181096",
+      "title": "The association between loneliness and depressive symptoms among adults aged 50 years and older: a 12-year population-based cohort study.",
+      "journal": "The lancet. Psychiatry",
+      "year": "2021",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "38916140",
+      "title": "Genome-wide polygenic risk scores predict risk of glioma and molecular subtypes.",
+      "journal": "Neuro-oncology",
+      "year": "2024",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "39196586",
+      "title": "Polygenic Risk Scores and Twin Concordance for Schizophrenia and Bipolar Disorder.",
+      "journal": "JAMA psychiatry",
+      "year": "2024",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "34695568",
+      "title": "Editorial: Polygenic Risk Scores in Child Psychiatry, Research Promise, and Potential Clinical Pitfalls.",
+      "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "31570376",
+      "title": "Genetic Risk Assessment in Psychiatry.",
+      "journal": "Cold Spring Harbor perspectives in medicine",
+      "year": "2020",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "33052393",
+      "title": "Could Polygenic Risk Scores Be Useful in Psychiatry?: A Review.",
+      "journal": "JAMA psychiatry",
+      "year": "2021",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "36786114",
+      "title": "Polygenic risk scores for predicting outcomes and treatment response in psychiatry: hope or hype?",
+      "journal": "International review of psychiatry (Abingdon, England)",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "38865107",
+      "title": "Polygenic Scores and Networks of Psychopathology Symptoms.",
+      "journal": "JAMA psychiatry",
+      "year": "2024",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "39998851",
+      "title": "Impact of the polygenic risk scores for attention-deficit/hyperactivity disorder in Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2025",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "38946280",
+      "title": "Integrating Polygenic Scores and Phenotypic Data to Understand Psychiatric Outcomes.",
+      "journal": "The American journal of psychiatry",
+      "year": "2024",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "36632818",
+      "title": "Effect of polygenic risk for schizophrenia on cardiac structure and function: a UK Biobank observational study.",
+      "journal": "The lancet. Psychiatry",
+      "year": "2023",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "36069021",
+      "title": "Association Between Polygenic Risk Scores and Outcome of ECT.",
+      "journal": "The American journal of psychiatry",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "35354965",
+      "title": "Polygenic scores in biomedical research.",
+      "journal": "Nature reviews. Genetics",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "35456501",
+      "title": "Schizophrenia and Bipolar Polygenic Risk Scores in Relation to Intracranial Volume.",
+      "journal": "Genes",
+      "year": "2022",
+      "search_term": "polygenic risk scores psychiatry"
+    },
+    {
+      "pmid": "36750562",
+      "title": "Dissecting the immune suppressive human prostate tumor microenvironment via integrated single-cell and spatial transcriptomic analyses.",
+      "journal": "Nature communications",
+      "year": "2023",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "35794479",
+      "title": "Molecular landscapes of human hippocampal immature neurons across lifespan.",
+      "journal": "Nature",
+      "year": "2022",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "34731600",
+      "title": "Dissecting mammalian spermatogenesis using spatial transcriptomics.",
+      "journal": "Cell reports",
+      "year": "2021",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "34798047",
+      "title": "Transcriptomic taxonomy and neurogenic trajectories of adult human, macaque, and pig hippocampal and entorhinal cells.",
+      "journal": "Neuron",
+      "year": "2022",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "36796362",
+      "title": "Natural variation in gene expression and viral susceptibility revealed by neural progenitor cell villages.",
+      "journal": "Cell stem cell",
+      "year": "2023",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "34767070",
+      "title": "Diverse human astrocyte and microglial transcriptional responses to Alzheimer's pathology.",
+      "journal": "Acta neuropathologica",
+      "year": "2022",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "37824614",
+      "title": "Multi-omic profiling of the developing human cerebral cortex at the single-cell level.",
+      "journal": "Science advances",
+      "year": "2023",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "37095394",
+      "title": "Single-cell transcriptomic landscape of the developing human spinal cord.",
+      "journal": "Nature neuroscience",
+      "year": "2023",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "35614216",
+      "title": "Divergent transcriptional regulation of astrocyte reactivity across disorders.",
+      "journal": "Nature",
+      "year": "2022",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "35526014",
+      "title": "BIN1 is a key regulator of proinflammatory and neurodegeneration-related activation in microglia.",
+      "journal": "Molecular neurodegeneration",
+      "year": "2022",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "38103979",
+      "title": "The rise of epitranscriptomics: recent developments and future directions.",
+      "journal": "Trends in pharmacological sciences",
+      "year": "2024",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "32857118",
+      "title": "Virtual Histology of Cortical Thickness and Shared Neurobiology in 6 Psychiatric Disorders.",
+      "journal": "JAMA psychiatry",
+      "year": "2021",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "37443281",
+      "title": "Integrating spatial and single-nucleus transcriptomic data elucidates microglial-specific responses in female cynomolgus macaques with depressive-like behaviors.",
+      "journal": "Nature neuroscience",
+      "year": "2023",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "34992268",
+      "title": "Genetic analysis of the human microglial transcriptome across brain regions, aging and disease pathologies.",
+      "journal": "Nature genetics",
+      "year": "2022",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "38684796",
+      "title": "Integration of multi-omics summary data reveals the role of N6-methyladenosine in neuropsychiatric disorders.",
+      "journal": "Molecular psychiatry",
+      "year": "2024",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "36482247",
+      "title": "Integrative transcriptomic analysis of the amyotrophic lateral sclerosis spinal cord implicates glial activation and suggests new risk genes.",
+      "journal": "Nature neuroscience",
+      "year": "2023",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "40108460",
+      "title": "Spatially resolved mapping of cells associated with human complex traits.",
+      "journal": "Nature",
+      "year": "2025",
+      "search_term": "gene expression psychiatric conditions"
+    },
+    {
+      "pmid": "38772369",
+      "title": "Massively parallel in vivo Perturb-seq reveals cell-type-specific transcriptional networks in cortical development.",
+      "journal": "Cell",
+      "year": "2024",
+      "search_term": "gene expression psychiatric conditions"
+    }
+  ]
+}

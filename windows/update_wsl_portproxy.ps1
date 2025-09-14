@@ -22,7 +22,9 @@ Agendamento (executar em PowerShell Admin):
 [CmdletBinding()]
 param(
   [switch]$EnableAlt,
-  [switch]$Remove
+  [switch]$EnableHttp,
+  [switch]$Remove,
+  [switch]$RemoveHttp
 )
 
 function Assert-Admin {
@@ -73,7 +75,9 @@ try {
   if ($Remove) {
     Remove-PortProxy -ListenPort 8443
     Remove-PortProxy -ListenPort 10443
+    if ($RemoveHttp) { Remove-PortProxy -ListenPort 80 }
     Write-Host '[portproxy] Regras 8443/10443 removidas.'
+    if ($RemoveHttp) { Write-Host '[portproxy] Regra 80 removida.' }
     exit 0
   }
 
@@ -88,6 +92,12 @@ try {
     Ensure-FirewallRule -Port 10443
     Add-PortProxy -ListenAddress $listenAddr -ListenPort 10443 -ConnectAddress $wslIp -ConnectPort 8443
     Write-Host "[portproxy] 0.0.0.0:10443 -> $wslIp:8443"
+  }
+
+  if ($EnableHttp) {
+    Ensure-FirewallRule -Port 80
+    Add-PortProxy -ListenAddress $listenAddr -ListenPort 80 -ConnectAddress $wslIp -ConnectPort 80
+    Write-Host "[portproxy] 0.0.0.0:80 -> $wslIp:80"
   }
 
   Write-Host '[portproxy] Estado atual:'

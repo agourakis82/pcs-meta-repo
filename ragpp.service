@@ -1,0 +1,39 @@
+[Unit]
+Description=RAG++ Scientific Research Assistant
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=ragpp
+Group=ragpp
+WorkingDirectory=/home/agourakis82/workspace/pcs-meta-repo
+Environment=PATH=/home/agourakis82/workspace/pcs-meta-repo/venv/bin
+Environment=PYTHONPATH=/home/agourakis82/workspace/pcs-meta-repo
+Environment=RAG_HOST=0.0.0.0
+Environment=RAG_PORT=8000
+Environment=RAG_WORKERS=8
+Environment=PRODUCTION=1
+Environment=RAG_RELOAD=0
+ExecStart=/home/agourakis82/workspace/pcs-meta-repo/venv/bin/python ragpp_server_optimized.py
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ragpp-server
+
+# Security settings
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ReadWritePaths=/home/agourakis82/workspace/pcs-meta-repo
+ProtectHome=yes
+PrivateDevices=yes
+
+# Resource limits
+LimitNOFILE=65536
+MemoryLimit=2G
+
+[Install]
+WantedBy=multi-user.target

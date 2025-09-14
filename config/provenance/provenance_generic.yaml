@@ -1,0 +1,21 @@
+# provenance template: Generic
+name: "Generic"
+version: ""
+license: ""
+source_url: ""
+source_doi: ""
+retrieved_at: ""
+sha256: ""
+inputs:
+  - path: ""
+    sha256: ""
+processing:
+  environment: "Python 3.11"
+  code_version: "pcs-meta-repo"
+  steps:
+    - description: ""
+outputs:
+  - path: ""
+    sha256: ""
+notes: "Fill license constraints: SWOW CC BY-NC-ND; ensure public data only."
+

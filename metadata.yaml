@@ -16,9 +16,9 @@ keywords:
   - semantic networks
 language: "en"
 license: "CC-BY-4.0"
-version: "v4.3.2"
-date: "2025-09-04"
+version: "v4.3.3"
+date: "2025-09-10"
 identifiers:
   concept_doi: "10.5281/zenodo.16921951"
-  version_doi: "10.5281/zenodo.17053446"
+  version_doi: ""
 repository: "https://github.com/agourakis82/pcs-meta-repo"

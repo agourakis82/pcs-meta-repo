@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  ragpp-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - RAG_API_TOKEN=${RAG_API_TOKEN}
+      - RAG_SERVER_URL=${RAG_SERVER_URL}
+    volumes:
+      - ./ragpp/index:/app/ragpp/index
+      - ./pcs:/app/pcs
+    restart: unless-stopped
+    
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - ragpp-api
+    restart: unless-stopped

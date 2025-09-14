@@ -1,0 +1,49 @@
+ANÁLISE AVANÇADA: CLUSTERING SEMÂNTICO E PCA
+============================================================
+
+VISÃO GERAL DO DATASET
+------------------------------
+Total de observações: 792,537
+Features analisadas: ['entropy', 'curvature', 'coherence']
+Amostra para clustering: 50,000
+
+RESULTADOS DA ANÁLISE PCA
+------------------------------
+.3f.3f.3fVariância acumulada (3 PCs): 1.000
+
+RESULTADOS DO CLUSTERING
+------------------------------
+K-Means:
+  Clusters encontrados: 4
+  Silhouette Score: 0.482
+  Calinski-Harabasz Score: 68010.31
+
+DBSCAN:
+  Clusters encontrados: 13
+  Silhouette Score: 0.430
+  Calinski-Harabasz Score: 6439.95
+
+Hierarchical:
+  Clusters encontrados: 4
+  Silhouette Score: 0.464
+  Calinski-Harabasz Score: 62492.35
+
+RESULTADOS DA VALIDAÇÃO CRUZADA
+-----------------------------------
+Random Forest:
+  CV R² médio: 1.000 ± 0.000
+  Score de treino: 1.000
+  Score de teste: 1.000
+  Overfitting (Train-Test): 0.000
+
+Ridge Regression:
+  CV R² médio: 0.025 ± 0.001
+  Score de treino: 0.025
+  Score de teste: 0.025
+  Overfitting (Train-Test): -0.001
+
+CONCLUSÕES
+---------------
+Melhor algoritmo de clustering: K-Means (Silhouette: 0.482)
+Melhor modelo preditivo: Random Forest (Test R²: 1.000)
+✅ Não há evidências significativas de overfitting

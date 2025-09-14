@@ -1,0 +1,20 @@
+## Symbolic-First pipeline models (public-only; license-aware)
+
+mlm:
+  primary: xlm-roberta-large  # XLM-R-large preferred
+  fallback: xlm-roberta-base  # fallback when resources are tight
+
+causal:
+  mistral:
+    model_id: mistralai/Mistral-7B-Instruct-v0.3  # Apache-2.0
+    quant: 8bit
+  llama:
+    model_id: meta-llama/Meta-Llama-3.1-8B  # Llama Community
+    quant: 8bit
+  smoke:
+    model_id: sshleifer/tiny-gpt2
+    quant: none
+
+kenlm:
+  arpa_path: data/lm/example.arpa  # provide ARPA path
+

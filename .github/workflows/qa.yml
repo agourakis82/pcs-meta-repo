@@ -1,9 +1,8 @@
-name: QA
+name: repo-qa
 
 on:
   push:
   pull_request:
-  workflow_dispatch:
 
 jobs:
   qa:
@@ -15,9 +14,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
-          cache-dependency-path: 'requirements.txt'
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
       - name: Install minimal deps
         run: |
           python -m pip install --upgrade pip
