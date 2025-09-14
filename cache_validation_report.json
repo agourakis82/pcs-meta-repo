@@ -1,0 +1,138 @@
+{
+  "timestamp": 1757893087.7209046,
+  "summary": {
+    "total_tests": 10,
+    "passed_tests": 10,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "status": "PASS"
+  },
+  "test_results": {
+    "basic_operations": {
+      "status": "PASS",
+      "result": {
+        "operations": [
+          "set",
+          "get",
+          "exists",
+          "delete"
+        ],
+        "data_integrity": true,
+        "cleanup": true
+      },
+      "timestamp": 1757893084.0465825
+    },
+    "ttl_functionality": {
+      "status": "PASS",
+      "result": {
+        "ttl_seconds": 2,
+        "immediate_retrieval": true,
+        "expiration_working": true
+      },
+      "timestamp": 1757893086.5486934
+    },
+    "compression": {
+      "status": "PASS",
+      "result": {
+        "data_size": 15751,
+        "set_time_ms": 0.42057037353515625,
+        "get_time_ms": 0.1380443572998047,
+        "integrity_preserved": true
+      },
+      "timestamp": 1757893086.5496495
+    },
+    "backend_fallback": {
+      "status": "PASS",
+      "result": {
+        "current_backend": "memory",
+        "backend_operational": true,
+        "fallback_tested": true
+      },
+      "timestamp": 1757893086.5498369
+    },
+    "metrics_collection": {
+      "status": "PASS",
+      "result": {
+        "total_requests": 30,
+        "hits": 10,
+        "misses": 10,
+        "hit_rate": 0.5,
+        "metrics_working": true
+      },
+      "timestamp": 1757893086.5504577
+    },
+    "invalidation_strategies": {
+      "status": "PASS",
+      "result": {
+        "ttl_strategy": true,
+        "lru_strategy": true
+      },
+      "timestamp": 1757893087.6528606
+    },
+    "performance": {
+      "status": "PASS",
+      "result": {
+        "num_operations": 100,
+        "set_time_total": 0.0055620670318603516,
+        "get_time_total": 0.0020253658294677734,
+        "set_ops_per_second": 17978.92751510995,
+        "get_ops_per_second": 49373.79635079458,
+        "avg_set_time_ms": 0.055620670318603516,
+        "avg_get_time_ms": 0.020253658294677734
+      },
+      "timestamp": 1757893087.6617594
+    },
+    "concurrent_access": {
+      "status": "PASS",
+      "result": {
+        "num_tasks": 10,
+        "operations_per_task": 10,
+        "total_operations": 300,
+        "total_time": 0.002931833267211914,
+        "ops_per_second": 102325.05489143694,
+        "concurrency_safe": true
+      },
+      "timestamp": 1757893087.664844
+    },
+    "memory_management": {
+      "status": "PASS",
+      "result": {
+        "initial_size_bytes": 1890,
+        "size_after_adding": 2220,
+        "size_increase": 330,
+        "final_size_bytes": 2220,
+        "memory_tracking": true,
+        "cleanup_working": true
+      },
+      "timestamp": 1757893087.6660202
+    },
+    "error_handling": {
+      "status": "PASS",
+      "result": {
+        "none_key_handled": true,
+        "large_value_handled": true
+      },
+      "timestamp": 1757893087.7206056
+    }
+  },
+  "cache_stats": {
+    "total_requests": 442,
+    "hit_rate": 0.9502262443438914,
+    "avg_response_time": 0.0,
+    "total_size_bytes": 12429,
+    "operations_per_second": 377.6154354153727
+  },
+  "system_info": {
+    "cache_backend": "memory",
+    "active_strategy": "ttl_lru",
+    "available_strategies": [
+      "ttl",
+      "lru",
+      "lfu",
+      "tag",
+      "dependency",
+      "ttl_lru",
+      "ttl_lfu"
+    ]
+  }
+}

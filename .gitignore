@@ -26,6 +26,11 @@ build/
 *.egg-info/
 src/*.egg-info/
 
+# Runtime/output directories
+logs/
+artifacts/
+attic/
+
 # Notebook-generated artifacts (keep repo lean)
 notebooks/*.nbconvert*.ipynb
 notebooks/data/

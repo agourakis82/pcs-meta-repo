@@ -1,0 +1,41 @@
+{
+  "summary": [
+    {
+      "dataset": "zuco",
+      "files": 1824,
+      "bytes": 131994927023
+    },
+    {
+      "dataset": "derco",
+      "files": 243,
+      "bytes": 30334296674
+    },
+    {
+      "dataset": "lpp",
+      "files": 241,
+      "bytes": 30257703664
+    },
+    {
+      "dataset": "onestop",
+      "files": 82,
+      "bytes": 22183432649
+    },
+    {
+      "dataset": "geco",
+      "files": 39,
+      "bytes": 13223381870
+    },
+    {
+      "dataset": "excel_custom",
+      "files": 6,
+      "bytes": 561726639
+    },
+    {
+      "dataset": "geco.zip",
+      "files": 1,
+      "bytes": 71864
+    }
+  ],
+  "total_files": 2436,
+  "total_bytes": 228555540383
+}
