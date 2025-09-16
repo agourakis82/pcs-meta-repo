@@ -3,14 +3,15 @@ Router para endpoints de processamento - Sistema E1.
 Gerenciamento de jobs, workers e estatísticas do sistema de processamento assíncrono.
 """
 
-from typing import List, Dict, Any, Optional
-from fastapi import APIRouter, HTTPException, status, Depends
-from pydantic import BaseModel, Field
 from datetime import datetime
+from typing import Any, Dict, List, Optional
+
+from fastapi import APIRouter, Depends, HTTPException, status
+from pydantic import BaseModel, Field
 
 from ..auth import verify_token
-from ..processing import job_manager, JobStatus, JobPriority
 from ..logging import get_logger
+from ..processing import JobPriority, JobStatus, job_manager
 
 router = APIRouter(prefix="/processing", tags=["processing"])
 logger = get_logger(__name__)
@@ -446,4 +447,4 @@ async def processing_health_check():
             "status": "unhealthy",
             "timestamp": datetime.utcnow().isoformat(),
             "error": str(e)
-        }
+        }        }

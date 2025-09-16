@@ -4,15 +4,16 @@ Sistema H2 - Router de Cache
 API endpoints para operações de cache e monitoramento.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, Query
-from typing import Dict, Any, Optional, List
-from pydantic import BaseModel
 import json
 import logging
+from typing import Any, Dict, List, Optional
 
-from .manager import get_cache_manager, CacheManager
-from .metrics import get_cache_metrics, CacheMetrics
-from .strategies import get_invalidation_manager, InvalidationManager
+from fastapi import APIRouter, Depends, HTTPException, Query
+from pydantic import BaseModel
+
+from .manager import CacheManager, get_cache_manager
+from .metrics import CacheMetrics, get_cache_metrics
+from .strategies import InvalidationManager, get_invalidation_manager
 
 logger = logging.getLogger(__name__)
 
@@ -471,4 +472,4 @@ async def cache_health(
             backends={},
             metrics={},
             strategy=None
-        )
+        )        )

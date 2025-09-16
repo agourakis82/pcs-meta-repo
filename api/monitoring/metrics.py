@@ -4,13 +4,14 @@ Sistema H1 - Coleta de Métricas e Performance
 Módulo para coleta, armazenamento e análise de métricas de performance do sistema.
 """
 
-import psutil
 import asyncio
-from datetime import datetime
-from typing import Dict, List, Any
-from dataclasses import dataclass
-from collections import defaultdict
 import threading
+from collections import defaultdict
+from dataclasses import dataclass
+from datetime import datetime
+from typing import Any, Dict, List
+
+import psutil
 
 
 @dataclass
@@ -229,4 +230,4 @@ def get_metrics_collector() -> MetricsCollector:
 
 def get_performance_monitor() -> PerformanceMonitor:
     """Obtém instância global do monitor de performance."""
-    return _performance_monitor
+    return _performance_monitor    return _performance_monitor

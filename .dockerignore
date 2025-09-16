@@ -1,0 +1,110 @@
+# Docker ignore file para Darwin Platform
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# Tests
+tests/
+*_test.py
+test_*.py
+
+# Development files
+.env
+.env.local
+.env.development
+
+# Logs
+*.log
+logs/
+
+# Data files
+data/
+*.csv
+*.json
+*.sqlite
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Heavy/local project assets not needed in image
+notebooks/
+artifacts/
+attic/
+.attic/
+uploads/
+outputs/
+runs/
+out/
+temp_extraction/
+papers/
+reports/
+osf_hub_v4_3/
+ragpp/
+pcs/
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.xz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deployment scripts (não necessários na imagem)
+deploy*.sh
+deploy.sh
+
+# GitHub
+.github/
+
+# Node modules (se existir)
+node_modules/
+
+# Temporary files
+tmp/
+temp/

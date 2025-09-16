@@ -4,17 +4,18 @@ Sistema H1 - Router de Monitoramento e Métricas
 Endpoints para exposição de métricas e dashboards de monitoramento.
 """
 
-from fastapi import APIRouter, HTTPException
-from fastapi.responses import JSONResponse
 import asyncio
 
+from fastapi import APIRouter, HTTPException
+from fastapi.responses import JSONResponse
+
 from . import (
-    get_metrics_collector, 
-    get_performance_monitor,
-    HealthChecker,
     AlertManager,
     DashboardManager,
-    StructuredLogger
+    HealthChecker,
+    StructuredLogger,
+    get_metrics_collector,
+    get_performance_monitor,
 )
 
 router = APIRouter(prefix="/api/v1/monitoring", tags=["monitoring"])
@@ -312,4 +313,4 @@ async def metrics_middleware(request, call_next):
         raise
     finally:
         # Finalizar tracking do request
-        collector.end_request()
+        collector.end_request()        collector.end_request()

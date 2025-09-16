@@ -1,0 +1,86 @@
+# RAG++ Enhanced Research Agent Configuration
+# ============================================
+
+# Google Cloud Platform Configuration
+gcp:
+  project_id: "your-gcp-project-id" # Replace with your GCP project ID
+  location: "us-central1"
+
+# BigQuery Configuration
+bigquery:
+  dataset_id: "knowledge_base"
+  table_id: "documents"
+
+# Vertex AI Model Configuration
+vertex_ai:
+  embedding_model: "textembedding-gecko@001"
+  generation_model: "text-bison@001"
+
+# RAG System Parameters
+rag:
+  novelty_threshold: 0.8 # Threshold for novelty detection (0.0-1.0)
+  max_iterations: 10 # Max iterations for ReAct reasoning
+  top_k_retrieval: 5 # Number of documents to retrieve
+
+# Scientific Sources Configuration
+sources:
+- name: "arXiv_CS_AI"
+  type: "rss"
+  url: "http://export.arxiv.org/rss/cs.AI"
+  enabled: true
+  check_interval: 3600 # 1 hour
+
+- name: "arXiv_CS_LG"
+  type: "rss"
+  url: "http://export.arxiv.org/rss/cs.LG"
+  enabled: true
+  check_interval: 3600
+
+- name: "arXiv_CS_CL"
+  type: "rss"
+  url: "http://export.arxiv.org/rss/cs.CL"
+  enabled: true
+  check_interval: 3600
+
+- name: "Nature_AI"
+  type: "rss"
+  url: "https://www.nature.com/subjects/machine-learning.rss"
+  enabled: true
+  check_interval: 7200 # 2 hours
+
+- name: "ScienceDaily_AI"
+  type: "rss"
+  url: "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml"
+  enabled: true
+  check_interval: 7200
+
+- name: "MIT_Tech_Review"
+  type: "rss"
+  url: "https://www.technologyreview.com/feed/"
+  enabled: true
+  check_interval: 7200
+
+# Monitoring Configuration
+monitoring:
+  continuous_enabled: false # Set to true for 24/7 operation
+  check_interval: 3600 # Global check interval (seconds)
+  log_level: "INFO" # DEBUG, INFO, WARNING, ERROR
+  max_articles_per_cycle: 50 # Limit articles processed per cycle
+
+# Advanced Features (Optional)
+advanced:
+  enable_mcts_planning: false # Monte Carlo Tree Search planning
+  enable_rl_training: false # Reinforcement Learning training
+  cache_embeddings: true # Cache embeddings for performance
+
+# Example Questions for Testing
+example_questions:
+  simple:
+  - "O que são transformers na deep learning?"
+  - "Quais são as últimas descobertas em IA generativa?"
+  - "Como funciona a arquitetura GPT?"
+
+  complex:
+  - "Compare as abordagens de atenção em modelos de linguagem e suas implicações para eficiência computacional"
+  - "Analise as tendências recentes em few-shot learning e suas aplicações práticas"
+  - "Quais são os principais desafios éticos na implementação de sistemas de IA em healthcare?"

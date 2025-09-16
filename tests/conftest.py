@@ -6,24 +6,26 @@ Configuração pytest para testes do MCP Server PCS
 Configurações globais e fixtures compartilhadas para todos os testes.
 """
 
-import pytest
 import asyncio
+import os
 import sys
+import tempfile
 from pathlib import Path
+from typing import Any, AsyncGenerator, Dict
 from unittest.mock import AsyncMock, MagicMock
+
+import pytest
 from fastapi.testclient import TestClient
 from httpx import AsyncClient
-import tempfile
-import os
-from typing import AsyncGenerator, Dict, Any
 
 # Adiciona src ao path para importações
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
+from api.cache import CacheManager
+from api.config import Settings
+
 # Importações do sistema (usando nomes corretos das classes)
 from api.main import app
-from api.config import Settings
-from api.cache import CacheManager
 from api.processing import JobManager
 
 
@@ -80,12 +82,9 @@ def mock_cache_manager():
     cache_manager.clear = AsyncMock(return_value=True)
     cache_manager.keys = AsyncMock(return_value=[])
     cache_manager.ttl = AsyncMock(return_value=-1)
-    cache_manager.get_stats = AsyncMock(return_value={
-        "hits": 0,
-        "misses": 0,
-        "keys": 0,
-        "memory_usage": "0B"
-    })
+    cache_manager.get_stats = AsyncMock(
+        return_value={"hits": 0, "misses": 0, "keys": 0, "memory_usage": "0B"}
+    )
     return cache_manager
 
 
@@ -94,26 +93,28 @@ def mock_job_manager():
     """Mock do JobManager para testes."""
     job_manager = MagicMock(spec=JobManager)
     job_manager.submit_job = AsyncMock(return_value="test-job-id")
-    job_manager.get_job_status = AsyncMock(return_value={
-        "id": "test-job-id",
-        "status": "completed",
-        "result": {"message": "Test job completed"},
-        "created_at": "2024-01-01T00:00:00Z",
-        "updated_at": "2024-01-01T00:01:00Z"
-    })
+    job_manager.get_job_status = AsyncMock(
+        return_value={
+            "id": "test-job-id",
+            "status": "completed",
+            "result": {"message": "Test job completed"},
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:01:00Z",
+        }
+    )
     job_manager.cancel_job = AsyncMock(return_value=True)
-    job_manager.get_statistics = AsyncMock(return_value={
-        "total_jobs": 1,
-        "completed_jobs": 1,
-        "failed_jobs": 0,
-        "pending_jobs": 0,
-        "active_workers": 2
-    })
-    job_manager.get_queue_status = AsyncMock(return_value={
-        "queue_size": 0,
-        "processing": 0,
-        "average_wait_time": 0.0
-    })
+    job_manager.get_statistics = AsyncMock(
+        return_value={
+            "total_jobs": 1,
+            "completed_jobs": 1,
+            "failed_jobs": 0,
+            "pending_jobs": 0,
+            "active_workers": 2,
+        }
+    )
+    job_manager.get_queue_status = AsyncMock(
+        return_value={"queue_size": 0, "processing": 0, "average_wait_time": 0.0}
+    )
     return job_manager
 
 
@@ -133,10 +134,7 @@ async def async_client():
 @pytest.fixture
 def auth_headers() -> Dict[str, str]:
     """Headers de autenticação para testes."""
-    return {
-        "Authorization": "Bearer test-token",
-        "X-API-Key": "test-api-key"
-    }
+    return {"Authorization": "Bearer test-token", "X-API-Key": "test-api-key"}
 
 
 @pytest.fixture
@@ -144,15 +142,12 @@ def sample_job_data() -> Dict[str, Any]:
     """Dados de exemplo para testes de jobs."""
     return {
         "task_type": "test_task",
-        "parameters": {
-            "input_data": "test data",
-            "processing_mode": "standard"
-        },
+        "parameters": {"input_data": "test data", "processing_mode": "standard"},
         "priority": 1,
         "metadata": {
             "user_id": "test-user",
-            "description": "Test job for unit testing"
-        }
+            "description": "Test job for unit testing",
+        },
     }
 
 
@@ -163,7 +158,7 @@ def sample_user_data() -> Dict[str, str]:
         "username": "testuser",
         "email": "test@example.com",
         "password": "testpassword123",
-        "full_name": "Test User"
+        "full_name": "Test User",
     }
 
 
@@ -190,15 +185,9 @@ def reset_singletons():
 # Configurações pytest
 def pytest_configure(config: Any) -> None:
     """Configuração do pytest."""
-    config.addinivalue_line(
-        "markers", "unit: marca testes unitários"
-    )
-    config.addinivalue_line(
-        "markers", "integration: marca testes de integração"
-    )
-    config.addinivalue_line(
-        "markers", "slow: marca testes que demoram para executar"
-    )
+    config.addinivalue_line("markers", "unit: marca testes unitários")
+    config.addinivalue_line("markers", "integration: marca testes de integração")
+    config.addinivalue_line("markers", "slow: marca testes que demoram para executar")
     config.addinivalue_line(
         "markers", "external: marca testes que dependem de serviços externos"
     )
@@ -212,9 +201,10 @@ def pytest_collection_modifyitems(config: Any, items: Any) -> None:
             item.add_marker(pytest.mark.unit)
         elif "integration" in str(item.fspath):
             item.add_marker(pytest.mark.integration)
-        
+
         # Adiciona marcador slow para testes com async
         if "async" in item.name or hasattr(item, "pytestmark"):
             for mark in getattr(item, "pytestmark", []):
                 if mark.name == "asyncio":
+                    item.add_marker(pytest.mark.slow)
                     item.add_marker(pytest.mark.slow)

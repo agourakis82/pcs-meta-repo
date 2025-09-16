@@ -1,6 +1,7 @@
 """Test configuration and fixtures."""
 
 import os
+
 import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
@@ -16,7 +17,7 @@ def app() -> FastAPI:
     os.environ["OPENAI_API_KEY"] = "test-openai-key"
     os.environ["RATE_LIMIT_REQUESTS"] = "100"
     os.environ["RATE_LIMIT_WINDOW"] = "60"
-    
+
     return create_app()
 
 

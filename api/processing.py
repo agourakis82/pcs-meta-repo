@@ -4,15 +4,15 @@ Implementação completa de job queues, workers e gerenciamento de tarefas.
 """
 
 import asyncio
+import os
+import pickle
 import time
 import uuid
-from datetime import datetime, timezone, timedelta
-from typing import Dict, Any, List, Optional, Callable
-from dataclasses import dataclass, field
-from enum import Enum
 from collections import deque
-import pickle
-import os
+from dataclasses import dataclass, field
+from datetime import datetime, timedelta, timezone
+from enum import Enum
+from typing import Any, Callable, Dict, List, Optional
 
 from .logging import get_logger
 
@@ -21,6 +21,7 @@ logger = get_logger("processing")
 
 class JobStatus(str, Enum):
     """Status de execução de jobs."""
+
     PENDING = "pending"
     RUNNING = "running"
     COMPLETED = "completed"
@@ -31,6 +32,7 @@ class JobStatus(str, Enum):
 
 class JobPriority(str, Enum):
     """Prioridades de jobs."""
+
     LOW = "low"
     NORMAL = "normal"
     HIGH = "high"
@@ -39,6 +41,7 @@ class JobPriority(str, Enum):
 
 class TaskType(str, Enum):
     """Tipos de tasks."""
+
     SYNC = "sync"
     ASYNC = "async"
 
@@ -46,6 +49,7 @@ class TaskType(str, Enum):
 @dataclass
 class Job:
     """Definição de um job."""
+
     id: str
     task_name: str
     task_type: TaskType
@@ -73,6 +77,7 @@ class Job:
 @dataclass
 class TaskDefinition:
     """Definição de uma task."""
+
     name: str
     function: Callable
     task_type: TaskType = TaskType.SYNC
@@ -85,34 +90,38 @@ class TaskDefinition:
 
 class JobQueue:
     """Fila de jobs com prioridade."""
-    
+
     def __init__(self, maxsize: int = 1000):
         self.maxsize = maxsize
         self._queues = {
             JobPriority.CRITICAL: deque(),
             JobPriority.HIGH: deque(),
             JobPriority.NORMAL: deque(),
-            JobPriority.LOW: deque()
+            JobPriority.LOW: deque(),
         }
         self._size = 0
-    
+
     def put(self, job: Job):
         """Adiciona job à fila."""
         if self._size >= self.maxsize:
             raise Exception("Queue cheia")
         self._queues[job.priority].append(job)
         self._size += 1
-    
+
     def get(self) -> Optional[Job]:
         """Obtém próximo job da fila."""
-        for priority in [JobPriority.CRITICAL, JobPriority.HIGH, 
-                        JobPriority.NORMAL, JobPriority.LOW]:
+        for priority in [
+            JobPriority.CRITICAL,
+            JobPriority.HIGH,
+            JobPriority.NORMAL,
+            JobPriority.LOW,
+        ]:
             if self._queues[priority]:
                 job = self._queues[priority].popleft()
                 self._size -= 1
                 return job
         return None
-    
+
     def qsize(self) -> int:
         """Retorna tamanho da fila."""
         return self._size
@@ -120,8 +129,8 @@ class JobQueue:
 
 class Worker:
     """Worker para processar jobs."""
-    
-    def __init__(self, worker_id: str, job_manager: 'JobManager'):
+
+    def __init__(self, worker_id: str, job_manager: "JobManager"):
         self.worker_id = worker_id
         self.job_manager = job_manager
         self.current_job: Optional[Job] = None
@@ -131,14 +140,14 @@ class Worker:
         self.jobs_succeeded = 0
         self.jobs_failed = 0
         self.created_at = datetime.now(timezone.utc)
-    
+
     async def start(self):
         """Inicia o worker."""
         if self.is_running:
             return
         self.is_running = True
         self._task = asyncio.create_task(self._work_loop())
-    
+
     async def stop(self):
         """Para o worker."""
         self.is_running = False
@@ -148,7 +157,7 @@ class Worker:
                 await self._task
             except asyncio.CancelledError:
                 pass
-    
+
     async def _work_loop(self):
         """Loop principal do worker."""
         while self.is_running:
@@ -160,19 +169,19 @@ class Worker:
                     await asyncio.sleep(0.1)
             except Exception as e:
                 logger.error(f"Erro no worker {self.worker_id}: {e}")
-    
+
     async def _process_job(self, job: Job):
         """Processa um job."""
         self.current_job = job
         job.status = JobStatus.RUNNING
         job.started_at = datetime.now(timezone.utc)
         job.worker_id = self.worker_id
-        
+
         try:
             task_def = self.job_manager.task_definitions.get(job.task_name)
             if not task_def:
                 raise ValueError(f"Task {job.task_name} não encontrada")
-            
+
             # Executar task
             if task_def.task_type == TaskType.ASYNC:
                 result = await task_def.function(*job.args, **job.kwargs)
@@ -181,18 +190,18 @@ class Worker:
                 result = await loop.run_in_executor(
                     None, lambda: task_def.function(*job.args, **job.kwargs)
                 )
-            
+
             job.result = result
             job.status = JobStatus.COMPLETED
             job.progress = 1.0
             self.jobs_succeeded += 1
-            
+
         except Exception as e:
             job.error = str(e)
             job.status = JobStatus.FAILED
             self.jobs_failed += 1
             logger.error(f"Erro processando job {job.id}: {e}")
-        
+
         finally:
             job.completed_at = datetime.now(timezone.utc)
             self.current_job = None
@@ -201,7 +210,7 @@ class Worker:
 
 class JobManager:
     """Gerenciador principal de jobs."""
-    
+
     def __init__(self, num_workers: int = 4):
         self.num_workers = num_workers
         self.job_queue = JobQueue()
@@ -212,33 +221,33 @@ class JobManager:
         self.is_running = False
         self._start_time = time.time()
         self._scheduler_task: Optional[asyncio.Task] = None
-    
+
     async def start(self):
         """Inicia o job manager."""
         if self.is_running:
             return
-        
+
         self.is_running = True
         self._start_time = time.time()
-        
+
         # Criar workers
         for i in range(self.num_workers):
             worker_id = f"worker-{i+1}"
             worker = Worker(worker_id, self)
             self.workers[worker_id] = worker
             await worker.start()
-        
+
         # Iniciar scheduler
         self._scheduler_task = asyncio.create_task(self._scheduler_loop())
         logger.info(f"Job manager iniciado com {self.num_workers} workers")
-    
+
     async def stop(self):
         """Para o job manager."""
         if not self.is_running:
             return
-        
+
         self.is_running = False
-        
+
         # Parar scheduler
         if self._scheduler_task:
             self._scheduler_task.cancel()
@@ -246,20 +255,24 @@ class JobManager:
                 await self._scheduler_task
             except asyncio.CancelledError:
                 pass
-        
+
         # Parar workers
         for worker in self.workers.values():
             await worker.stop()
-        
+
         logger.info("Job manager finalizado")
-    
-    def register_task(self, name: str, function: Callable,
-                      task_type: TaskType = TaskType.SYNC,
-                      default_priority: JobPriority = JobPriority.NORMAL,
-                      default_max_retries: int = 3,
-                      default_timeout: Optional[float] = None,
-                      description: str = "",
-                      tags: Optional[List[str]] = None):
+
+    def register_task(
+        self,
+        name: str,
+        function: Callable,
+        task_type: TaskType = TaskType.SYNC,
+        default_priority: JobPriority = JobPriority.NORMAL,
+        default_max_retries: int = 3,
+        default_timeout: Optional[float] = None,
+        description: str = "",
+        tags: Optional[List[str]] = None,
+    ):
         """Registra uma task no sistema."""
         task_def = TaskDefinition(
             name=name,
@@ -269,24 +282,28 @@ class JobManager:
             default_max_retries=default_max_retries,
             default_timeout=default_timeout,
             description=description,
-            tags=tags or []
+            tags=tags or [],
         )
         self.task_definitions[name] = task_def
         logger.info(f"Task registrada: {name}")
-    
-    def submit_job(self, task_name: str, *args: Any,
-                   priority: JobPriority = JobPriority.NORMAL,
-                   max_retries: Optional[int] = None,
-                   timeout: Optional[float] = None,
-                   scheduled_at: Optional[datetime] = None,
-                   tags: Optional[List[str]] = None,
-                   metadata: Optional[Dict[str, Any]] = None,
-                   **kwargs: Any) -> str:
+
+    def submit_job(
+        self,
+        task_name: str,
+        *args: Any,
+        priority: JobPriority = JobPriority.NORMAL,
+        max_retries: Optional[int] = None,
+        timeout: Optional[float] = None,
+        scheduled_at: Optional[datetime] = None,
+        tags: Optional[List[str]] = None,
+        metadata: Optional[Dict[str, Any]] = None,
+        **kwargs: Any,
+    ) -> str:
         """Submete um novo job."""
         task_def = self.task_definitions.get(task_name)
         if not task_def:
             raise ValueError(f"Task {task_name} não encontrada")
-        
+
         job_id = str(uuid.uuid4())
         job = Job(
             id=job_id,
@@ -299,42 +316,42 @@ class JobManager:
             timeout=timeout or task_def.default_timeout,
             scheduled_at=scheduled_at,
             tags=tags or [],
-            metadata=metadata or {}
+            metadata=metadata or {},
         )
-        
+
         self.jobs[job_id] = job
-        
+
         if scheduled_at and scheduled_at > datetime.now(timezone.utc):
             self.scheduled_jobs.append(job)
         else:
             self.job_queue.put(job)
-        
+
         logger.info(f"Job {job_id} submetido")
         return job_id
-    
+
     def get_next_job(self) -> Optional[Job]:
         """Obtém próximo job da queue."""
         return self.job_queue.get()
-    
+
     def get_job(self, job_id: str) -> Optional[Job]:
         """Obtém um job pelo ID."""
         return self.jobs.get(job_id)
-    
+
     def cancel_job(self, job_id: str) -> bool:
         """Cancela um job."""
         job = self.jobs.get(job_id)
         if not job:
             return False
-        
+
         if job.status in [JobStatus.PENDING]:
             job.status = JobStatus.CANCELLED
             job.error = "Job cancelado pelo usuário"
             job.completed_at = datetime.now(timezone.utc)
             logger.info(f"Job {job_id} cancelado")
             return True
-        
+
         return False
-    
+
     def add_workers(self, count: int) -> int:
         """Adiciona workers."""
         added = 0
@@ -346,7 +363,7 @@ class JobManager:
                 asyncio.create_task(worker.start())
             added += 1
         return added
-    
+
     def remove_workers(self, count: int) -> int:
         """Remove workers."""
         worker_ids = list(self.workers.keys())
@@ -357,7 +374,7 @@ class JobManager:
                 asyncio.create_task(worker.stop())
                 removed += 1
         return removed
-    
+
     def get_stats(self) -> Dict[str, Any]:
         """Obtém estatísticas."""
         uptime = time.time() - self._start_time if self.is_running else 0.0
@@ -365,19 +382,27 @@ class JobManager:
             "workers": {
                 "total": len(self.workers),
                 "active": len([w for w in self.workers.values() if w.current_job]),
-                "idle": len([w for w in self.workers.values() if not w.current_job])
+                "idle": len([w for w in self.workers.values() if not w.current_job]),
             },
             "jobs": {
                 "total": len(self.jobs),
-                "pending": len([j for j in self.jobs.values() if j.status == JobStatus.PENDING]),
-                "running": len([j for j in self.jobs.values() if j.status == JobStatus.RUNNING]),
-                "completed": len([j for j in self.jobs.values() if j.status == JobStatus.COMPLETED]),
-                "failed": len([j for j in self.jobs.values() if j.status == JobStatus.FAILED])
+                "pending": len(
+                    [j for j in self.jobs.values() if j.status == JobStatus.PENDING]
+                ),
+                "running": len(
+                    [j for j in self.jobs.values() if j.status == JobStatus.RUNNING]
+                ),
+                "completed": len(
+                    [j for j in self.jobs.values() if j.status == JobStatus.COMPLETED]
+                ),
+                "failed": len(
+                    [j for j in self.jobs.values() if j.status == JobStatus.FAILED]
+                ),
             },
             "queue_size": self.job_queue.qsize(),
-            "uptime": uptime
+            "uptime": uptime,
         }
-    
+
     def get_worker_stats(self) -> Dict[str, Any]:
         """Obtém estatísticas dos workers."""
         return {
@@ -387,27 +412,27 @@ class JobManager:
                 "jobs_processed": worker.jobs_processed,
                 "jobs_succeeded": worker.jobs_succeeded,
                 "jobs_failed": worker.jobs_failed,
-                "created_at": worker.created_at
+                "created_at": worker.created_at,
             }
             for worker_id, worker in self.workers.items()
         }
-    
+
     async def _scheduler_loop(self):
         """Loop do scheduler para jobs agendados."""
         while self.is_running:
             try:
                 now = datetime.now(timezone.utc)
                 jobs_to_schedule = []
-                
+
                 for job in self.scheduled_jobs[:]:
                     if job.scheduled_at and job.scheduled_at <= now:
                         self.scheduled_jobs.remove(job)
                         jobs_to_schedule.append(job)
-                
+
                 for job in jobs_to_schedule:
                     self.job_queue.put(job)
                     logger.info(f"Job agendado {job.id} movido para queue")
-                
+
                 await asyncio.sleep(1)
             except Exception as e:
                 logger.error(f"Erro no scheduler: {e}")
@@ -418,11 +443,17 @@ job_manager = JobManager()
 
 
 # Decorators
-def task(name: Optional[str] = None, task_type: TaskType = TaskType.SYNC,
-         priority: JobPriority = JobPriority.NORMAL, max_retries: int = 3,
-         timeout: Optional[float] = None, description: str = "",
-         tags: Optional[List[str]] = None):
+def task(
+    name: Optional[str] = None,
+    task_type: TaskType = TaskType.SYNC,
+    priority: JobPriority = JobPriority.NORMAL,
+    max_retries: int = 3,
+    timeout: Optional[float] = None,
+    description: str = "",
+    tags: Optional[List[str]] = None,
+):
     """Decorator para registrar tasks."""
+
     def decorator(func: Callable) -> Callable:
         task_name = name or func.__name__
         job_manager.register_task(
@@ -433,15 +464,21 @@ def task(name: Optional[str] = None, task_type: TaskType = TaskType.SYNC,
             default_max_retries=max_retries,
             default_timeout=timeout,
             description=description,
-            tags=tags or []
+            tags=tags or [],
         )
         return func
+
     return decorator
 
 
-def async_task(name: Optional[str] = None, priority: JobPriority = JobPriority.NORMAL,
-               max_retries: int = 3, timeout: Optional[float] = None,
-               description: str = "", tags: Optional[List[str]] = None):
+def async_task(
+    name: Optional[str] = None,
+    priority: JobPriority = JobPriority.NORMAL,
+    max_retries: int = 3,
+    timeout: Optional[float] = None,
+    description: str = "",
+    tags: Optional[List[str]] = None,
+):
     """Decorator para async tasks."""
     return task(name, TaskType.ASYNC, priority, max_retries, timeout, description, tags)
 

@@ -26,3 +26,11 @@ loguru>=0.7.0
 
 # Optional: Additional AI providers
 anthropic>=0.7.0
+
+# Google Cloud (Vertex AI + BigQuery)
+google-cloud-aiplatform>=1.60.0
+google-cloud-bigquery>=3.19.0
+
+# Feeds and config
+feedparser>=6.0.10
+PyYAML>=6.0.0

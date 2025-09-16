@@ -6,11 +6,12 @@ Módulo para verificação de saúde do sistema e componentes.
 
 import asyncio
 import time
-import psutil
-from datetime import datetime
-from typing import Dict, List, Any
 from dataclasses import dataclass
+from datetime import datetime
 from enum import Enum
+from typing import Any, Dict, List
+
+import psutil
 
 
 class HealthStatus(Enum):
@@ -251,4 +252,4 @@ _health_checker = HealthChecker()
 
 def get_health_checker() -> HealthChecker:
     """Obtém instância global do health checker."""
-    return _health_checker
+    return _health_checker    return _health_checker

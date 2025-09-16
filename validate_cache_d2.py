@@ -3,9 +3,10 @@
 Teste de importação e validação de estrutura do sistema de cache D2.
 """
 
-import os
 import ast
+import os
 import sys
+
 
 def analyze_cache_module():
     """Analisa o módulo de cache para verificar se está bem estruturado."""
@@ -151,4 +152,4 @@ if __name__ == "__main__":
         print("\n✨ Pronto para continuar com D3!")
     else:
         print("\n❌ Problemas encontrados no sistema de cache!")
-        sys.exit(1)
+        sys.exit(1)        sys.exit(1)

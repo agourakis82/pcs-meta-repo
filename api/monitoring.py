@@ -10,16 +10,17 @@ Este módulo fornece monitoramento completo do sistema incluindo:
 - Monitoramento de endpoints e performance
 """
 
-import time
 import asyncio
-import psutil
-from datetime import datetime, timezone, timedelta
-from typing import Dict, Any, List, Optional, Callable, Deque
-from dataclasses import dataclass, field
-from enum import Enum
-import threading
-from collections import deque
 import os
+import threading
+import time
+from collections import deque
+from dataclasses import dataclass, field
+from datetime import datetime, timedelta, timezone
+from enum import Enum
+from typing import Any, Callable, Deque, Dict, List, Optional
+
+import psutil
 
 from .logging import get_logger
 
@@ -752,4 +753,4 @@ async def get_alerts_summary() -> Dict[str, Any]:
             "last_24h": len(recent_history),
             "resolved_last_24h": len([a for a in recent_history if a.resolved])
         }
-    }
+    }    }

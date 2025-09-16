@@ -1,0 +1,60 @@
+{
+  "timestamp": 1757895164.6464179,
+  "total_tests": 10,
+  "passed": 9,
+  "failed": 1,
+  "success_rate": 90.0,
+  "duration": 1.4334845542907715,
+  "results": {
+    "H1 Monitoring - Core Imports": {
+      "status": "PASS",
+      "details": "All monitoring classes and singletons imported successfully",
+      "error": null
+    },
+    "H2 Cache - Core Imports": {
+      "status": "PASS",
+      "details": "All cache classes and manager imported successfully",
+      "error": null
+    },
+    "H3 APIs - Core Imports": {
+      "status": "PASS",
+      "details": "All H3 API components imported successfully",
+      "error": null
+    },
+    "Main App Integration": {
+      "status": "PASS",
+      "details": "FastAPI app created with 44 routes",
+      "error": null
+    },
+    "H1 Functionality": {
+      "status": "PASS",
+      "details": "Health: healthy, Metrics: OK, Alerts: 0",
+      "error": null
+    },
+    "H2 Functionality": {
+      "status": "PASS",
+      "details": "Cache set/get/delete operations successful",
+      "error": null
+    },
+    "H3 Functionality": {
+      "status": "FAIL",
+      "details": null,
+      "error": "Cannot generate a JsonSchema for core_schema.CallableSchema\n\nFor further information visit https://errors.pydantic.dev/2.11/u/invalid-for-json-schema"
+    },
+    "Cross-System Integration": {
+      "status": "PASS",
+      "details": "H1-H2-H3 systems integrate successfully",
+      "error": null
+    },
+    "API Compatibility": {
+      "status": "PASS",
+      "details": "All compatibility functions working correctly",
+      "error": null
+    },
+    "Configuration Consistency": {
+      "status": "PASS",
+      "details": "Settings validated: Monitoring=2, Cache=2, APIs=2",
+      "error": null
+    }
+  }
+}

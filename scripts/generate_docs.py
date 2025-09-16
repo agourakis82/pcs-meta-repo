@@ -6,23 +6,24 @@ Script para gerar documentação completa do MCP Server automaticamente.
 Inclui: docs da API, guias de usuário, changelog, e templates.
 """
 
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 # Configurações
 DOCS_DIR = Path(__file__).parent.parent / "docs"
-API_DOCS_DIR = DOCS_DIR / "api" 
+API_DOCS_DIR = DOCS_DIR / "api"
 GUIDES_DIR = DOCS_DIR / "guides"
 TEMPLATES_DIR = DOCS_DIR / "templates"
 
+
 class DocumentationGenerator:
     """Gerador automático de documentação completa."""
-    
+
     def __init__(self):
         self.project_root = Path(__file__).parent.parent
         self.version = self._get_version()
         self.generated_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        
+
     def _get_version(self) -> str:
         """Obtém versão do projeto."""
         try:
@@ -34,11 +35,11 @@ class DocumentationGenerator:
         except Exception:
             pass
         return "1.0.0"
-    
+
     def generate_api_docs(self):
         """Gera documentação completa da API."""
         print("🔄 Gerando documentação da API...")
-        
+
         # Documentação principal da API
         api_overview = f"""# API Documentation - MCP Server v{self.version}
 
@@ -180,16 +181,16 @@ Ver arquivo `api/config.py` para todas as configurações disponíveis.
 
 *Documentação gerada automaticamente pelo Sistema G1*
 """
-        
+
         with open(API_DOCS_DIR / "README.md", "w") as f:
             f.write(api_overview)
-            
+
         print("✅ Documentação da API criada")
-    
+
     def generate_user_guides(self):
         """Gera guias completos para usuários."""
         print("🔄 Gerando guias de usuário...")
-        
+
         # Guia de instalação
         installation_guide = f"""# Guia de Instalação - MCP Server v{self.version}
 
@@ -277,7 +278,7 @@ curl -H "Authorization: Bearer YOUR_API_KEY" http://localhost:8000/admin/health
 
         with open(GUIDES_DIR / "installation.md", "w") as f:
             f.write(installation_guide)
-        
+
         # Guia de uso rápido
         quickstart = f"""# Guia de Uso Rápido - MCP Server v{self.version}
 
@@ -377,7 +378,7 @@ fetch('http://localhost:8000/rag/query', {{
 
         with open(GUIDES_DIR / "quickstart.md", "w") as f:
             f.write(quickstart)
-            
+
         # Guia de troubleshooting
         troubleshooting = f"""# Guia de Solução de Problemas - MCP Server v{
             self.version}
@@ -503,13 +504,13 @@ python -c "from api.services.cache import MemoryCache; print('Cache OK')"
 
         with open(GUIDES_DIR / "troubleshooting.md", "w") as f:
             f.write(troubleshooting)
-            
+
         print("✅ Guias de usuário criados")
-    
+
     def generate_code_docs(self):
         """Gera documentação inline do código."""
         print("🔄 Gerando documentação do código...")
-        
+
         code_docs = f"""# Documentação do Código - MCP Server v{self.version}
 
 *Gerado automaticamente em {self.generated_date}*
@@ -636,13 +637,13 @@ except Exception as e:
 
         with open(DOCS_DIR / "code-documentation.md", "w") as f:
             f.write(code_docs)
-            
+
         print("✅ Documentação do código criada")
-    
+
     def generate_changelog(self):
         """Gera changelog automático."""
         print("🔄 Gerando changelog...")
-        
+
         changelog = f"""# Changelog - MCP Server
 
 *Gerado automaticamente em {self.generated_date}*
@@ -724,13 +725,13 @@ de documentação
 
         with open(self.project_root / "CHANGELOG.md", "w") as f:
             f.write(changelog)
-            
+
         print("✅ Changelog criado")
-    
+
     def generate_templates(self):
         """Gera templates reutilizáveis."""
         print("🔄 Gerando templates...")
-        
+
         # Template para nova API
         api_template = """# Template - Nova API
 
@@ -851,7 +852,7 @@ app.include_router(new_router.router)
 
         with open(TEMPLATES_DIR / "new-api-template.md", "w") as f:
             f.write(api_template)
-        
+
         # Template para documentação
         doc_template = """# Template - Documentação
 
@@ -974,13 +975,13 @@ Breve descrição da funcionalidade e seu propósito.
 
         with open(TEMPLATES_DIR / "documentation-template.md", "w") as f:
             f.write(doc_template)
-        
+
         print("✅ Templates criados")
-        
+
     def generate_readme(self):
         """Gera README principal atualizado."""
         print("🔄 Atualizando README principal...")
-        
+
         readme = f"""# MCP Server - Sistema de Pesquisa Acadêmica
 
 *Versão {self.version} - Atualizado em {self.generated_date}*
@@ -1162,7 +1163,7 @@ Ver arquivo [LICENSE](LICENSE) para detalhes.
 
         with open(self.project_root / "README.md", "w") as f:
             f.write(readme)
-            
+
         print("✅ README principal atualizado")
 
     def run(self):
@@ -1171,11 +1172,11 @@ Ver arquivo [LICENSE](LICENSE) para detalhes.
         print(f"📦 Versão: {self.version}")
         print(f"📅 Data: {self.generated_date}")
         print()
-        
+
         # Criar diretórios se não existirem
         for dir_path in [DOCS_DIR, API_DOCS_DIR, GUIDES_DIR, TEMPLATES_DIR]:
             dir_path.mkdir(parents=True, exist_ok=True)
-        
+
         # Gerar toda documentação
         self.generate_api_docs()
         self.generate_user_guides()
@@ -1183,7 +1184,7 @@ Ver arquivo [LICENSE](LICENSE) para detalhes.
         self.generate_changelog()
         self.generate_templates()
         self.generate_readme()
-        
+
         print()
         print("🎉 Documentação G1 gerada com sucesso!")
         print("📂 Arquivos criados:")
@@ -1196,6 +1197,7 @@ Ver arquivo [LICENSE](LICENSE) para detalhes.
         print("   docs/templates/documentation-template.md")
         print("   CHANGELOG.md")
         print("   README.md (atualizado)")
+
 
 if __name__ == "__main__":
     generator = DocumentationGenerator()

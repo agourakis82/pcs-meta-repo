@@ -1,0 +1,114 @@
+name: Deploy Darwin Platform
+
+on:
+  push:
+    branches: [main, MCP-and-project-adjustments]
+  pull_request:
+    branches: [main]
+
+env:
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  SERVICE_NAME: darwin-platform
+  REGION: us-central1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.11]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r test-requirements.txt
+
+      - name: Lint with flake8
+        run: |
+          pip install flake8
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+
+      - name: Test with pytest
+        run: |
+          pytest tests/test_darwin_platform.py -v
+
+  deploy-staging:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/MCP-and-project-adjustments'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: "Set up Cloud SDK"
+        uses: "google-github-actions/setup-gcloud@v1"
+
+      - name: Deploy to Cloud Run (Staging)
+        run: |
+          gcloud run deploy $SERVICE_NAME-staging \
+            --source . \
+            --platform managed \
+            --region $REGION \
+            --allow-unauthenticated \
+            --memory 2Gi \
+            --cpu 2 \
+            --max-instances 5 \
+            --set-env-vars PROJECT_ID=$PROJECT_ID \
+            --set-env-vars LOCATION=$REGION \
+            --set-env-vars CONTEXT_CACHE_ENABLED=true \
+            --set-env-vars RAG_ENGINE_ENABLED=true \
+            --set-env-vars DEBUG=true \
+            --service-account darwin-platform@$PROJECT_ID.iam.gserviceaccount.com
+
+  deploy-production:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: "Set up Cloud SDK"
+        uses: "google-github-actions/setup-gcloud@v1"
+
+      - name: Deploy to Cloud Run (Production)
+        run: |
+          gcloud run deploy $SERVICE_NAME \
+            --source . \
+            --platform managed \
+            --region $REGION \
+            --allow-unauthenticated \
+            --memory 4Gi \
+            --cpu 4 \
+            --max-instances 20 \
+            --set-env-vars PROJECT_ID=$PROJECT_ID \
+            --set-env-vars LOCATION=$REGION \
+            --set-env-vars CONTEXT_CACHE_ENABLED=true \
+            --set-env-vars RAG_ENGINE_ENABLED=true \
+            --set-env-vars DEBUG=false \
+            --service-account darwin-platform@$PROJECT_ID.iam.gserviceaccount.com
+
+      - name: Test production deployment
+        run: |
+          SERVICE_URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format="value(status.url)")
+          curl -f $SERVICE_URL/health || exit 1

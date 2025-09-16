@@ -1,29 +1,38 @@
 """
 Sistema H3 - API Gateway Central
 
-Gateway unificado para todas as APIs do sistema com roteamento, 
+Gateway unificado para todas as APIs do sistema com roteamento,
 autenticação e middleware integrados.
 """
 
-from .gateway_main import APIGateway, get_api_gateway
+from .config import GatewayConfig, get_gateway_config
+from .gateway_main import APIGateway, create_gateway, get_gateway_instance
 from .middleware import (
     AuthenticationMiddleware,
-    RateLimitMiddleware,
+    CompressionMiddleware,
     CORSMiddleware,
-    LoggingMiddleware
+    LoggingMiddleware,
+    RateLimitMiddleware,
+    SecurityMiddleware,
 )
-from .router_manager import RouterManager, get_router_manager
-from .config import GatewayConfig, SecurityConfig
+from .router_manager import RouteMetadata, RouterManager
 
 __all__ = [
-    "APIGateway",
-    "get_api_gateway",
-    "AuthenticationMiddleware",
-    "RateLimitMiddleware", 
-    "CORSMiddleware",
-    "LoggingMiddleware",
-    "RouterManager",
-    "get_router_manager",
+    # Configuração
     "GatewayConfig",
-    "SecurityConfig"
+    "get_gateway_config",
+    # Gateway principal
+    "APIGateway",
+    "create_gateway",
+    "get_gateway_instance",
+    # Middlewares
+    "LoggingMiddleware",
+    "SecurityMiddleware",
+    "RateLimitMiddleware",
+    "AuthenticationMiddleware",
+    "CORSMiddleware",
+    "CompressionMiddleware",
+    # Gerenciamento de rotas
+    "RouterManager",
+    "RouteMetadata",
 ]

@@ -3,9 +3,10 @@
 Teste de validação do Sistema D3 - Monitoramento Avançado.
 """
 
-import os
 import ast
+import os
 import sys
+
 
 def analyze_monitoring_system():
     """Analisa o sistema de monitoramento para verificar implementação."""
@@ -215,4 +216,4 @@ if __name__ == "__main__":
         print("\n🎉 IMPLEMENTAÇÃO D3 VALIDADA COM SUCESSO!")
     else:
         print("\n❌ Problemas encontrados na implementação D3!")
-        sys.exit(1)
+        sys.exit(1)        sys.exit(1)

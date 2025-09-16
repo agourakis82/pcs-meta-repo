@@ -5,22 +5,22 @@ Módulo de inicialização do sistema de cache multi-camadas.
 """
 
 from .manager import CacheManager, get_cache_manager
-from .redis_cache import RedisCache
 from .memory_cache import MemoryCache
 from .metrics import CacheMetrics, get_cache_metrics
+from .redis_cache import RedisCache
 from .strategies import (
     InvalidationStrategy,
-    TTLStrategy,
-    LRUStrategy,
     LFUStrategy,
+    LRUStrategy,
     TagStrategy,
-    get_invalidation_manager
+    TTLStrategy,
+    get_invalidation_manager,
 )
 
 __all__ = [
     "CacheManager",
     "get_cache_manager",
-    "RedisCache", 
+    "RedisCache",
     "MemoryCache",
     "CacheMetrics",
     "get_cache_metrics",
@@ -29,5 +29,24 @@ __all__ = [
     "LRUStrategy",
     "LFUStrategy",
     "TagStrategy",
-    "get_invalidation_manager"
+    "get_invalidation_manager",
 ]
+
+# Compat exports from cache_core (legacy API used by routers)
+try:
+    from .cache_core import (
+        cache_manager,
+        clear_all_cache,
+        get_cache_stats,
+        invalidate_cache_tags,
+    )
+
+    __all__ += [
+        "cache_manager",
+        "get_cache_stats",
+        "invalidate_cache_tags",
+        "clear_all_cache",
+    ]
+except Exception:
+    # Allow package to load even if optional compat layer fails
+    pass
