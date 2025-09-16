@@ -380,7 +380,6 @@ def save_example_configs(directory: str = "."):
         
         logger.info(f"Example configs saved to {directory}")
         return True
-        
     except Exception as e:
         logger.error(f"Error saving example configs: {e}")
-        return False        return False
+        return False
