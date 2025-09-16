@@ -1,8 +1,15 @@
 {
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "Large file in repo root (>10MB): DutchWordAssociationData_April2012CSV.zip",
+    "Large file in repo root (>10MB): DutchWordAssociationData_April2012Matlab.zip",
+    "Large file in repo root (>10MB): EEG-based Reading Experiment.zip",
+    "Large file in repo root (>10MB): SWOW-EN18 (1).zip",
+    "Large file in repo root (>10MB): SWOW-RP22 (1).zip",
+    "Large file in repo root (>10MB): SWOW-ZH24.zip"
+  ],
   "fixes": [],
-  "version": "v4.3.2",
-  "version_doi": "10.5281/zenodo.17053446",
+  "version": "v4.3.3",
+  "version_doi": "",
   "concept_doi": "10.5281/zenodo.16921951"
 }

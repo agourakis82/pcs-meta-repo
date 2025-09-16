@@ -1,0 +1,12 @@
+STATUS DOS DATASETS EEG/RT
+==============================
+
+DATASETS FALTANDO:
+- DERCo
+- GECO
+- LPP
+- OneStop
+
+DATASETS ENCONTRADOS:
+- ZuCo_v1
+- ZuCo_v2

@@ -1,0 +1,228 @@
+{
+  "timestamp": "2025-09-09T14:36:52.823750",
+  "audit_version": "1.0.0",
+  "languages_tested": [
+    "en",
+    "es",
+    "zh",
+    "nl"
+  ],
+  "phases": {
+    "phase_1": {
+      "phase": "core_infrastructure",
+      "status": "completed",
+      "components": {
+        "swow_pipeline": {
+          "component": "swow_pipeline",
+          "status": "completed",
+          "language_results": {
+            "en": {
+              "language": "en",
+              "data_dirs_exist": true,
+              "raw_data_available": true,
+              "processed_data_available": true,
+              "issues": [],
+              "passed_checks": 6,
+              "total_checks": 6,
+              "raw_files": [
+                "responseStats.SWOW-EN.20180827.csv",
+                "strength.SWOW-EN.R123.20180827.csv",
+                "cueStats.SWOW-EN.R123.20180827.csv",
+                "cueStats.SWOW-EN.R1.20180827.csv",
+                "strength.SWOW-EN.R1.20180827.csv",
+                "SWOW-EN.R100.20180827.csv",
+                "SWOW-EN.complete.20180827.csv"
+              ],
+              "kec_files_found": [
+                "entropy.parquet",
+                "curvature.parquet",
+                "coherence.parquet"
+              ]
+            },
+            "es": {
+              "language": "es",
+              "data_dirs_exist": true,
+              "raw_data_available": true,
+              "processed_data_available": true,
+              "issues": [],
+              "passed_checks": 6,
+              "total_checks": 6,
+              "raw_files": [
+                "strength.SWOWRP.R123.20220426.csv",
+                "strength.SWOWRP.R1.20220426.csv",
+                "raw_responses.csv",
+                "cueStats.SWOWRP.R1.20220426.csv",
+                "SWOWRP.raw.20220426.csv",
+                "cue_stats.csv",
+                "SWOWRP.spellchecked.20220426.csv",
+                "SWOWRP.R70.20220426.csv",
+                "cueStats.SWOWRP.R123.20220426.csv",
+                "responseStats.SWOWRP.20220426.csv"
+              ],
+              "kec_files_found": [
+                "entropy.parquet",
+                "curvature.parquet",
+                "coherence.parquet"
+              ]
+            },
+            "zh": {
+              "language": "zh",
+              "data_dirs_exist": true,
+              "raw_data_available": true,
+              "processed_data_available": true,
+              "issues": [],
+              "passed_checks": 6,
+              "total_checks": 6,
+              "raw_files": [
+                "strength.SWOWZH.R123.20230423.csv",
+                "centrality.SWOWZH.R1.20230423.csv",
+                "SWOWZH.raw.20230424.csv",
+                "cueStats.SWOWZH.R123.20230423.csv",
+                "centrality.SWOWZH.R123.20230423.csv",
+                "cueStats.SWOWZH.R1.20230423.csv",
+                "SWOWZH.R55.20230424.csv",
+                "responseStats.SWOWZH.20230423.csv",
+                "strength.SWOWZH.R1.20230423.csv",
+                "raw_trials.csv"
+              ],
+              "kec_files_found": [
+                "entropy.parquet",
+                "curvature.parquet",
+                "coherence.parquet"
+              ]
+            },
+            "nl": {
+              "language": "nl",
+              "data_dirs_exist": true,
+              "raw_data_available": true,
+              "processed_data_available": true,
+              "issues": [],
+              "passed_checks": 6,
+              "total_checks": 6,
+              "raw_files": [
+                "users.csv",
+                "associative_strength.csv"
+              ],
+              "kec_files_found": [
+                "entropy.parquet",
+                "curvature.parquet",
+                "coherence.parquet"
+              ]
+            }
+          },
+          "issues": [],
+          "passed_checks": 27,
+          "total_checks": 27,
+          "pcs_toolbox_swow_available": true,
+          "config/swow.yaml_valid": true,
+          "config/swow_paths.yaml_valid": true
+        },
+        "kec_metrics": {
+          "component": "kec_metrics",
+          "status": "completed",
+          "metrics_available": {
+            "transition_entropy": true,
+            "ricci_curvature": true,
+            "meso_coherence": true,
+            "compute_kec_metrics": true
+          },
+          "issues": [],
+          "passed_checks": 5,
+          "total_checks": 5,
+          "pcs_toolbox_kec_available": true
+        },
+        "integration_pipeline": {
+          "component": "integration_pipeline",
+          "status": "completed",
+          "pipeline_scripts": {
+            "swow_zuco_pipeline.py": {
+              "exists": true,
+              "executable": true,
+              "imports_valid": true
+            },
+            "multilanguage_swow_analysis.py": {
+              "exists": true,
+              "executable": true,
+              "imports_valid": true
+            },
+            "multilingual_comprehensive_analysis.py": {
+              "exists": true,
+              "executable": true,
+              "imports_valid": true
+            }
+          },
+          "issues": [],
+          "passed_checks": 11,
+          "total_checks": 11
+        },
+        "missing_files": {
+          "component": "missing_files",
+          "status": "completed",
+          "missing_modules": [],
+          "missing_scripts": [
+            "data/raw_public/swow/en/.gitkeep",
+            "data/L2_derived/kec/en/.gitkeep",
+            "data/raw_public/swow/es/.gitkeep",
+            "data/L2_derived/kec/es/.gitkeep",
+            "data/raw_public/swow/zh/.gitkeep",
+            "data/L2_derived/kec/zh/.gitkeep",
+            "data/raw_public/swow/nl/.gitkeep",
+            "data/L2_derived/kec/nl/.gitkeep"
+          ],
+          "missing_configs": [],
+          "issues": [
+            "Missing en file: data/raw_public/swow/en/.gitkeep",
+            "Missing en file: data/L2_derived/kec/en/.gitkeep",
+            "Missing es file: data/raw_public/swow/es/.gitkeep",
+            "Missing es file: data/L2_derived/kec/es/.gitkeep",
+            "Missing zh file: data/raw_public/swow/zh/.gitkeep",
+            "Missing zh file: data/L2_derived/kec/zh/.gitkeep",
+            "Missing nl file: data/raw_public/swow/nl/.gitkeep",
+            "Missing nl file: data/L2_derived/kec/nl/.gitkeep"
+          ],
+          "passed_checks": 15,
+          "total_checks": 23
+        }
+      },
+      "issues": [
+        "Missing en file: data/raw_public/swow/en/.gitkeep",
+        "Missing en file: data/L2_derived/kec/en/.gitkeep",
+        "Missing es file: data/raw_public/swow/es/.gitkeep",
+        "Missing es file: data/L2_derived/kec/es/.gitkeep",
+        "Missing zh file: data/raw_public/swow/zh/.gitkeep",
+        "Missing zh file: data/L2_derived/kec/zh/.gitkeep",
+        "Missing nl file: data/raw_public/swow/nl/.gitkeep",
+        "Missing nl file: data/L2_derived/kec/nl/.gitkeep"
+      ],
+      "passed_checks": 58,
+      "total_checks": 66,
+      "success_rate": 0.8787878787878788
+    }
+  },
+  "summary": {
+    "total_checks": 66,
+    "passed_checks": 58,
+    "failed_checks": 8,
+    "success_rate": 0.8787878787878788,
+    "total_issues": 8,
+    "critical_issues": 8
+  },
+  "issues": [
+    "Missing en file: data/raw_public/swow/en/.gitkeep",
+    "Missing en file: data/L2_derived/kec/en/.gitkeep",
+    "Missing es file: data/raw_public/swow/es/.gitkeep",
+    "Missing es file: data/L2_derived/kec/es/.gitkeep",
+    "Missing zh file: data/raw_public/swow/zh/.gitkeep",
+    "Missing zh file: data/L2_derived/kec/zh/.gitkeep",
+    "Missing nl file: data/raw_public/swow/nl/.gitkeep",
+    "Missing nl file: data/L2_derived/kec/nl/.gitkeep"
+  ],
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Language Standardization",
+      "description": "Convert all Portuguese text to English throughout the codebase",
+      "action": "Systematically translate all comments, docstrings, and documentation to English"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2024-01-01T00:00:00Z",
+  "repository_path": "/home/agourakis82/workspace/pcs-meta-repo",
+  "qa_summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 27
+  },
+  "errors": [],
+  "warnings": [],
+  "info": [
+    "\u2713 Directory exists: docs",
+    "\u2713 Directory exists: src",
+    "\u2713 Directory exists: scripts",
+    "\u2713 Directory exists: notebooks",
+    "\u2713 Directory exists: data",
+    "\u2713 Directory exists: figures",
+    "\u2713 Directory exists: reports",
+    "\u2713 Directory exists: tools",
+    "\u2713 Directory exists: config",
+    "\u2713 Configuration file exists: config/data_root.yaml",
+    "\u2713 Valid YAML syntax: config/data_root.yaml",
+    "\u2713 Configuration file exists: config/datasets.yaml",
+    "\u2713 Valid YAML syntax: config/datasets.yaml",
+    "\u2713 Configuration file exists: pyproject.toml",
+    "\u2713 Configuration file exists: requirements.txt",
+    "\u2713 Governance document exists: docs/GOVERNANCE_v4.4.md",
+    "\u2713 Governance document exists: docs/RUNBOOK_minimal_v4.4.md",
+    "\u2713 Governance document exists: CITATION.cff",
+    "\u2713 Governance document exists: README.md",
+    "\u2713 Data directory exists: data/L1_tidy",
+    "\u2713 Data directory exists: data/L2_derived",
+    "\u2713 Data directory exists: data/processed",
+    "\u2713 Found 245 Python files",
+    "\u2713 Main module exists: src/cli/kec_compile.py",
+    "\u2713 Main module exists: src/datasets/zuco_rt_loader.py",
+    "\u2713 Main module exists: src/datasets/zuco_eeg_loader.py",
+    "\u2713 Main module exists: scripts/swow_zuco_pipeline.py"
+  ],
+  "status": "PASS"
+}

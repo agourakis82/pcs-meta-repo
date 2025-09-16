@@ -1,0 +1,45 @@
+# Darwin Platform - Deployment Requirements
+# Dependências mínimas para deployment da plataforma
+
+# Core web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Data validation and settings
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# JWT authentication
+PyJWT==2.8.0
+
+# Google Cloud integration
+google-cloud-aiplatform==1.38.0
+google-cloud-secret-manager==2.24.0
+google-cloud-bigquery==3.13.0
+google-auth
+
+# RAG++ Enhanced Research Agent dependencies
+feedparser==6.0.11
+python-dateutil==2.8.2
+requests==2.31.0
+
+# Database and storage
+aiosqlite==0.19.0
+
+# HTTP client
+httpx==0.25.2
+
+# File operations
+aiofiles==23.2.1
+
+# Core data processing  
+numpy>=1.26.0
+
+# Async utilities
+asyncio-throttle==1.0.2
+
+# File upload support
+python-multipart==0.0.6
+
+# Structured logging
+python-json-logger==2.0.4

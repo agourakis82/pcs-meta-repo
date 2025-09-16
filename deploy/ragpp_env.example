@@ -1,0 +1,17 @@
+# Environment for RAG++ Web Server
+# Copy to /etc/default/ragpp_web_server and edit values
+
+# Bind only locally; Nginx proxies publicly
+RAG_HOST=127.0.0.1
+RAG_PORT=8000
+
+# Protect MCP endpoint with Bearer and host allowlist
+MCP_BEARER_TOKEN=CHANGE_ME_SUPER_SECRET
+MCP_ALLOWED_HOSTS=mcp.agourakis.med.br
+
+# Python interpreter (optional). If unset, service uses /usr/bin/python3
+PYTHON_BIN=/usr/bin/python3
+
+# Optional: extend PYTHONPATH to repo root (set by service WorkingDirectory)
+# PYTHONPATH=/home/agourakis82/workspace/pcs-meta-repo
+

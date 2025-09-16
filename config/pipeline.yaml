@@ -1,0 +1,39 @@
+## Symbolic-First pipeline orchestration template
+
+swow:
+  csv_path: data/raw_public/swow/SWOW-EN.csv
+  out_gml: data/L1_tidy/swow_en.gml
+
+kec:
+  graph_gml: data/L1_tidy/swow_en.gml
+  out_csv: data/L2_derived/kec_en.csv
+
+lm:
+  pppl_text: "hola mundo this is a tiny smoke example"
+  xlmr_model: xlm-roberta-base
+  causal_model: sshleifer/tiny-gpt2
+  kenlm_text: data/L1_tidy/sample.txt
+  kenlm_model: data/lm/example.arpa
+
+topics:
+  counts_json: data/L2_derived/topic_counts.json
+  spikes_out: reports/topic_spikes.json
+
+sea_var:
+  csv_path: data/L2_derived/var_series.csv
+  columns: [series_a, series_b]
+  maxlags: 4
+  out: reports/var_summary.json
+
+align:
+  src_emb: data/L2_derived/emb_en.csv
+  tgt_emb: data/L2_derived/emb_es.csv
+  anchors_csv: data/L2_derived/anchors_en_es.csv
+  method: procrustes
+  out: reports/alignment.json
+
+zuco:
+  aligned_csv: data/processed/zuco_aligned.csv
+  kec_csv: data/L2_derived/kec_en.csv
+  out: reports/zuco_validation.json
+

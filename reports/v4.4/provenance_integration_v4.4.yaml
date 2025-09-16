@@ -1,0 +1,36 @@
+pipeline: SWOW-ZuCo v4.4 integrate
+version: v4.4
+inputs:
+- data/L1_tidy/derco_eeg/word_events_eeg.parquet
+- data/L1_tidy/excel_custom_rt/word_events_rt.parquet
+- data/L1_tidy/geco_et/word_events_rt.parquet
+- data/L1_tidy/lpp_eeg/word_events_eeg.parquet
+- data/L1_tidy/onestop_et/word_events_rt.parquet
+- data/L1_tidy/zuco_eeg/word_events_eeg.parquet
+- data/L1_tidy/zuco_rt/word_events_rt.parquet
+- data/L2_derived/kec/en/coherence.parquet
+- data/L2_derived/kec/en/components.parquet
+- data/L2_derived/kec/en/curvature.parquet
+- data/L2_derived/kec/en/entropy.parquet
+- data/L2_derived/kec/es/coherence.parquet
+- data/L2_derived/kec/es/components.parquet
+- data/L2_derived/kec/es/curvature.parquet
+- data/L2_derived/kec/es/entropy.parquet
+- data/L2_derived/kec/nl/coherence.parquet
+- data/L2_derived/kec/nl/components.parquet
+- data/L2_derived/kec/nl/curvature.parquet
+- data/L2_derived/kec/nl/entropy.parquet
+- data/L2_derived/kec/zh/coherence.parquet
+- data/L2_derived/kec/zh/components.parquet
+- data/L2_derived/kec/zh/curvature.parquet
+- data/L2_derived/kec/zh/entropy.parquet
+outputs:
+- data/processed/v4.4/integration/derco_kec_eeg.parquet
+- data/processed/v4.4/integration/excel_custom_kec_rt.parquet
+- data/processed/v4.4/integration/geco_et.parquet
+- data/processed/v4.4/integration/geco_et_kec_rt.parquet
+- data/processed/v4.4/integration/lpp_kec_eeg.parquet
+- data/processed/v4.4/integration/onestop_et.parquet
+- data/processed/v4.4/integration/onestop_et_kec_rt.parquet
+- data/processed/v4.4/integration/zuco_kec_eeg.parquet
+- data/processed/v4.4/integration/zuco_kec_rt.parquet

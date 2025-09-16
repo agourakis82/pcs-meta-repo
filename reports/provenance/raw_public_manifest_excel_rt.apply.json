@@ -1,0 +1,79 @@
+{
+  "datasets": {
+    "excel_custom_rt": {
+      "raw_dir": "data/raw_public/excel_custom",
+      "patterns": [
+        "**/*.xlsx"
+      ],
+      "source_roots": [
+        "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom",
+        "/home/agourakis82/FASTDATA/raw_external"
+      ],
+      "files_seen": 4,
+      "unique_hashes": 4,
+      "actions": [
+        {
+          "dataset": "excel_custom_rt",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom/L1ReadingData.xlsx",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom",
+          "sha256": "2ae47079858cf2243ef250b15e569b6cb3c62fe64d978d4d888a1617c47c037d",
+          "bytes": 161814141,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "excel_custom_rt",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom/L2ReadingData.xlsx",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom",
+          "sha256": "b44d5e2032e337b68124feb04deb08742b8027035c35bb1d101bc6eb99900577",
+          "bytes": 164268025,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "excel_custom_rt",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/geco/EnglishMaterial.xlsx",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom/geco/EnglishMaterial.xlsx",
+          "sha256": "22b5ed0d2611ff7014377ab1c9ebee297cc563c8a5b75070b0d0f13b63006363",
+          "bytes": 4909885,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "excel_custom_rt",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/geco/MonolingualReadingData.xlsx",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/excel_custom/geco/MonolingualReadingData.xlsx",
+          "sha256": "f795b2c76bf70cc52650cb3b269c7a9bf7330193f58399c5af02323ecb7d1d73",
+          "bytes": 230734538,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        }
+      ],
+      "stats": {
+        "planned": 4,
+        "linked": 2,
+        "copied": 0,
+        "skipped": 2,
+        "conflicts": 0
+      }
+    }
+  },
+  "summary": {
+    "datasets": [
+      "excel_custom_rt"
+    ],
+    "total_planned": 4,
+    "total_skipped": 2,
+    "total_conflicts": 0,
+    "mode": "link",
+    "dry_run": false
+  }
+}

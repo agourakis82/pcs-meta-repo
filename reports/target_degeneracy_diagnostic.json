@@ -1,0 +1,143 @@
+{
+  "timestamp": "2025-09-10T13:21:40.352304",
+  "dataset_path": "/home/agourakis82/workspace/pcs-meta-repo/data/processed/integrated_neuro_swow.csv",
+  "dataset_shape": [
+    902812,
+    28
+  ],
+  "target_columns_analyzed": [
+    "fixation_duration",
+    "theta",
+    "alpha",
+    "beta",
+    "entropy",
+    "curvature",
+    "coherence"
+  ],
+  "results": {
+    "fixation_duration": {
+      "column": "fixation_duration",
+      "status": "CONSTANT",
+      "total_values": 902812,
+      "non_null_values": "827966",
+      "null_values": "74846",
+      "unique_values": 1,
+      "unique_ratio": 1.207779063391492e-06,
+      "std_dev": 0.0,
+      "mean": 200.0,
+      "cv": 0.0,
+      "problematic_values": [
+        "nan(74846)"
+      ],
+      "issue": "Valor constante: nan",
+      "recommendation": "Substituir por dados com variabilidade"
+    },
+    "theta": {
+      "column": "theta",
+      "status": "DEGENERATE",
+      "total_values": 902812,
+      "non_null_values": "9571",
+      "null_values": "893241",
+      "unique_values": 40,
+      "unique_ratio": 0.004179291610072093,
+      "std_dev": 9.266354738635001e-23,
+      "mean": 1.356261614948506e-24,
+      "cv": 68.32276779422695,
+      "problematic_values": [
+        "nan(893241)"
+      ],
+      "issue": "Baixa variabilidade: 0.4179% valores \u00fanicos",
+      "recommendation": "Aumentar variabilidade dos dados"
+    },
+    "alpha": {
+      "column": "alpha",
+      "status": "DEGENERATE",
+      "total_values": 902812,
+      "non_null_values": "9571",
+      "null_values": "893241",
+      "unique_values": 35,
+      "unique_ratio": 0.003656880158813081,
+      "std_dev": 8.188175454993339e-23,
+      "mean": 1.1497617497034916e-24,
+      "cv": 71.21627986932911,
+      "problematic_values": [
+        "nan(893241)"
+      ],
+      "issue": "Baixa variabilidade: 0.3657% valores \u00fanicos",
+      "recommendation": "Aumentar variabilidade dos dados"
+    },
+    "beta": {
+      "column": "beta",
+      "status": "DEGENERATE",
+      "total_values": 902812,
+      "non_null_values": "9571",
+      "null_values": "893241",
+      "unique_values": 42,
+      "unique_ratio": 0.004388256190575698,
+      "std_dev": 1.0151563849708709e-22,
+      "mean": 2.4204734204790634e-24,
+      "cv": 41.940406218959836,
+      "problematic_values": [
+        "nan(893241)"
+      ],
+      "issue": "Baixa variabilidade: 0.4388% valores \u00fanicos",
+      "recommendation": "Aumentar variabilidade dos dados"
+    },
+    "entropy": {
+      "column": "entropy",
+      "status": "DEGENERATE",
+      "total_values": 902812,
+      "non_null_values": "792537",
+      "null_values": "110275",
+      "unique_values": 2840,
+      "unique_ratio": 0.0035834289124671783,
+      "std_dev": 1.2847848655840766,
+      "mean": 3.5247973945799207,
+      "cv": 0.36449892625309177,
+      "problematic_values": [
+        "nan(110275)"
+      ],
+      "issue": "Baixa variabilidade: 0.3583% valores \u00fanicos",
+      "recommendation": "Aumentar variabilidade dos dados"
+    },
+    "curvature": {
+      "column": "curvature",
+      "status": "DEGENERATE",
+      "total_values": 902812,
+      "non_null_values": "792537",
+      "null_values": "110275",
+      "unique_values": 4054,
+      "unique_ratio": 0.0051152185954725145,
+      "std_dev": 248.66716113533974,
+      "mean": -573.5621628171062,
+      "cv": -0.433548754182087,
+      "problematic_values": [
+        "nan(110275)"
+      ],
+      "issue": "Baixa variabilidade: 0.5115% valores \u00fanicos",
+      "recommendation": "Aumentar variabilidade dos dados"
+    },
+    "coherence": {
+      "column": "coherence",
+      "status": "DEGENERATE",
+      "total_values": 902812,
+      "non_null_values": "792537",
+      "null_values": "110275",
+      "unique_values": 4571,
+      "unique_ratio": 0.0057675540700308,
+      "std_dev": 0.23215424810254745,
+      "mean": 0.2124772623567633,
+      "cv": 1.0926074890439108,
+      "problematic_values": [
+        "nan(110275)"
+      ],
+      "issue": "Baixa variabilidade: 0.5768% valores \u00fanicos",
+      "recommendation": "Aumentar variabilidade dos dados"
+    }
+  },
+  "summary": {
+    "healthy_columns": 0,
+    "problematic_columns": 7,
+    "total_analyzed": 7
+  }
+}

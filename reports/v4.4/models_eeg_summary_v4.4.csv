@@ -1,0 +1,13 @@
+file,dataset,dv,metric,n,r_spearman,p,method,q_fdr
+zuco_kec_eeg.parquet,zuco,eeg_alpha,entropy,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_alpha,curvature,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_alpha,coherence,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_beta,entropy,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_beta,curvature,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_beta,coherence,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_gamma,entropy,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_gamma,curvature,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_gamma,coherence,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_theta,entropy,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_theta,curvature,0,,,spearman,
+zuco_kec_eeg.parquet,zuco,eeg_theta,coherence,0,,,spearman,

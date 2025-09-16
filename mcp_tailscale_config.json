@@ -1,0 +1,25 @@
+{
+  "_comment": "DEPRECATED: Este arquivo foi depreciado - migrado para Cloudflare Tunnel",
+  "_new_endpoints": {
+    "website": "https://agourakis.med.br/",
+    "mcp_api": "https://mcp.agourakis.med.br/",
+    "documentation": "docs/infra_cloudflare_tunnel.md"
+  },
+  "_historic_data": "Dados abaixo mantidos para referência histórica apenas",
+  "mcp_server": {
+    "tailscale_ip": "100.78.95.18",
+    "tailscale_domain": "demetriospcs.tail21cbc4.ts.net",
+    "port": 8000,
+    "endpoints": {
+      "health": "http://demetriospcs.tail21cbc4.ts.net:8000/health",
+      "memory_search": "http://demetriospcs.tail21cbc4.ts.net:8000/memory/search",
+      "memory_store": "http://demetriospcs.tail21cbc4.ts.net:8000/memory/store",
+      "research_categories": "http://demetriospcs.tail21cbc4.ts.net:8000/research/categories",
+      "docs": "http://demetriospcs.tail21cbc4.ts.net:8000/docs"
+    },
+    "authentication": {
+      "type": "Bearer",
+      "token": "wlaKVi5Qf4RooUprwQqtWrAS_Laecy98-oUzs7AAn7Qo"
+    }
+  }
+}

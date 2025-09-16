@@ -1,0 +1,4 @@
+chunk_processing:
+  chunk_size: 1000
+  max_workers: 4
+  memory_limit: 0.8

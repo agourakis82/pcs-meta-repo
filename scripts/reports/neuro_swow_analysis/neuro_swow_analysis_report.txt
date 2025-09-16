@@ -1,0 +1,13 @@
+ANÁLISE EXPLORATÓRIA: DADOS INTEGRADOS NEURO-SWOW
+============================================================
+
+Data de análise: 2025-09-08 20:40:30
+Total de observações: 902,812
+
+DISTRIBUIÇÃO POR DATASET:
+------------------------------
+.1f.1f.1f.1f
+COBERTURA DAS MÉTRICAS:
+------------------------------
+.1f.1f.1f.1f.1f.1f.1f
+✅ ANÁLISE CONCLUÍDA COM SUCESSO!

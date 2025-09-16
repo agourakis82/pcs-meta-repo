@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-09-08T19:54:41.811268",
+  "datasets": {
+    "zuco_v1": {
+      "name": "zuco_v1",
+      "processing_status": "completed",
+      "raw_files_count": 0,
+      "processed_files_count": 0,
+      "data_quality": {},
+      "performance_metrics": {},
+      "issues": [
+        "No raw data files found",
+        "No processed files found despite processing status",
+        "Expected columns missing from processed data"
+      ]
+    },
+    "zuco_v2": {
+      "name": "zuco_v2",
+      "processing_status": "completed",
+      "raw_files_count": 0,
+      "processed_files_count": 0,
+      "data_quality": {},
+      "performance_metrics": {},
+      "issues": [
+        "No raw data files found",
+        "No processed files found despite processing status",
+        "Expected columns missing from processed data"
+      ]
+    }
+  },
+  "summary": {
+    "total_datasets": 2,
+    "completed_datasets": 2,
+    "partial_datasets": 0,
+    "not_started_datasets": 0,
+    "total_raw_files": 0,
+    "total_processed_files": 0,
+    "overall_completion_rate": 0
+  },
+  "recommendations": [
+    "Fix zuco_v1: No raw data files found",
+    "Fix zuco_v1: No processed files found despite processing status",
+    "Fix zuco_v1: Expected columns missing from processed data",
+    "Fix zuco_v2: No raw data files found",
+    "Fix zuco_v2: No processed files found despite processing status",
+    "Fix zuco_v2: Expected columns missing from processed data",
+    "All datasets processed - consider performance optimizations"
+  ]
+}

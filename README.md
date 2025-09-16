@@ -1,119 +1,175 @@
-[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16921951.svg)](https://doi.org/10.5281/zenodo.16921951) [![Version DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17053446.svg)](https://doi.org/10.5281/zenodo.17053446)
+# MCP Server - Sistema de Pesquisa Acadêmica
 
-# PCS Meta-Repo
+*Versão 0.2.1 - Atualizado em 2025-09-14 19:59:31*
 
-[![CI](https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml/badge.svg)](https://github.com/agourakis82/pcs-meta-repo/actions/workflows/python-tests.yml)
-[![Coverage](coverage.svg)](coverage.svg)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8596--5097-brightgreen.svg?logo=orcid)](https://orcid.org/0000-0002-8596-5097)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+## 🎯 Visão Geral
 
-Meta-repository for the Computational‑Symbolic Psychiatry (PCS) project.
+Sistema completo de servidor MCP (Model Context Protocol) para pesquisa acadêmica, com APIs robustas, sistema de testes abrangente e documentação automática.
 
-## v4.3 Highlights
+## ✨ Funcionalidades
 
-- **Agentic Design Patterns** integrados como **Quality Gate Q11** (docs/agentic_design_patterns.md).
+### 🔧 Sistemas Implementados
 
-## Architecture
+- **A2 - Configuração**: Gerenciamento centralizado de configurações
+- **B1 - Autenticação**: Sistema de API keys seguro
+- **C1 - Cache**: Cache em memória com suporte Redis
+- **D1 - APIs**: Routers completos (Admin, RAG, Data, Notebooks, Processing)
+- **E1 - Processamento**: Sistema assíncrono de jobs
+- **F1 - Testes**: Framework completo com pytest
+- **G1 - Documentação**: Sistema automático de documentação
 
-High-level architecture and data/compute flows. Regenerate with `make fig-architecture` (requires Graphviz).
+### 🚀 APIs Disponíveis
 
-![PCS Architecture](figures/architecture.png)
+- **Admin** (`/admin`) - Saúde do sistema e estatísticas
+- **RAG** (`/rag`) - Retrieval-Augmented Generation
+- **Data** (`/data`) - Gerenciamento de datasets
+- **Notebooks** (`/notebooks`) - Execução de notebooks Jupyter
+- **Processing** (`/processing`) - Processamento de jobs
 
-## EEG/RT Datasets Pipeline
+## 📚 Documentação
 
-This repository includes a comprehensive pipeline for processing and analyzing EEG/RT (Eye-tracking/Electroencephalography Reading Time) datasets. The pipeline implements four main steps with full quality gates and reproducibility.
+### Guias Principais
+- [**Instalação**](docs/guides/installation.md) - Como instalar e configurar
+- [**Uso Rápido**](docs/guides/quickstart.md) - Primeiros passos
+- [**Troubleshooting**](docs/guides/troubleshooting.md) - Solução de problemas
 
-### Pipeline Steps
+### Documentação Técnica
+- [**API Reference**](docs/api/README.md) - Documentação completa da API
+- [**Código**](docs/code-documentation.md) - Documentação do código
+- [**Templates**](docs/templates/) - Templates reutilizáveis
 
-1. **Dataset Identification**: Automatically discovers and catalogs all EEG/RT datasets
-2. **Data Extraction & Preprocessing**: Extracts and preprocesses datasets for analysis
-3. **Cross-validation & Quality Assessment**: Performs quality checks and validation
-4. **Comparative Analysis & Reporting**: Generates comparative analysis and final reports
+### Changelog
+- [**CHANGELOG.md**](CHANGELOG.md) - Histórico de versões
 
-### Quick Pipeline Execution
+## 🚀 Início Rápido
 
+### 1. Instalação
 ```bash
-# Install dependencies
+git clone <repository-url>
+cd pcs-meta-repo
 pip install -r requirements.txt
-
-# Run the complete pipeline
-jupyter notebook notebooks/eeg_rt_pipeline_complete.ipynb
-
-# Or run individual steps programmatically
-python -c "
-from notebooks.eeg_rt_pipeline_complete import *
-# Execute steps 1-4 sequentially
-"
 ```
 
-### Pipeline Features
+### 2. Configuração
+```bash
+cp .env.example .env
+# Editar .env com suas configurações
+```
 
-- ✅ **Fully Reproducible**: Random seeds, version control, and environment specifications
-- ✅ **Quality Gates**: Automated validation at each step with comprehensive logging
-- ✅ **Multi-language Support**: English documentation with support for multilingual datasets
-- ✅ **Comprehensive Documentation**: Every step includes detailed comments and explanations
-- ✅ **Audit Trail**: Complete logging of all operations with timestamps and checksums
+### 3. Executar
+```bash
+python -m uvicorn main:app --reload
+```
 
-### Supported Datasets
+### 4. Testar
+```bash
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+     http://localhost:8000/admin/health
+```
 
-- **DERCo**: Dutch Reading Corpus (EEG + Eye-tracking)
-- **GECO**: Ghent Eye-tracking Corpus (Eye-tracking)
-- **OneStop**: English Reading Corpus (Eye-tracking)
-- **ZuCo**: EEG during reading (EEG + Eye-tracking)
-- **LPP**: Le Petit Prince (EEG + fMRI)
+## 🧪 Testes
 
-### Output Structure
+Sistema completo de testes com pytest:
 
 ```bash
-outputs/
-├── dataset_identification.json      # Step 1 results
-├── processed/                       # Step 2 results
-│   ├── preprocessing_report.json
-│   └── [dataset]_info.json
-├── validation/                      # Step 3 results
-│   ├── quality_assessment_report.json
-│   └── quality_assessment_plot.png
-├── analysis/                        # Step 4 results
-│   ├── dataset_comparison.csv
-│   ├── comparative_analysis.png
-│   ├── interactive_comparison.html
-│   ├── final_report.json
-│   └── pipeline_summary.md
-└── quality_gates/                   # Quality gates results
-    └── quality_gates_report.json
+# Executar todos os testes
+pytest
+
+# Testes com cobertura
+pytest --cov=api
+
+# Validação completa F1
+./run_tests_f1.sh
 ```
 
-### Quality Assurance
+### Cobertura de Testes
+- ✅ Configuração e validação
+- ✅ Autenticação e segurança
+- ✅ Sistema de cache
+- ✅ Endpoints da API
+- ✅ Processamento de jobs
 
-The pipeline implements comprehensive quality gates:
+## 📖 Documentação Automática
 
-- **Environment Consistency**: Python version, package versions, directory structure
-- **Data Integrity**: File existence, content validation, size checks
-- **Reproducibility**: Random seeds, execution logging, timestamp tracking
-- **Documentation**: Complete inline documentation, README files, requirements
-- **Code Quality**: Error handling, logging, docstrings, best practices
+O sistema G1 gera automaticamente:
 
-## How to cite
+```bash
+# Gerar toda documentação
+python scripts/generate_docs.py
 
-Please cite using the metadata in [CITATION.cff](CITATION.cff):
+# Documentação específica
+python scripts/generate_docs.py --api-only
+python scripts/generate_docs.py --guides-only
+```
 
-> Agourakis, D. PCS Meta-Repo — v4.3.3. DOI: [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951)
+## 🔐 Autenticação
 
-For additional materials see the Zenodo concept record [10.5281/zenodo.16921951](https://doi.org/10.5281/zenodo.16921951).
+Todas as APIs requerem autenticação via API key:
 
-## Repository structure
+```bash
+# Header obrigatório
+Authorization: Bearer YOUR_API_KEY
+```
 
-- docs: documentation and specs
-- src: source code (MIT)
-- notebooks: analysis notebooks (reproducible stubs preferred)
-- data/raw_public: public raw inputs (not tracked if large)
-- data/processed: derived tables/graphs
-- figures: generated plots and assets
-- manuscripts: papers and drafts
-- reports: QA artifacts (lint, linkcheck, inventory)
-- tools: maintenance and QA scripts
+## 📊 Monitoramento
 
-## License
+### Health Check
+```bash
+GET /admin/health
+```
 
-- Code: MIT — see `LICENSE`.
-- Text, docs, and figures: CC BY 4.0 — see `LICENSES/CC-BY-4.0.txt`.
+### Estatísticas
+```bash  
+GET /admin/stats
+```
+
+## 🛠️ Desenvolvimento
+
+### Estrutura do Projeto
+```
+pcs-meta-repo/
+├── api/                    # API principal
+├── tests/                  # Testes automatizados  
+├── docs/                   # Documentação
+├── scripts/                # Scripts utilitários
+└── requirements.txt        # Dependências
+```
+
+### Adicionando Novas Funcionalidades
+1. Usar templates em `docs/templates/`
+2. Implementar testes primeiro (TDD)
+3. Seguir padrões existentes
+4. Atualizar documentação
+5. Executar validação F1
+
+## 📋 Requisitos
+
+- Python 3.8+
+- FastAPI
+- Redis (opcional)
+- pytest
+
+## 🤝 Contribuindo
+
+1. Fork o projeto
+2. Criar branch para feature
+3. Implementar com testes
+4. Atualizar documentação
+5. Submeter pull request
+
+## 📄 Licença
+
+Ver arquivo [LICENSE](LICENSE) para detalhes.
+
+## 🔗 Links Úteis
+
+- [Documentação da API](docs/api/README.md)
+- [Guias de Usuário](docs/guides/)
+- [Templates](docs/templates/)
+- [Changelog](CHANGELOG.md)
+
+---
+
+**Sistema MCP completo com documentação automática! 🎉**
+
+*Powered by Sistema G1 de Documentação Automática*

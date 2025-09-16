@@ -1,0 +1,55 @@
+## Path setup used by CLI and helpers
+
+data:
+  raw_swow: data/raw_public/swow
+  raw_zuco: data/raw_public/zuco
+  tidy: data/L1_tidy
+  derived: data/L2_derived
+  processed: data/processed
+  reports: reports
+  figures: figures
+  swow_en_raw: data/en/raw
+  swow_es_raw: data/es/raw
+  swow_nl_raw: data/nl/raw
+
+languages:
+  en:
+    spikes: out/exposure/topic_spikes_daily.csv
+    kec_daily: out/en/kec_daily.csv
+    pppl_daily: out/en/pppl_daily.csv
+    ppl_daily: out/en/ppl_daily.csv
+    emb_coherence_daily: out/en/emb_coherence_daily.csv
+    sea_results: out/en/sea_results.csv
+    var_irfs: out/en/var_irfs
+  es:
+    spikes: out/exposure_es/topic_spikes_daily.csv
+    kec_daily: out/es/kec_daily.csv
+    pppl_daily: out/es/pppl_daily.csv
+    ppl_daily: out/es/ppl_daily.csv
+    emb_coherence_daily: out/es/emb_coherence_daily.csv
+    sea_results: out/es/sea_results.csv
+    var_irfs: out/es/var_irfs
+  nl:
+    spikes: out/exposure_nl/topic_spikes_daily.csv
+    kec_daily: out/nl/kec_daily.csv
+    pppl_daily: out/nl/pppl_daily.csv
+    ppl_daily: out/nl/ppl_daily.csv
+    emb_coherence_daily: out/nl/emb_coherence_daily.csv
+    sea_results: out/nl/sea_results.csv
+    var_irfs: out/nl/var_irfs
+  pt:
+    spikes: out/exposure_pt/topic_spikes_daily.csv
+    kec_daily: out/pt/kec_daily.csv
+    pppl_daily: out/pt/pppl_daily.csv
+    ppl_daily: out/pt/ppl_daily.csv
+    emb_coherence_daily: out/pt/emb_coherence_daily.csv
+    sea_results: out/pt/sea_results.csv
+  var_irfs: out/pt/var_irfs
+
+models:
+  xlmr: models/xlmr-large
+  mistral: models/mistral-7b
+  llama: models/llama-3.1-8b
+
+tools:
+  kenlm_bin: tools/kenlm/build/bin/lmplz

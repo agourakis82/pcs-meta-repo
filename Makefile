@@ -2,7 +2,8 @@ SHELL := bash
 .PHONY: init checksum validate linkcheck package freeze \
 	fetch-geco fetch-derco fetch-onestop fetch-lpp fetch-all \
 	ingest-geco ingest-derco ingest-onestop ingest-lpp \
-	provenance-fill qa-external external-datasets-all
+	provenance-fill qa-external external-datasets-all \
+	qa tidy-rt tidy-eeg kec integrate models figs all
 
 init:
 	@mkdir -p data/L0_raw data/L1_tidy data/L2_derived data/LICENSES data/CONTRACTS data/CHECKS scripts
@@ -96,3 +97,66 @@ fig-architecture:
 	@mkdir -p figures
 	@which dot >/dev/null 2>&1 || { echo "[make] ERROR: graphviz 'dot' not found. Install with 'conda install -c conda-forge graphviz' or 'apt-get install graphviz'."; exit 1; }
 	@dot -Tpng docs/architecture.dot -o figures/architecture.png && echo "[make] generated figures/architecture.png"
+
+# ==========================
+# GUI Build & Install
+# ==========================
+
+.PHONY: gui-install gui-uninstall gui-run gui-run-demo gui-run-full gui-build gui
+
+gui-build:
+	@echo "[make] Building PCS AI Research Suite GUI..."
+	@./build_install.sh install
+
+gui-install: gui-build
+	@echo "[make] GUI installation complete"
+
+gui-uninstall:
+	@echo "[make] Uninstalling PCS AI Research Suite GUI..."
+	@./build_install.sh uninstall
+
+gui:
+	@echo "[make] Launching PCS AI Research Suite..."
+	@./pcs
+
+gui-run:
+	@echo "[make] Launching PCS AI Research Suite (Clean)..."
+	@python3 scripts/pcs_clean_gui.py
+
+gui-run-demo:
+	@echo "[make] Launching PCS AI Research Suite (Demo)..."
+	@python3 scripts/pcs_demo_gui.py
+
+gui-run-full:
+	@echo "[make] Launching PCS AI Research Suite (Full)..."
+	@python3 scripts/pcs_gui.py
+
+# Additional targets for v4.4
+
+qa:
+	ruff check . && ruff format --check .
+	python tools/repo_lint.py
+	python -m scripts.compute_checksums --inventory repo
+	bash tools/verify_v4.4_structure.sh || true
+
+tidy-rt:
+	python -m scripts.swow_zuco_pipeline --step tidy_rt --datasets zuco_rt,geco_et,onestop_et
+
+tidy-eeg:
+	python -m scripts.swow_zuco_pipeline --step tidy_eeg --datasets zuco_eeg,derco_eeg,lpp_eeg
+
+kec:
+	python -m src.cli.kec_compile --lang en,es,nl,zh --step all --device auto --resume
+
+integrate:
+	python -m scripts.swow_zuco_pipeline --step integrate
+
+models:
+	python scripts/swow_zuco_pipeline.py --step models_rt
+	python scripts/swow_zuco_pipeline.py --step models_eeg
+	Rscript scripts/r_mixedlm_check.R || true
+
+figs:
+	python -m src.figures.make_figures --version v4.4
+
+all: qa tidy-rt tidy-eeg kec integrate models figs qa

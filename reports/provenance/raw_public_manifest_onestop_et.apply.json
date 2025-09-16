@@ -1,0 +1,379 @@
+{
+  "datasets": {
+    "onestop_et": {
+      "raw_dir": "data/raw_public/onestop",
+      "patterns": [
+        "**/*.csv",
+        "**/*.tsv",
+        "**/*.parquet",
+        "**/*.zip"
+      ],
+      "source_roots": [
+        "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+        "/home/agourakis82/FASTDATA/raw_external"
+      ],
+      "files_seen": 33,
+      "unique_hashes": 31,
+      "actions": [
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/OneStopData/ordinary/fixations_Paragraph_ordinary.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "b392b499c0e0a8e279a38f1d480cd04e32585e548bec00445b3a85fb37ceffd1",
+          "bytes": 2997905127,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/OneStopData/onestop/fixations_Paragraph.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "b6957964be7b570c1aa42af37fc12e85887a35b748f4f11aded09667926bc504",
+          "bytes": 5838798848,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/onestop_paper_analyses/utils/validation_error.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "74c50ffa5305fe1cb50cf592e256b5e2f58964f5211a1530ce492882ed3d5d3b",
+          "bytes": 16751,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/OneStopData/ordinary/ia_Paragraph_ordinary.csv.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "9072a4c733e4093fc4e24d3094d7aeec93276d041d75f5c2f32519a4d7307a0d",
+          "bytes": 77918080,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/OneStopData/onestop/fixations_Paragraph.csv.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "0d871cc0d77da28dd9febd057dffc0b740b531ab2c74e96e5f388bf31690394e",
+          "bytes": 597284698,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/data/OneStop/ordinary/fixations_Paragraph_ordinary.csv.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "1de8fb62e10f69b417aaeff7ddfc380261713f7d4e927e025eb781d051b1a248",
+          "bytes": 288349184,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "skip",
+          "reason": "already_present_by_hash",
+          "src": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/OneStop-Eye-Movements-main/data/OneStop/ordinary/ia_Paragraph_ordinary.csv.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop",
+          "sha256": "8883478946ee52381e7057683c9e84dc69fcea9054acc34f0c900463a6b546e9",
+          "bytes": 177291322,
+          "result": "skip",
+          "message": "no-op"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/geco/sample_geco.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/geco/sample_geco.csv",
+          "sha256": "e4e25785e0de477bd0e297d4dd9532836303923cf680bb00a007a7165a964925",
+          "bytes": 202,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/question/human_question_article_3.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/question/human_question_article_3.csv",
+          "sha256": "bb3f05252456e1bacd2e607b2430848283b7c367b380287d5f567bd9a85dc196",
+          "bytes": 50287,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/question/human_question_article_2.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/question/human_question_article_2.csv",
+          "sha256": "f9c50a4e6336d499552f0e97f793a1506a6cbe369746d6f991647dbb0e811246",
+          "bytes": 61045,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/question/human_question_article_4.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/question/human_question_article_4.csv",
+          "sha256": "b4a545a587ae18f8765eb4b94225ca3a4813d6b2033de47145bf9ec0bf85a004",
+          "bytes": 55701,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/question/human_question_article_0.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/question/human_question_article_0.csv",
+          "sha256": "3c65449ee8edb3f87edfcbd5bc4b9277d3d067add7562b2530f20205c611a7d2",
+          "bytes": 55492,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/question/human_question_article_1.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/question/human_question_article_1.csv",
+          "sha256": "adc5f8e920c89f2a346e1a6f169fbcc2d35af1d771a85036d0b25259f069c83a",
+          "bytes": 55895,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/answers/answers.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/answers/answers.csv",
+          "sha256": "bbe068d06a2c923a0e114346a973a974eca38eb899d8ce48451e3e52b336889f",
+          "bytes": 3336,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/experienced_question/human_exp_question_article_3.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/experienced_question/human_exp_question_article_3.csv",
+          "sha256": "2890e6f9f9886057595131ae703b6dfddf7dda98306049cb3c1c0f87254da1d3",
+          "bytes": 3766,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/experienced_question/human_exp_question_article_1.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/experienced_question/human_exp_question_article_1.csv",
+          "sha256": "4dee2760a763df984219ef8d8ef48369cd81b7195c2b0c925432ad0bb3bf39d1",
+          "bytes": 3763,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/experienced_question/human_exp_question_article_0.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/experienced_question/human_exp_question_article_0.csv",
+          "sha256": "23db7011d5fe97b409e5964b58bf3ab44271d9b5aaf66ebcb7b958e4993b2cb4",
+          "bytes": 3765,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/experienced_question/human_exp_question_article_2.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/experienced_question/human_exp_question_article_2.csv",
+          "sha256": "c812e9729291e6ceec9fe70afc98bb206501d1cbbfa1bc6abc22b32d25e1544d",
+          "bytes": 3759,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/experienced_question/human_exp_question_article_4.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/experienced_question/human_exp_question_article_4.csv",
+          "sha256": "d6109cc7c3c265f23018d1bcabdea474393a4228df170844212c6baabe97933f",
+          "bytes": 3759,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/prediction/human_prediction_article_2.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/prediction/human_prediction_article_2.csv",
+          "sha256": "1f5735f6fb23770e3957720e1e04c6d79d5236afd2c2a94bebdfcaf239a31878",
+          "bytes": 3634845,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/prediction/human_prediction_article_1.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/prediction/human_prediction_article_1.csv",
+          "sha256": "f45810dfcfd5b749eb621424e8da30b2e1df69b993a671f7032d812779ce7d15",
+          "bytes": 3443296,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/prediction/human_prediction_article_0.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/prediction/human_prediction_article_0.csv",
+          "sha256": "fce2aeb5af2fa5355c2cd5c83e43567b2595dbd618b4878f1aabc2cd87beec4c",
+          "bytes": 4190223,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/prediction/human_prediction_article_3.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/prediction/human_prediction_article_3.csv",
+          "sha256": "3e2cd1c1a5f33a318a3dae2ac7e9d41c05b3d852130e476d14e10cd2724a6b20",
+          "bytes": 4868119,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/derco/prediction/human_prediction_article_4.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/derco/prediction/human_prediction_article_4.csv",
+          "sha256": "70ca21cc511405dbcb5295aad7db525e59638cd7377db538975419bc20319917",
+          "bytes": 5744209,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/onestop/onestop_data/PLACEHOLDER_OneStop.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/onestop/onestop_data/PLACEHOLDER_OneStop.csv",
+          "sha256": "d2c5b0e2f7933c9038d52d1ae5577d49becf494b0d998223155f904dbf6c7c03",
+          "bytes": 136,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/onestop/precomputed_events/fixations_Paragraph.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/onestop/precomputed_events/fixations_Paragraph.csv",
+          "sha256": "f0b4266c41c725898ccdd8ecd81738d13dd109b1397f4ef5dc93efcc41ff0d45",
+          "bytes": 6134694331,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/onestop/precomputed_reading_measures/ia_Paragraph.csv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/onestop/precomputed_reading_measures/ia_Paragraph.csv",
+          "sha256": "4d6a613686ff564836f1bc701f2c332510846e30c54f1187350bea71dad286b6",
+          "bytes": 5618650846,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/lpp/participants.tsv",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/lpp/participants.tsv",
+          "sha256": "26f1c0a04fdebb92402a551883bee821969e0a68a74bfda3e614d64a2ba8264d",
+          "bytes": 958,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/geco/EnglishMaterial.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/geco/EnglishMaterial.zip",
+          "sha256": "677542df8836aefad04a3904b1b6fbf4eba5cffb9969742a8534ced269dc86b2",
+          "bytes": 27362,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/geco/MonolingualReadingData.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/geco/MonolingualReadingData.zip",
+          "sha256": "8dcc4f160abee2a0293da042abe7cfc4013a3e1abd6821873b5508b2fe76ed4d",
+          "bytes": 27433,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        },
+        {
+          "dataset": "onestop_et",
+          "action": "stage",
+          "reason": "unique_hash",
+          "src": "/home/agourakis82/FASTDATA/raw_external/onestop/downloads/ia_Paragraph.csv.zip",
+          "dst": "/home/agourakis82/workspace/pcs-meta-repo/data/raw_public/onestop/onestop/downloads/ia_Paragraph.csv.zip",
+          "sha256": "4a4f20f5e469476eb955045084024fc97c623b2dbd2732516a68a649518e3808",
+          "bytes": 397501066,
+          "result": "linked",
+          "message": "hardlink_or_symlink_created"
+        }
+      ],
+      "stats": {
+        "planned": 31,
+        "linked": 24,
+        "copied": 0,
+        "skipped": 7,
+        "conflicts": 0
+      }
+    }
+  },
+  "summary": {
+    "datasets": [
+      "onestop_et"
+    ],
+    "total_planned": 31,
+    "total_skipped": 7,
+    "total_conflicts": 0,
+    "mode": "link",
+    "dry_run": false
+  }
+}

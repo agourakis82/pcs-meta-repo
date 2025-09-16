@@ -1,0 +1,1030 @@
+🚀 Iniciando deployment da Darwin Platform no Google Cloud Run
+📋 Configurações:
+  Project ID: pcs-helio
+  Region: us-central1
+  Service: darwin-platform
+  Memory: 2Gi
+  CPU: 2
+🔧 Verificando APIs necessárias...
+✅ API já habilitada: aiplatform.googleapis.com
+✅ API já habilitada: run.googleapis.com
+✅ API já habilitada: secretmanager.googleapis.com
+✅ API já habilitada: cloudbuild.googleapis.com
+✅ API já habilitada: artifactregistry.googleapis.com
+✅ Service account já existe: darwin-platform@pcs-helio.iam.gserviceaccount.com
+🔐 Verificando permissões...
+bindings:
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-aiplatform.iam.gserviceaccount.com
+  role: roles/aiplatform.serviceAgent
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/aiplatform.user
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.createOnPushRepoAdmin
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/artifactregistry.reader
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-cloudaicompanion.iam.gserviceaccount.com
+  role: roles/cloudaicompanion.serviceAgent
+- members:
+  - serviceAccount:862291807500@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - user:demetrios@agourakis.med.br
+  role: roles/cloudhub.operator
+- members:
+  - serviceAccount:service-862291807500@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@container-analysis.iam.gserviceaccount.com
+  role: roles/containeranalysis.ServiceAgent
+- members:
+  - serviceAccount:service-862291807500@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-containerscanning.iam.gserviceaccount.com
+  role: roles/containerscanning.ServiceAgent
+- members:
+  - serviceAccount:862291807500@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - user:demetrios@agourakis.med.br
+  role: roles/owner
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/storage.admin
+etag: BwY-6x7LYW0=
+version: 1
+bindings:
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-aiplatform.iam.gserviceaccount.com
+  role: roles/aiplatform.serviceAgent
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/aiplatform.user
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.createOnPushRepoAdmin
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/artifactregistry.reader
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-cloudaicompanion.iam.gserviceaccount.com
+  role: roles/cloudaicompanion.serviceAgent
+- members:
+  - serviceAccount:862291807500@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - user:demetrios@agourakis.med.br
+  role: roles/cloudhub.operator
+- members:
+  - serviceAccount:service-862291807500@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@container-analysis.iam.gserviceaccount.com
+  role: roles/containeranalysis.ServiceAgent
+- members:
+  - serviceAccount:service-862291807500@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-containerscanning.iam.gserviceaccount.com
+  role: roles/containerscanning.ServiceAgent
+- members:
+  - serviceAccount:862291807500@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - user:demetrios@agourakis.med.br
+  role: roles/owner
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/storage.admin
+etag: BwY-6x8BvsY=
+version: 1
+✅ Repositório do Artifact Registry existe: darwin-repo (us-central1)
+🔒 Ajustando permissões IAM para build/deploy...
+bindings:
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-aiplatform.iam.gserviceaccount.com
+  role: roles/aiplatform.serviceAgent
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/aiplatform.user
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.createOnPushRepoAdmin
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/artifactregistry.reader
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-cloudaicompanion.iam.gserviceaccount.com
+  role: roles/cloudaicompanion.serviceAgent
+- members:
+  - serviceAccount:862291807500@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - user:demetrios@agourakis.med.br
+  role: roles/cloudhub.operator
+- members:
+  - serviceAccount:service-862291807500@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@container-analysis.iam.gserviceaccount.com
+  role: roles/containeranalysis.ServiceAgent
+- members:
+  - serviceAccount:service-862291807500@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-containerscanning.iam.gserviceaccount.com
+  role: roles/containerscanning.ServiceAgent
+- members:
+  - serviceAccount:862291807500@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - user:demetrios@agourakis.med.br
+  role: roles/owner
+- members:
+  - serviceAccount:service-862291807500@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:service-862291807500@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:darwin-platform@pcs-helio.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:862291807500-compute@developer.gserviceaccount.com
+  role: roles/storage.admin
+etag: BwY-6x_jkxk=
+version: 1
+🔐 Verificando secrets...
+✅ Secret api-keys já existe
+✅ Secret gemini-api-key já existe
+🚀 Fazendo build e push da imagem...
+Creating temporary archive of 18645 file(s) totalling 2.2 GiB before compression.
+Some files were not included in the source upload.
+
+Check the gcloud log [/home/agourakis82/.config/gcloud/logs/2025.09.16/10.30.41.355254.log] to see which files and the contents of the
+default gcloudignore file used (see `$ gcloud topic gcloudignore` to learn
+more).
+
+Uploading tarball of [.] to [gs://pcs-helio_cloudbuild/source/1758029441.505461-63ac8142bf1d4e54812e78e9e0a07849.tgz]
+Created [https://cloudbuild.googleapis.com/v1/projects/pcs-helio/locations/global/builds/a2f0d919-c112-44d3-a1d9-1df4fa0df9bc].
+Logs are available at [ https://console.cloud.google.com/cloud-build/builds/a2f0d919-c112-44d3-a1d9-1df4fa0df9bc?project=862291807500 ].
+Waiting for build to complete. Polling interval: 1 second(s).
+---------------------------------------------- REMOTE BUILD OUTPUT ----------------------------------------------
+starting build "a2f0d919-c112-44d3-a1d9-1df4fa0df9bc"
+
+FETCHSOURCE
+Fetching storage object: gs://pcs-helio_cloudbuild/source/1758029441.505461-63ac8142bf1d4e54812e78e9e0a07849.tgz#1758030135129129
+Copying gs://pcs-helio_cloudbuild/source/1758029441.505461-63ac8142bf1d4e54812e78e9e0a07849.tgz#1758030135129129...
+/ [0 files][    0.0 B/543.5 MiB]                                                -- [0 files][ 41.2 MiB/543.5 MiB]                                                \|| [0 files][107.0 MiB/543.5 MiB]                                                // [0 files][171.4 MiB/543.5 MiB]                                                -\\ [0 files][236.4 MiB/543.5 MiB]                                                |// [0 files][302.2 MiB/543.5 MiB]                                                -- [0 files][368.9 MiB/543.5 MiB]                                                \|| [0 files][434.7 MiB/543.5 MiB]                                                /-- [0 files][501.4 MiB/543.5 MiB]                                                \\ [1 files][543.5 MiB/543.5 MiB]                                                
+Operation completed over 1 objects/543.5 MiB.
+BUILD
+Already have image (with digest): gcr.io/cloud-builders/docker
+Sending build context to Docker daemon  568.1MB
+Step 1/19 : FROM python:3.11-slim
+3.11-slim: Pulling from library/python
+ce1261c6d567: Already exists
+11b89692b208: Pulling fs layer
+764e05fe66b6: Pulling fs layer
+a4aefcec16c5: Pulling fs layer
+a4aefcec16c5: Verifying Checksum
+a4aefcec16c5: Download complete
+11b89692b208: Verifying Checksum
+11b89692b208: Download complete
+764e05fe66b6: Verifying Checksum
+764e05fe66b6: Download complete
+11b89692b208: Pull complete
+764e05fe66b6: Pull complete
+a4aefcec16c5: Pull complete
+Digest: sha256:a0939570b38cddeb861b8e75d20b1c8218b21562b18f301171904b544e8cf228
+Status: Downloaded newer image for python:3.11-slim
+ ---> c4640ec0986f
+Step 2/19 : RUN apt-get update && apt-get install -y     gcc     g++     curl     && rm -rf /var/lib/apt/lists/*
+ ---> Running in 0cfddb2a4ab0
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9669 kB]
+Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [5412 B]
+Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [40.2 kB]
+Fetched 9805 kB in 1s (7409 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  bash-completion binutils binutils-common binutils-x86-64-linux-gnu cpp
+  cpp-14 cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu g++-14
+  g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu gcc-14 gcc-14-x86-64-linux-gnu
+  gcc-x86-64-linux-gnu krb5-locales libasan8 libatomic1 libbinutils libbrotli1
+  libc-dev-bin libc6-dev libcc1-0 libcom-err2 libcrypt-dev libctf-nobfd0
+  libctf0 libcurl4t64 libgcc-14-dev libgnutls30t64 libgomp1 libgprofng0
+  libgssapi-krb5-2 libhwasan0 libidn2-0 libisl23 libitm1 libjansson4
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-common libldap2
+  liblsan0 libmpc3 libmpfr6 libnghttp2-14 libnghttp3-9 libp11-kit0 libpsl5t64
+  libquadmath0 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libsframe1 libssh2-1t64 libstdc++-14-dev libtasn1-6 libtsan2 libubsan1
+  libunistring5 linux-libc-dev manpages manpages-dev publicsuffix rpcsvc-proto
+Suggested packages:
+  binutils-doc gprofng-gui binutils-gold cpp-doc gcc-14-locales cpp-14-doc
+  g++-multilib g++-14-multilib gcc-14-doc gcc-multilib make autoconf automake
+  libtool flex bison gdb gcc-doc gcc-14-multilib gdb-x86-64-linux-gnu
+  libc-devtools glibc-doc gnutls-bin krb5-doc krb5-user
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+  libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+  libstdc++-14-doc man-browser
+The following NEW packages will be installed:
+  bash-completion binutils binutils-common binutils-x86-64-linux-gnu cpp
+  cpp-14 cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu curl g++ g++-14
+  g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-14
+  gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu krb5-locales libasan8
+  libatomic1 libbinutils libbrotli1 libc-dev-bin libc6-dev libcc1-0
+  libcom-err2 libcrypt-dev libctf-nobfd0 libctf0 libcurl4t64 libgcc-14-dev
+  libgnutls30t64 libgomp1 libgprofng0 libgssapi-krb5-2 libhwasan0 libidn2-0
+  libisl23 libitm1 libjansson4 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-common libldap2 liblsan0 libmpc3 libmpfr6
+  libnghttp2-14 libnghttp3-9 libp11-kit0 libpsl5t64 libquadmath0 librtmp1
+  libsasl2-2 libsasl2-modules libsasl2-modules-db libsframe1 libssh2-1t64
+  libstdc++-14-dev libtasn1-6 libtsan2 libubsan1 libunistring5 linux-libc-dev
+  manpages manpages-dev publicsuffix rpcsvc-proto
+0 upgraded, 70 newly installed, 0 to remove and 2 not upgraded.
+Need to get 80.5 MB of archives.
+After this operation, 301 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main amd64 bash-completion all 1:2.16.0-7 [319 kB]
+Get:2 http://deb.debian.org/debian trixie/main amd64 krb5-locales all 1.21.3-5 [101 kB]
+Get:3 http://deb.debian.org/debian trixie/main amd64 manpages all 6.9.1-1 [1393 kB]
+Get:4 http://deb.debian.org/debian trixie/main amd64 libsframe1 amd64 2.44-3 [78.4 kB]
+Get:5 http://deb.debian.org/debian trixie/main amd64 binutils-common amd64 2.44-3 [2509 kB]
+Get:6 http://deb.debian.org/debian trixie/main amd64 libbinutils amd64 2.44-3 [534 kB]
+Get:7 http://deb.debian.org/debian trixie/main amd64 libgprofng0 amd64 2.44-3 [808 kB]
+Get:8 http://deb.debian.org/debian trixie/main amd64 libctf-nobfd0 amd64 2.44-3 [156 kB]
+Get:9 http://deb.debian.org/debian trixie/main amd64 libctf0 amd64 2.44-3 [88.6 kB]
+Get:10 http://deb.debian.org/debian trixie/main amd64 libjansson4 amd64 2.14-2+b3 [39.8 kB]
+Get:11 http://deb.debian.org/debian trixie/main amd64 binutils-x86-64-linux-gnu amd64 2.44-3 [1014 kB]
+Get:12 http://deb.debian.org/debian trixie/main amd64 binutils amd64 2.44-3 [265 kB]
+Get:13 http://deb.debian.org/debian trixie/main amd64 libisl23 amd64 0.27-1 [659 kB]
+Get:14 http://deb.debian.org/debian trixie/main amd64 libmpfr6 amd64 4.2.2-1 [729 kB]
+Get:15 http://deb.debian.org/debian trixie/main amd64 libmpc3 amd64 1.3.1-1+b3 [52.2 kB]
+Get:16 http://deb.debian.org/debian trixie/main amd64 cpp-14-x86-64-linux-gnu amd64 14.2.0-19 [11.0 MB]
+Get:17 http://deb.debian.org/debian trixie/main amd64 cpp-14 amd64 14.2.0-19 [1280 B]
+Get:18 http://deb.debian.org/debian trixie/main amd64 cpp-x86-64-linux-gnu amd64 4:14.2.0-1 [4840 B]
+Get:19 http://deb.debian.org/debian trixie/main amd64 cpp amd64 4:14.2.0-1 [1568 B]
+Get:20 http://deb.debian.org/debian trixie/main amd64 libbrotli1 amd64 1.1.0-2+b7 [307 kB]
+Get:21 http://deb.debian.org/debian trixie/main amd64 libkrb5support0 amd64 1.21.3-5 [33.0 kB]
+Get:22 http://deb.debian.org/debian trixie/main amd64 libcom-err2 amd64 1.47.2-3+b3 [25.0 kB]
+Get:23 http://deb.debian.org/debian trixie/main amd64 libk5crypto3 amd64 1.21.3-5 [81.5 kB]
+Get:24 http://deb.debian.org/debian trixie/main amd64 libkeyutils1 amd64 1.6.3-6 [9456 B]
+Get:25 http://deb.debian.org/debian trixie/main amd64 libkrb5-3 amd64 1.21.3-5 [326 kB]
+Get:26 http://deb.debian.org/debian trixie/main amd64 libgssapi-krb5-2 amd64 1.21.3-5 [138 kB]
+Get:27 http://deb.debian.org/debian trixie/main amd64 libunistring5 amd64 1.3-2 [477 kB]
+Get:28 http://deb.debian.org/debian trixie/main amd64 libidn2-0 amd64 2.3.8-2 [109 kB]
+Get:29 http://deb.debian.org/debian trixie/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-9 [19.8 kB]
+Get:30 http://deb.debian.org/debian trixie/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-9 [57.5 kB]
+Get:31 http://deb.debian.org/debian trixie/main amd64 libldap2 amd64 2.6.10+dfsg-1 [194 kB]
+Get:32 http://deb.debian.org/debian trixie/main amd64 libnghttp2-14 amd64 1.64.0-1.1 [76.0 kB]
+Get:33 http://deb.debian.org/debian trixie/main amd64 libnghttp3-9 amd64 1.8.0-1 [67.7 kB]
+Get:34 http://deb.debian.org/debian trixie/main amd64 libpsl5t64 amd64 0.21.2-1.1+b1 [57.2 kB]
+Get:35 http://deb.debian.org/debian trixie/main amd64 libp11-kit0 amd64 0.25.5-3 [425 kB]
+Get:36 http://deb.debian.org/debian trixie/main amd64 libtasn1-6 amd64 4.20.0-2 [49.9 kB]
+Get:37 http://deb.debian.org/debian trixie/main amd64 libgnutls30t64 amd64 3.8.9-3 [1465 kB]
+Get:38 http://deb.debian.org/debian trixie/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b5 [58.8 kB]
+Get:39 http://deb.debian.org/debian trixie/main amd64 libssh2-1t64 amd64 1.11.1-1 [245 kB]
+Get:40 http://deb.debian.org/debian trixie/main amd64 libcurl4t64 amd64 8.14.1-2 [391 kB]
+Get:41 http://deb.debian.org/debian trixie/main amd64 curl amd64 8.14.1-2 [269 kB]
+Get:42 http://deb.debian.org/debian trixie/main amd64 libcc1-0 amd64 14.2.0-19 [42.8 kB]
+Get:43 http://deb.debian.org/debian trixie/main amd64 libgomp1 amd64 14.2.0-19 [137 kB]
+Get:44 http://deb.debian.org/debian trixie/main amd64 libitm1 amd64 14.2.0-19 [26.0 kB]
+Get:45 http://deb.debian.org/debian trixie/main amd64 libatomic1 amd64 14.2.0-19 [9308 B]
+Get:46 http://deb.debian.org/debian trixie/main amd64 libasan8 amd64 14.2.0-19 [2725 kB]
+Get:47 http://deb.debian.org/debian trixie/main amd64 liblsan0 amd64 14.2.0-19 [1204 kB]
+Get:48 http://deb.debian.org/debian trixie/main amd64 libtsan2 amd64 14.2.0-19 [2460 kB]
+Get:49 http://deb.debian.org/debian trixie/main amd64 libubsan1 amd64 14.2.0-19 [1074 kB]
+Get:50 http://deb.debian.org/debian trixie/main amd64 libhwasan0 amd64 14.2.0-19 [1488 kB]
+Get:51 http://deb.debian.org/debian trixie/main amd64 libquadmath0 amd64 14.2.0-19 [145 kB]
+Get:52 http://deb.debian.org/debian trixie/main amd64 libgcc-14-dev amd64 14.2.0-19 [2672 kB]
+Get:53 http://deb.debian.org/debian trixie/main amd64 gcc-14-x86-64-linux-gnu amd64 14.2.0-19 [21.4 MB]
+Get:54 http://deb.debian.org/debian trixie/main amd64 gcc-14 amd64 14.2.0-19 [540 kB]
+Get:55 http://deb.debian.org/debian trixie/main amd64 gcc-x86-64-linux-gnu amd64 4:14.2.0-1 [1436 B]
+Get:56 http://deb.debian.org/debian trixie/main amd64 gcc amd64 4:14.2.0-1 [5136 B]
+Get:57 http://deb.debian.org/debian trixie/main amd64 libc-dev-bin amd64 2.41-12 [58.2 kB]
+Get:58 http://deb.debian.org/debian trixie/main amd64 linux-libc-dev all 6.12.43-1 [2654 kB]
+Get:59 http://deb.debian.org/debian trixie/main amd64 libcrypt-dev amd64 1:4.4.38-1 [119 kB]
+Get:60 http://deb.debian.org/debian trixie/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+Get:61 http://deb.debian.org/debian trixie/main amd64 libc6-dev amd64 2.41-12 [1991 kB]
+Get:62 http://deb.debian.org/debian trixie/main amd64 libstdc++-14-dev amd64 14.2.0-19 [2376 kB]
+Get:63 http://deb.debian.org/debian trixie/main amd64 g++-14-x86-64-linux-gnu amd64 14.2.0-19 [12.1 MB]
+Get:64 http://deb.debian.org/debian trixie/main amd64 g++-14 amd64 14.2.0-19 [22.5 kB]
+Get:65 http://deb.debian.org/debian trixie/main amd64 g++-x86-64-linux-gnu amd64 4:14.2.0-1 [1200 B]
+Get:66 http://deb.debian.org/debian trixie/main amd64 g++ amd64 4:14.2.0-1 [1344 B]
+Get:67 http://deb.debian.org/debian trixie/main amd64 libldap-common all 2.6.10+dfsg-1 [35.1 kB]
+Get:68 http://deb.debian.org/debian trixie/main amd64 libsasl2-modules amd64 2.1.28+dfsg1-9 [66.7 kB]
+Get:69 http://deb.debian.org/debian trixie/main amd64 manpages-dev all 6.9.1-1 [2122 kB]
+Get:70 http://deb.debian.org/debian trixie/main amd64 publicsuffix all 20250328.1952-0.1 [296 kB]
+[91mdebconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+[0m[91mdebconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 70.)
+debconf: falling back to frontend: Teletype
+[0m[91mdebconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+[0mFetched 80.5 MB in 1s (110 MB/s)
+Selecting previously unselected package bash-completion.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5644 files and directories currently installed.)
+Preparing to unpack .../00-bash-completion_1%3a2.16.0-7_all.deb ...
+Unpacking bash-completion (1:2.16.0-7) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../01-krb5-locales_1.21.3-5_all.deb ...
+Unpacking krb5-locales (1.21.3-5) ...
+Selecting previously unselected package manpages.
+Preparing to unpack .../02-manpages_6.9.1-1_all.deb ...
+Unpacking manpages (6.9.1-1) ...
+Selecting previously unselected package libsframe1:amd64.
+Preparing to unpack .../03-libsframe1_2.44-3_amd64.deb ...
+Unpacking libsframe1:amd64 (2.44-3) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../04-binutils-common_2.44-3_amd64.deb ...
+Unpacking binutils-common:amd64 (2.44-3) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../05-libbinutils_2.44-3_amd64.deb ...
+Unpacking libbinutils:amd64 (2.44-3) ...
+Selecting previously unselected package libgprofng0:amd64.
+Preparing to unpack .../06-libgprofng0_2.44-3_amd64.deb ...
+Unpacking libgprofng0:amd64 (2.44-3) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../07-libctf-nobfd0_2.44-3_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.44-3) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../08-libctf0_2.44-3_amd64.deb ...
+Unpacking libctf0:amd64 (2.44-3) ...
+Selecting previously unselected package libjansson4:amd64.
+Preparing to unpack .../09-libjansson4_2.14-2+b3_amd64.deb ...
+Unpacking libjansson4:amd64 (2.14-2+b3) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../10-binutils-x86-64-linux-gnu_2.44-3_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.44-3) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../11-binutils_2.44-3_amd64.deb ...
+Unpacking binutils (2.44-3) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../12-libisl23_0.27-1_amd64.deb ...
+Unpacking libisl23:amd64 (0.27-1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../13-libmpfr6_4.2.2-1_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.2.2-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../14-libmpc3_1.3.1-1+b3_amd64.deb ...
+Unpacking libmpc3:amd64 (1.3.1-1+b3) ...
+Selecting previously unselected package cpp-14-x86-64-linux-gnu.
+Preparing to unpack .../15-cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+Unpacking cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package cpp-14.
+Preparing to unpack .../16-cpp-14_14.2.0-19_amd64.deb ...
+Unpacking cpp-14 (14.2.0-19) ...
+Selecting previously unselected package cpp-x86-64-linux-gnu.
+Preparing to unpack .../17-cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+Unpacking cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../18-cpp_4%3a14.2.0-1_amd64.deb ...
+Unpacking cpp (4:14.2.0-1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../19-libbrotli1_1.1.0-2+b7_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.1.0-2+b7) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../20-libkrb5support0_1.21.3-5_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.21.3-5) ...
+Selecting previously unselected package libcom-err2:amd64.
+Preparing to unpack .../21-libcom-err2_1.47.2-3+b3_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.47.2-3+b3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../22-libk5crypto3_1.21.3-5_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.21.3-5) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../23-libkeyutils1_1.6.3-6_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-6) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../24-libkrb5-3_1.21.3-5_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.21.3-5) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../25-libgssapi-krb5-2_1.21.3-5_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.21.3-5) ...
+Selecting previously unselected package libunistring5:amd64.
+Preparing to unpack .../26-libunistring5_1.3-2_amd64.deb ...
+Unpacking libunistring5:amd64 (1.3-2) ...
+Selecting previously unselected package libidn2-0:amd64.
+Preparing to unpack .../27-libidn2-0_2.3.8-2_amd64.deb ...
+Unpacking libidn2-0:amd64 (2.3.8-2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../28-libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../29-libsasl2-2_2.1.28+dfsg1-9_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package libldap2:amd64.
+Preparing to unpack .../30-libldap2_2.6.10+dfsg-1_amd64.deb ...
+Unpacking libldap2:amd64 (2.6.10+dfsg-1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../31-libnghttp2-14_1.64.0-1.1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.64.0-1.1) ...
+Selecting previously unselected package libnghttp3-9:amd64.
+Preparing to unpack .../32-libnghttp3-9_1.8.0-1_amd64.deb ...
+Unpacking libnghttp3-9:amd64 (1.8.0-1) ...
+Selecting previously unselected package libpsl5t64:amd64.
+Preparing to unpack .../33-libpsl5t64_0.21.2-1.1+b1_amd64.deb ...
+Unpacking libpsl5t64:amd64 (0.21.2-1.1+b1) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../34-libp11-kit0_0.25.5-3_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.25.5-3) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../35-libtasn1-6_4.20.0-2_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.20.0-2) ...
+Selecting previously unselected package libgnutls30t64:amd64.
+Preparing to unpack .../36-libgnutls30t64_3.8.9-3_amd64.deb ...
+Unpacking libgnutls30t64:amd64 (3.8.9-3) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../37-librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+Selecting previously unselected package libssh2-1t64:amd64.
+Preparing to unpack .../38-libssh2-1t64_1.11.1-1_amd64.deb ...
+Unpacking libssh2-1t64:amd64 (1.11.1-1) ...
+Selecting previously unselected package libcurl4t64:amd64.
+Preparing to unpack .../39-libcurl4t64_8.14.1-2_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.14.1-2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../40-curl_8.14.1-2_amd64.deb ...
+Unpacking curl (8.14.1-2) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../41-libcc1-0_14.2.0-19_amd64.deb ...
+Unpacking libcc1-0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../42-libgomp1_14.2.0-19_amd64.deb ...
+Unpacking libgomp1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../43-libitm1_14.2.0-19_amd64.deb ...
+Unpacking libitm1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../44-libatomic1_14.2.0-19_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../45-libasan8_14.2.0-19_amd64.deb ...
+Unpacking libasan8:amd64 (14.2.0-19) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../46-liblsan0_14.2.0-19_amd64.deb ...
+Unpacking liblsan0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../47-libtsan2_14.2.0-19_amd64.deb ...
+Unpacking libtsan2:amd64 (14.2.0-19) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../48-libubsan1_14.2.0-19_amd64.deb ...
+Unpacking libubsan1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libhwasan0:amd64.
+Preparing to unpack .../49-libhwasan0_14.2.0-19_amd64.deb ...
+Unpacking libhwasan0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../50-libquadmath0_14.2.0-19_amd64.deb ...
+Unpacking libquadmath0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libgcc-14-dev:amd64.
+Preparing to unpack .../51-libgcc-14-dev_14.2.0-19_amd64.deb ...
+Unpacking libgcc-14-dev:amd64 (14.2.0-19) ...
+Selecting previously unselected package gcc-14-x86-64-linux-gnu.
+Preparing to unpack .../52-gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+Unpacking gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package gcc-14.
+Preparing to unpack .../53-gcc-14_14.2.0-19_amd64.deb ...
+Unpacking gcc-14 (14.2.0-19) ...
+Selecting previously unselected package gcc-x86-64-linux-gnu.
+Preparing to unpack .../54-gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+Unpacking gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../55-gcc_4%3a14.2.0-1_amd64.deb ...
+Unpacking gcc (4:14.2.0-1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../56-libc-dev-bin_2.41-12_amd64.deb ...
+Unpacking libc-dev-bin (2.41-12) ...
+Selecting previously unselected package linux-libc-dev.
+Preparing to unpack .../57-linux-libc-dev_6.12.43-1_all.deb ...
+Unpacking linux-libc-dev (6.12.43-1) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../58-libcrypt-dev_1%3a4.4.38-1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.38-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../59-rpcsvc-proto_1.4.3-1_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.3-1) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../60-libc6-dev_2.41-12_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.41-12) ...
+Selecting previously unselected package libstdc++-14-dev:amd64.
+Preparing to unpack .../61-libstdc++-14-dev_14.2.0-19_amd64.deb ...
+Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
+Selecting previously unselected package g++-14-x86-64-linux-gnu.
+Preparing to unpack .../62-g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+Unpacking g++-14-x86-64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package g++-14.
+Preparing to unpack .../63-g++-14_14.2.0-19_amd64.deb ...
+Unpacking g++-14 (14.2.0-19) ...
+Selecting previously unselected package g++-x86-64-linux-gnu.
+Preparing to unpack .../64-g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+Unpacking g++-x86-64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../65-g++_4%3a14.2.0-1_amd64.deb ...
+Unpacking g++ (4:14.2.0-1) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../66-libldap-common_2.6.10+dfsg-1_all.deb ...
+Unpacking libldap-common (2.6.10+dfsg-1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../67-libsasl2-modules_2.1.28+dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../68-manpages-dev_6.9.1-1_all.deb ...
+Unpacking manpages-dev (6.9.1-1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../69-publicsuffix_20250328.1952-0.1_all.deb ...
+Unpacking publicsuffix (20250328.1952-0.1) ...
+Setting up libkeyutils1:amd64 (1.6.3-6) ...
+Setting up manpages (6.9.1-1) ...
+Setting up libbrotli1:amd64 (1.1.0-2+b7) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg1-9) ...
+Setting up binutils-common:amd64 (2.44-3) ...
+Setting up libnghttp2-14:amd64 (1.64.0-1.1) ...
+Setting up linux-libc-dev (6.12.43-1) ...
+Setting up libctf-nobfd0:amd64 (2.44-3) ...
+Setting up krb5-locales (1.21.3-5) ...
+Setting up libcom-err2:amd64 (1.47.2-3+b3) ...
+Setting up libgomp1:amd64 (14.2.0-19) ...
+Setting up libldap-common (2.6.10+dfsg-1) ...
+Setting up libsframe1:amd64 (2.44-3) ...
+Setting up libjansson4:amd64 (2.14-2+b3) ...
+Setting up libkrb5support0:amd64 (1.21.3-5) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-9) ...
+Setting up rpcsvc-proto (1.4.3-1) ...
+Setting up libmpfr6:amd64 (4.2.2-1) ...
+Setting up bash-completion (1:2.16.0-7) ...
+Setting up libquadmath0:amd64 (14.2.0-19) ...
+Setting up libp11-kit0:amd64 (0.25.5-3) ...
+Setting up libunistring5:amd64 (1.3-2) ...
+Setting up libmpc3:amd64 (1.3.1-1+b3) ...
+Setting up libatomic1:amd64 (14.2.0-19) ...
+Setting up libk5crypto3:amd64 (1.21.3-5) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg1-9) ...
+Setting up libnghttp3-9:amd64 (1.8.0-1) ...
+Setting up libubsan1:amd64 (14.2.0-19) ...
+Setting up libhwasan0:amd64 (14.2.0-19) ...
+Setting up libcrypt-dev:amd64 (1:4.4.38-1) ...
+Setting up libasan8:amd64 (14.2.0-19) ...
+Setting up libtasn1-6:amd64 (4.20.0-2) ...
+Setting up libkrb5-3:amd64 (1.21.3-5) ...
+Setting up libssh2-1t64:amd64 (1.11.1-1) ...
+Setting up libtsan2:amd64 (14.2.0-19) ...
+Setting up libbinutils:amd64 (2.44-3) ...
+Setting up libisl23:amd64 (0.27-1) ...
+Setting up libc-dev-bin (2.41-12) ...
+Setting up publicsuffix (20250328.1952-0.1) ...
+Setting up libcc1-0:amd64 (14.2.0-19) ...
+Setting up libldap2:amd64 (2.6.10+dfsg-1) ...
+Setting up liblsan0:amd64 (14.2.0-19) ...
+Setting up libitm1:amd64 (14.2.0-19) ...
+Setting up libctf0:amd64 (2.44-3) ...
+Setting up manpages-dev (6.9.1-1) ...
+Setting up libidn2-0:amd64 (2.3.8-2) ...
+Setting up libgprofng0:amd64 (2.44-3) ...
+Setting up libgssapi-krb5-2:amd64 (1.21.3-5) ...
+Setting up cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+Setting up cpp-14 (14.2.0-19) ...
+Setting up libc6-dev:amd64 (2.41-12) ...
+Setting up libgcc-14-dev:amd64 (14.2.0-19) ...
+Setting up libstdc++-14-dev:amd64 (14.2.0-19) ...
+Setting up binutils-x86-64-linux-gnu (2.44-3) ...
+Setting up cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+Setting up libgnutls30t64:amd64 (3.8.9-3) ...
+Setting up libpsl5t64:amd64 (0.21.2-1.1+b1) ...
+Setting up binutils (2.44-3) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+Setting up cpp (4:14.2.0-1) ...
+Setting up gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+Setting up gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+Setting up libcurl4t64:amd64 (8.14.1-2) ...
+Setting up gcc-14 (14.2.0-19) ...
+Setting up g++-14-x86-64-linux-gnu (14.2.0-19) ...
+Setting up g++-x86-64-linux-gnu (4:14.2.0-1) ...
+Setting up curl (8.14.1-2) ...
+Setting up g++-14 (14.2.0-19) ...
+Setting up gcc (4:14.2.0-1) ...
+Setting up g++ (4:14.2.0-1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Processing triggers for libc-bin (2.41-12) ...
+Removing intermediate container 0cfddb2a4ab0
+ ---> 4da9c31c5947
+Step 3/19 : WORKDIR /app
+ ---> Running in 2ab6632a7ce6
+Removing intermediate container 2ab6632a7ce6
+ ---> d5a43065ff13
+Step 4/19 : COPY requirements-darwin.txt ./requirements.txt
+ ---> a14f37d9c071
+Step 5/19 : ENV PIP_DISABLE_PIP_VERSION_CHECK=1     PYTHONDONTWRITEBYTECODE=1     PYTHONUNBUFFERED=1
+ ---> Running in adafb68ffba5
+Removing intermediate container adafb68ffba5
+ ---> 94568e87448e
+Step 6/19 : RUN pip install --no-cache-dir --upgrade pip     && pip install --no-cache-dir -r requirements.txt
+ ---> Running in b291283d6c99
+Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (24.0)
+Collecting pip
+  Downloading pip-25.2-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-25.2-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 31.6 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-25.2
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0mCollecting fastapi==0.104.1 (from -r requirements.txt (line 5))
+  Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+Collecting uvicorn==0.24.0 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting pydantic==2.5.0 (from -r requirements.txt (line 9))
+  Downloading pydantic-2.5.0-py3-none-any.whl.metadata (174 kB)
+Collecting pydantic-settings==2.1.0 (from -r requirements.txt (line 10))
+  Downloading pydantic_settings-2.1.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting google-cloud-aiplatform==1.38.0 (from -r requirements.txt (line 13))
+  Downloading google_cloud_aiplatform-1.38.0-py2.py3-none-any.whl.metadata (27 kB)
+Collecting google-cloud-secret-manager==2.24.0 (from -r requirements.txt (line 14))
+  Downloading google_cloud_secret_manager-2.24.0-py3-none-any.whl.metadata (9.7 kB)
+Collecting google-cloud-bigquery==3.13.0 (from -r requirements.txt (line 15))
+  Downloading google_cloud_bigquery-3.13.0-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting google-auth (from -r requirements.txt (line 16))
+  Downloading google_auth-2.40.3-py2.py3-none-any.whl.metadata (6.2 kB)
+Collecting feedparser==6.0.11 (from -r requirements.txt (line 19))
+  Downloading feedparser-6.0.11-py3-none-any.whl.metadata (2.4 kB)
+Collecting python-dateutil==2.8.2 (from -r requirements.txt (line 20))
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting requests==2.31.0 (from -r requirements.txt (line 21))
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting aiosqlite==0.19.0 (from -r requirements.txt (line 24))
+  Downloading aiosqlite-0.19.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting httpx==0.25.2 (from -r requirements.txt (line 27))
+  Downloading httpx-0.25.2-py3-none-any.whl.metadata (6.9 kB)
+Collecting aiofiles==23.2.1 (from -r requirements.txt (line 30))
+  Downloading aiofiles-23.2.1-py3-none-any.whl.metadata (9.7 kB)
+Collecting numpy>=1.26.0 (from -r requirements.txt (line 33))
+  Downloading numpy-2.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting asyncio-throttle==1.0.2 (from -r requirements.txt (line 36))
+  Downloading asyncio_throttle-1.0.2-py3-none-any.whl.metadata (3.4 kB)
+Collecting python-multipart==0.0.6 (from -r requirements.txt (line 39))
+  Downloading python_multipart-0.0.6-py3-none-any.whl.metadata (2.5 kB)
+Collecting python-json-logger==2.0.4 (from -r requirements.txt (line 42))
+  Downloading python_json_logger-2.0.4-py3-none-any.whl.metadata (6.5 kB)
+Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 5))
+  Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 5))
+  Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi==0.104.1->-r requirements.txt (line 5))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting annotated-types>=0.4.0 (from pydantic==2.5.0->-r requirements.txt (line 9))
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.14.1 (from pydantic==2.5.0->-r requirements.txt (line 9))
+  Downloading pydantic_core-2.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Collecting click>=7.0 (from uvicorn==0.24.0->uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting h11>=0.8 (from uvicorn==0.24.0->uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting python-dotenv>=0.21.0 (from pydantic-settings==2.1.0->-r requirements.txt (line 10))
+  Downloading python_dotenv-1.1.1-py3-none-any.whl.metadata (24 kB)
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0->google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading google_api_core-2.25.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting proto-plus<2.0.0dev,>=1.22.0 (from google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+Collecting protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5 (from google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting packaging>=14.3 (from google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting google-cloud-storage<3.0.0dev,>=1.32.0 (from google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl.metadata (9.1 kB)
+Collecting google-cloud-resource-manager<3.0.0dev,>=1.3.3 (from google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading google_cloud_resource_manager-1.14.2-py3-none-any.whl.metadata (9.6 kB)
+Collecting shapely<3.0.0dev (from google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading shapely-2.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting grpcio<2.0dev,>=1.47.0 (from google-cloud-bigquery==3.13.0->-r requirements.txt (line 15))
+  Downloading grpcio-1.75.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
+Collecting google-cloud-core<3.0.0dev,>=1.6.0 (from google-cloud-bigquery==3.13.0->-r requirements.txt (line 15))
+  Downloading google_cloud_core-2.4.3-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting google-resumable-media<3.0dev,>=0.6.0 (from google-cloud-bigquery==3.13.0->-r requirements.txt (line 15))
+  Downloading google_resumable_media-2.7.2-py2.py3-none-any.whl.metadata (2.2 kB)
+Collecting six>=1.5 (from python-dateutil==2.8.2->-r requirements.txt (line 20))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset-normalizer<4,>=2 (from requests==2.31.0->-r requirements.txt (line 21))
+  Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests==2.31.0->-r requirements.txt (line 21))
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests==2.31.0->-r requirements.txt (line 21))
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests==2.31.0->-r requirements.txt (line 21))
+  Downloading certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+Collecting grpc-google-iam-v1<1.0.0,>=0.14.0 (from google-cloud-secret-manager==2.24.0->-r requirements.txt (line 14))
+  Downloading grpc_google_iam_v1-0.14.2-py3-none-any.whl.metadata (9.1 kB)
+Collecting sgmllib3k (from feedparser==6.0.11->-r requirements.txt (line 19))
+  Downloading sgmllib3k-1.0.0.tar.gz (5.8 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting httpcore==1.* (from httpx==0.25.2->-r requirements.txt (line 27))
+  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting sniffio (from httpx==0.25.2->-r requirements.txt (line 27))
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting httptools>=0.5.0 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading httptools-0.6.4-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.6 kB)
+Collecting pyyaml>=5.1 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading uvloop-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting watchfiles>=0.13 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading watchfiles-1.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting websockets>=10.4 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 6))
+  Downloading websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth->-r requirements.txt (line 16))
+  Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth->-r requirements.txt (line 16))
+  Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth->-r requirements.txt (line 16))
+  Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0->google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading googleapis_common_protos-1.70.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0->google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading grpcio_status-1.75.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting google-crc32c<2.0dev,>=1.0 (from google-cloud-storage<3.0.0dev,>=1.32.0->google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading google_crc32c-1.7.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.3 kB)
+INFO: pip is looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0->google-cloud-aiplatform==1.38.0->-r requirements.txt (line 13))
+  Downloading grpcio_status-1.74.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.73.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.73.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.72.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.72.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.71.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.71.0-py3-none-any.whl.metadata (1.1 kB)
+INFO: pip is still looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+  Downloading grpcio_status-1.70.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.69.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.68.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.68.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.67.1-py3-none-any.whl.metadata (1.1 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading grpcio_status-1.67.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.66.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.66.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.66.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.5-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.4-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.64.3-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.64.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.64.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.63.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.63.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.62.3-py3-none-any.whl.metadata (1.3 kB)
+Collecting pyasn1>=0.1.3 (from rsa<5,>=3.1.4->google-auth->-r requirements.txt (line 16))
+  Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Downloading fastapi-0.104.1-py3-none-any.whl (92 kB)
+Downloading pydantic-2.5.0-py3-none-any.whl (407 kB)
+Downloading uvicorn-0.24.0-py3-none-any.whl (59 kB)
+Downloading pydantic_settings-2.1.0-py3-none-any.whl (11 kB)
+Downloading google_cloud_aiplatform-1.38.0-py2.py3-none-any.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 132.8 MB/s  0:00:00
+Downloading google_cloud_bigquery-3.13.0-py2.py3-none-any.whl (222 kB)
+Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+Downloading google_cloud_secret_manager-2.24.0-py3-none-any.whl (218 kB)
+Downloading feedparser-6.0.11-py3-none-any.whl (81 kB)
+Downloading aiosqlite-0.19.0-py3-none-any.whl (15 kB)
+Downloading httpx-0.25.2-py3-none-any.whl (74 kB)
+Downloading aiofiles-23.2.1-py3-none-any.whl (15 kB)
+Downloading asyncio_throttle-1.0.2-py3-none-any.whl (4.1 kB)
+Downloading python_multipart-0.0.6-py3-none-any.whl (45 kB)
+Downloading python_json_logger-2.0.4-py3-none-any.whl (7.8 kB)
+Downloading pydantic_core-2.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 257.0 MB/s  0:00:00
+Downloading google_auth-2.40.3-py2.py3-none-any.whl (216 kB)
+Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+Downloading google_api_core-2.25.1-py3-none-any.whl (160 kB)
+Downloading google_cloud_core-2.4.3-py2.py3-none-any.whl (29 kB)
+Downloading google_cloud_resource_manager-1.14.2-py3-none-any.whl (394 kB)
+Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl (131 kB)
+Downloading google_crc32c-1.7.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (32 kB)
+Downloading google_resumable_media-2.7.2-py2.py3-none-any.whl (81 kB)
+Downloading googleapis_common_protos-1.70.0-py3-none-any.whl (294 kB)
+Downloading grpc_google_iam_v1-0.14.2-py3-none-any.whl (19 kB)
+Downloading grpcio-1.75.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 298.9 MB/s  0:00:00
+Downloading grpcio_status-1.62.3-py3-none-any.whl (14 kB)
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading proto_plus-1.26.1-py3-none-any.whl (50 kB)
+Downloading protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+Downloading shapely-2.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 167.1 MB/s  0:00:00
+Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Downloading numpy-2.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 249.4 MB/s  0:00:00
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+Downloading click-8.2.1-py3-none-any.whl (102 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading httptools-0.6.4-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (459 kB)
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Downloading python_dotenv-1.1.1-py3-none-any.whl (20 kB)
+Downloading PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (762 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 763.0/763.0 kB 493.3 MB/s  0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading uvloop-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 270.5 MB/s  0:00:00
+Downloading watchfiles-1.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (453 kB)
+Downloading websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (182 kB)
+Building wheels for collected packages: sgmllib3k
+[91m  DEPRECATION: Building 'sgmllib3k' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'sgmllib3k'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+[0m  Building wheel for sgmllib3k (setup.py): started
+
+INFO: The service account running this build projects/pcs-helio/serviceAccounts/862291807500-compute@developer.gserviceaccount.com does not have permission to write logs to Cloud Logging. To fix this, grant the Logs Writer (roles/logging.logWriter) role to the service account.
+
+1 message(s) issued.
+  Building wheel for sgmllib3k (setup.py): finished with status 'done'
+  Created wheel for sgmllib3k: filename=sgmllib3k-1.0.0-py3-none-any.whl size=6047 sha256=15e2c88fa5de72dcca848c2eec7d222ef840212acb5373cc4d467d9a83d3fd23
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_ivis9ls/wheels/3b/25/2a/105d6a15df6914f4d15047691c6c28f9052cc1173e40285d03
+Successfully built sgmllib3k
+Installing collected packages: sgmllib3k, websockets, uvloop, urllib3, typing-extensions, sniffio, six, pyyaml, python-multipart, python-json-logger, python-dotenv, pyasn1, protobuf, packaging, numpy, idna, httptools, h11, google-crc32c, feedparser, click, charset-normalizer, certifi, cachetools, asyncio-throttle, annotated-types, aiosqlite, aiofiles, uvicorn, shapely, rsa, requests, python-dateutil, pydantic-core, pyasn1-modules, proto-plus, httpcore, grpcio, googleapis-common-protos, google-resumable-media, anyio, watchfiles, starlette, pydantic, httpx, grpcio-status, google-auth, pydantic-settings, grpc-google-iam-v1, google-api-core, fastapi, google-cloud-core, google-cloud-storage, google-cloud-secret-manager, google-cloud-resource-manager, google-cloud-bigquery, google-cloud-aiplatform
+
+Successfully installed aiofiles-23.2.1 aiosqlite-0.19.0 annotated-types-0.7.0 anyio-3.7.1 asyncio-throttle-1.0.2 cachetools-5.5.2 certifi-2025.8.3 charset-normalizer-3.4.3 click-8.2.1 fastapi-0.104.1 feedparser-6.0.11 google-api-core-2.25.1 google-auth-2.40.3 google-cloud-aiplatform-1.38.0 google-cloud-bigquery-3.13.0 google-cloud-core-2.4.3 google-cloud-resource-manager-1.14.2 google-cloud-secret-manager-2.24.0 google-cloud-storage-2.19.0 google-crc32c-1.7.1 google-resumable-media-2.7.2 googleapis-common-protos-1.70.0 grpc-google-iam-v1-0.14.2 grpcio-1.75.0 grpcio-status-1.62.3 h11-0.16.0 httpcore-1.0.9 httptools-0.6.4 httpx-0.25.2 idna-3.10 numpy-2.3.3 packaging-25.0 proto-plus-1.26.1 protobuf-4.25.8 pyasn1-0.6.1 pyasn1-modules-0.4.2 pydantic-2.5.0 pydantic-core-2.14.1 pydantic-settings-2.1.0 python-dateutil-2.8.2 python-dotenv-1.1.1 python-json-logger-2.0.4 python-multipart-0.0.6 pyyaml-6.0.2 requests-2.31.0 rsa-4.9.1 sgmllib3k-1.0.0 shapely-2.1.1 six-1.17.0 sniffio-1.3.1 starlette-0.27.0 typing-extensions-4.15.0 urllib3-2.5.0 uvicorn-0.24.0 uvloop-0.21.0 watchfiles-1.1.0 websockets-15.0.1
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[0mRemoving intermediate container b291283d6c99
+ ---> f38b2b3993cd
+Step 7/19 : COPY services/ ./services/
+ ---> ba40bbb8669f
+Step 8/19 : COPY api/ ./api/
+ ---> 38b1dbe48e53
+Step 9/19 : COPY main.py ./
+ ---> 0d6420acd4e1
+Step 10/19 : COPY gemini_direct_api.py ./
+ ---> c51c4baf22d1
+Step 11/19 : RUN mkdir -p /tmp/darwin-memory
+ ---> Running in b7f3a402e100
+Removing intermediate container b7f3a402e100
+ ---> 19c6fad74852
+Step 12/19 : RUN useradd -m -u 1001 darwin
+ ---> Running in b3a800d46f9a
+Removing intermediate container b3a800d46f9a
+ ---> 9713868eb3d1
+Step 13/19 : RUN chown -R darwin:darwin /app /tmp/darwin-memory
+ ---> Running in 190ba5cbc7a8
+Removing intermediate container 190ba5cbc7a8
+ ---> 728e868f93bf
+Step 14/19 : USER darwin
+ ---> Running in 9aab01966b08
+Removing intermediate container 9aab01966b08
+ ---> 53f470b9041b
+Step 15/19 : ENV PORT=${PORT:-8080}
+ ---> Running in 6e77ccf74b48
+Removing intermediate container 6e77ccf74b48
+ ---> fc9da53ee571
+Step 16/19 : EXPOSE 8080
+ ---> Running in 29f7d93400b6
+Removing intermediate container 29f7d93400b6
+ ---> d5b794ada40e
+Step 17/19 : HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3     CMD curl -f http://localhost:8080/health || exit 1
+ ---> Running in 49385525e934
+Removing intermediate container 49385525e934
+ ---> dee5b3815745
+Step 18/19 : CMD exec uvicorn main:app --host 0.0.0.0 --port 8080
+ ---> Running in 52117396f397
+Removing intermediate container 52117396f397
+ ---> 6fdddfbabd96
+Step 19/19 : CMD exec uvicorn api.main:app --host 0.0.0.0 --port 8080
+ ---> Running in bc8413b5da9e
+Removing intermediate container bc8413b5da9e
+ ---> 7a3178bbeb59
+Successfully built 7a3178bbeb59
+Successfully tagged us-central1-docker.pkg.dev/pcs-helio/darwin-repo/darwin-platform:latest
+PUSH
+Pushing us-central1-docker.pkg.dev/pcs-helio/darwin-repo/darwin-platform
+The push refers to repository [us-central1-docker.pkg.dev/pcs-helio/darwin-repo/darwin-platform]
+7f3a57ff2bb2: Preparing
+d384a66a868a: Preparing
+aa130c7f5e16: Preparing
+b51ea827b02b: Preparing
+3a11fc67ea37: Preparing
+cccfa64fdeb4: Preparing
+2655ae533c1c: Preparing
+6eb8fb57b4d7: Preparing
+c074147dc5f3: Preparing
+1550dc5cc6c4: Preparing
+9eaa058ebce5: Preparing
+8d441cbfbc35: Preparing
+49dd736005c7: Preparing
+135aac4d5c9a: Preparing
+daf557c4f08e: Preparing
+c074147dc5f3: Waiting
+1550dc5cc6c4: Waiting
+9eaa058ebce5: Waiting
+8d441cbfbc35: Waiting
+49dd736005c7: Waiting
+135aac4d5c9a: Waiting
+daf557c4f08e: Waiting
+cccfa64fdeb4: Waiting
+2655ae533c1c: Waiting
+6eb8fb57b4d7: Waiting
+d384a66a868a: Pushed
+3a11fc67ea37: Pushed
+b51ea827b02b: Pushed
+aa130c7f5e16: Pushed
+7f3a57ff2bb2: Pushed
+2655ae533c1c: Pushed
+cccfa64fdeb4: Pushed
+c074147dc5f3: Pushed
+8d441cbfbc35: Layer already exists
+49dd736005c7: Layer already exists
+135aac4d5c9a: Layer already exists
+1550dc5cc6c4: Pushed
+6eb8fb57b4d7: Pushed
+daf557c4f08e: Pushed
+9eaa058ebce5: Pushed
+latest: digest: sha256:5549fa6d77bf5447ebff33174b1949df82b9b2306b2e7285b8470a931f80dd95 size: 3458
+DONE
+-----------------------------------------------------------------------------------------------------------------
+ID                                    CREATE_TIME                DURATION  SOURCE                                                                                   IMAGES                                                                      STATUS
+a2f0d919-c112-44d3-a1d9-1df4fa0df9bc  2025-09-16T13:42:16+00:00  2M18S     gs://pcs-helio_cloudbuild/source/1758029441.505461-63ac8142bf1d4e54812e78e9e0a07849.tgz  us-central1-docker.pkg.dev/pcs-helio/darwin-repo/darwin-platform (+1 more)  SUCCESS
+🚀 Fazendo deployment...
+Deploying container to Cloud Run service [[1mdarwin-platform[m] in project [[1mpcs-helio[m] region [[1mus-central1[m]
+Deploying...
+Setting IAM Policy.....................warning
+Creating Revision....................................................................................................................................................................................................................failed
+Deployment failed
+  Setting IAM policy failed, try "gcloud beta run services add-iam-policy-binding --region=us-central1 --member=allUsers --role=roles/run.invoker darwin-platform"
+ERROR: (gcloud.run.deploy) Revision 'darwin-platform-00012-57z' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.
+
+Logs URL: https://console.cloud.google.com/logs/viewer?project=pcs-helio&resource=cloud_run_revision/service_name/darwin-platform/revision_name/darwin-platform-00012-57z&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22darwin-platform%22%0Aresource.labels.revision_name%3D%22darwin-platform-00012-57z%22 
+For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start

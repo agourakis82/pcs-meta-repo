@@ -1,0 +1,113 @@
+{
+  "zuco_eeg": {
+    "type": "eeg",
+    "source": "zuco",
+    "raw_data_path": "scripts/data/raw_public/zuco",
+    "structure": {
+      "hierarchy": "sentenceData -> word -> rawEEG",
+      "sentence_measures": [
+        "answer_mean_a1",
+        "answer_mean_a1_diff",
+        "answer_mean_a2",
+        "answer_mean_a2_diff",
+        "answer_mean_b1",
+        "answer_mean_b1_diff",
+        "answer_mean_b2",
+        "answer_mean_b2_diff",
+        "answer_mean_g1",
+        "answer_mean_g1_diff",
+        "answer_mean_g2",
+        "answer_mean_g2_diff",
+        "answer_mean_t1",
+        "answer_mean_t1_diff",
+        "answer_mean_t2",
+        "answer_mean_t2_diff",
+        "mean_a1",
+        "mean_a1_diff",
+        "mean_a1_diff_sec",
+        "mean_a1_sec",
+        "mean_a2",
+        "mean_a2_diff",
+        "mean_a2_diff_sec",
+        "mean_a2_sec",
+        "mean_b1",
+        "mean_b1_diff",
+        "mean_b1_diff_sec",
+        "mean_b1_sec",
+        "mean_b2",
+        "mean_b2_diff",
+        "mean_b2_diff_sec",
+        "mean_b2_sec",
+        "mean_g1",
+        "mean_g1_diff",
+        "mean_g1_diff_sec",
+        "mean_g1_sec",
+        "mean_g2",
+        "mean_g2_diff",
+        "mean_g2_diff_sec",
+        "mean_g2_sec",
+        "mean_t1",
+        "mean_t1_diff",
+        "mean_t1_diff_sec",
+        "mean_t1_sec",
+        "mean_t2",
+        "mean_t2_diff",
+        "mean_t2_diff_sec",
+        "mean_t2_sec"
+      ],
+      "word_measures": [],
+      "raw_data_fields": [
+        "rawEEG"
+      ],
+      "frequency_bands": [
+        "FFD_a1",
+        "FFD_a1_diff",
+        "FFD_a2",
+        "FFD_a2_diff",
+        "FFD_b1",
+        "FFD_b1_diff",
+        "FFD_b2",
+        "FFD_b2_diff",
+        "FFD_g1",
+        "FFD_g1_diff",
+        "FFD_g2",
+        "FFD_g2_diff",
+        "FFD_t1",
+        "FFD_t1_diff",
+        "FFD_t2",
+        "FFD_t2_diff",
+        "GD_a1",
+        "GD_a1_diff",
+        "GD_a2",
+        "GD_a2_diff"
+      ]
+    },
+    "preprocessing": {
+      "sampling_rate": "detect_from_data",
+      "filters": "research_grade",
+      "artifacts": "automatic_detection",
+      "epoching": "word_based"
+    },
+    "output": {
+      "format": "parquet",
+      "path": "data/L1_tidy/zuco_eeg/",
+      "files": {
+        "word_events_eeg": "word_events_eeg.parquet",
+        "raw_eeg": "raw_eeg_epochs.parquet",
+        "frequency_bands": "eeg_bands.parquet"
+      }
+    }
+  },
+  "derco_eeg": {
+    "type": "eeg",
+    "source": "derco",
+    "status": "to_be_implemented",
+    "note": "DERCO corpus EEG data"
+  },
+  "lpp_eeg": {
+    "type": "eeg",
+    "source": "lpp",
+    "status": "to_be_implemented",
+    "note": "LPP corpus EEG data"
+  }
+}

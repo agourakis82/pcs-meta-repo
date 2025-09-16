@@ -1,0 +1,4 @@
+caching:
+  cache_dir: data/cache
+  cache_ttl_hours: 24
+  max_cache_size_gb: 5

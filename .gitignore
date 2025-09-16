@@ -26,6 +26,11 @@ build/
 *.egg-info/
 src/*.egg-info/
 
+# Runtime/output directories
+logs/
+artifacts/
+attic/
+
 # Notebook-generated artifacts (keep repo lean)
 notebooks/*.nbconvert*.ipynb
 notebooks/data/
@@ -1550,3 +1555,4 @@ scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR4
 scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR5_corrected_ET.mat
 scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR6_corrected_ET.mat
 scripts/data/raw_public/zuco/v2/osfstorage/task2 - TSR/Preprocessed/YTL/YTL_TSR7_corrected_ET.mat
+tools/kenlm/

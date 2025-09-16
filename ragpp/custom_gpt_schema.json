@@ -1,0 +1,231 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "RAG++ Research API for Custom GPT",
+    "version": "1.0.0",
+    "description": "Advanced research assistant API with literature search and knowledge synthesis"
+  },
+  "servers": [
+    {
+      "url": "http://179.125.169.148:8000"
+    }
+  ],
+  "paths": {
+    "/search": {
+      "post": {
+        "operationId": "searchLiterature",
+        "summary": "Search scientific literature database",
+        "description": "Search through indexed research papers using hybrid retrieval (vector + semantic + memory search)",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Research question, keywords, or topic to search for"
+                  },
+                  "max_results": {
+                    "type": "integer",
+                    "default": 10,
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Maximum number of results to return"
+                  },
+                  "search_type": {
+                    "type": "string",
+                    "enum": [
+                      "hybrid",
+                      "literature",
+                      "memory"
+                    ],
+                    "default": "hybrid",
+                    "description": "Type of search: hybrid (recommended), literature only, or memory only"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Search results with literature findings",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "query": {
+                      "type": "string"
+                    },
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "sources": {
+                      "type": "object",
+                      "properties": {
+                        "literature": {
+                          "type": "integer"
+                        },
+                        "memory": {
+                          "type": "integer"
+                        },
+                        "total": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/research/recent": {
+      "get": {
+        "operationId": "getRecentFindings",
+        "summary": "Get recent research findings",
+        "description": "Retrieve latest research papers and findings from the knowledge base",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of findings to return",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Filter by research category (optional)",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "computational_psychiatry",
+                "digital_phenotyping",
+                "machine_learning",
+                "neuroimaging",
+                "biomarkers"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Recent research findings",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "recent_findings": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "content": {
+                            "type": "string"
+                          },
+                          "source": {
+                            "type": "string"
+                          },
+                          "year": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "total_count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/research/store": {
+      "post": {
+        "operationId": "storeResearchFinding",
+        "summary": "Store new research finding",
+        "description": "Add a new research finding or insight to the knowledge base",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "description": "Title or brief description of the finding"
+                  },
+                  "content": {
+                    "type": "string",
+                    "description": "Detailed content of the research finding"
+                  },
+                  "source": {
+                    "type": "string",
+                    "description": "Source of the information (journal, author, etc.)"
+                  },
+                  "category": {
+                    "type": "string",
+                    "enum": [
+                      "computational_psychiatry",
+                      "digital_phenotyping",
+                      "machine_learning",
+                      "neuroimaging",
+                      "biomarkers",
+                      "general"
+                    ],
+                    "default": "general",
+                    "description": "Research category"
+                  }
+                },
+                "required": [
+                  "title",
+                  "content"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Finding stored successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+#
+# Add commit hashes of format-only or mechanical refactors here to reduce blame noise.
+# Example:
+# 1234567890abcdef1234567890abcdef12345678 Reformat Python with black/ruff
+# abcdef1234567890abcdef1234567890abcdef12 Apply import sorting across src/
+

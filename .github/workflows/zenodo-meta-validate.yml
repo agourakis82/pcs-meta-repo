@@ -1,0 +1,34 @@
+name: zenodo-meta-validate
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sanitize Zenodo metadata
+        run: |
+          python tools/sanitize_zenodo_metadata.py
+
+      - name: Validate Zenodo metadata
+        run: |
+          python tools/validate_zenodo_metadata.py
+
+      - name: Show reports
+        if: always()
+        run: |
+          echo '--- zenodo_sanitize_log.json ---'
+          cat reports/zenodo_sanitize_log.json || true
+          echo '--- zenodo_validate.json ---'
+          cat reports/zenodo_validate.json || true
+

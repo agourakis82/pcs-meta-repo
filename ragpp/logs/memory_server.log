@@ -1,0 +1,26 @@
+2025-09-12 13:21:30,559 - ragpp_web_server - INFO - ✅ MCP HTTP endpoint mounted at /mcp (auth=off, hosts=*)
+2025-09-12 13:21:30,567 - __main__ - INFO - 🚀 Starting RAG++ Memory Server...
+2025-09-12 13:21:30,567 - __main__ - INFO - 🧠 Initializing Extended Memory Service...
+2025-09-12 13:21:30,747 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-12 13:21:30,749 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-12 13:21:30,750 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-12 13:21:30,751 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-12 13:21:31,141 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-09-12 13:21:31,141 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-12 13:21:33,794 - extended_memory_service - INFO - ✅ Sentence transformer loaded
+2025-09-12 13:21:33,796 - extended_memory_service - INFO - 🔄 Auto-backup service started
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.57it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.57it/s]
+2025-09-12 13:21:34,222 - extended_memory_service - INFO - ✅ Project context stored: ctx_pcs-meta-repo_system_startup_20250912_132133
+2025-09-12 13:21:34,222 - __main__ - INFO - ✅ Extended Memory Service initialized
+2025-09-12 13:21:34,222 - __main__ - INFO - 🌐 Starting Web API Server...
+2025-09-12 13:21:34,223 - __main__ - INFO - ✅ RAG++ Memory Server fully operational!
+2025-09-12 13:21:34,223 - __main__ - INFO - 🔗 Access at: http://179.125.169.148:8000
+2025-09-12 13:21:34,223 - __main__ - INFO - 📚 API docs: http://179.125.169.148:8000/docs
+INFO:     Started server process [717407]
+INFO:     Waiting for application startup.
+2025-09-12 13:21:34,243 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+2025-09-12 13:21:34,243 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.

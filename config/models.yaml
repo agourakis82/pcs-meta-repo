@@ -1,0 +1,23 @@
+## Model configuration templates (public, license-aware)
+
+xlmr:
+  model_id: xlm-roberta-large  # MIT license on code; weights via HF (check terms)
+  task: masked-lm
+  notes: "Use for PPPL and embeddings. For smoke tests, use xlm-roberta-base."
+
+causal_lm:
+  # choose one and ensure license compliance
+  mistral:
+    model_id: mistralai/Mistral-7B-Instruct-v0.3  # Apache-2.0
+    quant: 8bit
+  llama:
+    model_id: meta-llama/Meta-Llama-3.1-8B  # Llama community license
+    quant: 8bit
+  smoke:
+    model_id: sshleifer/tiny-gpt2
+    quant: none
+
+kenlm:
+  lm_path: data/lm/example.arpa  # provide your ARPA path here
+  notes: "KenLM LGPL/GPL; ensure compliance."
+

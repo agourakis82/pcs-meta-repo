@@ -1,0 +1,158 @@
+{
+  "name": "PCS Meta-Repo Research Assistant",
+  "description": "Acesso à literatura científica e insights de pesquisa em psiquiatria computacional via Cloudflare Tunnel",
+  "authentication": {
+    "type": "none"
+  },
+  "schema": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "PCS Meta-Repo Research API",
+      "description": "API para busca semântica em literatura científica de psiquiatria computacional",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "https://mcp.agourakis.med.br",
+        "description": "Servidor principal via Cloudflare Tunnel"
+      }
+    ],
+    "paths": {
+      "/health": {
+        "get": {
+          "operationId": "checkServerHealth",
+          "summary": "Verificar status do servidor",
+          "description": "Retorna informações sobre o status e capacidades do servidor",
+          "responses": {
+            "200": {
+              "description": "Status do servidor",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "string",
+                        "example": "healthy"
+                      },
+                      "version": {
+                        "type": "string",
+                        "example": "1.0.0"
+                      },
+                      "capabilities": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "example": ["hybrid_search", "literature_search", "memory_search"]
+                      },
+                      "indexed_articles": {
+                        "type": "integer",
+                        "example": 168
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/search": {
+        "post": {
+          "operationId": "searchResearch",
+          "summary": "Buscar literatura científica",
+          "description": "Realiza busca semântica na base de dados de artigos científicos",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "query": {
+                      "type": "string",
+                      "description": "Pergunta de pesquisa ou palavras-chave",
+                      "example": "machine learning in psychiatry"
+                    },
+                    "max_results": {
+                      "type": "integer",
+                      "description": "Número máximo de resultados (1-50)",
+                      "minimum": 1,
+                      "maximum": 50,
+                      "default": 10
+                    },
+                    "search_type": {
+                      "type": "string",
+                      "description": "Tipo de busca a realizar",
+                      "enum": ["literature", "hybrid", "memory"],
+                      "default": "literature"
+                    }
+                  },
+                  "required": ["query"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Resultados da busca",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "results": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string",
+                              "description": "Título do artigo"
+                            },
+                            "authors": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              },
+                              "description": "Lista de autores"
+                            },
+                            "abstract": {
+                              "type": "string",
+                              "description": "Resumo do artigo"
+                            },
+                            "score": {
+                              "type": "number",
+                              "description": "Pontuação de relevância (0-1)"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "URL do artigo (se disponível)"
+                            },
+                            "year": {
+                              "type": "integer",
+                              "description": "Ano de publicação"
+                            }
+                          }
+                        }
+                      },
+                      "total_found": {
+                        "type": "integer",
+                        "description": "Número total de artigos encontrados"
+                      },
+                      "query_time": {
+                        "type": "number",
+                        "description": "Tempo de processamento da busca em segundos"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+version: v1
+collections:
+- name: datasets_linguagem_leitura
+  items:
+  - title: ZuCo (2018/2019)
+    url: https://osf.io/q3zws/
+    tags: [ EEG, ET, leitura ]
+  - title: GECO (2017)
+    url: https://expsy.ugent.be/downloads/geco/
+    tags: [ ET, leitura ]
+  - title: OneStop-English ET
+    url: https://osf.io
+    tags: [ ET, proficiencia ]
+  - title: SWOW (2019)
+    url: https://smallworldofwords.org/
+    tags: [ rede_semantica ]
+- name: lm_surprisal_comportamento_neuro
+  items:
+  - title: Smith & Levy (2013) — Surprisal e RT
+  - title: Shain (2019/2021) — Surprisal em corpora ET
+  - title: Schrimpf et al. (2021) — LM ~ cérebro/comportamento
+  - title: Caucheteux & King (2022) — Brains and Transformers
+  - title: Heilbron et al. (2022) — Surprisal e respostas iniciais (MEG)
+  - title: Broderick et al. (2018/2019) — TRF/EEG com semântica
+- name: deep_eeg_gpu
+  items:
+  - title: Schirrmeister et al. (2017) — Deep ConvNets (Braindecode)
+  - title: Lawhern et al. (2018) — EEGNet
+  - title: Gramfort et al. — MNE-Python
+  - title: Appelhoff et al. — MNE-BIDS
+  - title: TorchEEG (2023/2024)
+  - title: Braindecode (atualizações 2024)
+- name: estatistica_modelagem
+  items:
+  - title: Barr et al. (2013) — Estrutura de efeitos aleatórios
+  - title: Bates et al. (2015) — lme4
+  - title: Maris & Oostenveld (2007) — Cluster permutation
+  - title: Benjamini & Hochberg (1995); Benjamini & Yekutieli (2001) — FDR
+  - title: DerSimonian & Laird (1986) — Meta-análise RE
+  - title: Wood (2017) — GAM/GAMM
+  - title: Kriegeskorte et al. (2008) — RSA
+  - title: King & Dehaene (2014) — Time generalization
+  - title: Crosse et al. (2016) — mTRF
+- name: coerencia_redes_semanticas
+  items:
+  - title: Barzilay & Lapata (2008) — Entity-Grid
+  - title: Siew et al. (2019/2021) — Cognitive Network Science
+  - title: De Deyne et al. (2016/2019) — SWOW
+  - title: Sandhu et al. (2015) — Ollivier-Ricci curvature

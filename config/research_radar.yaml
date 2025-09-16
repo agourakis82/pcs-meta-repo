@@ -1,0 +1,14 @@
+sources:
+  - name: arXiv_CS_AI
+    type: rss
+    url: "http://export.arxiv.org/rss/cs.AI"
+  - name: Nature_latest
+    type: rss
+    url: "https://www.nature.com/nature.rss"
+  - name: ScienceDaily_AI
+    type: rss
+    url: "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml"
+
+# Novelty threshold for cosine distance (0..2 where 0 identical, ~1 orthogonal)
+novelty_threshold: 0.8
+

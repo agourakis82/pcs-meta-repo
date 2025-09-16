@@ -1,0 +1,20 @@
+ANÁLISE SEMÂNTICA SIMPLIFICADA
+========================================
+
+Processamento: GPU (CuPy)
+Observações totais: 792,537
+Amostra analisada: 50,000
+
+TIMING:
+  data_loading: 3.03s
+  feature_preparation: 0.03s
+  pca_analysis: 0.00s
+  clustering: 39.44s
+  Total: 42.51s
+
+PCA RESULTS:
+.3f.3f.3f
+CLUSTERING RESULTS:
+  K-Means:
+    Clusters: 3
+    Silhouette: 0.433

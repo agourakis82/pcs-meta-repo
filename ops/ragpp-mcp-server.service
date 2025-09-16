@@ -1,0 +1,47 @@
+[Unit]
+Description=RAG++ MCP Server with Web Interface
+Documentation=https://github.com/agourakis82/pcs-meta-repo
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=agourakis82
+Group=agourakis82
+WorkingDirectory=/home/agourakis82/workspace/pcs-meta-repo
+Environment=PYTHONPATH=/home/agourakis82/workspace/pcs-meta-repo
+Environment=RAG_DB_PATH=/home/agourakis82/workspace/pcs-meta-repo/ragpp/data
+Environment=RAG_HOST=0.0.0.0
+Environment=RAG_PORT=8000
+Environment=MCP_SERVER_MODE=production
+Environment=RAG_API_TOKEN=wlaKVi5Qf4RooUprwQqtWrAS_Laecy98-oUzs7AAn7Qo
+
+# Command to run
+ExecStart=/usr/bin/python3 /home/agourakis82/workspace/pcs-meta-repo/ragpp/ragpp_web_server.py
+
+# Restart policy
+Restart=always
+RestartSec=10
+StartLimitInterval=60s
+StartLimitBurst=3
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/home/agourakis82/workspace/pcs-meta-repo/ragpp/data
+ReadWritePaths=/home/agourakis82/workspace/pcs-meta-repo/logs
+ReadWritePaths=/tmp
+
+# Resource limits
+LimitNOFILE=65536
+MemoryMax=4G
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ragpp-mcp-server
+
+[Install]
+WantedBy=multi-user.target

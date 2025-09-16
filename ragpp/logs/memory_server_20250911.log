@@ -1,0 +1,17 @@
+2025-09-11 08:34:05,114 - __main__ - INFO - 🚀 Starting RAG++ Memory Server...
+2025-09-11 08:34:05,114 - __main__ - INFO - 🧠 Initializing Extended Memory Service...
+2025-09-11 08:34:05,464 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-09-11 08:34:05,499 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-11 08:34:05,514 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-11 08:34:05,534 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-09-11 08:34:05,971 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-09-11 08:34:05,971 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-11 08:34:14,462 - extended_memory_service - INFO - ✅ Sentence transformer loaded
+2025-09-11 08:34:14,464 - extended_memory_service - INFO - 🔄 Auto-backup service started
+2025-09-11 08:34:15,065 - extended_memory_service - INFO - ✅ Project context stored: ctx_pcs-meta-repo_system_startup_20250911_083414
+2025-09-11 08:34:15,065 - __main__ - INFO - ✅ Extended Memory Service initialized
+2025-09-11 08:34:15,065 - __main__ - INFO - 🌐 Starting Web API Server...
+2025-09-11 08:34:15,067 - __main__ - INFO - ✅ RAG++ Memory Server fully operational!
+2025-09-11 08:34:15,067 - __main__ - INFO - 🔗 Access at: http://179.125.169.148:8000
+2025-09-11 08:34:15,067 - __main__ - INFO - 📚 API docs: http://179.125.169.148:8000/docs
+2025-09-11 08:34:15,387 - ragpp_web_server - INFO - ✅ RAG++ system initialized successfully

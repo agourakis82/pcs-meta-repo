@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pcs-memory": {
+      "command": "bash",
+      "args": ["-c", "export NVM_DIR=\"$HOME/.nvm\" && [ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\" && node /home/agourakis82/Documents/.blackbox/MCP/pcs-memory-server/src/index.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
