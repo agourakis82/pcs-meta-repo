@@ -298,4 +298,4 @@ def configure_advanced_rate_limiting(app: FastAPI):
     
     app.add_event_handler("startup", startup_event)
     
-    return app    return app
+    return app

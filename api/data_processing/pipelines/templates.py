@@ -502,10 +502,4 @@ def aggregate_data_file(input_file: str, output_file: str,
         group_by_fields=group_by_fields,
         aggregations=aggregations,
         **kwargs
-    )        "aggregation",
-        input_file=input_file,
-        output_file=output_file,
-        group_by_fields=group_by_fields,
-        aggregations=aggregations,
-        **kwargs
     )

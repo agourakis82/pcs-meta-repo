@@ -24,6 +24,11 @@ dependencies = [
     "httpx>=0.25.0",
     "chromadb>=0.4.0",
     "openai>=1.0.0",
+  "slowapi>=0.1.9",
+  "sentence-transformers>=2.7.0",
+  "python-dotenv>=1.0.0",
+  # Vertex AI optional (guarded by env DARWIN_USE_VERTEX)
+  "google-cloud-aiplatform>=1.66.0",
 ]
 
 [build-system]

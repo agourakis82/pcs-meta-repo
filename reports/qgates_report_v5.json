@@ -1,0 +1,17 @@
+{
+  "version": "v5.0.0",
+  "date": "2025-09-16",
+  "gates": {
+    "Q1": {"status": "OK", "evidence": ["tests/integration/test_ragplus_iterative_discovery.py", "tests/integration/test_pipeline_kec_swow_eeg_et.py"]},
+    "Q2": {"status": "OK", "evidence": ["CITATION.cff", "metadata/zenodo.json"]},
+    "Q3": {"status": "OK", "evidence": ["README.md", "docs/darwin_platform.md"]},
+    "Q4": {"status": "OK", "evidence": ["docs/CHANGELOG.md", "README.md"]},
+    "Q5": {"status": "OK", "evidence": ["notebooks/*", "tools/repo_lint.py"]},
+    "Q6": {"status": "OK", "evidence": ["README.md (Limitações)", "docs/darwin_security.md"]},
+    "Q7": {"status": "OK", "evidence": ["README.md (Próximos Passos)"]},
+    "Q8": {"status": "OK", "evidence": ["README.md (Impacto)"]},
+    "Q9": {"status": "OK", "evidence": ["LICENSE", "docs/darwin_security.md"]},
+    "Q10": {"status": "OK", "evidence": ["docs/darwin_platform.md", "QUALITY_GATES_Q1_Q10.md"]}
+  },
+  "summary_table_markdown": "| Gate | Status |\n|------|--------|\n| Q1 | OK |\n| Q2 | OK |\n| Q3 | OK |\n| Q4 | OK |\n| Q5 | OK |\n| Q6 | OK |\n| Q7 | OK |\n| Q8 | OK |\n| Q9 | OK |\n| Q10 | OK |"
+}

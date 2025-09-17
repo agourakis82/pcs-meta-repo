@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
-version: "v4.3.3"
-date-released: "2025-09-10"
+title: "PCS Meta-Repo — Darwin RAG++ Platform (ZuCo EEG/ET, SWOW, KEC)"
+version: "v5.0.0"
+date-released: "2025-09-16"
 doi: "10.5281/zenodo.16921951"
 type: software
 license: MIT
@@ -31,13 +31,13 @@ abstract: >
   and SWOW/KEC metrics. Includes CI-executable pipelines, QA reports and H* validator.
 preferred-citation:
   type: software
-  title: "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)"
+  title: "PCS Meta-Repo — Darwin RAG++ Platform (ZuCo EEG/ET, SWOW, KEC)"
   authors:
     - family-names: "Agourakis"
       given-names: "Demetrios"
       orcid: "https://orcid.org/0000-0002-8596-5097"
     - name: "Dionisio Chiuratto Agourakis"
-  version: "v4.3.3"
-  doi: "10.5281/zenodo.16921951"
-  date-released: "2025-09-10"
+  version: "v5.0.0"
+  doi: "10.5281/zenodo.16921951"  # concept DOI; replace with minted version DOI post-release
+  date-released: "2025-09-16"
   url: "https://github.com/agourakis82/pcs-meta-repo"

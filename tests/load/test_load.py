@@ -486,4 +486,4 @@ async def run_load_tests():
 if __name__ == "__main__":
     # Executa testes de carga quando executado diretamente
     success = asyncio.run(run_load_tests())
-    exit(0 if success else 1)    exit(0 if success else 1)
+    exit(0 if success else 1)

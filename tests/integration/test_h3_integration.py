@@ -408,5 +408,4 @@ async def run_h3_tests():
 if __name__ == "__main__":
     # Executa testes H3 quando executado diretamente
     success = asyncio.run(run_h3_tests())
-    exit(0 if success else 1)    success = asyncio.run(run_h3_tests())
     exit(0 if success else 1)

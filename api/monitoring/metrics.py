@@ -230,4 +230,4 @@ def get_metrics_collector() -> MetricsCollector:
 
 def get_performance_monitor() -> PerformanceMonitor:
     """Obtém instância global do monitor de performance."""
-    return _performance_monitor    return _performance_monitor
+    return _performance_monitor

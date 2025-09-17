@@ -252,4 +252,4 @@ _health_checker = HealthChecker()
 
 def get_health_checker() -> HealthChecker:
     """Obtém instância global do health checker."""
-    return _health_checker    return _health_checker
+    return _health_checker

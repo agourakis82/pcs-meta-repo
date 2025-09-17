@@ -1,7 +1,7 @@
 {
-  "title": "PCS Meta-Repo — Computational & Symbolic Psychiatry toolbox (ZuCo, SWOW, KEC)",
+  "title": "PCS v5.0 — Darwin RAG++ Platform (ZuCo EEG/ET, SWOW, KEC)",
   "upload_type": "software",
-  "description": "Unified notebooks and tooling for ZuCo ET/EEG processing, SWOW graph + KEC metrics, reproducible analyses, QA, and H* validation.",
+  "description": "Release v5.0 introduces Darwin RAG++ platform (index lifecycle, iterative reasoning, discovery monitoring), optional Vertex AI embeddings/generation, real multimodal pipeline (KEC + SWOW multilíngue + ZuCo EEG/ET) without synthetic placeholders, and governance artifacts (quality gates, security, release checklist).",
   "creators": [
     {
       "name": "Agourakis, Demetrios",
@@ -32,7 +32,7 @@
     { "identifier": "complex-systems" }
   ],
   "license": "cc-by-4.0",
-  "version": "v2025.09.02",
+  "version": "v5.0.0",
   "related_identifiers": [
     {
       "relation": "isSupplementTo",

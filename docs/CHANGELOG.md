@@ -74,3 +74,42 @@ Todas as mudanças importantes do projeto são documentadas neste arquivo.
 ---
 
 *Versioning seguindo [Semantic Versioning](https://semver.org/)*
+
+## [v5.0.0] - 2025-09-16
+
+### Added
+
+- Darwin RAG++ platform (index lifecycle, iterative reasoning, discovery monitoring)
+- Vertex AI opt-in integration (embeddings + generation via env toggles)
+- Multimodal real-data pipeline notebook (KEC + SWOW multilíngue + ZuCo EEG/ET) sem placeholders
+- ZuCo .mat robust parser + MI parametrização (env `KEC_MI_TOP_N`)
+- Discovery & iterative reasoning integration tests (condicionais)
+- CI workflow `darwin-integration.yml` para BigQuery / Vertex / Cloud Run / Pipeline
+- Vector engine documentation (`docs/vector_engine.md`)
+- Segurança e compliance doc (`docs/darwin_security.md`)
+- Release checklist (`DARWIN_RELEASE_CHECKLIST.md`), Quality Gates (`QUALITY_GATES_Q1_Q10.md`), Status Report (`DARWIN_STATUS_REPORT.md`)
+- New docs: `docs/darwin_platform.md`, `docs/darwin_api.md`, infra docs Vertex & schema SQL
+
+### Changed
+
+- README reestruturado com v5.0 Highlights, impacto, limitações e roadmap curto
+- Atualização de metadados (metadata.yaml, zenodo.json, CITATION.cff placeholders)
+- Ampliação de cobertura de testes para endpoints RAG Plus / discovery
+
+### Deprecated
+
+- Nenhum módulo formalmente deprecado; planeja-se migração gradual de rotas legacy RAG para camada Darwin unificada em futura versão.
+
+### Fixed
+
+- Ajustes de lint Markdown e consistência terminológica (RAG vs RAG Plus)
+- Diagnóstico build LaTeX (ausência `abntex2.cls`) documentado
+
+### Security
+
+- Documentação explícita de autenticação, rate limiting esperado e gerenciamento de segredos
+
+### Notes
+
+- Todas as adições são não-invasivas: backend Darwin existente não modificado
+- Próximas melhorias: normalização linguística SWOW, métricas EEG avançadas, explicabilidade automática

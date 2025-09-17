@@ -40,7 +40,6 @@ try:
         get_cache_stats,
         invalidate_cache_tags,
     )
-
     __all__ += [
         "cache_manager",
         "get_cache_stats",
@@ -49,4 +48,7 @@ try:
     ]
 except Exception:
     # Allow package to load even if optional compat layer fails
-    pass
+    # For test compatibility: alias get_cache_stats to get_cache_metrics if missing
+    def get_cache_stats(*args, **kwargs):
+        """Compat: Alias para get_cache_metrics (usado em testes antigos)."""
+        return get_cache_metrics(*args, **kwargs)

@@ -16,9 +16,9 @@ keywords:
   - semantic networks
 language: "en"
 license: "CC-BY-4.0"
-version: "v4.3.3"
-date: "2025-09-10"
+version: "v5.0.0"
+date: "2025-09-16"
 identifiers:
   concept_doi: "10.5281/zenodo.16921951"
-  version_doi: ""
+  version_doi: "TBD-after-zenodo-mint"
 repository: "https://github.com/agourakis82/pcs-meta-repo"

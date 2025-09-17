@@ -491,4 +491,4 @@ async def run_e2e_tests():
 if __name__ == "__main__":
     # Executa testes E2E quando executado diretamente
     success = asyncio.run(run_e2e_tests())
-    exit(0 if success else 1)    exit(0 if success else 1)
+    exit(0 if success else 1)

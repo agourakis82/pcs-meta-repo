@@ -297,6 +297,4 @@ async def run_demo_tests():
 
 if __name__ == "__main__":
     success = asyncio.run(run_demo_tests())
-    exit(0 if success else 1)if __name__ == "__main__":
-    success = asyncio.run(run_demo_tests())
     exit(0 if success else 1)

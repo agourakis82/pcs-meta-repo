@@ -447,4 +447,4 @@ async def processing_health_check():
             "status": "unhealthy",
             "timestamp": datetime.utcnow().isoformat(),
             "error": str(e)
-        }        }
+        }

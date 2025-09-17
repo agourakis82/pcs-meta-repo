@@ -327,4 +327,4 @@ async def run_h1_tests():
 if __name__ == "__main__":
     # Executa testes H1 quando executado diretamente
     success = asyncio.run(run_h1_tests())
-    exit(0 if success else 1)    exit(0 if success else 1)
+    exit(0 if success else 1)
