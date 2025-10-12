@@ -93,11 +93,17 @@ def truncated_svd(
     S = S_full[:rank_eff]
     Vt = Vt_full[:rank_eff, :]
 
-    # Log informações
-    logger.debug(
-        f"SVD truncada: A{A.shape} -> rank_eff={rank_eff}/{min(m,n)}, "
-        f"σ_max={S[0]:.2e}, σ_min={S[-1]:.2e}, cond={S[0]/S[-1]:.2e}"
-    )
+    # Log informações (protegido para rank zero)
+    if logger.isEnabledFor(logging.DEBUG):
+        if len(S) > 0:
+            logger.debug(
+                f"SVD truncada: A{A.shape} -> rank_eff={rank_eff}/{min(m,n)}, "
+                f"σ_max={S[0]:.2e}, σ_min={S[-1]:.2e}, cond={S[0]/S[-1]:.2e}"
+            )
+        else:
+            logger.debug(
+                f"SVD truncada: A{A.shape} -> rank_eff=0/{min(m,n)} (sem singulares acima do limiar)"
+            )
 
     if return_info:
         info = {

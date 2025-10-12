@@ -205,6 +205,10 @@ def solve_via_qr(
 
     logger.debug(f"QR solve: A{A.shape}, b{b.shape}, rcond={rcond:.2e}")
 
+    # Track diagnostics consistently across branches
+    rank_used: int = 0
+    R_for_cond: Optional[np.ndarray] = None
+
     if m >= n:
         # Decomposição QR reduzida de A
         Q, R = householder_qr(A, mode="reduced", dtype=A.dtype)
@@ -230,6 +234,10 @@ def solve_via_qr(
                 x[:rank, :] = x_head
         else:
             x = np.linalg.solve(R, QtB)
+
+        # Diagnostics for tall/square case
+        rank_used = rank
+        R_for_cond = R[:rank, :rank] if rank > 0 else None
     else:
         # Subdeterminado: solução de norma mínima via QR de A^T
         # A^T = Q_t R_t com Q_t (n×m), R_t (m×m)
@@ -239,12 +247,20 @@ def solve_via_qr(
         y = np.linalg.solve(R_t.T, b)
         x = Q_t @ y
 
+        # Diagnostics for wide case: infer rank from R_t
+        R_diag = np.abs(np.diag(R_t))
+        if rcond is None:
+            rcond = np.finfo(A.dtype).eps * max(m, n)
+        thresh = rcond * (R_diag.max() if R_diag.size else 1.0)
+        rank_used = int(np.sum(R_diag > thresh))
+        R_for_cond = R_t[:rank_used, :rank_used] if rank_used > 0 else None
+
     # Log estatísticas
     if logger.isEnabledFor(logging.DEBUG):
         residual = np.linalg.norm(A @ x - b)
-        cond_R = np.linalg.cond(R[:rank, :rank]) if rank > 0 else np.inf
+        cond_R = np.linalg.cond(R_for_cond) if (R_for_cond is not None) else np.inf
         logger.debug(
-            f"QR solve: rank={rank}/{n}, cond(R)={cond_R:.2e}, "
+            f"QR solve: rank={rank_used}/{n}, cond(R)={cond_R:.2e}, "
             f"residual={residual:.2e}"
         )
 

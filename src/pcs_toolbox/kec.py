@@ -25,23 +25,41 @@ def _entropy_row(probs: np.ndarray) -> float:
 
 def transition_entropy(g) -> pd.DataFrame:
     """Compute transition entropy per node using outgoing edge weights as probabilities.
-    If no weights, use uniform over out-neighbors.
+    Robust to missing/NaN/negative weights; falls back to uniform when invalid.
     """
     n = g.vcount()
     ent = np.zeros(n, dtype=np.float64)
+    has_weight_attr = "weight" in g.es.attributes()
     for v in range(n):
         nbrs = g.successors(v)
         if not nbrs:
             ent[v] = 0.0
             continue
-        weights = np.array([g.es[g.get_eid(v, u)]["weight"] if "weight" in g.es.attributes() else 1.0 for u in nbrs], dtype=np.float64)
-        wsum = weights.sum()
+        # Collect weights robustly
+        w_list = []
+        for u in nbrs:
+            try:
+                if has_weight_attr:
+                    eid = g.get_eid(v, u)
+                    w = g.es[eid].get("weight", 1.0)
+                else:
+                    w = 1.0
+                w = float(w)
+            except Exception:
+                w = 1.0
+            if not np.isfinite(w) or w < 0:
+                w = 0.0
+            w_list.append(w)
+        weights = np.asarray(w_list, dtype=np.float64)
+        wsum = float(np.nansum(weights))
         if wsum <= 0:
-            ent[v] = 0.0
-            continue
-        probs = weights / wsum
+            # Fallback to uniform distribution over neighbors
+            probs = np.full(len(nbrs), 1.0 / len(nbrs), dtype=np.float64)
+        else:
+            probs = weights / wsum
         ent[v] = _entropy_row(probs)
-    return pd.DataFrame({"name": g.vs["name"], "entropy": ent})
+    names = g.vs["name"] if "name" in g.vs.attributes() else list(range(n))
+    return pd.DataFrame({"name": names, "entropy": ent})
 
 
 def ricci_curvature(g, alpha: float = 0.5) -> pd.DataFrame:
